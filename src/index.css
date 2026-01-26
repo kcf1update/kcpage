@@ -1,0 +1,298 @@
+/* === Global layout reset (prevents top white gap) === */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.kc-hero {
+  position: relative;
+  min-height: 75vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0a1020 0%, #05070b 60%, #05070b 100%);
+  color: #e5e7eb;
+}
+
+.kc-hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.kc-hero__glow {
+  position: absolute;
+  width: 70vmax;
+  height: 70vmax;
+  filter: blur(40px);
+  opacity: 0.55;
+  border-radius: 999px;
+}
+
+.kc-hero__glow--cyan {
+  left: -10vmax;
+  top: -18vmax;
+  background: radial-gradient(circle, rgba(0,229,255,0.35), rgba(0,229,255,0) 60%);
+}
+
+.kc-hero__glow--papaya {
+  right: -16vmax;
+  bottom: -22vmax;
+  opacity: 0.35;
+  background: radial-gradient(circle, rgba(255,135,0,0.35), rgba(255,135,0,0) 60%);
+}
+
+.kc-hero__globe {
+  position: absolute;
+  left: 6%;
+  top: 8%;
+  width: min(520px, 55vw);
+  height: auto;
+  opacity: 0.9;
+  transform: translateZ(0);
+  filter: drop-shadow(0 0 18px rgba(0,229,255,0.15));
+}
+
+.kc-hero__scan {
+  animation: kcScan 5.5s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes kcScan {
+  0% { transform: translateY(-18px); opacity: 0.55; }
+  50% { transform: translateY(18px); opacity: 0.85; }
+  100% { transform: translateY(-18px); opacity: 0.55; }
+}
+
+.kc-hero__circuits {
+  position: absolute;
+  inset: 0;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  top: -5%;
+  opacity: 0.95;
+}
+
+.kc-hero__car {
+  position: absolute;
+  right: -3%;
+  bottom: 10%;
+  width: min(820px, 92vw);
+  height: auto;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 12px rgba(0,229,255,0.12));
+}
+
+.kc-hero__noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(229,231,235,0.08) 0px,
+      rgba(229,231,235,0.08) 1px,
+      rgba(0,0,0,0) 2px,
+      rgba(0,0,0,0) 6px
+    );
+  mix-blend-mode: overlay;
+}
+
+.kc-hero__wrap {
+  position: relative;
+  z-index: 2;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 6vw, 4rem) clamp(1.25rem, 4vw, 3rem);
+  gap: 1.25rem;
+}
+
+.kc-hero__panel {
+  max-width: 900px;
+  background: rgba(5, 7, 11, 0.55);
+  border: 1px solid rgba(229,231,235,0.10);
+  border-left: 4px solid rgba(0,229,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+}
+
+.kc-hero__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: rgba(229,231,235,0.88);
+  margin-bottom: 0.85rem;
+}
+
+.kc-hero__brandDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  background: rgba(0,229,255,0.9);
+  box-shadow: 0 0 18px rgba(0,229,255,0.35);
+}
+
+.kc-hero__title {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  font-size: clamp(2rem, 4.2vw, 3.15rem);
+  margin: 0 0 0.75rem 0;
+  text-transform: none;
+}
+
+.kc-hero__tagline {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: rgba(0,229,255,0.95);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+.kc-hero__sub {
+  margin: 0 0 1.35rem 0;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  color: rgba(229,231,235,0.88);
+  max-width: 68ch;
+}
+
+.kc-hero__ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kc-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #05070b;
+  background: linear-gradient(90deg, #e10600, #ff8700);
+  box-shadow: 0 14px 30px rgba(225,6,0,0.22);
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.kc-hero__cta:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.kc-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(229,231,235,0.12);
+  background: rgba(10,16,32,0.55);
+  backdrop-filter: blur(8px);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.kc-hero__metaItem {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.kc-hero__metaKey {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: rgba(229,231,235,0.65);
+}
+
+.kc-hero__metaVal {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: rgba(0,229,255,0.95);
+}
+
+.kc-hero__metaSep {
+  width: 1px;
+  height: 28px;
+  background: rgba(229,231,235,0.12);
+}
+
+.kc-hero__ticker {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.7rem 0.95rem;
+  max-width: 900px;
+  border-radius: 14px;
+  border: 1px solid rgba(229,231,235,0.10);
+  background: rgba(5, 7, 11, 0.42);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+.kc-hero__tickerLabel {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 0.18em;
+  color: rgba(255,135,0,0.85);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.kc-hero__tickerItems {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: rgba(229,231,235,0.75);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  opacity: 0.95;
+}
+
+/* Mobile adjustments */
+@media (max-width: 720px) {
+  .kc-hero {
+    min-height: 88vh;
+  }
+
+  .kc-hero__globe {
+    left: 50%;
+    top: 4%;
+    transform: translateX(-50%);
+    opacity: 0.75;
+  }
+
+  .kc-hero__car {
+    right: -12%;
+    bottom: 14%;
+    opacity: 0.42;
+  }
+
+  .kc-hero__ctaRow {
+    align-items: flex-start;
+  }
+}

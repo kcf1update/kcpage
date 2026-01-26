@@ -1,0 +1,18 @@
+.heroWrap {
+  width: 100%;
+  margin: 0 0 14px 0;
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+
+.heroImg {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 0 !important;   /* <-- ADD THIS */
+}
+.heroWrap,
+.heroWrap * {
+  border-radius: 0 !important;
+}

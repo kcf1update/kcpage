@@ -1,0 +1,116 @@
+.page-hero{
+  width: 100%;
+  height: clamp(260px, 22vw, 380px);
+ /* subpage hero size */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  margin: 0;
+
+  border-radius: 0;
+
+  overflow: hidden;
+  /* Mobile: show the full hero image (no side cropping) */
+@media (max-width: 640px) {
+  .page-hero {
+    background-size: contain;     /* key change */
+    background-position: center;  /* keep centered */
+    background-color: #545454;    /* fills the empty space around the image */
+  }
+}
+
+}
+/* Mobile & small tablet fix — shrink subpage hero height */
+@media (max-width: 768px) {
+  .page-hero {
+    height: clamp(160px, 40vw, 240px);
+
+  }
+}
+/* Racing green hover outline for subpage cards */
+.card-hover-green {
+  position: relative;
+  border-radius: 18px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-hover-green:hover {
+  box-shadow:
+    0 0 0 2px rgba(0, 120, 60, 0.85),
+    0 0 24px rgba(0, 120, 60, 0.55);
+  transform: translateY(-2px);
+}
+/* NextRacePage only: racing green card glow (always on + stronger on hover) */
+.next-race-page .card-green {
+  position: relative;
+  border-radius: 18px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+
+  /* Always-on green outline + soft glow */
+  box-shadow:
+    0 0 0 1px rgba(0, 120, 60, 0.55),
+    0 0 18px rgba(0, 120, 60, 0.22);
+}
+
+.next-race-page .card-green:hover {
+  /* Stronger glow on hover (like main page behavior) */
+  box-shadow:
+    0 0 0 2px rgba(0, 120, 60, 0.85),
+    0 0 28px rgba(0, 120, 60, 0.55);
+  transform: translateY(-2px);
+}
+/* Racing green card — Points & Next Race only */
+.card-green {
+  border: 1px solid rgba(0, 160, 100, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(0, 160, 100, 0.35),
+    0 0 18px rgba(0, 160, 100, 0.25);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-green:hover {
+  box-shadow:
+    0 0 0 1px rgba(0, 200, 130, 0.7),
+    0 0 28px rgba(0, 200, 130, 0.45);
+  transform: translateY(-1px);
+}
+/* Aston Martin green card (Points page only) */
+.card-aston {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 110, 95, 0.85),
+    rgba(0, 85, 75, 0.85)
+  );
+  border: 1px solid rgba(0, 160, 140, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(0, 160, 140, 0.35),
+    0 0 18px rgba(0, 120, 105, 0.35);
+}
+/* FORCE mobile hero to show full image (no cropping) */
+@media (max-width: 640px) {
+  .page-hero {
+    margin-top: 0 !important;
+    background-size: cover !important;        /* was contain */
+    background-position: top center !important; /* pushes image up */
+    background-repeat: no-repeat !important;
+  }
+}
+
+/* Remove top gap above PageHero on mobile */
+@media (max-width: 640px) {
+  .page-hero {
+    margin-top: 0 !important;
+  }
+
+  /* Kill any padding pushing it down */
+  .page-hero + * {
+    margin-top: 0 !important;
+  }
+}
+
+
