@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { getTranslations } from "./translations";
+
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -25,7 +25,7 @@ const containsLinkyStuff = (s) => {
 const COMMENTS_API = "/.netlify/functions/comments";
 
 export default function CommentsPage() {
-  const uiText = getTranslations(); // kept (even if not used yet)
+  
 
   // ✅ comments now come from server
   const [comments, setComments] = useState([]);

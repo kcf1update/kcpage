@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { getTranslations } from "./translations";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -10,8 +9,6 @@ import PageHero from "./components/PageHero";
 import { nextRaceContent, NEXT_RACE_DRIVERS } from "./content/nextRaceContent";
 
 export default function NextRacePage() {
-  const uiText = getTranslations();
-
   // Convenience: sessions in the order you defined in the content file
   const sessions = nextRaceContent.sessions || [];
 
@@ -58,57 +55,50 @@ export default function NextRacePage() {
           {/* Race & sessions card */}
           <article className="card-green lg:col-span-2 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
             <header className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
-    <div>
-      <p className="text-xs uppercase tracking-[0.2em] text-gray-300">
-        Race name
-      </p>
-      <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
-        {nextRaceContent.raceName || "—"}
-      </div>
-    </div>
-<div>
-  <p className="text-xs uppercase tracking-[0.2em] text-gray-300">
-    Dates
-  </p>
-  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
-    {nextRaceContent.raceDates || "—"}
-  </div>
-</div>
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-300">Race name</p>
+                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                    {nextRaceContent.raceName || "—"}
+                  </div>
+                </div>
 
-    <div>
-      <p className="text-xs uppercase tracking-[0.2em] text-gray-300">
-        Location
-      </p>
-      <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
-        {nextRaceContent.location || "—"}
-      </div>
-    </div>
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-300">Dates</p>
+                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                    {nextRaceContent.raceDates || "—"}
+                  </div>
+                </div>
 
-    {/* ✅ Track Info link (only shows if you set trackInfoUrl in content) */}
-    {nextRaceContent.trackInfoUrl ? (
-      <div className="sm:pt-5">
-        <a
-          href={nextRaceContent.trackInfoUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-300">Location</p>
+                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                    {nextRaceContent.location || "—"}
+                  </div>
+                </div>
+
+                {/* ✅ Track Info link (only shows if you set trackInfoUrl in content) */}
+                {nextRaceContent.trackInfoUrl ? (
+                  <div className="sm:pt-5">
+                    <a
+                      href={nextRaceContent.trackInfoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full
 border border-sky-400/40
 bg-sky-500/15
 px-3 py-1 text-xs text-sky-300
 hover:bg-sky-500/25 hover:text-sky-200
 transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
-
-          title="Open track information"
-        >
-          Check out the next track
-          <span className="text-[10px] text-gray-300">↗</span>
-        </a>
-      </div>
-    ) : null}
-  </div>
-</header>
-
+                      title="Open track information"
+                    >
+                      Check out the next track
+                      <span className="text-[10px] text-gray-300">↗</span>
+                    </a>
+                  </div>
+                ) : null}
+              </div>
+            </header>
 
             <div className="mt-2">
               <h2 className="text-sm font-semibold text-gray-100">
@@ -122,10 +112,7 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
                     className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/40 px-3 py-2"
                   >
                     <div className="text-sm font-medium">
-                      {/* Uses translations if your keys exist; otherwise falls back to label */}
-                      {uiText?.[session.labelKey] ||
-                        session.label ||
-                        `Session ${idx + 1}`}
+                      {session.label || `Session ${idx + 1}`}
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -144,12 +131,8 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
 
           {/* Weather card */}
           <article className="card-green rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-            <h2 className="text-lg font-semibold">
-              {uiText.nextRaceWeatherTitle}
-            </h2>
-            <p className="mt-1 text-xs text-gray-300">
-              {uiText.nextRaceWeatherSubtitle}
-            </p>
+            <h2 className="text-lg font-semibold">Weather</h2>
+            <p className="mt-1 text-xs text-gray-300">Forecast notes for the race weekend.</p>
 
             <div className="mt-3 h-40 w-full whitespace-pre-line rounded-2xl border border-white/10 bg-black/50 px-3 py-2 text-sm text-gray-100 overflow-auto">
               {nextRaceContent.weather || "—"}
@@ -165,11 +148,7 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
               className="card-green rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur"
             >
               <header className="mb-3 flex items-center justify-between gap-2">
-                <h2 className="text-lg font-semibold">
-                  {uiText?.[session.labelKey] ||
-                    session.label ||
-                    `Session ${idx + 1}`}
-                </h2>
+                <h2 className="text-lg font-semibold">{session.label || `Session ${idx + 1}`}</h2>
                 <p className="text-[11px] text-gray-300">
                   Results are read-only (updated in nextRaceContent.js).
                 </p>

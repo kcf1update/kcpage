@@ -24,7 +24,7 @@ export const NEXT_RACE_DRIVERS = [
 ];
 
 // Create a blank results row (one slot per driver, in the same order)
-const blank = () => Array(NEXT_RACE_DRIVERS.length).fill("");
+
 
 export const nextRaceContent = {
   raceName: "Bahrain Grand Prix",

@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 
-import { getTranslations } from "./translations";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -15,8 +14,6 @@ import {
 } from "./content/pointsContent";
 
 export default function PointsPage() {
-  const uiText = getTranslations();
-
   // Drivers with points (from content file)
   const driversWithPoints = useMemo(
     () => pointsDrivers.map((d) => ({ ...d, points: Number(d.points) || 0 })),
@@ -71,8 +68,8 @@ export default function PointsPage() {
 
         <TopCard>
           <TopCard.Header
-            title={uiText.pointsPageTitle}
-            subtitle={uiText.pointsPageSubtitle}
+            title="Driver & Team Points"
+            subtitle="Current Formula 1 championship standings"
             logoSrc="/img/kcs-f1-car.png"
             right={
               <Link
@@ -80,7 +77,7 @@ export default function PointsPage() {
                 className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 px-4 py-1 text-xs sm:text-sm text-white shadow-[0_0_18px_rgba(239,68,68,0.55)] hover:bg-red-700 transition"
               >
                 <span className="text-lg leading-none">←</span>
-                <span>{uiText.navBackHome}</span>
+                <span>Back to Home</span>
               </Link>
             }
           />
@@ -89,8 +86,8 @@ export default function PointsPage() {
         {/* Podium row */}
         <section className="mt-6 grid gap-4 md:grid-cols-12">
           <article className="md:col-span-3 rounded-3xl bg-black/60 p-4 text-sm text-gray-200 backdrop-blur card-green">
-            <h2 className="text-xl font-semibold">{uiText.pointsTopThreeTitle}</h2>
-            <p className="mt-1 text-sm text-gray-300">{uiText.pointsTopThreeSubtitle}</p>
+            <h2 className="text-xl font-semibold">Top 3 Drivers</h2>
+            <p className="mt-1 text-sm text-gray-300">Current championship leaders</p>
 
             <ol className="mt-3 space-y-1 text-xs">
               <li>
@@ -127,7 +124,7 @@ export default function PointsPage() {
           {/* Driver standings */}
           <article className="rounded-3xl bg-black/40 p-4 backdrop-blur card-green">
             <header className="mb-3">
-              <h2 className="text-xl font-semibold">{uiText.pointsDriversTitle}</h2>
+              <h2 className="text-xl font-semibold">Driver Standings</h2>
               <p className="text-xs text-gray-300">Full grid (including Cadillac).</p>
             </header>
 
@@ -182,7 +179,7 @@ export default function PointsPage() {
           {/* Constructor standings */}
           <article className="rounded-3xl bg-black/40 p-4 backdrop-blur card-green">
             <header className="mb-3">
-              <h2 className="text-xl font-semibold">{uiText.pointsConstructorsTitle}</h2>
+              <h2 className="text-xl font-semibold">Constructor Standings</h2>
               <p className="text-xs text-gray-300">
                 Team points auto-sum from their drivers. Cadillac is shown as a future 2026 entry.
               </p>

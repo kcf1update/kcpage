@@ -2,7 +2,6 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 
-import { getTranslations } from "./translations";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -60,13 +59,7 @@ function looksLive(input) {
 // 2) live via channelId => https://www.youtube.com/embed/live_stream?channel=<channelId>
 // 3) playlistId => https://www.youtube.com/embed/videoseries?list=<playlistId>
 function buildEmbedUrl(slot) {
-  const {
-    youtubeInput,
-    videoId,
-    channelId,
-    playlistId,
-    isLive,
-  } = slot || {};
+  const { youtubeInput, videoId, channelId, playlistId, isLive } = slot || {};
 
   // Playlist (optional)
   if (playlistId) {
@@ -91,8 +84,6 @@ function buildEmbedUrl(slot) {
 }
 
 export default function YouTubeNewsPage() {
-  const uiText = getTranslations();
-
   // Ensure we always have an array
   const slots = useMemo(() => (Array.isArray(youtubeSlots) ? youtubeSlots : []), []);
 
@@ -113,22 +104,21 @@ export default function YouTubeNewsPage() {
 
         {/* TOP CARD */}
         <TopCard>
-  <TopCard.Header
-    title="F1 YouTube News"
-    subtitle="Latest videos, highlights, interviews, and race coverage."
-    logoSrc="/img/kcs-f1-car.png"
-    right={
-      <Link
-        to="/"
-        className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(239,68,68,0.55)]"
-      >
-        <span className="text-lg leading-none">&larr;</span>
-        <span>{uiText?.navBackHome ?? "Back to home"}</span>
-      </Link>
-    }
-  />
-</TopCard>
-
+          <TopCard.Header
+            title="F1 YouTube News"
+            subtitle="Latest videos, highlights, interviews, and race coverage."
+            logoSrc="/img/kcs-f1-car.png"
+            right={
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(239,68,68,0.55)]"
+              >
+                <span className="text-lg leading-none">&larr;</span>
+                <span>Back to home</span>
+              </Link>
+            }
+          />
+        </TopCard>
 
         <AdBar />
 
@@ -174,7 +164,9 @@ export default function YouTubeNewsPage() {
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center text-xs text-gray-400 px-4 text-center">
-                      No video set yet. Edit <span className="mx-1 text-white/70">youtubeSlots</span> and redeploy.
+                      No video set yet. Edit{" "}
+                      <span className="mx-1 text-white/70">youtubeSlots</span> and
+                      redeploy.
                     </div>
                   )}
                 </div>
@@ -183,9 +175,7 @@ export default function YouTubeNewsPage() {
                 <div className="space-y-2 p-4 text-sm">
                   <h2 className="text-base font-semibold text-white">{title}</h2>
 
-                  {description ? (
-                    <p className="text-xs text-gray-300">{description}</p>
-                  ) : null}
+                  {description ? <p className="text-xs text-gray-300">{description}</p> : null}
 
                   {/* Optional CTA link (e.g., channel link, sponsor link) */}
                   {slot?.ctaUrl ? (
@@ -207,4 +197,3 @@ export default function YouTubeNewsPage() {
     </div>
   );
 }
-

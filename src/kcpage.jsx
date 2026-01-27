@@ -1,6 +1,6 @@
 // src/KCpage.jsx
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 
 import AdBar from "./AdBar.jsx";
 import PageNav from "./components/PageNav";
