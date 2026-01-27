@@ -13,7 +13,8 @@ export const pointsTeams = [
   { id: "RAC", name: "Racing Bulls", color: "#1434A4" },
   { id: "WIL", name: "Williams", color: "#00A1E0" },
   { id: "SAU", name: "Audi", color: "#E10600" },
-  { id: "CAD", name: "Cadillac", color: "#9CA3AF", isFuture: true },
+  { id: "CAD", name: "Cadillac", color: "#BFC3C7"  },
+
 ];
 
 // Drivers (edit ONLY the points numbers)
@@ -59,8 +60,9 @@ export const pointsDrivers = [
   { id: "BOR", name: "Gabriel Bortoleto",  code: "BOR", teamId: "SAU", teamName: "Audi", countryFlag: "🇧🇷", points: 0 },
 
   // Cadillac (future entry)
-  { id: "PER", name: "Sergio Perez",     code: "PER", teamId: "CAD", teamName: "Cadillac", countryFlag: "🇲🇽", points: 0, isFuture: true },
-  { id: "BOT", name: "Valtteri Bottas",  code: "BOT", teamId: "CAD", teamName: "Cadillac", countryFlag: "🇫🇮", points: 0, isFuture: true },
+  { id: "PER", name: "Sergio Perez", code: "PER", teamId: "CAD", teamName: "Cadillac", countryFlag: "MX", points: 0 },
+{ id: "BOT", name: "Valtteri Bottas", code: "BOT", teamId: "CAD", teamName: "Cadillac", countryFlag: "FI", points: 0 },
+
 ];
 
 // Optional: if you ever want to FORCE a constructor’s points (instead of auto-summing)

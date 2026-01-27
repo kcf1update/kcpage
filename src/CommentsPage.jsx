@@ -180,6 +180,10 @@ export default function CommentsPage() {
             Comments may be cleared as we continue testing and improving the site.
           </div>
         </div>
+<p className="mb-2 text-sm font-medium text-cyan-200
+  drop-shadow-[0_0_14px_rgba(34,211,238,0.7)]">
+  Have your say on the latest F1 news — fans welcome.
+</p>
 
         <div className="flex items-center gap-2">
           <input

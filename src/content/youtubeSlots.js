@@ -3,15 +3,16 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-    title: "F1 PENALTIES EXPLAINED",
-    youtubeInput: "https://youtu.be/JtglE3vYwKU",
-    description: "Kym Illman's videos are always worth a listen"
+  title: "2026 F1 Barcelona Testing – Day 1 Highlights",
+  youtubeInput: "https://www.youtube.com/watch?v=Mv70uh16iUY",
+  description: "First on-track footagSe of the 2026 Formula 1 cars as teams begin private testing in Barcelona under the new regulations."
+
   },
   {
     slotId: "slot2",
-    title: "Christian Horner",
-    youtubeInput:" https://www.youtube.com/shorts/IGd2oZEJM2A?feature=share",
-    description: "Move to Alpine?"
+  title: "F1 Barcelona Testing | Team & Driver Reactions",
+  youtubeInput: "https://youtu.be/luiq2GEZB_Q",
+  description: "Compilation of team engineers and drivers sharing their first impressions from the 2026 Barcelona shakedown testing sessions."
   },
   {
     slotId: "slot3",
@@ -21,9 +22,9 @@ export const youtubeSlots = [
   },
   {
     slotId: "slot4",
-    title: "Sky Sports F1 team",
-    youtubeInput: "https://youtu.be/OGUnLAmvC_E",
-    description: "good conversation ",
+  title: "F1 2026 Barcelona Test – Best On-Track Action",
+  youtubeInput: "https://youtu.be/Ndcf5F3OOc4",
+  description: "Highlights reel of the most exciting laps and moments from the 2026 Barcelona pre-season testing sessions."
   },
   {
   slotId: "slot5",
@@ -36,8 +37,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot6",
-    title: "F1 2026's dark horse?",
-    youtubeInput: "https://youtu.be/ONkyg8VCr2Q",
-    description: "The Race Podcast and THE RACE",
+  title: "F1 Barcelona Testing Insights | 2026 Shakedown",
+  youtubeInput: "https://youtu.be/QMKPvfNB6l0",
+  description: "Expert breakdown and on-board clips from the 2026 Barcelona testing sessions, showing how teams are adapting to the new car regulations."
   },
 ];

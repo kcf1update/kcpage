@@ -49,6 +49,7 @@ export default function PointsPage() {
       pointsTeams
         .map((t) => ({ ...t, points: teamPoints[t.id] ?? 0 }))
         .sort((a, b) => b.points - a.points),
+       
     [teamPoints]
   );
 
@@ -59,12 +60,13 @@ export default function PointsPage() {
     <div className="relative min-h-screen bg-[#545454] text-white">
       <PageHero img="hero-worldwide4.png" alt="F1 Points" />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8 lg:px-8">
+      <div className="relative mx-auto w-full max-w-[980px] flex flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8">
+
         {/* Nav row (standard on all pages) */}
-        <div className="mt-1 flex items-center justify-between gap-4">
-          <PageNav />
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
-        </div>
+        <div className="mt-1 flex items-center justify-center">
+  <PageNav />
+</div>
+
 
         <TopCard>
           <TopCard.Header

@@ -8,7 +8,11 @@ const NAV_ITEMS = [
   { key: "navNextRace", fallback: "Next Race Info", to: "/next-race" },
   { key: "navF1News", fallback: "F1 News", to: "/news" },
   { key: "navYouTube", fallback: "YouTube", to: "/youtube" },
-  { key: "navComments", fallback: "Comments", to: "/comments" },
+  {
+    key: "navComments",
+    fallback: "Join the F1 Discussion",
+    to: "/comments",
+  },
 ];
 
 export default function PageNav() {

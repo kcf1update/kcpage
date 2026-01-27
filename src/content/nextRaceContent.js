@@ -21,6 +21,8 @@ export const NEXT_RACE_DRIVERS = [
   "Carlos Sainz",
   "Nico Hülkenberg",
   "Gabriel Bortoleto",
+  "Valtteri Bottas",
+  "Sergio Perez",
 ];
 
 // Create a blank results row (one slot per driver, in the same order)
@@ -36,7 +38,7 @@ export const nextRaceContent = {
     {
   id: "session1",
   label: "Session 1",
-  time: "",
+  time: "Day 1 results below",
   results: [
     "",   // Max Verstappen
     "",  // Arvid Lindblad
@@ -44,20 +46,22 @@ export const nextRaceContent = {
     "",   // Lewis Hamilton
     "",   // Lando Norris
     "",   // Oscar Piastri
-    "",     // George Russell
-    "",     // Kimi Antonelli
+    "+0.537s, 93 laps",     // George Russell
+    "+2.541s, 56 laps",     // Kimi Antonelli
     "",     // Lance Stroll
     "",     // Fernando Alonso
     "",     // Pierre Gasly
-    "",     // Franco Colapinto
-    "",     // Esteban Ocon
+    "+2.030s, 60 laps",     // Franco Colapinto
+    "+3.142s, 154 laps",     // Esteban Ocon
     "",     // Oliver Bearman
-    "",     // Isack Hadjar
-    "",     // Liam Lawson
+    "1:18.159s 107 laps",     // Isack Hadjar
+    "+3.354s, 88 laps",     // Liam Lawson
     "",     // Alexander Albon
     "",     // Carlos Sainz
     "",     // Nico Hülkenberg
-    "",     // Gabriel Bortoleto
+    "+7.137s, 27 laps",     // Gabriel Bortoleto
+    "+6.492s, 33 laps",// Valtteri Bottas
+    "+7.815s, 11 laps",// Sergio Perez
   ],
 },
 
@@ -86,6 +90,8 @@ export const nextRaceContent = {
     "",     // Carlos Sainz
     "",     // Nico Hülkenberg
     "",     // Gabriel Bortoleto
+    "", //Valtteri Bottas
+    "",//Sergio Perez
   ],
 },
     {
@@ -113,6 +119,8 @@ export const nextRaceContent = {
     "",     // Carlos Sainz
     "",     // Nico Hülkenberg
     "",     // Gabriel Bortoleto
+    "", //Valtteri Bottas
+    "",//Sergio Perez
   ],
 },
 
@@ -141,6 +149,8 @@ export const nextRaceContent = {
     "",     // Carlos Sainz
     "",     // Nico Hülkenberg
     "",     // Gabriel Bortoleto
+    "", //Valtteri Bottas
+    "",//Sergio Perez
   ],
 },
 
