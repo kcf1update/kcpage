@@ -8,67 +8,67 @@
 export const newsSlots = [
   {
     slotId: "news1",
-  sourceLabel: "Sky Sports F1",
-  title: "Hadjar tops unofficial Barcelona testing times",
+  sourceLabel: "Reuters",
+  title: "Hadjar crash disrupts Red Bull’s Day 2 Barcelona testing",
   summary:
-    "Isack Hadjar set the early pace during unofficial Barcelona running, completing a smooth and trouble-free day for Red Bull. The rookie said the car felt stable and predictable despite the new power unit regulations.",
-  kcsQuickShift: "Strong first impression from the youngster.",
-  url: "https://www.skysports.com/f1/news/12433/13499374/f1-testing-red-bull-driver-isack-hadjar-surprised-by-strong-performance-on-first-day-in-barcelona",
-  imagePath:  "/img/news/news-01.jpg",
-  dateLabel: ""
+    "Red Bull’s Day 2 running in Barcelona was cut short after rookie Isack Hadjar crashed in wet conditions at the final corner. With rain limiting track time for most teams, Ferrari managed steady mileage while Red Bull focused on damage assessment and data review.",
+  kcsQuickShift: "I feel bad for Isack, last corner on last lap — but this is exactly why private testing exists. Better to find the limit now than in Melbourne.",
+  url: "https://www.reuters.com/sports/formula1/hadjar-crashes-red-bull-car-barcelona-pre-season-testing-2026-01-27/",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "" 
   },
   {
   slotId: "news2",
-  sourceLabel: "RacingNews365",
-  title: "Verstappen triggers early red flag during Barcelona test",
+  sourceLabel: "Times of India",
+  title: "Rain and crashes dominate Day 2 of Barcelona testing",
   summary:
-    "Max Verstappen briefly stopped the session after running wide at Turn 5, bringing out an early red flag on Day 2. The Red Bull driver returned later with no damage reported.",
-  kcsQuickShift: "Even champions need warm-up laps.",
-  url: "https://racingnews365.com/max-verstappen-causes-early-red-flag-at-barcelona-testing",
+    "Heavy rain severely disrupted the second day of private testing in Barcelona, forcing teams to alter their programs. Isack Hadjar’s late crash added drama, while Lewis Hamilton and Max Verstappen still managed limited but valuable laps.",
+  kcsQuickShift: "Tricky conditions for testing a new car, but it still teaches teams plenty. The real winners today were the engineers, not the lap charts.",
+  url: "https://timesofindia.indiatimes.com/sports/formula-one/news/f1-testing-wet-conditions-lead-to-isack-hadjar-crash-as-lewis-hamilton-and-max-verstappen-return-to-action/articleshow/127644973.cms",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },
   {
     slotId: "news3",
-  sourceLabel: "AP News",
-  title: "Secretive Barcelona shakedown launches new F1 era",
+  sourceLabel: "Times of India",
+  title: "Ferrari split running between Leclerc and Hamilton on Day 2",
   summary:
-    "Formula 1’s first 2026 shakedown began behind closed doors in Barcelona with no fans or media allowed. Teams focused purely on reliability as all ten new cars took their first official laps.",
-  kcsQuickShift: "Quiet start before the storm.",
-  url: "https://apnews.com/article/formula-1-barcelona-testing-2026-8a9928",
+    "Ferrari continued its early 2026 program by sharing Day 2 running between Charles Leclerc and Lewis Hamilton. The team gathered valuable wet- and dry-condition data as it works to understand the SF-26 under the new regulations.",
+  kcsQuickShift: "The rain is not stoping them that for sure",
+  url: "https://timesofindia.indiatimes.com/sports/formula-one/news/ferrari-begin-barcelona-testing-as-charles-leclerc-and-lewis-hamilton-share-wet-and-dry-running/articleshow/127645944.cms",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },
   {
     slotId: "news4",
-  sourceLabel: "Autosport",
-  title: "Mercedes quickest to hit the track in Barcelona",
+  sourceLabel: "The Guardian",
+  title: "Limited participation highlights early testing challenges",
   summary:
-    "Mercedes became one of the first teams to complete full installation runs, logging impressive mileage early in the test window. Engineers described the opening day as ‘encouraging but preliminary’.",
-  kcsQuickShift: "Early signs of structure returning.",
-  url: "https://www.autosport.com/f1/news/what-happened-behind-closed-doors-on-day-one-of-f1s-secretive-2026-shakedown/10793022/",
+    "Several teams scaled back their Barcelona programs as rain and late car readiness impacted running. The situation underlined how difficult the early phase of 2026 testing has been, with teams prioritizing reliability over performance.",
+  kcsQuickShift: "No Aston Martin yet, the car looks awesome hope to see it on the track soon",
+  url: "https://www.theguardian.com/sport/2026/jan/26/aston-martin-become-second-f1-team-to-miss-out-on-vital-testing-in-barcelona",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },
   {
    slotId: "news5",
-  sourceLabel: "Motorsport.com",
-  title: "Audi suffer technical issue during Barcelona testing",
+  sourceLabel: "F1i.com",
+  title: "Mercedes and McLaren sit out Day 2 of Barcelona testing amid wet conditions",
   summary:
-    "Audi’s opening Barcelona run was cut short by a technical problem that forced the car back into the garage. The team stressed that early testing is about discovery rather than performance.",
-  kcsQuickShift: "Better now than race weekend.",
-  url: "https://www.motorsport.com/f1/news/technical-issue-ended-audis-day-at-barcelona-f1-test/10793028/",
+    "With rain sweeping across the Circuit de Barcelona-Catalunya on Day 2 of pre-season testing, Mercedes chose not to run its car because wet conditions offered little useful data for understanding its new W17. McLaren also opted against taking to the track, joining several other teams in sitting out the session due to the deteriorating weather forecast.",
+  kcsQuickShift: "Come on what are they hiding, gamesmanship ?  ",
+  url: "https://f1i.com/news/558036-mercedes-and-haas-sit-out-tuesdays-running-in-barcelona.html",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },
   {
    slotId: "news6",
-  sourceLabel: "GPblog.nl",
-  title: "Eerste indrukken van F1-tests in Barcelona onder nieuwe 2026-regels",
+  sourceLabel: "Motorsport.com",
+  title: "Only Red Bull and Ferrari run as rain limits Day 2 action",
   summary:
-    "Tijdens de eerste besloten testdagen in Barcelona hebben teams hun nieuwe 2026-auto’s voor het eerst op de baan gebracht. Nederlandse media melden dat betrouwbaarheid en energiebeheer centraal stonden, terwijl coureurs vooral bezig waren met het leren van compleet nieuwe rijstijlen.",
-  kcsQuickShift: "New rules, new thinking -- this only the beginning",
-  url: "https://www.gpblog.com/nl/nieuws/eerste-f1-tests-barcelona-2026.html",
+    "Day 2 of Barcelona testing saw minimal on-track activity, with only Red Bull and Ferrari completing meaningful laps. Changing conditions and Isack Hadjar’s late crash capped a challenging day for teams gathering early 2026 data.",
+  kcsQuickShift: "They put in quite a few laps though",
+  url: "https://www.autoracing1.com/pl/470454/formula-1-news-report-on-day-2-of-the-2026-pre-season-testing-in-barcelona/",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   
@@ -78,34 +78,34 @@ export const newsSlots = [
 
   {
   slotId: "news7",
-  sourceLabel: "AS.com (Spain)",
-  title: "Ocon completes most laps on opening day in Barcelona",
+  sourceLabel: "Formula1.com",
+  title: "Teams focus on systems checks rather than lap times",
   summary:
-    "Esteban Ocon logged the highest lap count of the first test day, calling the new cars demanding but rewarding. The Frenchman said consistency, not speed, was the priority early on.",
-  kcsQuickShift: "Mileage is gold in testing.",
-  url: "https://as.com/motor/formula_1/ocon-lidera-las-vueltas-en-el-test-de-barcelona-n/",
+    "Formula 1’s official Day 2 debrief confirmed teams were prioritizing system checks over performance runs. With rain affecting schedules, early mileage was used mainly to understand how the 2026 cars behave under varied conditions.",
+  kcsQuickShift: "When only two teams are running, it tells you everything about the conditions. Day 2 was about survival, not speed.",
+  url: "https://www.formula1.com/en/latest/article/debrief-what-happened-on-day-2-of-the-barcelona-shakedown.5rUq28u5YSs8e090ilfAC4",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
 },
   {
    slotId: "news8",
-  sourceLabel: "Speedweek (Germany)",
-  title: "Multiple red flags disrupt Barcelona shakedown",
+  sourceLabel: "Racer",
+  title: "Verstappen quickest before rain halts progress",
   summary:
-    "German media reported three red flags across the opening day as teams worked through sensor and system issues. Despite interruptions, overall reliability was considered strong.",
-  kcsQuickShift: "Typical early-era growing pains.",
-  url: "https://www.speedweek.com/formel1/news/218765/Wintertest-Barcelona-Tag-1.html",
+    "Max Verstappen topped unofficial times early on Day 2 before rain swept across the circuit. Despite limited running, Red Bull and Ferrari both managed valuable data collection ahead of the Bahrain test.",
+  kcsQuickShift: "Even on limited running, Red Bull still finds the top. Same story, new rules — at least for now.",
+  url: "https://racer.com/2026/01/27/red-bull-fastest-again-on-second-day-of-barcelona-shakedown/",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },
   {
     slotId: "news9",
-  sourceLabel: "Motorsport Week",
-  title: "Drivers adapting quickly to lighter 2026 cars",
+  sourceLabel: "PlanetF1",
+  title: "Unofficial timings show Red Bull ahead on Day 2",
   summary:
-    "Several drivers reported improved agility compared to the final generation cars, despite increased system complexity. Early feedback suggests the new chassis direction may improve racing.",
-  kcsQuickShift: "Promising signs for wheel-to-wheel fights.",
-  url: "https://www.motorsportweek.com/2026/01/26/drivers-adapt-to-new-f1-2026-cars-in-barcelona/",
+    "Unofficial timing sheets placed Max Verstappen at the top on Day 2 of Barcelona testing. Ferrari’s Charles Leclerc and Lewis Hamilton followed closely, though teams stressed that lap times remain largely irrelevant at this stage.",
+  kcsQuickShift: "Lap times mean almost nothing this early, but we will still look and take it in.",
+  url: "https://www.planetf1.com/news/f1-results-2026-pre-season-testing-barcelona-day-2",
   imagePath: "/img/news/testingnews.jpg",
   dateLabel: ""
   },

@@ -68,12 +68,12 @@ export const nextRaceContent = {
     {
   id: "session2",
   label: "Session 2",
-  time: "",
+  time: "Day 2 results below",
   results: [
-    "",   // Max Verstappen
+    "q:19.580 27 laps",   // Max Verstappen
     "",  // Arvid Lindblad
-    "",   // Charles Leclerc
-    "",   // Lewis Hamilton
+    "+1.284 64 laps",   // Charles Leclerc
+    "+13.292 56 laps",   // Lewis Hamilton
     "",   // Lando Norris
     "",   // Oscar Piastri
     "",     // George Russell
@@ -84,7 +84,7 @@ export const nextRaceContent = {
     "",     // Franco Colapinto
     "",     // Esteban Ocon
     "",     // Oliver Bearman
-    "",     // Isack Hadjar
+    "+12.311 51 laps",     // Isack Hadjar
     "",     // Liam Lawson
     "",     // Alexander Albon
     "",     // Carlos Sainz

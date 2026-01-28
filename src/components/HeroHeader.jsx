@@ -6,7 +6,7 @@ export default function HeroHeader() {
     <div className="heroWrap" aria-label="KC's Worldwide F1 Update hero">
       <img
         className="heroImg"
-        src="/img/hero-worldwide.png"
+        src="/img/hero-worldwide10.png"
         alt="KC's Worldwide F1 Update"
       />
     </div>
