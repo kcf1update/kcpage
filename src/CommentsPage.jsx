@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -22,11 +21,13 @@ const containsLinkyStuff = (s) => {
 };
 
 // ✅ Netlify Function endpoint (works on Netlify + netlify dev)
-const COMMENTS_API = "/.netlify/functions/comments";
+// If you open the site on :3000 during dev, functions are actually on :8888 (netlify dev proxy).
+const COMMENTS_API =
+  process.env.NODE_ENV === "development" && window.location.port === "3000"
+    ? "http://localhost:8888/.netlify/functions/comments"
+    : "/.netlify/functions/comments";
 
 export default function CommentsPage() {
-  
-
   // ✅ comments now come from server
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ export default function CommentsPage() {
     try {
       setLoading(true);
       const res = await fetch(COMMENTS_API, { method: "GET" });
+      if (!res.ok) throw new Error(`GET failed: ${res.status}`);
       const data = await res.json();
       setComments(Array.isArray(data.comments) ? data.comments : []);
     } catch (e) {
@@ -80,6 +82,8 @@ export default function CommentsPage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
+
+    if (!res.ok) throw new Error(`POST failed: ${res.status}`);
 
     const data = await res.json();
 
