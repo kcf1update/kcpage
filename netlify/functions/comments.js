@@ -66,19 +66,16 @@ function encodeBase64(str) {
 }
 
 async function readCommentsFile({ owner, repo, branch, path, token }) {
-  // Try to read the file. If it doesn't exist, return empty list and no sha.
   try {
     const data = await ghRequest(
       `/repos/${owner}/${repo}/contents/${encodeURIComponent(path)}?ref=${encodeURIComponent(branch)}`,
       token
     );
 
-    // data.content is base64
     const raw = decodeBase64(data.content || "");
     const parsed = raw ? JSON.parse(raw) : [];
     return { comments: Array.isArray(parsed) ? parsed : [], sha: data.sha };
   } catch (e) {
-    // 404 means file not found — start fresh
     if (e.status === 404) return { comments: [], sha: null };
     throw e;
   }
@@ -94,7 +91,7 @@ async function writeCommentsFile({ owner, repo, branch, path, token, comments, s
     ...(sha ? { sha } : {}),
   };
 
-  const data = await ghRequest(
+  return ghRequest(
     `/repos/${owner}/${repo}/contents/${encodeURIComponent(path)}`,
     token,
     {
@@ -103,8 +100,39 @@ async function writeCommentsFile({ owner, repo, branch, path, token, comments, s
       body: JSON.stringify(body),
     }
   );
+}
 
-  return data;
+function makeId() {
+  return `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 7)}`;
+}
+
+// Recursively append a reply to a node with id === parentId
+function addReplyToTree(list, parentId, replyObj) {
+  let found = false;
+
+  const next = (list || []).map((n) => {
+    if (!n || typeof n !== "object") return n;
+
+    if (n.id === parentId) {
+      found = true;
+      const replies = Array.isArray(n.replies) ? n.replies : [];
+      return { ...n, replies: [...replies, replyObj] };
+    }
+
+    const childReplies = Array.isArray(n.replies) ? n.replies : [];
+    const updatedChildReplies = addReplyToTree(childReplies, parentId, replyObj);
+
+    // If children changed, update this node
+    if (updatedChildReplies !== childReplies) {
+      found = true;
+      return { ...n, replies: updatedChildReplies };
+    }
+
+    return n;
+  });
+
+  // If we never touched anything, return original list reference
+  return found ? next : list;
 }
 
 exports.handler = async (event) => {
@@ -116,13 +144,10 @@ exports.handler = async (event) => {
   }
 
   try {
-    // REQUIRED env vars
     const token = requireEnv("GITHUB_TOKEN");
     const owner = requireEnv("GITHUB_OWNER"); // kcf1update
     const repo = requireEnv("GITHUB_REPO");   // kcpage
     const branch = process.env.GITHUB_BRANCH || "main";
-
-    // Where we store the JSON file in your repo
     const path = process.env.COMMENTS_FILE_PATH || "data/comments.json";
 
     if (event.httpMethod === "GET") {
@@ -130,59 +155,80 @@ exports.handler = async (event) => {
       return json(200, headers, { ok: true, comments });
     }
 
-    if (event.httpMethod === "POST") {
-      console.log("COMMENTS POST RECEIVED:", event.body);
+    if (event.httpMethod !== "POST") {
+      return json(405, headers, { ok: false, error: "Method not allowed" });
+    }
 
-      let data = {};
-      try {
-        data = JSON.parse(event.body || "{}");
-      } catch {
-        console.log("COMMENTS JSON PARSE ERROR");
-        return json(400, headers, { ok: false, error: "Invalid JSON" });
-      }
+    console.log("COMMENTS POST RECEIVED:", event.body);
 
-      console.log("COMMENTS PARSED DATA:", data);
+    let data = {};
+    try {
+      data = JSON.parse(event.body || "{}");
+    } catch {
+      console.log("COMMENTS JSON PARSE ERROR");
+      return json(400, headers, { ok: false, error: "Invalid JSON" });
+    }
 
-      // Normalize fields to match your UI
-      const message = String(data.message || data.text || "").trim();
-      const name = String(data.name || data.author || "Anon").trim() || "Anon";
+    console.log("COMMENTS PARSED DATA:", data);
 
-      console.log("COMMENTS NORMALIZED:", { name, messageLength: message.length });
+    const action = String(data.action || "comment").trim().toLowerCase();
 
-      if (!message) {
-        return json(400, headers, { ok: false, error: "Message is required" });
-      }
+    // Normalize fields
+    const message = String(data.message || data.text || "").trim();
+    const name = String(data.name || data.author || "Anon").trim() || "Anon";
 
+    if (!message) {
+      return json(400, headers, { ok: false, error: "Message is required" });
+    }
+
+    // Read current
+    const { comments, sha } = await readCommentsFile({ owner, repo, branch, path, token });
+
+    // ---------- NEW TOP-LEVEL COMMENT ----------
+    if (action === "comment") {
       const newComment = {
-        id: data.id || `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 7)}`,
+        id: data.id || makeId(),
         name,
         message,
         createdAt: data.createdAt || new Date().toLocaleString(),
-        replies: Array.isArray(data.replies) ? data.replies : [],
+        replies: [], // do NOT accept client-provided replies
       };
 
-      console.log("COMMENTS NEW COMMENT:", {
-        id: newComment.id,
-        name: newComment.name,
-        createdAt: newComment.createdAt,
-        repliesCount: newComment.replies.length,
-      });
-
-      // Read current, append, write back (with sha for safe update)
-      const { comments, sha } = await readCommentsFile({ owner, repo, branch, path, token });
       const updated = [newComment, ...(comments || [])];
 
-      console.log("COMMENTS FILE READ:", { existingCount: (comments || []).length, hasSha: !!sha });
-      console.log("COMMENTS FILE WRITE ATTEMPT:", { updatedCount: updated.length, path, branch });
-
       await writeCommentsFile({ owner, repo, branch, path, token, comments: updated, sha });
-
-      console.log("COMMENTS FILE WRITE SUCCESS");
 
       return json(200, headers, { ok: true, comments: updated });
     }
 
-    return json(405, headers, { ok: false, error: "Method not allowed" });
+    // ---------- REPLY TO EXISTING COMMENT ----------
+    if (action === "reply") {
+      const parentId = String(data.parentId || "").trim();
+      if (!parentId) {
+        return json(400, headers, { ok: false, error: "parentId is required for reply" });
+      }
+
+      const replyObj = {
+        id: data.id || makeId(),
+        name,
+        message,
+        createdAt: data.createdAt || new Date().toLocaleString(),
+        replies: [], // allow nested replies later (same structure)
+      };
+
+      const updated = addReplyToTree(comments || [], parentId, replyObj);
+
+      // If parentId wasn't found, updated will be same reference as comments
+      if (updated === (comments || [])) {
+        return json(404, headers, { ok: false, error: "Parent comment not found" });
+      }
+
+      await writeCommentsFile({ owner, repo, branch, path, token, comments: updated, sha });
+
+      return json(200, headers, { ok: true, comments: updated });
+    }
+
+    return json(400, headers, { ok: false, error: `Unknown action: ${action}` });
   } catch (e) {
     console.error("comments function error:", e);
     return json(500, headers, {

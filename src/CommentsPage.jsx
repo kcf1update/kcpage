@@ -70,7 +70,7 @@ export default function CommentsPage() {
   const addRootComment = async (text) => {
     const payload = {
       // match what you tested in PowerShell: { name, message }
-      name: "Anon",
+      name: "KC",
       message: text,
       // optional extras; harmless if function ignores them
       id: uid(),
@@ -109,21 +109,12 @@ export default function CommentsPage() {
     setComments((prev) =>
       addReply(prev, parentId, {
         id: uid(),
-        author: "Anon",
+        author: "KC",
         text,
         createdAt: nowText(),
         replies: [],
       })
     );
-
-  const deleteNode = (list, id) =>
-    (list || [])
-      .filter((n) => n.id !== id)
-      .map((n) => ({ ...n, replies: deleteNode(n.replies || [], id) }));
-
-  const handleDelete = (id) => {
-    setComments((prev) => deleteNode(prev, id));
-  };
 
   // --- UI helpers (define BEFORE use) ------------------------------
   function AddBox({ onAdd }) {
@@ -176,30 +167,30 @@ export default function CommentsPage() {
     return (
       <div>
         {/* Beta notice */}
-        <div className="mb-3 rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-xs text-gray-200 backdrop-blur">
-          <div className="font-semibold">🚧 Beta note</div>
-          <div className="mt-1 text-gray-300">
+        <div className="mb-3 rounded-2xl border border-blue-200 bg-white px-4 py-3 text-xs text-blue-900 backdrop-blur">
+          <div className="font-semibold text-blue-900">🚧 Beta note</div>
+          <div className="mt-1 text-blue-700">
             This comments section is part of our public beta.
             To keep things clean and respectful, links are disabled and posting is limited.
             Comments may be cleared as we continue testing and improving the site.
           </div>
         </div>
-<p className="mb-2 text-sm font-medium text-cyan-200
-  drop-shadow-[0_0_14px_rgba(34,211,238,0.7)]">
-  Have your say on the latest F1 news — fans welcome.
-</p>
+
+        <p className="mb-2 text-sm font-medium text-blue-800">
+          Have your say on the latest F1 news — fans welcome.
+        </p>
 
         <div className="flex items-center gap-2">
           <input
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Write a comment…"
-            className="flex-1 rounded-full border border-white/20 bg-black/60 px-4 py-2 text-sm text-white placeholder:text-gray-400 backdrop-blur"
+            className="flex-1 rounded-full border border-blue-300 bg-white px-4 py-2 text-sm text-blue-900 placeholder:text-blue-400 backdrop-blur"
           />
           <button
             type="button"
             onClick={tryPost}
-            className="rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 transition"
+            className="rounded-full bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition"
             title={cooldownLabel}
           >
             Post
@@ -207,21 +198,21 @@ export default function CommentsPage() {
         </div>
 
         <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
-          <label className="inline-flex items-center gap-2 text-xs text-gray-200">
+          <label className="inline-flex items-center gap-2 text-xs text-blue-800">
             <input
               type="checkbox"
               checked={isHuman}
               onChange={(e) => setIsHuman(e.target.checked)}
-              className="h-4 w-4 accent-red-500"
+              className="h-4 w-4 accent-blue-700"
             />
             I’m human (beta)
           </label>
 
-          <div className="text-[11px] text-gray-400">{cooldownLabel}</div>
+          <div className="text-[11px] text-blue-600">{cooldownLabel}</div>
         </div>
 
         {error ? (
-          <div className="mt-2 text-xs text-red-200">{error}</div>
+          <div className="mt-2 text-xs text-red-600">{error}</div>
         ) : null}
       </div>
     );
@@ -251,8 +242,8 @@ export default function CommentsPage() {
 
     return (
       <li className="mb-4">
-        <div className="mb-3 rounded-2xl border border-orange-700/60 bg-orange-900/80 p-3 text-sm text-white shadow-[0_0_12px_rgba(255,140,0,0.35)] backdrop-blur">
-          <div className="text-[11px] text-orange-100/80">
+        <div className="mb-3 rounded-2xl border border-blue-200 bg-white p-3 text-sm text-blue-900 shadow-[0_0_12px_rgba(30,58,138,0.12)] backdrop-blur">
+          <div className="text-[11px] text-blue-700">
             {node.author || node.name || "Anon"} • {node.createdAt || ""}
           </div>
 
@@ -263,31 +254,23 @@ export default function CommentsPage() {
               value={reply}
               onChange={(e) => setReply(e.target.value)}
               placeholder="Reply…"
-              className="min-w-[160px] flex-1 rounded-full border border-white/40 bg-orange-800/80 px-3 py-1 text-xs text-white placeholder:text-white/70"
+              className="min-w-[160px] flex-1 rounded-full border border-blue-300 bg-white px-3 py-1 text-xs text-blue-900 placeholder:text-blue-400"
             />
 
             <button
               type="button"
               onClick={tryReply}
-              className="rounded-full bg-red-600 px-3 py-1 text-xs font-semibold text-white hover:bg-red-700 transition"
+              className="rounded-full bg-blue-700 px-3 py-1 text-xs font-semibold text-white hover:bg-blue-800 transition"
             >
               Reply
             </button>
-
-            <button
-              type="button"
-              onClick={() => handleDelete(node.id)}
-              className="text-xs underline text-gray-300 hover:text-white transition"
-            >
-              Delete
-            </button>
           </div>
 
-          {replyError ? <div className="mt-2 text-xs text-red-200">{replyError}</div> : null}
+          {replyError ? <div className="mt-2 text-xs text-red-600">{replyError}</div> : null}
         </div>
 
         {node.replies?.length ? (
-          <ul className="ml-4 mt-2 border-l border-white/10 pl-3">
+          <ul className="ml-4 mt-2 border-l border-blue-200 pl-3">
             {node.replies.map((r) => (
               <Comment key={r.id} node={r} />
             ))}
@@ -319,7 +302,7 @@ export default function CommentsPage() {
             right={
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(239,68,68,0.55)] hover:bg-red-700 transition"
+                className="inline-flex items-center gap-2 rounded-full border border-blue-700 bg-blue-700 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(30,64,175,0.45)] hover:bg-blue-800 transition"
               >
                 <span className="text-lg leading-none">&larr;</span>
                 <span>Back to home</span>
@@ -332,19 +315,19 @@ export default function CommentsPage() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 items-start">
           <main className="md:col-span-9 lg:col-span-10">
-            <section className="rounded-3xl border border-white/10 bg-black/60 p-4 backdrop-blur">
+            <section className="rounded-3xl border border-blue-200 bg-white p-4 backdrop-blur text-blue-900">
               <AddBox onAdd={addRootComment} />
 
               <ul className="mt-4">
                 {loading ? (
-                  <li className="text-sm text-gray-400">Loading comments…</li>
+                  <li className="text-sm text-blue-600">Loading comments…</li>
                 ) : (
                   <>
                     {comments.map((c) => (
                       <Comment key={c.id || c._id || `${c.name}-${c.createdAt}`} node={c} />
                     ))}
                     {comments.length === 0 && (
-                      <li className="text-sm text-gray-400">No comments yet.</li>
+                      <li className="text-sm text-blue-600">No comments yet.</li>
                     )}
                   </>
                 )}
