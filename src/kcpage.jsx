@@ -16,7 +16,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // 2) Paste your endpoint URL below
 // Example: https://formspree.io/f/abcdwxyz
 // =======================================================
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbddyppn";
+
 
 // Simple glassy card helper for the lower sections
 function GlassyCard({ title, subtitle, highlight = "none", children, className = "" }) {
