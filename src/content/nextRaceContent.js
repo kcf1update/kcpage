@@ -97,27 +97,27 @@ export const nextRaceContent = {
     {
   id: "session3",
   label: "Session 3",
-  time: "",
+  time: "Day 3 results below",
   results: [
     "",   // Max Verstappen
-    "",  // Arvid Lindblad
+    "+2.058 120 laps",  // Arvid Lindblad
     "",   // Charles Leclerc
     "",   // Lewis Hamilton
-    "",   // Lando Norris
+    "+0.945 76 laps",   // Lando Norris
     "",   // Oscar Piastri
-    "",     // George Russell
-    "",     // Kimi Antonelli
+    "1.17.362 92 laps",     // George Russell
+    "1.17.362 91 laps",     // Kimi Antonelli
     "",     // Lance Stroll
     "",     // Fernando Alonso
-    "",     // Pierre Gasly
-    "",     // Franco Colapinto
+    "+1.935 67 laps",     // Pierre Gasly
+    "+1.788 58 laps",     // Franco Colapinto
     "",     // Esteban Ocon
-    "",     // Oliver Bearman
+    "+1.952 42 laps",     // Oliver Bearman
     "",     // Isack Hadjar
     "",     // Liam Lawson
     "",     // Alexander Albon
     "",     // Carlos Sainz
-    "",     // Nico Hülkenberg
+    "	+3.648 68 laps",     // Nico Hülkenberg
     "",     // Gabriel Bortoleto
     "", //Valtteri Bottas
     "",//Sergio Perez
@@ -156,8 +156,6 @@ export const nextRaceContent = {
 
   ],
 
-  weather: `Example:
-Fri: 36°C, partly cloudy
-Sat: 24°C, chance of showers
-Sun: 23°C, dry race expected`,
+  weather: `Dry and sunny
+The weather for day 4 of F1 testing in Barcelona is expected to be dry and sunny, with temperatures reaching a high of 15 degrees Celsius. There is currently no chance of rain, and wind speeds will be moderate, making it an ideal day for teams to run on the track. `,
 };

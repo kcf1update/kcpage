@@ -1,6 +1,6 @@
 // src/KCpage.jsx
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; 
+import React from "react";
+import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import PageNav from "./components/PageNav";
@@ -90,97 +90,6 @@ function safeLocalImagePath(imagePath) {
   return imagePath;
 }
 
-// ✅ Small, clean feedback form that emails you via Formspree
-function FeedbackForm() {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [pageUrl, setPageUrl] = useState("");
-  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
-
-  useEffect(() => {
-    try {
-      setPageUrl(window.location.href);
-    } catch {
-      setPageUrl("");
-    }
-  }, []);
-
-  const onSubmit = async (e) => {
-    e.preventDefault();
-
-    const endpoint = (FORMSPREE_ENDPOINT || "").trim();
-    if (!endpoint || endpoint.includes("PASTE_YOUR_FORMSPREE_URL_HERE")) {
-      setStatus("error");
-      return;
-    }
-
-    const trimmed = message.trim();
-    if (!trimmed) return;
-
-    setStatus("sending");
-
-    try {
-      const res = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          name: name.trim() || "Anonymous",
-          message: trimmed,
-          page: pageUrl,
-          source: "KC Beta Feedback (Home)",
-        }),
-      });
-
-      if (res.ok) {
-        setStatus("sent");
-        setName("");
-        setMessage("");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  };
-
-  return (
-    <div className="flex flex-col items-start gap-2">
-      <form onSubmit={onSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name (optional)"
-          className="w-full sm:w-44 rounded-full border border-yellow-300/40 bg-black/40 px-4 py-2 text-sm text-white placeholder:text-white/60 outline-none focus:border-yellow-300/70"
-        />
-        <input
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Your feedback…"
-          className="w-full sm:w-72 md:w-96 rounded-full border border-yellow-300/40 bg-black/40 px-4 py-2 text-sm text-white placeholder:text-white/60 outline-none focus:border-yellow-300/70"
-        />
-        <button
-          type="submit"
-          disabled={status === "sending"}
-          className="inline-flex items-center justify-center gap-2 rounded-full border border-yellow-300/60 bg-yellow-300/15 px-4 py-2 text-sm font-semibold text-yellow-200 hover:bg-yellow-300/25 transition disabled:opacity-60 disabled:cursor-not-allowed"
-          title="Sends feedback to KC via Formspree"
-        >
-          {status === "sending" ? "Sending…" : "Send feedback"}
-          <span className="text-base leading-none">→</span>
-        </button>
-      </form>
-
-      {status === "sent" ? <div className="text-xs text-emerald-200">✅ Thanks — sent to KC.</div> : null}
-
-      {status === "error" ? (
-        <div className="text-xs text-red-200">
-          ⚠️ Feedback isn’t configured yet (or the service is blocked). KC: paste your Formspree URL into{" "}
-          <span className="font-mono">FORMSPREE_ENDPOINT</span>.
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
 export default function KCpage() {
   // ✅ Stage A: Featured content is file-driven (not localStorage)
   const featuredNews = Array.isArray(newsSlots) ? newsSlots.slice(0, 3) : [];
@@ -200,6 +109,22 @@ export default function KCpage() {
 
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
+        {/* Update cadence note */}
+<div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
+  <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
+  Updated daily • Breaking F1 news added throughout the day • Atlantic Time
+  <img
+  src="/img/icons/flag-ca.png"
+  alt="Canada"
+  className="inline-block ml-1 w-4 h-4 align-text-bottom"
+/>
+</p>
+
+</div>
+
+
+
+
         {/* Nav + language selector in one row */}
         <div className="flex items-center justify-between gap-4">
           <PageNav />
@@ -268,8 +193,6 @@ export default function KCpage() {
             </div>
 
             <div className="flex items-center gap-2">
-              <FeedbackForm />
-
               <a
                 href="https://www.youtube.com/@KevinChisholm-z6b"
                 target="_blank"
