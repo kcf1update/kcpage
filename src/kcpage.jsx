@@ -17,7 +17,6 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Example: https://formspree.io/f/abcdwxyz
 // =======================================================
 
-
 // Simple glassy card helper for the lower sections
 function GlassyCard({ title, subtitle, highlight = "none", children, className = "" }) {
   const highlightRing = {
@@ -93,7 +92,8 @@ function safeLocalImagePath(imagePath) {
 export default function KCpage() {
   // ✅ Stage A: Featured content is file-driven (not localStorage)
   const featuredNews = Array.isArray(newsSlots) ? newsSlots.slice(0, 3) : [];
-  const featuredVideo = Array.isArray(youtubeSlots) && youtubeSlots.length ? youtubeSlots[0] : null;
+  const featuredVideo =
+    Array.isArray(youtubeSlots) && youtubeSlots.length ? youtubeSlots[0] : null;
 
   return (
     <div className="relative min-h-screen text-white">
@@ -110,20 +110,16 @@ export default function KCpage() {
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
         {/* Update cadence note */}
-<div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
-  <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
-  Updated daily • Breaking F1 news added throughout the day • Atlantic Time
-  <img
-  src="/img/icons/flag-ca.png"
-  alt="Canada"
-  className="inline-block ml-1 w-4 h-4 align-text-bottom"
-/>
-</p>
-
-</div>
-
-
-
+        <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
+          <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
+            Updated daily • Breaking F1 news added throughout the day • Atlantic Time
+            <img
+              src="/img/icons/flag-ca.png"
+              alt="Canada"
+              className="inline-block ml-1 w-4 h-4 align-text-bottom"
+            />
+          </p>
+        </div>
 
         {/* Nav + language selector in one row */}
         <div className="flex items-center justify-between gap-4">
@@ -258,16 +254,31 @@ export default function KCpage() {
                       </div>
                     ) : null}
 
-                    {href ? (
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                    {/* ACTIONS ROW (Read + Comment + optional date) */}
+                    <div className="flex items-center gap-3 pt-1">
+                      {href ? (
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                        >
+                          Read full article →
+                        </a>
+                      ) : null}
+
+                      <Link
+                        to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                        title="Go to Comments page"
                       >
-                        Read full article →
-                      </a>
-                    ) : null}
+                        💬 Comment and join the discussion
+                      </Link>
+
+                      {item?.dateLabel ? (
+                        <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+                      ) : null}
+                    </div>
                   </div>
                 </GlassyCard>
               );
@@ -301,6 +312,25 @@ export default function KCpage() {
                 {featuredVideo?.description ? (
                   <p className="text-sm text-slate-300 mt-2">{featuredVideo.description}</p>
                 ) : null}
+
+                {/* NEW: Comment link + More videos link */}
+                <div className="mt-3 flex items-center gap-3">
+                  <Link
+                    to={`/comments?ref=${encodeURIComponent(featuredVideo?.slotId || "youtube")}`}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                    title="Go to Comments page"
+                  >
+                    💬 Comment and join the discussion
+                  </Link>
+
+                  <Link
+                    to="/youtube"
+                    className="inline-flex items-center gap-2 rounded-full border border-red-400/40 bg-red-400/10 px-4 py-2 text-sm font-semibold text-red-200 hover:bg-red-400/15 transition"
+                    title="See all videos"
+                  >
+                    More videos <span aria-hidden>↗</span>
+                  </Link>
+                </div>
 
                 {featuredVideo?.ctaUrl ? (
                   <a
@@ -336,7 +366,11 @@ export default function KCpage() {
             </GlassyCard>
 
             {/* Small ad card */}
-            <GlassyCard highlight="yellow" title="Place Your Ad Here" subtitle="Smaller ad block (yellow highlight).">
+            <GlassyCard
+              highlight="yellow"
+              title="Place Your Ad Here"
+              subtitle="Smaller ad block (yellow highlight)."
+            >
               <p className="text-xs sm:text-sm text-yellow-100/90">
                 Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
               </p>

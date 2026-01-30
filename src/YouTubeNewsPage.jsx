@@ -132,6 +132,8 @@ export default function YouTubeNewsPage() {
             const description = slot?.description || "";
             const sponsor = !!slot?.isSponsor;
 
+            const commentRef = slot?.slotId ? String(slot.slotId) : `video-${idx + 1}`;
+
             return (
               <article
                 key={slot?.slotId || `${idx}`}
@@ -188,6 +190,15 @@ export default function YouTubeNewsPage() {
                       {slot?.ctaLabel || "Open link"} <span aria-hidden>↗</span>
                     </a>
                   ) : null}
+
+                  {/* NEW: Comments link */}
+                  <Link
+                    to={`/comments?ref=${encodeURIComponent(commentRef)}`}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                    title="Go to Comments page"
+                  >
+                    💬 Comment and join the discussion
+                  </Link>
                 </div>
               </article>
             );

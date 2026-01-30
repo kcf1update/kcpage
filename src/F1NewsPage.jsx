@@ -162,26 +162,37 @@ export default function F1NewsPage() {
 
 
                   <div className="pt-2 flex items-center justify-between gap-3">
-                    {href ? (
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-300/15 transition"
-                      >
-                        Read article
-                        <span className="text-cyan-200/80">&rarr;</span>
-                      </a>
-                    ) : (
-                      <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/40">
-                        Add a url in newsSlots.js
-                      </span>
-                    )}
+  <div className="flex items-center gap-2">
+    {href ? (
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-300/15 transition"
+      >
+        Read article
+        <span className="text-cyan-200/80">&rarr;</span>
+      </a>
+    ) : (
+      <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/40">
+        Add a url in newsSlots.js
+      </span>
+    )}
 
-                    {item.dateLabel ? (
-                      <span className="text-xs text-white/45">{item.dateLabel}</span>
-                    ) : null}
-                  </div>
+    <Link
+      to={`/comments?ref=${encodeURIComponent(item.slotId || "")}`}
+      className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+      title="Go to Comments page"
+    >
+      💬 Comment and join the discussion
+    </Link>
+  </div>
+
+  {item.dateLabel ? (
+    <span className="text-xs text-white/45">{item.dateLabel}</span>
+  ) : null}
+</div>
+
                 </div>
               </article>
             );
