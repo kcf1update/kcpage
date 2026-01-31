@@ -127,29 +127,29 @@ export const nextRaceContent = {
     {
   id: "session4",
   label: "Session 4",
-  time: "Day 4 results below",
+  time: "That's a wrap day 5 results!",
   results: [
-    "",   // Max Verstappen
+    "1:17.586 118 laps",   // Max Verstappen
     "1:18.451 47 laps",  // Arvid Lindblad
-    "1:18.223 89 laps",   // Charles Leclerc
-    "1:18.654 85 laps",   // Lewis Hamilton
-    "",   // Lando Norris
-    "1:18.419 48 laps",   // Oscar Piastri
+    "1:16.653 78 laps",   // Charles Leclerc
+    "	1:16.348 63 laps",   // Lewis Hamilton
+    "1:16.594 83 laps",   // Lando Norris
+    "1:17.446 80 laps",   // Oscar Piastri
     "1:16.445 77 laps",     // George Russell
     "1:17.081 90 laps",     // Kimi Antonelli
     "1:46.404 4 laps",     // Lance Stroll
-    "",     // Fernando Alonso
-    "",     // Pierre Gasly
+    "1:20.795 49 laps",     // Fernando Alonso
+    "1:17.707 160 laps",     // Pierre Gasly
     "",     // Franco Colapinto
-    "",     // Esteban Ocon
-    "",     // Oliver Bearman
+    "1:18.393 85 laps",     // Esteban Ocon
+    "1:18.423 106 laps",     // Oliver Bearman
     "",     // Isack Hadjar
     "1:18.840 64 laps",     // Liam Lawson
     "",     // Alexander Albon
     "",     // Carlos Sainz
-    "",     // Nico Hülkenberg
-    "",     // Gabriel Bortoleto
-    "", //Valtteri Bottas
+    "1:19.870 laps 78 laps",     // Nico Hülkenberg
+    "1:20.179 66 laps",     // Gabriel Bortoleto
+    "1:20.920 54 laps", //Valtteri Bottas
     "1:21.024 66 laps",//Sergio Perez
   ],
 },
