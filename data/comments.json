@@ -11,6 +11,14 @@
     "name": "Anon",
     "message": "test test test test test",
     "createdAt": "1/28/2026, 9:06:43 PM",
-    "replies": []
+    "replies": [
+      {
+        "id": "ml3w2mv9l3xoy",
+        "name": "KC",
+        "message": "testi9ng reply to make sure this is owrking",
+        "createdAt": "2/1/2026, 11:21:48 AM",
+        "replies": []
+      }
+    ]
   }
 ]
