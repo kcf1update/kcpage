@@ -4,6 +4,14 @@
     "name": "KC",
     "message": "Test post for 02/01/2026",
     "createdAt": "01/02/2026, 14:33:25",
-    "replies": []
+    "replies": [
+      {
+        "id": "ml42xmfey1cw3",
+        "name": "KC",
+        "message": "Yes, we are good to go for posts and replys",
+        "createdAt": "01/02/2026, 14:33:51",
+        "replies": []
+      }
+    ]
   }
 ]
