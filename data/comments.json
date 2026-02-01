@@ -4,7 +4,15 @@
     "name": "KC",
     "message": "post this is working I hope",
     "createdAt": "2/1/2026, 12:42:28 PM",
-    "replies": []
+    "replies": [
+      {
+        "id": "ml3yyw5nasun2",
+        "name": "KC",
+        "message": "yep it really works",
+        "createdAt": "2/1/2026, 12:42:52 PM",
+        "replies": []
+      }
+    ]
   },
   {
     "id": "ml3wxw54c1ofr",
