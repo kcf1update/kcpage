@@ -7,97 +7,115 @@
 
 export const newsSlots = [
   {
-    slotId: "news1",
-sourceLabel: "Autosport (UK)",
-title: "What happened on Day Five of F1’s secretive 2026 shakedown",
-summary: "Autosport’s coverage of the final Barcelona test day highlights focused work on race simulations, longer runs and reliability evaluations as teams wrapped up behind closed doors. Mercedes continued strong mileage through the session, while Ferrari and Red Bull logged consistent laps evaluating new components and tyre wear. The tight testing schedule limited headline-grabbing times, but engineers gained valuable data on balance, brake performance and energy recovery systems ahead of Bahrain. ([autosport.com](https://www.autosport.com/f1/news/what-happened-on-day-five-of-f1s-secretive-2026-shakedown/10794172/))",
-kcsQuickShift: "By Day 5, the stopwatch matters less than understanding the car over distance — that’s where races are won or lost. ([autosport.com](https://www.autosport.com/f1/news/what-happened-on-day-five-of-f1s-secretive-2026-shakedown/10794172/))",
-url: "https://www.autosport.com/f1/news/what-happened-on-day-five-of-f1s-secretive-2026-shakedown/10794172/",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+    sslotId: "news1",
+  sourceLabel: "ESPN F1",
+  title: "What We Know — and Don’t — After the 2026 Barcelona Shakedown",
+  summary:
+    "The first week of 2026 shakedown running in Barcelona offered early clues about car behaviour under the new regulations, but also left major questions unanswered. Teams focused on reliability, cooling systems and energy deployment mapping rather than outright performance, with lap times considered largely irrelevant behind closed doors.",
+  kcsQuickShift:
+    "KC Quick Shift: This week wasn’t about lap time — it was about finding problems before Bahrain. Anyone showing speed now is hiding something.",
+  url: "https://www.espn.com/racing/f1/story/_/id/47780937/what-know-dont-f1-2026-barcelona-shakedown-test",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   },
   {
-  slotId: "news2",
-sourceLabel: "PlanetF1.com (UK)",
-title: "F1 Testing LIVE: Day 5 in Barcelona as it happened",
-summary: "PlanetF1’s live coverage of Day 5 at the Barcelona shakedown saw teams use their final running to complete programmes, assess reliability and validate long runs. Drivers from Ferrari, McLaren, Alpine, Haas and Cadillac circulated through the morning and afternoon sessions, with mid-week setup work giving way to data gathering on aero balance and tyre behaviour. The behind-closed-doors final day offered key insights into how the new 2026 cars manage longer stints ahead of official testing in Bahrain. :contentReference[oaicite:1]{index=1}",
-kcsQuickShift: "Day 5 was about cranking out mileage and collecting usable lap data — not flashy headlines, just real prep for Bahrain. :contentReference[oaicite:2]{index=2}",
-url: "https://www.planetf1.com/news/f1-testing-live-2026-updates-day-five-barcelona?utm_source=chatgpt.com",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+    slotId: "news13",
+    sourceLabel: "F1Oversteer.com",
+    title: "Inside Williams’ Factory Reaction to Missing Barcelona Shakedown",
+    summary:
+      "Williams Racing chose to skip the 2026 Barcelona shakedown as delays in the FW48 build programme meant their car wasn’t ready for track running.",
+    kcsQuickShift:
+      "KC Quick Shift: Regardless of the reasons, it’s still shocking they weren’t there.",
+    url: "https://www.f1oversteer.com/news/how-williams-staff-reacted-in-the-factory-to-real-reason-theyre-missing-barcelona-shakedown-test/",
+    imagePath: "/img/news/testingnews.jpg",
+    dateLabel: "Feb 1, 2026",
   },
   {
     slotId: "news3",
-sourceLabel: "News.GP (Global)",
-title: "Barcelona shakedown Day 5: Hamilton quickest as Alonso completes first proper AMR26 running",
-summary: "On the final day of the Barcelona shakedown, Lewis Hamilton posted the fastest lap for Ferrari late in the session while Fernando Alonso completed his first substantial running in the Aston Martin AMR26. McLaren ran consistently throughout the day, with Lando Norris setting competitive times as teams balanced pace work with reliability programmes. Other outfits such as Red Bull, Alpine and Audi continued their long-run programmes, gathering key data for energy management and tyre performance ahead of Bahrain testing. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift: "Day 5 fuses two themes — headline lap times and real durability work, putting cars through their paces before the official pre-season begins. :contentReference[oaicite:1]{index=1}",
-url: "https://www.news.gp/en/barcelona-shakedown-day-5-norris-quickest-as-alonso-completes-first-proper-amr26-running",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+  sourceLabel: "Sky Sports F1",
+  title: "Fastest Times and Most Laps Logged During 2026 Shakedown",
+  summary:
+    "Data from the Barcelona shakedown shows wide variation in mileage between teams, with some prioritising long runs while others limited track time due to technical checks. Driver rotation played a major role in how programmes were executed.",
+  kcsQuickShift:
+    "KC Quick Shift: Mileage matters more than pace right now. Teams that ran quietly all week probably learned the most.",
+  url: "https://www.skysports.com/f1/news/12433/13501173/f1-pre-season-testing-2026-fastest-times-most-laps-driver-line-ups-for-five-day-barcelona-shakedown-event",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   },
   {
    slotId: "news4",
-  sourceLabel: "The Independent",
-  title: "Hamilton returns to action as Barcelona testing intensifies",
-  summary: "Lewis Hamilton resumed full running duties as teams entered the most productive phase of testing. Ferrari remained focused on consistency rather than lap-time rankings.",
-  kcsQuickShift: "Testing form fades — confidence doesn’t.",
-  url: "https://www.independent.co.uk/f1/f1-testing-2026-car-live-updates-schedule-times-stream-barcelona-b2909926.html",
+  sourceLabel: "Motorsport.com",
+  title: "Drivers Begin Adapting to New 2026 Energy Deployment Systems",
+  summary:
+    "Several drivers reported major changes in braking feel and throttle response as the new 2026 hybrid systems were trialled during shakedown running. Engineers focused heavily on energy harvesting behaviour under race-style conditions.",
+  kcsQuickShift:
+    "KC Quick Shift: Drivers aren’t just driving anymore — they’re managing power every corner. The smart ones will shine in 2026.",
+  url: "https://www.motorsport.com/f1/live-text/f1-barcelona-pre-season-testing-live-commentary-day-5/1126272/",
   imagePath: "/img/news/testingnews.jpg",
-  dateLabel: "Jan 29, 2026"
+  dateLabel: "Feb 1, 2026"
   },
   {
    slotId: "news5",
-sourceLabel: "Sky Sports F1 (UK)",
-title: "Hamilton tops Barcelona shakedown as Ferrari, Red Bull & McLaren run heavy mileage",
-summary: "Lewis Hamilton set the fastest time on the final day of the Barcelona shakedown, ending the behind-closed-doors five-day test on a high note for Ferrari. Teams such as Ferrari, McLaren and Red Bull all completed over 100 laps, focusing on long-run programs and reliability as the private test concluded, while Mercedes completed the most overall mileage for the week. The final sessions saw steady running from Aston Martin, Haas, Alpine, Cadillac, and Audi as they gathered data ahead of the official pre-season tests. :contentReference[oaicite:1]{index=1}",
-kcsQuickShift: "Day 5 pace and consistency mattered more than headlines — that’s the story you build on for Bahrain. :contentReference[oaicite:2]{index=2}",
-url: "https://www.skysports.com/f1/news/12433/13500989/f1-testing-lewis-hamilton-sets-barcelona-shakedown-week-pace-as-ferrari-red-bull-mclaren-run-long?utm_source=chatgpt.com",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+  sourceLabel: "AutoRacing1",
+  title: "Early 2026 Favourites Begin to Emerge After Shakedown Week",
+  summary:
+    "While teams insist it is too early to judge competitiveness, paddock insiders suggest a small group may have adapted quicker to the new aerodynamic and power unit rules. Early balance confidence stood out more than raw speed.",
+  kcsQuickShift:
+    "KC Quick Shift: Nobody wins testing — but some teams definitely lose it. Early confidence matters.",
+  url: "https://www.autoracing1.com/pl/470693/formula-1-news-early-2026-favorites-emerge-after-barcelona-test/",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   },
   {
-   slotId: "news6",
-sourceLabel: "Grande Prêmio (Brazil)",
-title: "Hamilton lidera quinto dia de testes em Barcelona com simulações de corrida intensas",
-summary: "On the fifth and final day of pre-season testing at Barcelona, Lewis Hamilton set the fastest time late in the session, underlining Ferrari’s strong performance. Alongside Hamilton’s pace, teams completed extensive race simulations and long-run programs as they gathered crucial data ahead of the Bahrain test and the season opener. Lando Norris and Charles Leclerc also posted competitive times, with McLaren and Ferrari running consistent mileage throughout the day. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift: "Day 5 was about pace *and* prep — fastest laps met race-distance work in the final shakedown. :contentReference[oaicite:1]{index=1}",
-url: "https://www.grandepremio.com.br/f1/noticias/lewis-hamilton-acende-esperanca-ferrari-lidera-ultimo-dia-testes-f1-barcelona/",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+   slotId: "news7",
+  sourceLabel: "GrandPrix247",
+  title: "Teams and Drivers Deliver Final Reports After Shakedown",
+  summary:
+    "Post-test comments from drivers and team principals focused heavily on reliability and system understanding rather than competitiveness, with most admitting the new cars still feel unfamiliar at the limit.",
+  kcsQuickShift:
+    "KC Quick Shift: If drivers say the car feels strange, believe them. These cars look completely different, do you agree?",
+  url: "https://www.grandprix247.com/formula-1-news/formula-1-teams-and-drivers-report-from-barcelona-shakedown-after-day-5/",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
-   slotId: "news7",
-  sourceLabel: "GrandPrix247",
-  title: "Drivers reflect on demanding Day 4 running",
-  summary: "Several drivers described Day 4 as physically demanding due to extended stints and experimental setups. Feedback focused heavily on braking stability and energy harvesting.",
-  kcsQuickShift: "When drivers talk less about speed, you know development is deep.",
-  url: "https://www.grandprix247.com/formula-1-news/formula-1-teams-and-drivers-report-from-barcelona-shakedown-after-day-4/",
+   slotId: "news8",
+  sourceLabel: "Times of India",
+  title: "Which Driver Logged the Most Laps During Barcelona Shakedown?",
+  summary:
+    "Lap-count data revealed significant differences in programme focus across teams, with some drivers exceeding expectations in total mileage while others were limited by precautionary system checks.",
+  kcsQuickShift:
+    "KC Quick Shift: The lap leader isn’t always the fastest — but they’re often the most prepared.",
+  url: "https://timesofindia.indiatimes.com/sports/formula-one/news/barcelona-f1-testing-which-driver-logged-the-most-laps-during-pre-season-running/articleshow/127827995.cms",
   imagePath: "/img/news/testingnews.jpg",
-  dateLabel: "Jan 29, 2026"
+  dateLabel: "Feb 1, 2026"
 },
   {
-   slotId: "news8",
-sourceLabel: "AS-web.jp (Japan)",
-title: "アロンソがアストンマーティンで初走行、最終日は信頼性と走行距離重視",
-summary: "On the fifth and final day of F1 testing in Barcelona, Aston Martin brought its new AMR26 to the track, giving Fernando Alonso his first full run in the car as teams focused on durability and mileage. The session saw consistent running across several teams with data collection taking precedence over outright lap times, as outfits prepared for the season opener with emphasis on system checks and long runs.",
-kcsQuickShift: "For Yuki fans",
-url: "https://www.as-web.jp/f1/1064325",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 30, 2026"
+   slotId: "news9",
+  sourceLabel: "Motorsport.com (NL)",
+  title: "Lowdon: Cadillac Already Benefiting from Pérez & Bottas Experience",
+  summary:
+    "Volgens teambaas Graeme Lowdon profiteert Cadillac tijdens de eerste shakedownruns al duidelijk van de ervaring van Sergio Pérez en Valtteri Bottas. De twee routiniers helpen het nieuwe team met structuur, duidelijke feedback en het sneller begrijpen van de complexe 2026-auto, waardoor het ontwikkelingsproces in een vroeg stadium wordt versneld.",
+  kcsQuickShift:
+    "KC Quick Shift: Experience matters. As an F1 fan, I hope this team works out for Perez and Bottas,",
+  url: "https://nl.motorsport.com/f1/news/graeme-lowdon-cadillac-profiteert-ervaring-sergio-perez-valtteri-bottas/10794214/",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   },
   {
-   slotId: "news9",
-sourceLabel: "The Guardian (UK)",
-title: "Aston Martin miss part of Barcelona testing with delayed AMR26 debut",
-summary: "Aston Martin became the second team to miss a chunk of the Barcelona test, confirming the new AMR26 car would not run until Thursday at the earliest. Williams had already sat out the event entirely, and the Silverstone squad’s reduced running leaves Fernando Alonso and Lance Stroll with only two days on track before the shakedown concluded. The delay adds pressure for the team to catch up on race-distance simulations and reliability checks ahead of Bahrain and the season opener. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift: "Missing valuable miles on Day 5 isn’t a headline — it’s a hole you have to fill in Bahrain. :contentReference[oaicite:1]{index=1}",
-url: "https://www.theguardian.com/sport/2026/jan/26/aston-martin-become-second-f1-team-to-miss-out-on-vital-testing-in-barcelona?utm_source=chatgpt.com",
-imagePath: "/img/news/testingnews.jpg",
-dateLabel: "Jan 26, 2026"
+   slotId: "news10",
+  sourceLabel: "Reuters",
+  title: "Gasly Balances Life Beyond F1 as 2026 Season Approaches",
+  summary:
+    "Pierre Gasly discussed balancing off-track ventures while preparing for the biggest regulation shift of his career, stressing that focus remains firmly on mastering the new generation of Formula 1 cars.",
+  kcsQuickShift:
+    "KC Quick Shift: New era, new mindset.",
+  url: "https://www.reuters.com/sports/formula1/more-life-than-f1-gasly-balances-driving-with-padel-motogp-ambitions-2026-02-01/",
+  imagePath: "/img/news/testingnews.jpg",
+  dateLabel: "Feb 1, 2026"
   },
 ];

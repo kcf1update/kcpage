@@ -29,7 +29,7 @@ export const NEXT_RACE_DRIVERS = [
 
 
 export const nextRaceContent = {
-  raceName: "Bahrain Grand Prix",
+  raceName: "Bahrain Pre-Season testing",
   location: "Sakhir, Bahrain",
  raceDates: "Feb 11 - 13",
   trackInfoUrl: "https://www.bahraingp.com/", // <-- add this
@@ -38,7 +38,7 @@ export const nextRaceContent = {
     {
   id: "session1",
   label: "Session 1",
-  time: "Day 1 results below",
+  time: "Barcelona Day 1 results below",
   results: [
     "",   // Max Verstappen
     "",  // Arvid Lindblad
@@ -68,7 +68,7 @@ export const nextRaceContent = {
     {
   id: "session2",
   label: "Session 2",
-  time: "Day 2 results below",
+  time: "Barcelona Day 2 results below",
   results: [
     "q:19.580 27 laps",   // Max Verstappen
     "",  // Arvid Lindblad
@@ -97,7 +97,7 @@ export const nextRaceContent = {
     {
   id: "session3",
   label: "Session 3",
-  time: "Day 3 results below",
+  time: "Barcelona Day 3 results below",
   results: [
     "",   // Max Verstappen
     "+2.058 120 laps",  // Arvid Lindblad
@@ -127,7 +127,7 @@ export const nextRaceContent = {
     {
   id: "session4",
   label: "Session 4",
-  time: "That's a wrap day 5 results!",
+  time: "Barcelona day 5 results below!",
   results: [
     "1:17.586 118 laps",   // Max Verstappen
     "1:18.451 47 laps",  // Arvid Lindblad
@@ -156,6 +156,6 @@ export const nextRaceContent = {
 
   ],
 
-  weather: `Sunny skies with minimal chance of rain. Temperatures will hover just below 30 celcius.
+  weather: `We know it will be hot!
 `,
 };

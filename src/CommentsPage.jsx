@@ -96,25 +96,33 @@ export default function CommentsPage() {
     }
   };
 
-  // Replies & delete: keep UI, but for now keep them client-side only
-  // (We can add server support later without changing look.)
-  const addReply = (list, parentId, reply) =>
-    (list || []).map((n) =>
-      n.id === parentId
-        ? { ...n, replies: [...(n.replies || []), reply] }
-        : { ...n, replies: addReply(n.replies || [], parentId, reply) }
-    );
+  // ✅ Post reply to function (server owns the stored list)
+  const addServerReply = async (parentId, text) => {
+    const payload = {
+      action: "reply",
+      parentId,
+      name: "KC",
+      message: text,
+      id: uid(),
+      createdAt: nowText(),
+    };
 
-  const handleReply = (parentId, text) =>
-    setComments((prev) =>
-      addReply(prev, parentId, {
-        id: uid(),
-        author: "KC",
-        text,
-        createdAt: nowText(),
-        replies: [],
-      })
-    );
+    const res = await fetch(COMMENTS_API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) throw new Error(`REPLY POST failed: ${res.status}`);
+
+    const data = await res.json();
+
+    if (Array.isArray(data.comments)) {
+      setComments(data.comments);
+    } else {
+      await loadComments();
+    }
+  };
 
   // --- UI helpers (define BEFORE use) ------------------------------
   function AddBox({ onAdd }) {
@@ -166,15 +174,7 @@ export default function CommentsPage() {
 
     return (
       <div>
-        {/* Beta notice */}
-        <div className="mb-3 rounded-2xl border border-blue-200 bg-white px-4 py-3 text-xs text-blue-900 backdrop-blur">
-          <div className="font-semibold text-blue-900">🚧 Beta note</div>
-          <div className="mt-1 text-blue-700">
-            This comments section is part of our public beta.
-            To keep things clean and respectful, links are disabled and posting is limited.
-            Comments may be cleared as we continue testing and improving the site.
-          </div>
-        </div>
+        
 
         <p className="mb-2 text-sm font-medium text-blue-800">
           Have your say on the latest F1 news — fans welcome.
@@ -222,7 +222,7 @@ export default function CommentsPage() {
     const [reply, setReply] = useState("");
     const [replyError, setReplyError] = useState("");
 
-    const tryReply = () => {
+    const tryReply = async () => {
       const t = reply.trim();
       setReplyError("");
 
@@ -236,8 +236,13 @@ export default function CommentsPage() {
         return;
       }
 
-      handleReply(node.id, t);
-      setReply("");
+      try {
+        await addServerReply(node.id, t);
+        setReply("");
+      } catch (e) {
+        console.error("Reply failed:", e);
+        setReplyError("Reply failed to post. Please try again.");
+      }
     };
 
     return (
