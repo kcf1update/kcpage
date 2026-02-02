@@ -105,6 +105,7 @@ export const newsSlots = [
   "title": "F1 favourite Russell expects Verstappen to be back in the fight",
   "summary": "Mercedes driver George Russell insists he’s not getting carried away with being tipped as a title favourite for the 2026 Formula 1 season, and expects Red Bull’s four-time world champion Max Verstappen to remain a serious contender. Russell praised the competitiveness of Mercedes’ new package from early testing but stressed that Red Bull’s own power unit and Verstappen’s skill would keep them in the fight. Despite his early season optimism, he’s focused on building performance consistently rather than embracing the hype. ([straitstimes.com](https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight))",
   "kcsQuickShift": "Russell downplays being an early favourite and expects Verstappen and Red Bull to be right in the 2026 title fight after strong testing from both teams. ([straitstimes.com](https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight))",
+  url:"https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight",
   "imagePath": "/img/news/news-driver.jpg",
   "dateLabel": "Feb 2, 2026"
   },
