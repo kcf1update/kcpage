@@ -3,15 +3,15 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-    title: "ANALYSED: Why Adrian Newey's Aston Martin design is turning heads ",
-    youtubeInput: "https://youtu.be/qNPAoKHisqg",
-    description: "Adrian Newey has a ton of pressure on him. Bernie Collins from Skysports gets better every year "
+    title: "2026 F1 SEASON PREDICTIONS!s ",
+    youtubeInput: "https://youtu.be/dQa3wqjSpkE",
+    description: "From Kym Illman, one of my favourite for behind the scenes when the racing starts   "
   },
   {
     slotId: "slot2",
-    title: "Adrian Newey’s extreme 2026 Aston Martin F1 car explained",
-    youtubeInput: "https://youtu.be/Im_uT9u65Z4",
-    description: "looks awesome in black. looking forward to the new livery not surprised it's pushed to the limits."
+    title: "What weird F1 ‘2026’ test has revealed already",
+    youtubeInput: "https://youtu.be/LrvfiAzc_tI",
+    description: "more passes in the corner, I hope"
   },
   {
     slotId: "slot3",
@@ -21,9 +21,9 @@ export const youtubeSlots = [
   },
   {
     slotId: "slot4",
-    title: "Drivers React At The End Of Shakedown! | 2026 F1 Barcelona Shakedown",
-    youtubeInput: "https://youtu.be/A4w6gMfFTSw",
-    description: "Nice to see and hear from the drivers"
+    title: "verything You Need To Know About the Formula 1 2026 Regulations",
+    youtubeInput: "https://youtu.be/GaDFJr5wSz0",
+    description: "complete change"
   },
   {
     slotId: "slot5",
