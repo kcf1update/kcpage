@@ -3,15 +3,15 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-    title: "2026 F1 SEASON PREDICTIONS!s ",
-    youtubeInput: "https://youtu.be/dQa3wqjSpkE",
-    description: "From Kym Illman, one of my favourite for behind the scenes when the racing starts   "
+    title: "2026 Livery Reveal | Atlassian Williams F1 Team ",
+    youtubeInput: "https://youtu.be/1lJKAk9jzho",
+    description: "Absolutely love it!  "
   },
   {
     slotId: "slot2",
-    title: "What weird F1 ‘2026’ test has revealed already",
-    youtubeInput: "https://youtu.be/LrvfiAzc_tI",
-    description: "more passes in the corner, I hope"
+    title: "The secrets McLaren's real 2026 F1 car has revealed",
+    youtubeInput: "https://youtu.be/jLrAYamIjLY",
+    description: "Strategic"
   },
   {
     slotId: "slot3",
@@ -21,9 +21,9 @@ export const youtubeSlots = [
   },
   {
     slotId: "slot4",
-    title: "verything You Need To Know About the Formula 1 2026 Regulations",
-    youtubeInput: "https://youtu.be/GaDFJr5wSz0",
-    description: "complete change"
+    title: "Everything making Mercedes’ F1 2026 start so ominous",
+    youtubeInput: "https://youtu.be/0mfNXJP3qFY",
+    description: "Toto says the car is not a Turd...according to George Russel. lol!"
   },
   {
     slotId: "slot5",

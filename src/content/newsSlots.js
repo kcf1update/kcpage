@@ -8,84 +8,79 @@
 export const newsSlots = [
   {
     slotId: "news1",
-  sourceLabel: "The Sun",
-  title: "Christian Horner hints at possible F1 return",
-  summary:
-    "Christian Horner has suggested he still has “unfinished business” in Formula 1 following his Red Bull departure, sparking talk of a potential comeback. Speculation continues around possible involvement through ownership or management roles.",
-  kcsQuickShift: "The paddock never stays quiet for long",
-  url: "https://www.thesun.ie/sport/16471540/christian-horner-unfinished-business-f1-biggest-comeback-hint/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+sourceLabel: "ESPN",
+title: "Jack Doohan Joins Haas as F1 Reserve Driver",
+summary: "Former Alpine racer Jack Doohan has signed with Haas as a reserve driver for the 2026 Formula 1 season after parting ways with Alpine and a planned Super Formula move fell through. He’ll back up the team’s race drivers alongside Ryo Hirakawa as Haas prepares for the new season. :contentReference[oaicite:0]{index=0}",
+kcsQuickShift: "Not the step Doohan wanted, I don't think he was given much of a chance but a smart move to stay close to an F1 seat.",
+url: "https://www.espn.in/f1/story/_/id/47814496/jack-doohan-joins-haas-f1-reserve-driver",
+imagePath: "/img/news/news-driver.jpg",
+dateLabel: "Feb 3, 2026"
   },
   {
-    "slotId": "news 2",
-  "sourceLabel": "Autosport",
-  "title": "Why overtaking still looks \"difficult\" with 2026 F1 cars",
-  "summary": "Haas drivers Esteban Ocon and Oliver Bearman warn that overtaking looks harder than expected with Formula 1’s 2026 machinery after early running at the Barcelona pre-season test. Despite the introduction of an Overtake Mode (replacing DRS), reduced downforce and drag, both drivers noted challenges following another car in dirty air and limited overtaking opportunities in testing so far. It’s early days, but the initial impression is that these new cars may not make passing easier than before. :contentReference[oaicite:0]{index=0}",
-  "kcsQuickShift": "Early testing suggests 2026 F1 cars might not improve overtaking as much as hoped, with drivers struggling to follow closely in dirty air and making passes challenging. :contentReference[oaicite:1]{index=1}",
-  url: "https://www.msn.com/en-au/news/other/why-overtaking-still-looks-difficult-with-2026-f1-cars/ar-AA1VuMvM?ocid=BingNewsVerp",
-  "imagePath": "/img/news/news-01.jpg",
-  "dateLabel": "Feb 2, 2026"
+   slotId: "news2",
+sourceLabel: "Aston Martin F1",
+title: "Jenson Button Appointed Aston Martin Team Ambassador",
+summary: " has named 2009 Formula 1 World Champion Jenson Button as its Team Ambassador on a multi-year deal ahead of the 2026 season. Button will support the squad’s media, partner and commercial programmes during a pivotal new era for the team. :contentReference[oaicite:1]{index=1}",
+kcsQuickShift: "Button swaps the cockpit for the AMR26 paddock. Will he still be on SkySports covergae.?",
+url: "https://www.astonmartinf1.com/en-GB/news/announcement/jenson-button-appointed-team-ambassador-for-aston-martin-aramco",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 2, 2026"
+
   },
   {
-    "slotId": "",
-  "sourceLabel": "Autosport",
-  "title": "Why Hamilton has found the new F1 cars more fun to drive",
-  "summary": "Lewis Hamilton says Formula 1’s new 2026 cars are more fun and enjoyable to drive after the Barcelona shakedown, describing the machinery as oversteery, snappy and easier to catch than the previous ground-effect era. He also highlighted the positive team atmosphere and productive debriefs, while noting there’s still work to do to improve performance. ([autosport.com](https://www.autosport.com/f1/news/why-hamilton-has-found-the-new-f1-cars-more-fun-to-drive/10794311/))",
-  "kcsQuickShift": "Hamilton feels the 2026 F1 cars are more enjoyable to drive with lively handling and better balance compared to recent generations, though teams still have development work ahead. ([autosport.com](https://www.autosport.com/f1/news/why-hamilton-has-found-the-new-f1-cars-more-fun-to-drive/10794311/))",
-   url: "https://www.msn.com/en-sg/news/other/why-hamilton-has-found-the-new-f1-cars-more-fun-to-drive/ar-AA1VpYSl?ocid=BingNewsVerp",
-  imagePath: "/img/news/news-01.jpg",
-  "dateLabel": "Feb 1, 2026"
+   slotId: "news3",
+sourceLabel: "Formula1.com",
+title: "Newey Breaks Down Aston Martin AMR26 Design and Team Effort",
+summary: "’s Adrian Newey says his first AMR26 design came together under a very compressed timeline, with the team ‘rising to the challenge’ to get the car ready for the Barcelona shakedown despite lagging rivals by months in wind-tunnel development. Newey highlighted the car’s tight packaging and aggressive interpretation of the 2026 rules as part of the squad’s strategy to build strong development potential. :contentReference[oaicite:1]{index=1}",
+kcsQuickShift: "I wonder how much of the car we saw on Friday is the real car? Leave a comment and let me know what you think",
+url: "https://www.formula1.com/en/latest/article/newey-opens-up-on-debut-aston-martin-design-and-how-team-have-risen-to-the.2jlAeKr26c77DYvDlOdNL5",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 3, 2026"
   },
   {
    slotId: "news4",
-  sourceLabel: "Motorsport.com",
-  title: "Drivers Begin Adapting to New 2026 Energy Deployment Systems",
-  summary:
-    "Several drivers reported major changes in braking feel and throttle response as the new 2026 hybrid systems were trialled during shakedown running. Engineers focused heavily on energy harvesting behaviour under race-style conditions.",
-  kcsQuickShift:
-    "KC Quick Shift: Drivers aren’t just driving anymore — they’re managing power every corner. The smart ones will shine in 2026.",
-  url: "https://www.motorsport.com/f1/live-text/f1-barcelona-pre-season-testing-live-commentary-day-5/1126272/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 1, 2026"
+sourceLabel: "PlanetF1",
+title: "Bottas Says Cadillac Faces a ‘Mountain to Climb’ After Barcelona Shakedown",
+summary: "In its first Barcelona shakedown, new F1 team  completed limited running and showed progress, but Valtteri Bottas admits there’s still a ‘mountain to climb’ in performance and reliability as the squad prepares for the 2026 season. ($turn0news0$)",
+kcsQuickShift: "Cadillac’s first test: real progress, but a lot of work remains.",
+url: "https://www.planetf1.com/news/valtteri-bottas-cadillac-f1-barcelona-shakedown-verdict",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 3, 2026"
   },
   {
    slotId: "news5",
-  sourceLabel: "AutoRacing1",
-  title: "Early 2026 Favourites Begin to Emerge After Shakedown Week",
-  summary:
-    "While teams insist it is too early to judge competitiveness, paddock insiders suggest a small group may have adapted quicker to the new aerodynamic and power unit rules. Early balance confidence stood out more than raw speed.",
-  kcsQuickShift:
-    "KC Quick Shift: Nobody wins testing — but some teams definitely lose it. Early confidence matters.",
-  url: "https://www.autoracing1.com/pl/470693/formula-1-news-early-2026-favorites-emerge-after-barcelona-test/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 1, 2026"
+sourceLabel: "Formula1.com",
+title: "What F1 Drivers Got Up to During the Off-Season",
+summary: "With the 2026 season approaching, F1 drivers mixed training, winter sports, personal milestones and team marketing events — from snowboarding and Olympic torch runs to engagements and intense pre-season fitness work — while also unveiling liveries and getting back behind the wheel ahead of testing. ([formula1.com](https://www.formula1.com/en/latest/article/olympic-flames-training-camps-and-engagements-what-f1-drivers-were-up-to.2jkdshvtUeRgbEXXBvNNto))",
+kcsQuickShift: "Drivers balanced workouts, thrills and big life moments while gearing up for 2026.",
+url: "https://www.formula1.com/en/latest/article/olympic-flames-training-camps-and-engagements-what-f1-drivers-were-up-to.2jkdshvtUeRgbEXXBvNNto",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 3, 2026"
   },
   {
    slotId: "news6",
-  sourceLabel: "Netflix",
-  title: "Drive to Survive Season 8 release date confirmed",
-  summary:
-    "Netflix has confirmed that Formula 1: Drive to Survive Season 8 will launch on February 27, just days before the 2026 season begins. Fans can expect more behind-the-scenes drama as teams prepare for the new regulations.",
-  kcsQuickShift: "Love it or hate it, it brings new fans every year",
-  url: "https://theviewersperspective.com/2026/01/21/formula-1-drive-to-survive-season-8-release-date/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+sourceLabel: "Motorsport.com",
+title: "Kimi Antonelli Eyes 2026 Title Fight as Mercedes Enter Season as Favourites",
+summary: "Mercedes youngster Andrea Kimi Antonelli says he’s targeting a title fight in 2026 as the Silver Arrows head into the new season as championship favourites, though team boss Toto Wolff keeps expectations measured for the Italian’s bid. Antonelli’s confidence builds on Mercedes’ strong pre-season showing and his own progress heading into his second year. :contentReference[oaicite:0]{index=0}",
+kcsQuickShift: "Big season for Kimi, I think he has to show more than he did last year. Is he fighting for his seat? comment and let me know what you think?"  ,
+url: "https://www.motorsport.com/f1/news/kimi-antonelli-eyeing-f1-2026-title-fight-with-mercedes-currently-favourite/10794688/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 3, 2026"
+
   
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
-   slotId: "news7",
-  sourceLabel: "McLaren",
-  title: "McLaren confirms 2026 car launch date",
-  summary:
-    "McLaren has announced that its 2026 Formula 1 car and livery will be unveiled on February 9 at the Bahrain International Circuit. Lando Norris and Oscar Piastri will headline the launch as the team gears up for the new era.",
-  kcsQuickShift: "Launch season is officially heating up",
-  url: "https://www.mclaren.com/racing/formula-1/2026/launch-confirmed-for-9-february",
-  imagePath: "/img/news/news-launch.jpg",
-  dateLabel: ""
+  slotId: "news1",
+sourceLabel: "GPFans",
+title: "2026 McLaren Merch Drops as Norris & Piastri Reveal New Team Kit",
+summary: " has launched its 2026 merchandise line alongside Lando Norris and Oscar Piastri showcasing the new team kit as fans gear up for the upcoming season, with a range of apparel and collectibles now available. ([gpfans.com](https://www.gpfans.com/en/f1-news/1074992/f1-2026-merch-buy-new-mclaren-kit-lando-norris-oscar-piastri/))",
+kcsQuickShift: "New McLaren gear is live — team kit and merch ready for fans.",
+url: "https://www.gpfans.com/en/f1-news/1074992/f1-2026-merch-buy-new-mclaren-kit-lando-norris-oscar-piastri/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 3, 2026"
 },
   {
    slotId: "news9",
@@ -99,14 +94,5 @@ export const newsSlots = [
   imagePath: "/img/news/news-01.jpg",
   dateLabel: "Feb 1, 2026"
   },
-  {
-   "slotId": "",
-  "sourceLabel": "The Straits Times",
-  "title": "F1 favourite Russell expects Verstappen to be back in the fight",
-  "summary": "Mercedes driver George Russell insists he’s not getting carried away with being tipped as a title favourite for the 2026 Formula 1 season, and expects Red Bull’s four-time world champion Max Verstappen to remain a serious contender. Russell praised the competitiveness of Mercedes’ new package from early testing but stressed that Red Bull’s own power unit and Verstappen’s skill would keep them in the fight. Despite his early season optimism, he’s focused on building performance consistently rather than embracing the hype. ([straitstimes.com](https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight))",
-  "kcsQuickShift": "Russell downplays being an early favourite and expects Verstappen and Red Bull to be right in the 2026 title fight after strong testing from both teams. ([straitstimes.com](https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight))",
-  url:"https://www.straitstimes.com/sport/formula-one/f1-favourite-russell-expects-verstappen-to-be-back-in-the-fight",
-  "imagePath": "/img/news/news-driver.jpg",
-  "dateLabel": "Feb 2, 2026"
-  },
+  
 ];

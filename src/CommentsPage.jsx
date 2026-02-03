@@ -9,6 +9,30 @@ import PageHero from "./components/PageHero";
 
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 const nowText = () => new Date().toLocaleString();
+// --- Author identity (no sign-in, no user input) ---
+function makeFanHandle() {
+  const n = Math.floor(1000 + Math.random() * 9000);
+  return `Fan-${n}`;
+}
+
+function getAuthorName() {
+  try {
+    // KC override (only on your device)
+    if (localStorage.getItem("kc_is_owner") === "1") {
+      return "KC";
+    }
+
+    // Everyone else gets a stable Fan-#### name
+    let fan = localStorage.getItem("kc_fan_handle");
+    if (!fan) {
+      fan = makeFanHandle();
+      localStorage.setItem("kc_fan_handle", fan);
+    }
+    return fan;
+  } catch {
+    return "Fan";
+  }
+}
 
 // ---- Beta anti-spam rules (client-side friction) -------------------
 const MIN_LEN = 15;
@@ -70,7 +94,7 @@ export default function CommentsPage() {
   const addRootComment = async (text) => {
     const payload = {
       // match what you tested in PowerShell: { name, message }
-      name: "KC",
+      name: getAuthorName(),
       message: text,
       // optional extras; harmless if function ignores them
       id: uid(),
@@ -101,7 +125,7 @@ export default function CommentsPage() {
     const payload = {
       action: "reply",
       parentId,
-      name: "KC",
+      name: getAuthorName(),
       message: text,
       id: uid(),
       createdAt: nowText(),
