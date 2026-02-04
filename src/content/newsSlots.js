@@ -8,44 +8,52 @@
 export const newsSlots = [
   {
     slotId: "news1",
-sourceLabel: "ESPN",
-title: "Jack Doohan Joins Haas as F1 Reserve Driver",
-summary: "Former Alpine racer Jack Doohan has signed with Haas as a reserve driver for the 2026 Formula 1 season after parting ways with Alpine and a planned Super Formula move fell through. He’ll back up the team’s race drivers alongside Ryo Hirakawa as Haas prepares for the new season. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift: "Not the step Doohan wanted, I don't think he was given much of a chance but a smart move to stay close to an F1 seat.",
-url: "https://www.espn.in/f1/story/_/id/47814496/jack-doohan-joins-haas-f1-reserve-driver",
-imagePath: "/img/news/news-driver.jpg",
-dateLabel: "Feb 3, 2026"
+  sourceLabel: "MSN / Yahoo Sports",
+  title: "Christian Horner breaks silence, says he has ‘unfinished business’ in F1",
+  summary:
+    "Christian Horner has spoken publicly for the first time since his shock exit from Red Bull Racing, admitting he misses the sport and still feels he has unfinished business in Formula 1 — but insists he will only consider a return in a winning environment and isn’t in a rush.",
+  kcsQuickShift:
+    "He's back! Horner speaks for the first time",
+  url: "https://www.msn.com/en-us/sports/other/horner-speaks-publicly-for-first-time-since-shock-red-bull-f1-sacking/ar-AA1VokJy?ocid=BingNewsSerp",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
   },
   {
    slotId: "news2",
-sourceLabel: "Aston Martin F1",
-title: "Jenson Button Appointed Aston Martin Team Ambassador",
-summary: " has named 2009 Formula 1 World Champion Jenson Button as its Team Ambassador on a multi-year deal ahead of the 2026 season. Button will support the squad’s media, partner and commercial programmes during a pivotal new era for the team. :contentReference[oaicite:1]{index=1}",
-kcsQuickShift: "Button swaps the cockpit for the AMR26 paddock. Will he still be on SkySports covergae.?",
-url: "https://www.astonmartinf1.com/en-GB/news/announcement/jenson-button-appointed-team-ambassador-for-aston-martin-aramco",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 2, 2026"
+  sourceLabel: "Formula1.com",
+  title: "Vowles open to talk with Sauber/Audi about Colapinto",
+  summary:
+    "Williams team principal James Vowles says he’s open to having discussions with the Sauber/Audi camp about a potential seat for Franco Colapinto in 2025, even though Williams’ driver lineup is already set. Vowles made it clear any approach would be considered collaboratively with a focus on what’s best for the young driver’s future.",
+  kcsQuickShift:
+    "Vowles leaves the door ajar — Williams won’t stand in Colapinto’s way if Sauber/Audi want to explore a deal.",
+  url: "https://www.formula1.com/en/latest/article/vowles-prepared-for-open-discussion-with-sauber-audi-about-possibility-of.RMnk9r9GGR2qHOcKZ7BVY",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
 
   },
   {
-   slotId: "news3",
-sourceLabel: "Formula1.com",
-title: "Newey Breaks Down Aston Martin AMR26 Design and Team Effort",
-summary: "’s Adrian Newey says his first AMR26 design came together under a very compressed timeline, with the team ‘rising to the challenge’ to get the car ready for the Barcelona shakedown despite lagging rivals by months in wind-tunnel development. Newey highlighted the car’s tight packaging and aggressive interpretation of the 2026 rules as part of the squad’s strategy to build strong development potential. :contentReference[oaicite:1]{index=1}",
-kcsQuickShift: "I wonder how much of the car we saw on Friday is the real car? Leave a comment and let me know what you think",
-url: "https://www.formula1.com/en/latest/article/newey-opens-up-on-debut-aston-martin-design-and-how-team-have-risen-to-the.2jlAeKr26c77DYvDlOdNL5",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 3, 2026"
+  slotId: "news3",
+  sourceLabel: "F1Oversteer.com",
+  title: "Horner backs Wolff amid Mercedes rule-breaking claims",
+  summary:
+    "Christian Horner has publicly supported Toto Wolff as Mercedes faces accusations of bending Formula 1’s technical rules over their new power unit, framing the controversy as part of the sport’s engineering interpretation battle rather than outright cheating. The backing from a traditional rival adds an unexpected twist to the pre-season row over alleged rule exploitation. ",
+  kcsQuickShift:
+    "Wait what? Horner agrees with Wolff ",
+  url: "https://www.f1oversteer.com/news/even-christian-horner-is-siding-with-toto-wolff-as-mercedes-are-accused-of-breaking-f1-rules/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
   },
   {
-   slotId: "news4",
-sourceLabel: "PlanetF1",
-title: "Bottas Says Cadillac Faces a ‘Mountain to Climb’ After Barcelona Shakedown",
-summary: "In its first Barcelona shakedown, new F1 team  completed limited running and showed progress, but Valtteri Bottas admits there’s still a ‘mountain to climb’ in performance and reliability as the squad prepares for the 2026 season. ($turn0news0$)",
-kcsQuickShift: "Cadillac’s first test: real progress, but a lot of work remains.",
-url: "https://www.planetf1.com/news/valtteri-bottas-cadillac-f1-barcelona-shakedown-verdict",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 3, 2026"
+  slotId: "news4",
+  sourceLabel: "Autoguide.com",
+  title: "Honda puts reliability first with its new 2026 F1 engine",
+  summary:
+    "Honda says reliability is the top priority for its all-new Formula 1 power unit ahead of the 2026 regulations, with the manufacturer focused on building a durable and stable engine platform before pushing for maximum performance.",
+  kcsQuickShift:
+    "Honda isn’t chasing headline horsepower yet — they’re building something that finishes races first and worries rivals later.",
+  url: "https://www.autoguide.com/auto/auto-news/reliability-is-the-priority-for-honda-s-new-f1-engine-44629768",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
   },
   {
    slotId: "news5",
@@ -58,14 +66,16 @@ imagePath: "/img/news/news-01.jpg",
 dateLabel: "Feb 3, 2026"
   },
   {
-   slotId: "news6",
-sourceLabel: "Motorsport.com",
-title: "Kimi Antonelli Eyes 2026 Title Fight as Mercedes Enter Season as Favourites",
-summary: "Mercedes youngster Andrea Kimi Antonelli says he’s targeting a title fight in 2026 as the Silver Arrows head into the new season as championship favourites, though team boss Toto Wolff keeps expectations measured for the Italian’s bid. Antonelli’s confidence builds on Mercedes’ strong pre-season showing and his own progress heading into his second year. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift: "Big season for Kimi, I think he has to show more than he did last year. Is he fighting for his seat? comment and let me know what you think?"  ,
-url: "https://www.motorsport.com/f1/news/kimi-antonelli-eyeing-f1-2026-title-fight-with-mercedes-currently-favourite/10794688/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 3, 2026"
+  slotId: "news6",
+  sourceLabel: "Sky Sports F1",
+  title: "Brundle says Piastri will return ‘with a vengeance’ in 2026",
+  summary:
+    "Martin Brundle believes Oscar Piastri will use the disappointment of narrowly missing out on the 2025 drivers’ title as motivation to come back even stronger in the 2026 Formula 1 season, after showing dominant pace and learning key lessons last year.  :contentReference[oaicite:0]{index=0}",
+  kcsQuickShift:
+    "Piastri’s not done — Brundle sees a hungry, sharper threat ready to challenge again.",
+  url: "https://www.skysports.com/f1/news/24096/13502857/oscar-piastri-martin-brundle-says-mclaren-driver-will-come-back-with-a-vengeance-after-missing-out-on-2025-f1-title",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
 
   
   },
@@ -73,26 +83,28 @@ dateLabel: "Feb 3, 2026"
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
-  slotId: "news1",
-sourceLabel: "GPFans",
-title: "2026 McLaren Merch Drops as Norris & Piastri Reveal New Team Kit",
-summary: " has launched its 2026 merchandise line alongside Lando Norris and Oscar Piastri showcasing the new team kit as fans gear up for the upcoming season, with a range of apparel and collectibles now available. ([gpfans.com](https://www.gpfans.com/en/f1-news/1074992/f1-2026-merch-buy-new-mclaren-kit-lando-norris-oscar-piastri/))",
-kcsQuickShift: "New McLaren gear is live — team kit and merch ready for fans.",
-url: "https://www.gpfans.com/en/f1-news/1074992/f1-2026-merch-buy-new-mclaren-kit-lando-norris-oscar-piastri/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 3, 2026"
+  slotId: "news7",
+  sourceLabel: "MSN / Autosport",
+  title: "McLaren’s Papaya stance good news for Oscar Piastri",
+  summary:
+    "McLaren reaffirmed its commitment to the iconic ‘Papaya’ team identity and culture, a move seen as positive for Oscar Piastri’s confidence and long-term stability in the team as he builds toward a future championship challenge.  The renewed focus on heritage and continuity is expected to bolster team unity and support Piastri’s on-track performance.",
+  kcsQuickShift:
+    "I truly admire McLaren, what do you think?",
+  url: "https://www.msn.com/en-za/news/other/why-mclaren-reaffirmed-papaya-stance-is-good-news-for-oscar-piastri/ar-AA1Vrkvo?ocid=BingNewsSerp",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: ""
 },
   {
-   slotId: "news9",
-  sourceLabel: "Motorsport.com (NL)",
-  title: "Lowdon: Cadillac Already Benefiting from Pérez & Bottas Experience",
+   slotId: "news8",
+  sourceLabel: "ESPN F1",
+  title: "Aston Martin 2026 car impressive but started development months late",
   summary:
-    "Volgens teambaas Graeme Lowdon profiteert Cadillac tijdens de eerste shakedownruns al duidelijk van de ervaring van Sergio Pérez en Valtteri Bottas. De twee routiniers helpen het nieuwe team met structuur, duidelijke feedback en het sneller begrijpen van de complexe 2026-auto, waardoor het ontwikkelingsproces in een vroeg stadium wordt versneld.",
+    "Aston Martin’s 2026 AMR26 has already turned heads with its bold design, but team boss Adrian Newey admits the project started four months behind rival cars because wind tunnel work didn’t begin until April — leaving the team playing catch-up ahead of the season. Despite limited running at the Barcelona shakedown, the distinctive look and intriguing technical choices make Aston Martin one of the 2026 season’s big wildcards. ",
   kcsQuickShift:
-    "KC Quick Shift: Experience matters. As an F1 fan, I hope this team works out for Perez and Bottas,",
-  url: "https://nl.motorsport.com/f1/news/graeme-lowdon-cadillac-profiteert-ervaring-sergio-perez-valtteri-bottas/10794214/",
+    "The on track preformance is what will count!",
+  url: "https://www.espn.com/f1/story/_/id/47824551/aston-martin-f1-2026-wildcard-spectacular-four-months-testing",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 1, 2026"
+  dateLabel: ""
   },
   
 ];

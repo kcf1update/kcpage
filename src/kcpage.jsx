@@ -148,21 +148,24 @@ export default function KCpage() {
               </span>
 
               <Link
-                to="/next-race"
-                className={
-                  "inline-flex items-center gap-2 rounded-full border border-yellow-300/70 " +
-                  "bg-black text-yellow-100 px-4 py-2 text-sm font-semibold " +
-                  "shadow-[0_0_20px_rgba(250,204,21,0.8)] hover:bg-yellow-300/10"
-                }
-              >
+  to="/next-race"
+  className={
+    "inline-flex relative z-50 opacity-100 hover:opacity-100 hover:brightness-100 " +
+    "items-center gap-2 rounded-full border border-yellow-300/70 " +
+    "bg-black/90 px-4 py-2 text-sm font-semibold text-yellow-100 " +
+    "shadow-[0_0_20px_rgba(250,204,21,0.8)] " +
+    "transition-all duration-200 " +
+    "hover:bg-yellow-300/30 hover:text-white hover:border-yellow-200 " +
+    "hover:ring-2 hover:ring-yellow-300/60"
+  }
+>
+
                 View next race info
-                <span className="text-xs text-yellow-200/80">&rarr;</span>
+                <span className="text-xs text-yellow-200/90">&rarr;</span>
+
               </Link>
 
-              <p className="text-[11px] text-slate-600 text-left sm:text-right">
-                Weekend schedule, weather, and session results.
-              </p>
-
+              
               <a
                 href="https://www.instagram.com/kcf1update"
                 target="_blank"
@@ -171,6 +174,15 @@ export default function KCpage() {
               >
                 Follow on Instagram ↗
               </a>
+              <a
+  href="https://www.youtube.com/@KevinChisholm-z6b"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex items-center justify-center rounded-xl bg-blue-600/90 px-4 py-2 text-sm sm:text-base font-semibold text-white hover:bg-blue-600 transition"
+>
+  My YouTube ↗
+</a>
+
             </div>
           </div>
         </section>
@@ -187,18 +199,7 @@ export default function KCpage() {
                 feedback — it helps to improve my website.
               </p>
             </div>
-
-            <div className="flex items-center gap-2">
-              <a
-                href="https://www.youtube.com/@KevinChisholm-z6b"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/15 transition"
-              >
-                <span>My YouTube</span>
-                <span className="text-base leading-none">↗</span>
-              </a>
-            </div>
+            
           </div>
         </section>
 

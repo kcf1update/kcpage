@@ -3,39 +3,39 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-    title: "2026 Livery Reveal | Atlassian Williams F1 Team ",
-    youtubeInput: "https://youtu.be/1lJKAk9jzho",
-    description: "Absolutely love it!  "
+    title: "Christian Horner breaks his silence on his exit from Red Bull | 9 News Australia",
+    youtubeInput: "https://youtu.be/Uo-0GVeTRUk",
+    description: "Horner speaks!  "
   },
   {
     slotId: "slot2",
-    title: "The secrets McLaren's real 2026 F1 car has revealed",
-    youtubeInput: "https://youtu.be/jLrAYamIjLY",
-    description: "Strategic"
+    title: "The Secrets That Have EVERYONE Talking About Aston Martin!",
+    youtubeInput: "https://youtu.be/hAT4JHuF_Do",
+    description: "A lot of hype"
   },
   {
     slotId: "slot3",
-    title: "Everything we learned from F1’s first 2026 test",
-    youtubeInput: "https://youtu.be/-u2B5j7xcfs",
-    description: "Good wrap up"
+    title: "The Insane Logistics of Formula 1",
+    youtubeInput: "https://youtu.be/_Cvu1iPpzos",
+    description: "Amazing"
   },
   {
     slotId: "slot4",
-    title: "Everything making Mercedes’ F1 2026 start so ominous",
-    youtubeInput: "https://youtu.be/0mfNXJP3qFY",
-    description: "Toto says the car is not a Turd...according to George Russel. lol!"
+    title: "Todo lo que aprendimos de la primera prueba de F1 de 2026",
+    youtubeInput: "https://youtu.be/Yts8fRb57_E",
+    description: "Worldwide! Something for our Spanish F1 fans "
   },
   {
     slotId: "slot5",
-    title: "2026 F1 ASTON MARTIN AMR26 with Scarbs by Peter Windsor",
-    youtubeInput: "https://youtu.be/LY8bALxMeN0",
-    description: "Great description with Peter Windsor and Craig Scarbourough",
+    title: "The 2026 F1 Cars Revealed: Everything You Need to Know!",
+    youtubeInput: "https://youtu.be/y77koSwmAy0",
+    description: "Another video on the new 2026 cars ",
     
   },
   {
     slotId: "slot6",
     title: "KC’s channel (subscribe)",
-    youtubeInput: "https://youtu.be/kutjkiboIkY",
+    youtubeInput: "https://youtu.be/Y8I1FvBjgmY",
     description: "Subscribe for KC’s race recaps and short updates.",
     ctaUrl: "",
     ctaLabel: "Visit KC’s YouTube ↗"
