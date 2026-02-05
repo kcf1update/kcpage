@@ -9,14 +9,11 @@ import F1NewsPage from "./F1NewsPage";
 import YouTubeNewsPage from "./YouTubeNewsPage";
 import CommentsPage from "./CommentsPage";
 import SiteFooter from "./components/SiteFooter";
-
+import AboutPage from "./AboutPage";
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Page wrapper */}
       <div className="min-h-screen flex flex-col">
-
-        {/* Main content */}
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<MainPage />} />
@@ -25,13 +22,15 @@ export default function App() {
             <Route path="/news" element={<F1NewsPage />} />
             <Route path="/youtube" element={<YouTubeNewsPage />} />
             <Route path="/comments" element={<CommentsPage />} />
+            <Route path="/about" element={<AboutPage />} /> {/* ✅ ADD THIS */}
             <Route path="*" element={<MainPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </div>
 
-        {/* Global footer */}
         <SiteFooter />
       </div>
     </BrowserRouter>
   );
 }
+

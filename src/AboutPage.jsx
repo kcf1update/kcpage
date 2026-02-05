@@ -39,11 +39,29 @@ export default function AboutPage() {
             official platforms, or used under fair dealing for news,
             commentary, and criticism.
           </p>
+<p>
+  News articles featured on this site include short, original summaries
+  written in my own words. Each summary clearly credits the source and
+  provides a direct link to the original article so readers can view the
+  full content on the publisher’s website.
+</p>
+
+<p>
+  KC’s Worldwide F1 Update does not copy, repost, or reproduce full news
+  articles or paywalled content.
+</p>
+<p>
+  Video content displayed on this site is embedded from third-party
+  platforms such as YouTube. KC’s Worldwide F1 Update does not host,
+  upload, or claim ownership of any video content. All videos remain the
+  property of their respective creators and rights holders and are shown
+  for commentary, news, and editorial purposes.
+</p>
 
           <p>
             For copyright concerns or general inquiries, please contact:
             <br />
-            <span className="font-semibold">your@email.here</span>
+            <span className="font-semibold">kcf1update@gmail.com</span>
           </p>
         </section>
       </div>

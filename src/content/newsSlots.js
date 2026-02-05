@@ -7,75 +7,64 @@
 
 export const newsSlots = [
   {
-    slotId: "news1",
-  sourceLabel: "MSN / Yahoo Sports",
-  title: "Christian Horner breaks silence, says he has ‘unfinished business’ in F1",
-  summary:
-    "Christian Horner has spoken publicly for the first time since his shock exit from Red Bull Racing, admitting he misses the sport and still feels he has unfinished business in Formula 1 — but insists he will only consider a return in a winning environment and isn’t in a rush.",
-  kcsQuickShift:
-    "He's back! Horner speaks for the first time",
-  url: "https://www.msn.com/en-us/sports/other/horner-speaks-publicly-for-first-time-since-shock-red-bull-f1-sacking/ar-AA1VokJy?ocid=BingNewsSerp",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+    slotId: "",
+sourceLabel: "Formula1.com",
+title: "Gallery: Check out every angle of Williams’ new livery for their 2026 F1 car",
+summary: "Formula 1 has published a photo gallery showcasing the all-new 2026 livery for the Williams F1 team, giving fans a close-up look at the colours and design details before the car hits the track. The images highlight the team’s fresh visual identity under the new regulations as excitement builds ahead of the season.",
+kcsQuickShift: " I absolutely love the look of this car",
+url: "https://www.formula1.com/en/latest/article/gallery-check-out-every-angle-of-williams-new-livery-for-their-2026-f1-car.5I6ZzmDjZPrMpl9UByTQAV",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
   },
   {
    slotId: "news2",
-  sourceLabel: "Formula1.com",
-  title: "Vowles open to talk with Sauber/Audi about Colapinto",
-  summary:
-    "Williams team principal James Vowles says he’s open to having discussions with the Sauber/Audi camp about a potential seat for Franco Colapinto in 2025, even though Williams’ driver lineup is already set. Vowles made it clear any approach would be considered collaboratively with a focus on what’s best for the young driver’s future.",
-  kcsQuickShift:
-    "Vowles leaves the door ajar — Williams won’t stand in Colapinto’s way if Sauber/Audi want to explore a deal.",
-  url: "https://www.formula1.com/en/latest/article/vowles-prepared-for-open-discussion-with-sauber-audi-about-possibility-of.RMnk9r9GGR2qHOcKZ7BVY",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
-
+sourceLabel: "Motorsport.com",
+title: "Bernie Collins breaks down Aston Martin’s 2026 F1 car after Newey-designed machine is revealed",
+summary: "Veteran analyst Bernie Collins has offered his first technical impressions of the Aston Martin AMR26 after its 2026 Formula 1 design was revealed, praising some of the team’s aerodynamic choices while pointing out areas that might risk early-season performance. Collins suggests the car appears to favour stability under the new rules, which could pay dividends once its characteristics are fully understood on track.",
+kcsQuickShift: "Collins’ breakdown gives us something real to chew on.",
+url: "https://www.motorsport.com/f1/news/bernie-collins-breaks-down-aston-martins-2026-f1-car-after-adrian-newey-design-breaks-cover/10795443/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
   },
   {
   slotId: "news3",
-  sourceLabel: "F1Oversteer.com",
-  title: "Horner backs Wolff amid Mercedes rule-breaking claims",
-  summary:
-    "Christian Horner has publicly supported Toto Wolff as Mercedes faces accusations of bending Formula 1’s technical rules over their new power unit, framing the controversy as part of the sport’s engineering interpretation battle rather than outright cheating. The backing from a traditional rival adds an unexpected twist to the pre-season row over alleged rule exploitation. ",
-  kcsQuickShift:
-    "Wait what? Horner agrees with Wolff ",
-  url: "https://www.f1oversteer.com/news/even-christian-horner-is-siding-with-toto-wolff-as-mercedes-are-accused-of-breaking-f1-rules/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
-  },
-  {
-  slotId: "news4",
-  sourceLabel: "Autoguide.com",
-  title: "Honda puts reliability first with its new 2026 F1 engine",
-  summary:
-    "Honda says reliability is the top priority for its all-new Formula 1 power unit ahead of the 2026 regulations, with the manufacturer focused on building a durable and stable engine platform before pushing for maximum performance.",
-  kcsQuickShift:
-    "Honda isn’t chasing headline horsepower yet — they’re building something that finishes races first and worries rivals later.",
-  url: "https://www.autoguide.com/auto/auto-news/reliability-is-the-priority-for-honda-s-new-f1-engine-44629768",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
-  },
-  {
-   slotId: "news5",
-sourceLabel: "Formula1.com",
-title: "What F1 Drivers Got Up to During the Off-Season",
-summary: "With the 2026 season approaching, F1 drivers mixed training, winter sports, personal milestones and team marketing events — from snowboarding and Olympic torch runs to engagements and intense pre-season fitness work — while also unveiling liveries and getting back behind the wheel ahead of testing. ([formula1.com](https://www.formula1.com/en/latest/article/olympic-flames-training-camps-and-engagements-what-f1-drivers-were-up-to.2jkdshvtUeRgbEXXBvNNto))",
-kcsQuickShift: "Drivers balanced workouts, thrills and big life moments while gearing up for 2026.",
-url: "https://www.formula1.com/en/latest/article/olympic-flames-training-camps-and-engagements-what-f1-drivers-were-up-to.2jkdshvtUeRgbEXXBvNNto",
+sourceLabel: "Motorsport.com",
+title: "Stefano Domenicali sets out Formula 1’s vision for 2026 as Apple TV partnership begins",
+summary: "Formula 1 boss Stefano Domenicali outlined the sport’s strategic priorities for 2026, highlighting growth ambitions, fan engagement, and the rollout of the new :contentReference[oaicite:0]{index=0} broadcast partnership as central pillars. Domenicali stressed how the sport aims to balance global expansion with deeper digital experiences as the 2026 season unfolds and the new era of competition begins.",
+kcsQuickShift: "I was hoping there might be some news of some cool tech that Apple may introduce to F1",
+url: "https://www.motorsport.com/f1/news/stefano-domenicali-sets-out-f1s-vision-for-2026-as-apple-tv-partnership-begins/10795289/",
 imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 3, 2026"
+dateLabel: "Feb 5, 2026"
+  },
+  {slotId: "",
+sourceLabel: "Motorsport.com",
+title: "Lando Norris says Beckham was among the stars who reached out after his 2025 F1 title win",
+summary: "McLaren’s 2025 Formula One world champion Lando Norris revealed that David Beckham was among the high-profile names who reached out to congratulate him after his title success. Norris said he’s still catching up on messages following a whirlwind end to the season as he prepares for the 2026 campaign.",
+kcsQuickShift: " That’s a pretty cool moment.",
+url: "https://www.motorsport.com/f1/news/lando-norris-reveals-david-beckham-was-among-the-stars-to-reach-out-after-2025-f1-title-win/10795491/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
+  
   },
   {
-  slotId: "news6",
-  sourceLabel: "Sky Sports F1",
-  title: "Brundle says Piastri will return ‘with a vengeance’ in 2026",
-  summary:
-    "Martin Brundle believes Oscar Piastri will use the disappointment of narrowly missing out on the 2025 drivers’ title as motivation to come back even stronger in the 2026 Formula 1 season, after showing dominant pace and learning key lessons last year.  :contentReference[oaicite:0]{index=0}",
-  kcsQuickShift:
-    "Piastri’s not done — Brundle sees a hungry, sharper threat ready to challenge again.",
-  url: "https://www.skysports.com/f1/news/24096/13502857/oscar-piastri-martin-brundle-says-mclaren-driver-will-come-back-with-a-vengeance-after-missing-out-on-2025-f1-title",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+   slotId: "news4",
+sourceLabel: "Formula1.com",
+title: "Quiz: 10 questions testing your knowledge of this week’s Formula 1 news",
+summary: "Formula 1 has published a quick-fire quiz covering the sport’s biggest headlines from the past seven days, giving fans a fun way to check what they’ve noticed from recent developments as teams prepare for the new season. The questions span shakedown news, team activity and key updates around the paddock as the build-up continues ahead of official testing and the 2026 campaign. :contentReference[oaicite:0]{index=0}",
+kcsQuickShift: " fun way to recap the week if you like mixing fun with your facts. Let me know how you did!",
+url: "https://www.formula1.com/en/latest/article/this-week-in-f1-10-quiz-questions-on-the-latest-formula-1-news.3Qc8IRkQFGSNHeQYzFPOKo",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
+  },
+  {
+ slotId: "news5",
+sourceLabel: "Autosport",
+title: "Haas says it has kept the door open for following 2026 F1 development trends",
+summary: "Haas team technical director Kosuke “Komatsu” Yomoda told Autosport that the squad has deliberately kept its development direction flexible for the 2026 car, allowing it to respond to early trends emerging from other teams’ designs. The approach reflects Haas’s desire to remain adaptable under the new regulations rather than committing too early to a definitive concept.",
+kcsQuickShift: "Ayao Komatsu has improved this team, he deserves a ton of respect.",
+url: "https://www.autosport.com/f1/news/haas-has-tried-to-leave-door-open-for-f1-2026-development-trends-komatsu/10795308/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
 
   
   },
@@ -83,28 +72,24 @@ dateLabel: "Feb 3, 2026"
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
-  slotId: "news7",
-  sourceLabel: "MSN / Autosport",
-  title: "McLaren’s Papaya stance good news for Oscar Piastri",
-  summary:
-    "McLaren reaffirmed its commitment to the iconic ‘Papaya’ team identity and culture, a move seen as positive for Oscar Piastri’s confidence and long-term stability in the team as he builds toward a future championship challenge.  The renewed focus on heritage and continuity is expected to bolster team unity and support Piastri’s on-track performance.",
-  kcsQuickShift:
-    "I truly admire McLaren, what do you think?",
-  url: "https://www.msn.com/en-za/news/other/why-mclaren-reaffirmed-papaya-stance-is-good-news-for-oscar-piastri/ar-AA1Vrkvo?ocid=BingNewsSerp",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+  slotId: "",
+sourceLabel: "Formula1.com",
+title: "Lowdon praises strong team spirit at Cadillac as everyone embraces the challenge",
+summary: "Formula 1 executive director of motorsport operations Ross Brawn has welcomed positive feedback from teams about the collaborative atmosphere at the new Cadillac Powertrain launch event, with team representatives praising the spirit of shared challenge ahead of the 2026 season. The comments reflect a sense of unity among engine partners and teams as they adapt to the new power unit regulations and work through early development milestones.",
+kcsQuickShift: "Cadillac will be a big story this year, I hope they do well.",
+url: "https://www.formula1.com/en/latest/article/everyones-up-for-this-lowdon-praises-strong-team-spirit-at-cadillac-after.2WefSavqdQy9UK8RXBGT9C",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 5, 2026"
 },
   {
-   slotId: "news8",
-  sourceLabel: "ESPN F1",
-  title: "Aston Martin 2026 car impressive but started development months late",
-  summary:
-    "Aston Martin’s 2026 AMR26 has already turned heads with its bold design, but team boss Adrian Newey admits the project started four months behind rival cars because wind tunnel work didn’t begin until April — leaving the team playing catch-up ahead of the season. Despite limited running at the Barcelona shakedown, the distinctive look and intriguing technical choices make Aston Martin one of the 2026 season’s big wildcards. ",
-  kcsQuickShift:
-    "The on track preformance is what will count!",
-  url: "https://www.espn.com/f1/story/_/id/47824551/aston-martin-f1-2026-wildcard-spectacular-four-months-testing",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: ""
+   slotId: "",
+sourceLabel: "Formula1.com",
+title: "Why Hadjar’s mum found out about his Red Bull promotion before he did",
+summary: "Formula 1 has shared the story of how Zane Hadjar’s mother learned about his surprise promotion to a Red Bull junior role before he did, after a family member spotted the news online. The light-hearted anecdote highlights the unexpected ways news breaks for young drivers navigating the early stages of their careers.",
+kcsQuickShift: "Your Mom as your Manager! who better to look after you",
+url: "https://www.formula1.com/en/latest/article/why-hadjars-mum-found-out-about-his-red-bull-promotion-before-he-did.2ltTOVqEMP0ZzArp4jjbEl",
+imagePath: "/img/news/news-driver.jpg",
+dateLabel: "Feb 5, 2026"
   },
   
 ];
