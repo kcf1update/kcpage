@@ -10,6 +10,7 @@ import YouTubeNewsPage from "./YouTubeNewsPage";
 import CommentsPage from "./CommentsPage";
 import SiteFooter from "./components/SiteFooter";
 import AboutPage from "./AboutPage";
+import PressPage from "./PressPage";
 export default function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,8 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} /> {/* ✅ ADD THIS */}
             <Route path="*" element={<MainPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/press" element={<PressPage />} />
+
           </Routes>
         </div>
 

@@ -14,6 +14,14 @@ export default function AboutPage() {
         <h1 className="mb-6 text-3xl font-bold">
           About KC’s Worldwide F1 Update
         </h1>
+<div className="mb-6">
+  <Link
+    to="/press"
+    className="inline-block rounded-full border border-slate-300 bg-slate-50 px-4 py-1.5 text-sm font-medium text-slate-900 hover:bg-slate-100 transition"
+  >
+    Press & Media Info →
+  </Link>
+</div>
 
         <section className="space-y-5 text-sm leading-relaxed">
           <p>
