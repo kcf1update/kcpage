@@ -3,29 +3,29 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-title: "026 Livery Reveal | Atlassian Williams F1 Team",
-youtubeInput: "https://youtu.be/1lJKAk9jzho",
-description: "You have to admit it looks awesome! what do you think?,"
+title: "Ferrari's surprising start to F1 2026 explained",
+youtubeInput: "https://youtu.be/LhBpxwF_IlY",
+description: "The car looks awesome but will the speed be there? what do you think?,"
 
   },
   {
     slotId: "slot2",
-    title: "How Much Do F1 Drivers get PAID In 2026?",
-    youtubeInput: "https://youtu.be/Ik2mA4n4YoE",
-    description: "A lot of money"
+    title: "McLaren's Oscar Piastri EXPLAINS how racing in F1 will change this year 🤔",
+    youtubeInput: "https://youtu.be/ZpdVIg8Bo70",
+    description: "The guy rarley shows emotion, interesting conversation"
   },
   {
     slotId: "slot3",
-    title: "Do Lando Norris & McLaren feel ready to defend their titles? ",
-    youtubeInput: "https://youtu.be/PsyGF3mhljI",
-    description: "He seems ready to defend, what do you think?"
+    title: "Why F1's Adrian Newey needs Jenson Button by Peter Windsor ",
+    youtubeInput: "https://youtu.be/xRJmFDT4LZw",
+    description: "Peter Windor is always interesting in my oppinion."
   },
     
   {
     slotId: "slot5",
     title: "KC’s channel (subscribe)",
-    youtubeInput: "https://youtu.be/-SkM8ZTHgh4",
-    description: "Subscribe for KC’s race recaps and short updates.",
+    youtubeInput: "https://youtu.be/fvbf_Gq11d8",
+    description: "Subscribe for KC’s race recaps and short updates, coming soon!.",
     ctaUrl: "",
     ctaLabel: "Visit KC’s YouTube ↗"
   }

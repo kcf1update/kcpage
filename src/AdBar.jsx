@@ -3,7 +3,7 @@ import React from "react";
 
 /**
  * Reusable ad banner.
- * horizontal (default) or vertical (right rail)
+ * Horizontal (default) or vertical (right rail)
  */
 export default function AdBar({ vertical = false }) {
   return (
@@ -35,11 +35,15 @@ export default function AdBar({ vertical = false }) {
     >
       <div className="text-center">
         <p className="text-red-500 font-semibold uppercase tracking-[0.35em] text-sm">
-          PLACE YOUR AD HERE
+          FOUNDING PARTNER AD SLOT
         </p>
 
         <p className="mt-2 text-xs sm:text-sm text-gray-300 tracking-wide">
-          If interested, please contact
+  Curated F1 headlines + KC QuickShift takes + YouTube content
+</p>
+
+        <p className="mt-2 text-xs sm:text-sm text-gray-300 tracking-wide">
+          Contact:
           <br />
           <span className="font-medium text-white">
             kcf1update@gmail.com
