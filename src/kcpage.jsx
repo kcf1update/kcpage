@@ -192,11 +192,11 @@ export default function KCpage() {
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-yellow-300">
-                Beta Preview (Week 1)
+                Beta Preview (Week 3)
               </p>
               <p className="mt-1 text-sm text-white font-semibold">
                 KC’s Worldwide F1 Update is live in beta. Please explore the site, share it, and leave
-                feedback — it helps to improve my website.
+                feedback in the comment section — it helps to improve my website.
               </p>
             </div>
             
@@ -230,7 +230,8 @@ export default function KCpage() {
                       <img
                         src={imgPath}
                         alt={item?.title || "News image"}
-                        className="w-full h-44 object-cover rounded-2xl"
+                        className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+
                         onError={(e) => {
                           e.currentTarget.style.display = "none";
                         }}

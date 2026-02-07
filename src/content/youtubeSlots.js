@@ -3,22 +3,22 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-title: "Ferrari's surprising start to F1 2026 explained",
-youtubeInput: "https://youtu.be/LhBpxwF_IlY",
-description: "The car looks awesome but will the speed be there? what do you think?,"
+title: "Hill & Herbert on F1 testing secrets and mad car launches | Stay On Track E4",
+youtubeInput: "https://youtu.be/jDgpbALrJRw",
+description: "Some Hill and Herbert. They should never have been let go by SkySports,"
 
   },
   {
     slotId: "slot2",
-    title: "McLaren's Oscar Piastri EXPLAINS how racing in F1 will change this year 🤔",
-    youtubeInput: "https://youtu.be/ZpdVIg8Bo70",
-    description: "The guy rarley shows emotion, interesting conversation"
+    title: "Live F1 chat 0205 with Peter Windsor",
+    youtubeInput: "https://youtu.be/gl9GORO18E4",
+    description: "A good listen if you're going fo a walk or doing some weekend chores"
   },
   {
     slotId: "slot3",
-    title: "Why F1's Adrian Newey needs Jenson Button by Peter Windsor ",
-    youtubeInput: "https://youtu.be/xRJmFDT4LZw",
-    description: "Peter Windor is always interesting in my oppinion."
+    title: "The TRUTH about WORKING IN FORMULA 1! ",
+    youtubeInput: "https://youtu.be/0pzQyQiuDqE",
+    description: "I would do it for a year, what about you? Always enjoy the content"
   },
     
   {

@@ -330,9 +330,10 @@ export default function CommentsPage() {
             logoSrc="/img/kcs-f1-car.png"
             right={
               <Link
-                to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-blue-700 bg-blue-700 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(30,64,175,0.45)] hover:bg-blue-800 transition"
-              >
+  to="/"
+  className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(220,38,38,0.45)] hover:bg-red-700 hover:border-red-700 transition"
+>
+
                 <span className="text-lg leading-none">&larr;</span>
                 <span>Back to home</span>
               </Link>
