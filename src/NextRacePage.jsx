@@ -150,7 +150,7 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
               <header className="mb-3 flex items-center justify-between gap-2">
                 <h2 className="text-lg font-semibold">{session.label || `Session ${idx + 1}`}</h2>
                 <p className="text-[11px] text-gray-300">
-                  Results are read-only (updated in nextRaceContent.js).
+                  
                 </p>
               </header>
 

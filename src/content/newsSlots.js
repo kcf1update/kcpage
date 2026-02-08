@@ -7,40 +7,40 @@
 
 export const newsSlots = [
   {
-     slotId: "news1",
-  sourceLabel: "ESPN UK",
-  title: "How to watch F1 testing live from Bahrain",
+    slotId: "new1",
+  sourceLabel: "Autosport",
+  title: "Audi F1 boss Binotto says team faces ‘biggest ever jobs list’ ahead of debut",
   summary:
-    "Formula 1’s 2026 preseason testing shifts into high gear in Bahrain, with two three-day blocks of on-track action. The first test runs Feb. 11–13 and the second Feb. 18–20. While most of the sessions are open to live timing and updates online, only the final hour of the first test’s daily sessions will be broadcast live by partners such as Sky Sports F1, with more complete live coverage expected during the second test. Fans can also follow a live blog from ESPN throughout the event.", 
+    "Mattia Binotto says Audi has “never seen such a long list” of tasks to complete as it prepares for its first Formula 1 season, highlighting extensive work needed on design, reliability and operations amid sweeping rule changes for 2026. The team’s Barcelona shakedown exposed several issues with the new R26, though Binotto says the squad remains committed to improvement. The long to-do list reflects both the regulatory overhaul and Audi’s aim to build a competitive foundation in its maiden year.:contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "Expect limited live coverage early. F1TV app covergae show 1 hour of testing and then 1 hour wrap up. Not showing a time yet on my calendar",
-  url: "https://www.espn.co.uk/f1/story/_/id/47848869/f1-testing-how-watch-live-uk-full-bahrain-preseason-schedule-live-stream-tv-channel-latest-news",
+    "It was a rough start for Audi, lets hope this week goes better form them",
+  url: "https://www.autosport.com/f1/news/audi-f1-boss-binotto-on-biggest-ever-jobs-list-for-new-season/10795721/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
   },
   {
    slotId: "news2",
-  sourceLabel: "Autosport",
-  title: "Mercedes rivals push for intervention over F1 engine loophole",
+  sourceLabel: "Sky Sports",
+  title: "Newey says Aston Martin F1 development ‘on the back foot’ by four months",
   summary:
-    "Several Formula 1 teams are questioning whether Mercedes may gain an advantage from a potential loophole in the 2026 power unit regulations, prompting discussions about possible FIA intervention. While concerns have been raised behind the scenes, any formal action would require clear evidence that the regulations are being interpreted in a way that undermines competitive fairness. At this stage, the likelihood of regulatory changes appears limited, with the FIA expected to tread carefully to avoid disrupting long-term engine development plans.",
+    "Aston Martin team principal Adrian Newey admitted the AMR26’s development was about four months behind rivals because the team didn’t get a wind-tunnel model until mid-April, compressing its research and design cycle and contributing to a last-minute Barcelona Shakedown appearance. Newey joined Aston Martin in March last year and highlighted that delays with the new AMR Technology Campus and wind tunnel pushed the squad into catch-up mode for the 2026 regulations. The slow start left the team with the fewest laps during the shakedown and a race against time to prepare properly for the upcoming season.([skysports.com](https://www.skysports.com/f1/news/33694/13502722/adrian-newey-aston-martin-team-principal-reveals-outfit-have-been-on-back-foot-by-four-months-ahead-of-2026-f1-season/10795721))",
   kcsQuickShift:
-    "Techy article abour compression and F1 politics but interesting non the less ",
-  url: "https://www.autosport.com/f1/news/mercedes-rivals-push-for-intervention-over-f1-engine-loophole-but-how-realistic-is-it/10795757/",
+    "If anybody can fugure it out it's Adrian Newey",
+  url: "https://www.skysports.com/f1/news/33694/13502722/adrian-newey-aston-martin-team-principal-reveals-outfit-have-been-on-back-foot-by-four-months-ahead-of-2026-f1-season",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
   },
   {
   slotId: "news3",
-  sourceLabel: "Autosport",
-  title: "Komatsu admits Haas ‘expected more’ from Ocon in 2025",
+  sourceLabel: "Formula1.com",
+  title: "Vowles says Williams has ‘no concerns’ about going forward after missing Barcelona Shakedown",
   summary:
-    "Haas team principal Ayao Komatsu was frank about his disappointment with Esteban Ocon’s 2025 campaign after the experienced French driver was outscored by rookie teammate Oliver Bearman. Komatsu said the results fell short of expectations and acknowledged both driver and car setup issues contributed to inconsistent performances. Heading into 2026, Haas is placing emphasis on improving communication and extracting more from Ocon’s experience to get the most out of both seats.",
+    "Williams team principal James Vowles says he has no concerns about the team’s prospects after choosing to skip the Barcelona shakedown to focus on getting the FW48 ready for Bahrain testing. While missing the test put Williams behind rivals early, the squad has completed a first shakedown at Silverstone and believes the decision will strengthen its long-term development direction. Vowles highlighted that the challenge brought the team closer and underscores their rebuild and focus on progression rather than short-term fixes.([turn0view0])",
   kcsQuickShift:
-    "I feel like this is a must do year for Ocon, his stock has been on a downslide for a couple of years, what do you think?.",
-  url: "https://www.autosport.com/f1/news/komatsu-ocon-haas-f1-2025/10795861/",
+    "They are going to have to make the most of the next couple of weeks ",
+  url: "https://www.formula1.com/en/latest/article/exclusive-why-vowles-has-no-concerns-about-williams-going-forward-after.4L8D5cl2ihL2jurUnp3EUK",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
   },
   {slotId: "news4",
   sourceLabel: "Autosport",
@@ -55,7 +55,7 @@ export const newsSlots = [
   
   },
   {
-   slotId: "newsXX",
+   slotId: "news5",
   sourceLabel: "Motorsport.com",
   title: "Stella says reliability fears have vanished after Barcelona shakedown",
   summary:
@@ -68,15 +68,15 @@ export const newsSlots = [
   },
   {
  slotId: "news6",
-  sourceLabel: "FormulaPassion.it",
-  title: "Montoya: Mercedes nasconde il vero potenziale della W17",
+  sourceLabel: "FormulaPassion",
+  title: "Perez: l’esperienza in McLaren mi ha insegnato a essere più professionale",
   summary:
-    "Secondo Juan Pablo Montoya, la Mercedes W17 vista nei test di Barcellona sarebbe stata molto lontana dal suo reale potenziale. L’ex pilota colombiano ha ipotizzato che la squadra tedesca avrebbe potuto girare anche tre o quattro secondi più veloce se avesse spinto davvero, suggerendo che il programma svolto fosse più orientato alla raccolta dati che alla prestazione pura.\n\nAccording to Juan Pablo Montoya, the Mercedes W17 seen during the Barcelona tests was running well below its true potential. The former F1 driver believes the team could have been three to four seconds faster if it had pushed, suggesting Mercedes was prioritising data gathering over outright performance.",
+    "IT: Ripensando alla difficile stagione 2013 in McLaren, Sergio Pérez ha spiegato che quell’esperienza gli ha insegnato a non arrendersi e a crescere dal punto di vista professionale. Il pilota messicano ha ammesso di essere stato giovane e immaturo, riconoscendo che avrebbe potuto gestire meglio i momenti difficili e supportare maggiormente il team. Dopo l’uscita dalla McLaren, Pérez è riuscito a rilanciarsi costruendo una carriera solida e duratura in Formula 1.\n\nEN: Looking back on his difficult 2013 season at McLaren, Sergio Pérez said the experience taught him not to give up and to grow professionally. He admitted he was young and immature at the time, acknowledging he could have handled tough moments better and offered more support to the team. After leaving McLaren, Pérez rebuilt his career and went on to establish himself as a consistent and respected Formula 1 driver.",
   kcsQuickShift:
-    "Is Montoya right? are they sandbagging that much. Comment and let me know what you think",
-  url: "https://www.formulapassion.it/f1/f1-news/nascondino-mercedes-w17-test-barcellona-montoya-3-4-secondi-dal-potenziale",
+    "My oppinion, Perez is a class act. I'm glad he is back on track",
+  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/perez-esperienza-in-mclaren-mi-ha-insegnato-a-essere-professionale",
   imagePath: "/img/news/news-world.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
   
   },
 
@@ -85,26 +85,27 @@ export const newsSlots = [
   {
   slotId: "news7",
   sourceLabel: "Formula1.com",
-  title: "Drivers reflect on what the 2026 F1 cars are like",
+  title: "Team Preview: McLaren — all you need to know ahead of the 2026 season",
   summary:
-    "After getting behind the wheel of their 2026 Formula 1 cars at the Barcelona shakedown, drivers described the new generation as a different but exciting challenge. Lando Norris called them ‘fun to drive’ with more power and less grip, while Oscar Piastri noted the novel engine feel and need to rethink driving approach. Lewis Hamilton said the cars feel more agile with noticeably less downforce, and Charles Leclerc highlighted how much adaptation will matter. Across the board, the reduced size and weight, plus increased emphasis on energy management, have made these cars a fresh test for the grid’s adaptability.",  
+    "Formula1.com’s 2026 McLaren preview lays out the big picture after the team won both titles in 2025, with Lando Norris entering 2026 as reigning World Champion and switching to car number 1. McLaren keeps the same driver line-up (Norris and Oscar Piastri), and the focus now is defending their crown while adapting to the 2026 rule reset — especially cutting out the operational/strategy mistakes that occasionally cost them last season. The piece also recaps McLaren’s history and highlights how quickly they’ve climbed from the mid-2010s struggles back to the top.",
   kcsQuickShift:
-    "New engine noise, lots of power and less grip. Lets get this season rolling!",
-  url: "https://www.formula1.com/en/latest/article/what-the-2026-f1-cars-are-like-according-to-the-drivers.3bPY3Joja2kSCAPNeCmaBL",
+    "Same drivers, same confidence — but 2026 is a new year. Can they do it again? Comment and let me know what you think",
+  url: "https://www.formula1.com/en/latest/article/team-preview-mclaren-all-you-need-to-know-about-the-team-ahead-of-the-2026.57eAin6ALdCqz3Ww3tvawy",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
+
 },
   {
-   slotId: "news8",
+    slotId: "news8",
   sourceLabel: "Formula1.com",
-  title: "Cadillac set to make bold F1 debut as 11th team in 2026",
+  title: "Team Preview: Aston Martin — all you need to know ahead of the 2026 season",
   summary:
-    "Cadillac will become the 11th team on the Formula 1 grid in 2026, entering the sport with backing from General Motors and TWG Motorsports. The American outfit has signed experienced drivers Valtteri Bottas and Sergio Pérez for its maiden campaign, hoping their combined race craft will help establish the new team. Cadillac spent 2025 building infrastructure, outlining a driver support roster including test and reserve drivers, and preparing for its official race livery reveal ahead of the season start.", 
+    "Aston Martin enters the 2026 season with high stakes after a challenging 2025 and massive investment in facilities, partnerships and personnel, including legendary designer Adrian Newey now team principal. The squad retains its driver pairing of Fernando Alonso and Lance Stroll, and switches to Honda power units as it looks to prove it can fight nearer the front under the new regulations. With new leadership and a bold interpretation of the 2026 rule reset, the Silverstone-based team aims to make a leap up the grid and justify lofty expectations.([turn0view0])",
   kcsQuickShift:
-    "Even if you are not a fan of Cadillac or Americam car manufactures, you have two likable drivers. I really hope they do well. For the good of the sport",
-  url: "https://www.formula1.com/en/latest/article/team-preview-cadillac-all-you-need-to-know-about-the-team-ahead-of-the-2026.3k6okiCru5zLyXGD98jXTE",
+    "This team needs to improve this year, will Newey as Team Proncipal be the key? Comment and let me know what you think",
+  url: "https://www.formula1.com/en/latest/article/team-preview-aston-martin-all-you-need-to-know-about-the-team-ahead-of-the.2JzjmMD0JC1omDty4QBOZ2",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 7, 2026"
+  dateLabel: "Feb 8, 2026"
   },
   
 ];
