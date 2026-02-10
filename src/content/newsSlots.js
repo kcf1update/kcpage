@@ -8,104 +8,102 @@
 export const newsSlots = [
   {
     slotId: "news1",
-  sourceLabel: "Formula1.com",
-  title: "Live: McLaren unveils 2026 livery in Bahrain",
-  summary:
-    "McLaren Racing hosted a live event in Bahrain to reveal the official 2026 livery for its MCL40 challenger ahead of the start of pre-season testing, with world champion drivers Lando Norris and Oscar Piastri on hand for the launch. The livestream gave fans a first look at the car’s design as attention shifts to on-track action under the new technical regulations. ",
-  kcsQuickShift:
-    "The reigning champs chose Bahrain to debut their 2026 look, now let see if it's fast.",
-  url: "https://www.formula1.com/en/latest/article/livestream-watch-mclarens-launch-as-they-unveil-their-2026-livery.2CBydLKHgvBJv0jwLAa598",
-  imagePath: "/img/news/news-launch.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "Autosport",
+title: "Antonelli Walks Away Unhurt After Pre-Bahrain Road Crash",
+summary: "Mercedes’ Andrea Kimi Antonelli was involved in a single-car accident near his home in San Marino just days before the start of pre-season testing in Bahrain. The 19-year-old escaped the incident without injury, and team officials say the crash won’t stop him from taking part in scheduled running this week.",
+
+kcsQuickShift: "Thankfully he is ok",
+
+url: "https://www.autosport.com/f1/news/antonelli-involved-in-car-crash-ahead-of-bahrain-f1-test-mercedes-driver-unharmed/10796367/",
+imagePath: "/img/news/news-driver.jpg",
+dateLabel: "Feb 9, 2026"
   },
   {
    slotId: "news2",
-  sourceLabel: "Autosport",
-  title: "Cadillac reveals two-sided livery for its maiden F1 season",
-  summary:
-    "Cadillac unveiled its first Formula 1 livery during a Super Bowl advert, revealing a striking asymmetrical design with one side black and the other white for its 2026 debut car. The unique look harkens back to classic dual-tone schemes while signalling the team’s bold entrance onto the F1 grid ahead of its season opener. :contentReference[oaicite:0]{index=0}",
-  kcsQuickShift:
-    "Car looks awesome",
-  url: "https://www.autosport.com/f1/news/cadillac-reveals-two-sided-livery-for-its-maiden-f1-season/10796107/",
-  imagePath: "/img/news/news-launch.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "Motorsport.com",
+title: "Cadillac F1 Team Focuses on Long-Term Growth, Not Immediate Points",
+summary: "Cadillac’s new Formula 1 outfit says it isn’t setting a strict target for championship points in its rookie 2026 season, instead concentrating on beating other cars on track and building development momentum. CEO Dan Towriss emphasised that early performance will be measured by progress up the grid and learning rather than hitting a points total this year. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "Cadillac’s thinking long game, I'm sure Perez and Bottas want to score some points though",
+
+url: "https://www.motorsport.com/f1/news/why-cadillac-isnt-aiming-for-points-in-f1-2026/10796369/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
   },
   {
   slotId: "news3",
-  sourceLabel: "Formula1.com",
-  title: "Tech analysis: Why Adrian Newey’s first Aston Martin design has caused a stir",
-  summary:
-    "Adrian Newey’s first Aston Martin F1 design, the AMR26, turned heads at the Barcelona shakedown for its radical aero concepts — from its distinctive ‘tube’ sidepods to unusually mounted suspension arms that could reshape airflow and diffuser performance. Engineers and rivals alike are studying its dramatic geometry to see if Newey’s bold interpretation of the 2026 rules delivers real track advantage. ",
-  kcsQuickShift:
-    "I agree with everybody but as they say at the end of the article how will the Honda engine work with the design. They need go power to go fast?",
-  url: "https://www.formula1.com/en/latest/article/tech-analysis-why-adrian-neweys-first-aston-martin-design-has-caused-a-stir.57Gu2EU7z7Bo6fWUF9qRwc",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "Autosport",
+title: "Aston Martin Stresses Development Over Early Results with Newey-Designed 2026 F1 Car",
+summary: "At the Aston Martin launch for their 2026 Formula 1 car — the first designed under Adrian Newey’s direction and powered by a works Honda unit — team leadership made it clear they’re focused on developing the car throughout the season rather than where they sit in the opening races. Both drivers and engineers stressed that getting a solid understanding and growth path for the AMR26 matters more than immediate pace or results in Australia as the team builds toward the long term. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "Aston Martin's working hard to manage expectations.",
+
+url: "https://www.autosport.com/f1/news/how-aston-martin-and-hondas-expectation-management-ties-into-neweys-f1-design/10796518/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
   },
-  {slotId: "news4",
-  sourceLabel: "Autosport",
-  title: "The challenges facing Cadillac ahead of F1 2026",
-  summary:
-    "Cadillac’s entry as Formula 1’s newest team comes with big ambitions and equally big hurdles, from rapid staffing and facility build-outs to limited pre-season mileage and questions over how competitive its first chassis will be. Despite headline-grabbing moves like its Super Bowl livery reveal, the team still must prove it can turn potential into pace once racing begins. ",
-  kcsQuickShift:
-    "Cadillac’s F1 dream is bold, 2026 will be a real test of how quickly that gamble pays off.",
-  url: "https://www.autosport.com/f1/news/the-challenges-facing-cadillac-ahead-of-f1-2026/10796024/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 9, 2026"
+  {slotId: "1",
+sourceLabel: "Formula1.com",
+title: "Norris Reflects on How His Mindset Differs from Verstappen’s",
+summary: "As he gears up to defend his 2025 world championship, Lando Norris talked about how his attitude and approach to racing differ from Max Verstappen’s. He said his drive to win hasn’t changed, but he recognises he does things his own way and still wants to sharpen parts of his game to stay competitive at the top. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "He does not have to copy anyone he is already a F1 Champion.",
+
+url: "https://www.formula1.com/en/latest/article/norris-explains-his-different-mentality-to-verstappen-as-he-reflects-on-his.1hDSs4WgPvKTODZk98jTKj",
+imagePath: "/img/news/news-driver.jpg",
+dateLabel: "Feb 10, 2026"
   
   },
   {
     slotId: "news5",
-  sourceLabel: "Autosport",
-  title: "Inside the digital brain that supports FIA decisions in F1",
-  summary:
-    "The FIA now relies on a sophisticated RaceWatch system that combines live video, audio, GPS, and car data to assist stewards in making faster and more consistent decisions during races. The platform centralises information from every session, helping officials analyse incidents in real time and after the fact.",
-  kcsQuickShift:
-    "Stewarding is no longer just human judgment — it’s data-driven race control, watching every corner, every lap, all at once.",
-  url: "https://www.autosport.com/f1/news/inside-the-digital-brain-that-supports-the-fias-decisions-in-f1/10795927/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "Motorsport.com",
+title: "Audi’s F1 Rear Wing Takes an Unusual Aerodynamic Path",
+summary: "In early 2026 testing, Audi’s Formula 1 team revealed a distinctive rear wing setup where the movable flaps pivot from a central point instead of a trailing or leading edge like most rivals. When deployed, the two flaps open at an oblique angle that could shift airflow differently over the rear of the car — a creative interpretation of the new active aero rules that sets Audi apart from competitors. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "When you give an engineer room for creativity, you'll get speed.",
+
+url: "https://www.motorsport.com/f1/news/f1-the-audi-wing-has-a-unique-approach-the-rear-movable-flaps-open-at-an-angle/10796474/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
   },
   {
-slotId: "news6",
-  sourceLabel: "RacingNews365",
-  title: "Testschema Verstappen en Red Bull in Bahrein onthuld",
-  summary:
-    "NL: Red Bull laat Max Verstappen op woensdag 11 februari de hele dag testen in Bahrein, terwijl Isack Hadjar donderdag het volledige programma rijdt. Op vrijdag verdelen ze de sessies, al is nog niet bekend of Verstappen 's ochtends of 's middags in actie komt.\n\nEN: Red Bull has Max Verstappen running all day on Wednesday, February 11 in Bahrain, with Isack Hadjar taking the full Thursday. On Friday they split the sessions, but it’s not yet confirmed whether Verstappen drives in the morning or afternoon.",
-  kcsQuickShift:
-    "Look like Max is up first",
-  url: "https://racingnews365.nl/testschema-verstappen-en-red-bull-in-bahrein-onthuld",
-  imagePath: "/img/news/news-world.jpg",
-  dateLabel: "Feb 9, 2026"
-  
+lotId: "news6",
+sourceLabel: "Sky Sports F1",
+title: "Newey Warns Late Start Could Cost Aston Martin Early in 2026",
+summary: "With the AMR26’s official livery unveiled in Saudi Arabia, team boss Adrian Newey admitted Aston Martin’s delayed development and later shakedown means they’re ‘starting on the back foot’ compared with rivals. While the car’s design and look are generating excitement, Newey acknowledged that the lost time in wind-tunnel and CFD work will likely impact the team’s early results this season. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "Aston Martin’s debut under Newey shows promise. Looks good but I wish it had some gloss to it the color",
+
+url: "https://www.skysports.com/f1/news/12477/13505295/aston-martin-adrian-newey-says-late-start-bound-to-cost-team-as-amr26-livery-revealed-in-saudi-arabia",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
   slotId: "news7",
-  sourceLabel: "Sky Sports",
-  title: "Bahrain pre-season testing dates, schedule and how to watch",
-  summary:
-    "Formula 1’s 2026 Bahrain pre-season testing is split into two three-day blocks, with the first running February 11–13 and the second February 18–20 at the Bahrain International Circuit. Sky Sports F1 will provide live coverage, with the first test offering final hour coverage each day and full sessions expected for the second test as teams gather crucial data under the new regulations. :contentReference[oaicite:0]{index=0}",
-  kcsQuickShift:
-    "I'm ready, who else is? The first day schedule seems top take a fews seconds to load give it time. Has anyone heard anything about Apple's Coverage?",
-  url: "https://www.skysports.com/f1/news/12433/13503489/bahrain-pre-season-testing-2026-dates-schedule-weather-uk-start-time-updates-and-how-to-watch-or-stream-on-sky-sports",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "ESPN",
+title: "Cadillac Taps Marc Hynes as Chief Racing Officer",
+summary: "Cadillac’s fledgling Formula 1 team has appointed Marc Hynes — a long-time associate of Lewis Hamilton who worked on Hamilton’s Project 44 initiative — as its chief racing officer ahead of its 2026 debut. Hynes will oversee racing operations and help align the sporting and technical sides of the team as they build toward their first season. :contentReference[oaicite:0]{index=0}",
 
+kcsQuickShift: "Cadillac brings in a seasoned F1 operator to steady the ship.",
+
+url: "https://www.espn.co.uk/f1/story/_/id/47885967/cadillac-hires-ex-lewis-hamilton-associate-marc-hynes-chief-racing-officer",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
 },
   {
     slotId: "news8",
-  sourceLabel: "Rolling Stone",
-  title: "Michael Bay sues Cadillac F1 over Super Bowl commercial",
-  summary:
-    "Director Michael Bay has filed a lawsuit seeking at least $1.5 million, claiming the Cadillac F1 team used his creative ideas for its Super Bowl advertisement without compensation after initially discussing him directing the spot. Cadillac responded that it was only exploring Bay’s involvement and that the concept had already been developed before engaging him. ",
-  kcsQuickShift:
-    "No a great start for Cadillac. I hope it's not  much of a distraction for team",
-  url: "https://www.yahoo.com/entertainment/movies/articles/michael-bay-sues-cadillac-f1-120000055.html",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 9, 2026"
+sourceLabel: "Motorsport.com",
+title: "Williams F1 Unveils New Estrella Galicia 0,0 Partnership",
+summary: "Atlassian Williams Racing has struck a deal with Estrella Galicia 0,0 that brings the long-time Carlos Sainz-associated brand aboard as an official partner for 2026 and beyond. The non-alcoholic beer’s logos will feature on the halo, rear wing endplates, and on the helmets and suits of Sainz and Alex Albon, while also appearing in the team’s European race hospitality spaces. :contentReference[oaicite:0]{index=0}",
+
+kcsQuickShift: "Carlos Sainz improves every team he's on, in this case even sponsorship",
+
+url: "https://www.motorsport.com/f1/news/williams-f1-announces-new-partnership-with-long-term-carlos-sainz-sponsor/10796480/",
+imagePath: "/img/news/news-01.jpg",
+dateLabel: "Feb 10, 2026"
   },
   
 ];

@@ -3,22 +3,22 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-title: "2026 McLaren Mastercard Formula 1® Team Launch Live",
-youtubeInput: "https://youtu.be/STNcp-2JEXI",
-description: "I can't get over how much narrower and smaller the car look. I wish it had a bit of blue on it, but looks awesome anyway"
+title: "Aston Martin Aramco F1 Team 2026 Season Launch",
+youtubeInput: "https://youtu.be/4hWYgatg4TU",
+description: "looks good, but why are the teams going with a flat look to the cars graphics Why not add some shine? Like Red Bull did."
 
   },
   {
     slotId: "slot2",
-    title: "Cadillac Formula 1® Team 2026 Livery Reveal | The Mission Begins",
-    youtubeInput: "https://youtu.be/GlBnuKPbTO0",
-    description: "Cool video. I gues Michael Bay isn't impressed though!"
+    title: "We will see Lewis Hamilton back to his best!” | Jenson Button backs former team-mate",
+    youtubeInput: "https://youtu.be/CJZxNmhaBIg",
+    description: "Will he walk away at the end of 2026? comment and let me know what you think!"
   },
   {
     slotId: "slot3",
-    title: "Cadillac reveal their first-ever F1 livery! ",
-    youtubeInput: "https://youtu.be/jD7GDJibaeM",
-    description: "SkySportF1 news"
+    title: "F1’s New Loophole Is More Complex Than You Think ",
+    youtubeInput: "https://youtu.be/hLzto55W3RU",
+    description: "First time posting one of his videos. Interesting tech talk"
   },
     
   {
