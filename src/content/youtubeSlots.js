@@ -24,8 +24,8 @@ description: "I can't get over how much narrower and smaller the car look. I wis
   {
     slotId: "slot5",
     title: "KC’s channel (subscribe)",
-    youtubeInput: "https://youtu.be/fvbf_Gq11d8",
-    description: "The very first KC’s Quick Shift is almost here.",
+    youtubeInput: "https://youtu.be/ncMfpQdr7kY",
+    description: "The very first KC’s Quick Shift!",
     ctaUrl: "",
     ctaLabel: "Visit KC’s YouTube ↗"
   }

@@ -175,7 +175,7 @@ export default function KCpage() {
                 Follow on Instagram ↗
               </a>
               <a
-  href="https://www.youtube.com/@KevinChisholm-z6b"
+  href="https://www.youtube.com/@kcf1update"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-xl bg-blue-600/90 px-4 py-2 text-sm sm:text-base font-semibold text-white hover:bg-blue-600 transition"
@@ -357,7 +357,7 @@ export default function KCpage() {
                 Full race recap videos will be published after every Grand Prix.
                 <br />
                 <a
-                  href="https://www.youtube.com/@KevinChisholm-z6b"
+                  href="https://www.youtube.com/@kcf1update"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-block font-semibold text-red-300 underline hover:text-red-200"
