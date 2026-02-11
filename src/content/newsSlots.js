@@ -8,102 +8,102 @@
 export const newsSlots = [
   {
     slotId: "news1",
-sourceLabel: "Autosport",
-title: "Antonelli Walks Away Unhurt After Pre-Bahrain Road Crash",
-summary: "Mercedes’ Andrea Kimi Antonelli was involved in a single-car accident near his home in San Marino just days before the start of pre-season testing in Bahrain. The 19-year-old escaped the incident without injury, and team officials say the crash won’t stop him from taking part in scheduled running this week.",
-
-kcsQuickShift: "Thankfully he is ok",
-
-url: "https://www.autosport.com/f1/news/antonelli-involved-in-car-crash-ahead-of-bahrain-f1-test-mercedes-driver-unharmed/10796367/",
-imagePath: "/img/news/news-driver.jpg",
-dateLabel: "Feb 9, 2026"
+  sourceLabel: "Motorsport.com",
+  title: "Wolff says Mercedes “screwed” if FIA and F1 side with rivals on engine issue",
+  summary:
+    "Mercedes team principal Toto Wolff warned that his team could be at a disadvantage if the FIA and Formula 1 governance align with rival manufacturers in a dispute over the 2026 engine compression checks. Wolff maintains Mercedes’ engine complies with current rules but acknowledged the situation could change if measurement procedures are altered before the season start.",
+  kcsQuickShift:
+    "I can't believe they are still talking about this. Shouldn't it have been solved by now?",
+  url: "https://www.motorsport.com/f1/news/wolff-mercedes-screwed-if-fia-and-f1-side-with-rivals-in-engine-row/10796717/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
   },
   {
-   slotId: "news2",
-sourceLabel: "Motorsport.com",
-title: "Cadillac F1 Team Focuses on Long-Term Growth, Not Immediate Points",
-summary: "Cadillac’s new Formula 1 outfit says it isn’t setting a strict target for championship points in its rookie 2026 season, instead concentrating on beating other cars on track and building development momentum. CEO Dan Towriss emphasised that early performance will be measured by progress up the grid and learning rather than hitting a points total this year.",
-
-kcsQuickShift: "Cadillac’s thinking long game, I'm sure Perez and Bottas want to score some points though",
-
-url: "https://www.motorsport.com/f1/news/why-cadillac-isnt-aiming-for-points-in-f1-2026/10796369/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+  slotId: "2026-02-11-bahrain-test-gallery-day1",
+  sourceLabel: "Formula1.com",
+  title: "Gallery: Cars hit the track for Day 1 of the first 2026 pre-season test in Bahrain",
+  summary:
+    "Formula 1 released an official photo gallery of the first day of pre-season testing in Bahrain, showcasing all 10 cars under the 2026 regulations as they took to the track for intense running. The images highlight different setups, liveries and early test programmes from teams including Mercedes, Red Bull, Ferrari and McLaren as engineers and drivers collect data ahead of the season opener.",
+  kcsQuickShift:
+    "Seeing the new cars in action is awesome, wow",
+  url: "https://www.formula1.com/en/latest/article/gallery-cars-hit-the-track-for-day-1-of-the-first-2026-pre-season-test-in.1cgKuc2r5s88jhj4HBisGK",
+  imagePath: "/img/news/bahrain-test-gallery-day1.jpg",
+  dateLabel: "Feb 11, 2026"
   },
   {
   slotId: "news3",
-sourceLabel: "Autosport",
-title: "Aston Martin Stresses Development Over Early Results with Newey-Designed 2026 F1 Car",
-summary: "At the Aston Martin launch for their 2026 Formula 1 car — the first designed under Adrian Newey’s direction and powered by a works Honda unit — team leadership made it clear they’re focused on developing the car throughout the season rather than where they sit in the opening races. Both drivers and engineers stressed that getting a solid understanding and growth path for the AMR26 matters more than immediate pace or results in Australia as the team builds toward the long term.",
-
-kcsQuickShift: "Aston Martin's working hard to manage expectations.",
-
-url: "https://www.autosport.com/f1/news/how-aston-martin-and-hondas-expectation-management-ties-into-neweys-f1-design/10796518/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+  sourceLabel: "Formula1.com",
+  title: "From aero rakes to flow viz: 5 key terms you need to know for F1 pre-season testing",
+  summary:
+    "Formula 1 has outlined five essential technical terms that fans and followers should understand to better interpret pre-season testing in 2026, including aero rakes, flow viz, long-runs, short-runs and tyre compounds. The guide aims to demystify common engineering phrases used in team communications and media coverage during early tests in Bahrain.",
+  kcsQuickShift:
+    "good info for new viewers even for us returning ones!",
+  url: "https://www.formula1.com/en/latest/article/from-aero-rakes-to-flow-vis-5-key-terms-you-need-to-know-for-f1-pre-season-testing.7gcryzPYiJAm1FqJGIrC9u",
+  imagePath:  "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
   },
-  {slotId: "1",
-sourceLabel: "Formula1.com",
-title: "Norris Reflects on How His Mindset Differs from Verstappen’s",
-summary: "As he gears up to defend his 2025 world championship, Lando Norris talked about how his attitude and approach to racing differ from Max Verstappen’s. He said his drive to win hasn’t changed, but he recognises he does things his own way and still wants to sharpen parts of his game to stay competitive at the top.",
-
-kcsQuickShift: "He does not have to copy anyone he is already a F1 Champion.",
-
-url: "https://www.formula1.com/en/latest/article/norris-explains-his-different-mentality-to-verstappen-as-he-reflects-on-his.1hDSs4WgPvKTODZk98jTKj",
-imagePath: "/img/news/news-driver.jpg",
-dateLabel: "Feb 10, 2026"
+  { slotId: "news4",
+  sourceLabel: "Motorsport.com",
+  title: "Verstappen tops opening morning of Bahrain F1 pre-season test",
+  summary:
+    "Max Verstappen set the fastest time on the opening morning of the 2026 Bahrain Formula 1 pre-season test, showing early pace for Red Bull as teams continue to evaluate new cars and updates under the revised regulations. Several drivers completed high mileage runs as teams focused on gathering data and understanding tyre and aero behaviour ahead of the season opener.",
+  kcsQuickShift:
+    "Piastri just a little behind on the time charts ",
+  url: "https://www.motorsport.com/f1/news/f1-bahrain-pre-season-test-max-verstappen-tops-opening-morning/10796647/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
   
   },
   {
     slotId: "news5",
-sourceLabel: "Motorsport.com",
-title: "Audi’s F1 Rear Wing Takes an Unusual Aerodynamic Path",
-summary: "In early 2026 testing, Audi’s Formula 1 team revealed a distinctive rear wing setup where the movable flaps pivot from a central point instead of a trailing or leading edge like most rivals. When deployed, the two flaps open at an oblique angle that could shift airflow differently over the rear of the car — a creative interpretation of the new active aero rules that sets Audi apart from competitors.",
-
-kcsQuickShift: "When you give an engineer room for creativity, you'll get speed.",
-
-url: "https://www.motorsport.com/f1/news/f1-the-audi-wing-has-a-unique-approach-the-rear-movable-flaps-open-at-an-angle/10796474/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+  sourceLabel: "FormulaPassion.it",
+  title: "Diretta Test F1 Bahrain 2026 – Day 1 Pomeriggio",
+  summary:
+    "Il pomeriggio della prima giornata di test in Bahrain vede Ferrari, Mercedes e McLaren impegnate su programmi diversi tra simulazioni di passo gara, prove di mescole e raccolta dati aerodinamici. La SF-26 continua il proprio lavoro di sviluppo mentre gli altri team si concentrano su affidabilità e gestione della power unit.\n\nIn the afternoon session of Day 1 in Bahrain, teams shifted focus toward structured long runs, tyre evaluation and cooling management under the 2026 regulations. Ferrari continued refining the SF-26’s balance, while rivals prioritised reliability and data gathering ahead of the season opener.",
+  kcsQuickShift:
+    "As I said in my video, it who understands the car first will be the fastest. ",
+  url: "https://www.formulapassion.it/f1/f1-live/diretta-f1-test-bahrain-2026-live-day-1-pomeriggio-ferrari-sf26-mercedes-power-unit-aggiornamenti",
+  imagePath: "/img/news/news-world.jpg",
+  dateLabel: "Feb 11, 2026"
   },
   {
-lotId: "news6",
-sourceLabel: "Sky Sports F1",
-title: "Newey Warns Late Start Could Cost Aston Martin Early in 2026",
-summary: "With the AMR26’s official livery unveiled in Saudi Arabia, team boss Adrian Newey admitted Aston Martin’s delayed development and later shakedown means they’re ‘starting on the back foot’ compared with rivals. While the car’s design and look are generating excitement, Newey acknowledged that the lost time in wind-tunnel and CFD work will likely impact the team’s early results this season.",
-
-kcsQuickShift: "Aston Martin’s debut under Newey shows promise. Looks good but I wish it had some gloss to it the color",
-
-url: "https://www.skysports.com/f1/news/12477/13505295/aston-martin-adrian-newey-says-late-start-bound-to-cost-team-as-amr26-livery-revealed-in-saudi-arabia",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+slotId: "news6",
+  sourceLabel: "ESPN",
+  title: "Hamilton says fans may ‘need a degree’ to understand new F1 2026 terms",
+  summary:
+    "Lewis Hamilton suggested that the new terminology and systems introduced under the 2026 Formula 1 regulations may be difficult for fans to follow, saying the combination of battery management, multiple power modes and updated aero features makes the sport ‘ridiculously complex’. Hamilton spoke during preseason testing in Bahrain and admitted fans might need a deep understanding of technical terms like Overtake Mode and active aero to fully grasp what’s happening on track.\n\nLewis Hamilton said fans could struggle to keep up with the new F1 2026 technical language, noting that energy deployment systems and updated race terminology add layers of complexity. He acknowledged the challenge for followers of the sport to understand terms like battery-boost modes and aero adjustments, even as drivers adapt during testing.",
+  kcsQuickShift:
+    "Hamilton does not sound happy or comforable for 2026, what do you think? ",
+  url: "https://www.espn.co.uk/f1/story/_/id/47896922/lewis-hamilton-new-f1-2026-terms-rules-fans-need-degree-understand",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
-  slotId: "news7",
-sourceLabel: "ESPN",
-title: "Cadillac Taps Marc Hynes as Chief Racing Officer",
-summary: "Cadillac’s fledgling Formula 1 team has appointed Marc Hynes — a long-time associate of Lewis Hamilton who worked on Hamilton’s Project 44 initiative — as its chief racing officer ahead of its 2026 debut. Hynes will oversee racing operations and help align the sporting and technical sides of the team as they build toward their first season.",
-
-kcsQuickShift: "Cadillac brings in a seasoned F1 operator to steady the ship.",
-
-url: "https://www.espn.co.uk/f1/story/_/id/47885967/cadillac-hires-ex-lewis-hamilton-associate-marc-hynes-chief-racing-officer",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+ slotId: "news7",
+  sourceLabel: "ESPN",
+  title: "F1 testing live: Latest updates from Bahrain Day 1",
+  summary:
+    "Day 1 of Formula 1 pre-season testing in Bahrain saw teams focusing on long-run programmes and early performance evaluation under the new 2026 regulations. Mercedes, Ferrari, Red Bull and McLaren rotated drivers while gathering race-pace data, with Lewis Hamilton, Max Verstappen and Lando Norris featuring prominently in the early timing screens as teams worked through aero and tyre understanding.",
+  kcsQuickShift:
+    "Understanding these new cars is the objective today",
+  url: "https://www.espn.co.uk/f1/story/_/id/47888006/f1-testing-live-latest-updates-bahrain-mercedes-ferrari-mclaren-red-bull-day-commentary-results-lewis-hamilton-max-verstappen-lando-norris",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
 },
   {
     slotId: "news8",
-sourceLabel: "Motorsport.com",
-title: "Williams F1 Unveils New Estrella Galicia 0,0 Partnership",
-summary: "Atlassian Williams Racing has struck a deal with Estrella Galicia 0,0 that brings the long-time Carlos Sainz-associated brand aboard as an official partner for 2026 and beyond. The non-alcoholic beer’s logos will feature on the halo, rear wing endplates, and on the helmets and suits of Sainz and Alex Albon, while also appearing in the team’s European race hospitality spaces.",
-
-kcsQuickShift: "Carlos Sainz improves every team he's on, in this case even sponsorship",
-
-url: "https://www.motorsport.com/f1/news/williams-f1-announces-new-partnership-with-long-term-carlos-sainz-sponsor/10796480/",
-imagePath: "/img/news/news-01.jpg",
-dateLabel: "Feb 10, 2026"
+  sourceLabel: "Sky Sports",
+  title: "Consensus that Mercedes are early pace setters to be tested as pre-season resumes in Bahrain",
+  summary:
+    "Early impressions from Bahrain pre-season testing suggest Mercedes are producing strong pace as teams continue refining their setups under the 2026 regulations. Engineers and drivers alike have noted the W15’s consistent performance over longer runs, with rivals watching closely as data builds across the first sessions of running.",
+  kcsQuickShift:
+    "Is it engine or car?",
+  url: "https://www.skysports.com/f1/news/12433/13505380/f1-testing-consensus-that-mercedes-are-early-pace-setters-to-be-tested-as-pre-season-resumes-in-bahrain",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 11, 2026"
   },
   
 ];

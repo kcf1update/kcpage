@@ -3,16 +3,16 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-title: "Aston Martin Aramco F1 Team 2026 Season Launch",
-youtubeInput: "https://youtu.be/4hWYgatg4TU",
-description: "looks good, but why are the teams going with a flat look to the cars graphics Why not add some shine? Like Red Bull did."
+title: "What we learned from final three F1 2026 reveals",
+youtubeInput: "https://youtu.be/v_CHEW3ZSZA",
+description: "Great recap, worth the watch."
 
   },
   {
     slotId: "slot2",
-    title: "We will see Lewis Hamilton back to his best!” | Jenson Button backs former team-mate",
-    youtubeInput: "https://youtu.be/CJZxNmhaBIg",
-    description: "Will he walk away at the end of 2026? comment and let me know what you think!"
+    title: "Valtteri Bottas REVEALS why he chose Cadillac!",
+    youtubeInput: "https://youtu.be/WeBRmSFcRxs",
+    description: "Fun video with Kym Illman and Valteri Bottas"
   },
   {
     slotId: "slot3",

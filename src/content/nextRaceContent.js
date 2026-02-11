@@ -38,30 +38,30 @@ export const nextRaceContent = {
     {
   id: "session1",
   label: "Day 1 Feb 11",
-  time: "03:00-12:00",
+  time: "completed -- *only drove in morning session",
   results: [
-    "",   // Max Verstappen
-    "",  // Arvid Lindblad
-    "",   // Charles Leclerc
-    "",   // Lewis Hamilton
-    "",   // Lando Norris
-    "",   // Oscar Piastri
-    "",     // George Russell
-    "",     // Kimi Antonelli
-    "",     // Lance Stroll
+    " 1:34.798, 136 laps",   // Max Verstappen
+    " 1:37.945, 75 laps",  // Arvid Lindblad
+    "1:35.959, 80 laps",   // Charles Leclerc
+    "1:36.433, 52 laps*",   // Lewis Hamilton
+    " 1:34.669, 58 laps",   // Lando Norris
+    " 1:35.602, 54 laps*",   // Oscar Piastri
+    " 1:36.108, 56 laps*",     // George Russell
+    " 1:37.629, 30 laps",     // Kimi Antonelli
+    " 1:39.883, 36 laps ",     // Lance Stroll
     "",     // Fernando Alonso
-    "",     // Pierre Gasly
-    "",     // Franco Colapinto
-    "",     // Esteban Ocon
+    "1:36.765, 49 laps",     // Pierre Gasly
+    " 1:40.330, 28 laps*",     // Franco Colapinto
+    " 1:35.578, 115 laps",     // Esteban Ocon
     "",     // Oliver Bearman
     "",     // Isack Hadjar
     "",     // Liam Lawson
-    "",     // Alexander Albon
-    "",     // Carlos Sainz
-    "",     // Nico Hülkenberg
-    "",     // Gabriel Bortoleto
-    "",// Valtteri Bottas
-    "",// Sergio Perez
+    "1:37.437, 68 laps",     // Alexander Albon
+    "1:38.221, 77 laps*",     // Carlos Sainz
+    " 1:36.861, 73 laps",     // Nico Hülkenberg
+    " 1:38.871, 49 laps*",     // Gabriel Bortoleto
+    "1:39.150, 49 laps*",// Valtteri Bottas
+    "1:38.828, 58 laps",// Sergio Perez
   ],
 },
 
