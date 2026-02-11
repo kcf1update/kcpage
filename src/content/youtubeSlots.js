@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
     slotId: "slot1",
-title: "What we learned from final three F1 2026 reveals",
-youtubeInput: "https://youtu.be/v_CHEW3ZSZA",
+title: "LIVE: Bahrain Pre-Season Testing Wrap-Up Show | Day 1",
+youtubeInput: "https://youtu.be/3RIJfixY7Zo",
 description: "Great recap, worth the watch."
 
   },

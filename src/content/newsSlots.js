@@ -8,13 +8,13 @@
 export const newsSlots = [
   {
     slotId: "news1",
-  sourceLabel: "Motorsport.com",
-  title: "Wolff says Mercedes “screwed” if FIA and F1 side with rivals on engine issue",
+  sourceLabel: "Reuters (via MSN)",
+  title: "Norris Fastest on Day 1 of Bahrain Testing",
   summary:
-    "Mercedes team principal Toto Wolff warned that his team could be at a disadvantage if the FIA and Formula 1 governance align with rival manufacturers in a dispute over the 2026 engine compression checks. Wolff maintains Mercedes’ engine complies with current rules but acknowledged the situation could change if measurement procedures are altered before the season start.",
+    " set the early benchmark in Bahrain, putting the  MCL40 on top with a 1:34.669 lap.  finished close behind for , while  placed third for . Teams focused heavily on mileage and data collection under the evolving 2026 technical direction.",
   kcsQuickShift:
-    "I can't believe they are still talking about this. Shouldn't it have been solved by now?",
-  url: "https://www.motorsport.com/f1/news/wolff-mercedes-screwed-if-fia-and-f1-side-with-rivals-in-engine-row/10796717/",
+    "Early for sure, but Norris sets the pace",
+  url: "https://www.msn.com/en-us/sports/motorsports/mclaren-s-lando-norris-tops-day-1-of-f1-testing-in-bahrain/ar-AA1W98gg",
   imagePath: "/img/news/news-01.jpg",
   dateLabel: "Feb 11, 2026"
   },
@@ -27,7 +27,7 @@ export const newsSlots = [
   kcsQuickShift:
     "Seeing the new cars in action is awesome, wow",
   url: "https://www.formula1.com/en/latest/article/gallery-cars-hit-the-track-for-day-1-of-the-first-2026-pre-season-test-in.1cgKuc2r5s88jhj4HBisGK",
-  imagePath: "/img/news/bahrain-test-gallery-day1.jpg",
+  imagePath: "/img/news/news-01.jpg",
   dateLabel: "Feb 11, 2026"
   },
   {
