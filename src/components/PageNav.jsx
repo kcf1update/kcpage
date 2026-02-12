@@ -5,7 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 // No "Home" here (per your request)
 const NAV_ITEMS = [
   { key: "navPoints", fallback: "Points", to: "/points" },
-  { key: "navNextRace", fallback: "Next Race Info", to: "/next-race" },
+  { key: "navNextRace", fallback: "Race Centre", to: "/next-race" },
+
   { key: "navF1News", fallback: "F1 News", to: "/news" },
   { key: "navYouTube", fallback: "YouTube", to: "/youtube" },
   {

@@ -7,103 +7,103 @@
 
 export const newsSlots = [
   {
-    slotId: "news1",
-  sourceLabel: "Reuters (via MSN)",
-  title: "Norris Fastest on Day 1 of Bahrain Testing",
+   slotId: "news1",
+  sourceLabel: "Sky Sports",
+  title: "Leclerc P1 on Bahrain Test Day 2 as Running Racks Up and Issues Bite",
   summary:
-    " set the early benchmark in Bahrain, putting the  MCL40 on top with a 1:34.669 lap.  finished close behind for , while  placed third for . Teams focused heavily on mileage and data collection under the evolving 2026 technical direction.",
+    "Charles Leclerc set the quickest time on Day 2 of Bahrain Test 1, with Lando Norris close behind as Ferrari and McLaren continued to look sharp. The day also featured interruptions and reliability headaches for some teams as everyone pushed through heavy mileage while learning the new 2026 package.",
   kcsQuickShift:
-    "Early for sure, but Norris sets the pace",
-  url: "https://www.msn.com/en-us/sports/motorsports/mclaren-s-lando-norris-tops-day-1-of-f1-testing-in-bahrain/ar-AA1W98gg",
+    "Nice to see Ferrari setting good times",
+  url: "https://www.skysports.com/f1/news/12433/13506731/f1-bahrain-testing-charles-leclerc-tops-lando-norris-as-ferrari-and-mclaren-impress-while-red-bull-and-mercedes-suffer-technical-issues",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+  dateLabel: "Feb 12, 2026"
   },
   {
-  slotId: "2026-02-11-bahrain-test-gallery-day1",
-  sourceLabel: "Formula1.com",
-  title: "Gallery: Cars hit the track for Day 1 of the first 2026 pre-season test in Bahrain",
+  slotId: "news2",
+  sourceLabel: "Motorsport.com",
+  title: "Sainz Says Red Bull-Ford Hybrid Looks Ahead of the Field in Bahrain",
   summary:
-    "Formula 1 released an official photo gallery of the first day of pre-season testing in Bahrain, showcasing all 10 cars under the 2026 regulations as they took to the track for intense running. The images highlight different setups, liveries and early test programmes from teams including Mercedes, Red Bull, Ferrari and McLaren as engineers and drivers collect data ahead of the season opener.",
+    "Carlos Sainz says data from the Bahrain pre-season test suggests Red Bull and Ford’s new hybrid powertrain is currently a step ahead of other manufacturers, especially in how it deploys and manages electric energy under the 2026 rules. His comments echo similar observations from other team principals about the strength of Red Bull’s early package.",
   kcsQuickShift:
-    "Seeing the new cars in action is awesome, wow",
-  url: "https://www.formula1.com/en/latest/article/gallery-cars-hit-the-track-for-day-1-of-the-first-2026-pre-season-test-in.1cgKuc2r5s88jhj4HBisGK",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+    "Sainz believes Red Bull-Ford’s hybrid deployment is setting the early performance standard.",
+  url: "https://www.motorsport.com/f1/news/carlos-sainz-red-bull-ford-a-step-ahead-on-crucial-hybrid-usage/10796923/",
+  imagePath:  "/img/news/news-01.jpg",
+  dateLabel: "Feb 12, 2026"
   },
   {
   slotId: "news3",
-  sourceLabel: "Formula1.com",
-  title: "From aero rakes to flow viz: 5 key terms you need to know for F1 pre-season testing",
-  summary:
-    "Formula 1 has outlined five essential technical terms that fans and followers should understand to better interpret pre-season testing in 2026, including aero rakes, flow viz, long-runs, short-runs and tyre compounds. The guide aims to demystify common engineering phrases used in team communications and media coverage during early tests in Bahrain.",
-  kcsQuickShift:
-    "good info for new viewers even for us returning ones!",
-  url: "https://www.formula1.com/en/latest/article/from-aero-rakes-to-flow-vis-5-key-terms-you-need-to-know-for-f1-pre-season-testing.7gcryzPYiJAm1FqJGIrC9u",
-  imagePath:  "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
-  },
-  { slotId: "news4",
   sourceLabel: "Motorsport.com",
-  title: "Verstappen tops opening morning of Bahrain F1 pre-season test",
+  title: "Stroll Says Aston Martin Is Several Seconds Back After Tough Bahrain Start",
   summary:
-    "Max Verstappen set the fastest time on the opening morning of the 2026 Bahrain Formula 1 pre-season test, showing early pace for Red Bull as teams continue to evaluate new cars and updates under the revised regulations. Several drivers completed high mileage runs as teams focused on gathering data and understanding tyre and aero behaviour ahead of the season opener.",
+    "Lance Stroll described a challenging first day of 2026 Bahrain testing for Aston Martin, with the team struggling to match the early pace and running significantly off the leaders. The focus for the squad remained on gathering data and ironing out issues as they work to improve performance under the new regulations.",
   kcsQuickShift:
-    "Piastri just a little behind on the time charts ",
-  url: "https://www.motorsport.com/f1/news/f1-bahrain-pre-season-test-max-verstappen-tops-opening-morning/10796647/",
+    "Wow rough start, what's going on with Aston Martin. Holy Smokes ",
+  url: "https://www.motorsport.com/f1/news/lance-stroll-aston-martin-is-four-seconds-off-after-tough-start-to-f1-2026-pre-season/10797071/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+  dateLabel: "Feb 12, 2026"
+  },
+  {slotId: "news4",
+  sourceLabel: "Motorsport.com",
+  title: "Leclerc Tops Bahrain Test Day 2 While Norris Leads in Mileage",
+  summary:
+    "Charles Leclerc recorded the fastest time on Day Two of the Bahrain pre-season test, with Lando Norris completing the most laps of the session. Teams continued to work through the new 2026 regulations, focusing on balance, tyre data and power unit reliability throughout the day.",
+  kcsQuickShift:
+    "Is Ferrari ready to make a comeback?.",
+  url: "https://www.motorsport.com/f1/news/f1-bahrain-pre-season-test-charles-leclerc-fastest-on-day-two-lando-norris-completes-most-laps/10797101/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 12, 2026"
   
   },
   {
     slotId: "news5",
   sourceLabel: "FormulaPassion.it",
-  title: "Diretta Test F1 Bahrain 2026 – Day 1 Pomeriggio",
+  title: "Sainz afirma que el motor híbrido Red Bull-Ford parece estar por delante del resto en Bahréin",
   summary:
-    "Il pomeriggio della prima giornata di test in Bahrain vede Ferrari, Mercedes e McLaren impegnate su programmi diversi tra simulazioni di passo gara, prove di mescole e raccolta dati aerodinamici. La SF-26 continua il proprio lavoro di sviluppo mentre gli altri team si concentrano su affidabilità e gestione della power unit.\n\nIn the afternoon session of Day 1 in Bahrain, teams shifted focus toward structured long runs, tyre evaluation and cooling management under the 2026 regulations. Ferrari continued refining the SF-26’s balance, while rivals prioritised reliability and data gathering ahead of the season opener.",
+    "Carlos Sainz ha dichiarato che, analizzando i dati GPS raccolti nei test in Bahrain, il nuovo motore Red Bull-Ford sembra avere un vantaggio evidente rispetto agli altri costruttori, in particolare nella gestione e nell’erogazione della parte ibrida. Secondo lo spagnolo, l’efficienza del sistema elettrico appare molto competitiva già in questa fase iniziale, anche se ha sottolineato che è ancora presto per trarre conclusioni definitive. Carlos Sainz suggests that, based on GPS data from the Bahrain test, Red Bull and Ford’s new hybrid power unit currently seems to be a clear step ahead of other teams in terms of energy use and outright performance under the 2026 rules. He noted the early advantage is impressive, though it’s still early in the test programme.",
   kcsQuickShift:
-    "As I said in my video, it who understands the car first will be the fastest. ",
-  url: "https://www.formulapassion.it/f1/f1-live/diretta-f1-test-bahrain-2026-live-day-1-pomeriggio-ferrari-sf26-mercedes-power-unit-aggiornamenti",
-  imagePath: "/img/news/news-world.jpg",
-  dateLabel: "Feb 11, 2026"
+    "Sainz feels Red Bull-Ford’s hybrid package is laying down the early benchmark.",
+  url: "https://www.formulapassion.it/f1/f1-news/sainz-dai-dati-gps-il-motore-red-bull-ford-e-un-passo-netto-davanti-a-tutti-e-impressionante",
+  imagePath:"/img/news/news-world.jpg",
+  dateLabel: "Feb 12, 2026"
   },
   {
 slotId: "news6",
   sourceLabel: "ESPN",
-  title: "Hamilton says fans may ‘need a degree’ to understand new F1 2026 terms",
+  title: "Verstappen Questions Driving Feel of 2026 Cars After Early Running",
   summary:
-    "Lewis Hamilton suggested that the new terminology and systems introduced under the 2026 Formula 1 regulations may be difficult for fans to follow, saying the combination of battery management, multiple power modes and updated aero features makes the sport ‘ridiculously complex’. Hamilton spoke during preseason testing in Bahrain and admitted fans might need a deep understanding of technical terms like Overtake Mode and active aero to fully grasp what’s happening on track.\n\nLewis Hamilton said fans could struggle to keep up with the new F1 2026 technical language, noting that energy deployment systems and updated race terminology add layers of complexity. He acknowledged the challenge for followers of the sport to understand terms like battery-boost modes and aero adjustments, even as drivers adapt during testing.",
+    "Max Verstappen voiced concerns about the feel of the new 2026 Formula 1 cars, saying the heavy focus on energy management changes the driving experience significantly. He suggested the cars demand constant attention to hybrid deployment and do not allow drivers to push flat-out in the same way as previous generations.",
   kcsQuickShift:
-    "Hamilton does not sound happy or comforable for 2026, what do you think? ",
-  url: "https://www.espn.co.uk/f1/story/_/id/47896922/lewis-hamilton-new-f1-2026-terms-rules-fans-need-degree-understand",
+    "Verstappen’s not happy",
+  url: "https://www.espn.co.uk/f1/story/_/id/47909219/max-verstappen-slams-new-f1-2026-cars-formula-e-steroids-red-bull",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+  dateLabel: "Feb 12, 2026"
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
  slotId: "news7",
-  sourceLabel: "ESPN",
-  title: "F1 testing live: Latest updates from Bahrain Day 1",
+  sourceLabel: "Motorsport.com",
+  title: "Sainz Calls Missing Barcelona Shakedown Frustrating but Says Confidence Is Still Strong",
   summary:
-    "Day 1 of Formula 1 pre-season testing in Bahrain saw teams focusing on long-run programmes and early performance evaluation under the new 2026 regulations. Mercedes, Ferrari, Red Bull and McLaren rotated drivers while gathering race-pace data, with Lewis Hamilton, Max Verstappen and Lando Norris featuring prominently in the early timing screens as teams worked through aero and tyre understanding.",
+    "Carlos Sainz described missing the Barcelona shakedown as frustrating after an issue prevented him from completing laps, but he stressed that the team’s confidence in its 2026 package remains unchanged. Despite the setback, Sainz said the focus is on preparation and learning ahead of the official pre-season tests.",
   kcsQuickShift:
-    "Understanding these new cars is the objective today",
-  url: "https://www.espn.co.uk/f1/story/_/id/47888006/f1-testing-live-latest-updates-bahrain-mercedes-ferrari-mclaren-red-bull-day-commentary-results-lewis-hamilton-max-verstappen-lando-norris",
+    "Sainz admits missing Barcelona was annoying but he still feels positive going forward",
+  url: "https://www.motorsport.com/f1/news/carlos-sainz-missing-barcelona-shakedown-frustrating-but-williams-confidence-unchanged/10797063/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+  dateLabel: "Feb 12, 2026"
 },
   {
     slotId: "news8",
-  sourceLabel: "Sky Sports",
-  title: "Consensus that Mercedes are early pace setters to be tested as pre-season resumes in Bahrain",
+  sourceLabel: "Motorsport.com",
+  title: "Experts Warn 2026 F1 Race Starts Could Be Chaotic as Teams Adjust",
   summary:
-    "Early impressions from Bahrain pre-season testing suggest Mercedes are producing strong pace as teams continue refining their setups under the 2026 regulations. Engineers and drivers alike have noted the W15’s consistent performance over longer runs, with rivals watching closely as data builds across the first sessions of running.",
+    "Technical analysts explain that the revised hybrid systems and energy management rules in the 2026 Formula 1 regulation package could lead to unpredictable starts early in the season, with drivers needing to balance power deployment and tyre behaviour more carefully than in previous years. Teams are preparing for a learning phase where getting the launch right could be a key performance factor.",
   kcsQuickShift:
-    "Is it engine or car?",
-  url: "https://www.skysports.com/f1/news/12433/13505380/f1-testing-consensus-that-mercedes-are-early-pace-setters-to-be-tested-as-pre-season-resumes-in-bahrain",
+    "The early rounds might see messy starts as drivers and teams adapt to the new cars.",
+  url: "https://www.motorsport.com/f1/news/why-race-starts-may-be-chaotic-in-early-rounds-of-f1-2026/10796991/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 11, 2026"
+  dateLabel: "Feb 12, 2026"
   },
   
 ];
