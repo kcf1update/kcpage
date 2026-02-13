@@ -91,9 +91,18 @@ function safeLocalImagePath(imagePath) {
 
 export default function KCpage() {
   // ✅ Stage A: Featured content is file-driven (not localStorage)
-  const featuredNews = Array.isArray(newsSlots) ? newsSlots.slice(0, 3) : [];
+  const featuredNewsAll = Array.isArray(newsSlots) ? newsSlots.slice(0, 3) : [];
+  const featuredNews = featuredNewsAll.length ? featuredNewsAll.slice(0, -1) : [];
+  const featuredNewsUnderVideo =
+    featuredNewsAll.length ? featuredNewsAll[featuredNewsAll.length - 1] : null;
+
+  // ✅ Feature KC’s YouTube slot on the main page (without changing youtubeSlots.js order)
   const featuredVideo =
-    Array.isArray(youtubeSlots) && youtubeSlots.length ? youtubeSlots[0] : null;
+    Array.isArray(youtubeSlots) && youtubeSlots.length
+      ? youtubeSlots.find((v) => v?.slotId === "slot5") ||
+        youtubeSlots.find((v) => String(v?.title || "").toLowerCase().includes("kc")) ||
+        youtubeSlots[0]
+      : null;
 
   return (
     <div className="relative min-h-screen text-white">
@@ -148,24 +157,21 @@ export default function KCpage() {
               </span>
 
               <Link
-  to="/next-race"
-  className={
-    "inline-flex relative z-50 opacity-100 hover:opacity-100 hover:brightness-100 " +
-    "items-center gap-2 rounded-full border border-yellow-300/70 " +
-    "bg-black/90 px-4 py-2 text-sm font-semibold text-yellow-100 " +
-    "shadow-[0_0_20px_rgba(250,204,21,0.8)] " +
-    "transition-all duration-200 " +
-    "hover:bg-yellow-300/30 hover:text-white hover:border-yellow-200 " +
-    "hover:ring-2 hover:ring-yellow-300/60"
-  }
->
-
+                to="/next-race"
+                className={
+                  "inline-flex relative z-50 opacity-100 hover:opacity-100 hover:brightness-100 " +
+                  "items-center gap-2 rounded-full border border-yellow-300/70 " +
+                  "bg-black/90 px-4 py-2 text-sm font-semibold text-yellow-100 " +
+                  "shadow-[0_0_20px_rgba(250,204,21,0.8)] " +
+                  "transition-all duration-200 " +
+                  "hover:bg-yellow-300/30 hover:text-white hover:border-yellow-200 " +
+                  "hover:ring-2 hover:ring-yellow-300/60"
+                }
+              >
                 View next race info
                 <span className="text-xs text-yellow-200/90">&rarr;</span>
-
               </Link>
 
-              
               <a
                 href="https://www.instagram.com/kcf1update"
                 target="_blank"
@@ -175,14 +181,13 @@ export default function KCpage() {
                 Follow on Instagram ↗
               </a>
               <a
-  href="https://www.youtube.com/@kcf1update"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex items-center justify-center rounded-xl bg-blue-600/90 px-4 py-2 text-sm sm:text-base font-semibold text-white hover:bg-blue-600 transition"
->
-  My YouTube ↗
-</a>
-
+                href="https://www.youtube.com/@kcf1update"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-xl bg-blue-600/90 px-4 py-2 text-sm sm:text-base font-semibold text-white hover:bg-blue-600 transition"
+              >
+                My YouTube ↗
+              </a>
             </div>
           </div>
         </section>
@@ -199,7 +204,6 @@ export default function KCpage() {
                 feedback in the comment section — it helps to improve my website.
               </p>
             </div>
-            
           </div>
         </section>
 
@@ -231,7 +235,6 @@ export default function KCpage() {
                         src={imgPath}
                         alt={item?.title || "News image"}
                         className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-
                         onError={(e) => {
                           e.currentTarget.style.display = "none";
                         }}
@@ -347,25 +350,78 @@ export default function KCpage() {
               </>
             </GlassyCard>
 
-            {/* Coming soon card */}
-            <GlassyCard
-              highlight="red"
-              title="KC’s Worldwide F1 Update — YouTube (Coming Soon)"
-              subtitle="Race recaps, highlights, and analysis."
-            >
-              <p className="text-sm text-yellow-100/95">
-                Full race recap videos will be published after every Grand Prix.
-                <br />
-                <a
-                  href="https://www.youtube.com/@kcf1update"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block font-semibold text-red-300 underline hover:text-red-200"
+            {/* MOVED: last featured news card under the YouTube card */}
+            {featuredNewsUnderVideo ? (() => {
+              const item = featuredNewsUnderVideo;
+              const href = safeUrl(item?.url);
+              const imgPath = safeLocalImagePath(item?.imagePath);
+              const showImage = !!imgPath;
+              const quickShift = (item?.kcsQuickShift || "").trim();
+
+              return (
+                <GlassyCard
+                  key={item?.slotId || "featured-under-video"}
+                  highlight="blue"
+                  title={item?.title || "News"}
+                  subtitle={item?.sourceLabel || "Source"}
                 >
-                  Visit the KC’s Worldwide F1 Update YouTube channel →
-                </a>
-              </p>
-            </GlassyCard>
+                  <div className="space-y-3">
+                    {showImage ? (
+                      <img
+                        src={imgPath}
+                        alt={item?.title || "News image"}
+                        className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                        }}
+                      />
+                    ) : null}
+
+                    {item?.summary ? (
+                      <div className="text-sm text-slate-100/90">{item.summary}</div>
+                    ) : (
+                      <div className="text-sm text-slate-300">
+                        Add a summary in <span className="font-mono">newsSlots.js</span>
+                      </div>
+                    )}
+
+                    {quickShift ? (
+                      <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                        <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                          KC’s Quick Shift
+                        </div>
+                        <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                      </div>
+                    ) : null}
+
+                    <div className="flex items-center gap-3 pt-1">
+                      {href ? (
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                        >
+                          Read full article →
+                        </a>
+                      ) : null}
+
+                      <Link
+                        to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                        title="Go to Comments page"
+                      >
+                        💬 Comment and join the discussion
+                      </Link>
+
+                      {item?.dateLabel ? (
+                        <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+                      ) : null}
+                    </div>
+                  </div>
+                </GlassyCard>
+              );
+            })() : null}
 
             {/* Small ad card */}
             <GlassyCard

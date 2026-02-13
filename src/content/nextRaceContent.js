@@ -14,7 +14,7 @@ export const NEXT_RACE_DRIVERS = [
   "Pierre Gasly",
   "Franco Colapinto",
   "Esteban Ocon",
-  "Oliver Bearman",
+  "Ollie Bearman",
   "Isack Hadjar",
   "Liam Lawson",
   "Alex Albon",
@@ -53,7 +53,7 @@ export const nextRaceContent = {
     "1:36.765, 49 laps",     // Pierre Gasly
     " 1:40.330, 28 laps*",     // Franco Colapinto
     " 1:35.578, 115 laps",     // Esteban Ocon
-    "",     // Oliver Bearman
+    "",     // Ollie Bearman
     "",     // Isack Hadjar
     "",     // Liam Lawson
     "1:37.437, 68 laps",     // Alex Albon
@@ -83,7 +83,7 @@ export const nextRaceContent = {
     " 1:36.723, 97 laps",     // Pierre Gasly
     "",     // Franco Colapinto
     "",     // Esteban Ocon
-    "1:35.394, 130 laps",     // Oliver Bearman
+    "1:35.394, 130 laps",     // Ollie Bearman
     "1:36.561, 87 laps",     // Isack Hadjar
     "1:38.017, 50 laps*",     // Liam Lawson
     "1:37.229, 62 laps*",     // Alex Albon
@@ -97,30 +97,30 @@ export const nextRaceContent = {
     {
   id: "session3",
   label: "Day 3 Feb 13",
-  time: "03:00-12:00",
+  time: "completed -- *only drove in morning session",
   results: [
-    "",   // Max Verstappen
+    "1:35.341, 61 laps",   // Max Verstappen
     "",  // Arvid Lindblad
     "",   // Charles Leclerc
-    "",   // Lewis Hamilton
+    "1:34.209, 138 laps",   // Lewis Hamilton
     "",   // Lando Norris
-    "",   // Oscar Piastri
-    "",     // George Russell
-    "",     // Kimi Antonelli
-    "",     // Lance Stroll
+    "1:34.549, 153 laps",   // Oscar Piastri
+    "1:33.918, 78 laps",     // George Russell
+    "1:33.669, 49 laps",     // Kimi Antonelli
+    "1:38.165, 69 laps",     // Lance Stroll
     "",     // Fernando Alonso
     "",     // Pierre Gasly
-    "",     // Franco Colapinto
-    "",     // Esteban Ocon
-    "",     // Oliver Bearman
-    "",     // Isack Hadjar
-    "",     // Liam Lawson
-    "",     // Alex Albon
-    "",     // Carlos Sainz
-    "	",     // Nico Hülkenberg
-    "",     // Gabriel Bortoleto
-    "", //Valtteri Bottas
-    "",//Sergio Perez
+    "1:35.806, 137 laps",     // Franco Colapinto
+    "1:35.753, 68 laps",     // Esteban Ocon
+    "1:35.972, 70 laps",     // Ollie Bearman
+    "1:35.610, 53 laps",     // Isack Hadjar
+    "1:36.808, 119 laps",     // Liam Lawson
+    "1:36.793, 71 laps",     // Alex Albon
+    "1:37.186, 68 laps",     // Carlos Sainz
+    "1:36.291, 49 laps",     // Nico Hülkenberg
+    "1:37.536, 60 laps",     // Gabriel Bortoleto
+    "1:38.772, 37 laps", //Valtteri Bottas
+    "1:39.251, 62 laps",//Sergio Perez
   ],
 },
 
@@ -142,7 +142,7 @@ export const nextRaceContent = {
     "",     // Pierre Gasly
     "",     // Franco Colapinto
     "",     // Esteban Ocon
-    "",     // Oliver Bearman
+    "",     // Ollie Bearman
     "",     // Isack Hadjar
     "",     // Liam Lawson
     "",     // Alex Albon

@@ -1,32 +1,37 @@
-// src/content/youtubeSlots.js
-
 export const youtubeSlots = [
-  {
-    slotId: "slot1",
-title: "LIVE: Bahrain Pre-Season Testing Wrap-Up Show | Day 2",
-youtubeInput: "https://youtu.be/K1QN6l5fv68",
-description: "Day 2 recap, Red Bull is the talk of the day"
 
-  },
   {
-    slotId: "slot2",
-    title: "Live F1 chat 0212 back stage with Peter Windsor and Mark Slade",
-    youtubeInput: "https://youtu.be/ApulwvPvPuA",
-    description: "I don't know about you but I always find Peter Windsor inteesting"
-  },
-  {
-    slotId: "slot3",
-    title: "Formula 1: Drive To Survive Season 8 Official Trailer | Netflix",
-    youtubeInput: "https://youtu.be/tyw8etDrQ-c",
-    description: "It's back 2/27/2026. I'll be watching just to see the Christian Horner episode"
-  },
-    
-  {
-    slotId: "slot5",
-    title: "KC’s channel (subscribe)",
+    slotId: "slotKC",
+    title: "KC’s Channel (Subscribe)",
     youtubeInput: "https://youtu.be/ncMfpQdr7kY",
     description: "The very first KC’s Quick Shift!",
     ctaUrl: "",
-    ctaLabel: "Visit KC’s YouTube ↗"
+    ctaLabel: "Visit KC’s YouTube →",
+  },
+
+  {
+    slotId: "slot1",
+    title: "Day 3 Highlights | 2026 Bahrain Pre-Season Testing",
+    youtubeInput: "https://youtu.be/hey3cxT3JpY",
+    description: "Day 2 recap",
+    forceExternal: true
+  },
+
+ 
+    {
+  slotId: "slot2",
+  title: "Drivers React To Testing Week 1 | 2026 Bahrain Pre-Season Testing",
+  youtubeInput: "https://youtu.be/lxNG8VBvZI0",
+  description: "We'll know more next week, still surprised by Lewis's reaction so far",
+  forceExternal: true
+},
+  
+
+  {
+    slotId: "slot3",
+    title: "Why Adrian Newey’s Aston Martin F1 car is struggling so badly",
+    youtubeInput: "https://youtu.be/nwv8LdOLstg",
+    description: "Are they sandbagging or is it as a rough as a start as it appears?",
   }
+
 ];

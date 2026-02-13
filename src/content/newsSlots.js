@@ -6,29 +6,32 @@
 // - Do NOT paste external image URLs.
 
 export const newsSlots = [
+  
   {
    slotId: "news1",
-  sourceLabel: "Sky Sports",
-  title: "Leclerc P1 on Bahrain Test Day 2 as Running Racks Up and Issues Bite",
+  sourceLabel: "Sky Sports F1",
+  title:
+    "F1 testing: Mercedes top times but Russell warns of 'scary' Red Bull advantage",
   summary:
-    "Charles Leclerc set the quickest time on Day 2 of Bahrain Test 1, with Lando Norris close behind as Ferrari and McLaren continued to look sharp. The day also featured interruptions and reliability headaches for some teams as everyone pushed through heavy mileage while learning the new 2026 package.",
+    "Mercedes drivers Kimi Antonelli and George Russell set the fastest times in the first Bahrain pre-season test, with Ferrari’s Lewis Hamilton third and McLaren’s Oscar Piastri close behind. Despite the strong showing, Russell cautioned that Red Bull’s new power unit looks potent and a step ahead in energy deployment, leaving uncertainty over the real pecking order heading into the final test.",
   kcsQuickShift:
-    "Nice to see Ferrari setting good times",
-  url: "https://www.skysports.com/f1/news/12433/13506731/f1-bahrain-testing-charles-leclerc-tops-lando-norris-as-ferrari-and-mclaren-impress-while-red-bull-and-mercedes-suffer-technical-issues",
+    "KC’s Quick Shift: Mercedes pace looks impressive, but Russell’s Red Bull warning could be the real headline.",
+  url: "https://www.skysports.com/f1/news/12433/13507039/f1-testing-mercedes-set-fastest-times-of-week-but-george-russell-warns-of-scary-red-bull-amid-pecking-order-uncertainty",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+  dateLabel: "Feb 13, 2026"
   },
   {
   slotId: "news2",
   sourceLabel: "Motorsport.com",
-  title: "Sainz Says Red Bull-Ford Hybrid Looks Ahead of the Field in Bahrain",
+  title:
+    "Red Bull says it’s ‘the fourth team’ as Ferrari, Mercedes and McLaren look stronger",
   summary:
-    "Carlos Sainz says data from the Bahrain pre-season test suggests Red Bull and Ford’s new hybrid powertrain is currently a step ahead of other manufacturers, especially in how it deploys and manages electric energy under the 2026 rules. His comments echo similar observations from other team principals about the strength of Red Bull’s early package.",
+    "Red Bull’s technical director Pierre Wache dismissed claims that Red Bull is the benchmark in 2026, saying the team’s own analysis shows Ferrari, Mercedes and McLaren currently ahead in pace. The comments underline how unclear the pecking order remains after early pre-season testing and suggest Red Bull is being conservative about its competitiveness.",
   kcsQuickShift:
-    "Sainz believes Red Bull-Ford’s hybrid deployment is setting the early performance standard.",
-  url: "https://www.motorsport.com/f1/news/carlos-sainz-red-bull-ford-a-step-ahead-on-crucial-hybrid-usage/10796923/",
-  imagePath:  "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+    "KC’s Quick Shift: Red Bull downplays expectations early, calling itself fourth fastest rather than the team to beat.",
+  url: "https://www.motorsport.com/f1/news/red-bull-we-are-the-fourth-team-ferrari-mercedes-and-mclaren-are-faster-/10797407/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 13, 2026"
   },
   {
   slotId: "news3",
@@ -44,66 +47,71 @@ export const newsSlots = [
   },
   {slotId: "news4",
   sourceLabel: "Motorsport.com",
-  title: "Leclerc Tops Bahrain Test Day 2 While Norris Leads in Mileage",
+  title:
+    "McLaren calls for imperative safety tweaks ahead of F1 2026 start",
   summary:
-    "Charles Leclerc recorded the fastest time on Day Two of the Bahrain pre-season test, with Lando Norris completing the most laps of the session. Teams continued to work through the new 2026 regulations, focusing on balance, tyre data and power unit reliability throughout the day.",
+    "McLaren team boss Andrea Stella has urged Formula 1 stakeholders to agree on key refinements to the 2026 regulations before the season opener in Australia, focusing on improving race start procedures, overtaking and energy deployment for safety reasons. The concerns stem from the new hybrid power units and the removal of DRS, which Stella says complicate starts and limit overtaking without enough battery energy available late in the straight.",
   kcsQuickShift:
-    "Is Ferrari ready to make a comeback?.",
-  url: "https://www.motorsport.com/f1/news/f1-bahrain-pre-season-test-charles-leclerc-fastest-on-day-two-lando-norris-completes-most-laps/10797101/",
+    "KC’s Quick Shift: Safety and overtaking issues with 2026 rules are now a front-burner concern, not just performance talk.",
+  url: "https://www.motorsport.com/f1/news/mclaren-calls-for-imperative-safety-tweaks-ahead-of-f1-2026-start/10797523/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+  dateLabel: "Feb 13, 2026"
   
   },
   {
     slotId: "news5",
-  sourceLabel: "FormulaPassion.it",
-  title: "Sainz afirma que el motor híbrido Red Bull-Ford parece estar por delante del resto en Bahréin",
+  sourceLabel: "Motorsport.com",
+  title:
+    "George Russell says drivers should give F1 2026 rules a chance",
   summary:
-    "Carlos Sainz ha dichiarato che, analizzando i dati GPS raccolti nei test in Bahrain, il nuovo motore Red Bull-Ford sembra avere un vantaggio evidente rispetto agli altri costruttori, in particolare nella gestione e nell’erogazione della parte ibrida. Secondo lo spagnolo, l’efficienza del sistema elettrico appare molto competitiva già in questa fase iniziale, anche se ha sottolineato che è ancora presto per trarre conclusioni definitive. Carlos Sainz suggests that, based on GPS data from the Bahrain test, Red Bull and Ford’s new hybrid power unit currently seems to be a clear step ahead of other teams in terms of energy use and outright performance under the 2026 rules. He noted the early advantage is impressive, though it’s still early in the test programme.",
+    "Mercedes driver George Russell said it’s too early to judge Formula 1’s new 2026 regulations after just a few days of testing, noting teams have a steep development curve ahead and the cars feel lighter and more agile. While some drivers have criticised the rules and new driving style, Russell stressed that the ruleset should be evaluated over time as teams learn and improve throughout the season.",
   kcsQuickShift:
-    "Sainz feels Red Bull-Ford’s hybrid package is laying down the early benchmark.",
-  url: "https://www.formulapassion.it/f1/f1-news/sainz-dai-dati-gps-il-motore-red-bull-ford-e-un-passo-netto-davanti-a-tutti-e-impressionante",
-  imagePath:"/img/news/news-world.jpg",
-  dateLabel: "Feb 12, 2026"
+    "KC’s Quick Shift: Russell’s take is pragmatic — give the new era time before writing it off.",
+  url: "https://www.motorsport.com/f1/news/george-russell-drivers-should-give-f1-2026-rules-a-chance/10797399/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 13, 2026"
   },
   {
 slotId: "news6",
-  sourceLabel: "ESPN",
-  title: "Verstappen Questions Driving Feel of 2026 Cars After Early Running",
+  sourceLabel: "Formula1.com",
+  title:
+    "Hadjar calls Red Bull’s progress ‘better than we hoped for’ and praises its power unit",
   summary:
-    "Max Verstappen voiced concerns about the feel of the new 2026 Formula 1 cars, saying the heavy focus on energy management changes the driving experience significantly. He suggested the cars demand constant attention to hybrid deployment and do not allow drivers to push flat-out in the same way as previous generations.",
+    "Red Bull driver Isack Hadjar said the team’s progress during the first 2026 pre-season test in Bahrain has been ‘better than we hoped for’, highlighting that the new power unit has shown strong reliability and performance. Hadjar’s comments underline a positive early impression of the squad’s development as they work through the fresh regulations and hybrid era challenges.",
   kcsQuickShift:
-    "Verstappen’s not happy",
-  url: "https://www.espn.co.uk/f1/story/_/id/47909219/max-verstappen-slams-new-f1-2026-cars-formula-e-steroids-red-bull",
+    "KC’s Quick Shift: Hadjar’s upbeat assessment adds weight to early optimism around Red Bull’s testing pace.",
+  url: "https://www.formula1.com/en/latest/article/hadjar-calls-red-bulls-progress-better-than-we-hoped-for-as-he-praises.4Mnc6unLMrfm3nDvrJiyhY",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+  dateLabel: "Feb 13, 2026"
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
  slotId: "news7",
-  sourceLabel: "Motorsport.com",
-  title: "Sainz Calls Missing Barcelona Shakedown Frustrating but Says Confidence Is Still Strong",
+  sourceLabel: "ESPN",
+  title:
+    "Formula E boss invites Verstappen to drive Gen 4 car after F1 jibe",
   summary:
-    "Carlos Sainz described missing the Barcelona shakedown as frustrating after an issue prevented him from completing laps, but he stressed that the team’s confidence in its 2026 package remains unchanged. Despite the setback, Sainz said the focus is on preparation and learning ahead of the official pre-season tests.",
+    "Formula E CEO Jeff Dodds has invited Max Verstappen to test the Gen 4 Formula E car after the four-time world champion compared the new 2026 Formula 1 machinery to 'Formula E on steroids.' Dodds said he would welcome Verstappen’s honest opinion and noted that several F1 drivers have already expressed interest in trying the all-electric car.",
   kcsQuickShift:
-    "Sainz admits missing Barcelona was annoying but he still feels positive going forward",
-  url: "https://www.motorsport.com/f1/news/carlos-sainz-missing-barcelona-shakedown-frustrating-but-williams-confidence-unchanged/10797063/",
+    "KC’s Quick Shift: Friendly challenge issued — will Verstappen take Formula E up on it?",
+  url: "https://www.espn.co.uk/f1/story/_/id/47919696/formula-e-boss-max-verstappen-f1-jibe-come-drive-cars",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+  dateLabel: "Feb 13, 2026"
 },
   {
-    slotId: "news8",
-  sourceLabel: "Motorsport.com",
-  title: "Experts Warn 2026 F1 Race Starts Could Be Chaotic as Teams Adjust",
+    slotId: "news9",
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "Il problema di Aston Martin si chiama Honda",
   summary:
-    "Technical analysts explain that the revised hybrid systems and energy management rules in the 2026 Formula 1 regulation package could lead to unpredictable starts early in the season, with drivers needing to balance power deployment and tyre behaviour more carefully than in previous years. Teams are preparing for a learning phase where getting the launch right could be a key performance factor.",
+    "🇮🇹 L’inizio della stagione 2026 per l’Aston Martin è stato uno choc: dopo lo shakedown di Barcellona e i test in Bahrain, emergono difficoltà legate principalmente alla power unit Honda. I media spagnoli osservano che il problema non è l’aerodinamica della AMR26, ma una evidente carenza di potenza e possibile limitazione per affidabilità del motore nipponico, con tensioni crescenti tra Aston Martin e Honda prima della prima gara.\n\n🇬🇧 Aston Martin’s 2026 start has been a shocker: post-Barcelona shakedown and Bahrain tests highlight issues tied largely to the Honda power unit. Spanish media note that it’s not the AMR26’s aerodynamics at fault, but a clear power deficit and possible reliability constraints in the Japanese engine, creating rising tension between Aston Martin and Honda ahead of the season opener.",
   kcsQuickShift:
-    "The early rounds might see messy starts as drivers and teams adapt to the new cars.",
-  url: "https://www.motorsport.com/f1/news/why-race-starts-may-be-chaotic-in-early-rounds-of-f1-2026/10796991/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+    "KC’s Quick Shift: Aston Martin’s early struggles point less to aero and more to Honda’s power unit limitations.",
+  url: "https://www.formulapassion.it/f1/f1-news/il-problema-di-aston-martin-si-chiama-honda",
+  imagePath: "/img/news/news-world.jpg",
+  dateLabel: "Feb 13, 2026"
   },
   
 ];
