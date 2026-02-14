@@ -11,27 +11,27 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Day 3 Highlights | 2026 Bahrain Pre-Season Testing",
-    youtubeInput: "https://youtu.be/hey3cxT3JpY",
-    description: "Day 2 recap",
+    title: "Are F1 drivers STRUGGLING with the 2026 car?",
+    youtubeInput: "https://youtu.be/LQOO0bgr2dw",
+    description: "I agree with Kym. A major storyline coming out of testing is the clear frustration many drivers are expressing with the new cars.",
     forceExternal: true
   },
 
  
     {
   slotId: "slot2",
-  title: "Drivers React To Testing Week 1 | 2026 Bahrain Pre-Season Testing",
-  youtubeInput: "https://youtu.be/lxNG8VBvZI0",
-  description: "We'll know more next week, still surprised by Lewis's reaction so far",
+  title: "Take A Closer Look At 2026 F1 Cars! | F1 TV Tech Talk | 2026 Bahrain Pre-Season Testing",
+  youtubeInput: "https://youtu.be/xLqxybSAYbY",
+  description: "Recap on the cars and thier differences",
   forceExternal: true
 },
   
 
   {
     slotId: "slot3",
-    title: "Why Adrian Newey’s Aston Martin F1 car is struggling so badly",
-    youtubeInput: "https://youtu.be/nwv8LdOLstg",
-    description: "Are they sandbagging or is it as a rough as a start as it appears?",
+    title: "Everything we learned from F1’s Bahrain test",
+    youtubeInput: "https://youtu.be/5xTKSR_V2fo",
+    description: "Next week will tell us more of the story.",
   }
 
 ];

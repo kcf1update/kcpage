@@ -91,10 +91,22 @@ function safeLocalImagePath(imagePath) {
 
 export default function KCpage() {
   // ✅ Stage A: Featured content is file-driven (not localStorage)
-  const featuredNewsAll = Array.isArray(newsSlots) ? newsSlots.slice(0, 3) : [];
-  const featuredNews = featuredNewsAll.length ? featuredNewsAll.slice(0, -1) : [];
+  // Option A change: show a Top Story above the fold, without duplicating it below.
+  // We pull 4 items to keep the two-left + one-under-video structure intact after removing Top Story.
+  const featuredNewsAll = Array.isArray(newsSlots) ? newsSlots.slice(0, 4) : [];
+
+  const topStory = featuredNewsAll.length ? featuredNewsAll[0] : null;
+
+  // Left column gets the next two items (after top story)
+  const featuredNews = featuredNewsAll.length ? featuredNewsAll.slice(1, 3) : [];
+
+  // Under video gets the last one (4th item)
   const featuredNewsUnderVideo =
-    featuredNewsAll.length ? featuredNewsAll[featuredNewsAll.length - 1] : null;
+    featuredNewsAll.length >= 4
+      ? featuredNewsAll[3]
+      : featuredNewsAll.length
+        ? featuredNewsAll[featuredNewsAll.length - 1]
+        : null;
 
   // ✅ Feature KC’s YouTube slot on the main page (without changing youtubeSlots.js order)
   const featuredVideo =
@@ -103,6 +115,62 @@ export default function KCpage() {
         youtubeSlots.find((v) => String(v?.title || "").toLowerCase().includes("kc")) ||
         youtubeSlots[0]
       : null;
+
+  const YouTubeCard = () => (
+    <GlassyCard
+      highlight="red"
+      title={featuredVideo?.title || "Race weekend highlights"}
+      subtitle="Race weekend highlights"
+    >
+      <>
+        {getYouTubeId(featuredVideo?.youtubeInput) ? (
+          <div className="aspect-video rounded-xl overflow-hidden border border-red-400/40">
+            <iframe
+              className="w-full h-full"
+              src={`https://www.youtube.com/embed/${getYouTubeId(featuredVideo.youtubeInput)}`}
+              allowFullScreen
+              title={featuredVideo?.title || "Race highlights"}
+            />
+          </div>
+        ) : (
+          <p className="text-sm text-slate-300">No video selected yet.</p>
+        )}
+
+        {featuredVideo?.description ? (
+          <p className="text-sm text-slate-300 mt-2">{featuredVideo.description}</p>
+        ) : null}
+
+        <div className="mt-3 flex items-center gap-3">
+          <Link
+            to={`/comments?ref=${encodeURIComponent(featuredVideo?.slotId || "youtube")}`}
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+            title="Go to Comments page"
+          >
+            💬 Comment and join the discussion
+          </Link>
+
+          <Link
+            to="/youtube"
+            className="inline-flex items-center gap-2 rounded-full border border-red-400/40 bg-red-400/10 px-4 py-2 text-sm font-semibold text-red-200 hover:bg-red-400/15 transition"
+            title="See all videos"
+          >
+            More videos <span aria-hidden>↗</span>
+          </Link>
+        </div>
+
+        {featuredVideo?.ctaUrl ? (
+          <a
+            href={featuredVideo.ctaUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-red-300 hover:text-red-200 transition"
+          >
+            {featuredVideo?.ctaLabel || "Open link"} <span aria-hidden>↗</span>
+          </a>
+        ) : null}
+      </>
+    </GlassyCard>
+  );
 
   return (
     <div className="relative min-h-screen text-white">
@@ -121,7 +189,7 @@ export default function KCpage() {
         {/* Update cadence note */}
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
-            Updated daily • Breaking F1 news added throughout the day • Atlantic Time
+             🟢 Live F1 news updates daily • Breaking stories added throughout the day • Atlantic Time (Canada)
             <img
               src="/img/icons/flag-ca.png"
               alt="Canada"
@@ -130,79 +198,122 @@ export default function KCpage() {
           </p>
         </div>
 
-        {/* Nav + language selector in one row */}
-        <div className="flex items-center justify-between gap-4">
+        {/* ✅ NEW: TOP STORY (Option A) — placed right under the update bar (mobile-first, not clickbait) */}
+        {topStory
+          ? (() => {
+              const item = topStory;
+              const href = safeUrl(item?.url);
+              const imgPath = safeLocalImagePath(item?.imagePath);
+              const showImage = !!imgPath;
+              const quickShift = (item?.kcsQuickShift || "").trim();
+
+              return (
+                <section className="mt-1">
+                  <div className="mb-2 flex items-center justify-between gap-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-white/80">
+                      Top Story
+                    </p>
+
+                    {href ? (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-[11px] font-semibold text-cyan-200 shadow-[0_0_18px_rgba(34,211,238,0.25)] hover:bg-cyan-300/15 hover:text-cyan-100 transition"
+                        title="Open the full article"
+                      >
+                        Read full story →
+                      </a>
+                    ) : null}
+
+                    <Link
+                      to="/news"
+                      className="text-xs text-blue-300 hover:text-blue-200 whitespace-nowrap"
+                    >
+                      More headlines →
+                    </Link>
+                  </div>
+
+                  <GlassyCard
+                    highlight="blue"
+                    title={item?.title || "Top Story"}
+                    subtitle={item?.sourceLabel || "Source"}
+                    className=""
+                  >
+                    <div className="space-y-3">
+                      {showImage ? (
+                        <img
+                          src={imgPath}
+                          alt={item?.title || "News image"}
+                          className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none";
+                          }}
+                        />
+                      ) : null}
+
+                      {item?.summary ? (
+                        <div className="text-sm text-slate-100/90">{item.summary}</div>
+                      ) : (
+                        <div className="text-sm text-slate-300">
+                          Add a summary in <span className="font-mono">newsSlots.js</span>
+                        </div>
+                      )}
+
+                      {quickShift ? (
+                        <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                          <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                            KC’s Quick Shift
+                          </div>
+                          <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                        </div>
+                      ) : null}
+
+                      <div className="flex items-center gap-3 pt-1">
+                        {href ? (
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                          >
+                            Read full article →
+                          </a>
+                        ) : null}
+
+                        <Link
+                          to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
+                          className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                          title="Go to Comments page"
+                        >
+                          💬 Comment and join the discussion
+                        </Link>
+
+                        {item?.dateLabel ? (
+                          <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+                        ) : null}
+                      </div>
+                    </div>
+                  </GlassyCard>
+                </section>
+              );
+            })()
+          : null}
+
+        {/* NAV (single-row handled inside PageNav now) */}
+        <div className="flex items-center">
           <PageNav />
-          <div className="shrink-0">{/* Language selector hidden for launch */}</div>
         </div>
 
-        {/* HERO CARD */}
+        {/* HERO CARD (car only) */}
         <section className="relative rounded-none border border-orange-400/70 bg-white text-slate-900 shadow-[0_0_30px_rgba(255,165,0,0.35)]">
-          <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
-            {/* LEFT: Car image */}
-            <div className="flex items-center justify-start w-full">
-              <div className="relative w-full max-w-3xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
-                <img
-                  src="/img/kcs-f1-car.png"
-                  alt="KC's F1 Worldwide Update car"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-
-            {/* RIGHT: Next race info */}
-            <div className="flex flex-col items-start sm:items-end gap-2 sm:pl-6 pr-4">
-              <span className="text-xs font-semibold uppercase tracking-wide text-orange-600">
-                Next Race
-              </span>
-
-              <Link
-                to="/next-race"
-                className={
-                  "inline-flex relative z-50 opacity-100 hover:opacity-100 hover:brightness-100 " +
-                  "items-center gap-2 rounded-full border border-yellow-300/70 " +
-                  "bg-black/90 px-4 py-2 text-sm font-semibold text-yellow-100 " +
-                  "shadow-[0_0_20px_rgba(250,204,21,0.8)] " +
-                  "transition-all duration-200 " +
-                  "hover:bg-yellow-300/30 hover:text-white hover:border-yellow-200 " +
-                  "hover:ring-2 hover:ring-yellow-300/60"
-                }
-              >
-                View next race info
-                <span className="text-xs text-yellow-200/90">&rarr;</span>
-              </Link>
-
-              <a
-                href="https://www.instagram.com/kcf1update"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-xl bg-black/80 px-4 py-2 text-sm sm:text-base font-semibold text-pink-600 border border-white/10 hover:bg-black transition"
-              >
-                Follow on Instagram ↗
-              </a>
-              <a
-                href="https://www.youtube.com/@kcf1update"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-xl bg-blue-600/90 px-4 py-2 text-sm sm:text-base font-semibold text-white hover:bg-blue-600 transition"
-              >
-                My YouTube ↗
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* BETA NOTICE */}
-        <section className="mt-4 rounded-3xl border border-yellow-300/50 bg-black/60 p-4 text-white backdrop-blur shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-yellow-300">
-                Beta Preview (Week 3)
-              </p>
-              <p className="mt-1 text-sm text-white font-semibold">
-                KC’s Worldwide F1 Update is live in beta. Please explore the site, share it, and leave
-                feedback in the comment section — it helps to improve my website.
-              </p>
+          <div className="flex items-center justify-center">
+            <div className="relative w-full max-w-3xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
+              <img
+                src="/img/kcs-f1-car.png"
+                alt="KC's F1 Worldwide Update car"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </section>
@@ -212,7 +323,103 @@ export default function KCpage() {
 
         {/* CONTENT GRID */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
-          {/* LEFT COLUMN — News cards */}
+          {/* ✅ MOBILE: YouTube card should be FIRST after the Ad spot */}
+          <div className="lg:hidden">
+            <YouTubeCard />
+          </div>
+
+          {/* ✅ DESKTOP LEFT: YouTube + under-video news + small ad */}
+          <div className="hidden lg:block space-y-5 sm:space-y-6">
+            <YouTubeCard />
+
+            {/* Featured news under YouTube */}
+            {featuredNewsUnderVideo
+              ? (() => {
+                  const item = featuredNewsUnderVideo;
+                  const href = safeUrl(item?.url);
+                  const imgPath = safeLocalImagePath(item?.imagePath);
+                  const showImage = !!imgPath;
+                  const quickShift = (item?.kcsQuickShift || "").trim();
+
+                  return (
+                    <GlassyCard
+                      key={item?.slotId || "featured-under-video"}
+                      highlight="blue"
+                      title={item?.title || "News"}
+                      subtitle={item?.sourceLabel || "Source"}
+                    >
+                      <div className="space-y-3">
+                        {showImage ? (
+                          <img
+                            src={imgPath}
+                            alt={item?.title || "News image"}
+                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                            }}
+                          />
+                        ) : null}
+
+                        {item?.summary ? (
+                          <div className="text-sm text-slate-100/90">{item.summary}</div>
+                        ) : (
+                          <div className="text-sm text-slate-300">
+                            Add a summary in <span className="font-mono">newsSlots.js</span>
+                          </div>
+                        )}
+
+                        {quickShift ? (
+                          <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                            <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                              KC’s Quick Shift
+                            </div>
+                            <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                          </div>
+                        ) : null}
+
+                        <div className="flex items-center gap-3 pt-1">
+                          {href ? (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                            >
+                              Read full article →
+                            </a>
+                          ) : null}
+
+                          <Link
+                            to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
+                            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                            title="Go to Comments page"
+                          >
+                            💬 Discuss
+                          </Link>
+
+                          {item?.dateLabel ? (
+                            <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+                          ) : null}
+                        </div>
+                      </div>
+                    </GlassyCard>
+                  );
+                })()
+              : null}
+
+            {/* Small ad card */}
+            <GlassyCard
+              highlight="yellow"
+              title="Place Your Ad Here"
+              subtitle="Smaller ad block (yellow highlight)."
+            >
+              <p className="text-xs sm:text-sm text-yellow-100/90">
+                Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
+              </p>
+            </GlassyCard>
+          </div>
+
+          {/* ✅ NEWS COLUMN (desktop right, mobile after YouTube) */}
           <div className="space-y-5 sm:space-y-6">
             {featuredNews.map((item, idx) => {
               const href = safeUrl(item?.url);
@@ -288,151 +495,97 @@ export default function KCpage() {
                 </GlassyCard>
               );
             })}
-          </div>
 
-          {/* RIGHT COLUMN — YouTube + other cards */}
-          <div className="space-y-5 sm:space-y-6">
-            {/* YOUTUBE CARD */}
-            <GlassyCard
-              highlight="red"
-              title={featuredVideo?.title || "Race weekend highlights"}
-              subtitle="Race weekend highlights"
-            >
-              <>
-                {getYouTubeId(featuredVideo?.youtubeInput) ? (
-                  <div className="aspect-video rounded-xl overflow-hidden border border-red-400/40">
-                    <iframe
-                      className="w-full h-full"
-                      src={`https://www.youtube.com/embed/${getYouTubeId(
-                        featuredVideo.youtubeInput
-                      )}`}
-                      allowFullScreen
-                      title={featuredVideo?.title || "Race highlights"}
-                    />
-                  </div>
-                ) : (
-                  <p className="text-sm text-slate-300">No video selected yet.</p>
-                )}
+            {/* ✅ MOBILE: put the “under video” featured news AFTER the two news cards */}
+            <div className="lg:hidden">
+              {featuredNewsUnderVideo
+                ? (() => {
+                    const item = featuredNewsUnderVideo;
+                    const href = safeUrl(item?.url);
+                    const imgPath = safeLocalImagePath(item?.imagePath);
+                    const showImage = !!imgPath;
+                    const quickShift = (item?.kcsQuickShift || "").trim();
 
-                {featuredVideo?.description ? (
-                  <p className="text-sm text-slate-300 mt-2">{featuredVideo.description}</p>
-                ) : null}
-
-                {/* NEW: Comment link + More videos link */}
-                <div className="mt-3 flex items-center gap-3">
-                  <Link
-                    to={`/comments?ref=${encodeURIComponent(featuredVideo?.slotId || "youtube")}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                    title="Go to Comments page"
-                  >
-                    💬 Comment and join the discussion
-                  </Link>
-
-                  <Link
-                    to="/youtube"
-                    className="inline-flex items-center gap-2 rounded-full border border-red-400/40 bg-red-400/10 px-4 py-2 text-sm font-semibold text-red-200 hover:bg-red-400/15 transition"
-                    title="See all videos"
-                  >
-                    More videos <span aria-hidden>↗</span>
-                  </Link>
-                </div>
-
-                {featuredVideo?.ctaUrl ? (
-                  <a
-                    href={featuredVideo.ctaUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-red-300 hover:text-red-200 transition"
-                  >
-                    {featuredVideo?.ctaLabel || "Open link"} <span aria-hidden>↗</span>
-                  </a>
-                ) : null}
-              </>
-            </GlassyCard>
-
-            {/* MOVED: last featured news card under the YouTube card */}
-            {featuredNewsUnderVideo ? (() => {
-              const item = featuredNewsUnderVideo;
-              const href = safeUrl(item?.url);
-              const imgPath = safeLocalImagePath(item?.imagePath);
-              const showImage = !!imgPath;
-              const quickShift = (item?.kcsQuickShift || "").trim();
-
-              return (
-                <GlassyCard
-                  key={item?.slotId || "featured-under-video"}
-                  highlight="blue"
-                  title={item?.title || "News"}
-                  subtitle={item?.sourceLabel || "Source"}
-                >
-                  <div className="space-y-3">
-                    {showImage ? (
-                      <img
-                        src={imgPath}
-                        alt={item?.title || "News image"}
-                        className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                        onError={(e) => {
-                          e.currentTarget.style.display = "none";
-                        }}
-                      />
-                    ) : null}
-
-                    {item?.summary ? (
-                      <div className="text-sm text-slate-100/90">{item.summary}</div>
-                    ) : (
-                      <div className="text-sm text-slate-300">
-                        Add a summary in <span className="font-mono">newsSlots.js</span>
-                      </div>
-                    )}
-
-                    {quickShift ? (
-                      <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
-                        <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
-                          KC’s Quick Shift
-                        </div>
-                        <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
-                      </div>
-                    ) : null}
-
-                    <div className="flex items-center gap-3 pt-1">
-                      {href ? (
-                        <a
-                          href={href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
-                        >
-                          Read full article →
-                        </a>
-                      ) : null}
-
-                      <Link
-                        to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                        title="Go to Comments page"
+                    return (
+                      <GlassyCard
+                        key={item?.slotId || "featured-under-video-mobile"}
+                        highlight="blue"
+                        title={item?.title || "News"}
+                        subtitle={item?.sourceLabel || "Source"}
                       >
-                        💬 Comment and join the discussion
-                      </Link>
+                        <div className="space-y-3">
+                          {showImage ? (
+                            <img
+                              src={imgPath}
+                              alt={item?.title || "News image"}
+                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                              }}
+                            />
+                          ) : null}
 
-                      {item?.dateLabel ? (
-                        <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
-                      ) : null}
-                    </div>
-                  </div>
-                </GlassyCard>
-              );
-            })() : null}
+                          {item?.summary ? (
+                            <div className="text-sm text-slate-100/90">{item.summary}</div>
+                          ) : (
+                            <div className="text-sm text-slate-300">
+                              Add a summary in <span className="font-mono">newsSlots.js</span>
+                            </div>
+                          )}
 
-            {/* Small ad card */}
-            <GlassyCard
-              highlight="yellow"
-              title="Place Your Ad Here"
-              subtitle="Smaller ad block (yellow highlight)."
-            >
-              <p className="text-xs sm:text-sm text-yellow-100/90">
-                Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
-              </p>
-            </GlassyCard>
+                          {quickShift ? (
+                            <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                              <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                                KC’s Quick Shift
+                              </div>
+                              <p className="mt-1 text-sm text-white/90 leading-relaxed">
+                                {quickShift}
+                              </p>
+                            </div>
+                          ) : null}
+
+                          <div className="flex items-center gap-3 pt-1">
+                            {href ? (
+                              <a
+                                href={href}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+                              >
+                                Read full article →
+                              </a>
+                            ) : null}
+
+                            <Link
+                              to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
+                              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                              title="Go to Comments page"
+                            >
+                              💬 Discuss
+                            </Link>
+
+                            {item?.dateLabel ? (
+                              <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+                            ) : null}
+                          </div>
+                        </div>
+                      </GlassyCard>
+                    );
+                  })()
+                : null}
+
+              {/* Small ad card (mobile) */}
+              <GlassyCard
+                highlight="yellow"
+                title="Place Your Ad Here"
+                subtitle="Smaller ad block (yellow highlight)."
+                className="mt-5 sm:mt-6"
+              >
+                <p className="text-xs sm:text-sm text-yellow-100/90">
+                  Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
+                </p>
+              </GlassyCard>
+            </div>
           </div>
         </section>
       </div>

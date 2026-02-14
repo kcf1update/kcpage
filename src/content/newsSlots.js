@@ -9,109 +9,110 @@ export const newsSlots = [
   
   {
    slotId: "news1",
-  sourceLabel: "Sky Sports F1",
+  sourceLabel: "The Age",
   title:
-    "F1 testing: Mercedes top times but Russell warns of 'scary' Red Bull advantage",
+    "Oscar Piastri warns new 2026 F1 rules could be a ‘recipe for disaster’",
   summary:
-    "Mercedes drivers Kimi Antonelli and George Russell set the fastest times in the first Bahrain pre-season test, with Ferrari’s Lewis Hamilton third and McLaren’s Oscar Piastri close behind. Despite the strong showing, Russell cautioned that Red Bull’s new power unit looks potent and a step ahead in energy deployment, leaving uncertainty over the real pecking order heading into the final test.",
+    "Oscar Piastri has raised serious concerns about Formula 1’s new 2026 regulations, warning the reduced downforce and new driving characteristics could create safety risks, particularly at race starts. He said a full grid of cars with significantly less aerodynamic grip could lead to unpredictable and dangerous situations. The new rules emphasize energy management and different aero behavior, forcing drivers to adapt quickly to unfamiliar performance limits. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Mercedes pace looks impressive, but Russell’s Red Bull warning could be the real headline.",
-  url: "https://www.skysports.com/f1/news/12433/13507039/f1-testing-mercedes-set-fastest-times-of-week-but-george-russell-warns-of-scary-red-bull-amid-pecking-order-uncertainty",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+    "He isn't the only one worried about the new rules",
+  url: "https://www.theage.com.au/sport/motorsport/recipe-for-disaster-australian-oscar-piastri-s-formula-1-rules-overhaul-concerns-20260214-p5o29h.html",
+  imagePath: "/img/news/news-breaking.jpg",
+  dateLabel: "Feb 14, 2026"
   },
   {
   slotId: "news2",
-  sourceLabel: "Motorsport.com",
+  sourceLabel: "Formula1.com",
   title:
-    "Red Bull says it’s ‘the fourth team’ as Ferrari, Mercedes and McLaren look stronger",
+    "Leclerc believes Mercedes ‘hiding massive amount’ of performance after Bahrain test",
   summary:
-    "Red Bull’s technical director Pierre Wache dismissed claims that Red Bull is the benchmark in 2026, saying the team’s own analysis shows Ferrari, Mercedes and McLaren currently ahead in pace. The comments underline how unclear the pecking order remains after early pre-season testing and suggest Red Bull is being conservative about its competitiveness.",
+    "Charles Leclerc says Ferrari’s reliability during the first 2026 pre-season test in Bahrain was encouraging, but he remains cautious about the team’s true competitiveness. He warned that new systems allow teams to hide performance more easily than before, making it difficult to judge the competitive order. Leclerc specifically suggested Mercedes may be concealing significant pace, saying the team could be ‘hiding a massive amount’ of performance ahead of the season. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Red Bull downplays expectations early, calling itself fourth fastest rather than the team to beat.",
-  url: "https://www.motorsport.com/f1/news/red-bull-we-are-the-fourth-team-ferrari-mercedes-and-mclaren-are-faster-/10797407/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+    "Mercedes may be sandbagging. If Leclerc is right, the true competitive order could look very different once teams unleash full performance in Australia.  Photo courtesy of Ferrari F1",
+  url: "https://www.formula1.com/en/latest/article/leclerc-believes-mercedes-hiding-massive-amount-of-performance-as-he-stays.7CytEhzbtRdcBldMBmbgkL",
+  imagePath: "/img/news/news-ferrari.jpg",
+  dateLabel: "Feb 14, 2026"
   },
   {
   slotId: "news3",
-  sourceLabel: "Motorsport.com",
-  title: "Stroll Says Aston Martin Is Several Seconds Back After Tough Bahrain Start",
+  sourceLabel: "Aftonbladet",
+  title:
+    "Max Verstappen kritiserar F1:s nya regler – jämför med Formel E",
   summary:
-    "Lance Stroll described a challenging first day of 2026 Bahrain testing for Aston Martin, with the team struggling to match the early pace and running significantly off the leaders. The focus for the squad remained on gathering data and ironing out issues as they work to improve performance under the new regulations.",
+    "ORIGINAL (SVENSKA): Max Verstappen riktar kritik mot Formel 1:s nya regler för 2026 och säger att bilarna känns annorlunda att köra. Han menar att det ökade fokuset på energihantering förändrar racingens natur och påverkar körkänslan negativt.\n\nENGLISH: Max Verstappen has criticized Formula 1’s new 2026 regulations, saying the cars feel very different to drive. He believes the increased focus on energy management is changing the nature of racing and making the cars less enjoyable.",
   kcsQuickShift:
-    "Wow rough start, what's going on with Aston Martin. Holy Smokes ",
-  url: "https://www.motorsport.com/f1/news/lance-stroll-aston-martin-is-four-seconds-off-after-tough-start-to-f1-2026-pre-season/10797071/",
-  imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 12, 2026"
+    "Energy management is becoming the defining factor of the 2026 era. Drivers like Verstappen are warning that the new rules could fundamentally change how Formula 1 feels on track.",
+  url: "https://www.aftonbladet.se/tagg/formel-1",
+  imagePath: "/img/news/news-world.jpg",
+  dateLabel: "Feb 14, 2026"
   },
   {slotId: "news4",
-  sourceLabel: "Motorsport.com",
+  sourceLabel: "Formula1.com",
   title:
-    "McLaren calls for imperative safety tweaks ahead of F1 2026 start",
+    "5 key questions emerge after first 2026 F1 pre-season test in Bahrain",
   summary:
-    "McLaren team boss Andrea Stella has urged Formula 1 stakeholders to agree on key refinements to the 2026 regulations before the season opener in Australia, focusing on improving race start procedures, overtaking and energy deployment for safety reasons. The concerns stem from the new hybrid power units and the removal of DRS, which Stella says complicate starts and limit overtaking without enough battery energy available late in the straight.",
+    "Formula 1 teams are still analyzing large amounts of data following the first 2026 pre-season test, with no clear favorite yet emerging. Red Bull’s new Ford power unit has impressed observers with strong energy deployment and reliability, while Mercedes, Ferrari, and McLaren are all showing competitive potential. Aston Martin admitted they are currently behind after delays in development, while Cadillac and Williams focused on gathering critical mileage to accelerate their learning ahead of the season. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Safety and overtaking issues with 2026 rules are now a front-burner concern, not just performance talk.",
-  url: "https://www.motorsport.com/f1/news/mclaren-calls-for-imperative-safety-tweaks-ahead-of-f1-2026-start/10797523/",
+    "No clear leader yet but Red Bull’s new power unit is already turning heads. The real competitive order may not be clear until several races into the season.",
+  url: "https://www.formula1.com/en/latest/article/5-key-questions-that-need-answering-after-first-2026-pre-season-test-in.6gcTC1CYwUAjtapHNGOygI",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+  dateLabel: "Feb 14, 2026"
   
   },
   {
     slotId: "news5",
   sourceLabel: "Motorsport.com",
   title:
-    "George Russell says drivers should give F1 2026 rules a chance",
+    "Red Bull can’t make Verstappen happier about 2026 F1 cars — but can build him a winner",
   summary:
-    "Mercedes driver George Russell said it’s too early to judge Formula 1’s new 2026 regulations after just a few days of testing, noting teams have a steep development curve ahead and the cars feel lighter and more agile. While some drivers have criticised the rules and new driving style, Russell stressed that the ruleset should be evaluated over time as teams learn and improve throughout the season.",
+    "Red Bull says it cannot change Max Verstappen’s opinion of the 2026 regulations, but believes delivering a competitive car will ultimately matter most. Technical director Pierre Wache confirmed the team is focused on performance, despite Verstappen’s criticism of the new energy-focused rules. Early projections suggest Red Bull may not yet have the outright advantage over Ferrari, Mercedes, and McLaren.",
   kcsQuickShift:
-    "KC’s Quick Shift: Russell’s take is pragmatic — give the new era time before writing it off.",
-  url: "https://www.motorsport.com/f1/news/george-russell-drivers-should-give-f1-2026-rules-a-chance/10797399/",
+    "Max is not happy, will he chnage his mind if the car is fast?",
+  url: "https://www.motorsport.com/f1/news/red-bull-verstappen-f1-2026-car-rules/10797511/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+  dateLabel: "Feb 14, 2026"
   },
   {
 slotId: "news6",
-  sourceLabel: "Formula1.com",
+  sourceLabel: "Motorsport.com",
   title:
-    "Hadjar calls Red Bull’s progress ‘better than we hoped for’ and praises its power unit",
+    "Why high-speed corners are up to 50 km/h slower with 2026 F1 cars",
   summary:
-    "Red Bull driver Isack Hadjar said the team’s progress during the first 2026 pre-season test in Bahrain has been ‘better than we hoped for’, highlighting that the new power unit has shown strong reliability and performance. Hadjar’s comments underline a positive early impression of the squad’s development as they work through the fresh regulations and hybrid era challenges.",
+    "Formula 1 drivers are being forced to slow significantly in high-speed corners under the new 2026 regulations due to increased reliance on energy management. Fernando Alonso explained that drivers now conserve energy in fast corners to maximize deployment on straights, reducing corner speeds by as much as 50 km/h compared to previous cars. The shift reflects the new hybrid focus, where harvesting and deploying electrical energy efficiently has become more important than maintaining maximum corner speed. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Hadjar’s upbeat assessment adds weight to early optimism around Red Bull’s testing pace.",
-  url: "https://www.formula1.com/en/latest/article/hadjar-calls-red-bulls-progress-better-than-we-hoped-for-as-he-praises.4Mnc6unLMrfm3nDvrJiyhY",
+    "The 2026 cars aren’t slower everywhere but drivers must sacrifice corner speed to win on the straights. Energy strategy is now as important as outright driving aggression.",
+  url: "https://www.motorsport.com/f1/news/why-high-speed-corners-are-50km-h-slower-with-2026-f1-cars/10797459/",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+  dateLabel: "Feb 14, 2026"
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
  slotId: "news7",
-  sourceLabel: "ESPN",
+  sourceLabel: "Sky Sports",
   title:
-    "Formula E boss invites Verstappen to drive Gen 4 car after F1 jibe",
+    "Why Ferrari, Mercedes, McLaren and Red Bull are all denying they are fastest after Bahrain test",
   summary:
-    "Formula E CEO Jeff Dodds has invited Max Verstappen to test the Gen 4 Formula E car after the four-time world champion compared the new 2026 Formula 1 machinery to 'Formula E on steroids.' Dodds said he would welcome Verstappen’s honest opinion and noted that several F1 drivers have already expressed interest in trying the all-electric car.",
+    "Formula 1’s top teams are all downplaying their pace after the first 2026 Bahrain pre-season test, creating uncertainty about the true competitive order. Mercedes set the fastest overall lap, while Ferrari impressed with strong race simulations and consistency. Red Bull showed excellent energy deployment efficiency, and McLaren logged the most mileage, highlighting strong reliability. However, teams may be deliberately hiding performance, with sandbagging and new power unit complexities making it difficult to determine the real pecking order. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Friendly challenge issued — will Verstappen take Formula E up on it?",
-  url: "https://www.espn.co.uk/f1/story/_/id/47919696/formula-e-boss-max-verstappen-f1-jibe-come-drive-cars",
+    "Nobody wants to show their hand yet. The real competitive order likely won’t be revealed until qualifying in Australia.",
+  url: "https://www.skysports.com/f1/news/12433/13507043/f1-testing-why-ferrari-mercedes-mclaren-and-red-bull-are-all-claiming-not-be-the-fastest-team-after-bahrain-test",
   imagePath: "/img/news/news-01.jpg",
-  dateLabel: "Feb 13, 2026"
+  dateLabel: "Feb 14, 2026"
 },
   {
-    slotId: "news9",
-  sourceLabel: "FormulaPassion.it",
+    slotId: "news8",
+  sourceLabel: "Motorsport.com",
   title:
-    "Il problema di Aston Martin si chiama Honda",
+    "Russell calls Bahrain test a ‘reality check’ as Red Bull emerges ahead",
   summary:
-    "🇮🇹 L’inizio della stagione 2026 per l’Aston Martin è stato uno choc: dopo lo shakedown di Barcellona e i test in Bahrain, emergono difficoltà legate principalmente alla power unit Honda. I media spagnoli osservano che il problema non è l’aerodinamica della AMR26, ma una evidente carenza di potenza e possibile limitazione per affidabilità del motore nipponico, con tensioni crescenti tra Aston Martin e Honda prima della prima gara.\n\n🇬🇧 Aston Martin’s 2026 start has been a shocker: post-Barcelona shakedown and Bahrain tests highlight issues tied largely to the Honda power unit. Spanish media note that it’s not the AMR26’s aerodynamics at fault, but a clear power deficit and possible reliability constraints in the Japanese engine, creating rising tension between Aston Martin and Honda ahead of the season opener.",
+    "George Russell says Mercedes received a ‘reality check’ during the first 2026 Bahrain pre-season test, admitting Red Bull appears to be the team to beat. He pointed to Red Bull’s impressive energy deployment and overall performance advantage, which could amount to half a second or more per lap. Russell acknowledged Mercedes has built a strong car but admitted the team still has work to do to catch Red Bull’s early pace advantage. :contentReference[oaicite:0]{index=0}",
   kcsQuickShift:
-    "KC’s Quick Shift: Aston Martin’s early struggles point less to aero and more to Honda’s power unit limitations.",
-  url: "https://www.formulapassion.it/f1/f1-news/il-problema-di-aston-martin-si-chiama-honda",
-  imagePath: "/img/news/news-world.jpg",
-  dateLabel: "Feb 13, 2026"
+    "Red Bull isn’t just competitive, they may already have a clear advantage. Mercedes knows the fight for the 2026 title could start from behind.",
+  url: "https://www.motorsport.com/f1/news/george-russell-bahrain-f1-test-a-reality-check-for-mercedes-as-red-bull-ahead/10797521/",
+  imagePath: "/img/news/news-01.jpg",
+  dateLabel: "Feb 14, 2026"
   },
   
 ];
