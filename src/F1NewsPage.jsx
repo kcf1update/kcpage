@@ -96,13 +96,24 @@ export default function F1NewsPage() {
               >
                 {/* Image (optional – LOCAL ONLY) */}
                 {imgPath ? (
-                  <a
-                    href={href || "#"}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="block"
-                    title={href ? "Open article" : "Add a url in newsSlots.js"}
-                  >
+                  href ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block"
+                      title="Open article"
+                    >
+                      <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
+                        <img
+                          src={imgPath}
+                          alt={item.title || "F1 news"}
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                  ) : (
                     <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
                       <img
                         src={imgPath}
@@ -111,7 +122,7 @@ export default function F1NewsPage() {
                         loading="lazy"
                       />
                     </div>
-                  </a>
+                  )
                 ) : (
                   <div className="aspect-[16/9] w-full bg-black/40 flex items-center justify-center text-xs text-gray-400">
                     Image optional (use local stock/original via imagePath)
@@ -132,9 +143,24 @@ export default function F1NewsPage() {
                     ) : null}
                   </div>
 
-                  <h3 className="text-lg font-semibold leading-snug text-white">
-                    {item.title || "Headline (replace me)"}
-                  </h3>
+                  {/* ✅ Title clickable */}
+                  {href ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block"
+                      title="Open article"
+                    >
+                      <h3 className="text-lg font-semibold leading-snug text-white hover:text-cyan-200 transition">
+                        {item.title || "Headline (replace me)"}
+                      </h3>
+                    </a>
+                  ) : (
+                    <h3 className="text-lg font-semibold leading-snug text-white">
+                      {item.title || "Headline (replace me)"}
+                    </h3>
+                  )}
 
                   {item.summary ? (
                     <p className="text-sm text-white/75 leading-relaxed">
@@ -148,51 +174,49 @@ export default function F1NewsPage() {
                   )}
 
                   {/* KC’s Quick Shift (only shows if filled in newsSlots.js) */}
-{quickShift ? (
-  <div className="mt-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
-    <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
-      KC’s Quick Shift
-    </div>
+                  {quickShift ? (
+                    <div className="mt-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                      <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                        KC’s Quick Shift
+                      </div>
 
-    <p className="mt-1 text-sm text-white/90 leading-relaxed">
-      {quickShift}
-    </p>
-  </div>
-) : null}
-
+                      <p className="mt-1 text-sm text-white/90 leading-relaxed">
+                        {quickShift}
+                      </p>
+                    </div>
+                  ) : null}
 
                   <div className="pt-2 flex items-center justify-between gap-3">
-  <div className="flex items-center gap-2">
-    {href ? (
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-300/15 transition"
-      >
-        Read article
-        <span className="text-cyan-200/80">&rarr;</span>
-      </a>
-    ) : (
-      <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/40">
-        Add a url in newsSlots.js
-      </span>
-    )}
+                    <div className="flex items-center gap-2">
+                      {href ? (
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-300/15 transition"
+                        >
+                          Read article
+                          <span className="text-cyan-200/80">&rarr;</span>
+                        </a>
+                      ) : (
+                        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/40">
+                          Add a url in newsSlots.js
+                        </span>
+                      )}
 
-    <Link
-      to={`/comments?ref=${encodeURIComponent(item.slotId || "")}`}
-      className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-      title="Go to Comments page"
-    >
-      💬 Comment and join the discussion
-    </Link>
-  </div>
+                      <Link
+                        to={`/comments?ref=${encodeURIComponent(item.slotId || "")}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
+                        title="Go to Comments page"
+                      >
+                        💬 Comment and join the discussion
+                      </Link>
+                    </div>
 
-  {item.dateLabel ? (
-    <span className="text-xs text-white/45">{item.dateLabel}</span>
-  ) : null}
-</div>
-
+                    {item.dateLabel ? (
+                      <span className="text-xs text-white/45">{item.dateLabel}</span>
+                    ) : null}
+                  </div>
                 </div>
               </article>
             );

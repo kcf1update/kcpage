@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Are F1 drivers STRUGGLING with the 2026 car?",
-    youtubeInput: "https://youtu.be/LQOO0bgr2dw",
-    description: "I agree with Kym. A major storyline coming out of testing is the clear frustration many drivers are expressing with the new cars.",
+    title: "The 11 Formula 1 Cars of 2026!",
+    youtubeInput: "https://youtu.be/B2WsIWslvlA",
+    description: "The cars look awesome, smaller, cooler and faster looking",
     forceExternal: true
   },
 
@@ -22,7 +22,7 @@ export const youtubeSlots = [
   slotId: "slot2",
   title: "Take A Closer Look At 2026 F1 Cars! | F1 TV Tech Talk | 2026 Bahrain Pre-Season Testing",
   youtubeInput: "https://youtu.be/xLqxybSAYbY",
-  description: "Recap on the cars and thier differences",
+  description: "Recap of the cars and their key differences",
   forceExternal: true
 },
   

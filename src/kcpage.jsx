@@ -18,7 +18,14 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 
 // Simple glassy card helper for the lower sections
-function GlassyCard({ title, subtitle, highlight = "none", children, className = "" }) {
+function GlassyCard({
+  title,
+  titleUrl,
+  subtitle,
+  highlight = "none",
+  children,
+  className = "",
+}) {
   const highlightRing = {
     blue: "shadow-[0_0_25px_rgba(56,189,248,0.7)] border-cyan-400/40",
     red: "shadow-[0_0_25px_rgba(248,113,113,0.7)] border-red-400/40",
@@ -38,7 +45,18 @@ function GlassyCard({ title, subtitle, highlight = "none", children, className =
     >
       {(title || subtitle) && (
         <header className="mb-3">
-          {title && <h2 className="text-lg sm:text-xl font-semibold tracking-tight">{title}</h2>}
+          {title ? (
+            titleUrl ? (
+              <a href={titleUrl} target="_blank" rel="noreferrer" className="block">
+                <h2 className="text-lg sm:text-xl font-semibold tracking-tight hover:text-cyan-200 transition">
+                  {title}
+                </h2>
+              </a>
+            ) : (
+              <h2 className="text-lg sm:text-xl font-semibold tracking-tight">{title}</h2>
+            )
+          ) : null}
+
           {subtitle && <p className="mt-1 text-xs sm:text-sm text-slate-300/80">{subtitle}</p>}
         </header>
       )}
@@ -189,7 +207,7 @@ export default function KCpage() {
         {/* Update cadence note */}
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
-             🟢 Live F1 news updates daily • Breaking stories added throughout the day • Atlantic Time (Canada)
+            🟢 Live F1 news updates daily • Breaking stories added throughout the day • Atlantic Time (Canada)
             <img
               src="/img/icons/flag-ca.png"
               alt="Canada"
@@ -237,19 +255,39 @@ export default function KCpage() {
                   <GlassyCard
                     highlight="blue"
                     title={item?.title || "Top Story"}
+                    titleUrl={href || undefined}
                     subtitle={item?.sourceLabel || "Source"}
                     className=""
                   >
                     <div className="space-y-3">
                       {showImage ? (
-                        <img
-                          src={imgPath}
-                          alt={item?.title || "News image"}
-                          className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                          onError={(e) => {
-                            e.currentTarget.style.display = "none";
-                          }}
-                        />
+                        href ? (
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="block"
+                            title="Open article"
+                          >
+                            <img
+                              src={imgPath}
+                              alt={item?.title || "News image"}
+                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                              }}
+                            />
+                          </a>
+                        ) : (
+                          <img
+                            src={imgPath}
+                            alt={item?.title || "News image"}
+                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                            }}
+                          />
+                        )
                       ) : null}
 
                       {item?.summary ? (
@@ -346,18 +384,38 @@ export default function KCpage() {
                       key={item?.slotId || "featured-under-video"}
                       highlight="blue"
                       title={item?.title || "News"}
+                      titleUrl={href || undefined}
                       subtitle={item?.sourceLabel || "Source"}
                     >
                       <div className="space-y-3">
                         {showImage ? (
-                          <img
-                            src={imgPath}
-                            alt={item?.title || "News image"}
-                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                            onError={(e) => {
-                              e.currentTarget.style.display = "none";
-                            }}
-                          />
+                          href ? (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="block"
+                              title="Open article"
+                            >
+                              <img
+                                src={imgPath}
+                                alt={item?.title || "News image"}
+                                className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = "none";
+                                }}
+                              />
+                            </a>
+                          ) : (
+                            <img
+                              src={imgPath}
+                              alt={item?.title || "News image"}
+                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                              }}
+                            />
+                          )
                         ) : null}
 
                         {item?.summary ? (
@@ -434,18 +492,38 @@ export default function KCpage() {
                   key={item?.slotId || `featured-${idx}`}
                   highlight="blue"
                   title={item?.title || `News ${idx + 1}`}
+                  titleUrl={href || undefined}
                   subtitle={item?.sourceLabel || "Source"}
                 >
                   <div className="space-y-3">
                     {showImage ? (
-                      <img
-                        src={imgPath}
-                        alt={item?.title || "News image"}
-                        className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                        onError={(e) => {
-                          e.currentTarget.style.display = "none";
-                        }}
-                      />
+                      href ? (
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="block"
+                          title="Open article"
+                        >
+                          <img
+                            src={imgPath}
+                            alt={item?.title || "News image"}
+                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                            }}
+                          />
+                        </a>
+                      ) : (
+                        <img
+                          src={imgPath}
+                          alt={item?.title || "News image"}
+                          className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none";
+                          }}
+                        />
+                      )
                     ) : null}
 
                     {item?.summary ? (
@@ -511,18 +589,38 @@ export default function KCpage() {
                         key={item?.slotId || "featured-under-video-mobile"}
                         highlight="blue"
                         title={item?.title || "News"}
+                        titleUrl={href || undefined}
                         subtitle={item?.sourceLabel || "Source"}
                       >
                         <div className="space-y-3">
                           {showImage ? (
-                            <img
-                              src={imgPath}
-                              alt={item?.title || "News image"}
-                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                              onError={(e) => {
-                                e.currentTarget.style.display = "none";
-                              }}
-                            />
+                            href ? (
+                              <a
+                                href={href}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="block"
+                                title="Open article"
+                              >
+                                <img
+                                  src={imgPath}
+                                  alt={item?.title || "News image"}
+                                  className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                                  onError={(e) => {
+                                    e.currentTarget.style.display = "none";
+                                  }}
+                                />
+                              </a>
+                            ) : (
+                              <img
+                                src={imgPath}
+                                alt={item?.title || "News image"}
+                                className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = "none";
+                                }}
+                              />
+                            )
                           ) : null}
 
                           {item?.summary ? (
@@ -538,9 +636,7 @@ export default function KCpage() {
                               <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                                 KC’s Quick Shift
                               </div>
-                              <p className="mt-1 text-sm text-white/90 leading-relaxed">
-                                {quickShift}
-                              </p>
+                              <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
                             </div>
                           ) : null}
 

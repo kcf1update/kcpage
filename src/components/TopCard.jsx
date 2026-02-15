@@ -29,6 +29,9 @@ export default function TopCard({ children, className = "" }) {
  *
  * Optional brand image:
  * - logoSrc="/img/kcs-f1-car.png"
+ *
+ * Optional clickable title:
+ * - titleUrl="https://example.com/story"
  */
 TopCard.Header = function TopCardHeader({
   title,
@@ -38,7 +41,18 @@ TopCard.Header = function TopCardHeader({
   logoSrc,
   logoAlt = "KC F1",
   logoClassName = "h-10 w-auto",
+  titleUrl, // ✅ optional: if provided, title becomes clickable
+  titleTarget = "_blank", // ✅ default open in new tab for external links
 }) {
+  const TitleContent = (
+    <h1
+      className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight break-words"
+      data-topcard-title
+    >
+      {title}
+    </h1>
+  );
+
   return (
     <div
       className={[
@@ -49,8 +63,10 @@ TopCard.Header = function TopCardHeader({
       data-topcard-header
     >
       {/* LEFT: logo + text */}
-      <div className="flex flex-col sm:flex-row items-start gap-3 min-w-0" data-topcard-left>
-
+      <div
+        className="flex flex-col sm:flex-row items-start gap-3 min-w-0"
+        data-topcard-left
+      >
         {logoSrc ? (
           <img
             src={logoSrc}
@@ -62,15 +78,25 @@ TopCard.Header = function TopCardHeader({
 
         {/* min-w-0 is the key to prevent long titles (e.g., “Championship”) from overflowing */}
         <div className="min-w-0">
-          <h1
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight break-words"
-            data-topcard-title
-          >
-            {title}
-          </h1>
+          {titleUrl ? (
+            <a
+              href={titleUrl}
+              target={titleTarget}
+              rel={titleTarget === "_blank" ? "noopener noreferrer" : undefined}
+              className="inline-block hover:opacity-90"
+              data-topcard-title-link
+            >
+              {TitleContent}
+            </a>
+          ) : (
+            TitleContent
+          )}
 
           {subtitle ? (
-            <p className="mt-1 text-sm text-blue-600 break-words" data-topcard-subtitle>
+            <p
+              className="mt-1 text-sm text-blue-600 break-words"
+              data-topcard-subtitle
+            >
               {subtitle}
             </p>
           ) : null}
@@ -78,7 +104,11 @@ TopCard.Header = function TopCardHeader({
       </div>
 
       {/* RIGHT: actions (Back to home button, etc.) */}
-      {right ? <div className="shrink-0" data-topcard-right>{right}</div> : null}
+      {right ? (
+        <div className="shrink-0" data-topcard-right>
+          {right}
+        </div>
+      ) : null}
     </div>
   );
 };
