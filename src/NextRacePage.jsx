@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
-import PageHero from "./components/PageHero";
 
 import { nextRaceContent, NEXT_RACE_DRIVERS } from "./content/nextRaceContent";
 
@@ -17,22 +16,13 @@ export default function NextRacePage() {
       {/* Gray background overlay to match kcpage */}
       <div className="absolute inset-0 -z-10 bg-black/70" />
 
-      {/* HERO */}
-      <PageHero img="hero-worldwide4.png" alt="Next Race" />
-
       {/* Foreground content */}
       <div className="next-race-page relative z-10 mx-auto flex max-w-7xl flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8 lg:px-8">
-        {/* Nav row */}
-        <div className="mt-1 flex items-center justify-between gap-4">
-          <PageNav />
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
-        </div>
 
-        {/* Top card */}
+        {/* ✅ TOP CARD FIRST (full width across) */}
         <TopCard>
           <TopCard.Header
             title="Race Centre"
-
             subtitle="Schedule, weather, and session results."
             logoSrc="/img/kcs-f1-car.png"
             right={
@@ -46,6 +36,12 @@ export default function NextRacePage() {
             }
           />
         </TopCard>
+
+        {/* ✅ NAV UNDER TOP CARD */}
+        <div className="mt-1 flex items-center justify-between gap-4">
+          <PageNav />
+          <div className="shrink-0">{/* language selector hidden for launch */}</div>
+        </div>
 
         <div className="-mt-3">
           <AdBar />
@@ -150,9 +146,7 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
             >
               <header className="mb-3 flex items-center justify-between gap-2">
                 <h2 className="text-lg font-semibold">{session.label || `Session ${idx + 1}`}</h2>
-                <p className="text-[11px] text-gray-300">
-                  
-                </p>
+                <p className="text-[11px] text-gray-300"></p>
               </header>
 
               <div className="max-h-72 overflow-auto pr-1 text-xs sm:text-sm">

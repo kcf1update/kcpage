@@ -8,111 +8,87 @@
 export const newsSlots = [
   
   {
-   slotId: "news1",
-sourceLabel: "F1 Oversteer",
-title:
-  "Lawrence Stroll reportedly confronts Aston Martin engineers after troubling test performance",
-summary:
-  "Aston Martin owner Lawrence Stroll is rumored to have sharply criticized the team’s engineers following a difficult start to 2026 pre-season testing. The AMR26 has shown a significant performance deficit, with both Lance Stroll and Fernando Alonso reporting major issues with balance, grip, and overall pace. Early testing suggests the team could be several seconds off the leading teams, raising concerns despite massive investment and the arrival of Adrian Newey.",
-kcsQuickShift:
-  "This is a critical moment for Aston Martin. Lawrence Stroll has invested heavily in facilities, talent, and Adrian Newey but early testing shows the team may be far off the pace. Pressure is now fully on the engineers to unlock performance quickly before the season opener.",
-url: "https://www.f1oversteer.com/news/lawrence-stroll-has-already-given-aston-martin-engineers-a-real-dressing-down-amid-testing-woes/",
-imagePath: "/img/news/news-06.jpg",
-dateLabel: "Feb 15, 2026"
+   slotId: "news-2026-02-16-gasly-foreign-driver-concerns",
+    sourceLabel: "Paddock GP (French)",
+    title: "Pierre Gasly warns drivers risk losing control under 2026 systems",
+    summary: "Pierre Gasly expressed concern that new automation and energy management systems could reduce the driver’s role, making performance more dependent on software and algorithms. He warned that this could fundamentally change how drivers influence race outcomes.",
+    kcsQuickShift: "If drivers start feeling like passengers, Formula 1 risks losing its most human edge.",
+    url: "https://www.paddock-gp.com/en/formule-1-pierre-gasly-previent-la-f1-2026-risque-de-reduire-les-pilotes-a-de-simples-passagers-de-la-technologie/",
+    imagePath: "/img/news/news-Gasly.jpg",
+    dateLabel: "Feb 16, 2026",  
   },
   {
-  slotId: "news2",
-sourceLabel: "Motorsport.com",
-title:
-  "Mercedes teams praise Red Bull’s new engine as political mind games emerge during testing",
-summary:
-  "Mercedes and its customer teams have pointed to Red Bull’s new power unit as an early benchmark during 2026 pre-season testing, but the praise may be part of wider political strategy. Red Bull’s engine has impressed with reliability, strong top speeds, and consistent energy deployment, though rival teams believe competitors may be deliberately downplaying their own performance. With new hybrid rules heavily focused on energy management, teams are still learning how to extract maximum performance ahead of the season opener.",
-kcsQuickShift:
-  "This is classic F1 sandbagging season. Red Bull’s new engine looks strong, especially in energy deployment, but rivals like Mercedes may be playing political games to avoid FIA scrutiny and shift expectations. The real competitive order won’t be clear until Melbourne.",
-url: "https://www.motorsport.com/f1/news/all-mercedes-teams-praise-red-bulls-new-engine-but-how-political-is-it/10797897/",
-imagePath: "/img/news/news-04.jpg",
-dateLabel: "Feb 15, 2026"
+  slotId: "news-2026-02-16-driver-contract-pressure",
+    sourceLabel: "Motorsport Magazine",
+    title: "More than half the F1 grid faces contract uncertainty after 2026",
+    summary: "As many as 15 drivers could be out of contract at the end of the season, creating intense pressure throughout the grid. With new regulations reshaping performance expectations, teams are carefully evaluating which drivers will fit their long-term plans.",
+    kcsQuickShift: "This season isn’t just about points, it’s about careers.",
+    url: "https://www.motorsportmagazine.com/articles/single-seaters/f1/every-f1-driver-out-of-contract-at-the-end-of-2026/",
+    imagePath: "/img/news/news-05.jpg",
+    dateLabel: "Feb 16, 2026",
   },
   {
-  slotId: "news3",
-  sourceLabel: "Aftonbladet",
-  title:
-    "Max Verstappen kritiserar F1:s nya regler – jämför med Formel E",
-  summary:
-    "ORIGINAL (SVENSKA): Max Verstappen riktar kritik mot Formel 1:s nya regler för 2026 och säger att bilarna känns annorlunda att köra. Han menar att det ökade fokuset på energihantering förändrar racingens natur och påverkar körkänslan negativt.\n\nENGLISH: Max Verstappen has criticized Formula 1’s new 2026 regulations, saying the cars feel very different to drive. He believes the increased focus on energy management is changing the nature of racing and making the cars less enjoyable.",
-  kcsQuickShift:
-    "Energy management is becoming the defining factor of the 2026 era. Drivers like Verstappen are warning that the new rules could fundamentally change how Formula 1 feels on track.",
-  url: "https://www.aftonbladet.se/tagg/formel-1",
-  imagePath: "/img/news/news-world.jpg",
-  dateLabel: "Feb 14, 2026"
+  slotId: "news-2026-02-16-redbull-weight-challenge",
+    sourceLabel: "RacingNews365",
+    title: "Red Bull confirms weight challenges with its new RB22 car",
+    summary: "Red Bull acknowledged that meeting the reduced minimum weight requirement has been difficult, a problem expected across much of the grid. The stricter weight targets are part of the sweeping 2026 regulations aimed at improving efficiency and performance.",
+    kcsQuickShift: "Even dominant teams like Red Bull are fighting physics this year, and that could open the door for surprises.",
+    url: "https://racingnews365.com/red-bull-confirm-problem-with-2026-f1-car",
+    imagePath: "/img/news/news-05.jpg",
+    dateLabel: "Feb 16, 2026",
   },
-  {slotId: "news4",
-sourceLabel: "The Race",
-title:
-  "Why 2026 F1 race starts look strange and far more complicated than before",
-summary:
-  "Formula 1’s new 2026 power units have dramatically changed how drivers launch from the grid, requiring much longer revving periods before accelerating. Without the MGU-H system to pre-spin the turbo, drivers must manually build turbo speed using sustained throttle input, sometimes revving for over 10 seconds before launching. Early testing shows inconsistent and difficult launches across teams, with drivers still learning how to balance clutch timing, engine power delivery, and hybrid energy deployment.",
-kcsQuickShift:
-  "This is one of the biggest hidden changes for 2026. The new engines require precise turbo preparation before launch, making starts far more unpredictable. This could create more mistakes, stalled launches, and position changes—especially early in the season.",
-url: "https://www.the-race.com/formula-1/what-weird-f1-2026-starts-are-really-like-to-watch/",
-imagePath: "/img/news/news-05.jpg",
-dateLabel: "Feb 15, 2026"
+  {slotId: "news-2026-02-16-preseason-bahrain-schedule",
+    sourceLabel: "ESPN",
+    title: "Final Bahrain testing session becomes crucial benchmark before season opener",
+    summary: "Formula 1’s final pre-season test in Bahrain will give teams their first meaningful comparison under race-like conditions. With the Melbourne opener approaching fast, teams are focused on reliability, setup optimization, and understanding the impact of the new regulations.",
+    kcsQuickShift: "These final test laps will reveal which teams built contenders and which built experiments.",
+    url: "https://www.espn.com/f1/story/_/id/47848869/f1-testing-how-watch-live-uk-full-bahrain-preseason-schedule-live-stream-tv-channel-latest-news",
+    imagePath: "/img/news/news-02.jpg",
+    dateLabel: "Feb 16, 2026",
   
   },
   {
-    slotId: "news5",
-sourceLabel: "Formula1.com",
-title:
-  "Red Bull powertrain impresses as Aston Martin struggles in first Bahrain test",
-summary:
-  "Red Bull emerged as a major winner from the first 2026 Bahrain pre-season test, with their new Ford power unit showing strong reliability and impressive energy deployment across 670 laps. Ferrari, Mercedes, Williams, and Cadillac also completed strong testing programs with high mileage and solid preparation. Aston Martin, however, struggled with reliability and completed the fewest laps, while Mercedes rookie Kimi Antonelli also faced setbacks due to technical issues limiting his running. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift:
-  "Red Bull’s new power unit is already turning heads, especially with its energy deployment advantage. Meanwhile, Aston Martin is clearly on the back foot after limited running. Early mileage leaders like Ferrari, Mercedes, and Williams have given themselves a much stronger foundation heading into the final test and season opener.",
-url: "https://www.formula1.com/en/latest/article/5-winners-and-2-losers-from-the-first-pre-season-test-in-bahrain-who-was.6ih8jKFM2VkQGuW7UtaBb0",
-imagePath: "/img/news/news-03.jpg",
-dateLabel: "Feb 15, 2026"
+    slotId: "news-2026-02-16-engine-rule-loophole",
+    sourceLabel: "GPFans",
+    title: "FIA moves to close potential engine loophole exploited in testing",
+    summary: "Formula 1’s governing body is reviewing an apparent loophole involving engine compression measurements, after teams reportedly found ways to optimize performance outside standard monitoring conditions. The situation has already raised tensions between rivals ahead of the new season.",
+    kcsQuickShift: "Technical loopholes often decide championships and the FIA shutting this down early could prevent a massive advantage.",
+    url: "https://www.gpfans.com/en/f1-news/1076198/f1-fia-mercedes-engine-ban-decision/",
+    imagePath: "/img/news/news-06.jpg",
+    dateLabel: "Feb 16, 2026",
   },
   {
-slotId: "news6",
-sourceLabel: "Motorsport.com",
-title:
-  "Mercedes teams praise Red Bull’s engine as political games dominate early testing",
-summary:
-  "Mercedes and its customer teams have publicly identified Red Bull as the early benchmark during 2026 pre-season testing, but much of the praise appears politically motivated. Red Bull showed strong reliability and competitive energy deployment, especially in top speeds and longer runs. However, rival teams including Mercedes and Ferrari may be deliberately downplaying their own performance as energy management optimization can account for massive lap time differences under the new regulations. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift:
-  "This is classic F1 sandbagging. Red Bull’s engine looks strong and reliable, but teams like Mercedes are likely hiding performance while shifting attention away from themselves. With energy deployment worth huge lap time gains, the true pecking order won’t be clear until Melbourne.",
-url: "https://www.motorsport.com/f1/news/all-mercedes-teams-praise-red-bulls-new-engine-but-how-political-is-it/10797897/",
-imagePath: "/img/news/news-05.jpg",
-dateLabel: "Feb 15, 2026"
+slotId: "news-2026-02-16-mercedes-testing-pace",
+    sourceLabel: "Reuters",
+    title: "Mercedes tops Bahrain test times but still wary of Red Bull threat",
+    summary: "Mercedes finished the opening Bahrain test with a one-two result, led by rising star Kimi Antonelli ahead of George Russell. Despite the strong showing, team leadership cautioned that Red Bull may still hold the true competitive edge once full performance modes are revealed.",
+    kcsQuickShift: "Mercedes may be fast now, but until Red Bull shows its full hand, nobody really knows who’s leading.",
+    url: "https://www.sowetan.co.za/motoring/2026-02-16-mercedes-end-first-bahrain-f1-test-one-two-on-the-time-sheets/",
+    imagePath: "/img/news/news-04.jpg",
+    dateLabel: "Feb 16, 2026",
   },
 
   // ---------- NEW SLOTS FOR F1 NEWS PAGE ----------
 
   {
- slotId: "news7",
-sourceLabel: "Motorsport.com",
-title:
-  "Esteban Ocon responds after Haas boss says more was expected from his 2025 season",
-summary:
-  "Esteban Ocon has accepted criticism from Haas team principal Ayao Komatsu following a difficult 2025 season where he finished 15th in the championship with just 38 points. Komatsu said the team expected more from the experienced race winner, but also acknowledged the car contributed to Ocon’s struggles. Ocon cited braking instability and balance issues that made the VF-25 difficult to drive, though setup changes late in the season showed improved performance and gave him confidence heading into 2026. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift:
-  "This is an important reset moment for Ocon. Both he and Haas admit 2025 was disappointing, but the team believes car setup issues played a major role. With lessons learned and improvements underway, Ocon will be under pressure to deliver stronger results in 2026.",
-url: "https://www.motorsport.com/f1/news/ocon-komatsu-f1-2025-season-review/10797545/",
-imagePath: "/img/news/news-05.jpg",
-dateLabel: "Feb 15, 2026"
+ slotId: "news-2026-02-16-verstappen-rule-criticism",
+    sourceLabel: "GrandPrix247",
+    title: "Verstappen says F1 and FIA underestimated problems with new 2026 rules",
+    summary: "Max Verstappen openly criticized Formula 1 leadership, saying officials failed to fully understand how disruptive the new regulations would be. His comments reflect growing frustration among drivers about how the major technical overhaul is affecting drivability and racing dynamics.",
+    kcsQuickShift: "When Verstappen starts questioning the fundamentals, you know this regulation cycle could reshape the entire competitive order.",
+    url: "https://www.grandprix247.com/formula-1-news/max-verstappen-says-formula-1-fia-didnt-realise-how-bad-2026-rules-would-be",
+    imagePath: "/img/news/news-05.jpg",
+    dateLabel: "Feb 16, 2026",
 },
   {
-    slotId: "news8",
-sourceLabel: "RacingNews365",
-title:
-  "Charles Leclerc warns new F1 energy rules could cause chaos at race starts",
-summary:
-  "Charles Leclerc has warned that the new 2026 power unit regulations could create unpredictable and chaotic race starts, with drivers forced to manually manage turbo spooling and energy deployment. Without the previous turbo-assisting systems, drivers must carefully balance engine revs and battery usage, increasing the risk of mistakes and inconsistent launches. Leclerc believes these critical moments will be influenced heavily by surrounding cars and unpredictable race conditions. :contentReference[oaicite:0]{index=0}",
-kcsQuickShift:
-  "This highlights just how difficult the new 2026 cars are to manage. Starts will be far more unpredictable, especially early in the season. Drivers won’t have full control, and small mistakes or pressure from nearby rivals could dramatically impact race outcomes.",
-url: "https://racingnews365.com/charles-leclerc-warns-of-enemy-hands-intervention-at-critical-f1-moment",
-imagePath: "/img/news/news-05.jpg",
-dateLabel: "Feb 15, 2026"
+    slotId: "news-2026-02-16-testing-chaos",
+    sourceLabel: "The Sun",
+    title: "F1 testing chaos raises major concerns over 2026 start procedures",
+    summary: "Pre-season testing in Bahrain exposed serious problems with the new 2026 start systems, with multiple drivers unable to launch cleanly due to anti-stall and energy deployment complications. The new engine configuration and revised procedures created confusion and reliability concerns, highlighting the steep learning curve teams face ahead of the season opener.",
+    kcsQuickShift: "If teams don’t solve these start issues fast, race wins could be decided before Turn 1 even arrives.",
+    url: "https://www.thesun.co.uk/sport/38234487/f1-testing-race-start-new-rules-chaos/",
+    imagePath: "/img/news/news-06.jpg",
+    dateLabel: "Feb 16, 2026",
   },
   
 ];

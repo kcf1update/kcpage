@@ -2,7 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import PageHero from "./components/PageHero";
 import PageNav from "./components/PageNav";
 import TopCard from "./components/TopCard";
 import AdBar from "./AdBar.jsx";
@@ -44,20 +43,10 @@ export default function F1NewsPage() {
 
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">
-      {/* Hero */}
-      <PageHero img="hero-worldwide4.png" alt="F1 News" />
-
       {/* Foreground content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-1 sm:pt-4 pb-10 lg:px-8">
-        {/* Nav row */}
-        <div className="mt-1 flex items-center justify-between gap-4">
-          <PageNav />
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
-        </div>
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 
-        <div className="mt-4" />
-
-        {/* TopCard (keep consistent with other pages) */}
+        {/* ✅ TOP CARD FIRST (full width across) */}
         <TopCard>
           <TopCard.Header
             title="F1 News"
@@ -75,13 +64,22 @@ export default function F1NewsPage() {
           />
         </TopCard>
 
-        {/* Main ad banner */}
-        <div className="mt-6">
-          <AdBar />
+        {/* ✅ NAV UNDER TOP CARD */}
+        <div className="flex items-center">
+
+          <PageNav />
+          <div className="shrink-0">{/* language selector hidden for launch */}</div>
         </div>
 
+        
+
+        {/* Main ad banner */}
+        <AdBar />
+
+
         {/* News grid */}
-        <main className="mt-6 grid gap-4 lg:grid-cols-2">
+        <main className="grid gap-4 lg:grid-cols-2">
+
           {newsPageCards.map((item) => {
             const href = safeUrl(item.url);
             const imgPath = safeLocalImagePath(item.imagePath);

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
-import PageHero from "./components/PageHero";
 
 // ✅ File-driven content (edit file + redeploy)
 import {
@@ -49,7 +48,7 @@ export default function PointsPage() {
       pointsTeams
         .map((t) => ({ ...t, points: teamPoints[t.id] ?? 0 }))
         .sort((a, b) => b.points - a.points),
-       
+
     [teamPoints]
   );
 
@@ -58,16 +57,9 @@ export default function PointsPage() {
 
   return (
     <div className="relative min-h-screen bg-[#545454] text-white">
-      <PageHero img="hero-worldwide4.png" alt="F1 Points" />
-
       <div className="relative mx-auto w-full max-w-[980px] flex flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8">
 
-        {/* Nav row (standard on all pages) */}
-        <div className="mt-1 flex items-center justify-center">
-  <PageNav />
-</div>
-
-
+        {/* ✅ TOP CARD FIRST (full width across) */}
         <TopCard>
           <TopCard.Header
             title="Driver & Team Points"
@@ -84,6 +76,11 @@ export default function PointsPage() {
             }
           />
         </TopCard>
+
+        {/* ✅ NAV UNDER TOP CARD */}
+        <div className="mt-1 flex items-center justify-center">
+          <PageNav />
+        </div>
 
         {/* Podium row */}
         <section className="mt-6 grid gap-4 md:grid-cols-12">
@@ -235,7 +232,7 @@ export default function PointsPage() {
         <section className="rounded-3xl p-4 text-sm leading-relaxed backdrop-blur card-aston">
           <h2 className="text-lg font-semibold">How points are awarded</h2>
           <p className="mt-1 text-xs text-gray-300">
-            This section is intentionally compact so it doesn’t dominate the page.
+            
           </p>
 
           <div className="mt-3 grid gap-4 md:grid-cols-2">

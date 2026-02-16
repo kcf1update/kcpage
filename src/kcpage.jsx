@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import PageNav from "./components/PageNav";
-import HeroHeader from "./components/HeroHeader";
 
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
@@ -199,12 +198,27 @@ export default function KCpage() {
       />
       <div className="absolute inset-0 -z-10 bg-black/70" />
 
-      {/* HOME HERO (full width) */}
-      <HeroHeader />
-
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-        {/* Update cadence note */}
+        {/* ✅ TOP CARD AT THE VERY TOP (full width like PageHero) */}
+        <section className="relative rounded-none border border-orange-400/70 bg-white text-slate-900 shadow-[0_0_30px_rgba(255,165,0,0.35)]">
+          <div className="flex items-center justify-center">
+            <div className="relative w-full max-w-6xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
+              <img
+                src="/img/kcs-f1-car.png"
+                alt="KC's F1 Worldwide Update car"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* ✅ NAV UNDER TOP CARD */}
+        <div className="flex items-center">
+          <PageNav />
+        </div>
+
+        {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
             🟢 Live F1 news updates daily • Breaking stories added throughout the day • Atlantic Time (Canada)
@@ -216,7 +230,7 @@ export default function KCpage() {
           </p>
         </div>
 
-        {/* ✅ NEW: TOP STORY (Option A) — placed right under the update bar (mobile-first, not clickbait) */}
+        {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {
               const item = topStory;
@@ -337,24 +351,6 @@ export default function KCpage() {
               );
             })()
           : null}
-
-        {/* NAV (single-row handled inside PageNav now) */}
-        <div className="flex items-center">
-          <PageNav />
-        </div>
-
-        {/* HERO CARD (car only) */}
-        <section className="relative rounded-none border border-orange-400/70 bg-white text-slate-900 shadow-[0_0_30px_rgba(255,165,0,0.35)]">
-          <div className="flex items-center justify-center">
-            <div className="relative w-full max-w-3xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
-              <img
-                src="/img/kcs-f1-car.png"
-                alt="KC's F1 Worldwide Update car"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </section>
 
         {/* MAIN TOP AD BANNER */}
         <AdBar />

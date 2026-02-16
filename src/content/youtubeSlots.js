@@ -13,25 +13,25 @@ export const youtubeSlots = [
     slotId: "slot1",
     title: "The 11 Formula 1 Cars of 2026!",
     youtubeInput: "https://youtu.be/B2WsIWslvlA",
-    description: "The cars look awesome, smaller, cooler and faster looking",
+    description: "They all look awesome",
     forceExternal: true
   },
 
  
     {
   slotId: "slot2",
-  title: "Take A Closer Look At 2026 F1 Cars! | F1 TV Tech Talk | 2026 Bahrain Pre-Season Testing",
-  youtubeInput: "https://youtu.be/xLqxybSAYbY",
-  description: "Recap of the cars and their key differences",
-  forceExternal: true
+  title: "F1 vs Formula E: I Asked the Drivers THE TRUTH!",
+  youtubeInput: "https://youtu.be/TVKPRK9xmgE",
+  description: "Always good behind the scenes info from Kym Illman",
+  
 },
   
 
   {
     slotId: "slot3",
-    title: "Everything we learned from F1’s Bahrain test",
-    youtubeInput: "https://youtu.be/5xTKSR_V2fo",
-    description: "Next week will tell us more of the story.",
+    title: "Jenson Button answers 11 questions you've ALWAYS wanted to ask an F1 World Champion! | F1 Unpacked",
+    youtubeInput: "https://youtu.be/BjnKJ-sTkBA",
+    description: "Fun information to listen to",
   }
 
 ];

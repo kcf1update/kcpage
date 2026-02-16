@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
-import PageHero from "./components/PageHero";
 
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 const nowText = () => new Date().toLocaleString();
+
 // --- Author identity (no sign-in, no user input) ---
 function makeFanHandle() {
   const n = Math.floor(1000 + Math.random() * 9000);
@@ -193,13 +193,10 @@ export default function CommentsPage() {
       setCooldownMs(getCooldownRemainingMs());
     };
 
-    const cooldownLabel =
-      cooldownMs > 0 ? `Cooldown: ${Math.ceil(cooldownMs / 1000)}s` : "Ready";
+    const cooldownLabel = cooldownMs > 0 ? `Cooldown: ${Math.ceil(cooldownMs / 1000)}s` : "Ready";
 
     return (
       <div>
-        
-
         <p className="mb-2 text-sm font-medium text-blue-800">
           Have your say on the latest F1 news — fans welcome.
         </p>
@@ -235,9 +232,7 @@ export default function CommentsPage() {
           <div className="text-[11px] text-blue-600">{cooldownLabel}</div>
         </div>
 
-        {error ? (
-          <div className="mt-2 text-xs text-red-600">{error}</div>
-        ) : null}
+        {error ? <div className="mt-2 text-xs text-red-600">{error}</div> : null}
       </div>
     );
   }
@@ -309,20 +304,12 @@ export default function CommentsPage() {
     );
   }
 
-  // --- PAGE LAYOUT (glassy style) ---------------------------------
+  // --- PAGE LAYOUT (match F1 News / YouTube spacing) ---------------
   return (
-    <div className="relative min-h-screen">
-      <div aria-hidden className="absolute inset-0 -z-10 bg-[#545454]" />
-      <PageHero img="hero-worldwide4.png" alt="Comments" />
+    <div className="relative min-h-screen bg-[#545454]">
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-2 pb-8 lg:px-8">
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <PageNav />
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
-        </div>
-
-        <div className="mt-4"></div>
-
+        {/* ✅ TOP CARD FIRST */}
         <TopCard>
           <TopCard.Header
             title="Race Comments & Discussion"
@@ -330,10 +317,9 @@ export default function CommentsPage() {
             logoSrc="/img/kcs-f1-car.png"
             right={
               <Link
-  to="/"
-  className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(220,38,38,0.45)] hover:bg-red-700 hover:border-red-700 transition"
->
-
+                to="/"
+                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(220,38,38,0.45)] hover:bg-red-700 hover:border-red-700 transition"
+              >
                 <span className="text-lg leading-none">&larr;</span>
                 <span>Back to home</span>
               </Link>
@@ -341,8 +327,13 @@ export default function CommentsPage() {
           />
         </TopCard>
 
-        <div className="mt-6" />
+        {/* ✅ NAV BELOW TOP CARD */}
+        <div className="flex items-center">
+          <PageNav />
+          <div className="shrink-0">{/* language selector hidden for launch */}</div>
+        </div>
 
+        {/* Main layout */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 items-start">
           <main className="md:col-span-9 lg:col-span-10">
             <section className="rounded-3xl border border-blue-200 bg-white p-4 backdrop-blur text-blue-900">
