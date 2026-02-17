@@ -11,10 +11,10 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "The 11 Formula 1 Cars of 2026!",
-    youtubeInput: "https://youtu.be/B2WsIWslvlA",
-    description: "They all look awesome",
-    forceExternal: true
+    title: "Why Adrian Newey’s Aston Martin F1 car is struggling so badly",
+    youtubeInput: "https://youtu.be/nwv8LdOLstg",
+    description: "Do you think they are sandbagging?",
+    
   },
 
  
@@ -29,9 +29,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Jenson Button answers 11 questions you've ALWAYS wanted to ask an F1 World Champion! | F1 Unpacked",
-    youtubeInput: "https://youtu.be/BjnKJ-sTkBA",
-    description: "Fun information to listen to",
+    title: "Peter Windsor: Verstappen Won't Retire, But He Will Join Mercedes!",
+    youtubeInput: "https://youtu.be/tZGlES5PCFA",
+    description: "Cameron CC and Peter Windsor. Alway a good listen",
   }
 
 ];
