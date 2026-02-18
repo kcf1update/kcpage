@@ -11,10 +11,10 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Why Adrian Newey’s Aston Martin F1 car is struggling so badly",
-    youtubeInput: "https://youtu.be/nwv8LdOLstg",
-    description: "Do you think they are sandbagging?",
-    
+    title: "Day 4 Highlights | 2026 F1 Barcelona Shakedown",
+    youtubeInput: "https://youtu.be/jEkJz7_dmNk",
+    description: "test day 4 is a wrap",
+    openOnYouTube: true,
   },
 
  
