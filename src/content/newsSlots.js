@@ -7,14 +7,14 @@
 
 export const newsSlots = [
   {
-    slotId: "news-2026-02-17-redbull-chief-designer-departure",
-    sourceLabel: "SportBible / PlanetF1",
-    title: "Red Bull hit by major chief designer departure ahead of crucial testing",
-    summary: "Red Bull is losing chief designer Craig Skinner, a key technical figure who played an important role in shaping the team’s aerodynamic philosophy and development direction. His exit comes just as teams prepare for the final pre season test, raising questions about continuity and long term stability inside one of Formula 1’s most dominant organizations.",
-    kcsQuickShift: "Losing your chief designer right before a regulation reset feels like losing your compass halfway through a storm.",
-    url: "https://www.sportbible.com/f1/red-bull-departure-2026-f1-season-666759-20260217",
-    imagePath: "/img/news/news-breaking2.jpg",
-    dateLabel: "Feb 17, 2026",
+    slotId: "news1",
+  sourceLabel: "FIA / RaceFans",
+  title: "FIA issues official statement on compression ratio dispute and proposes major rule clarification",
+  summary: "The FIA confirmed it is moving to change how engine compression ratio compliance is measured after controversy surrounding the new 2026 power units. Instead of only checking the ratio at ambient temperature, the proposed change would require compliance at real operating temperatures around 130°C, closing a loophole that could allow higher compression during running conditions. The governing body has launched a vote among manufacturers, with a final decision expected soon. :contentReference[oaicite:0]{index=0}",
+  kcsQuickShift: "This is the FIA stepping in before someone builds a championship winning advantage through a technical gray area.",
+  url: "https://www.fia.com/news/fia-statement-formula-1-power-unit-advisory-committee",
+  imagePath: "/img/news/news-engine.jpg",
+  dateLabel: "Feb 18, 2026",
   },
   {
     slotId: "news-2026-02-17-engine-rule-dispute-intensifies",
