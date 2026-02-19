@@ -11,19 +11,19 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Day 4 Highlights | 2026 F1 Barcelona Shakedown",
-    youtubeInput: "https://youtu.be/jEkJz7_dmNk",
-    description: "test day 4 is a wrap",
-    openOnYouTube: true,
+    title: "Ferrari’s New Rotating Rear Wing! | 2026 Bahrain Pre-Season Testing",
+    youtubeInput: "https://youtu.be/U_eM9jBHdxI",
+    description: "I mean why not try it. Lol",
+    forceExternal: true,
   },
 
  
     {
   slotId: "slot2",
-  title: "F1 vs Formula E: I Asked the Drivers THE TRUTH!",
-  youtubeInput: "https://youtu.be/TVKPRK9xmgE",
-  description: "Always good behind the scenes info from Kym Illman",
-  
+  title: "The Development War Has Already Begun! | F1 TV Tech Talk | 2026 Bahrain Pre-Season Testing",
+  youtubeInput: "https://youtu.be/wR2jrC-lyIo",
+  description: "tech stuff!",
+  forceExternal: true,
 },
   
 
