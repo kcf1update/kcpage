@@ -66,7 +66,8 @@ function normalizeName(s) {
   return String(s || "")
     .toLowerCase()
     .replace(/[’']/g, "")
-    .replace(/[^a-z\s\-]/g, "")
+    .replace(/[^a-z\s-]/g, "")
+
     .replace(/\s+/g, " ")
     .trim();
 }
