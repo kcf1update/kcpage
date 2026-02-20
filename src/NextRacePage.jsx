@@ -216,7 +216,7 @@ hover:bg-sky-500/25 hover:text-sky-200
 transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
                       title="Open track information"
                     >
-                      Check out the next track
+                      Check out the next race
                       <span className="text-[10px] text-gray-300">↗</span>
                     </a>
                   </div>
