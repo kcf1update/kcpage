@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Ferrari’s New Rotating Rear Wing! | 2026 Bahrain Pre-Season Testing",
+    title: "F1 drivers share CONCERNS for 2026 F1 regulations!",
     youtubeInput: "https://youtu.be/U_eM9jBHdxI",
-    description: "I mean why not try it. Lol",
+    description: "Always great content form Kym",
     forceExternal: true,
   },
 
@@ -29,9 +29,10 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The Single Tech That'll Decide F1 in 2026!",
-    youtubeInput: "https://youtu.be/aGP9jgyZ56I",
-    description: "Looking at the news today it sounds like Mercedes may have a problem.",
+    title: "Day 3 Highlights | 2026 Bahrain Pre-Season Test 2",
+    youtubeInput: "https://youtu.be/YCsS93lHsCg",
+    description: "Australia next!!",
+    forceExternal: true,
   }
 
 ];
