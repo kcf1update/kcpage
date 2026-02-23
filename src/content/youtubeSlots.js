@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "F1 drivers share CONCERNS for 2026 F1 regulations!",
-    youtubeInput: "https://youtu.be/U_eM9jBHdxI",
-    description: "Always great content form Kym",
+    title: "F1 2026 New Season Launch: It's All To Drive For",
+    youtubeInput: "https://youtu.be/Sj58i-U0o5A",
+    description: "Just a few mores day!",
     forceExternal: true,
   },
 
@@ -29,9 +29,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Day 3 Highlights | 2026 Bahrain Pre-Season Test 2",
-    youtubeInput: "https://youtu.be/YCsS93lHsCg",
-    description: "Australia next!!",
+    title: "Ranking the 2026 F1 teams after pre-season testing",
+    youtubeInput: "https://youtu.be/TWwfDBRi0E4",
+    description: "Do you agree?",
     forceExternal: true,
   }
 
