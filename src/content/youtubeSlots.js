@@ -11,19 +11,19 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "F1 2026 New Season Launch: It's All To Drive For",
-    youtubeInput: "https://youtu.be/Sj58i-U0o5A",
-    description: "Just a few mores day!",
-    forceExternal: true,
+    title: "2026 F1 McLaren vs Mercedes - Scarbs analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/sgahzgWedG4",
+    description: "No one will know until Australia!",
+    
   },
 
  
     {
   slotId: "slot2",
-  title: "What Is A Compression Ratio? | F1 TV Tech Talk | 2026 Bahrain Pre-Season Testing",
-  youtubeInput: "https://youtu.be/O_2byeaN8Mk",
-  description: "I have a feeling we are going to be talking a lot about this for a few weeks.",
-  forceExternal: true,
+  title: "Is This Adrian Newey's Worst Car Ever? | Peter Windsor Reacts",
+  youtubeInput: "https://youtu.be/WxxVmyCJHhw",
+  description: "To much pressure on Adrian Newey",
+  
 },
   
 
@@ -32,7 +32,7 @@ export const youtubeSlots = [
     title: "Ranking the 2026 F1 teams after pre-season testing",
     youtubeInput: "https://youtu.be/TWwfDBRi0E4",
     description: "Do you agree?",
-    forceExternal: true,
+    
   }
 
 ];
