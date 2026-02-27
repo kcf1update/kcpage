@@ -3,35 +3,35 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://youtu.be/wJRANsB_CeI",
-    description: "Aston Martin is in trouble!.",
-    ctaUrl: "",
+    youtubeInput: "https://www.youtube.com/shorts/LyW5C0EI8RI?feature=share",
+    description: "Why F1 Cars Suddenly Slow Down in 2026.",
+    ctaUrl: "https://www.youtube.com/shorts/LyW5C0EI8RI?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
   {
     slotId: "slot1",
-    title: "Crofty explains why there might be CHAOS from the start as the new era of F1 begins!",
-    youtubeInput: "https://youtu.be/w8cd2xc3eEw",
-    description: "It sounds like the start of the race will be interesting",
+    title: "Why Cadillac’s already impressing F1 rivals",
+    youtubeInput: "https://youtu.be/OwnLaPzyKhg",
+    description: "I think Cadillac may be the surprise of the year.",
     
   },
 
  
     {
   slotId: "slot2",
-  title: "Is Aston Martin DOOMED for the 2026 F1 season?",
-  youtubeInput: "https://youtu.be/zJkRzGvN51M",
-  description: "I'm not sure it was a disater but they are definitely in trouble, for the few races anyway.",
+  title: "Which F1 drivers and teams have impressed Martin Brundle in 2026 so far? 👀",
+  youtubeInput: "https://youtu.be/-4B97yoyk1I",
+  description: "Do you agree with Martin? I'm not sure that I do. I think McLaren should be first or second ",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "The F1 drivers facing serious trouble already in 2026",
-    youtubeInput: "https://youtu.be/dFmgx8A9V84",
-    description: "Is it just me or does a lot of the news seem negative this year?",
+    title: "Formula 1 Has A Braking Problem",
+    youtubeInput: "https://youtu.be/cj7Fehj1YsQ",
+    description: "Another problem?",
     
   }
 
