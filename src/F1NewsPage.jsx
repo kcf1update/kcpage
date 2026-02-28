@@ -46,7 +46,7 @@ export default function F1NewsPage() {
       {/* Foreground content */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 
-        {/* ✅ TOP CARD FIRST (full width across) */}
+        {/* ✅ TOP CARD FIRST (full width across) */} 
         <TopCard>
           <TopCard.Header
             title="F1 News"
@@ -64,20 +64,16 @@ export default function F1NewsPage() {
           />
         </TopCard>
 
-        {/* ✅ NAV UNDER TOP CARD */}
+        {/* ✅ NAV UNDER TOP CARD */} 
         <div className="flex items-center">
-
           <PageNav />
           <div className="shrink-0">{/* language selector hidden for launch */}</div>
         </div>
 
-        
-
-        {/* Main ad banner */}
+        {/* Main ad banner */} 
         <AdBar />
 
-
-        {/* News grid */}
+        {/* News grid */} 
         <main className="grid gap-4 lg:grid-cols-2">
 
           {newsPageCards.map((item) => {
@@ -87,12 +83,19 @@ export default function F1NewsPage() {
             // NEW FIELD NAME (renamed from kcOuttake)
             const quickShift = (item.kcsQuickShift || "").trim();
 
+            // Photo credit (required in content for copyright safety)
+            const photoCredit = (item.photoCredit || "").trim();
+            const photoCreditUrl = (item.photoCreditUrl || "").trim();
+
+            // Prefer imageAlt, fallback to title
+            const altText = (item.imageAlt || item.title || "F1 news").trim();
+
             return (
               <article
                 key={item.slotId}
                 className="flex flex-col overflow-hidden rounded-3xl border border-cyan-400/30 bg-black/60 backdrop-blur shadow-[0_0_20px_rgba(34,211,238,0.35)]"
               >
-                {/* Image (optional – LOCAL ONLY) */}
+                {/* Image (optional – LOCAL ONLY) */} 
                 {imgPath ? (
                   href ? (
                     <a
@@ -105,7 +108,7 @@ export default function F1NewsPage() {
                       <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
                         <img
                           src={imgPath}
-                          alt={item.title || "F1 news"}
+                          alt={altText}
                           className="h-full w-full object-cover"
                           loading="lazy"
                         />
@@ -115,7 +118,7 @@ export default function F1NewsPage() {
                     <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
                       <img
                         src={imgPath}
-                        alt={item.title || "F1 news"}
+                        alt={altText}
                         className="h-full w-full object-cover"
                         loading="lazy"
                       />
@@ -127,7 +130,26 @@ export default function F1NewsPage() {
                   </div>
                 )}
 
-                {/* Text */}
+                {/* Photo credit */} 
+                {photoCredit ? (
+                  <div className="px-4 pt-3 text-[11px] text-white/55">
+                    Photo:{" "}
+                    {photoCreditUrl ? (
+                      <a
+                        href={safeUrl(photoCreditUrl)}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline hover:text-cyan-200"
+                      >
+                        {photoCredit}
+                      </a>
+                    ) : (
+                      <span>{photoCredit}</span>
+                    )}
+                  </div>
+                ) : null}
+
+                {/* Text */} 
                 <div className="p-4 space-y-2">
                   <div className="flex items-center justify-between gap-3">
                     <div className="text-[11px] uppercase tracking-wide text-cyan-200/80">
@@ -141,7 +163,7 @@ export default function F1NewsPage() {
                     ) : null}
                   </div>
 
-                  {/* ✅ Title clickable */}
+                  {/* ✅ Title clickable */} 
                   {href ? (
                     <a
                       href={href}
@@ -171,7 +193,7 @@ export default function F1NewsPage() {
                     </p>
                   )}
 
-                  {/* KC’s Quick Shift (only shows if filled in newsSlots.js) */}
+                  {/* KC’s Quick Shift (only shows if filled in newsSlots.js) */} 
                   {quickShift ? (
                     <div className="mt-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
                       <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">

@@ -72,6 +72,9 @@ function getYouTubeId(input = "") {
 
     const shortMatch = s.match(/youtu\.be\/([a-zA-Z0-9_-]{6,})/);
     if (shortMatch?.[1]) return shortMatch[1];
+     // ✅ ADD THIS (supports YouTube Shorts URLs)
+    const shortsMatch = s.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]{6,})/);
+    if (shortsMatch?.[1]) return shortsMatch[1];
 
     const vMatch = s.match(/[?&]v=([a-zA-Z0-9_-]{6,})/);
     if (vMatch?.[1]) return vMatch[1];
@@ -239,6 +242,10 @@ export default function KCpage() {
               const showImage = !!imgPath;
               const quickShift = (item?.kcsQuickShift || "").trim();
 
+              const photoCredit = (item?.photoCredit || "").trim();
+              const photoCreditUrl = (item?.photoCreditUrl || "").trim();
+              const altText = (item?.imageAlt || item?.title || "News image").trim();
+
               return (
                 <section className="mt-1">
                   <div className="mb-2 flex items-center justify-between gap-3">
@@ -285,7 +292,7 @@ export default function KCpage() {
                           >
                             <img
                               src={imgPath}
-                              alt={item?.title || "News image"}
+                              alt={altText}
                               className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                               onError={(e) => {
                                 e.currentTarget.style.display = "none";
@@ -295,13 +302,32 @@ export default function KCpage() {
                         ) : (
                           <img
                             src={imgPath}
-                            alt={item?.title || "News image"}
+                            alt={altText}
                             className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                             onError={(e) => {
                               e.currentTarget.style.display = "none";
                             }}
                           />
                         )
+                      ) : null}
+
+                      {/* Photo credit */}
+                      {photoCredit ? (
+                        <div className="text-[11px] text-white/55">
+                          Photo:{" "}
+                          {photoCreditUrl ? (
+                            <a
+                              href={safeUrl(photoCreditUrl)}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="underline hover:text-cyan-200"
+                            >
+                              {photoCredit}
+                            </a>
+                          ) : (
+                            <span>{photoCredit}</span>
+                          )}
+                        </div>
                       ) : null}
 
                       {item?.summary ? (
@@ -375,6 +401,10 @@ export default function KCpage() {
                   const showImage = !!imgPath;
                   const quickShift = (item?.kcsQuickShift || "").trim();
 
+                  const photoCredit = (item?.photoCredit || "").trim();
+                  const photoCreditUrl = (item?.photoCreditUrl || "").trim();
+                  const altText = (item?.imageAlt || item?.title || "News image").trim();
+
                   return (
                     <GlassyCard
                       key={item?.slotId || "featured-under-video"}
@@ -395,7 +425,7 @@ export default function KCpage() {
                             >
                               <img
                                 src={imgPath}
-                                alt={item?.title || "News image"}
+                                alt={altText}
                                 className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                                 onError={(e) => {
                                   e.currentTarget.style.display = "none";
@@ -405,13 +435,32 @@ export default function KCpage() {
                           ) : (
                             <img
                               src={imgPath}
-                              alt={item?.title || "News image"}
+                              alt={altText}
                               className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                               onError={(e) => {
                                 e.currentTarget.style.display = "none";
                               }}
                             />
                           )
+                        ) : null}
+
+                        {/* Photo credit */}
+                        {photoCredit ? (
+                          <div className="text-[11px] text-white/55">
+                            Photo:{" "}
+                            {photoCreditUrl ? (
+                              <a
+                                href={safeUrl(photoCreditUrl)}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="underline hover:text-cyan-200"
+                              >
+                                {photoCredit}
+                              </a>
+                            ) : (
+                              <span>{photoCredit}</span>
+                            )}
+                          </div>
                         ) : null}
 
                         {item?.summary ? (
@@ -483,6 +532,10 @@ export default function KCpage() {
               // ✅ NEW: KC’s Quick Shift (blue) — only shows if text exists
               const quickShift = (item?.kcsQuickShift || "").trim();
 
+              const photoCredit = (item?.photoCredit || "").trim();
+              const photoCreditUrl = (item?.photoCreditUrl || "").trim();
+              const altText = (item?.imageAlt || item?.title || "News image").trim();
+
               return (
                 <GlassyCard
                   key={item?.slotId || `featured-${idx}`}
@@ -503,7 +556,7 @@ export default function KCpage() {
                         >
                           <img
                             src={imgPath}
-                            alt={item?.title || "News image"}
+                            alt={altText}
                             className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                             onError={(e) => {
                               e.currentTarget.style.display = "none";
@@ -513,13 +566,32 @@ export default function KCpage() {
                       ) : (
                         <img
                           src={imgPath}
-                          alt={item?.title || "News image"}
+                          alt={altText}
                           className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                           onError={(e) => {
                             e.currentTarget.style.display = "none";
                           }}
                         />
                       )
+                    ) : null}
+
+                    {/* Photo credit */}
+                    {photoCredit ? (
+                      <div className="text-[11px] text-white/55">
+                        Photo:{" "}
+                        {photoCreditUrl ? (
+                          <a
+                            href={safeUrl(photoCreditUrl)}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline hover:text-cyan-200"
+                          >
+                            {photoCredit}
+                          </a>
+                        ) : (
+                          <span>{photoCredit}</span>
+                        )}
+                      </div>
                     ) : null}
 
                     {item?.summary ? (
@@ -580,6 +652,10 @@ export default function KCpage() {
                     const showImage = !!imgPath;
                     const quickShift = (item?.kcsQuickShift || "").trim();
 
+                    const photoCredit = (item?.photoCredit || "").trim();
+                    const photoCreditUrl = (item?.photoCreditUrl || "").trim();
+                    const altText = (item?.imageAlt || item?.title || "News image").trim();
+
                     return (
                       <GlassyCard
                         key={item?.slotId || "featured-under-video-mobile"}
@@ -600,7 +676,7 @@ export default function KCpage() {
                               >
                                 <img
                                   src={imgPath}
-                                  alt={item?.title || "News image"}
+                                  alt={altText}
                                   className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                                   onError={(e) => {
                                     e.currentTarget.style.display = "none";
@@ -610,13 +686,32 @@ export default function KCpage() {
                             ) : (
                               <img
                                 src={imgPath}
-                                alt={item?.title || "News image"}
+                                alt={altText}
                                 className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
                                 onError={(e) => {
                                   e.currentTarget.style.display = "none";
                                 }}
                               />
                             )
+                          ) : null}
+
+                          {/* Photo credit */}
+                          {photoCredit ? (
+                            <div className="text-[11px] text-white/55">
+                              Photo:{" "}
+                              {photoCreditUrl ? (
+                                <a
+                                  href={safeUrl(photoCreditUrl)}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="underline hover:text-cyan-200"
+                                >
+                                  {photoCredit}
+                                </a>
+                              ) : (
+                                <span>{photoCredit}</span>
+                              )}
+                            </div>
                           ) : null}
 
                           {item?.summary ? (
