@@ -146,7 +146,7 @@ export default function NextRacePage() {
         <TopCard>
           <TopCard.Header
             title="Race Centre"
-            subtitle="Schedule, weather, and session results."
+            subtitle="Schedule, weather, and session results. "
             logoSrc="/img/kcs-f1-car.png"
             right={
               <Link
