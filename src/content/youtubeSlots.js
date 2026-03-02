@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Is Verstappen right about F1 2026? Hill and Herbert's verdict | Stay On Track E5",
-    youtubeInput: "https://youtu.be/kE1D0h-eCCk",
-    description: "Always a good listen",
+    title: "All To Drive For! 2026 F1 Season Preview | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/9xMiEr6OPo4",
+    description: "A good hour",
     
   },
 
@@ -29,9 +29,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Melbourne Grand Prix in question as F1 staffers rush to flee Middle East | 9 News Australia",
-    youtubeInput: "https://youtu.be/uh5DKac3llE",
-    description: "I think they will get it figured out",
+    title: "Australian GP Upgrades From F1 Teams Revealed!",
+    youtubeInput: "https://youtu.be/yjc9P1s6QpA",
+    description: "Great info",
     
   }
 
