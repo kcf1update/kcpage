@@ -67,7 +67,6 @@ function normalizeName(s) {
     .toLowerCase()
     .replace(/[’']/g, "")
     .replace(/[^a-z\s-]/g, "")
-
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -131,8 +130,197 @@ function buildResultsFromPaste(pasteText, drivers) {
   return out;
 }
 
+/**
+ * PREVIEW: Driver meta (flag + number)
+ * - This is a simple mapping so you can see the UI layout.
+ * - Fill it in over time. Missing values will gracefully fall back.
+ */
+const DRIVER_META = {
+  "Alex Albon": { number: 23, flag: "🇹🇭" },
+  "Carlos Sainz": { number: 55, flag: "🇪🇸" },
+  "Charles Leclerc": { number: 16, flag: "🇲🇨" },
+  "Esteban Ocon": { number: 31, flag: "🇫🇷" },
+  "Fernando Alonso": { number: 14, flag: "🇪🇸" },
+  "Ollie Bearman": { number: 87, flag: "🇬🇧" },
+  // Add the rest whenever you want
+};
+
+function DriverPill({ name }) {
+  const meta = DRIVER_META[name] || {};
+  const flag = meta.flag || "🏁";
+  const number = meta.number != null ? String(meta.number) : "—";
+
+  return (
+    <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-2 py-1 text-[11px] font-medium">
+      <span className="text-sm leading-none">{flag}</span>
+      <span className="inline-flex min-w-6 items-center justify-center rounded-full bg-black/40 px-2 py-[2px] text-[10px] border border-white/10">
+        {number}
+      </span>
+      <span>{name}</span>
+    </span>
+  );
+}
+
+/**
+ * PREVIEW: manual race results (you’ll edit this after race day)
+ * - position drives sorting (1,2,3…)
+ * - you can add status like "DNF" later if you want
+ */
+const MOCK_RACE_RESULTS = [
+  // Example entries (edit anytime)
+  { driver: "Charles Leclerc", position: 2 },
+  { driver: "Fernando Alonso", position: 6 },
+  { driver: "Alex Albon", position: 10 },
+  { driver: "Carlos Sainz", position: 3 },
+  { driver: "Esteban Ocon", position: 7 },
+  // If someone is missing, they just won’t appear
+];
+
+function RaceResultsCard({ title = "Race Results", results }) {
+  const sorted = [...(results || [])]
+    .filter((r) => r && typeof r.position === "number" && r.driver)
+    .sort((a, b) => a.position - b.position);
+
+  const podiumBg = (pos) => {
+    if (pos === 1) return "bg-yellow-500/10 border-yellow-400/30";
+    if (pos === 2) return "bg-gray-200/10 border-gray-200/30";
+    if (pos === 3) return "bg-amber-700/10 border-amber-400/20";
+    return "bg-black/40 border-white/10";
+  };
+
+  return (
+    <article className="card-green rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+      <header className="mb-2 flex items-center justify-between">
+        <div>
+          <h2 className="text-lg font-semibold">{title}</h2>
+          <p className="mt-1 text-xs text-gray-300">
+            Enter positions manually — it auto-sorts.
+          </p>
+        </div>
+      </header>
+
+      <div className="mt-3 max-h-[520px] overflow-auto pr-1">
+        {sorted.length === 0 ? (
+          <div className="rounded-2xl border border-white/10 bg-black/50 px-3 py-3 text-sm text-gray-200">
+            No results entered yet.
+            <div className="mt-1 text-xs text-gray-400">
+              Add finishing order after race day.
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {sorted.map((r) => (
+              <div
+                key={`${r.driver}-${r.position}`}
+                className={`flex items-center justify-between gap-3 rounded-2xl border px-3 py-2 ${podiumBg(
+                  r.position
+                )}`}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-black/40 text-xs font-semibold">
+                    {r.position}
+                  </span>
+                  <DriverPill name={r.driver} />
+                </div>
+
+                {/* Optional placeholder for points/time/status later */}
+                <div className="text-xs text-gray-300">
+                  {r.status ? (
+                    <span className="rounded-full border border-white/10 bg-black/40 px-2 py-1">
+                      {r.status}
+                    </span>
+                  ) : null}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function CompactSessionCard({ session, sessionIndex }) {
+  // If paste exists, build results array from it; otherwise use results[]
+  const computedResults =
+    typeof session?.paste === "string" && session.paste.trim()
+      ? buildResultsFromPaste(session.paste, NEXT_RACE_DRIVERS)
+      : session?.results;
+
+  // Build rows using computed results, then sort by lap time (ms)
+  const rows = NEXT_RACE_DRIVERS.map((driver, driverIdx) => {
+    const result = Array.isArray(computedResults)
+      ? computedResults[driverIdx] || ""
+      : computedResults?.[driver] || "";
+    const ms = extractLapMs(result);
+    return { driver, result, ms };
+  });
+
+  rows.sort((a, b) => {
+    if (a.ms !== b.ms) return a.ms - b.ms;
+    return a.driver.localeCompare(b.driver);
+  });
+
+  const leader = rows.find((r) => Number.isFinite(r.ms) && r.ms !== Number.POSITIVE_INFINITY);
+  const leaderMs = leader ? leader.ms : null;
+
+  return (
+    <article className="card-green rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+      <header className="mb-2 flex items-center justify-between gap-2">
+        <h2 className="text-base sm:text-lg font-semibold">
+          {session.label || `Session ${sessionIndex + 1}`}
+        </h2>
+        {session.time ? (
+          <div className="text-[11px] text-gray-300">
+            <span className="mr-2 uppercase tracking-[0.2em]">Time</span>
+            <span className="rounded-full border border-white/10 bg-black/40 px-2 py-1">
+              {session.time}
+            </span>
+          </div>
+        ) : null}
+      </header>
+
+      {/* Compact, timing-screen style list */}
+      <div className="max-h-64 overflow-auto pr-1">
+        <div className="space-y-1">
+          {rows.map((row, i) => {
+            const gap =
+              leaderMs != null &&
+              Number.isFinite(row.ms) &&
+              row.ms !== Number.POSITIVE_INFINITY
+                ? formatGapMs(row.ms - leaderMs)
+                : "";
+
+            return (
+              <div
+                key={row.driver}
+                className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/40 px-2 py-2"
+              >
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/10 bg-black/40 text-[10px] text-gray-200">
+                    {i + 1}
+                  </span>
+                  <div className="min-w-0">
+                    <DriverPill name={row.driver} />
+                  </div>
+                </div>
+
+                <div className="shrink-0 text-right">
+                  <div className="rounded-full border border-white/10 bg-black/50 px-2 py-1 text-[11px] sm:text-xs">
+                    {row.result || "—"}
+                    {gap ? <span className="ml-2 opacity-70">{gap}</span> : null}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default function NextRacePage() {
-  // Convenience: sessions in the order you defined in the content file
   const sessions = nextRaceContent.sessions || [];
 
   return (
@@ -142,7 +330,7 @@ export default function NextRacePage() {
 
       {/* Foreground content */}
       <div className="next-race-page relative z-10 mx-auto flex max-w-7xl flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8 lg:px-8">
-        {/* ✅ TOP CARD FIRST (full width across) */}
+        {/* ✅ TOP CARD FIRST (unchanged) */}
         <TopCard>
           <TopCard.Header
             title="Race Centre"
@@ -160,7 +348,7 @@ export default function NextRacePage() {
           />
         </TopCard>
 
-        {/* ✅ NAV UNDER TOP CARD */}
+        {/* ✅ NAV UNDER TOP CARD (unchanged) */}
         <div className="mt-1 flex items-center justify-between gap-4">
           <PageNav />
           <div className="shrink-0">{/* language selector hidden for launch */}</div>
@@ -170,7 +358,7 @@ export default function NextRacePage() {
           <AdBar />
         </div>
 
-        {/* Top row: race info + weather */}
+        {/* Top row: race info + weather (unchanged) */}
         <section className="grid gap-6 lg:grid-cols-3 mt-2">
           {/* Race & sessions card */}
           <article className="card-green lg:col-span-2 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
@@ -201,7 +389,6 @@ export default function NextRacePage() {
                   </div>
                 </div>
 
-                {/* ✅ Track Info link (only shows if you set trackInfoUrl in content) */}
                 {nextRaceContent.trackInfoUrl ? (
                   <div className="sm:pt-5">
                     <a
@@ -266,87 +453,23 @@ transition hover:shadow-[0_0_14px_rgba(56,189,248,0.6)]"
           </article>
         </section>
 
-        {/* Results per session */}
-        <section className="space-y-6">
-          {sessions.map((session, idx) => {
-            // ✅ If paste exists, build results array from it; otherwise use results[]
-            const computedResults =
-              typeof session?.paste === "string" && session.paste.trim()
-                ? buildResultsFromPaste(session.paste, NEXT_RACE_DRIVERS)
-                : session?.results;
-
-            // Build rows using computed results, then sort by lap time (ms)
-            const rows = NEXT_RACE_DRIVERS.map((driver, driverIdx) => {
-              const result = Array.isArray(computedResults)
-                ? computedResults[driverIdx] || ""
-                : computedResults?.[driver] || "";
-              const ms = extractLapMs(result);
-              return { driver, result, ms };
-            });
-
-            rows.sort((a, b) => {
-              if (a.ms !== b.ms) return a.ms - b.ms;
-              return a.driver.localeCompare(b.driver);
-            });
-
-            const leader = rows.find(
-              (r) => Number.isFinite(r.ms) && r.ms !== Number.POSITIVE_INFINITY
-            );
-            const leaderMs = leader ? leader.ms : null;
-
-            return (
-              <article
+        {/* ✅ NEW: Split layout - Sessions (left) + Race Results (right) */}
+        <section className="grid gap-6 lg:grid-cols-3">
+          {/* LEFT: compact sessions */}
+          <div className="lg:col-span-2 space-y-6">
+            {sessions.map((session, idx) => (
+              <CompactSessionCard
                 key={session.id || idx}
-                className="card-green rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur"
-              >
-                <header className="mb-3 flex items-center justify-between gap-2">
-                  <h2 className="text-lg font-semibold">
-                    {session.label || `Session ${idx + 1}`}
-                  </h2>
-                  <p className="text-[11px] text-gray-300"></p>
-                </header>
+                session={session}
+                sessionIndex={idx}
+              />
+            ))}
+          </div>
 
-                <div className="max-h-72 overflow-auto pr-1 text-xs sm:text-sm">
-                  <table className="min-w-full border-separate border-spacing-y-1">
-                    <thead className="text-[11px] uppercase tracking-wide text-gray-300">
-                      <tr>
-                        <th className="px-2 py-1 text-left">Driver</th>
-                        <th className="px-2 py-1 text-left">Result</th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      {rows.map((row) => {
-                        const gap =
-                          leaderMs != null &&
-                          Number.isFinite(row.ms) &&
-                          row.ms !== Number.POSITIVE_INFINITY
-                            ? formatGapMs(row.ms - leaderMs)
-                            : "";
-
-                        return (
-                          <tr key={row.driver} className="align-middle">
-                            <td className="px-2 py-1">
-                              <span className="inline-flex rounded-full bg-white/10 px-2 py-1 text-[11px] font-medium">
-                                {row.driver}
-                              </span>
-                            </td>
-
-                            <td className="px-2 py-1">
-                              <div className="w-full rounded-full border border-white/10 bg-black/50 px-2 py-1 text-xs">
-                                {row.result}
-                                {gap ? <span className="ml-2 opacity-70">{gap}</span> : null}
-                              </div>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </div>
-              </article>
-            );
-          })}
+          {/* RIGHT: race results card */}
+          <div className="lg:col-span-1">
+            <RaceResultsCard results={MOCK_RACE_RESULTS} />
+          </div>
         </section>
       </div>
     </div>

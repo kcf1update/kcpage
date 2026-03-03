@@ -11,26 +11,26 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "All To Drive For! 2026 F1 Season Preview | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/9xMiEr6OPo4",
-    description: "A good hour",
+    title: "F1 2026's 9 biggest questions",
+    youtubeInput: "https://youtu.be/cyNc1qGDhQo",
+    description: "I think the race starts are the biggest question, what do you think?",
     
   },
 
  
     {
   slotId: "slot2",
-  title: "Anthony Davidson assesses the F1 2026 Drivers Championship odds 👀",
-  youtubeInput: "https://youtu.be/DgaF8JpgOMU",
-  description: "In my opinnion Anthony Davidson is the go to person for current F1 knowledge ",
+  title: "Arvid Lindblad: Meeting Britain's newest F1 driver ahead of his debut season",
+  youtubeInput: "https://youtu.be/owxstWlPx4U",
+  description: "next star? ",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Australian GP Upgrades From F1 Teams Revealed!",
-    youtubeInput: "https://youtu.be/yjc9P1s6QpA",
+    title: "Why the 2026 MELBOURNE GP is a LOGISTICAL NIGHTMARE!",
+    youtubeInput: "https://youtu.be/Sk9UeeZiF7M",
     description: "Great info",
     
   }
