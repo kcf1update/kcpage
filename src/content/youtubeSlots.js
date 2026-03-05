@@ -11,28 +11,28 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "F1 2026's 9 biggest questions",
-    youtubeInput: "https://youtu.be/cyNc1qGDhQo",
-    description: "I think the race starts are the biggest question, what do you think?",
+    title: "Will the MIDDLE EAST F1 races be CANCELLED?",
+    youtubeInput: "https://youtu.be/kaWUSgrrbxE",
+    description: "I think we should all be prepared for changes",
     
   },
 
  
     {
   slotId: "slot2",
-  title: "Arvid Lindblad: Meeting Britain's newest F1 driver ahead of his debut season",
-  youtubeInput: "https://youtu.be/owxstWlPx4U",
-  description: "next star? ",
+  title: "Extraordinary Newey/Honda admissions at F1’s Australian GP explained",
+  youtubeInput: "https://youtu.be/TIkI_X3Mas0",
+  description: "This all sounds very familiar, Aston Martin should talk to McLaren  ",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Why the 2026 MELBOURNE GP is a LOGISTICAL NIGHTMARE!",
-    youtubeInput: "https://youtu.be/Sk9UeeZiF7M",
-    description: "Great info",
-    
+    title: "Weekend Warm-Up | 2026 Australian Grand Prix",
+    youtubeInput: "https://youtu.be/08mSKUImg_c",
+    description: "When you see this show, you know it race wekend :-) ",
+    forceExternal:true,
   }
 
 ];

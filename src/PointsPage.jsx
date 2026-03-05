@@ -1,262 +1,338 @@
+// src/PointsPage.jsx
 import React, { useMemo } from "react";
-import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
 
-// ✅ File-driven content (edit file + redeploy)
+import { DRIVERS } from "./content/drivers";
 import {
-  pointsTeams,
   pointsDrivers,
+  pointsTeams, // your team color list lives here
   constructorPointsOverride,
 } from "./content/pointsContent";
 
-export default function PointsPage() {
-  // Drivers with points (from content file)
-  const driversWithPoints = useMemo(
-    () => pointsDrivers.map((d) => ({ ...d, points: Number(d.points) || 0 })),
-    []
-  );
+import { nextRaceContent } from "./content/nextRaceContent";
 
-  // Sum constructor points from driver points (+ optional overrides)
-  const teamPoints = useMemo(() => {
-    const map = {};
-    for (const d of driversWithPoints) {
-      if (!map[d.teamId]) map[d.teamId] = 0;
-      map[d.teamId] += d.points;
+// ---------------- helpers ----------------
+function safeNum(n) {
+  const x = Number(n);
+  return Number.isFinite(x) ? x : 0;
+}
+
+function teamKey(name) {
+  return String(name || "").trim() || "Unknown";
+}
+
+function flagSrc(countryCode) {
+  const cc = String(countryCode || "").toLowerCase().trim();
+  return cc ? `/flags/${cc}.png` : "";
+}
+
+function buildManualPointsMap(pointsDriversAny) {
+  // supports:
+  //  - array of { id, points } / { driverId, points } / { code, pts } etc
+  //  - object map { NOR: 25, VER: 18 }
+  const out = {};
+
+  if (Array.isArray(pointsDriversAny)) {
+    for (const p of pointsDriversAny) {
+      const id = (p?.driverId ?? p?.id ?? p?.key ?? p?.code ?? "").toString().toUpperCase();
+      if (!id) continue;
+      out[id] = safeNum(p?.points ?? p?.pts ?? p?.value);
     }
+    return out;
+  }
 
-    if (constructorPointsOverride && typeof constructorPointsOverride === "object") {
-      for (const [teamId, pts] of Object.entries(constructorPointsOverride)) {
-        if (typeof pts === "number") map[teamId] = pts;
+  if (pointsDriversAny && typeof pointsDriversAny === "object") {
+    for (const [k, v] of Object.entries(pointsDriversAny)) {
+      out[String(k).toUpperCase()] = safeNum(v);
+    }
+    return out;
+  }
+
+  return out;
+}
+
+function buildRacePointsMapFromNextRace(content) {
+  // Pull points ONLY from the Race session in nextRaceContent
+  // Expected shape: session.results = { NOR: { points: 25, ... }, ... }
+  const out = {};
+
+  const sessions = Array.isArray(content?.sessions) ? content.sessions : [];
+  const raceSession =
+    sessions.find((s) => s?.type === "race" || s?.id === "race") || null;
+
+  const results = raceSession?.results && typeof raceSession.results === "object"
+    ? raceSession.results
+    : {};
+
+  for (const [driverId, row] of Object.entries(results)) {
+    const id = String(driverId || "").toUpperCase();
+    if (!id) continue;
+    out[id] = safeNum(row?.points);
+  }
+
+  return out;
+}
+
+export default function PointsPage() {
+  const { driverRows, teamRows, top3 } = useMemo(() => {
+    const driversBase = Array.isArray(DRIVERS) ? DRIVERS : [];
+
+    // 1) manual/base points (optional)
+    const manualMap = buildManualPointsMap(pointsDrivers);
+
+    // 2) race centre points (from nextRaceContent race session)
+    const raceMap = buildRacePointsMapFromNextRace(nextRaceContent);
+
+    // 3) total per driver = manual + race
+    const driverRowsBuilt = driversBase.map((d) => {
+      const id = (d?.id ?? "").toString().toUpperCase();
+      const name = d?.name ?? "Unknown Driver";
+      const team = teamKey(d?.team);
+      const countryCode = d?.countryCode ?? "";
+
+      const totalPoints = safeNum(manualMap[id]) + safeNum(raceMap[id]);
+
+      return {
+        id: id || name,
+        name,
+        team,
+        countryCode,
+        flag: flagSrc(countryCode),
+        points: totalPoints,
+      };
+    });
+
+    // sort by points desc, then name
+    driverRowsBuilt.sort((a, b) => {
+      if (b.points !== a.points) return b.points - a.points;
+      return a.name.localeCompare(b.name);
+    });
+
+    const top3Built = driverRowsBuilt.slice(0, 3);
+
+    // ---------------- TEAM COLORS ----------------
+    // pointsTeams can be either:
+    //  A) your existing "team list" objects: { id, name, color }
+    //  B) or previously used as "points list" (older)
+    // We'll treat it as a team color registry if it has name+color.
+    const teamColorByName = new Map();
+
+    if (Array.isArray(pointsTeams)) {
+      for (const t of pointsTeams) {
+        const name = teamKey(t?.name ?? t?.team ?? t?.constructor);
+        const color = t?.color || "";
+        if (name) teamColorByName.set(name, color);
+      }
+    } else if (pointsTeams && typeof pointsTeams === "object") {
+      // map style { "McLaren": "#FF8700" }
+      for (const [k, v] of Object.entries(pointsTeams)) {
+        teamColorByName.set(teamKey(k), String(v || ""));
       }
     }
 
-    return map;
-  }, [driversWithPoints]);
+    // ---------------- TEAM POINTS ----------------
+    // If pointsTeams is a points-table instead of a registry, we still compute from drivers
+    // (the whole point is "auto from Race Centre")
+    const sum = new Map();
+    for (const r of driverRowsBuilt) {
+      const k = teamKey(r.team);
+      sum.set(k, safeNum(sum.get(k)) + safeNum(r.points));
+    }
 
-  // Sort drivers by points
-  const sortedDrivers = useMemo(
-    () => [...driversWithPoints].sort((a, b) => b.points - a.points),
-    [driversWithPoints]
-  );
+    let teamRowsBuilt = Array.from(sum.entries()).map(([team, points]) => ({
+      team,
+      points,
+      color: teamColorByName.get(team) || "",
+    }));
 
-  // Teams with points, sorted
-  const teamsWithPoints = useMemo(
-    () =>
-      pointsTeams
-        .map((t) => ({ ...t, points: teamPoints[t.id] ?? 0 }))
-        .sort((a, b) => b.points - a.points),
+    // apply constructorPointsOverride if present (object map { teamName: points })
+    if (constructorPointsOverride && typeof constructorPointsOverride === "object") {
+      const overrides = constructorPointsOverride;
+      teamRowsBuilt = teamRowsBuilt.map((t) => ({
+        ...t,
+        points: overrides[t.team] != null ? safeNum(overrides[t.team]) : t.points,
+      }));
+      for (const [k, v] of Object.entries(overrides)) {
+        const tk = teamKey(k);
+        if (!teamRowsBuilt.some((x) => x.team === tk)) {
+          teamRowsBuilt.push({
+            team: tk,
+            points: safeNum(v),
+            color: teamColorByName.get(tk) || "",
+          });
+        }
+      }
+    }
 
-    [teamPoints]
-  );
+    teamRowsBuilt.sort((a, b) => {
+      if (b.points !== a.points) return b.points - a.points;
+      return a.team.localeCompare(b.team);
+    });
 
-  // Top 3 drivers
-  const podium = sortedDrivers.slice(0, 3);
+    return {
+      driverRows: driverRowsBuilt,
+      teamRows: teamRowsBuilt,
+      top3: top3Built,
+    };
+  }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#545454] text-white">
-      <div className="relative mx-auto w-full max-w-[980px] flex flex-col gap-4 px-4 pt-1 sm:pt-4 pb-8">
-
-        {/* ✅ TOP CARD FIRST (full width across) */}
+    <div className="relative min-h-screen bg-[#545454]">
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
+        {/* TOP CARD */}
         <TopCard>
           <TopCard.Header
             title="Driver & Team Points"
-            subtitle="Current Formula 1 championship standings"
+            subtitle="Driver points include Race Centre “Race” points automatically."
             logoSrc="/img/kcs-f1-car.png"
-            right={
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 px-4 py-1 text-xs sm:text-sm text-white shadow-[0_0_18px_rgba(239,68,68,0.55)] hover:bg-red-700 transition"
-              >
-                <span className="text-lg leading-none">←</span>
-                <span>Back to Home</span>
-              </Link>
-            }
+            logoClassName="h-16 sm:h-18 md:h-20 lg:h-24 w-auto"
+            titleClassName="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.05] break-words"
           />
         </TopCard>
 
-        {/* ✅ NAV UNDER TOP CARD */}
-        <div className="mt-1 flex items-center justify-center">
+        {/* NAV */}
+        <div className="flex items-center">
           <PageNav />
+          <div className="shrink-0" />
         </div>
 
-        {/* Podium row */}
-        <section className="mt-6 grid gap-4 md:grid-cols-12">
-          <article className="md:col-span-3 rounded-3xl bg-black/60 p-4 text-sm text-gray-200 backdrop-blur card-green">
-            <h2 className="text-xl font-semibold">Top 3 Drivers</h2>
-            <p className="mt-1 text-sm text-gray-300">Current championship leaders</p>
+        {/* GRID */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 items-start">
+          {/* LEFT COLUMN */}
+          <div className="lg:col-span-4 flex flex-col gap-6">
+            {/* Top 3 */}
+            <section className="rounded-3xl bg-[#2f2f2f] text-white border border-white/10 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+              <div className="text-lg font-extrabold">Top 3 Drivers</div>
+              <div className="text-xs text-white/70 mt-1">Current championship leaders</div>
 
-            <ol className="mt-3 space-y-1 text-xs">
-              <li>
-                <span className="font-semibold text-amber-300">1st:</span>{" "}
-                {podium[0]?.name ?? "—"}{" "}
-                <span className="text-gray-400">({podium[0]?.teamName ?? "—"})</span>{" "}
-                <span className="text-gray-300">({podium[0]?.points ?? 0})</span>
-              </li>
-              <li>
-                <span className="font-semibold text-amber-300">2nd:</span>{" "}
-                {podium[1]?.name ?? "—"}{" "}
-                <span className="text-gray-400">({podium[1]?.teamName ?? "—"})</span>{" "}
-                <span className="text-gray-300">({podium[1]?.points ?? 0})</span>
-              </li>
-              <li>
-                <span className="font-semibold text-amber-300">3rd:</span>{" "}
-                {podium[2]?.name ?? "—"}{" "}
-                <span className="text-gray-400">({podium[2]?.teamName ?? "—"})</span>{" "}
-                <span className="text-gray-300">({podium[2]?.points ?? 0})</span>
-              </li>
-            </ol>
-          </article>
+              <ol className="mt-4 space-y-2 text-sm">
+                {top3.map((d, idx) => (
+                  <li key={d.id} className="flex items-start gap-2">
+                    <span className="text-yellow-300 font-bold">
+                      {idx === 0 ? "1st:" : idx === 1 ? "2nd:" : "3rd:"}
+                    </span>
 
-          <div className="md:col-span-4">
-            <AdBar />
-          </div>
-          <div className="md:col-span-5">
-            <AdBar />
-          </div>
-        </section>
+                    <span className="inline-flex items-center gap-2 font-semibold">
+                      {d.flag ? (
+                        <img
+                          src={d.flag}
+                          alt=""
+                          className="h-4 w-6 rounded-sm object-cover border border-white/10"
+                          loading="lazy"
+                        />
+                      ) : null}
+                      {d.name}
+                    </span>
 
-        {/* Standings */}
-        <section className="grid gap-6 lg:grid-cols-2">
-          {/* Driver standings */}
-          <article className="rounded-3xl bg-black/40 p-4 backdrop-blur card-green">
-            <header className="mb-3">
-              <h2 className="text-xl font-semibold">Driver Standings</h2>
-              <p className="text-xs text-gray-300">Full grid (including Cadillac).</p>
-            </header>
+                    <span className="text-white/70">({d.team})</span>
+                    <span className="ml-auto text-white/70">({d.points})</span>
+                  </li>
+                ))}
+              </ol>
+            </section>
 
-            <div className="max-h-[480px] overflow-auto pr-1 text-sm">
-              <table className="min-w-full border-separate border-spacing-y-1">
-                <thead className="text-xs uppercase tracking-wide text-gray-300">
-                  <tr>
-                    <th className="px-2 py-1 text-left">Pos</th>
-                    <th className="px-2 py-1 text-left">Driver</th>
-                    <th className="px-2 py-1 text-left">Team</th>
-                    <th className="px-2 py-1 text-right">Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedDrivers.map((driver, index) => {
-                    const isFuture = !!driver.isFuture;
-                    return (
-                      <tr key={driver.id} className="align-middle">
-                        <td className="px-2 py-1 text-xs text-gray-300">{index + 1}</td>
-
-                        <td className="px-2 py-1">
-                          <div
-                            className={`inline-flex items-center gap-2 rounded-full border border-white/10 px-2 py-1 ${
-                              isFuture ? "bg-white/5 text-gray-400" : "bg-white/10"
-                            }`}
-                          >
-                            <span className="text-base leading-none">{driver.countryFlag}</span>
-                            <span className="text-xs font-medium leading-tight">{driver.name}</span>
-                            {isFuture && (
-                              <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400">
-                                2026
-                              </span>
-                            )}
-                          </div>
-                        </td>
-
-                        <td className="px-2 py-1 text-xs text-gray-200">{driver.teamName}</td>
-
-                        <td className="px-2 py-1 text-right">
-                          <span className="inline-flex w-16 justify-end rounded-full border border-white/10 bg-black/50 px-2 py-1 text-xs">
-                            {driver.points}
-                          </span>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </article>
-
-          {/* Constructor standings */}
-          <article className="rounded-3xl bg-black/40 p-4 backdrop-blur card-green">
-            <header className="mb-3">
-              <h2 className="text-xl font-semibold">Constructor Standings</h2>
-              <p className="text-xs text-gray-300">
-                Team points auto-sum from their drivers. Cadillac is shown as a future 2026 entry.
-              </p>
-            </header>
-
-            <div className="max-h-[480px] overflow-auto pr-1 text-sm">
-              <table className="min-w-full border-separate border-spacing-y-1">
-                <thead className="text-xs uppercase tracking-wide text-gray-300">
-                  <tr>
-                    <th className="px-2 py-1 text-left">Pos</th>
-                    <th className="px-2 py-1 text-left">Constructor</th>
-                    <th className="px-2 py-1 text-right">Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {teamsWithPoints.map((team, index) => (
-                    <tr key={team.id} className="align-middle">
-                      <td className="px-2 py-1 text-xs text-gray-300">{index + 1}</td>
-
-                      <td className="px-2 py-1">
-                        <div
-                          className={`flex items-center gap-2 rounded-full border px-2 py-1 ${
-                            team.isFuture
-                              ? "border-gray-500/60 bg-white/5 text-gray-400"
-                              : "border-white/20 bg-white/10"
-                          }`}
-                          style={{ borderLeft: `4px solid ${team.color}` }}
-                        >
-                          <span className="h-3 w-3 rounded-full" style={{ backgroundColor: team.color }} />
-                          <span className="text-xs font-medium leading-tight">{team.name}</span>
-                          {team.isFuture && (
-                            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400">
-                              2026
-                            </span>
-                          )}
-                        </div>
-                      </td>
-
-                      <td className="px-2 py-1 text-right">
-                        <span className="text-sm font-semibold">{team.points}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </article>
-        </section>
-
-        {/* Rules section (unchanged) */}
-        <section className="rounded-3xl p-4 text-sm leading-relaxed backdrop-blur card-aston">
-          <h2 className="text-lg font-semibold">How points are awarded</h2>
-          <p className="mt-1 text-xs text-gray-300">
-            
-          </p>
-
-          <div className="mt-3 grid gap-4 md:grid-cols-2">
-            <div>
-              <h3 className="text-sm font-semibold">Grand Prix (main race)</h3>
-              <p className="mt-1 text-xs text-gray-200">Points for the top 10 drivers:</p>
-              <p className="mt-1 text-xs">
-                <span className="font-medium">1st–10th:</span> 25, 18, 15, 12, 10, 8, 6, 4, 2, 1
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-sm font-semibold">Sprint race</h3>
-              <p className="mt-1 text-xs text-gray-200">Points for the top 8 drivers:</p>
-              <p className="mt-1 text-xs">
-                <span className="font-medium">1st-8th:</span> 8, 7, 6, 5, 4, 3, 2, 1
-              </p>
-              <p className="mt-1 text-xs text-gray-200">
-                <span className="font-medium">Constructors:</span> each constructor’s total is
-                simply the sum of their drivers’ points from all races and sprints.
-              </p>
+            {/* Ads */}
+            <div className="hidden lg:block">
+              <div className="grid grid-cols-1 gap-4">
+                <AdBar />
+                <AdBar />
+              </div>
             </div>
           </div>
-        </section>
+
+          {/* RIGHT COLUMN */}
+          <div className="lg:col-span-8 flex flex-col gap-6">
+            {/* Driver Standings */}
+            <section className="rounded-3xl bg-[#2f2f2f] text-white border border-white/10 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+              <div className="text-lg font-extrabold">Driver Standings</div>
+              <div className="text-xs text-white/70 mt-1">
+                Driver points include Race Centre “Race” points automatically.
+              </div>
+
+              <div className="mt-4 grid grid-cols-12 text-[11px] text-white/70 px-2">
+                <div className="col-span-1">POS</div>
+                <div className="col-span-5">DRIVER</div>
+                <div className="col-span-4">TEAM</div>
+                <div className="col-span-2 text-right">POINTS</div>
+              </div>
+
+              <div className="mt-2 max-h-[420px] overflow-y-auto pr-2">
+                {driverRows.map((d, i) => (
+                  <div
+                    key={d.id}
+                    className="grid grid-cols-12 items-center gap-2 px-2 py-2 rounded-xl hover:bg-white/5"
+                  >
+                    <div className="col-span-1 text-white/70">{i + 1}</div>
+
+                    <div className="col-span-5">
+                      <span className="inline-flex items-center gap-2 rounded-full bg-black/25 border border-white/10 px-3 py-1 text-[12px] font-semibold">
+                        {d.flag ? (
+                          <img
+                            src={d.flag}
+                            alt=""
+                            className="h-4 w-6 rounded-sm object-cover border border-white/10"
+                            loading="lazy"
+                          />
+                        ) : null}
+                        {d.name}
+                      </span>
+                    </div>
+
+                    <div className="col-span-4 text-[12px] text-white/80">
+                      {d.team}
+                    </div>
+
+                    <div className="col-span-2 text-right">
+                      <span className="inline-flex min-w-[42px] justify-center rounded-full bg-black/35 border border-white/10 px-3 py-1 text-[12px] font-semibold">
+                        {d.points}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Constructor Standings */}
+            <section className="rounded-3xl bg-[#2f2f2f] text-white border border-white/10 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+              <div className="text-lg font-extrabold">Constructor Standings</div>
+              <div className="text-xs text-white/70 mt-1">
+                Team points auto-sum from driver totals (including Race Centre points).
+              </div>
+
+              <div className="mt-4 space-y-3">
+                {teamRows.map((t, i) => (
+                  <div key={t.team} className="flex items-center gap-3">
+                    <div className="w-6 text-white/70 text-[12px]">{i + 1}</div>
+
+                    <div className="flex-1">
+                      <div className="rounded-full bg-black/25 border border-white/10 px-4 py-2 text-[12px] font-semibold inline-flex items-center gap-2 w-full">
+                        {/* team color dot (no logos) */}
+                        <span
+                          className="inline-block h-2.5 w-2.5 rounded-full border border-white/20"
+                          style={{ backgroundColor: t.color || "rgba(255,255,255,0.25)" }}
+                          aria-hidden="true"
+                        />
+                        {t.team}
+                      </div>
+                    </div>
+
+                    <div className="w-10 text-right text-[12px] font-semibold">
+                      {t.points}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Mobile ads */}
+            <div className="lg:hidden">
+              <AdBar />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -225,7 +225,7 @@ export default function KCpage() {
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
                        
-            ⚙️ KC Update: The site will not be updated Wednesday March 4th while we upgrade the Race Centre. Regular updates resume Thursday.
+             🟢 Live F1 news update daily. Breaking stories added throughout the day. Atlantic time Canada
             <img
               src="/img/icons/flag-ca.png"
               alt="Canada"

@@ -1,6 +1,5 @@
 // src/CommentsPage.jsx
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
@@ -17,12 +16,8 @@ function makeFanHandle() {
 
 function getAuthorName() {
   try {
-    // KC override (only on your device)
-    if (localStorage.getItem("kc_is_owner") === "1") {
-      return "KC";
-    }
+    if (localStorage.getItem("kc_is_owner") === "1") return "KC";
 
-    // Everyone else gets a stable Fan-#### name
     let fan = localStorage.getItem("kc_fan_handle");
     if (!fan) {
       fan = makeFanHandle();
@@ -44,15 +39,12 @@ const containsLinkyStuff = (s) => {
   return t.includes("http://") || t.includes("https://") || t.includes("www.");
 };
 
-// ✅ Netlify Function endpoint (works on Netlify + netlify dev)
-// If you open the site on :3000 during dev, functions are actually on :8888 (netlify dev proxy).
 const COMMENTS_API =
   process.env.NODE_ENV === "development" && window.location.port === "3000"
     ? "http://localhost:8888/.netlify/functions/comments"
     : "/.netlify/functions/comments";
 
 export default function CommentsPage() {
-  // ✅ comments now come from server
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -70,7 +62,6 @@ export default function CommentsPage() {
     }
   };
 
-  // ✅ Load comments from function
   const loadComments = async () => {
     try {
       setLoading(true);
@@ -90,13 +81,10 @@ export default function CommentsPage() {
     loadComments();
   }, []);
 
-  // ✅ Post comment to function (server owns the stored list)
   const addRootComment = async (text) => {
     const payload = {
-      // match what you tested in PowerShell: { name, message }
       name: getAuthorName(),
       message: text,
-      // optional extras; harmless if function ignores them
       id: uid(),
       createdAt: nowText(),
     };
@@ -108,19 +96,12 @@ export default function CommentsPage() {
     });
 
     if (!res.ok) throw new Error(`POST failed: ${res.status}`);
-
     const data = await res.json();
 
-    // If your function returns the updated list (best case)
-    if (Array.isArray(data.comments)) {
-      setComments(data.comments);
-    } else {
-      // Otherwise just reload from server
-      await loadComments();
-    }
+    if (Array.isArray(data.comments)) setComments(data.comments);
+    else await loadComments();
   };
 
-  // ✅ Post reply to function (server owns the stored list)
   const addServerReply = async (parentId, text) => {
     const payload = {
       action: "reply",
@@ -138,17 +119,12 @@ export default function CommentsPage() {
     });
 
     if (!res.ok) throw new Error(`REPLY POST failed: ${res.status}`);
-
     const data = await res.json();
 
-    if (Array.isArray(data.comments)) {
-      setComments(data.comments);
-    } else {
-      await loadComments();
-    }
+    if (Array.isArray(data.comments)) setComments(data.comments);
+    else await loadComments();
   };
 
-  // --- UI helpers (define BEFORE use) ------------------------------
   function AddBox({ onAdd }) {
     const [text, setText] = useState("");
     const [isHuman, setIsHuman] = useState(false);
@@ -164,26 +140,15 @@ export default function CommentsPage() {
       const t = text.trim();
       setError("");
 
-      if (!isHuman) {
-        setError("Please confirm you’re human (beta).");
-        return;
-      }
-
-      if (t.length < MIN_LEN) {
-        setError(`Please write at least ${MIN_LEN} characters.`);
-        return;
-      }
-
-      if (containsLinkyStuff(t)) {
-        setError("Links are blocked during beta to reduce spam. (No http/https/www)");
-        return;
-      }
+      if (!isHuman) return setError("Please confirm you’re human (beta).");
+      if (t.length < MIN_LEN) return setError(`Please write at least ${MIN_LEN} characters.`);
+      if (containsLinkyStuff(t))
+        return setError("Links are blocked during beta to reduce spam. (No http/https/www)");
 
       const remain = getCooldownRemainingMs();
       if (remain > 0) {
         const secs = Math.ceil(remain / 1000);
-        setError(`Please wait ${secs}s before posting again.`);
-        return;
+        return setError(`Please wait ${secs}s before posting again.`);
       }
 
       await onAdd(t);
@@ -193,7 +158,8 @@ export default function CommentsPage() {
       setCooldownMs(getCooldownRemainingMs());
     };
 
-    const cooldownLabel = cooldownMs > 0 ? `Cooldown: ${Math.ceil(cooldownMs / 1000)}s` : "Ready";
+    const cooldownLabel =
+      cooldownMs > 0 ? `Cooldown: ${Math.ceil(cooldownMs / 1000)}s` : "Ready";
 
     return (
       <div>
@@ -245,15 +211,8 @@ export default function CommentsPage() {
       const t = reply.trim();
       setReplyError("");
 
-      if (t.length < MIN_LEN) {
-        setReplyError(`Replies must be at least ${MIN_LEN} characters.`);
-        return;
-      }
-
-      if (containsLinkyStuff(t)) {
-        setReplyError("Links are blocked during beta. (No http/https/www)");
-        return;
-      }
+      if (t.length < MIN_LEN) return setReplyError(`Replies must be at least ${MIN_LEN} characters.`);
+      if (containsLinkyStuff(t)) return setReplyError("Links are blocked during beta. (No http/https/www)");
 
       try {
         await addServerReply(node.id, t);
@@ -304,36 +263,22 @@ export default function CommentsPage() {
     );
   }
 
-  // --- PAGE LAYOUT (match F1 News / YouTube spacing) ---------------
   return (
     <div className="relative min-h-screen bg-[#545454]">
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-
-        {/* ✅ TOP CARD FIRST */}
         <TopCard>
           <TopCard.Header
-            title="Race Comments & Discussion"
-            subtitle="Share your thoughts on the races and other F1 news. Keep it respectful and enjoy the conversation."
+            title="Comments"
+            subtitle="Have your say — quick, friendly, and spam-resistant."
             logoSrc="/img/kcs-f1-car.png"
-            right={
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(220,38,38,0.45)] hover:bg-red-700 hover:border-red-700 transition"
-              >
-                <span className="text-lg leading-none">&larr;</span>
-                <span>Back to home</span>
-              </Link>
-            }
           />
         </TopCard>
 
-        {/* ✅ NAV BELOW TOP CARD */}
         <div className="flex items-center">
           <PageNav />
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
+          <div className="shrink-0" />
         </div>
 
-        {/* Main layout */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 items-start">
           <main className="md:col-span-9 lg:col-span-10">
             <section className="rounded-3xl border border-blue-200 bg-white p-4 backdrop-blur text-blue-900">

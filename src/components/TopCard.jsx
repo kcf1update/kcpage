@@ -1,11 +1,7 @@
-// src/components/TopCard.jsx
 import React from "react";
 
 /**
  * TopCard: consistent header card used on every page.
- * - Same padding, radius, border, background, shadow
- * - Same title/subtitle typography defaults
- * - Page supplies content through <TopCard.Header .../> or custom children
  */
 export default function TopCard({ children, className = "" }) {
   return (
@@ -13,7 +9,7 @@ export default function TopCard({ children, className = "" }) {
       className={[
         "rounded-3xl border border-black/10 bg-white",
         "shadow-[0_10px_30px_rgba(0,0,0,0.18)]",
-        "px-5 py-4 sm:px-6 sm:py-5",
+        "px-5 py-3 sm:px-6 sm:py-4",
         className,
       ].join(" ")}
       data-topcard
@@ -23,16 +19,6 @@ export default function TopCard({ children, className = "" }) {
   );
 }
 
-/**
- * Standard header layout: left title/subtitle + right actions.
- * Use this on EVERY page to keep TopCards identical.
- *
- * Optional brand image:
- * - logoSrc="/img/kcs-f1-car.png"
- *
- * Optional clickable title:
- * - titleUrl="https://example.com/story"
- */
 TopCard.Header = function TopCardHeader({
   title,
   subtitle,
@@ -40,15 +26,25 @@ TopCard.Header = function TopCardHeader({
   className = "",
   logoSrc,
   logoAlt = "KC F1",
-  logoClassName = "h-10 w-auto",
-  titleUrl, // ✅ optional: if provided, title becomes clickable
-  titleTarget = "_blank", // ✅ default open in new tab for external links
+
+  /**
+   * Bigger desktop scaling for the car
+   * mobile unchanged
+   */
+  logoClassName =
+    "h-14 sm:h-16 md:h-18 lg:h-[110px] xl:h-[125px] w-auto",
+
+  titleClassName =
+    "text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-[1.05] break-words",
+
+  subtitleClassName =
+    "mt-1 text-sm sm:text-base text-blue-600 break-words",
+
+  titleUrl,
+  titleTarget = "_blank",
 }) {
   const TitleContent = (
-    <h1
-      className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight break-words"
-      data-topcard-title
-    >
+    <h1 className={titleClassName} data-topcard-title>
       {title}
     </h1>
   );
@@ -56,59 +52,74 @@ TopCard.Header = function TopCardHeader({
   return (
     <div
       className={[
-        // Mobile: stack; Desktop: row with space-between
-        "flex flex-col md:flex-row items-start md:items-center justify-between gap-6",
+        "w-full max-w-6xl mx-auto",
+        "flex flex-col gap-3",
+        "md:flex-row md:items-center md:gap-12 lg:gap-16 md:justify-between",
         className,
       ].join(" ")}
       data-topcard-header
     >
-      {/* LEFT: logo + text */}
+      {/* LEFT: car */}
       <div
-        className="flex flex-col sm:flex-row items-start gap-3 min-w-0"
+        className={[
+          "shrink-0",
+          "md:pl-2",
+          "flex justify-center md:justify-start",
+
+          /**
+           * Wider lane so the car can stretch on laptop
+           */
+          "md:w-[360px] lg:w-[480px] xl:w-[560px]",
+        ].join(" ")}
         data-topcard-left
       >
-        {logoSrc ? (
+        {logoSrc && (
           <img
             src={logoSrc}
             alt={logoAlt}
             className={logoClassName}
             loading="lazy"
           />
-        ) : null}
-
-        {/* min-w-0 is the key to prevent long titles (e.g., “Championship”) from overflowing */}
-        <div className="min-w-0">
-          {titleUrl ? (
-            <a
-              href={titleUrl}
-              target={titleTarget}
-              rel={titleTarget === "_blank" ? "noopener noreferrer" : undefined}
-              className="inline-block hover:opacity-90"
-              data-topcard-title-link
-            >
-              {TitleContent}
-            </a>
-          ) : (
-            TitleContent
-          )}
-
-          {subtitle ? (
-            <p
-              className="mt-1 text-sm text-blue-600 break-words"
-              data-topcard-subtitle
-            >
-              {subtitle}
-            </p>
-          ) : null}
-        </div>
+        )}
       </div>
 
-      {/* RIGHT: actions (Back to home button, etc.) */}
-      {right ? (
-        <div className="shrink-0" data-topcard-right>
+      {/* TITLE BLOCK */}
+      <div
+        className={[
+          "min-w-0 flex-1",
+          "text-center md:text-left",
+        ].join(" ")}
+        data-topcard-center
+      >
+        {titleUrl ? (
+          <a
+            href={titleUrl}
+            target={titleTarget}
+            rel={titleTarget === "_blank" ? "noopener noreferrer" : undefined}
+            className="inline-block hover:opacity-90"
+          >
+            {TitleContent}
+          </a>
+        ) : (
+          TitleContent
+        )}
+
+        {subtitle && (
+          <p className={subtitleClassName} data-topcard-subtitle>
+            {subtitle}
+          </p>
+        )}
+      </div>
+
+      {/* OPTIONAL RIGHT CONTENT */}
+      {right && (
+        <div
+          className="shrink-0 flex justify-center md:justify-end"
+          data-topcard-right
+        >
           {right}
         </div>
-      ) : null}
+      )}
     </div>
   );
 };

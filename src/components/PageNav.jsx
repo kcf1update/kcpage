@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 // Keep nav items lean for mobile
 const NAV_ITEMS = [
+  { key: "navHome", label: "Home", to: "/" },        // NEW
   { key: "navPoints", label: "Points", to: "/points" },
   { key: "navRaceCentre", label: "Race Centre", to: "/next-race" },
   { key: "navF1News", label: "F1 News", to: "/news" },

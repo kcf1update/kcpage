@@ -48,21 +48,12 @@ export default function F1NewsPage() {
 
         {/* ✅ TOP CARD FIRST (full width across) */} 
         <TopCard>
-          <TopCard.Header
-            title="F1 News"
-            subtitle="Latest F1 headlines and links from around the web."
-            logoSrc="/img/kcs-f1-car.png"
-            right={
-              <Link
-                to="/"
-                className="inline-flex items-center gap-2 rounded-full border border-red-600 bg-red-600 text-white px-4 py-1 text-xs sm:text-sm shadow-[0_0_18px_rgba(239,68,68,0.55)] hover:bg-red-700 transition"
-              >
-                <span className="text-lg leading-none">&larr;</span>
-                <span>Back to home</span>
-              </Link>
-            }
-          />
-        </TopCard>
+  <TopCard.Header
+    title="F1 YouTube News"
+    subtitle="Latest videos, highlights, interviews, and race coverage."
+    logoSrc="/img/kcs-f1-car.png"
+  />
+</TopCard>
 
         {/* ✅ NAV UNDER TOP CARD */} 
         <div className="flex items-center">

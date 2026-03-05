@@ -1,86 +1,326 @@
 // src/content/nextRaceContent.js
+import { DRIVERS, DRIVER_IDS } from "./drivers";
 
-export const NEXT_RACE_DRIVERS = [
-  "Max Verstappen",
-  "Arvid Lindblad",
-  "Charles Leclerc",
-  "Lewis Hamilton",
-  "Lando Norris",
-  "Oscar Piastri",
-  "George Russell",
-  "Kimi Antonelli",
-  "Lance Stroll",
-  "Fernando Alonso",
-  "Pierre Gasly",
-  "Franco Colapinto",
-  "Esteban Ocon",
-  "Ollie Bearman",
-  "Isack Hadjar",
-  "Liam Lawson",
-  "Alex Albon",
-  "Carlos Sainz",
-  "Nico Hülkenberg",
-  "Gabriel Bortoleto",
-  "Valtteri Bottas",
-  "Sergio Perez",
-];
+// Back compatibility (older code expects an array of names)
+export const NEXT_RACE_DRIVERS = DRIVERS.map((d) => d.name);
+
+// Tables use stable driver IDs
+export const NEXT_RACE_DRIVER_IDS = DRIVER_IDS;
+
+// =====================================================
+// 1) BLANK TEMPLATES (22 drivers)
+// =====================================================
+
+// Practice / Qualy template (22 drivers)
+function makeLapResultsTemplate() {
+  return Object.fromEntries(
+    DRIVER_IDS.map((id) => [
+      id,
+      {
+        lapTime: "", // "1:22.456" (Practice/Qualy)
+        laps: "",    // 22
+        status: "",  // "DNF" / "DNS" / "DSQ" or leave blank
+      },
+    ])
+  );
+}
+
+// Race template (22 drivers)
+function makeRaceResultsTemplate() {
+  return Object.fromEntries(
+    DRIVER_IDS.map((id) => [
+      id,
+      {
+        pos: "",      // 1..22 (or leave blank)
+        grid: "",     // starting position
+        points: "",   // points scored
+        status: "",   // "1:32:10.123" or "+5.321s" or "DNF"
+      },
+    ])
+  );
+}
+
+// =====================================================
+// 2) PASTE PARSERS
+// =====================================================
+
+// PRACTICE / QUALY paste format (one driver per line):
+// DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+// Examples:
+// NOR,1:21.234,18
+// VER,1:21.455,20
+// LAW,,0,DNF
+function parseLapPaste(text) {
+  const base = makeLapResultsTemplate();
+
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+
+  for (const line of lines) {
+    // allow comma, tab, or pipe separators
+    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+
+    const id = (parts[0] || "").toUpperCase();
+    if (!id || !base[id]) continue;
+
+    const lapTime = parts[1] || "";
+    const laps = parts[2] || "";
+    const status = parts[3] || "";
+
+    base[id] = { lapTime, laps, status };
+  }
+
+  return base;
+}
+
+// RACE paste format (one driver per line):
+// POS, DRIVER_ID, GRID, POINTS, STATUS(optional)
+// Examples:
+// 1,NOR,1,25,1:42:06.304
+// 2,VER,2,18,+0.895s
+// NC,LAW,10,0,DNF
+// RACE paste format (one driver per line):
+// DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
+// Example:
+// NOR,1,1:42:06.304,2,25
+// VER,2,+0.895s,1,18
+// LAW,DNF,DNF,19,0
+function parseRacePaste(text) {
+  const base = makeRaceResultsTemplate();
+
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+
+  const toIntOrNull = (v) => {
+    const s = String(v ?? "").trim();
+    if (!s) return null;                 // <- key fix: "" stays null, not 0
+    const n = Number(s);
+    return Number.isFinite(n) ? n : null;
+  };
+
+  for (const line of lines) {
+    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+
+    // Format: DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
+    const id = (parts[0] || "").toUpperCase();
+    if (!id || !base[id]) continue;
+
+    const rawPos = (parts[1] || "").toUpperCase();  // "1" .. "22" or "DNF" or blank
+    const rawStatus = parts[2] || "";               // time/gap or "DNF"
+    const rawGrid = parts[3] || "";
+    const rawPoints = parts[4] || "";
+
+    const isDNF =
+      rawPos === "DNF" || String(rawStatus).toUpperCase() === "DNF";
+
+    const pos = isDNF ? null : toIntOrNull(rawPos);
+    const grid = toIntOrNull(rawGrid);
+    const points = toIntOrNull(rawPoints);
+
+    base[id] = {
+      pos,
+      status: isDNF ? "DNF" : rawStatus,
+      grid,
+      points,
+    };
+  }
+
+  return base;
+}
+// =====================================================
+// 3) YOUR PASTE BOXES (EDIT THESE ONLY)
+// =====================================================
+
+// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+const PASTE_P1 = `
+NOR,,
+VER,,
+RUS,,
+PIA,,
+LEC,,
+HAM,,,,
+ALB,,,,
+SAI,,,,
+ALO,,,,
+STR,,,,
+OCO,,,,
+BEA,,,,
+HUL,,,,
+BOR,,,,
+GAS,,,,
+COL,,,,
+PER,,,,
+BOT,,,,
+LAW,,,,
+LIN,,,,
+HAD,,,,
+ANT,,,,
+`;
+// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+const PASTE_P2 = `
+NOR,,,,
+VER,,,,
+RUS,,,,
+PIA,,,,
+LEC,,,,
+HAM,,,,
+ALB,,,,
+SAI,,,,
+ALO,,,,
+STR,,,,
+OCO,,,,
+BEA,,,,
+HUL,,,,
+BOR,,,,
+GAS,,,,
+COL,,,,
+PER,,,,
+BOT,,,,
+LAW,,,,
+LIN,,,,
+HAD,,,,
+ANT,,,,
+`;
+// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+const PASTE_P3 = `
+NOR,,,,
+VER,,,,
+RUS,,,,
+PIA,,,,
+LEC,,,,
+HAM,,,,
+ALB,,,,
+SAI,,,,
+ALO,,,,
+STR,,,,
+OCO,,,,
+BEA,,,,
+HUL,,,,
+BOR,,,,
+GAS,,,,
+COL,,,,
+PER,,,,
+BOT,,,,
+LAW,,,,
+LIN,,,,
+HAD,,,,
+ANT,,,,
+`;
+// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+const PASTE_Q = `
+NOR,,,,
+VER,,,,
+RUS,,,,
+PIA,,,,
+LEC,,,,
+HAM,,,,
+ALB,,,,
+SAI,,,,
+ALO,,,,
+STR,,,,
+OCO,,,,
+BEA,,,,
+HUL,,,,
+BOR,,,,
+GAS,,,,
+COL,,,,
+PER,,,,
+BOT,,,,
+LAW,,,,
+LIN,,,,
+HAD,,,,
+ANT,,,,
+`;
+
+// Race: DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
+const PASTE_RACE = `
+NOR,,,,
+VER,,,, 
+RUS,,,, 
+PIA,,,, 
+LEC,,,,
+HAM,,,, 
+ALB,,,,
+SAI,,,, 
+ALO,,,,
+STR,,,, 
+OCO,,,, 
+BEA,,,, 
+HUL,,,, 
+BOR,,,, 
+GAS,,,, 
+COL,,,, 
+PER,,,, 
+BOT,,,, 
+LAW,,,, 
+LIN,,,, 
+HAD,,,, 
+ANT,,,, 
+`;
+
+// =====================================================
+// 4) CONTENT
+// =====================================================
 
 export const nextRaceContent = {
-  raceName: "Quatar Airways Australian Grand Prix",
-  location: "Albert Park Circut - Melbourne, Australia ",
-  raceDates: "Mar 5th to 8th",
-  trackInfoUrl: "https://www.formula1.com/en/racing/2026/australia",
+  raceName: "Australian Grand Prix",
+  raceDates: "Mar 5th–8th, 2026",
+  location: "Melbourne, Australia",
+  trackInfoUrl: "/img/tracks/Albertpark.jpg",
+
+  weather: `Thr: - ☀️ Sunny 22°
+  Fri: —☀️ Sunny 22°
+Sat: — ⛅ Partly Cloudy 19°
+Sun: —☀️ Sunny 23° `,
 
   sessions: [
     {
-      id: "session1",
-      label: "FP1 ",
-      time: "9:30pm AST ",
-
-      // ✅ Optional paste block (full timing sheet lines, any order)
-      paste: `
-`,
-
-      results: Array(NEXT_RACE_DRIVERS.length).fill(""),
+      id: "p1",
+      type: "practice",
+      label: "Practice 1",
+      time: "Thu 9:30 PM AST",
+      trackNote: "Green Track",
+      extraNote: "—",
+      results: parseLapPaste(PASTE_P1),
     },
-
     {
-      id: "session2",
-      label: "FP2",
-      time: "1:00am AST",
-
-      // ✅ Paste timing sheet here (full names + times, any order)
-      paste: `
-`,
-
-      results: Array(NEXT_RACE_DRIVERS.length).fill(""),
+      id: "p2",
+      type: "practice",
+      label: "Practice 2",
+      time: "Fri 1:00 AM AST",
+      trackNote: "—",
+      extraNote: "—",
+      results: parseLapPaste(PASTE_P2),
     },
-
     {
-      id: "session3",
-      label: "FP3",
-      time: "9:30pm AST",
-
-      paste: `
-
-`,
-
-      results: Array(NEXT_RACE_DRIVERS.length).fill(""),
+      id: "p3",
+      type: "practice",
+      label: "Practice 3",
+      time: "Fri 9:30 PM AST",
+      trackNote: "—",
+      extraNote: "—",
+      results: parseLapPaste(PASTE_P3),
     },
-
     {
-      id: "session4",
+      id: "q",
+      type: "qualifying",
       label: "Qualifying",
-      time: "1:00am AST",
-
-      paste: ``,
-
-      results: Array(NEXT_RACE_DRIVERS.length).fill(""),
+      time: "Sat 1:00 AM AST",
+      trackNote: "—",
+      extraNote: "—",
+      results: parseLapPaste(PASTE_Q),
+    },
+    {
+      id: "race",
+      type: "race",
+      label: "Race",
+      time: "Sun 12:00 AM AST",
+      extraNote: "—",
+      results: parseRacePaste(PASTE_RACE),
     },
   ],
-
-  weather: `Thursday Sunny/Cloudy🌤️ 23°
-            Friday Sunny ☀️22°
-            Saturday Sunny ☀️20°
-            Sunday Sunny ☀️21°    `,
 };
