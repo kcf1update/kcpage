@@ -11,18 +11,18 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Will the MIDDLE EAST F1 races be CANCELLED?",
-    youtubeInput: "https://youtu.be/kaWUSgrrbxE",
-    description: "I think we should all be prepared for changes",
+    title: "Oscar Piastri Sets The Fastest Lap On Friday! | 2026 Australian Grand Prix",
+    youtubeInput: "https://youtu.be/dy_HXz-71vA",
+    description: "This years Champion?",
     
   },
 
  
     {
   slotId: "slot2",
-  title: "Extraordinary Newey/Honda admissions at F1’s Australian GP explained",
-  youtubeInput: "https://youtu.be/TIkI_X3Mas0",
-  description: "This all sounds very familiar, Aston Martin should talk to McLaren  ",
+  title: "A Beginner's Guide To Formula 1",
+  youtubeInput: "https://youtu.be/VybzXU1dYk4",
+  description: "Great explanation",
   
 },
   
