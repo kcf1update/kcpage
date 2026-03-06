@@ -70,7 +70,7 @@ function DriverPill({ driverId }) {
   const flagSrc = d.countryCode ? `/flags/${String(d.countryCode).toLowerCase()}.png` : "";
 
   return (
-    <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-2 py-1 text-[11px] font-medium">
+    <span className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/10 px-2 py-1 text-[11px] font-medium">
       <span className="min-w-[28px] text-sky-200">#{d.number}</span>
 
       {flagSrc ? (
@@ -82,7 +82,7 @@ function DriverPill({ driverId }) {
         />
       ) : null}
 
-      <span className="whitespace-nowrap">{d.name}</span>
+      <span className="truncate whitespace-nowrap">{d.name}</span>
     </span>
   );
 }
@@ -96,12 +96,12 @@ function StatChip({ label, value, tone = "sky" }) {
   };
   return (
     <div
-      className={`flex items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
+      className={`flex min-w-0 items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
         toneMap[tone] || toneMap.sky
       }`}
     >
-      <span className="uppercase tracking-[0.18em] opacity-80">{label}</span>
-      <span className="font-semibold">{value || "—"}</span>
+      <span className="shrink-0 uppercase tracking-[0.18em] opacity-80">{label}</span>
+      <span className="min-w-0 truncate font-semibold">{value || "—"}</span>
     </div>
   );
 }
@@ -113,10 +113,10 @@ function PodiumTiles({ podiumIds }) {
       {podiumIds.map((id, i) => (
         <div
           key={id}
-          className="rounded-2xl border border-white/10 bg-black/40 px-3 py-2"
+          className="min-w-0 rounded-2xl border border-white/10 bg-black/40 px-3 py-2"
         >
           <div className="text-xs text-gray-300">{medals[i]} Podium</div>
-          <div className="mt-1">
+          <div className="mt-1 min-w-0">
             <DriverPill driverId={id} />
           </div>
         </div>
@@ -206,20 +206,20 @@ function LapTimeTable({ session }) {
   const gapTone = (gapMs) => {
     if (!Number.isFinite(gapMs) || gapMs <= 0) return "text-sky-200/80";
     if (gapMs <= 250) return "text-emerald-300"; // <= 0.250s
-    if (gapMs <= 750) return "text-amber-300";   // <= 0.750s
-    return "text-red-300";                       // > 0.750s
+    if (gapMs <= 750) return "text-amber-300"; // <= 0.750s
+    return "text-red-300"; // > 0.750s
   };
 
   return (
-    <div className="max-h-[320px] overflow-auto pr-1 text-xs sm:text-sm">
-      <table className="min-w-full border-separate border-spacing-y-1">
-        <thead className="text-[11px] uppercase tracking-wide text-gray-300">
+    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
+      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
+        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
           <tr>
-            <th className="px-2 py-1 text-left">Pos</th>
-            <th className="px-2 py-1 text-left">Driver</th>
-            <th className="px-2 py-1 text-left">Time</th>
-            <th className="px-2 py-1 text-left">Laps</th>
-            <th className="px-2 py-1 text-left">Gap</th>
+            <th className="w-[9%] px-1 py-1 text-left sm:px-2">Pos</th>
+            <th className="w-[41%] px-1 py-1 text-left sm:px-2">Driver</th>
+            <th className="w-[22%] px-1 py-1 text-left sm:px-2">Time</th>
+            <th className="w-[12%] px-1 py-1 text-left sm:px-2">Laps</th>
+            <th className="w-[16%] px-1 py-1 text-left sm:px-2">Gap</th>
           </tr>
         </thead>
 
@@ -238,26 +238,28 @@ function LapTimeTable({ session }) {
               <tr
                 key={row.id}
                 className={`align-middle ${
-                  isLeader ? "bg-white/5 ring-1 ring-emerald-400/30 rounded-2xl" : ""
+                  isLeader ? "rounded-2xl bg-white/5 ring-1 ring-emerald-400/30" : ""
                 }`}
               >
-                <td className="px-2 py-1 text-gray-300">{hasTime ? i + 1 : "—"}</td>
+                <td className="px-1 py-1 text-gray-300 sm:px-2">
+                  {hasTime ? i + 1 : "—"}
+                </td>
 
-                <td className="px-2 py-1">
+                <td className="min-w-0 px-1 py-1 sm:px-2">
                   <DriverPill driverId={row.id} />
                 </td>
 
-                <td className="px-2 py-1">
-                  <div className="rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                <td className="px-1 py-1 sm:px-2">
+                  <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
                     {timeCell}
                   </div>
                 </td>
 
-                <td className="px-2 py-1 text-gray-100">
+                <td className="px-1 py-1 text-gray-100 sm:px-2">
                   {row.laps !== "" ? row.laps : "—"}
                 </td>
 
-                <td className={`px-2 py-1 ${gapTone(gapMs)}`}>
+                <td className={`px-1 py-1 sm:px-2 ${gapTone(gapMs)}`}>
                   {!hasTime ? "—" : isLeader ? "LEADER" : gap || "—"}
                 </td>
               </tr>
@@ -294,36 +296,36 @@ function RaceTable({ session }) {
   });
 
   return (
-    <div className="max-h-[520px] overflow-auto pr-1 text-xs sm:text-sm">
-      <table className="min-w-full border-separate border-spacing-y-1">
-        <thead className="text-[11px] uppercase tracking-wide text-gray-300">
+    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
+      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
+        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
           <tr>
-            <th className="px-2 py-1 text-left">Pos</th>
-            <th className="px-2 py-1 text-left">Driver</th>
-            <th className="px-2 py-1 text-left">Time/Status</th>
-            <th className="px-2 py-1 text-left">Grid</th>
-            <th className="px-2 py-1 text-left">Pts</th>
+            <th className="w-[9%] px-1 py-1 text-left sm:px-2">Pos</th>
+            <th className="w-[39%] px-1 py-1 text-left sm:px-2">Driver</th>
+            <th className="w-[24%] px-1 py-1 text-left sm:px-2">Time/Status</th>
+            <th className="w-[12%] px-1 py-1 text-left sm:px-2">Grid</th>
+            <th className="w-[16%] px-1 py-1 text-left sm:px-2">Pts</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
             <tr key={row.id} className="align-middle">
-              <td className="px-2 py-1 text-gray-300">
+              <td className="px-1 py-1 text-gray-300 sm:px-2">
                 {Number.isFinite(row.pos) ? row.pos : "—"}
               </td>
-              <td className="px-2 py-1">
+              <td className="min-w-0 px-1 py-1 sm:px-2">
                 <DriverPill driverId={row.id} />
               </td>
-              <td className="px-2 py-1">
-                <div className="rounded-full border border-white/10 bg-black/50 px-2 py-1">
+              <td className="px-1 py-1 sm:px-2">
+                <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
                   {row.status || "—"}
                 </div>
               </td>
-              <td className="px-2 py-1 text-gray-100">
+              <td className="px-1 py-1 text-gray-100 sm:px-2">
                 {Number.isFinite(row.grid) ? row.grid : "—"}
               </td>
-              <td className="px-2 py-1">
-                <span className="inline-flex rounded-full bg-white/10 px-3 py-1 font-semibold">
+              <td className="px-1 py-1 sm:px-2">
+                <span className="inline-flex rounded-full bg-white/10 px-2 py-1 font-semibold sm:px-3">
                   {Number.isFinite(row.points) ? row.points : "—"}
                 </span>
               </td>
@@ -357,7 +359,7 @@ function SessionCard({ session }) {
   }
 
   return (
-    <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+    <article className="max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
       <header className="mb-3 flex items-center justify-between gap-2">
         <h2 className="text-lg font-semibold">
           <span className="text-sky-200">{session.label || "Session"}</span>
@@ -378,7 +380,7 @@ function RaceCard({ session }) {
   const podiumIds = sum.podiumIds || [];
 
   return (
-    <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+    <article className="max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
       <header className="mb-3 flex items-center justify-between gap-2">
         <h2 className="text-lg font-semibold">
           <span className="text-sky-200">{session.label || "Race"}</span>
@@ -403,16 +405,29 @@ export default function NextRacePage() {
   const raceSession = sessions.find((s) => s.type === "race") || null;
   const sessionResults = sessions.filter((s) => s.type !== "race");
 
+  const raceHasResults =
+    !!raceSession &&
+    Array.isArray(NEXT_RACE_DRIVER_IDS) &&
+    NEXT_RACE_DRIVER_IDS.some((id) => {
+      const r = raceSession?.results?.[id] || {};
+      return (
+        Number.isFinite(r.pos) ||
+        Number.isFinite(r.grid) ||
+        Number.isFinite(r.points) ||
+        (typeof r.status === "string" && r.status.trim() !== "")
+      );
+    });
+
   useEffect(() => {
     const raceName = nextRaceContent.raceName ? ` – ${nextRaceContent.raceName}` : "";
     document.title = `Race Centre${raceName} | KC's Worldwide F1 Update`;
   }, []);
 
   return (
-    <div className="relative min-h-screen text-white">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden text-white">
       <div className="absolute inset-0 -z-10 bg-black/70" />
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-4 px-4 pt-1 sm:pt-3 pb-10 lg:px-8">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 overflow-x-hidden px-4 pb-10 pt-1 sm:pt-3 lg:px-8">
         <TopCard>
           <TopCard.Header
             title="Race Centre"
@@ -427,33 +442,33 @@ export default function NextRacePage() {
         </div>
 
         {/* Top row */}
-        <section className="grid gap-6 md:grid-cols-3 mt-2">
-          <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur md:col-span-2">
+        <section className="mt-2 grid gap-4 md:grid-cols-3 md:gap-6">
+          <article className="min-w-0 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur md:col-span-2">
             <header className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
-                <div>
+              <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-[0.2em] text-sky-200/90">
                     Race name
                   </p>
-                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                  <div className="mt-1 w-full truncate rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
                     {nextRaceContent.raceName || "—"}
                   </div>
                 </div>
 
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-[0.2em] text-sky-200/90">
                     Dates
                   </p>
-                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                  <div className="mt-1 w-full truncate rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
                     {nextRaceContent.raceDates || "—"}
                   </div>
                 </div>
 
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-[0.2em] text-sky-200/90">
                     Location
                   </p>
-                  <div className="mt-1 w-full rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
+                  <div className="mt-1 w-full truncate rounded-full border border-white/10 bg-black/50 px-3 py-1 text-sm">
                     {nextRaceContent.location || "—"}
                   </div>
                 </div>
@@ -469,16 +484,16 @@ export default function NextRacePage() {
                 {sessions.map((session, idx) => (
                   <div
                     key={session.id || idx}
-                    className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/40 px-3 py-2"
+                    className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/40 px-3 py-2"
                   >
-                    <div className="text-sm font-medium">
+                    <div className="min-w-0 text-sm font-medium">
                       {session.label || `Session ${idx + 1}`}
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex shrink-0 items-center gap-2">
                       <span className="text-[11px] uppercase tracking-[0.2em] text-gray-300">
                         Time
                       </span>
-                      <div className="w-40 rounded-full border border-white/10 bg-black/50 px-2 py-1 text-right text-xs">
+                      <div className="w-32 rounded-full border border-white/10 bg-black/50 px-2 py-1 text-right text-[11px] sm:w-40 sm:text-xs">
                         {session.time || "—"}
                       </div>
                     </div>
@@ -489,37 +504,38 @@ export default function NextRacePage() {
           </article>
 
           {/* Weather + track guide */}
-          <article className="h-full overflow-hidden rounded-3xl border border-black/10 shadow-sm bg-white flex flex-col">
-            <div className="bg-white p-4">
-              <h2 className="text-base font-semibold text-gray-900">
+          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
+            <div className="bg-white p-3 sm:p-4">
+              <h2 className="text-sm font-semibold text-gray-900 sm:text-base">
                 Weather <span className="text-sky-700">Forecast</span>
               </h2>
-              <p className="mt-1 text-xs text-gray-600">Quick notes for the race weekend.</p>
+              <p className="mt-1 text-[11px] text-gray-600 sm:text-xs">
+                Quick notes for the race weekend.
+              </p>
 
-              <div className="mt-3 h-24 w-full whitespace-pre-line rounded-2xl border border-black/10 bg-white px-3 py-2 text-sm text-gray-900 overflow-auto">
+              <div className="mt-2 h-auto min-h-[72px] w-full whitespace-pre-line rounded-2xl border border-black/10 bg-white px-3 py-2 text-xs text-gray-900 sm:mt-3 sm:h-24 sm:text-sm overflow-auto">
                 {nextRaceContent.weather || "—"}
               </div>
             </div>
 
             <div className="h-[4px] w-full bg-sky-800" />
 
-            <div className="flex-1 bg-sky-900 p-4 flex flex-col justify-between">
+            <div className="flex flex-1 flex-col justify-between bg-sky-900 p-3 sm:p-4">
               <div>
-                {/* CHANGED: Big centered title */}
-                <div className="flex items-center justify-center h-32">
-                  <div className="text-4xl font-bold uppercase tracking-wide text-white text-center">
+                <div className="flex items-center justify-center h-20 sm:h-32">
+                  <div className="text-2xl font-bold uppercase tracking-wide text-white text-center sm:text-4xl">
                     TRACK GUIDE
                   </div>
                 </div>
               </div>
 
               {/* Track Guide links */}
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-3 grid grid-cols-2 gap-2 sm:mt-4 sm:flex sm:flex-wrap">
                 <a
                   href="/img/Tracks/Albertpark.jpg"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-4 py-2 text-xs font-semibold text-white hover:bg-sky-600 transition"
+                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
                   title="Open page 1"
                 >
                   Track Guide (1/2)
@@ -529,7 +545,7 @@ export default function NextRacePage() {
                   href="/img/Tracks/Albertpark2.jpg"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-4 py-2 text-xs font-semibold text-white hover:bg-sky-600 transition"
+                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
                   title="Open page 2"
                 >
                   Tech Guide (2/2)
@@ -540,26 +556,52 @@ export default function NextRacePage() {
         </section>
 
         {/* Results */}
-        <section className="grid gap-6 lg:grid-cols-2">
-          <div className="order-2 lg:order-1 space-y-6">
-            {sessionResults.map((s) => (
-              <SessionCard key={s.id || s.label} session={s} />
-            ))}
-          </div>
+        <section className="grid gap-4 lg:grid-cols-2 lg:gap-6">
+          {raceHasResults ? (
+            <>
+              <div className="order-1 lg:order-2 lg:sticky lg:top-4 self-start">
+                {raceSession ? (
+                  <RaceCard session={raceSession} />
+                ) : (
+                  <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+                    <h2 className="text-lg font-semibold text-sky-200">Race</h2>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Add a session with <span className="font-semibold">type: "race"</span>{" "}
+                      in nextRaceContent.js to show race results here.
+                    </p>
+                  </article>
+                )}
+              </div>
 
-          <div className="order-1 lg:order-2 lg:sticky lg:top-4 self-start">
-            {raceSession ? (
-              <RaceCard session={raceSession} />
-            ) : (
-              <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-                <h2 className="text-lg font-semibold text-sky-200">Race</h2>
-                <p className="mt-2 text-sm text-gray-300">
-                  Add a session with <span className="font-semibold">type: "race"</span>{" "}
-                  in nextRaceContent.js to show race results here.
-                </p>
-              </article>
-            )}
-          </div>
+              <div className="order-2 lg:order-1 space-y-6">
+                {sessionResults.map((s) => (
+                  <SessionCard key={s.id || s.label} session={s} />
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="order-1 lg:order-1 space-y-6">
+                {sessionResults.map((s) => (
+                  <SessionCard key={s.id || s.label} session={s} />
+                ))}
+              </div>
+
+              <div className="order-2 lg:order-2 lg:sticky lg:top-4 self-start">
+                {raceSession ? (
+                  <RaceCard session={raceSession} />
+                ) : (
+                  <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+                    <h2 className="text-lg font-semibold text-sky-200">Race</h2>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Add a session with <span className="font-semibold">type: "race"</span>{" "}
+                      in nextRaceContent.js to show race results here.
+                    </p>
+                  </article>
+                )}
+              </div>
+            </>
+          )}
         </section>
 
         <div className="mt-2">
