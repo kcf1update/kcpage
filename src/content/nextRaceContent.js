@@ -137,28 +137,65 @@ function parseRacePaste(text) {
 
 // Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P1 = `
-NOR,,
-VER,,
-RUS,,
-PIA,,
-LEC,,
-HAM,,,,
-ALB,,,,
-SAI,,,,
-ALO,,,,
-STR,,,,
-OCO,,,,
-BEA,,,,
-HUL,,,,
-BOR,,,,
-GAS,,,,
-COL,,,,
-PER,,,,
-BOT,,,,
-LAW,,,,
-LIN,,,,
-HAD,,,,
-ANT,,,,
+NOR,1:24.391,7
+VER,1:20.789,27
+
+,
+RUS,1:21.371,26
+
+
+PIA,1:21.342,21
+
+
+LEC,1:20.267,33
+HAM,1:20.736,30
+
+
+ALB,1:23.130,24
+
+
+SAI,1:22.323,30
+
+
+ALO,No laps,,,
+STR,1:50.334,3
+
+
+OCO,1:22.161,28
+
+BEA,1:22.682,25
+
+
+HUL,1:21.969,21
+
+
+BOR,1:21.696,23
+
+
+GAS,1:24.035,27
+
+
+COL,1:23.325,26
+
+
+PER,1:24.620,14
+
+
+BOT,1:24.022,24
+
+
+LAW,1:22.613,28
+
+
+LIN,1:21.313,22
+
+
+HAD,1:21.087,24
+
+
+ANT,1:21.376,24
+
+
 `;
 // Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P2 = `
@@ -282,9 +319,9 @@ Sun: —☀️ Sunny 23° `,
       id: "p1",
       type: "practice",
       label: "Practice 1",
-      time: "Thu 9:30 PM AST",
+      time: "Complete full results below",
       trackNote: "Green Track",
-      extraNote: "—",
+      extraNote: "Dry Track",
       results: parseLapPaste(PASTE_P1),
     },
     {

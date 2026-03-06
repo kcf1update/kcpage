@@ -90,7 +90,7 @@ slotId: "1",
   summary: "Per decenni il Gran Premio d’Australia non ha mai regalato grandi gioie ai piloti di casa, creando quella che molti definiscono una vera e propria ‘maledizione’. L’ex pilota di F1 David Coulthard crede però che Oscar Piastri abbia le qualità per spezzare questa tradizione negativa proprio davanti ai tifosi di Melbourne. Con una McLaren competitiva e grande fiducia nel paddock, l’australiano potrebbe finalmente regalare ai fan locali il risultato che aspettano da anni. EN:For decades the Australian Grand Prix has rarely produced strong results for local drivers, leading many to talk about a home-race ‘curse.’ Former F1 driver David Coulthard believes Oscar Piastri could be the one to finally break that trend in Melbourne. With a competitive McLaren and strong expectations around him, the Australian may have the chance to deliver the home success fans have long hoped for.",
   kcsQuickShift: "Everyone talks about the ‘Australian GP curse’ for local drivers. Maybe Piastri is finally the guy who can break it. IT:Forse è arrivato il momento di spezzare questa tradizione.",
   url: "https://www.formulapassion.it/f1/f1-news/piastri-porre-fine-maledizione-australiana-coulthard-ci-crede",
-  imagePath: "/img/news/news-oscar",
+  imagePath: "/img/news/news-oscar.jpg",
   photoCredit: "KC",
   dateLabel: "Mar 5, 2026"
   },
