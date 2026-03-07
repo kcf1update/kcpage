@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Oscar Piastri Sets The Fastest Lap On Friday! | 2026 Australian Grand Prix",
-    youtubeInput: "https://youtu.be/dy_HXz-71vA",
-    description: "This years Champion?",
+    title: "George Russell & Kimi Antonelli's Ghost Car Comparison Laps | 2026 Australian Grand Prix",
+    youtubeInput: "https://youtu.be/bcQ13JaLuYA",
+    description: "cool video, not much difference",
     forceExternal:true,
     
   },
@@ -30,10 +30,10 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Weekend Warm-Up | 2026 Australian Grand Prix",
-    youtubeInput: "https://youtu.be/08mSKUImg_c",
-    description: "When you see this show, you know it race wekend :-) ",
-    forceExternal:true,
+    title: "What we learned from F1 2026’s first qualifying at Australian GP",
+    youtubeInput: "https://youtu.be/HFNdX2hAb7Y",
+    description: "Standout for me is Hadjar ",
+    
   }
 
 ];

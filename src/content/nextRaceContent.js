@@ -11,15 +11,29 @@ export const NEXT_RACE_DRIVER_IDS = DRIVER_IDS;
 // 1) BLANK TEMPLATES (22 drivers)
 // =====================================================
 
-// Practice / Qualy template (22 drivers)
+// Practice template (22 drivers)
 function makeLapResultsTemplate() {
   return Object.fromEntries(
     DRIVER_IDS.map((id) => [
       id,
       {
-        lapTime: "", // "1:22.456" (Practice/Qualy)
+        lapTime: "", // "1:22.456" (Practice)
         laps: "",    // 22
         status: "",  // "DNF" / "DNS" / "DSQ" or leave blank
+      },
+    ])
+  );
+}
+
+// Qualifying template (22 drivers)
+function makeQualifyingResultsTemplate() {
+  return Object.fromEntries(
+    DRIVER_IDS.map((id) => [
+      id,
+      {
+        q1: "", // "1m20.123s"
+        q2: "", // "1m19.654s"
+        q3: "", // "1m18.518s"
       },
     ])
   );
@@ -44,7 +58,7 @@ function makeRaceResultsTemplate() {
 // 2) PASTE PARSERS
 // =====================================================
 
-// PRACTICE / QUALY paste format (one driver per line):
+// PRACTICE paste format (one driver per line):
 // DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 // Examples:
 // NOR,1:21.234,18
@@ -75,12 +89,36 @@ function parseLapPaste(text) {
   return base;
 }
 
-// RACE paste format (one driver per line):
-// POS, DRIVER_ID, GRID, POINTS, STATUS(optional)
+// QUALIFYING paste format (one driver per line):
+// DRIVER_ID, Q1, Q2, Q3
 // Examples:
-// 1,NOR,1,25,1:42:06.304
-// 2,VER,2,18,+0.895s
-// NC,LAW,10,0,DNF
+// RUS,1m19.507s,1m18.934s,1m18.518s
+// GAS,1m20.400s,1m19.950s,
+// ALO,1m20.901s,,
+function parseQualifyingPaste(text) {
+  const base = makeQualifyingResultsTemplate();
+
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+
+  for (const line of lines) {
+    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+
+    const id = (parts[0] || "").toUpperCase();
+    if (!id || !base[id]) continue;
+
+    const q1 = parts[1] || "";
+    const q2 = parts[2] || "";
+    const q3 = parts[3] || "";
+
+    base[id] = { q1, q2, q3 };
+  }
+
+  return base;
+}
+
 // RACE paste format (one driver per line):
 // DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
 // Example:
@@ -97,7 +135,7 @@ function parseRacePaste(text) {
 
   const toIntOrNull = (v) => {
     const s = String(v ?? "").trim();
-    if (!s) return null;                 // <- key fix: "" stays null, not 0
+    if (!s) return null;
     const n = Number(s);
     return Number.isFinite(n) ? n : null;
   };
@@ -109,8 +147,8 @@ function parseRacePaste(text) {
     const id = (parts[0] || "").toUpperCase();
     if (!id || !base[id]) continue;
 
-    const rawPos = (parts[1] || "").toUpperCase();  // "1" .. "22" or "DNF" or blank
-    const rawStatus = parts[2] || "";               // time/gap or "DNF"
+    const rawPos = (parts[1] || "").toUpperCase();
+    const rawStatus = parts[2] || "";
     const rawGrid = parts[3] || "";
     const rawPoints = parts[4] || "";
 
@@ -131,11 +169,12 @@ function parseRacePaste(text) {
 
   return base;
 }
+
 // =====================================================
 // 3) YOUR PASTE BOXES (EDIT THESE ONLY)
 // =====================================================
 
-// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+// Practice: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P1 = `
 NOR,1:24.391,7
 VER,1:20.789,27
@@ -194,10 +233,9 @@ HAD,1:21.087,24
 
 
 ANT,1:21.376,24
-
-
 `;
-// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+
+// Practice: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P2 = `
 NOR,1:20.794,29
 VER,1:20.366,13
@@ -222,7 +260,8 @@ LIN,1:20.922,30
 HAD,1:20.941,28
 ANT,1:19.943,31
 `;
-// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+
+// Practice: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P3 = `
 NOR,1:20.443,22
 VER,1:20.197,15
@@ -247,8 +286,35 @@ LIN,1:20.838,15
 HAD,1:20.137,15
 ANT,1:20.324,18
 `;
-// Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
+
+// Qualifying: DRIVER_ID, Q1, Q2, Q3
 const PASTE_Q = `
+NOR,1m20.010s,1m19.882s,1m19.475s
+VER,No time set,,
+RUS,1m19.507s,1m18.934s,1m18.518s
+PIA,1m19.664s,1m19.525s,1m19.380s
+LEC,1m20.226s,1m19.357s,1m19.327s
+HAM,1m19.811s,1m19.921s,1m19.478s
+ALB,1m21.051s,1m20.941s,
+SAI,No time set,,
+ALO,1m21.969s,,
+STR,No time set,,
+OCO,1m20.759s,1m20.491s,,
+BEA,1m21.247s,1m20.311s,
+HUL,1m21.024s,1m20.303s,
+BOR,1m20.495s,	1m20.221s,	No time set
+GAS,1m21.138s,1m20.501s,
+COL,1m21.200s,1m21.270s,
+PER,1m22.605s	,,
+BOT,1m23.244s,,
+LAW,1m20.491s,1m20.144s	,1m19.994s
+LIN,1m20.409s,1m19.971s,1m21.247s
+HAD,1m20.023s,1m19.653s,1m19.303s
+ANT,1m20.120s,1m19.435s,1m18.811s
+`;
+
+// Race: DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
+const PASTE_RACE = `
 NOR,,,,
 VER,,,,
 RUS,,,,
@@ -271,32 +337,6 @@ LAW,,,,
 LIN,,,,
 HAD,,,,
 ANT,,,,
-`;
-
-// Race: DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
-const PASTE_RACE = `
-NOR,,,,
-VER,,,, 
-RUS,,,, 
-PIA,,,, 
-LEC,,,,
-HAM,,,, 
-ALB,,,,
-SAI,,,, 
-ALO,,,,
-STR,,,, 
-OCO,,,, 
-BEA,,,, 
-HUL,,,, 
-BOR,,,, 
-GAS,,,, 
-COL,,,, 
-PER,,,, 
-BOT,,,, 
-LAW,,,, 
-LIN,,,, 
-HAD,,,, 
-ANT,,,, 
 `;
 
 // =====================================================
@@ -346,10 +386,10 @@ Sun: —☀️ Sunny 23° `,
       id: "q",
       type: "qualifying",
       label: "Qualifying",
-      time: "Sat 1:00 AM AST",
+      time: "Complete full results below",
       trackNote: "—",
-      extraNote: "—",
-      results: parseLapPaste(PASTE_Q),
+      extraNote: "Dry Track",
+      results: parseQualifyingPaste(PASTE_Q),
     },
     {
       id: "race",

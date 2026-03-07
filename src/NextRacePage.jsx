@@ -7,6 +7,7 @@ import PageNav from "./components/PageNav";
 
 import { nextRaceContent, NEXT_RACE_DRIVER_IDS } from "./content/nextRaceContent";
 import { getDriverById } from "./content/drivers";
+import { pointsTeams } from "./content/pointsContent";
 
 // ---------- time helpers ----------
 function extractLapMs(result) {
@@ -52,6 +53,113 @@ function extractLapMs(result) {
 function formatGapMs(ms) {
   if (!Number.isFinite(ms) || ms <= 0) return "";
   return `+${(ms / 1000).toFixed(3)}s`;
+}
+
+// ---------- qualifying helpers ----------
+function getQualifyingMs(value) {
+  return extractLapMs(value);
+}
+
+function getBestQualifyingMs(row) {
+  const q3ms = getQualifyingMs(row.q3);
+  if (q3ms !== Number.POSITIVE_INFINITY) return q3ms;
+
+  const q2ms = getQualifyingMs(row.q2);
+  if (q2ms !== Number.POSITIVE_INFINITY) return q2ms;
+
+  return getQualifyingMs(row.q1);
+}
+
+function getQualifyingRankBucket(row) {
+  const hasQ3 = getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY;
+  const hasQ2 = getQualifyingMs(row.q2) !== Number.POSITIVE_INFINITY;
+
+  if (hasQ3) return 1; // Q3 runners
+  if (hasQ2) return 2; // Q2 exits
+  return 3; // Q1 exits
+}
+
+function displayQualTime(value) {
+  if (!value || String(value).trim() === "") return "—";
+  return value;
+}
+
+function getTeamColor(teamName) {
+  const normalized = String(teamName || "").trim().toLowerCase();
+
+  const match = pointsTeams.find((team) => {
+    const name = String(team.name || "").trim().toLowerCase();
+
+    return (
+      name === normalized ||
+      (normalized === "red bull" && name === "red bull racing") ||
+      (normalized === "ferrari" && name === "scuderia ferrari")
+    );
+  });
+
+  return match?.color || "#9CA3AF";
+}
+
+// ---------- session fill detection / ordering ----------
+function hasPracticeResults(session) {
+  const res = session?.results || {};
+  return Array.isArray(NEXT_RACE_DRIVER_IDS) && NEXT_RACE_DRIVER_IDS.some((id) => {
+    const r = res[id] || {};
+    return (
+      (typeof r.lapTime === "string" && r.lapTime.trim() !== "") ||
+      (typeof r.status === "string" && r.status.trim() !== "") ||
+      String(r.laps ?? "").trim() !== ""
+    );
+  });
+}
+
+function hasQualifyingResults(session) {
+  const res = session?.results || {};
+  return Array.isArray(NEXT_RACE_DRIVER_IDS) && NEXT_RACE_DRIVER_IDS.some((id) => {
+    const r = res[id] || {};
+    return (
+      (typeof r.q1 === "string" && r.q1.trim() !== "") ||
+      (typeof r.q2 === "string" && r.q2.trim() !== "") ||
+      (typeof r.q3 === "string" && r.q3.trim() !== "")
+    );
+  });
+}
+
+function hasRaceResults(session) {
+  const res = session?.results || {};
+  return Array.isArray(NEXT_RACE_DRIVER_IDS) && NEXT_RACE_DRIVER_IDS.some((id) => {
+    const r = res[id] || {};
+    return (
+      Number.isFinite(r.pos) ||
+      Number.isFinite(r.grid) ||
+      Number.isFinite(r.points) ||
+      (typeof r.status === "string" && r.status.trim() !== "")
+    );
+  });
+}
+
+function hasSessionResults(session) {
+  if (!session) return false;
+
+  if (session.type === "practice") return hasPracticeResults(session);
+  if (session.type === "qualifying") return hasQualifyingResults(session);
+  if (session.type === "race") return hasRaceResults(session);
+
+  return false;
+}
+
+function getSessionWeekendRank(session) {
+  const type = session?.type || "";
+  const id = session?.id || "";
+  const label = String(session?.label || "").toLowerCase();
+
+  if (type === "race") return 5;
+  if (type === "qualifying") return 4;
+  if (id === "p3" || label.includes("practice 3") || label.includes("practise 3")) return 3;
+  if (id === "p2" || label.includes("practice 2") || label.includes("practise 2")) return 2;
+  if (id === "p1" || label.includes("practice 1") || label.includes("practise 1")) return 1;
+
+  return 0;
 }
 
 // ---------- UI bits ----------
@@ -106,6 +214,44 @@ function StatChip({ label, value, tone = "sky" }) {
   );
 }
 
+function TeamDotChip({ label, teams = [], tone = "green" }) {
+  const toneMap = {
+    sky: "border-sky-400/40 bg-sky-500/10 text-sky-100",
+    amber: "border-amber-400/40 bg-amber-500/10 text-amber-100",
+    green: "border-emerald-400/40 bg-emerald-500/10 text-emerald-100",
+    red: "border-red-400/40 bg-red-500/10 text-red-100",
+  };
+
+  const cleanTeams = Array.from(new Set((teams || []).filter(Boolean)));
+
+  return (
+    <div
+      className={`flex min-w-0 items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
+        toneMap[tone] || toneMap.green
+      }`}
+    >
+      <span className="shrink-0 uppercase tracking-[0.18em] opacity-80">{label}</span>
+
+      <div className="flex min-w-0 items-center gap-2 truncate font-semibold">
+        {cleanTeams.length ? (
+          cleanTeams.map((team, i) => (
+            <React.Fragment key={team}>
+              <span
+                className="inline-block h-3.5 w-3.5 shrink-0 rounded-full border border-white/20"
+                style={{ backgroundColor: getTeamColor(team) }}
+              />
+              <span className="truncate">{team}</span>
+              {i < cleanTeams.length - 1 ? <span className="opacity-70">/</span> : null}
+            </React.Fragment>
+          ))
+        ) : (
+          <span>—</span>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function PodiumTiles({ podiumIds }) {
   const medals = ["🥇", "🥈", "🥉"];
   return (
@@ -152,6 +298,54 @@ function computeSessionLapSummary(session) {
     mostLapsText: mostLaps
       ? `${getDriverById(mostLaps.id)?.name || mostLaps.id} (${mostLaps.laps})`
       : "—",
+  };
+}
+
+function computeQualifyingSummary(session) {
+  const res = session?.results || {};
+
+  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
+    const r = res[id] || {};
+    return {
+      id,
+      q1: r.q1 || "",
+      q2: r.q2 || "",
+      q3: r.q3 || "",
+    };
+  });
+
+  rows.sort((a, b) => {
+    const bucketDiff = getQualifyingRankBucket(a) - getQualifyingRankBucket(b);
+    if (bucketDiff !== 0) return bucketDiff;
+    return getBestQualifyingMs(a) - getBestQualifyingMs(b);
+  });
+
+  const q3Rows = rows.filter(
+    (row) => getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY
+  );
+
+  const pole = q3Rows[0] || null;
+  const second = q3Rows[1] || null;
+
+  const poleDriver = pole ? getDriverById(pole.id) : null;
+  const secondDriver = second ? getDriverById(second.id) : null;
+
+  const poleTeam = poleDriver?.team || "";
+  const secondTeam = secondDriver?.team || "";
+
+  const frontRowTeams = poleTeam && secondTeam
+    ? poleTeam === secondTeam
+      ? [poleTeam]
+      : [poleTeam, secondTeam]
+    : poleTeam
+    ? [poleTeam]
+    : [];
+
+  return {
+    poleText: pole
+      ? `${getDriverById(pole.id)?.name || pole.id} ${pole.q3 || "—"}`
+      : "—",
+    frontRowTeams,
   };
 }
 
@@ -205,9 +399,9 @@ function LapTimeTable({ session }) {
 
   const gapTone = (gapMs) => {
     if (!Number.isFinite(gapMs) || gapMs <= 0) return "text-sky-200/80";
-    if (gapMs <= 250) return "text-emerald-300"; // <= 0.250s
-    if (gapMs <= 750) return "text-amber-300"; // <= 0.750s
-    return "text-red-300"; // > 0.750s
+    if (gapMs <= 250) return "text-emerald-300";
+    if (gapMs <= 750) return "text-amber-300";
+    return "text-red-300";
   };
 
   return (
@@ -261,6 +455,87 @@ function LapTimeTable({ session }) {
 
                 <td className={`px-1 py-1 sm:px-2 ${gapTone(gapMs)}`}>
                   {!hasTime ? "—" : isLeader ? "LEADER" : gap || "—"}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function QualifyingTable({ session }) {
+  const res = session?.results || {};
+
+  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
+    const r = res[id] || {};
+    return {
+      id,
+      q1: r.q1 || "",
+      q2: r.q2 || "",
+      q3: r.q3 || "",
+    };
+  });
+
+  rows.sort((a, b) => {
+    const bucketDiff = getQualifyingRankBucket(a) - getQualifyingRankBucket(b);
+    if (bucketDiff !== 0) return bucketDiff;
+    return getBestQualifyingMs(a) - getBestQualifyingMs(b);
+  });
+
+  return (
+    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
+      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
+        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
+          <tr>
+            <th className="w-[8%] px-1 py-1 text-left sm:px-2">Pos</th>
+            <th className="w-[32%] px-1 py-1 text-left sm:px-2">Driver</th>
+            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q1</th>
+            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q2</th>
+            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q3</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {rows.map((row, i) => {
+            const isPole = i === 0 && getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY;
+
+            return (
+              <tr
+                key={row.id}
+                className={`align-middle ${
+                  isPole ? "rounded-2xl bg-white/5 ring-1 ring-emerald-400/30" : ""
+                }`}
+              >
+                <td className="px-1 py-1 text-gray-300 sm:px-2">{i + 1}</td>
+
+                <td className="min-w-0 px-1 py-1 sm:px-2">
+                  <DriverPill driverId={row.id} />
+                </td>
+
+                <td className="px-1 py-1 sm:px-2">
+                  <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                    {displayQualTime(row.q1)}
+                  </div>
+                </td>
+
+                <td className="px-1 py-1 sm:px-2">
+                  <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                    {displayQualTime(row.q2)}
+                  </div>
+                </td>
+
+                <td className="px-1 py-1 sm:px-2">
+                  <div
+                    className={`truncate rounded-full border px-2 py-1 ${
+                      isPole
+                        ? "border-emerald-400/30 bg-emerald-500/10 text-emerald-100"
+                        : "border-white/10 bg-black/50"
+                    }`}
+                  >
+                    {displayQualTime(row.q3)}
+                  </div>
                 </td>
               </tr>
             );
@@ -342,8 +617,7 @@ function SessionCard({ session }) {
   const type = session.type || "practice";
   let headerStrip = null;
 
-  // BOTH practice + qualifying use the same lapTime system now
-  if (type === "practice" || type === "qualifying") {
+  if (type === "practice") {
     const sum = computeSessionLapSummary(session);
     headerStrip = (
       <div className="mb-3 grid gap-2 sm:grid-cols-3">
@@ -352,6 +626,21 @@ function SessionCard({ session }) {
         <StatChip
           label="Note"
           value={session.extraNote || session.trackNote || "—"}
+          tone="amber"
+        />
+      </div>
+    );
+  }
+
+  if (type === "qualifying") {
+    const sum = computeQualifyingSummary(session);
+    headerStrip = (
+      <div className="mb-3 grid gap-2 sm:grid-cols-3">
+        <StatChip label="Pole" value={sum.poleText} tone="sky" />
+        <TeamDotChip label="Front Row" teams={sum.frontRowTeams} tone="green" />
+        <StatChip
+          label="Note"
+          value={session.extraNote || session.trackNote || "Fastest Q3 time takes pole"}
           tone="amber"
         />
       </div>
@@ -368,9 +657,8 @@ function SessionCard({ session }) {
 
       {headerStrip}
 
-      {type === "practice" || type === "qualifying" ? (
-        <LapTimeTable session={session} />
-      ) : null}
+      {type === "practice" ? <LapTimeTable session={session} /> : null}
+      {type === "qualifying" ? <QualifyingTable session={session} /> : null}
     </article>
   );
 }
@@ -402,21 +690,20 @@ function RaceCard({ session }) {
 
 export default function NextRacePage() {
   const sessions = nextRaceContent.sessions || [];
-  const raceSession = sessions.find((s) => s.type === "race") || null;
-  const sessionResults = sessions.filter((s) => s.type !== "race");
 
-  const raceHasResults =
-    !!raceSession &&
-    Array.isArray(NEXT_RACE_DRIVER_IDS) &&
-    NEXT_RACE_DRIVER_IDS.some((id) => {
-      const r = raceSession?.results?.[id] || {};
-      return (
-        Number.isFinite(r.pos) ||
-        Number.isFinite(r.grid) ||
-        Number.isFinite(r.points) ||
-        (typeof r.status === "string" && r.status.trim() !== "")
-      );
-    });
+  const orderedSessions = [...sessions].sort((a, b) => {
+    const aFilled = hasSessionResults(a) ? 1 : 0;
+    const bFilled = hasSessionResults(b) ? 1 : 0;
+
+    if (aFilled !== bFilled) return bFilled - aFilled;
+
+    return getSessionWeekendRank(b) - getSessionWeekendRank(a);
+  });
+
+  const raceSession = orderedSessions.find((s) => s.type === "race") || null;
+  const sessionResults = orderedSessions.filter((s) => s.type !== "race");
+
+  const raceHasResults = hasRaceResults(raceSession);
 
   useEffect(() => {
     const raceName = nextRaceContent.raceName ? ` – ${nextRaceContent.raceName}` : "";
