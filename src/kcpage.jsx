@@ -224,14 +224,19 @@ export default function KCpage() {
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
-                       
-             🟢 Live F1 news update daily. Breaking stories added throughout the day. Atlantic time Canada
-            <img
-              src="/img/icons/flag-ca.png"
-              alt="Canada"
-              className="inline-block ml-1 w-4 h-4 align-text-bottom"
-            />
-          </p>
+  <span className="font-bold text-red-500">
+    🏁 AUSTRALIAN GP WEEKEND
+  </span>
+  <br />
+  <span className="text-white font-medium">
+    Race Centre Now Active
+  </span>
+  <img
+    src="/img/icons/flag-ca.png"
+    alt="Canada"
+    className="inline-block ml-1 w-4 h-4 align-text-bottom"
+  />
+</p>
         </div>
 
         {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
