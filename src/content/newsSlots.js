@@ -11,11 +11,11 @@ export const newsSlots = [
   slotId: "news-10",
   sourceLabel: "Formula1.com",
   title: "Russell storms to pole position for the season-opening Australian GP",
-  summary: "George Russell delivered a dominant lap to secure pole for the 2026 Australian Grand Prix at Albert Park, leading a Mercedes front-row lockout ahead of team-mate Kimi Antonelli. Red Bull rookie Isack Hadjar qualified third while Ferrari’s Charles Leclerc and McLaren’s Oscar Piastri followed, in a dramatic session that also saw Max Verstappen crash out in Q1. :contentReference[oaicite:0]{index=0}",
+  summary: "George Russell delivered a dominant lap to secure pole for the 2026 Australian Grand Prix at Albert Park, leading a Mercedes front-row lockout ahead of team-mate Kimi Antonelli. Red Bull rookie Isack Hadjar qualified third while Ferrari’s Charles Leclerc and McLaren’s Oscar Piastri followed, in a dramatic session that also saw Max Verstappen crash out in Q1.",
   kcsQuickShift: "Mercedes look seriously quick right out of the gate with Russell taking pole and Antonelli alongside him. If that pace carries into race trim the rest of the grid could have a tough time catching them.",
   url: "https://www.formula1.com/en/latest/article/russell-storms-to-pole-position-for-the-season-opening-australian-gp-as.59kj0cIRcQVqXUSKPp5KzG",
   imagePath: "/img/news/xpbimages1.jpg",
-  imageSource: "Photo: XPB Images",
+  photoCredit: "XPB Images",
   dateLabel: "March 7, 2026"
  },
   {
@@ -37,7 +37,7 @@ export const newsSlots = [
   kcsQuickShift: "Norris feels this was not the clean qualifying he needed and that bit of debris may have taken away a real shot at P3. McLaren are still in the fight, but they clearly have a bit of work to do before the race.",
   url: "https://www.formula1.com/en/latest/article/norris-rues-track-debris-that-cost-me-a-chance-of-p3-in-australia-qualifying.5rR8YFd6DaPSXl3WXrZhwf",
   imagePath: "/img/news/news-lando.jpg",
-  imageSource: "KC",
+  photoCredit: "KC",
   dateLabel: "March 7, 2026"
   },
   {
@@ -70,7 +70,7 @@ export const newsSlots = [
   kcsQuickShift: "Hadjar seems to be taking a smart approach to his Red Bull promotion by focusing on learning instead of forcing results. If he stays calm and builds confidence he could end up being a very solid partner for Verstappen.",
   url: "https://www.motorsport.com/f1/news/i-can-afford-some-mistakes-red-bull-f1-promotion-is-freeing-isack-hadjar-of-pressure/10803095/",
   imagePath: "/img/news/news-isack.jpg",
-  photoCredit: "Motorsport.com",
+  photoCredit: "KC",
   dateLabel: "March 7, 2026"
 },
     {
@@ -81,7 +81,7 @@ export const newsSlots = [
   kcsQuickShift: "Finally some good or at least better news for Aston Martin. If they can get reliability under control there might still be something to work with this season.",
   url: "https://www.formula1.com/en/latest/article/the-potential-is-huge-alonso-buoyed-by-q1-performance-in-australia.3W3ezvdTITlg3xZxZf6q3L",
   imagePath: "/img/news/news-fernandoalbertpark.jpg",
-  photoCredit: "Formula1.com",
+  photoCredit: "KC",
   dateLabel: "March 7, 2026"
   },
   {
