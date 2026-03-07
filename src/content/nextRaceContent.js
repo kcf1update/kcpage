@@ -224,28 +224,28 @@ ANT,1:19.943,31
 `;
 // Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_P3 = `
-NOR,,,,
-VER,,,,
-RUS,,,,
-PIA,,,,
-LEC,,,,
-HAM,,,,
-ALB,,,,
-SAI,,,,
-ALO,,,,
-STR,,,,
-OCO,,,,
-BEA,,,,
-HUL,,,,
-BOR,,,,
-GAS,,,,
-COL,,,,
-PER,,,,
-BOT,,,,
-LAW,,,,
-LIN,,,,
-HAD,,,,
-ANT,,,,
+NOR,1:20.443,22
+VER,1:20.197,15
+RUS,1:19.053,23
+PIA,1:20.087,17
+LEC,1:19.827,20
+HAM,1:19.669,22
+ALB,1:21.664,17
+SAI,No Time,
+ALO,1:22.720,20
+STR,No Laps,0
+OCO,1:20.983,19
+BEA,1:20.778,18
+HUL,1:21.067,22
+BOR,1:20.459,19
+GAS,1:21.071,26
+COL,1:21.413,22
+PER,1:24.397,21
+BOT,1:23.514,12
+LAW,1:20.890,13
+LIN,1:20.838,15
+HAD,1:20.137,15
+ANT,1:20.324,18
 `;
 // Practice/Qualy: DRIVER_ID, LAPTIME, LAPS, STATUS(optional)
 const PASTE_Q = `
@@ -336,10 +336,10 @@ Sun: —☀️ Sunny 23° `,
     {
       id: "p3",
       type: "practice",
-      label: "Practice 3",
-      time: "Fri 9:30 PM AST",
+      label: "Practise 3",
+      time: "Complete full results below",
       trackNote: "—",
-      extraNote: "—",
+      extraNote: "Dry Track",
       results: parseLapPaste(PASTE_P3),
     },
     {

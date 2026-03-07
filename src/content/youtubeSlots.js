@@ -14,6 +14,7 @@ export const youtubeSlots = [
     title: "Oscar Piastri Sets The Fastest Lap On Friday! | 2026 Australian Grand Prix",
     youtubeInput: "https://youtu.be/dy_HXz-71vA",
     description: "This years Champion?",
+    forceExternal:true,
     
   },
 
@@ -23,7 +24,7 @@ export const youtubeSlots = [
   title: "A Beginner's Guide To Formula 1",
   youtubeInput: "https://youtu.be/VybzXU1dYk4",
   description: "Great explanation",
-  
+  forceExternal:true,
 },
   
 
