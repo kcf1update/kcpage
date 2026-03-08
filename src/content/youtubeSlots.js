@@ -3,9 +3,9 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/LyW5C0EI8RI?feature=share",
-    description: "Why F1 Cars Suddenly Slow Down in 2026.",
-    ctaUrl: "https://www.youtube.com/shorts/LyW5C0EI8RI?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/LFIgPq-3Km8?feature=share",
+    description: "KC's Quickshift, Australian GP race recap.",
+    ctaUrl: "https://www.youtube.com/shorts/LFIgPq-3Km8?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 

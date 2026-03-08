@@ -485,63 +485,73 @@ function QualifyingTable({ session }) {
   });
 
   return (
-    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
-      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
-        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
-          <tr>
-            <th className="w-[8%] px-1 py-1 text-left sm:px-2">Pos</th>
-            <th className="w-[32%] px-1 py-1 text-left sm:px-2">Driver</th>
-            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q1</th>
-            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q2</th>
-            <th className="w-[20%] px-1 py-1 text-left sm:px-2">Q3</th>
-          </tr>
-        </thead>
+    <div className="max-w-full">
+      <div className="mb-2 flex items-center justify-end">
+        <span className="select-none text-[10px] uppercase tracking-[0.18em] text-gray-400">
+          <span className="mr-1 inline-block">↔</span> Swipe
+        </span>
+      </div>
 
-        <tbody>
-          {rows.map((row, i) => {
-            const isPole = i === 0 && getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY;
+      <div className="overflow-x-auto overflow-y-hidden pr-0 [scrollbar-width:thin]">
+        <table className="min-w-[720px] border-separate border-spacing-y-1 text-xs sm:text-sm">
+          <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
+            <tr>
+              <th className="w-[60px] px-1 py-1 text-left sm:px-2">Pos</th>
+              <th className="w-[240px] px-1 py-1 text-left sm:px-2">Driver</th>
+              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q1</th>
+              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q2</th>
+              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q3</th>
+            </tr>
+          </thead>
 
-            return (
-              <tr
-                key={row.id}
-                className={`align-middle ${
-                  isPole ? "rounded-2xl bg-white/5 ring-1 ring-emerald-400/30" : ""
-                }`}
-              >
-                <td className="px-1 py-1 text-gray-300 sm:px-2">{i + 1}</td>
+          <tbody>
+            {rows.map((row, i) => {
+              const isPole = i === 0 && getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY;
 
-                <td className="min-w-0 px-1 py-1 sm:px-2">
-                  <DriverPill driverId={row.id} />
-                </td>
+              return (
+                <tr
+                  key={row.id}
+                  className={`align-middle ${
+                    isPole ? "rounded-2xl bg-white/5 ring-1 ring-emerald-400/30" : ""
+                  }`}
+                >
+                  <td className="whitespace-nowrap px-1 py-1 text-gray-300 sm:px-2">{i + 1}</td>
 
-                <td className="px-1 py-1 sm:px-2">
-                  <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
-                    {displayQualTime(row.q1)}
-                  </div>
-                </td>
+                  <td className="px-1 py-1 sm:px-2">
+                    <div className="min-w-[220px]">
+                      <DriverPill driverId={row.id} />
+                    </div>
+                  </td>
 
-                <td className="px-1 py-1 sm:px-2">
-                  <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
-                    {displayQualTime(row.q2)}
-                  </div>
-                </td>
+                  <td className="whitespace-nowrap px-1 py-1 sm:px-2">
+                    <div className="rounded-full border border-white/10 bg-black/50 px-3 py-1">
+                      {displayQualTime(row.q1)}
+                    </div>
+                  </td>
 
-                <td className="px-1 py-1 sm:px-2">
-                  <div
-                    className={`truncate rounded-full border px-2 py-1 ${
-                      isPole
-                        ? "border-emerald-400/30 bg-emerald-500/10 text-emerald-100"
-                        : "border-white/10 bg-black/50"
-                    }`}
-                  >
-                    {displayQualTime(row.q3)}
-                  </div>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                  <td className="whitespace-nowrap px-1 py-1 sm:px-2">
+                    <div className="rounded-full border border-white/10 bg-black/50 px-3 py-1">
+                      {displayQualTime(row.q2)}
+                    </div>
+                  </td>
+
+                  <td className="whitespace-nowrap px-1 py-1 sm:px-2">
+                    <div
+                      className={`rounded-full border px-3 py-1 ${
+                        isPole
+                          ? "border-emerald-400/30 bg-emerald-500/10 text-emerald-100"
+                          : "border-white/10 bg-black/50"
+                      }`}
+                    >
+                      {displayQualTime(row.q3)}
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
