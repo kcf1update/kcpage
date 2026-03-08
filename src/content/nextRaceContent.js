@@ -315,28 +315,28 @@ ANT,1m20.120s,1m19.435s,1m18.811s
 
 // Race: DRIVER_ID, POS, STATUS(time/gap/DNF), GRID, POINTS
 const PASTE_RACE = `
-NOR,,,,
-VER,,,,
-RUS,,,,
-PIA,,,,
-LEC,,,,
-HAM,,,,
-ALB,,,,
-SAI,,,,
-ALO,,,,
-STR,,,,
-OCO,,,,
-BEA,,,,
-HUL,,,,
-BOR,,,,
-GAS,,,,
-COL,,,,
-PER,,,,
-BOT,,,,
-LAW,,,,
-LIN,,,,
-HAD,,,,
-ANT,,,,
+NOR,5,+51.741s,6,10
+VER,6,+54.617s,20,8
+RUS,1,58 laps,1,25
+PIA,DNS,DNS,5,0
+LEC,3,+12.519s,4,15
+HAM,4,+16.144s,7,12
+ALB,12,+1 Lap,15,0
+SAI,15,+2 Laps,21,0
+ALO,DNF,0 laps,17,0
+STR,17,+15 Laps,22,0,
+OCO,11,+1 Lap,13,0
+BEA,7,+1 Lap,12,6
+HUL,DNS,DNS,11,0
+BOR,9,+1 Lap,10,2
+GAS,10,+1 Lap,14,1
+COL,14,+2 Laps,16,0
+PER,16,+3 Laps,18,0
+BOT,DNF,DNF,19,0
+LAW,13,+1 Lap,8,0
+LIN,8,+1 Lap,9,4
+HAD,DNF,DNF,3,0
+ANT,2,+2.974s,2,18
 `;
 
 // =====================================================
@@ -395,8 +395,8 @@ Sun: —☀️ Sunny 23° `,
       id: "race",
       type: "race",
       label: "Race",
-      time: "Sun 12:00 AM AST",
-      extraNote: "—",
+      time: "Russell Wins, full results below.",
+      extraNote: "Dry Track",
       results: parseRacePaste(PASTE_RACE),
     },
   ],
