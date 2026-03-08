@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "George Russell & Kimi Antonelli's Ghost Car Comparison Laps | 2026 Australian Grand Prix",
-    youtubeInput: "https://youtu.be/bcQ13JaLuYA",
-    description: "cool video, not much difference",
+    title: "Drivers React After The Race | 2026 Australian Grand Prix",
+    youtubeInput: "https://youtu.be/F3ZGnYQGnFI",
+    description: "Piastri...you have to feel sorry for him",
     forceExternal:true,
     
   },
@@ -21,19 +21,19 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "A Beginner's Guide To Formula 1",
-  youtubeInput: "https://youtu.be/VybzXU1dYk4",
-  description: "Great explanation",
+  title: "Rookie Arvid Lindblad Scores Points On Debut | 2026 Australian Grand Prix",
+  youtubeInput: "https://youtu.be/sUtOWS7yM-Y",
+  description: "We have some good racing comming up this year.",
   forceExternal:true,
 },
   
 
   {
     slotId: "slot3",
-    title: "What we learned from F1 2026’s first qualifying at Australian GP",
-    youtubeInput: "https://youtu.be/HFNdX2hAb7Y",
-    description: "Standout for me is Hadjar ",
-    
+    title: "Race Highlights | 2026 Australian Grand Prix",
+    youtubeInput: "https://youtu.be/lL_d84cN1UY",
+    description: "I think it was a great race, looking forwad to the year ",
+    forceExternal:true,
   }
 
 ];

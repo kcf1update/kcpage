@@ -8,103 +8,103 @@
 export const newsSlots = [
   {
 
-  slotId: "news-10",
+  slotId: "news-01",
   sourceLabel: "Formula1.com",
-  title: "Russell storms to pole position for the season-opening Australian GP",
-  summary: "George Russell delivered a dominant lap to secure pole for the 2026 Australian Grand Prix at Albert Park, leading a Mercedes front-row lockout ahead of team-mate Kimi Antonelli. Red Bull rookie Isack Hadjar qualified third while Ferrari’s Charles Leclerc and McLaren’s Oscar Piastri followed, in a dramatic session that also saw Max Verstappen crash out in Q1.",
-  kcsQuickShift: "Mercedes look seriously quick right out of the gate with Russell taking pole and Antonelli alongside him. If that pace carries into race trim the rest of the grid could have a tough time catching them.",
-  url: "https://www.formula1.com/en/latest/article/russell-storms-to-pole-position-for-the-season-opening-australian-gp-as.59kj0cIRcQVqXUSKPp5KzG",
-  imagePath: "/img/news/xpbimages1.jpg",
+  title: "‘It’s been a long time coming’ – Russell hails incredible victory in Australian GP",
+  summary: "George Russell celebrated an emotional victory after winning the 2026 Australian Grand Prix in Melbourne, leading home Mercedes team-mate Kimi Antonelli to secure a dominant 1-2 finish. The Briton fought early with Ferrari’s Charles Leclerc before Mercedes used a well-timed strategy during a Virtual Safety Car to take control of the race. Russell ultimately crossed the line ahead of Antonelli to claim his sixth career Formula 1 win and start the season on top of the championship standings.",
+  kcsQuickShift: "Russell delivered when it mattered most in Melbourne. Mercedes just fired a big warning shot to the rest of the grid.",
+  url: "https://www.formula1.com/en/latest/article/its-been-a-long-time-coming-russell-hails-incredible-victory-in-australian.19L6pQbeA3TWcVxJR2gZ9n",
+  imagePath: "/img/news/news-xpb3.jpg",
   photoCredit: "XPB Images",
-  dateLabel: "March 7, 2026"
+  dateLabel: "Mar 8, 2026"
  },
   {
-   slotId: "news-02",
-  sourceLabel: "RacingNews365",
-  title: "Max Verstappen Australian GP qualifying crash cause revealed",
-  summary: "Max Verstappen’s dramatic Q1 crash in Australian Grand Prix qualifying was caused by a sudden rear axle lock-up under braking heading into Turn 1. The Red Bull spun across the gravel and into the barriers before the Dutchman could set a competitive lap time, leaving the four-time champion starting from the back of the grid.",
-  kcsQuickShift: "That was a brutal start to the season for Verstappen. If Red Bull can fix the issue and the car has race pace, he could still make this race very interesting coming through the field.",
-  url: "https://racingnews365.com/max-verstappen-australian-gp-qualifying-crash-cause-revealed",
-  imagePath: "/img/news/xpbimageverstappen.jpg",
-  photoCredit: "XPB IMAGES ",
-  dateLabel: "March 7, 2026"
-  },
-  {
- slotId: "news-01",
+   slotId: "news-07",
   sourceLabel: "Formula1.com",
-  title: "Norris rues track debris that ‘cost me a chance of P3’ in Australia Qualifying",
-  summary: "Lando Norris says damage from track debris in Q3 hurt his final run and likely cost him a shot at third on the grid for the Australian Grand Prix. The McLaren driver also pointed to a difficult weekend overall, with limited running and setup issues leaving him short of confidence and stuck in P6 behind team mate Oscar Piastri in P5.",
-  kcsQuickShift: "Norris feels this was not the clean qualifying he needed and that bit of debris may have taken away a real shot at P3. McLaren are still in the fight, but they clearly have a bit of work to do before the race.",
-  url: "https://www.formula1.com/en/latest/article/norris-rues-track-debris-that-cost-me-a-chance-of-p3-in-australia-qualifying.5rR8YFd6DaPSXl3WXrZhwf",
-  imagePath: "/img/news/news-lando.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 7, 2026"
+  title: "Norris admits McLaren need to improve the car 'quite a lot' after Australian GP",
+  summary: "Lando Norris admitted McLaren still have significant work to do after the opening race of the 2026 season in Australia. The Briton finished fifth in Melbourne but acknowledged the team lacked the pace to challenge Mercedes and Ferrari during the race. Norris said the team must improve the car considerably if they want to fight consistently at the front in the early rounds of the championship.",
+  kcsQuickShift: "Norris is being very honest here. McLaren clearly has potential but they are not where they want to be yet after Melbourne.",
+  url: "https://www.formula1.com/en/latest/article/norris-admits-mclaren-need-to-improve-the-car-quite-a-lot-as-he-reflects-on.61fBRXuMV11wPLaBulzWyb",
+  imagePath: "/img/news/news-xpb6lando.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "Mar 8, 2026"
   },
   {
-    slotId: "news-02",
-  sourceLabel: "The Race",
-  title: "What explains Mercedes’ big early 2026 F1 advantage?",
-  summary: "Mercedes have emerged as the early benchmark in the first races of Formula 1’s new 2026 era, with rivals pointing to a combination of strong energy deployment and an efficient overall car package. Early running suggests the team’s power unit and car balance allow them to manage the new hybrid systems better than competitors, giving them a clear pace edge in both qualifying and long runs.",
-  kcsQuickShift: "Right now Mercedes look like they understand the new 2026 rules better than anyone else. If the others do not close the gap quickly this could turn into their season very fast.",
-  url: "https://www.the-race.com/formula-1/what-explains-mercedes-big-early-2026-f1-advantage/",
-  imagePath: "/img/news/news-mercedes.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 7, 2026"
-  },
-  {
-  slotId: "news-2026-03-06-verstappen-red-bull-reality-damage-rn365",
+ slotId: "news-06",
   sourceLabel: "RacingNews365",
-  title: "Max Verstappen names Red Bull reality after severe car damage",
-  summary: "Max Verstappen suffered a scare during Australian Grand Prix practice when a moment of oversteer sent him sliding through the gravel at Turn 10. The incident caused significant floor damage to his Red Bull but he still managed to return to the track and finish sixth in the session. Verstappen said the team’s pace was roughly where he expected, though Red Bull still has work to do overnight to improve grip and overall performance.",
-  kcsQuickShift: "That gravel trip could have been a lot worse for Verstappen. Even with the damage he still looked competitive which tells you Red Bull is never far away.",
-  url: "https://racingnews365.com/max-verstappen-names-red-bull-reality-after-severe-car-damage",
+  title: "Verstappen positive about Red Bull despite Melbourne challenges",
+  summary: "Max Verstappen struck an optimistic tone about Red Bull after the opening race weekend of the 2026 Formula 1 season. Despite the team facing several challenges in Melbourne and not matching Mercedes’ pace, the Dutch driver believes the RB package still has strong potential once the team fully understands the new regulations. Verstappen suggested Red Bull can close the gap as development continues through the early races of the season.",
+  kcsQuickShift: "Verstappen knows this season will be a fight. If Red Bull unlocks the car’s full potential the championship battle could get very interesting.",
+  url: "https://racingnews365.nl/verstappen-laat-zeer-positief-geluid-horen-over-red-bull",
+  imagePath: "/img/news/xpbimageverstappen.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "Mar 8, 2026"
+  },
+  {
+    slotId: "news-05",
+  sourceLabel: "The Race",
+  title: "Australian GP near-misses expose safety concerns with 2026 F1 cars",
+  summary: "Several close calls during the Australian Grand Prix weekend highlighted potential safety concerns with Formula 1’s new 2026 cars. Drivers struggled with the complex mix of active aerodynamics and heavy energy-management demands, which created unpredictable speed differences between cars in certain sections of the track. The incidents raised questions about whether the new rules could increase the risk of dangerous situations during close racing.",
+  kcsQuickShift: "The new 2026 cars are clearly still a work in progress. Melbourne showed how quickly big speed differences and complex systems can turn into real safety worries.",
+  url: "https://www.the-race.com/formula-1/auastralian-gp-near-misses-expose-safety-concerns-f1-2026/",
+  imagePath: "/img/news/news-xpb4.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "Mar 8, 2026"
+  },
+  {
+  slotId: "news-04",
+  sourceLabel: "Autosport",
+  title: "Analysis: Mercedes versus its F1 customer teams – how can the gap be so large?",
+  summary: "Mercedes delivered a dominant start to the 2026 Formula 1 season in Australia, raising questions about why teams using the same power unit are so far behind. Analysis suggests the difference may come from how effectively Mercedes extracts performance from its new engine, particularly in energy deployment and system integration. Customer teams are still learning how to maximise the package, while the works team benefits from deeper collaboration with its engine division.",
+  kcsQuickShift: "This is the classic works-team advantage in F1. Mercedes clearly understands the new power unit better than its customers right now and that knowledge gap could shape the early part of the season.",
+  url: "https://www.autosport.com/f1/news/analysis-mercedes-versus-its-f1-customer-teams-how-can-the-gap-be-so-large/10803498/",
+  imagePath: "/img/news/news-xpb5kimi.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "Mar 8, 2026"
+  },
+  {
+  slotId: "news-03",
+  sourceLabel: "RacingNews365",
+  title: "McLaren reveal cause of shock Oscar Piastri crash",
+  summary: "McLaren has explained the cause of Oscar Piastri’s dramatic crash before the start of the Australian Grand Prix in Melbourne. The Australian lost control of his McLaren after riding the kerb at Turn 4 while shifting gears, spinning into the barrier and damaging the car before the race had even begun. The incident meant the home favourite was unable to take the start despite qualifying fifth for the season opener.",
+  kcsQuickShift: "A brutal moment for the Melbourne crowd. Piastri had real pace all weekend but one small mistake on cold tyres ended his race before it even began.",
+  url: "https://racingnews365.com/mclaren-reveal-cause-of-shock-oscar-piastri-crash",
+  imagePath: "/img/news/news-mclaren2.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 8, 2026"
+},
+    {
+  slotId: "news-02",
+  sourceLabel: "Formula1.com",
+  title: "Driver of the Day: Verstappen’s comeback earns fans’ vote in Australia",
+  summary: "Max Verstappen was voted Driver of the Day after an impressive recovery drive at the Australian Grand Prix. Starting near the back of the field after qualifying troubles, the Red Bull driver carved his way through the pack to finish sixth. The Dutchman even pressured Lando Norris late in the race and secured valuable points for Red Bull in the opening round of the season.",
+  kcsQuickShift: "Classic Verstappen damage control. From the back to sixth in Melbourne is exactly the kind of drive that keeps a championship fight alive.",
+  url: "https://www.formula1.com/en/latest/article/driver-of-the-day-verstappens-comeback-gets-your-vote-for-australia.1LylQrZ0Dp7NqEPtQ2xuRI",
   imagePath: "/img/news/news-verstappen.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 6, 2026"
+  dateLabel: "Mar 8, 2026"
+  },
+  {
+    slotId: "news-06",
+  sourceLabel: "RacingNews365",
+  title: "Verstappen laat zeer positief geluid horen over Red Bull EN: Verstappen very positive about Red Bull",
+  summary: "Max Verstappen laat een positief geluid horen over Red Bull ondanks dat het team nog werk te doen heeft om sneller te worden. De Nederlander benadrukt dat het duidelijk is dat er nog verbeteringen nodig zijn, maar hij heeft vertrouwen dat het team stappen kan zetten naarmate het seizoen vordert. Volgens Verstappen blijft het belangrijkste dat het team blijft werken en zich blijft ontwikkelen richting de volgende races. EN: Max Verstappen struck a positive tone about Red Bull despite the team still needing to find more speed. The Dutch driver admitted there is still work to do but believes the team can make progress as the season develops. Verstappen said the focus now is on continuing to work hard and improving the car through the upcoming races.",
+  kcsQuickShift: "Verstappen sounds confident even if Red Bull is not the fastest right now. NL: Verstappen klinkt positief ook al is Red Bull op dit moment nog niet het snelste team.",
+  url: "https://racingnews365.nl/verstappen-laat-zeer-positief-geluid-horen-over-red-bull",
+  imagePath: "/img/news/news-verstappen.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 8, 2026"
   },
   {
   slotId: "news-08",
-  sourceLabel: "Motorsport.com",
-  title: "'I can afford some mistakes' – Red Bull promotion is freeing Hadjar of pressure",
-  summary: "Isack Hadjar says his promotion to Red Bull for the 2026 season has actually reduced the pressure on him because expectations are different alongside Max Verstappen. The French driver believes the opportunity allows him to learn and take risks early in the season as he adapts to the team and the new regulations.",
-  kcsQuickShift: "Hadjar seems to be taking a smart approach to his Red Bull promotion by focusing on learning instead of forcing results. If he stays calm and builds confidence he could end up being a very solid partner for Verstappen.",
-  url: "https://www.motorsport.com/f1/news/i-can-afford-some-mistakes-red-bull-f1-promotion-is-freeing-isack-hadjar-of-pressure/10803095/",
-  imagePath: "/img/news/news-isack.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 7, 2026"
-},
-    {
-  slotId: "news-09",
-  sourceLabel: "Formula1.com",
-  title: "'The potential is huge' – Alonso buoyed by Q1 performance in Australia",
-  summary: "Fernando Alonso said Aston Martin showed encouraging signs in Australian Grand Prix qualifying despite starting P17 after narrowly missing out on Q2. The Spaniard explained the team made very few setup changes yet still improved significantly, which he believes shows the car has much more potential once the team solves its reliability and mileage issues.",
-  kcsQuickShift: "Finally some good or at least better news for Aston Martin. If they can get reliability under control there might still be something to work with this season.",
-  url: "https://www.formula1.com/en/latest/article/the-potential-is-huge-alonso-buoyed-by-q1-performance-in-australia.3W3ezvdTITlg3xZxZf6q3L",
-  imagePath: "/img/news/news-fernandoalbertpark.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 7, 2026"
-  },
-  {
-    slotId: "news-07",
-  sourceLabel: "FormulaPassion.it",
-  title: "Leclerc dopo FP3: 'Forse Mercedes non era al massimo della potenza in qualifica' EN: Leclerc after FP3: 'Maybe Mercedes wasn’t running full power in qualifying'",
-  summary: "Charles Leclerc ha suggerito che la Mercedes potrebbe non aver utilizzato tutta la potenza disponibile nelle prove libere prima delle qualifiche del GP d’Australia. Il pilota Ferrari ha detto che è difficile capire il reale potenziale degli avversari perché le squadre spesso nascondono parte delle prestazioni fino alla qualifica. EN: Charles Leclerc suggested Mercedes may not have been running its engine at full power during practice before Australian GP qualifying, noting teams often hide their true pace until the crucial sessions.",
-  kcsQuickShift: "Leclerc seems convinced Mercedes may still have some performance in reserve. If that’s true the rest of the field could have an even bigger problem than it already looks like.",
-  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/leclerc-dopo-fp3-forse-mercedes-non-era-al-massimo-della-potenza-in-qualifica",
-  imagePath: "/img/news/news-ferrari2.jpg",
+  sourceLabel: "FormulaPassion",
+  title: "Vasseur loda Hamilton: importante avere due Ferrari davanti EN: Vasseur praises Hamilton, says it is important to have two Ferraris at the front",
+  summary: "Frederic Vasseur ha elogiato Lewis Hamilton dopo il Gran Premio d’Australia, sottolineando l’importanza di avere entrambe le Ferrari nelle posizioni di vertice. Il team principal ha spiegato che la squadra ha iniziato la nuova era tecnica con una base positiva, anche se Mercedes ha mostrato un vantaggio significativo nella gara di Melbourne. Vasseur ritiene che avere due piloti competitivi come Hamilton e Charles Leclerc sarà fondamentale per lo sviluppo della stagione. EN: Ferrari team principal Frederic Vasseur praised Lewis Hamilton after the Australian Grand Prix, highlighting how important it is for Ferrari to have both cars fighting near the front. While Mercedes showed stronger pace in Melbourne, Vasseur believes Ferrari has a solid starting point and that the combined strength of Hamilton and Charles Leclerc will be key as the team develops the car during the season.",
+  kcsQuickShift: "Ferrari clearly sees Hamilton as a big asset already. IT: Ferrari vede chiaramente Hamilton come una risorsa molto importante per la squadra.",
+  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/vasseur-loda-hamilton-importante-avere-due-ferrari-davanti-gp-australia",
+  imagePath: "/img/news/news-ferrari.jpg",
   photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "March 7, 2026"
-  },
-  {
-  slotId: "news-06",
-  sourceLabel: "RacingNews365.nl",
-  title: "Verstappen niet gediend van uitgelekte kritiek: 'Dat is niet erg professioneel' EN: Verstappen unhappy with leaked criticism: 'That’s not very professional'",
-  summary: "Max Verstappen heeft kritiek geuit op het uitlekken van interne opmerkingen na zijn dramatische kwalificatie in Australië. De Nederlander vindt dat zulke kritiek binnen het team moet blijven en noemt het 'niet erg professioneel' dat details naar buiten zijn gekomen. EN: Max Verstappen criticised the leaking of internal comments after his difficult Australian GP qualifying, saying such discussions should remain inside the team and calling the leak 'not very professional'.",
-  kcsQuickShift: "Sounds like Verstappen is not happy about internal criticism leaking into the media after that tough qualifying. When things start leaking like that it usually means the pressure inside the team is building.",
-  url: "https://racingnews365.nl/verstappen-niet-gediend-van-uitgelekte-kritiek-dat-is-niet-erg-professioneel",
-  imagePath: "/img/news/xpbimageverstappen.jpg",
-  photoCredit: "XPB IMAGE",
-  dateLabel: "March 7, 2026"
+  dateLabel: "Mar 8, 2026"
 
 },
 ];

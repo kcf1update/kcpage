@@ -186,8 +186,7 @@ export default function PointsPage() {
         <TopCard>
           <TopCard.Header
             title="Driver & Team Points"
-            subtitle="Driver points include Race Centre “Race” points automatically."
-            logoSrc="/img/kcs-f1-car.png"
+                       logoSrc="/img/kcs-f1-car.png"
             logoClassName="h-16 sm:h-18 md:h-20 lg:h-24 w-auto"
             titleClassName="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.05] break-words"
           />
@@ -249,7 +248,7 @@ export default function PointsPage() {
             <section className="rounded-3xl bg-[#2f2f2f] text-white border border-white/10 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
               <div className="text-lg font-extrabold">Driver Standings</div>
               <div className="text-xs text-white/70 mt-1">
-                Driver points include Race Centre “Race” points automatically.
+                
               </div>
 
               <div className="mt-4 grid grid-cols-12 text-[11px] text-white/70 px-2">
@@ -299,7 +298,7 @@ export default function PointsPage() {
             <section className="rounded-3xl bg-[#2f2f2f] text-white border border-white/10 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
               <div className="text-lg font-extrabold">Constructor Standings</div>
               <div className="text-xs text-white/70 mt-1">
-                Team points auto-sum from driver totals (including Race Centre points).
+                
               </div>
 
               <div className="mt-4 space-y-3">
