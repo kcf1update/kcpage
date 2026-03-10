@@ -8,103 +8,103 @@
 export const newsSlots = [
   {
 
-  slotId: "news-01",
-  sourceLabel: "Formula1.com",
-  title: "‘It’s been a long time coming’ – Russell hails incredible victory in Australian GP",
-  summary: "George Russell celebrated an emotional victory after winning the 2026 Australian Grand Prix in Melbourne, leading home Mercedes team-mate Kimi Antonelli to secure a dominant 1-2 finish. The Briton fought early with Ferrari’s Charles Leclerc before Mercedes used a well-timed strategy during a Virtual Safety Car to take control of the race. Russell ultimately crossed the line ahead of Antonelli to claim his sixth career Formula 1 win and start the season on top of the championship standings.",
-  kcsQuickShift: "Russell delivered when it mattered most in Melbourne. Mercedes just fired a big warning shot to the rest of the grid.",
-  url: "https://www.formula1.com/en/latest/article/its-been-a-long-time-coming-russell-hails-incredible-victory-in-australian.19L6pQbeA3TWcVxJR2gZ9n",
+  slotId: "news-xx",
+  sourceLabel: "ESPN",
+  title: "Russell wins chaotic Australian GP as Mercedes secure 1-2 with Antonelli",
+  summary: "George Russell kicked off the 2026 Formula 1 season with victory in Melbourne, leading teammate Kimi Antonelli to a dominant Mercedes 1-2 finish. Charles Leclerc completed the podium for Ferrari after an early battle for the lead with Russell.",
+  kcsQuickShift: "What a start for Mercedes. Russell looked completely in control and Antonelli already feels like a real threat at the front this season.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48098543/australian-grand-prix-george-russell-win-kimi-antonelli-mercedes-1-2-charles-leclerc",
   imagePath: "/img/news/news-xpb3.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "Mar 8, 2026"
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Mar 9, 2026"
  },
   {
-   slotId: "news-07",
-  sourceLabel: "Formula1.com",
-  title: "Norris admits McLaren need to improve the car 'quite a lot' after Australian GP",
-  summary: "Lando Norris admitted McLaren still have significant work to do after the opening race of the 2026 season in Australia. The Briton finished fifth in Melbourne but acknowledged the team lacked the pace to challenge Mercedes and Ferrari during the race. Norris said the team must improve the car considerably if they want to fight consistently at the front in the early rounds of the championship.",
-  kcsQuickShift: "Norris is being very honest here. McLaren clearly has potential but they are not where they want to be yet after Melbourne.",
-  url: "https://www.formula1.com/en/latest/article/norris-admits-mclaren-need-to-improve-the-car-quite-a-lot-as-he-reflects-on.61fBRXuMV11wPLaBulzWyb",
+   slotId: "news-xx",
+  sourceLabel: "ESPN",
+  title: "Norris warns F1 risks 'big accident' under new rules",
+  summary: "Lando Norris has warned that Formula 1 could be heading toward a serious accident because of the large speed differences created by the sport’s new overtaking system. The McLaren driver fears the closing speeds could be dangerous for both drivers and spectators if a crash occurs.",
+  kcsQuickShift: "Norris isn’t holding back here. If the speed differences really are that big we could see the FIA forced to tweak the system pretty quickly.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48141000/lando-norris-warns-big-accident-which-put-drivers-fans-risk",
   imagePath: "/img/news/news-xpb6lando.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "Mar 8, 2026"
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Mar 9, 2026"
   },
   {
- slotId: "news-06",
-  sourceLabel: "RacingNews365",
-  title: "Verstappen positive about Red Bull despite Melbourne challenges",
-  summary: "Max Verstappen struck an optimistic tone about Red Bull after the opening race weekend of the 2026 Formula 1 season. Despite the team facing several challenges in Melbourne and not matching Mercedes’ pace, the Dutch driver believes the RB package still has strong potential once the team fully understands the new regulations. Verstappen suggested Red Bull can close the gap as development continues through the early races of the season.",
-  kcsQuickShift: "Verstappen knows this season will be a fight. If Red Bull unlocks the car’s full potential the championship battle could get very interesting.",
-  url: "https://racingnews365.nl/verstappen-laat-zeer-positief-geluid-horen-over-red-bull",
-  imagePath: "/img/news/xpbimageverstappen.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "Mar 8, 2026"
-  },
-  {
-    slotId: "news-05",
-  sourceLabel: "The Race",
-  title: "Australian GP near-misses expose safety concerns with 2026 F1 cars",
-  summary: "Several close calls during the Australian Grand Prix weekend highlighted potential safety concerns with Formula 1’s new 2026 cars. Drivers struggled with the complex mix of active aerodynamics and heavy energy-management demands, which created unpredictable speed differences between cars in certain sections of the track. The incidents raised questions about whether the new rules could increase the risk of dangerous situations during close racing.",
-  kcsQuickShift: "The new 2026 cars are clearly still a work in progress. Melbourne showed how quickly big speed differences and complex systems can turn into real safety worries.",
-  url: "https://www.the-race.com/formula-1/auastralian-gp-near-misses-expose-safety-concerns-f1-2026/",
-  imagePath: "/img/news/news-xpb4.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "Mar 8, 2026"
-  },
-  {
-  slotId: "news-04",
-  sourceLabel: "Autosport",
-  title: "Analysis: Mercedes versus its F1 customer teams – how can the gap be so large?",
-  summary: "Mercedes delivered a dominant start to the 2026 Formula 1 season in Australia, raising questions about why teams using the same power unit are so far behind. Analysis suggests the difference may come from how effectively Mercedes extracts performance from its new engine, particularly in energy deployment and system integration. Customer teams are still learning how to maximise the package, while the works team benefits from deeper collaboration with its engine division.",
-  kcsQuickShift: "This is the classic works-team advantage in F1. Mercedes clearly understands the new power unit better than its customers right now and that knowledge gap could shape the early part of the season.",
-  url: "https://www.autosport.com/f1/news/analysis-mercedes-versus-its-f1-customer-teams-how-can-the-gap-be-so-large/10803498/",
-  imagePath: "/img/news/news-xpb5kimi.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "Mar 8, 2026"
-  },
-  {
-  slotId: "news-03",
-  sourceLabel: "RacingNews365",
-  title: "McLaren reveal cause of shock Oscar Piastri crash",
-  summary: "McLaren has explained the cause of Oscar Piastri’s dramatic crash before the start of the Australian Grand Prix in Melbourne. The Australian lost control of his McLaren after riding the kerb at Turn 4 while shifting gears, spinning into the barrier and damaging the car before the race had even begun. The incident meant the home favourite was unable to take the start despite qualifying fifth for the season opener.",
-  kcsQuickShift: "A brutal moment for the Melbourne crowd. Piastri had real pace all weekend but one small mistake on cold tyres ended his race before it even began.",
-  url: "https://racingnews365.com/mclaren-reveal-cause-of-shock-oscar-piastri-crash",
-  imagePath: "/img/news/news-mclaren2.jpg",
+ slotId: "news-xx",
+  sourceLabel: "ESPN",
+  title: "Lawson and Perez reignite old feud in Australian GP battle",
+  summary: "Liam Lawson and Sergio Perez renewed their rivalry during a heated midfield fight at the Australian Grand Prix. The pair nearly collided early in the race before Lawson forced his way past Perez later in the lap as tensions flared once again.",
+  kcsQuickShift: "These two clearly still have unfinished business. Even fighting down the order the racing between Lawson and Perez was intense and you can bet this rivalry is not finished yet.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48142114/liam-lawson-sergio-perez-rekindle-f1-feud-australian-grand-prix",
+  imagePath: "/img/news/news-sandl.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 8, 2026"
-},
-    {
-  slotId: "news-02",
+  dateLabel: "Mar 9, 2026"
+  },
+  {
+    slotId: "news-xx",
   sourceLabel: "Formula1.com",
-  title: "Driver of the Day: Verstappen’s comeback earns fans’ vote in Australia",
-  summary: "Max Verstappen was voted Driver of the Day after an impressive recovery drive at the Australian Grand Prix. Starting near the back of the field after qualifying troubles, the Red Bull driver carved his way through the pack to finish sixth. The Dutchman even pressured Lando Norris late in the race and secured valuable points for Red Bull in the opening round of the season.",
-  kcsQuickShift: "Classic Verstappen damage control. From the back to sixth in Melbourne is exactly the kind of drive that keeps a championship fight alive.",
-  url: "https://www.formula1.com/en/latest/article/driver-of-the-day-verstappens-comeback-gets-your-vote-for-australia.1LylQrZ0Dp7NqEPtQ2xuRI",
-  imagePath: "/img/news/news-verstappen.jpg",
+  title: "9 moments you might have missed at the Australian Grand Prix",
+  summary: "The opening race of the 2026 Formula 1 season had plenty happening beyond the main battle for victory. From early lead changes and clever pit strategies to midfield fights and mechanical drama, several moments played a key role in shaping the race in Melbourne.",
+  kcsQuickShift: "This race had a lot going on beyond the podium fight. A few strategy calls and midfield battles really helped shape how the race unfolded.",
+  url: "https://www.formula1.com/en/latest/article/9-moments-you-missed-at-the-2026-australian-grand-prix.1TVzbjI4R7D5VtB7UaGmrI",
+  imagePath: "/img/news/news-albertpark.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 8, 2026"
+  dateLabel: "Mar 9, 2026"
   },
   {
-    slotId: "news-06",
+  slotId: "news-xx",
+  sourceLabel: "Formula1.com",
+  title: "Vasseur explains Ferrari’s key VSC strategy decision in Australia",
+  summary: "Ferrari team boss Fred Vasseur has defended the team’s decision not to pit under the early Virtual Safety Car at the Australian Grand Prix. Mercedes took advantage of the moment to pit George Russell, a move that ultimately helped them control the race.",
+  kcsQuickShift: "Ferrari rolled the dice on strategy here but Vasseur says the bigger issue was pace. Mercedes simply looked a step ahead when it mattered.",
+  url: "https://www.formula1.com/en/latest/article/vasseur-explains-ferraris-vsc-strategy-call-as-they-leave-australia-in-a.3GAR747WKsrZwYF80PaT5E",
+  imagePath: "/img/news/news-ferrari3.jpg",
+  photoCredit: "Courtesy of Ferrari 1",
+  dateLabel: "Mar 9, 2026"
+  },
+  {
+  slotId: "news-xx",
   sourceLabel: "RacingNews365",
-  title: "Verstappen laat zeer positief geluid horen over Red Bull EN: Verstappen very positive about Red Bull",
-  summary: "Max Verstappen laat een positief geluid horen over Red Bull ondanks dat het team nog werk te doen heeft om sneller te worden. De Nederlander benadrukt dat het duidelijk is dat er nog verbeteringen nodig zijn, maar hij heeft vertrouwen dat het team stappen kan zetten naarmate het seizoen vordert. Volgens Verstappen blijft het belangrijkste dat het team blijft werken en zich blijft ontwikkelen richting de volgende races. EN: Max Verstappen struck a positive tone about Red Bull despite the team still needing to find more speed. The Dutch driver admitted there is still work to do but believes the team can make progress as the season develops. Verstappen said the focus now is on continuing to work hard and improving the car through the upcoming races.",
-  kcsQuickShift: "Verstappen sounds confident even if Red Bull is not the fastest right now. NL: Verstappen klinkt positief ook al is Red Bull op dit moment nog niet het snelste team.",
-  url: "https://racingnews365.nl/verstappen-laat-zeer-positief-geluid-horen-over-red-bull",
-  imagePath: "/img/news/news-verstappen.jpg",
-  photoCredit: "KC",
-  dateLabel: "Mar 8, 2026"
-  },
-  {
-  slotId: "news-08",
-  sourceLabel: "FormulaPassion",
-  title: "Vasseur loda Hamilton: importante avere due Ferrari davanti EN: Vasseur praises Hamilton, says it is important to have two Ferraris at the front",
-  summary: "Frederic Vasseur ha elogiato Lewis Hamilton dopo il Gran Premio d’Australia, sottolineando l’importanza di avere entrambe le Ferrari nelle posizioni di vertice. Il team principal ha spiegato che la squadra ha iniziato la nuova era tecnica con una base positiva, anche se Mercedes ha mostrato un vantaggio significativo nella gara di Melbourne. Vasseur ritiene che avere due piloti competitivi come Hamilton e Charles Leclerc sarà fondamentale per lo sviluppo della stagione. EN: Ferrari team principal Frederic Vasseur praised Lewis Hamilton after the Australian Grand Prix, highlighting how important it is for Ferrari to have both cars fighting near the front. While Mercedes showed stronger pace in Melbourne, Vasseur believes Ferrari has a solid starting point and that the combined strength of Hamilton and Charles Leclerc will be key as the team develops the car during the season.",
-  kcsQuickShift: "Ferrari clearly sees Hamilton as a big asset already. IT: Ferrari vede chiaramente Hamilton come una risorsa molto importante per la squadra.",
-  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/vasseur-loda-hamilton-importante-avere-due-ferrari-davanti-gp-australia",
+  title: "Hamilton stands alone on new F1 era as Verstappen confirms 24-hour race plan",
+  summary: "Lewis Hamilton appears to be one of the few drivers embracing Formula 1’s new generation cars after the Australian Grand Prix, while others have been more critical. At the same time, Max Verstappen confirmed plans to compete in the Nürburgring 24 Hours as he expands his racing ambitions beyond F1.",
+  kcsQuickShift: "Hamilton seems surprisingly positive about the new cars while several drivers are raising concerns. Meanwhile Verstappen racing a 24 hour event just shows how much the guy loves being behind the wheel.",
+  url: "https://racingnews365.com/lewis-hamilton-isolated-in-f1-as-max-verstappen-confirms-24-hour-dream-racingnews365-review",
   imagePath: "/img/news/news-ferrari.jpg",
   photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "Mar 8, 2026"
+  dateLabel: "Mar 9, 2026"
+},
+    {
+  slotId: "news-xx",
+  sourceLabel: "The Race",
+  title: "F1’s overtaking surge in 2026 comes with two big concerns",
+  summary: "The opening race of the new Formula 1 era produced a huge increase in overtaking, but analysts say the numbers may be misleading. Much of the action was driven by energy deployment battles, which could become more predictable once teams fully understand the new system.",
+  kcsQuickShift: "The early racing looked exciting but the big question is whether it lasts. Once teams master the energy game we may see fewer of those wild back and forth battles.",
+  url: "https://www.the-race.com/formula-1/f1-overtaking-2026-big-increase-two-problems/",
+  imagePath: "/img/news/news-xpb4.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Mar 9, 2026"
+  },
+  {
+    slotId: "news-xx",
+  sourceLabel: "FormulaPassion",
+  title: "La Cina cambia la gestione dell’energia e il distacco Ferrari-Mercedes EN:China could change energy management and the Ferrari-Mercedes gap",
+  summary: "I dati del circuito di Shanghai indicano una gestione dell’energia diversa rispetto a Melbourne, che potrebbe ridurre il vantaggio Mercedes. EN:Data from the Shanghai circuit suggests energy management could be different from Melbourne and may reduce Mercedes’ advantage.",
+  kcsQuickShift: "Shanghai might shake up the Ferrari Mercedes fight because the energy demands are very different from Melbourne. IT: Shanghai potrebbe cambiare l’equilibrio tra Ferrari e Mercedes grazie a una gestione dell’energia diversa rispetto a Melbourne.",
+  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-analisi-tecnica/cina-cambia-gestione-energia-distacco-ferrari-mercedes",
+  imagePath: "/img/news/news-chinagp.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 9, 2026"
+  },
+  {
+   slotId: "news-xx",
+  sourceLabel: "GrandePrêmio",
+  title: "Confira declarações dos pilotos após GP da Austrália da F1 2026 EN:Drivers react after the Australian Grand Prix",
+  summary: "George Russell venceu a corrida em Melbourne e liderou o 1-2 da Mercedes com Andrea Kimi Antonelli, enquanto vários pilotos comentaram o início da nova era da Fórmula 1. EN:George Russell led a Mercedes 1-2 in Melbourne as drivers shared mixed reactions to the opening race of the 2026 Formula 1 season.",
+  kcsQuickShift: "Drivers are clearly split after the first race of the new era with some happy about the racing and others already questioning the rules. PT: Os pilotos parecem divididos após a primeira corrida da nova era com alguns satisfeitos com a corrida e outros já questionando as regras.",
+  url: "https://www.grandepremio.com.br/f1/noticias/confira-declaracoes-pilotos-gp-da-australia-f1-2026/",
+  imagePath: "/img/news/xpbimages1.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Mar 9, 2026"
 
 },
 ];

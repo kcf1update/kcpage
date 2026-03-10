@@ -225,8 +225,8 @@ export default function KCpage() {
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
           <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
   <span className="font-bold text-red-500">
-    🏁 AUSTRALIAN GP WEEKEND
-  </span>
+    LATEST F1 NEWS UPDATES                
+     </span>
   <br />
   <span className="text-white font-medium">
     Race Centre Now Active

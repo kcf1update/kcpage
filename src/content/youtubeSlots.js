@@ -11,28 +11,28 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Drivers React After The Race | 2026 Australian Grand Prix",
-    youtubeInput: "https://youtu.be/F3ZGnYQGnFI",
+    title: "Oscar Piastri’s HEARTBREAKING Australian GP CRASH!",
+    youtubeInput: "https://youtu.be/ejQlxmf46sk",
     description: "Piastri...you have to feel sorry for him",
-    forceExternal:true,
+    
     
   },
 
  
     {
   slotId: "slot2",
-  title: "Rookie Arvid Lindblad Scores Points On Debut | 2026 Australian Grand Prix",
-  youtubeInput: "https://youtu.be/sUtOWS7yM-Y",
-  description: "We have some good racing comming up this year.",
+  title: "Radio Rewind | 2026 Australian Grand Prix",
+  youtubeInput: "https://youtu.be/gYbhMrqpawI",
+  description: "great audio",
   forceExternal:true,
 },
   
 
   {
     slotId: "slot3",
-    title: "Race Highlights | 2026 Australian Grand Prix",
+    title: "F1's plan to change troubled 2026 rules",
     youtubeInput: "https://youtu.be/lL_d84cN1UY",
-    description: "I think it was a great race, looking forwad to the year ",
+    description: "Do you think if the media stopped talking about it we would just sit back and enjoy the racing?  ",
     forceExternal:true,
   }
 

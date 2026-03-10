@@ -17,8 +17,9 @@ function extractLapMs(result) {
   if (!s || s === "-" || s === "—") return Number.POSITIVE_INFINITY;
 
   // treat these as "no valid lap time"
-  if (s.includes("did not run") || s.includes("dns") || s.includes("dnf") || s.includes("dsq"))
+  if (s.includes("did not run") || s.includes("dns") || s.includes("dnf") || s.includes("dsq")) {
     return Number.POSITIVE_INFINITY;
+  }
 
   // formats like "1m22.456s"
   const m = s.match(/(\d+)\s*m\s*(\d+(?:\.\d+)?)\s*s/);
@@ -202,6 +203,7 @@ function StatChip({ label, value, tone = "sky" }) {
     green: "border-emerald-400/40 bg-emerald-500/10 text-emerald-100",
     red: "border-red-400/40 bg-red-500/10 text-red-100",
   };
+
   return (
     <div
       className={`flex min-w-0 items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
@@ -254,6 +256,7 @@ function TeamDotChip({ label, teams = [], tone = "green" }) {
 
 function PodiumTiles({ podiumIds }) {
   const medals = ["🥇", "🥈", "🥉"];
+
   return (
     <div className="mb-3 grid gap-2 sm:grid-cols-3">
       {podiumIds.map((id, i) => (
@@ -320,9 +323,7 @@ function computeQualifyingSummary(session) {
     return getBestQualifyingMs(a) - getBestQualifyingMs(b);
   });
 
-  const q3Rows = rows.filter(
-    (row) => getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY
-  );
+  const q3Rows = rows.filter((row) => getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY);
 
   const pole = q3Rows[0] || null;
   const second = q3Rows[1] || null;
@@ -338,8 +339,8 @@ function computeQualifyingSummary(session) {
       ? [poleTeam]
       : [poleTeam, secondTeam]
     : poleTeam
-    ? [poleTeam]
-    : [];
+      ? [poleTeam]
+      : [];
 
   return {
     poleText: pole
@@ -485,22 +486,22 @@ function QualifyingTable({ session }) {
   });
 
   return (
-    <div className="max-w-full">
-      <div className="mb-2 flex items-center justify-end">
-        <span className="select-none text-[10px] uppercase tracking-[0.18em] text-gray-400">
-          <span className="mr-1 inline-block">↔</span> Swipe
+    <div className="min-w-0 max-w-full text-xs sm:text-sm">
+      <div className="mb-2 flex items-center justify-end sm:hidden">
+        <span className="select-none text-[9px] uppercase tracking-[0.14em] text-gray-500">
+          ↔ swipe
         </span>
       </div>
 
-      <div className="overflow-x-auto overflow-y-hidden pr-0 [scrollbar-width:thin]">
-        <table className="min-w-[720px] border-separate border-spacing-y-1 text-xs sm:text-sm">
+      <div className="max-w-full overflow-x-auto overflow-y-hidden [scrollbar-width:thin]">
+        <table className="min-w-[680px] border-separate border-spacing-y-1">
           <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
             <tr>
-              <th className="w-[60px] px-1 py-1 text-left sm:px-2">Pos</th>
-              <th className="w-[240px] px-1 py-1 text-left sm:px-2">Driver</th>
-              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q1</th>
-              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q2</th>
-              <th className="w-[140px] px-1 py-1 text-left sm:px-2">Q3</th>
+              <th className="w-[52px] px-1 py-1 text-left sm:px-2">Pos</th>
+              <th className="w-[220px] px-1 py-1 text-left sm:px-2">Driver</th>
+              <th className="w-[136px] px-1 py-1 text-left sm:px-2">Q1</th>
+              <th className="w-[136px] px-1 py-1 text-left sm:px-2">Q2</th>
+              <th className="w-[136px] px-1 py-1 text-left sm:px-2">Q3</th>
             </tr>
           </thead>
 
@@ -515,29 +516,31 @@ function QualifyingTable({ session }) {
                     isPole ? "rounded-2xl bg-white/5 ring-1 ring-emerald-400/30" : ""
                   }`}
                 >
-                  <td className="whitespace-nowrap px-1 py-1 text-gray-300 sm:px-2">{i + 1}</td>
+                  <td className="whitespace-nowrap px-1 py-1 text-gray-300 sm:px-2">
+                    {i + 1}
+                  </td>
 
                   <td className="px-1 py-1 sm:px-2">
-                    <div className="min-w-[220px]">
+                    <div className="min-w-[200px]">
                       <DriverPill driverId={row.id} />
                     </div>
                   </td>
 
                   <td className="whitespace-nowrap px-1 py-1 sm:px-2">
-                    <div className="rounded-full border border-white/10 bg-black/50 px-3 py-1">
+                    <div className="rounded-full border border-white/10 bg-black/50 px-2 py-1">
                       {displayQualTime(row.q1)}
                     </div>
                   </td>
 
                   <td className="whitespace-nowrap px-1 py-1 sm:px-2">
-                    <div className="rounded-full border border-white/10 bg-black/50 px-3 py-1">
+                    <div className="rounded-full border border-white/10 bg-black/50 px-2 py-1">
                       {displayQualTime(row.q2)}
                     </div>
                   </td>
 
                   <td className="whitespace-nowrap px-1 py-1 sm:px-2">
                     <div
-                      className={`rounded-full border px-3 py-1 ${
+                      className={`rounded-full border px-2 py-1 ${
                         isPole
                           ? "border-emerald-400/30 bg-emerald-500/10 text-emerald-100"
                           : "border-white/10 bg-black/50"
@@ -592,6 +595,7 @@ function RaceTable({ session }) {
             <th className="w-[16%] px-1 py-1 text-left sm:px-2">Pts</th>
           </tr>
         </thead>
+
         <tbody>
           {rows.map((row) => (
             <tr key={row.id} className="align-middle">
@@ -658,7 +662,7 @@ function SessionCard({ session }) {
   }
 
   return (
-    <article className="max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
+    <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
       <header className="mb-3 flex items-center justify-between gap-2">
         <h2 className="text-lg font-semibold">
           <span className="text-sky-200">{session.label || "Session"}</span>
@@ -678,7 +682,7 @@ function RaceCard({ session }) {
   const podiumIds = sum.podiumIds || [];
 
   return (
-    <article className="max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
+    <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
       <header className="mb-3 flex items-center justify-between gap-2">
         <h2 className="text-lg font-semibold">
           <span className="text-sky-200">{session.label || "Race"}</span>
@@ -810,7 +814,7 @@ export default function NextRacePage() {
                 Quick notes for the race weekend.
               </p>
 
-              <div className="mt-2 h-auto min-h-[72px] w-full whitespace-pre-line rounded-2xl border border-black/10 bg-white px-3 py-2 text-xs text-gray-900 sm:mt-3 sm:h-24 sm:text-sm overflow-auto">
+              <div className="mt-2 h-auto min-h-[72px] w-full overflow-auto whitespace-pre-line rounded-2xl border border-black/10 bg-white px-3 py-2 text-xs text-gray-900 sm:mt-3 sm:h-24 sm:text-sm">
                 {nextRaceContent.weather || "—"}
               </div>
             </div>
@@ -819,8 +823,8 @@ export default function NextRacePage() {
 
             <div className="flex flex-1 flex-col justify-between bg-sky-900 p-3 sm:p-4">
               <div>
-                <div className="flex items-center justify-center h-20 sm:h-32">
-                  <div className="text-2xl font-bold uppercase tracking-wide text-white text-center sm:text-4xl">
+                <div className="flex h-20 items-center justify-center sm:h-32">
+                  <div className="text-center text-2xl font-bold uppercase tracking-wide text-white sm:text-4xl">
                     TRACK GUIDE
                   </div>
                 </div>
@@ -853,10 +857,10 @@ export default function NextRacePage() {
         </section>
 
         {/* Results */}
-        <section className="grid gap-4 lg:grid-cols-2 lg:gap-6">
+        <section className="grid min-w-0 gap-4 lg:grid-cols-2 lg:gap-6">
           {raceHasResults ? (
             <>
-              <div className="order-1 lg:order-2 lg:sticky lg:top-4 self-start">
+              <div className="order-1 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
                 {raceSession ? (
                   <RaceCard session={raceSession} />
                 ) : (
@@ -870,7 +874,7 @@ export default function NextRacePage() {
                 )}
               </div>
 
-              <div className="order-2 lg:order-1 space-y-6">
+              <div className="order-2 min-w-0 space-y-6 lg:order-1">
                 {sessionResults.map((s) => (
                   <SessionCard key={s.id || s.label} session={s} />
                 ))}
@@ -878,13 +882,13 @@ export default function NextRacePage() {
             </>
           ) : (
             <>
-              <div className="order-1 lg:order-1 space-y-6">
+              <div className="order-1 min-w-0 space-y-6 lg:order-1">
                 {sessionResults.map((s) => (
                   <SessionCard key={s.id || s.label} session={s} />
                 ))}
               </div>
 
-              <div className="order-2 lg:order-2 lg:sticky lg:top-4 self-start">
+              <div className="order-2 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
                 {raceSession ? (
                   <RaceCard session={raceSession} />
                 ) : (
