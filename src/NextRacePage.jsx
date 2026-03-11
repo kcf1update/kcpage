@@ -1,5 +1,5 @@
-// src/NextRacePage.jsx
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
@@ -142,9 +142,17 @@ function hasRaceResults(session) {
 function hasSessionResults(session) {
   if (!session) return false;
 
-  if (session.type === "practice") return hasPracticeResults(session);
-  if (session.type === "qualifying") return hasQualifyingResults(session);
-  if (session.type === "race") return hasRaceResults(session);
+  if (session.type === "practice" || session.type === "sprint_shootout") {
+    return hasPracticeResults(session);
+  }
+
+  if (session.type === "qualifying") {
+    return hasQualifyingResults(session);
+  }
+
+  if (session.type === "race" || session.type === "sprint_race") {
+    return hasRaceResults(session);
+  }
 
   return false;
 }
@@ -152,13 +160,16 @@ function hasSessionResults(session) {
 function getSessionWeekendRank(session) {
   const type = session?.type || "";
   const id = session?.id || "";
-  const label = String(session?.label || "").toLowerCase();
 
   if (type === "race") return 5;
   if (type === "qualifying") return 4;
-  if (id === "p3" || label.includes("practice 3") || label.includes("practise 3")) return 3;
-  if (id === "p2" || label.includes("practice 2") || label.includes("practise 2")) return 2;
-  if (id === "p1" || label.includes("practice 1") || label.includes("practise 1")) return 1;
+  if (type === "sprint_race") return 3;
+  if (type === "sprint_shootout") return 2;
+  if (type === "practice" && id === "p1") return 1;
+
+  if (id === "p3") return 3;
+  if (id === "p2") return 2;
+  if (id === "p1") return 1;
 
   return 0;
 }
@@ -175,7 +186,6 @@ function DriverPill({ driverId }) {
     );
   }
 
-  // flag images live in /public/flags/{countryCode}.png
   const flagSrc = d.countryCode ? `/flags/${String(d.countryCode).toLowerCase()}.png` : "";
 
   return (
@@ -629,9 +639,13 @@ function RaceTable({ session }) {
 // ---------- card renderer ----------
 function SessionCard({ session }) {
   const type = session.type || "practice";
+  const isPracticeLike = type === "practice" || type === "sprint_shootout";
+  const isQualifyingLike = type === "qualifying";
+  const isRaceLike = type === "sprint_race";
+
   let headerStrip = null;
 
-  if (type === "practice") {
+  if (isPracticeLike) {
     const sum = computeSessionLapSummary(session);
     headerStrip = (
       <div className="mb-3 grid gap-2 sm:grid-cols-3">
@@ -639,14 +653,18 @@ function SessionCard({ session }) {
         <StatChip label="Most Laps" value={sum.mostLapsText} tone="green" />
         <StatChip
           label="Note"
-          value={session.extraNote || session.trackNote || "—"}
+          value={
+            session.extraNote ||
+            session.trackNote ||
+            (type === "sprint_shootout" ? "Sprint grid decided here" : "—")
+          }
           tone="amber"
         />
       </div>
     );
   }
 
-  if (type === "qualifying") {
+  if (isQualifyingLike) {
     const sum = computeQualifyingSummary(session);
     headerStrip = (
       <div className="mb-3 grid gap-2 sm:grid-cols-3">
@@ -655,6 +673,21 @@ function SessionCard({ session }) {
         <StatChip
           label="Note"
           value={session.extraNote || session.trackNote || "Fastest Q3 time takes pole"}
+          tone="amber"
+        />
+      </div>
+    );
+  }
+
+  if (isRaceLike) {
+    const sum = computeRaceSummary(session);
+    headerStrip = (
+      <div className="mb-3 grid gap-2 sm:grid-cols-3">
+        <StatChip label="Winner" value={sum.winnerText} tone="sky" />
+        <StatChip label="DNFs" value={sum.dnfText} tone="red" />
+        <StatChip
+          label="Note"
+          value={session.extraNote || session.trackNote || "Sprint points awarded"}
           tone="amber"
         />
       </div>
@@ -671,8 +704,9 @@ function SessionCard({ session }) {
 
       {headerStrip}
 
-      {type === "practice" ? <LapTimeTable session={session} /> : null}
-      {type === "qualifying" ? <QualifyingTable session={session} /> : null}
+      {isPracticeLike ? <LapTimeTable session={session} /> : null}
+      {isQualifyingLike ? <QualifyingTable session={session} /> : null}
+      {isRaceLike ? <RaceTable session={session} /> : null}
     </article>
   );
 }
@@ -709,9 +743,10 @@ export default function NextRacePage() {
     const aFilled = hasSessionResults(a) ? 1 : 0;
     const bFilled = hasSessionResults(b) ? 1 : 0;
 
+    
     if (aFilled !== bFilled) return bFilled - aFilled;
 
-    return getSessionWeekendRank(b) - getSessionWeekendRank(a);
+    return getSessionWeekendRank(a) - getSessionWeekendRank(b);
   });
 
   const raceSession = orderedSessions.find((s) => s.type === "race") || null;
@@ -830,10 +865,9 @@ export default function NextRacePage() {
                 </div>
               </div>
 
-              {/* Track Guide links */}
               <div className="mt-3 grid grid-cols-2 gap-2 sm:mt-4 sm:flex sm:flex-wrap">
                 <a
-                  href="/img/Tracks/Albertpark.jpg"
+                  href="/img/Tracks/Chinese.jpg"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
@@ -843,7 +877,7 @@ export default function NextRacePage() {
                 </a>
 
                 <a
-                  href="/img/Tracks/Albertpark2.jpg"
+                  href="/img/Tracks/chinese2.jpg"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
@@ -851,6 +885,13 @@ export default function NextRacePage() {
                 >
                   Tech Guide (2/2)
                 </a>
+
+                <Link
+                  to="/previous-results"
+                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+                >
+                  Previous Results
+                </Link>
               </div>
             </div>
           </article>

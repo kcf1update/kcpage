@@ -11,6 +11,7 @@ import CommentsPage from "./CommentsPage";
 import SiteFooter from "./components/SiteFooter";
 import AboutPage from "./AboutPage";
 import PressPage from "./PressPage";
+import PreviousResultsPage from "./PreviousResultsPage";
 export default function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="*" element={<MainPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/press" element={<PressPage />} />
+            <Route path="/previous-results" element={<PreviousResultsPage />} />
 
           </Routes>
         </div>

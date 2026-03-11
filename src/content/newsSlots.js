@@ -10,13 +10,15 @@ export const newsSlots = [
 
   slotId: "news-xx",
   sourceLabel: "ESPN",
-  title: "Russell wins chaotic Australian GP as Mercedes secure 1-2 with Antonelli",
-  summary: "George Russell kicked off the 2026 Formula 1 season with victory in Melbourne, leading teammate Kimi Antonelli to a dominant Mercedes 1-2 finish. Charles Leclerc completed the podium for Ferrari after an early battle for the lead with Russell.",
-  kcsQuickShift: "What a start for Mercedes. Russell looked completely in control and Antonelli already feels like a real threat at the front this season.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48098543/australian-grand-prix-george-russell-win-kimi-antonelli-mercedes-1-2-charles-leclerc",
-  imagePath: "/img/news/news-xpb3.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Mar 9, 2026"
+  title: "Charles Leclerc says F1’s new rules make strategy more important than bravery",
+  summary:
+    "Charles Leclerc says Formula 1’s 2026 rules are changing overtaking, with drivers now needing to think several moves ahead because using boost can leave them exposed later in the lap. He pointed to the season opener in Australia, where overtakes were high, but said racecraft now leans more toward energy management and timing than simply braking later than the car ahead.", // :contentReference[oaicite:0]{index=0}
+  kcsQuickShift:
+    "Leclerc’s basically saying 2026 overtaking is turning into a chess match. It’s not just about who sends it latest anymore — it’s about when you use your energy and whether you can avoid getting hit straight back.", // :contentReference[oaicite:1]{index=1}
+  url: "https://www.espn.co.uk/f1/story/_/id/48161551/charles-leclerc-new-f1-rules-ferrari-strategy-bravery-grand-prix",
+  imagePath: "/img/news/news-ferrari3.jpg",
+  imageSource: "XPB IMAGE",
+  dateLabel: "Mar 10, 2026"
  },
   {
    slotId: "news-xx",
