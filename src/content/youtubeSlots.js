@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Oscar Piastri’s HEARTBREAKING Australian GP CRASH!",
-    youtubeInput: "https://youtu.be/ejQlxmf46sk",
-    description: "Piastri...you have to feel sorry for him",
+    title: "REACTION to a hectic first race of 2026 | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/CbaEek32m6w",
+    description: "Great discussion.",
     
     
   },
