@@ -48,7 +48,7 @@ export const newsSlots = [
   kcsQuickShift: "Ferrari looks ready to roll out a bold upgrade in China while Verstappen says talks with the FIA are already happening about the new rules. That tells you teams and drivers are still figuring out these 2026 cars.",
   url: "https://racingnews365.com/lewis-hamilton-confirms-crazy-ferrari-upgrade-as-max-verstappen-reveals-fia-talks",
   imagePath: "/img/news/news-ferrari.jpg",
-  photoCredit: "KC",
+  photoCredit: "Courtesy fo Ferrar F1",
   dateLabel: "Mar 12, 2026"
   },
   {
@@ -81,7 +81,7 @@ export const newsSlots = [
   kcsQuickShift: "This isn’t really about Toto Wolff buying into Alpine. It’s more about Mercedes looking at a strategic foothold in another team as the 2026 era begins.",
   url: "https://www.motorsport.com/f1/news/why-its-mercedes-not-toto-wolff-who-wants-to-acquire-alpine-f1-shares/10804377/",
   imagePath: "/img/news/news-gaslyag.jpg",
-  photoCredit: "XPB IMAGES",
+  photoCredit: "Courtesy of Alpine F1",
   dateLabel: "Mar 12, 2026"
   },
   {
