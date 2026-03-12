@@ -228,9 +228,10 @@ export default function KCpage() {
       LATEST F1 NEWS UPDATES
     </span>
     <br />
-    <span className="text-white font-medium">
-      Race Centre Now Active
-    </span>
+   <span className="text-white font-medium flex items-center justify-center gap-2">
+  ● CHINESE GRAND PRIX RACE CENTRE LIVE
+  <img src="/flags/cn.png" alt="China flag" className="h-4 w-auto" />
+</span>
   </p>
 
   <img
