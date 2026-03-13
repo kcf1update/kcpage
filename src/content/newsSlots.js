@@ -30,15 +30,16 @@ export const newsSlots = [
     dateLabel: "Mar 13, 2026"
   },
   {
-   slotId: "news-xx",
-  sourceLabel: "ESPN",
-  title: "Chinese Grand Prix practice: George Russell continues fine start to season by going fastest for Mercedes",
-  summary: "George Russell set the fastest time in the Chinese Grand Prix’s only practice session as Mercedes continued its strong early-season form. The Briton topped the timesheets ahead of teammate Kimi Antonelli, giving the team a one two result in the session and reinforcing the pace Mercedes showed in the opening race of the season.",
-  kcsQuickShift: "Mercedes looks seriously quick again in Shanghai. If Russell keeps this momentum going we could be looking at another big weekend for the team.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48173242/chinese-grand-prix-practice-george-russell-continues-fine-start-season-going-fastest-mercedes",
-  imagePath: "/img/news/news-xpb3.jpg",
+   slotId: "news-09",
+  sourceLabel: "PlanetF1",
+  title: "Kimi Antonelli cleared by FIA after Chinese Grand Prix sprint qualifying investigation",
+  summary: "Mercedes rookie Kimi Antonelli has avoided a penalty following an FIA investigation into a possible impeding incident involving Lando Norris during sprint qualifying in Shanghai. Norris initially reported being blocked, but later explained to the stewards that he was only on a preparation lap rather than a full push lap, leading officials to take no further action against the young Italian driver. :contentReference[oaicite:0]{index=0}",
+  kcsQuickShift: "That is the kind of moment where honesty from another driver can completely change the outcome of a steward decision.",
+  url: "https://www.planetf1.com/news/kimi-antonelli-outcome-confirmed-fia-chinese-gp-sprint-qualifying",
+  imagePath: "/img/news/news-xpb5kimi.jpg",
   photoCredit: "XPB IMAGE",
-  dateLabel: "Mar 13, 2026"
+  dateLabel: "Mar 13, 2026",
+
   },
   {
     slotId: "news-xx",

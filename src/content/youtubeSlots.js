@@ -3,9 +3,9 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/cAJpbxposa0?feature=share",
-    description: "KC's Quickshift, Formula 1's 2026 engine rules are already creating debate across the paddock.",
-    ctaUrl: "https://www.youtube.com/shorts/cAJpbxposa0?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/8OeoBVmTFiw?feature=share",
+    description: "KC's QUICKSHIFT : Toto Wolff Linked to Alpine F1 Stake | Is This Blocking Christian Horner’s Return?",
+    ctaUrl: "https://www.youtube.com/shorts/8OeoBVmTFiw?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
