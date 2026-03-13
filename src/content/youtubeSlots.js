@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Weekend Warm-Up | 2026 Chinese Grand Prix",
-    youtubeInput: "https://youtu.be/di-w1ZxUuH4",
-    description: "New race weekend!!",
+    title: "Drivers React After Sprint Qualifying | 2026 Chinese Grand Prix",
+    youtubeInput: "https://youtu.be/lfXrWl42VHg",
+    description: "Nice to see the positivity from Lewis!",
     forceExternal:true,
     
   },
@@ -21,19 +21,19 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Drivers Look Ahead To Race Weekend | 2026 Chinese Grand Prix",
-  youtubeInput: "https://youtu.be/EJUYQO7RiTo",
-  description: "sounds like another difficult weekend for Aston Martin",
-  forceExternal:true,
+  title: "Adrian Newey Made A Schoolboy Error! | Peter Windsor Reacts",
+  youtubeInput: "https://youtu.be/2mKzMqgJcQQ",
+  description: "I don't think Peter Windsor is incorrect. Adrian Newey should have known? should have prepared better?",
+  
 },
   
 
   {
     slotId: "slot3",
-    title: "F1's plan to change troubled 2026 rules",
-    youtubeInput: "https://youtu.be/lL_d84cN1UY",
-    description: "Do you think if the media stopped talking about it we would just sit back and enjoy the racing?  ",
-    forceExternal:true,
+    title: "Is FORMULA 1 turning into MARIO KART?",
+    youtubeInput: "https://youtu.be/WZd3XfRUP2c",
+    description: "A lot of talk about Mario Cart, starting to get tired of ot. Just race what you have.",
+    
   }
 
 ];

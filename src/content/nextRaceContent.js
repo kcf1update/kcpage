@@ -161,53 +161,53 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-NOR,,
-VER,,
-RUS,,
-PIA,,
-LEC,,
-HAM,,
-ALB,,
-SAI,,
-ALO,,
-STR,,
-OCO,,
-BEA,,
-HUL,,
-BOR,,
-GAS,,
-COL,,
-PER,,
-BOT,,
-LAW,,
-LIN,,
-HAD,,
-ANT,,
+NOR,1m33.296s,28
+VER,1m34.541s,24
+RUS,1m32.741s,28
+PIA,1m33.472s,27
+LEC,1m33.599s,27
+HAM,1m34.129s,25
+ALB,1m35.480s,30
+SAI,1m35.679s,17
+ALO,1m35.856s,18
+STR,1m37.224s,20
+OCO,1m34.877s,24
+BEA,1m34.426s,27
+HUL,1m34.639s,26
+BOR,1m34.828s,25
+GAS,1m34.676s,27
+COL,1m34.947s,25
+PER,1m39.200s,13
+BOT,1m36.057s,24
+LAW,1m34.773s,28
+LIN,1m37.896s,6
+HAD,1m34.856s,25
+ANT,1m32.861s,29
 `;
 
 const PASTE_P2 = `
-NOR,,
-VER,,
-RUS,,
-PIA,,
-LEC,,
-HAM,,
-ALB,,
-SAI,,
-ALO,,
-STR,,
-OCO,,
-BEA,,
-HUL,,
-BOR,,
-GAS,,
-COL,,
-PER,,
-BOT,,
-LAW,,
-LIN,,
-HAD,,
-ANT,,
+NOR,1m33.783s,1m33.086s,1m32.141s
+VER,1m34.170s,	1m33.564s,	1m33.254s,,
+RUS,1m33.030s,1m32.241s,1m31.520s
+PIA,1m33.813s,	1m33.038s,	1m32.224s
+LEC,1m33.194s,	1m32.602s,	1m32.528s
+HAM,1m33.148s,1m33.042s,1m32.161s
+ALB,1m35.305s,,
+SAI,1m34.761s,,	 
+ALO,1m35.581s,,
+STR,1m36.151s,,
+OCO,1m34.087s,	1m33.639s,
+BEA,1m34.280s,	1m33.501s,	1m33.409s
+HUL,1m33.997s,	1m33.635s,
+BOR,1m34.291s,	1m33.774s,	 
+GAS,1m33.970s,	1m33.405s,	1m32.888s
+COL,1m34.592s,	1m34.327s,	
+PER,No time Set 
+BOT,1m37.378s,,
+LAW,1m34.110s,	1m33.714s,
+LIN,1m34.495s,	1m34.048s,
+HAD,1m34.447s,	1m33.620s,	1m33.723s
+ANT,1m33.455s,1m32.291s	,1m31.809s
 `;
 
 const PASTE_P3 = `
@@ -305,20 +305,20 @@ Sun: —⛅ Sunny Cloudy 23°`,
     id: "p1",
     type: "practice",
     label: "Practice 1",
-    time: "12:30 am AST",
+    time: "Complete Results below",
     trackNote: "",
-    extraNote: "",
+    extraNote: "Dry Track",
     results: parseLapPaste(PASTE_P1),
   },
   {
-    id: "p2",
-    type: "sprint_shootout",
-    label: "Sprint Qualifying",
-    time: "4:30 am AST",
-    trackNote: "",
-    extraNote: "",
-    results: parseLapPaste(PASTE_P2),
-  },
+  id: "p2",
+  type: "sprint_shootout",
+  label: "Sprint Qualifying",
+  time: "Complete results below",
+  trackNote: "",
+  extraNote: "Dry Track",
+  results: parseQualifyingPaste(PASTE_P2),
+},
   {
   id: "p3",
   type: "sprint_race",

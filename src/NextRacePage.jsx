@@ -142,13 +142,13 @@ function hasRaceResults(session) {
 function hasSessionResults(session) {
   if (!session) return false;
 
-  if (session.type === "practice" || session.type === "sprint_shootout") {
-    return hasPracticeResults(session);
-  }
+ if (session.type === "practice") {
+  return hasPracticeResults(session);
+}
 
-  if (session.type === "qualifying") {
-    return hasQualifyingResults(session);
-  }
+if (session.type === "qualifying" || session.type === "sprint_shootout") {
+  return hasQualifyingResults(session);
+}
 
   if (session.type === "race" || session.type === "sprint_race") {
     return hasRaceResults(session);
@@ -639,9 +639,9 @@ function RaceTable({ session }) {
 // ---------- card renderer ----------
 function SessionCard({ session }) {
   const type = session.type || "practice";
-  const isPracticeLike = type === "practice" || type === "sprint_shootout";
-  const isQualifyingLike = type === "qualifying";
-  const isRaceLike = type === "sprint_race";
+  const isPracticeLike = type === "practice";
+const isQualifyingLike = type === "qualifying" || type === "sprint_shootout";
+const isRaceLike = type === "sprint_race";
 
   let headerStrip = null;
 
@@ -652,14 +652,14 @@ function SessionCard({ session }) {
         <StatChip label="Fastest" value={sum.fastestText} tone="sky" />
         <StatChip label="Most Laps" value={sum.mostLapsText} tone="green" />
         <StatChip
-          label="Note"
-          value={
-            session.extraNote ||
-            session.trackNote ||
-            (type === "sprint_shootout" ? "Sprint grid decided here" : "—")
-          }
-          tone="amber"
-        />
+  label="Note"
+  value={
+    session.extraNote ||
+    session.trackNote ||
+    (type === "sprint_shootout" ? "Sprint grid decided here" : "Fastest Q3 time takes pole")
+  }
+  tone="amber"
+/>
       </div>
     );
   }
