@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Drivers React After Sprint Qualifying | 2026 Chinese Grand Prix",
-    youtubeInput: "https://youtu.be/lfXrWl42VHg",
-    description: "Nice to see the positivity from Lewis!",
+    title: "Drivers React To Qualifying | 2026 Chinese Grand Prix",
+    youtubeInput: "https://youtu.be/bHd62679V8s",
+    description: "congratulation to Kimi Antonelli",
     forceExternal:true,
     
   },
@@ -21,18 +21,18 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Adrian Newey Made A Schoolboy Error! | Peter Windsor Reacts",
-  youtubeInput: "https://youtu.be/2mKzMqgJcQQ",
-  description: "I don't think Peter Windsor is incorrect. Adrian Newey should have known? should have prepared better?",
+  title: "What we learned from first sprint qualifying of F1 2026",
+  youtubeInput: "https://youtu.be/g-4S0YucqW8",
+  description: "good discussion",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Is FORMULA 1 turning into MARIO KART?",
-    youtubeInput: "https://youtu.be/WZd3XfRUP2c",
-    description: "A lot of talk about Mario Cart, starting to get tired of ot. Just race what you have.",
+    title: "Reaction as F1 set to cancel Bahrain and Saudi Arabian GPs due to war in Middle East",
+    youtubeInput: "https://youtu.be/bdoUluPlB7Q",
+    description: "nothing official that I have seen but not surprised",
     
   }
 
