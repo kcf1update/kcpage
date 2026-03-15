@@ -261,28 +261,28 @@ ANT,1m33.305s,	1m32.443s,	1m32.064s
 `;
 
 const PASTE_RACE = `
-NOR,,,,
-VER,,,,
-RUS,,,,
-PIA,,,,
-LEC,,,,
-HAM,,,,
-ALB,,,,
-SAI,,,,
-ALO,,,,
-STR,,,,
-OCO,,,,
-BEA,,,,
-HUL,,,,
-BOR,,,,
-GAS,,,,
-COL,,,,
-PER,,,,
-BOT,,,,
-LAW,,,,
-LIN,,,,
-HAD,,,,
-ANT,,,,
+NOR,DNS,DNS,6
+VER,DNF,DNF,8
+RUS,2,+5.515s,2,18
+PIA,DNS,DNS,5
+LEC,4,+28.894s,4,12
+HAM,3,+25.267s,3,15
+ALB,DNS,DNS,18
+SAI,9,+1 Lap,17,2
+ALO,DNF,DNF,19
+STR,DNF,DNF,21
+OCO,14,+1 Lap,13
+BEA,5,+57.268s,10,10
+HUL,11,+1 Lap,11
+BOR,DNS,DNS,16
+GAS,6,+59.647s,7,8
+COL,10,+1 Lap,12,1
+PER,15,+1 Lap,22
+BOT,13,+1 Lap,20
+LAW,7,+1m20.588s,14,6
+LIN,12,+1 Lap,15
+HAD,8,+1m27.247s,9,4
+ANT,1,56 Laps,1,25
 `;
 
 // =====================================================
@@ -341,9 +341,9 @@ Sun: —⛅ Sunny Cloudy 23°`,
     id: "race",
     type: "race",
     label: "Race",
-    time: "4:00 am AST",
+    time: "Complete results below",
     trackNote: "",
-    extraNote: "",
+    extraNote: "Dry Track",
     results: parseRacePaste(PASTE_RACE),
   },
 ]

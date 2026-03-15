@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Drivers React To Qualifying | 2026 Chinese Grand Prix",
-    youtubeInput: "https://youtu.be/bHd62679V8s",
-    description: "congratulation to Kimi Antonelli",
+    title: "Drivers React After The Race | 2026 Chinese Grand Prix",
+    youtubeInput: "https://youtu.be/SsJ45omwkaY",
+    description: "Watch out George Russell",
     forceExternal:true,
     
   },
@@ -21,18 +21,18 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "What we learned from first sprint qualifying of F1 2026",
-  youtubeInput: "https://youtu.be/g-4S0YucqW8",
-  description: "good discussion",
+  title: "Middle East F1 races OFFICIALLY CANCELLED | What happens now?",
+  youtubeInput: "https://youtu.be/bqLRr4R08pU",
+  description: "Makes for a long April for F1 fans, but saftey comes first.",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Reaction as F1 set to cancel Bahrain and Saudi Arabian GPs due to war in Middle East",
-    youtubeInput: "https://youtu.be/bdoUluPlB7Q",
-    description: "nothing official that I have seen but not surprised",
+    title: "Ted and Bernie EXPLAIN Ferrari's Macarena wing 🔎",
+    youtubeInput: "https://youtu.be/SJ-BE2Qy9xk",
+    description: "Awesome covergae",
     
   }
 

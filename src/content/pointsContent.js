@@ -49,7 +49,7 @@ export const pointsDrivers = [
 
   // Racing Bulls
   { id: "LAW", name: "Liam Lawson",     code: "LAW", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇳🇿", points: 2 },
-  { id: "LNB", name: "Arvid Lindblad",  code: "LNB", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇬🇧", points: 4 },
+  { id: "LIN", name: "Arvid Lindblad",  code: "LIN", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇬🇧", points: 4 },
 
   // Williams
   { id: "ALB", name: "Alexander Albon", code: "ALB", teamId: "WIL", teamName: "Williams", countryFlag: "🇹🇭", points: 0 },
