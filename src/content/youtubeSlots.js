@@ -11,8 +11,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Drivers React After The Race | 2026 Chinese Grand Prix",
-    youtubeInput: "https://youtu.be/SsJ45omwkaY",
+    title: "Kimi Antonelli’s EMOTIONAL first F1 win | 2026 Chinese Grand Prix",
+    youtubeInput: "https://youtu.be/5C3IydP9cok",
     description: "Watch out George Russell",
     forceExternal:true,
     
@@ -21,19 +21,19 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Middle East F1 races OFFICIALLY CANCELLED | What happens now?",
-  youtubeInput: "https://youtu.be/bqLRr4R08pU",
-  description: "Makes for a long April for F1 fans, but saftey comes first.",
+  title: "You don't know racing': Verstappen's fiery Chinese GP claim explained",
+  youtubeInput: "https://youtu.be/qekPZ2hk9yA",
+  description: "Maybe he should just race the cars like everyone else.",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Ted and Bernie EXPLAIN Ferrari's Macarena wing 🔎",
-    youtubeInput: "https://youtu.be/SJ-BE2Qy9xk",
-    description: "Awesome covergae",
-    
+    title: "The Top 10 Youngest Grand Prix Winners",
+    youtubeInput: "https://youtu.be/qbrbBZZJf7M",
+    description: "OMG Kim Raikkonen looked young",
+     forceExternal:true,
   }
 
 ];

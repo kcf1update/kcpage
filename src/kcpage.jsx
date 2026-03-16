@@ -139,8 +139,8 @@ export default function KCpage() {
   const YouTubeCard = () => (
     <GlassyCard
       highlight="red"
-      title={featuredVideo?.title || "Race weekend highlights"}
-      subtitle="Race weekend highlights"
+      title={featuredVideo?.title || "KC's QUICKSHIFTS"}
+      subtitle="KC's QUICKSHIFTS"
     >
       <>
         {getYouTubeId(featuredVideo?.youtubeInput) ? (
