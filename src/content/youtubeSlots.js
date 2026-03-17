@@ -11,28 +11,28 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Kimi Antonelli’s EMOTIONAL first F1 win | 2026 Chinese Grand Prix",
-    youtubeInput: "https://youtu.be/5C3IydP9cok",
-    description: "Watch out George Russell",
-    forceExternal:true,
+    title: "2026 F1 Chinese GP race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/24S3jNg4UOU",
+    description: "I agree Peter! We have to move on. this is what F1 is for now. The racing is good. It's fun to watch. Is it pure F1...No but we want the sport to last and be succesful.",
+    
     
   },
 
  
     {
   slotId: "slot2",
-  title: "You don't know racing': Verstappen's fiery Chinese GP claim explained",
-  youtubeInput: "https://youtu.be/qekPZ2hk9yA",
-  description: "Maybe he should just race the cars like everyone else.",
+  title: "Why Was Newey Not In China? | Peter Windsor Reacts",
+  youtubeInput: "https://youtu.be/7lr2-7Ju8zY",
+  description: "Maybe some of the rumours about Adrian Newey are true?",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "The Top 10 Youngest Grand Prix Winners",
-    youtubeInput: "https://youtu.be/qbrbBZZJf7M",
-    description: "OMG Kim Raikkonen looked young",
+    title: "Why Aston Martin NEED Christian Horner! | Peter Windsor Reacts",
+    youtubeInput: "https://youtu.be/Iq2u48lZYio",
+    description: "Christian Horner to Aston Martin?",
      forceExternal:true,
   }
 
