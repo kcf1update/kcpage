@@ -24,36 +24,36 @@ export const pointsDrivers = [
   { id: "HAD", name: "Isack Hadjar",   code: "HAD", teamId: "RBR", teamName: "Red Bull Racing", countryFlag: "🇫🇷", points: 0 },
 
   // Ferrari
-  { id: "LEC", name: "Charles Leclerc", code: "LEC", teamId: "FER", teamName: "Scuderia Ferrari", countryFlag: "🇲🇨", points: 22 },
-  { id: "HAM", name: "Lewis Hamilton",  code: "HAM", teamId: "FER", teamName: "Scuderia Ferrari", countryFlag: "🇬🇧", points: 18 },
+  { id: "LEC", name: "Charles Leclerc", code: "LEC", teamId: "FER", teamName: "Scuderia Ferrari", countryFlag: "🇲🇨", points: 34 },
+  { id: "HAM", name: "Lewis Hamilton",  code: "HAM", teamId: "FER", teamName: "Scuderia Ferrari", countryFlag: "🇬🇧", points: 33 },
 
   // McLaren
   { id: "NOR", name: "Lando Norris",  code: "NOR", teamId: "MCL", teamName: "McLaren", countryFlag: "🇬🇧", points: 15 },
   { id: "PIA", name: "Oscar Piastri", code: "PIA", teamId: "MCL", teamName: "McLaren", countryFlag: "🇦🇺", points: 3 },
 
   // Mercedes
-  { id: "RUS", name: "George Russell",  code: "RUS", teamId: "MER", teamName: "Mercedes", countryFlag: "🇬🇧", points: 33 },
-  { id: "ANT", name: "Kimi Antonelli",  code: "ANT", teamId: "MER", teamName: "Mercedes", countryFlag: "🇮🇹", points: 22 },
+  { id: "RUS", name: "George Russell",  code: "RUS", teamId: "MER", teamName: "Mercedes", countryFlag: "🇬🇧", points: 51 },
+  { id: "ANT", name: "Kimi Antonelli",  code: "ANT", teamId: "MER", teamName: "Mercedes", countryFlag: "🇮🇹", points: 47 },
 
   // Aston Martin
   { id: "STR", name: "Lance Stroll",   code: "STR", teamId: "AMR", teamName: "Aston Martin", countryFlag: "🇨🇦", points: 0 },
   { id: "ALO", name: "Fernando Alonso", code: "ALO", teamId: "AMR", teamName: "Aston Martin", countryFlag: "🇪🇸", points: 0 },
 
   // Alpine
-  { id: "GAS", name: "Pierre Gasly",     code: "GAS", teamId: "ALP", teamName: "Alpine", countryFlag: "🇫🇷", points: 1 },
-  { id: "COL", name: "Franco Colapinto", code: "COL", teamId: "ALP", teamName: "Alpine", countryFlag: "🇦🇷", points: 0 },
+  { id: "GAS", name: "Pierre Gasly",     code: "GAS", teamId: "ALP", teamName: "Alpine", countryFlag: "🇫🇷", points: 9 },
+  { id: "COL", name: "Franco Colapinto", code: "COL", teamId: "ALP", teamName: "Alpine", countryFlag: "🇦🇷", points: 1 },
 
   // Haas
   { id: "OCO", name: "Esteban Ocon",    code: "OCO", teamId: "HAA", teamName: "Haas", countryFlag: "🇫🇷", points: 0 },
-  { id: "BEA", name: "Oliver Bearman",  code: "BEA", teamId: "HAA", teamName: "Haas", countryFlag: "🇬🇧", points: 7 },
+  { id: "BEA", name: "Oliver Bearman",  code: "BEA", teamId: "HAA", teamName: "Haas", countryFlag: "🇬🇧", points: 17 },
 
   // Racing Bulls
-  { id: "LAW", name: "Liam Lawson",     code: "LAW", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇳🇿", points: 2 },
+  { id: "LAW", name: "Liam Lawson",     code: "LAW", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇳🇿", points: 8 },
   { id: "LIN", name: "Arvid Lindblad",  code: "LIN", teamId: "RAC", teamName: "Racing Bulls", countryFlag: "🇬🇧", points: 4 },
 
   // Williams
   { id: "ALB", name: "Alexander Albon", code: "ALB", teamId: "WIL", teamName: "Williams", countryFlag: "🇹🇭", points: 0 },
-  { id: "SAI", name: "Carlos Sainz",    code: "SAI", teamId: "WIL", teamName: "Williams", countryFlag: "🇪🇸", points: 0 },
+  { id: "SAI", name: "Carlos Sainz",    code: "SAI", teamId: "WIL", teamName: "Williams", countryFlag: "🇪🇸", points: 2 },
 
   // Audi
   { id: "HUL", name: "Nico Hülkenberg",    code: "HUL", teamId: "SAU", teamName: "Audi", countryFlag: "🇩🇪", points: 0 },

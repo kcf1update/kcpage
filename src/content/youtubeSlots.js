@@ -3,17 +3,17 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/8OeoBVmTFiw?feature=share",
-    description: "KC's QUICKSHIFT : Toto Wolff Linked to Alpine F1 Stake | Is This Blocking Christian Horner’s Return?",
-    ctaUrl: "https://www.youtube.com/shorts/8OeoBVmTFiw?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/insYX3oIn6s?feature=share",
+    description: "KC's QUICKSHIFT: Chinese Grand Prix race recap",
+    ctaUrl: "https://www.youtube.com/shorts/insYX3oIn6s?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
   {
     slotId: "slot1",
-    title: "2026 F1 Chinese GP race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/24S3jNg4UOU",
-    description: "I agree Peter! We have to move on. this is what F1 is for now. The racing is good. It's fun to watch. Is it pure F1...No but we want the sport to last and be succesful.",
+    title: "Are Lewis Hamilton & Ferrari BACK? | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/eFxVQ028iTo",
+    description: "Good review, and yes they are back",
     
     
   },
@@ -21,19 +21,19 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Why Was Newey Not In China? | Peter Windsor Reacts",
-  youtubeInput: "https://youtu.be/7lr2-7Ju8zY",
-  description: "Maybe some of the rumours about Adrian Newey are true?",
+  title: "McLaren’s nightmare start to F1 2026 explained",
+  youtubeInput: "https://youtu.be/s31IaqVbleY",
+  description: "Is it over already?",
   
 },
   
 
   {
     slotId: "slot3",
-    title: "Why Aston Martin NEED Christian Horner! | Peter Windsor Reacts",
-    youtubeInput: "https://youtu.be/Iq2u48lZYio",
-    description: "Christian Horner to Aston Martin?",
-     forceExternal:true,
+    title: "How this MERCEDES REUNION cost $200,000!",
+    youtubeInput: "https://youtu.be/vdx5vAWGiZY",
+    description: "Nice travel accomidations",
+     
   }
 
 ];

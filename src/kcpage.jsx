@@ -8,7 +8,7 @@ import PageNav from "./components/PageNav";
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
 import { youtubeSlots } from "./content/youtubeSlots";
-
+import CountdownBar from "./components/CountdownBar";
 // =======================================================
 // ✅ BETA FEEDBACK (Formspree)
 // 1) Create a Formspree form for kcf1update@gmail.com
@@ -223,16 +223,9 @@ export default function KCpage() {
 
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
-  <p className="text-xs sm:text-sm text-slate-200 tracking-wide">
-    <span className="font-bold text-red-500">
-      LATEST F1 NEWS UPDATES
-    </span>
-    <br />
-   <span className="text-white font-medium flex items-center justify-center gap-2">
-  ● CHINESE GRAND PRIX RACE CENTRE LIVE
-  <img src="/flags/cn.png" alt="China flag" className="h-4 w-auto" />
-</span>
-  </p>
+  <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
+  <CountdownBar />
+</p>
 
   <img
     src="/img/icons/flag-ca.png"

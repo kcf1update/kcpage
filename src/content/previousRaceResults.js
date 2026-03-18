@@ -99,7 +99,30 @@ LIN,8,+1 Lap,9,4
 HAD,DNF,DNF,3,0
 ANT,2,+2.974s,2,18
 `;
-
+const PASTE_CHINA_RACE = `
+NOR,DNS,DNS,6
+VER,DNF,DNF,8
+RUS,2,+5.515s,2,18
+PIA,DNS,DNS,5
+LEC,4,+28.894s,4,12
+HAM,3,+25.267s,3,15
+ALB,DNS,DNS,18
+SAI,9,+1 Lap,17,2
+ALO,DNF,DNF,19
+STR,DNF,DNF,21
+OCO,14,+1 Lap,13
+BEA,5,+57.268s,10,10
+HUL,11,+1 Lap,11
+BOR,DNS,DNS,16
+GAS,6,+59.647s,7,8
+COL,10,+1 Lap,12,1
+PER,15,+1 Lap,22
+BOT,13,+1 Lap,20
+LAW,7,+1m20.588s,14,6
+LIN,12,+1 Lap,15
+HAD,8,+1m27.247s,9,4
+ANT,1,56 Laps,1,25
+`;
 
 
 // =====================================================
@@ -121,20 +144,17 @@ export const previousRaceResults = [
     },
   },
 
-  // Add next race below like this:
-  /*
   {
-    raceName: "Chinese Grand Prix",
-    raceDates: "Mar 19th–22nd, 2026",
-    location: "Shanghai, China",
-    session: {
-      id: "race",
-      type: "race",
-      label: "Race",
-      time: "Winner name here, full results below.",
-      extraNote: "Dry Track",
-      results: parseRacePaste(PASTE_CHINA_RACE),
-    },
+  raceName: "Chinese Grand Prix",
+  raceDates: "Mar 19th–22nd, 2026",
+  location: "Shanghai, China",
+  session: {
+    id: "race",
+    type: "race",
+    label: "Race",
+    time: "Winner name here, full results below.",
+    extraNote: "Dry Track",
+    results: parseRacePaste(PASTE_CHINA_RACE),
   },
-  */
+},
 ];
