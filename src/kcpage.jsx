@@ -227,11 +227,7 @@ export default function KCpage() {
   <CountdownBar />
 </p>
 
-  <img
-    src="/img/icons/flag-ca.png"
-    alt="Canada"
-    className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-auto"
-  />
+ 
 </div>
 
         {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
