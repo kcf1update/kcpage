@@ -7,7 +7,7 @@ import PageNav from "./components/PageNav";
 
 import { nextRaceContent, NEXT_RACE_DRIVER_IDS } from "./content/nextRaceContent";
 import { getDriverById } from "./content/drivers";
-import { pointsTeams } from "./content/pointsContent";
+
 
 // ---------- time helpers ----------
 function extractLapMs(result) {
@@ -85,21 +85,7 @@ function displayQualTime(value) {
   return value;
 }
 
-function getTeamColor(teamName) {
-  const normalized = String(teamName || "").trim().toLowerCase();
 
-  const match = pointsTeams.find((team) => {
-    const name = String(team.name || "").trim().toLowerCase();
-
-    return (
-      name === normalized ||
-      (normalized === "red bull" && name === "red bull racing") ||
-      (normalized === "ferrari" && name === "scuderia ferrari")
-    );
-  });
-
-  return match?.color || "#9CA3AF";
-}
 
 // ---------- session fill detection / ordering ----------
 function hasPracticeResults(session) {
@@ -205,65 +191,6 @@ function DriverPill({ driverId }) {
     </span>
   );
 }
-
-function StatChip({ label, value, tone = "sky" }) {
-  const toneMap = {
-    sky: "border-sky-400/40 bg-sky-500/10 text-sky-100",
-    amber: "border-amber-400/40 bg-amber-500/10 text-amber-100",
-    green: "border-emerald-400/40 bg-emerald-500/10 text-emerald-100",
-    red: "border-red-400/40 bg-red-500/10 text-red-100",
-  };
-
-  return (
-    <div
-      className={`flex min-w-0 items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
-        toneMap[tone] || toneMap.sky
-      }`}
-    >
-      <span className="shrink-0 uppercase tracking-[0.18em] opacity-80">{label}</span>
-      <span className="min-w-0 truncate font-semibold">{value || "—"}</span>
-    </div>
-  );
-}
-
-function TeamDotChip({ label, teams = [], tone = "green" }) {
-  const toneMap = {
-    sky: "border-sky-400/40 bg-sky-500/10 text-sky-100",
-    amber: "border-amber-400/40 bg-amber-500/10 text-amber-100",
-    green: "border-emerald-400/40 bg-emerald-500/10 text-emerald-100",
-    red: "border-red-400/40 bg-red-500/10 text-red-100",
-  };
-
-  const cleanTeams = Array.from(new Set((teams || []).filter(Boolean)));
-
-  return (
-    <div
-      className={`flex min-w-0 items-center gap-2 rounded-2xl border px-3 py-2 text-xs ${
-        toneMap[tone] || toneMap.green
-      }`}
-    >
-      <span className="shrink-0 uppercase tracking-[0.18em] opacity-80">{label}</span>
-
-      <div className="flex min-w-0 items-center gap-2 truncate font-semibold">
-        {cleanTeams.length ? (
-          cleanTeams.map((team, i) => (
-            <React.Fragment key={team}>
-              <span
-                className="inline-block h-3.5 w-3.5 shrink-0 rounded-full border border-white/20"
-                style={{ backgroundColor: getTeamColor(team) }}
-              />
-              <span className="truncate">{team}</span>
-              {i < cleanTeams.length - 1 ? <span className="opacity-70">/</span> : null}
-            </React.Fragment>
-          ))
-        ) : (
-          <span>—</span>
-        )}
-      </div>
-    </div>
-  );
-}
-
 function PodiumTiles({ podiumIds }) {
   const medals = ["🥇", "🥈", "🥉"];
 
@@ -284,81 +211,15 @@ function PodiumTiles({ podiumIds }) {
   );
 }
 
-// ---------- summaries ----------
-function computeSessionLapSummary(session) {
-  const res = session?.results || {};
 
-  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
-    const r = res[id] || {};
-    const lapTime = r.lapTime || "";
-    const status = r.status || "";
-    const laps = r.laps ?? "";
-    const ms = extractLapMs(lapTime || status);
-    return { id, lapTime, status, laps, ms };
-  });
 
-  rows.sort((a, b) => a.ms - b.ms);
 
-  const fastest = rows.find((x) => x.ms !== Number.POSITIVE_INFINITY);
-  const mostLaps = rows
-    .filter((x) => Number.isFinite(Number(x.laps)))
-    .sort((a, b) => Number(b.laps) - Number(a.laps))[0];
 
-  return {
-    fastestText: fastest
-      ? `${getDriverById(fastest.id)?.name || fastest.id} ${fastest.lapTime || fastest.status || "—"}`
-      : "—",
-    mostLapsText: mostLaps
-      ? `${getDriverById(mostLaps.id)?.name || mostLaps.id} (${mostLaps.laps})`
-      : "—",
-  };
-}
 
-function computeQualifyingSummary(session) {
-  const res = session?.results || {};
 
-  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
-    const r = res[id] || {};
-    return {
-      id,
-      q1: r.q1 || "",
-      q2: r.q2 || "",
-      q3: r.q3 || "",
-    };
-  });
 
-  rows.sort((a, b) => {
-    const bucketDiff = getQualifyingRankBucket(a) - getQualifyingRankBucket(b);
-    if (bucketDiff !== 0) return bucketDiff;
-    return getBestQualifyingMs(a) - getBestQualifyingMs(b);
-  });
 
-  const q3Rows = rows.filter((row) => getQualifyingMs(row.q3) !== Number.POSITIVE_INFINITY);
 
-  const pole = q3Rows[0] || null;
-  const second = q3Rows[1] || null;
-
-  const poleDriver = pole ? getDriverById(pole.id) : null;
-  const secondDriver = second ? getDriverById(second.id) : null;
-
-  const poleTeam = poleDriver?.team || "";
-  const secondTeam = secondDriver?.team || "";
-
-  const frontRowTeams = poleTeam && secondTeam
-    ? poleTeam === secondTeam
-      ? [poleTeam]
-      : [poleTeam, secondTeam]
-    : poleTeam
-      ? [poleTeam]
-      : [];
-
-  return {
-    poleText: pole
-      ? `${getDriverById(pole.id)?.name || pole.id} ${pole.q3 || "—"}`
-      : "—",
-    frontRowTeams,
-  };
-}
 
 function computeRaceSummary(session) {
   const res = session?.results || {};
@@ -643,56 +504,13 @@ function SessionCard({ session }) {
 const isQualifyingLike = type === "qualifying" || type === "sprint_shootout";
 const isRaceLike = type === "sprint_race";
 
-  let headerStrip = null;
+  
 
-  if (isPracticeLike) {
-    const sum = computeSessionLapSummary(session);
-    headerStrip = (
-      <div className="mb-3 grid gap-2 sm:grid-cols-3">
-        <StatChip label="Fastest" value={sum.fastestText} tone="sky" />
-        <StatChip label="Most Laps" value={sum.mostLapsText} tone="green" />
-        <StatChip
-  label="Note"
-  value={
-    session.extraNote ||
-    session.trackNote ||
-    (type === "sprint_shootout" ? "Sprint grid decided here" : "Fastest Q3 time takes pole")
-  }
-  tone="amber"
-/>
-      </div>
-    );
-  }
+  
 
-  if (isQualifyingLike) {
-    const sum = computeQualifyingSummary(session);
-    headerStrip = (
-      <div className="mb-3 grid gap-2 sm:grid-cols-3">
-        <StatChip label="Pole" value={sum.poleText} tone="sky" />
-        <TeamDotChip label="Front Row" teams={sum.frontRowTeams} tone="green" />
-        <StatChip
-          label="Note"
-          value={session.extraNote || session.trackNote || "Fastest Q3 time takes pole"}
-          tone="amber"
-        />
-      </div>
-    );
-  }
+  
 
-  if (isRaceLike) {
-    const sum = computeRaceSummary(session);
-    headerStrip = (
-      <div className="mb-3 grid gap-2 sm:grid-cols-3">
-        <StatChip label="Winner" value={sum.winnerText} tone="sky" />
-        <StatChip label="DNFs" value={sum.dnfText} tone="red" />
-        <StatChip
-          label="Note"
-          value={session.extraNote || session.trackNote || "Sprint points awarded"}
-          tone="amber"
-        />
-      </div>
-    );
-  }
+  
 
   return (
     <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
@@ -702,7 +520,7 @@ const isRaceLike = type === "sprint_race";
         </h2>
       </header>
 
-      {headerStrip}
+      
 
       {isPracticeLike ? <LapTimeTable session={session} /> : null}
       {isQualifyingLike ? <QualifyingTable session={session} /> : null}
@@ -723,11 +541,7 @@ function RaceCard({ session }) {
         </h2>
       </header>
 
-      <div className="mb-3 grid gap-2 sm:grid-cols-3">
-        <StatChip label="Winner" value={sum.winnerText} tone="sky" />
-        <StatChip label="DNFs" value={sum.dnfText} tone="red" />
-        <StatChip label="Note" value={session.extraNote || "—"} tone="amber" />
-      </div>
+      
 
       {podiumIds.length === 3 ? <PodiumTiles podiumIds={podiumIds} /> : null}
 

@@ -1,7 +1,7 @@
 // src/content/drivers.js
-// Flags: add PNGs in /public/flags (lowercase), e.g. /public/flags/gb.png
+// Put your flag PNGs in /public/flags using lowercase country codes, e.g. /public/flags/gb.png
 
-export const DRIVERS = [
+const rawDrivers = [
   // McLaren
   { id: "NOR", name: "Lando Norris", number: 1, countryCode: "gb", team: "McLaren" },
   { id: "PIA", name: "Oscar Piastri", number: 81, countryCode: "au", team: "McLaren" },
@@ -34,7 +34,7 @@ export const DRIVERS = [
   { id: "OCO", name: "Esteban Ocon", number: 31, countryCode: "fr", team: "Haas" },
   { id: "BEA", name: "Oliver Bearman", number: 87, countryCode: "gb", team: "Haas" },
 
-  // Sauber (you had this labelled Audi — keeping your driver IDs but standardizing team name)
+  // Audi / Sauber
   { id: "HUL", name: "Nico Hulkenberg", number: 27, countryCode: "de", team: "Audi" },
   { id: "BOR", name: "Gabriel Bortoleto", number: 5, countryCode: "br", team: "Audi" },
 
@@ -42,10 +42,15 @@ export const DRIVERS = [
   { id: "GAS", name: "Pierre Gasly", number: 10, countryCode: "fr", team: "Alpine" },
   { id: "COL", name: "Franco Colapinto", number: 43, countryCode: "ar", team: "Alpine" },
 
-  // Cadillac (future 2026 entry)
+  // Cadillac
   { id: "PER", name: "Sergio Perez", number: 11, countryCode: "mx", team: "Cadillac" },
   { id: "BOT", name: "Valtteri Bottas", number: 77, countryCode: "fi", team: "Cadillac" },
 ];
+
+export const DRIVERS = rawDrivers.map((driver) => ({
+  ...driver,
+  flag: driver.countryCode ? `/flags/${driver.countryCode.toLowerCase()}.png` : "",
+}));
 
 export const DRIVER_IDS = DRIVERS.map((d) => d.id);
 

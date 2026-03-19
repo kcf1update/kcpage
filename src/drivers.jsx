@@ -98,8 +98,8 @@ function computePracticeSummary(session) {
   const res = session?.results || {};
   const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
     const r = res[id] || {};
-    const ms = extractLapMs(r.bestLap);
-    return { id, bestLap: r.bestLap || "", laps: r.laps ?? "", ms };
+    const ms = extractLapMs(r.lapTime);
+return { id, bestLap: r.lapTime || "", laps: r.laps ?? "", ms };
   }).filter(Boolean);
 
   rows.sort((a, b) => a.ms - b.ms);

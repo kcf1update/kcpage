@@ -8,121 +8,103 @@
 export const newsSlots = [
   {
 
- slotId: "slot-04",
-  sourceLabel: "RacingNews365",
-  title: "Max Verstappen told to stop ‘whining’ and help Red Bull",
-  summary:
-    "Max Verstappen has been urged to focus on helping Red Bull improve rather than continuing to criticise the team and current F1 regulations during a difficult start to the 2026 season.",
-  kcsQuickShift:
-    "This is starting to get loud Verstappen’s frustration is real but now he’s being told to step up and lead. Fair or not this is where champions are judged.",
-  url: "https://racingnews365.com/max-verstappen-told-to-stop-whining-and-help-red-bull",
-  imagePath: "/img/news/xpbimageverstappen.jpg",
+ slotId: 1,
+  sourceLabel: "ESPN",
+  title: "Norris gets Madame Tussauds honour",
+  summary: "Lando Norris is set to get his own wax figure at Madame Tussauds in London this summer after his rise to Formula 1 world champion. The McLaren driver worked closely with artists to capture every detail, calling the experience surreal and a huge honour.",
+  kcsQuickShift: "This is one of those moments where you realize how big Norris has become. From race winner to world champion to a wax figure in London, that’s serious star power and it shows how much fans connect with him right now.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48238579/formula-1-champ-lando-norris-gets-madame-tussauds-treatment",
+  imagePath: "/img/news/news-xpb6lando.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Mar 18, 2026",
+  dateLabel: "Mar 18, 2026"
  },
   {
-  slotId: "slot-05",
-  sourceLabel: "The Race",
-  title: "Why McLaren’s F1 title defence is collapsing already",
-  summary:
-    "McLaren’s 2026 title defence is already under serious pressure after a disastrous start to the season, including a double non-start in China and one of the lowest points totals for a defending champion in the modern era.",
-  kcsQuickShift:
-    "This is bigger than one bad weekend McLaren are losing points and pace at the same time. If they don’t turn this around fast the title fight could be over before it really starts.",
-  url: "https://www.the-race.com/formula-1/why-mclarens-f1-title-defence-is-collapsing-already/",
-  imagePath: "/img/news/news-monacopitstop.jpg",
-  photoCredit: "KC",
-  dateLabel: "Mar 18, 2026",
+  slotId: 2,
+  sourceLabel: "RacingNews365",
+  title: "Alonso hits out at F1 criticism debate",
+  summary: "Fernando Alonso has pushed back against criticism surrounding the current Formula 1 product, insisting that constantly talking the sport down creates the worst possible image for fans. The Aston Martin driver acknowledged the challenges with the new era cars but warned that negative messaging can damage how the sport is perceived globally.",
+  kcsQuickShift: "Alonso isn’t just talking about the cars here, he’s calling out the whole narrative around F1 right now. If drivers keep saying it’s bad, fans start believing it, and that’s where things can spiral pretty quickly.",
+  url: "https://racingnews365.com/fernando-alonso-aims-f1-criticism-worst-show-you-can-have",
+  imagePath: "/img/news/news-xpbfernando.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "Mar 19, 2026"
   },
   {
-   slotId: "slot-07",
+   slotId: 3,
   sourceLabel: "RacingNews365",
-  title: "Lando Norris tells McLaren to seize unexpected F1 opportunity",
-  summary:
-    "Lando Norris believes McLaren must take advantage of an unexpected April break in the F1 calendar to fast-track upgrades, as the team looks to recover from a difficult start to the 2026 season.",
-  kcsQuickShift:
-    "This could be a turning point McLaren suddenly have time to fix things. If they use it right this season might not be over yet.",
-  url: "https://racingnews365.com/lando-norris-tells-mclaren-it-must-seize-unexpected-f1-opportunity",
-  imagePath: "/img/news/news-landogarage.jpg",
+  title: "Red Bull launches global charity run event",
+  summary: "Red Bull has announced a worldwide charity initiative tied to the Wings for Life World Run, with both of its Formula 1 teams set to take part. Events will be hosted at their factories and across hundreds of locations globally, bringing together fans, teams and communities to support research into spinal cord injuries.",
+  kcsQuickShift: "This is one of those feel good F1 stories that goes beyond racing. Red Bull is using its global reach to bring people together for something that actually matters, and it shows how big the sport’s impact can be off the track too.",
+  url: "https://racingnews365.com/red-bull-launch-remarkable-world-wide-event-for-special-cause",
+  imagePath: "/img/news/news-verstappen.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 18, 2026",
+  dateLabel: "Mar 19, 2026"
 
   },
   {
-    slotId: "slot-06",
-  sourceLabel: "ESPN",
-  title: "Haas reveal Godzilla-inspired livery for Japanese Grand Prix",
-  summary:
-    "Haas will run a special Godzilla-themed livery at the 2026 Japanese Grand Prix, celebrating its growing ties with Japan through its Toyota partnership and marking one of the most unique one-off designs of the season.",
-  kcsQuickShift:
-    "This is a fun one Haas leaning into Japan with a Godzilla theme. It’s different it stands out and honestly it’s the kind of thing fans remember.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48237977/f1-godzilla-haas-partnership-japanese-grand-prix-2026-livery",
-  imagePath: "/img/news/news-godzilla.jpg",
-  photoCredit: "KC",
-  dateLabel: "Mar 18, 2026",
-  },
-  {
-  slotId: "slot-14",
-  sourceLabel: "The Race",
-  title: "Ferrari thinks its 2026 F1 engine will be allowed upgrade boost",
-  summary:
-    "Ferrari believes its 2026 power unit concept could allow it to benefit from future regulation tweaks that increase engine performance, potentially giving the team a chance to close the gap if changes are made to boost internal combustion output.",
-  kcsQuickShift:
-    "Ferrari might be playing the long game here if the rules shift their engine could suddenly look a lot stronger. That’s a smart bet if you’re not leading right now.",
-  url: "https://www.the-race.com/formula-1/ferrari-thinks-its-2026-f1-engine-will-be-allowed-upgrade-boost/",
-  imagePath: "/img/news/news-ferrari6.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "Mar 18, 2026",
-  },
-  {
-   lotId: "slot-08",
+    slotId: 4,
   sourceLabel: "RacingNews365",
-  title: "Red Bull and McLaren spot key advantage that could be ‘gold worth’",
-  summary:
-    "Red Bull and McLaren have identified a key advantage in the early stages of the 2026 season, with both teams able to benefit from improved energy deployment and race management under the new regulations.",
-  kcsQuickShift:
-    "This is one of those hidden edges Red Bull and McLaren may have figured something out others haven’t. In a season this tight that kind of advantage can decide races.",
-  url: "https://racingnews365.nl/voordeel-gespot-voor-red-bull-en-mclaren-dat-is-goud-waard",
-  imagePath: "/img/news/news-xpboscar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Mar 18, 2026",
+  title: "Verstappen criticism of new rules sparks debate",
+  summary: "Max Verstappen’s continued criticism of Formula 1’s new 2026 regulations has sparked a wider debate across the sport, with some supporting his concerns while others feel he is going too far. The Red Bull driver has repeatedly questioned the direction of the rules, particularly the heavy focus on energy management and how it affects racing.",
+  kcsQuickShift: "This is turning into one of the biggest storylines of the season. Verstappen is saying what a lot of purists are thinking, but the more he pushes it publicly, the more it divides the paddock and even the fans.",
+  url: "https://racingnews365.com/is-max-verstappen-right-to-continue-his-fierce-criticism-of-f1s-new-rules",
+  imagePath: "/img/news/news-maxchina.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 19, 2026"
+  },
+  {
+  slotId: 12,
+  sourceLabel: "Jagran",
+  title: "ऑडी ने ऑस्ट्रेलियन ग्रां प्री 2026 में किया F1 डेब्यू EN:Audi makes F1 debut at 2026 Australian Grand Prix",
+  summary: "ऑडी ने 2026 ऑस्ट्रेलियन ग्रां प्री में फॉर्मूला 1 में अपना आधिकारिक डेब्यू किया, जो ब्रांड के लिए एक नए युग की शुरुआत है। इसी के साथ कंपनी ने अपनी नई RS5 हाइब्रिड कार भी पेश की, जो मोटरस्पोर्ट और रोड कार तकनीक के बीच के कनेक्शन को दिखाती है। EN:Audi officially made its Formula 1 debut at the 2026 Australian Grand Prix, marking the start of a new era for the brand. At the same time, it unveiled its new RS5 hybrid car, highlighting the link between motorsport and road car technology.",
+  kcsQuickShift: "Audi is going all in on this new era and it is not just about F1. This is about where the brand is heading long term, and tying their race program to their road cars is a big statement.HI:ऑडी इस नए दौर में पूरी तरह उतर रही है और यह सिर्फ फॉर्मूला 1 की बात नहीं है। यह ब्रांड के भविष्य की दिशा को दिखाता है और रेसिंग को रोड कार्स से जोड़ना एक बड़ा संकेत है।",
+  url: "https://www.jagran.com/automobile/latest-news-audi-made-formula-1-debut-australian-grand-prix-2026-and-rs5-hybrid-car-launch-40162869.html",
+  imagePath: "/img/news/news-audijapan.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 19, 2026"
+  },
+  {
+  slotId: 11,
+  sourceLabel: "The Race",
+  title: "F1 reluctant to change core rules despite criticism",
+  summary: "Formula 1 is facing growing criticism over what some drivers have called artificial racing under the new 2026 regulations, but the series is not prepared to make major changes that would fundamentally alter its direction. While tweaks to energy management and deployment are being discussed, key elements of the rules are expected to stay in place to protect the long term vision of the sport. ",
+  kcsQuickShift: "This is the balancing act F1 is dealing with right now. They know there are issues, but they are not going to rip up the rulebook after just a few races, so teams and drivers are going to have to adapt rather than expect a quick fix.",
+  url: "https://www.the-race.com/formula-1/what-f1-wont-surrender-to-cure-artificial-racing-complaints/",
+  imagePath: "/img/news/news-noruleschanges.jpg",
+  photoCredit: "KC",
+  dateLabel: "Mar 19, 2026"
 },
-  {   slotId: "slot-11",
-  sourceLabel: "The Race",
-  title: "Ferrari halo wing sparks legality questions after removal",
-  summary:
-    "Ferrari’s experimental halo-mounted winglets have raised fresh legality questions after the team removed them following discussions with the FIA, despite initially running the design during the Chinese Grand Prix weekend.",
-  kcsQuickShift:
-    "Ferrari pushed the limits again but backed off before it became a problem. That tells you they were right on the edge of what’s legal.",
-  url: "https://www.the-race.com/formula-1/ferrari-halo-wing-f1-legality-questions-removal/",
-  imagePath: "/img/news/news-ferrarilewis.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "Mar 18, 2026",
+  {   slotId: 10,
+  sourceLabel: "Formula1.com",
+  title: "F1 highlights youngest Grand Prix winners in history",
+  summary: "Formula 1 has taken a look back at the youngest race winners in the sport’s history, showcasing how rare it is for drivers to reach the top step at such an early age. Max Verstappen still holds the record after winning in Spain in 2016 at just 18, while recent performances from younger drivers continue to show how quickly new talent is making an impact in modern F1.",
+  kcsQuickShift: "With Antonelli already making headlines this season, this list hits a little differently right now. The next generation isn’t waiting around anymore, they’re stepping in and delivering straight away.",
+  url: "https://www.formula1.com/en/latest/article/from-debutants-to-future-team-founders-the-top-10-youngest-grand-prix.2IOqH9Zm37Mmlnval53Na9",
+  imagePath: "/img/news/news-xpb5kimi.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Mar 19, 2026"
   },
   {
-   slotId: "slot-15",
-  sourceLabel: "ESPN",
-  title: "Japanese Grand Prix 2026: Start time, schedule and how to watch",
-  summary:
-    "The 2026 Japanese Grand Prix takes place at Suzuka with a full weekend schedule of practice, qualifying and race sessions, as fans prepare for one of the most iconic races on the Formula 1 calendar.",
-  kcsQuickShift:
-    "Race weekend is here Suzuka never disappoints. If you’re watching one race this early in the season this is the one to tune into.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48229237/japanese-grand-prix-2026-f1-start-how-watch-schedule-suzuka-tv-channel-live-stream-predictions-results",
-  imagePath: "/img/news/news-japanesegp.jpg",
+   slotId: 9,
+  sourceLabel: "Motorsport.com",
+  title: "China weekend exposes Audi weaknesses",
+  summary: "Audi team boss Jonathan Wheatley has admitted the Chinese Grand Prix exposed key weaknesses in the team’s early Formula 1 project, particularly around power unit drivability and reliability. Despite showing promising pace in Melbourne, ongoing technical issues left Audi struggling to compete consistently in the midfield.",
+  kcsQuickShift: "This is exactly what you expect from a brand new works team, flashes of potential mixed with real growing pains. Audi clearly has something there, but right now reliability and consistency are holding them back from making that next step.",
+  url: "https://www.motorsport.com/f1/news/china-f1-weekend-exposed-audis-weaknesses-says-jonathan-wheatley/10806370/",
+  imagePath: "/img/news/news-audijapan.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 18, 2026",
+  dateLabel: "Mar 19, 2026"
   },
   {
-   slotId: "slot-08",
-  sourceLabel: "RacingNews365",
-  title: "Voordeel gespot voor Red Bull en McLaren: ‘Dat is goud waard’ EN: Advantage spotted for Red Bull and McLaren: ‘That is worth gold’",
-  summary:
-    "Er is een belangrijk voordeel ontdekt voor Red Bull en McLaren in de huidige F1-ontwikkelingsstrijd, dat hen een sterke positie kan geven richting de rest van het veld. EN:A key advantage has been identified for Red Bull and McLaren in the current F1 development race, potentially giving them an edge over their rivals.",
-  kcsQuickShift:
-    "Red Bull and McLaren seem to have found something that really matters this season. In a field this close, even a small advantage can decide everything. It may seem minor, but these are the kinds of things that win championships. NL:Het lijkt misschien klein maar dit soort dingen winnen kampioenschappen.",
-  url: "https://racingnews365.nl/voordeel-gespot-voor-red-bull-en-mclaren-dat-is-goud-waard",
-  imagePath: "/img/news/news-verstappen.jpg",
+   slotId: 8,
+  sourceLabel: "Motorsport.com",
+  title: "Racing Bulls maximizing power unit advantage over Red Bull",
+  summary: "Racing Bulls has emerged as one of the hardest teams to pass on the grid, thanks to how effectively it is using the Red Bull Ford power unit. Strong top speeds and smart energy deployment have allowed the VCARB 03 to defend position well, while Red Bull’s own car has struggled with balance and overall performance despite using the same engine.",
+  kcsQuickShift: "This is a fascinating one because it shows the engine isn’t the whole story. Racing Bulls is getting more out of the same package, which tells you Red Bull’s issues go deeper than just power and that should be a real concern moving forward.",
+  url: "https://www.motorsport.com/f1/news/racing-bulls-exploiting-power-unit-better-red-bull/10806390/",
+  imagePath: "/img/news/news-f1hybridengine.jpg",
   photoCredit: "KC",
-  dateLabel: "Mar 18, 2026",
+  dateLabel: "Mar 19, 2026"
 
 },
 ];
