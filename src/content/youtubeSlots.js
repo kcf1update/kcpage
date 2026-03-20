@@ -3,17 +3,17 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/insYX3oIn6s?feature=share",
-    description: "KC's QUICKSHIFT: Chinese Grand Prix race recap",
-    ctaUrl: "https://www.youtube.com/shorts/insYX3oIn6s?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/9Wwm34KYOY0?feature=share",
+    description: "KC's QUICKSHIFT: Drivers Edition Part 2 Who's Delivering in F1 2026",
+    ctaUrl: "https://www.youtube.com/shorts/9Wwm34KYOY0?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
   {
     slotId: "slot1",
-    title: "How Did Carlos Sainz Achieve P9? | The Vowles Verdict | Chinese GP",
+    title: "Breaking Down The Battle Between Mercedes & Ferrari | Jolyon Palmer’s F1 TV Analysis",
     youtubeInput: "https://youtu.be/zTEhf8t09GQ",
-    description: "Carlos Sainz  elevates every team he is on",
+    description: "Some tech information if you need more!",
     
     
   },

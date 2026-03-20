@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import PageNav from "./components/PageNav";
-
+import BookmarkCTA from "./components/BookmarkCTA";
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
 import { youtubeSlots } from "./content/youtubeSlots";
@@ -220,7 +220,7 @@ export default function KCpage() {
         <div className="flex items-center">
           <PageNav />
         </div>
-
+<BookmarkCTA />
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
   <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
