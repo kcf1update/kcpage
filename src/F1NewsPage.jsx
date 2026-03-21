@@ -49,8 +49,8 @@ export default function F1NewsPage() {
         {/* ✅ TOP CARD FIRST (full width across) */} 
         <TopCard>
   <TopCard.Header
-    title="F1 YouTube News"
-    subtitle="Latest videos, highlights, interviews, and race coverage."
+    title="F1 News – Quick, Clear, Updated Daily"
+    subtitle="Latest F1 headlines with quick, easy-to-read summaries."
     logoSrc="/img/kcs-f1-car.png"
   />
 </TopCard>

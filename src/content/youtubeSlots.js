@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Breaking Down The Battle Between Mercedes & Ferrari | Jolyon Palmer’s F1 TV Analysis",
-    youtubeInput: "https://youtu.be/zTEhf8t09GQ",
-    description: "Some tech information if you need more!",
+    title: "Oscar Piastri kerb-hops a V8 Supercar ",
+    youtubeInput: "https://youtu.be/KMzvBbY329c",
+    description: "Fun video",
     
     
   },
@@ -21,9 +21,9 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "RED BULL HAS A BIG PROBLEM! F1 News",
-  youtubeInput: "https://youtu.be/H4Q0LAul_I0",
-  description: "Max Verstappen is finished at RedBull, it is only a matter of time.",
+  title: "Why Aston Martin wants to steal Audi’s F1 team boss",
+  youtubeInput: "https://youtu.be/8RdVylilHXw",
+  description: "I'm really surprised Lawrence Stroll let things get this far.",
   
 },
   
