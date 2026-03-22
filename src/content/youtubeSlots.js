@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Oscar Piastri kerb-hops a V8 Supercar ",
-    youtubeInput: "https://youtu.be/KMzvBbY329c",
-    description: "Fun video",
+    title: "Our verdict on F1 2026 so far | Stay On Track with Hill and Herbert E6 ",
+    youtubeInput: "https://youtu.be/SUJ09D5pJKU",
+    
     
     
   },
@@ -22,7 +22,7 @@ export const youtubeSlots = [
     {
   slotId: "slot2",
   title: "Why Aston Martin wants to steal Audi’s F1 team boss",
-  youtubeInput: "https://youtu.be/8RdVylilHXw",
+  youtubeInput: "https://youtu.be/Il6JsUGj0Aw",
   description: "I'm really surprised Lawrence Stroll let things get this far.",
   
 },
@@ -30,9 +30,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Are Lewis Hamilton & Ferrari BACK?/ The F1 Show Podcast ",
-    youtubeInput: "https://youtu.be/eFxVQ028iTo",
-    description: "I always enjoy listening to these guys",
+    title: "Why Max should say what he thinks - by Peter Windsor",
+    youtubeInput: "https://youtu.be/vwb5vzVJNCY",
+    
      
   }
 

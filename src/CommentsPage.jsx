@@ -30,7 +30,7 @@ function getAuthorName() {
 }
 
 // ---- Beta anti-spam rules (client-side friction) -------------------
-const MIN_LEN = 15;
+const MIN_LEN = 5;
 const COOLDOWN_MS = 30_000;
 const LAST_POST_KEY = "kc_comments_lastPostMs";
 
