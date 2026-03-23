@@ -295,10 +295,10 @@ export const nextRaceContent = {
   location: "Suzuka Circuit, Japan",
   trackInfoUrl: "/img/tracks/japanesetrack.jpg",
 
-  weather: `Thr: - ☀️ Sunny 12°
-Fri: —☀️ Sunny 15°
-Sat: — ☀️ Sunny 17°
-Sun: —⛅ Sunny Cloudy 23°`,
+  weather: `Thr: - 🌧️ Rain 15°
+Fri: —☁️ Cloudy 17°
+Sat: — ⛅ Sunny Cloudy 19°
+Sun: —☁️  Cloudy 15°`,
 
  sessions: [
   {
