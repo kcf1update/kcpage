@@ -3,17 +3,17 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/9Wwm34KYOY0?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/_QW3ALZWmt4?feature=share",
     description: "KC's QUICKSHIFT: Drivers Edition Part 2 Who's Delivering in F1 2026",
-    ctaUrl: "https://www.youtube.com/shorts/9Wwm34KYOY0?feature=share",
+    ctaUrl: "https://www.youtube.com/shorts/_QW3ALZWmt4?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
   {
     slotId: "slot1",
-    title: "Our verdict on F1 2026 so far | Stay On Track with Hill and Herbert E6 ",
-    youtubeInput: "https://youtu.be/SUJ09D5pJKU",
-    
+    title: "Game On At Mercedes? | Japanese GP Preview | F1 Nation Podcast ",
+    youtubeInput: "https://youtu.be/lxNeD0qjFlU",
+    forceExternal: "blue"
     
     
   },
@@ -21,8 +21,8 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Why Aston Martin wants to steal Audi’s F1 team boss",
-  youtubeInput: "https://youtu.be/Il6JsUGj0Aw",
+  title: "The Charles Leclerc lap that's exposed how F1 2026 has ruined qualifying",
+  youtubeInput: "https://youtu.be/pWnTFd7wdHo",
   description: "I'm really surprised Lawrence Stroll let things get this far.",
   
 },
@@ -30,8 +30,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Why Max should say what he thinks - by Peter Windsor",
-    youtubeInput: "https://youtu.be/vwb5vzVJNCY",
+    title: "Why It costs $40,000 to fuel an F1 car!",
+    youtubeInput: "https://youtu.be/CkgSjFZ5omw",
     
      
   }
