@@ -3,9 +3,9 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC’s Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/_QW3ALZWmt4?feature=share",
-    description: "KC's QUICKSHIFT: Drivers Edition Part 2 Who's Delivering in F1 2026",
-    ctaUrl: "https://www.youtube.com/shorts/_QW3ALZWmt4?feature=share",
+    youtubeInput: "https://www.youtube.com/shorts/E6fk5HBWigk?feature=share",
+    description: "Shock Exit: Wheatley Leaves Audi—Aston Martin Move Next?",
+    ctaUrl: "https://www.youtube.com/shorts/E6fk5HBWigk?feature=share",
     ctaLabel: "Visit KC’s YouTube →",
   },
 
