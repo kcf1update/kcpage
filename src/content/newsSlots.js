@@ -8,94 +8,94 @@
 export const newsSlots = [
   {
 
- slotId: 8,
-  sourceLabel: "Crash.net",
-  title: "Max Verstappen Mercedes talks 'going to happen' claim made by F1 paddock figure",
-  summary: "Fresh claims from the F1 paddock suggest talks between Max Verstappen and Mercedes are likely to happen this year, particularly if Red Bull’s early-season struggles continue. Former driver Jolyon Palmer believes Verstappen will be forced to consider a move if Mercedes maintains its strong start, with the team already emerging as the benchmark in 2026. Despite being under contract with Red Bull until 2028, performance-related clauses could allow Verstappen to explore other options if results do not improve.",
-  kcsQuickShift: "This story is not going away. If Red Bull cannot turn things around quickly the pressure on Verstappen to look elsewhere is only going to grow.",
-  url: "https://www.crash.net/f1/news/1091909/1/max-verstappen-mercedes-talks-going-happen-claim-made-f1-paddock-figure",
-  imagePath: "/img/news/xpb/xpbimageverstappen.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "March 24, 2026"
+ slotId: 1,
+  sourceLabel: "The Race",
+  title: "F1 targets energy management fix as top priority for 2026 rules",
+  summary: "Formula 1 is already evaluating potential changes to its new 2026 regulations, with energy management emerging as the biggest concern after the opening races. Drivers have struggled with heavy battery management demands, leading to unusual driving behaviour such as lifting off on straights to recharge energy. The FIA and teams are now considering adjustments to how energy is harvested and deployed, with early changes possible as soon as the Japanese Grand Prix.",
+  kcsQuickShift: "This is the big one. If drivers cannot push naturally, the whole feel of racing changes and F1 knows it needs to fix that quickly.",
+  url: "https://www.the-race.com/formula-1/f1-has-a-clear-priority-fix-for-first-major-2026-rule-changes/",
+  imagePath: "/img/news/news-5050engine.jpg",
+  photoCredit: "KC",
+  dateLabel: "March 25, 2026"
  },
   {
-   slotId: 5,
-  sourceLabel: "The Race",
-  title: "F1 has accidentally solved its dirty air problem",
-  summary: "Formula 1 may have unintentionally improved its long-standing dirty air issue with the 2026 cars, as early testing suggests drivers are able to follow more closely than expected. The combination of reduced downforce, smaller car dimensions, and new aerodynamic concepts appears to be limiting the turbulent wake that typically disrupts cars behind, even though solving dirty air was never expected to be fully achievable. However, questions remain about whether this will translate into consistently better racing once the season begins.",
-  kcsQuickShift: "If this actually holds up it could be a huge win for racing. The big question is whether it still works once teams start pushing development.",
-  url: "https://www.the-race.com/formula-1/f1-has-accidentally-solved-its-dirty-air-problem/",
-  imagePath: "/img/news/news-dirtyair.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 24, 2026"
+  slotId: 2,
+  sourceLabel: "Motorsport.com",
+  title: "Ferrari pushes energy recovery to the limit with new Suzuka strategy",
+  summary: "Ferrari is taking an aggressive new approach to energy management at the Japanese Grand Prix, focusing on maximizing battery recovery throughout the lap rather than chasing outright straight-line speed. The team is working to harvest more energy in slower corners and transitional sections, even adjusting gear usage to increase engine revs and improve recovery efficiency. The strategy is designed to better balance performance across the lap as Ferrari looks to close the gap to Mercedes.",
+  kcsQuickShift: "This is where things get interesting. Ferrari is not just chasing speed anymore they are changing how the whole lap is driven to make the energy work better.",
+  url: "https://www.motorsport.com/f1/news/f1-ferrari-takes-energy-recovery-to-the-extreme-strategies-are-changing-at-suzuka/10807714/",
+  imagePath: "/img/news/ferrari/news-ferrarilewis.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "March 25, 2026"
   },
   {
-  slotId: 12,
-  sourceLabel: "FormulaPassion",
-  title: "Mercedes, il rapporto di compressione fa discutere: Antonelli e il team preoccupati EN:Mercedes compression ratio debate raises concern for Antonelli and team",
-  summary: "Il dibattito sul rapporto di compressione del motore Mercedes continua a dominare il paddock F1 2026, con sospetti su un possibile vantaggio ottenuto sfruttando le differenze tra misurazioni a freddo e condizioni reali di gara. Le modifiche regolamentari in arrivo potrebbero ridurre questo margine, creando incertezza all’interno del team e tra i piloti, incluso Kimi Antonelli. EN:The ongoing debate around Mercedes’ engine compression ratio continues to dominate the 2026 F1 paddock, with suspicions of a potential advantage gained by exploiting differences between cold measurements and real running conditions. Upcoming regulation changes could reduce this edge, creating uncertainty within the team and among drivers, including Kimi Antonelli.",
-  kcsQuickShift: "Mercedes might have found something but now the rules are catching up. If they lose that edge it could change the whole balance at the front.",
-  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/mercedes-power-unit-rapporto-compressione-antonelli-team-preoccupato-zero",
+  slotId: 3,
+  sourceLabel: "RacingNews365",
+  title: "Russell told to ‘destroy’ Antonelli as Mercedes title fight heats up",
+  summary: "George Russell has been warned he must stamp his authority over Kimi Antonelli as the Mercedes team-mates emerge as the clear favourites for the 2026 F1 title. With one win each from the opening two races, the battle is already evenly matched, but there are growing concerns that Antonelli’s rising confidence could shift the balance inside the team if Russell does not respond quickly.",
+  kcsQuickShift: "This is turning into a straight fight inside Mercedes. If Russell does not take control now, Antonelli could run away with this faster than anyone expected.",
+  url: "https://racingnews365.com/george-russell-told-to-destroy-kimi-antonelli-in-major-f1-title-advice",
   imagePath: "/img/news/xpb/news-xpb3.jpg",
   photoCredit: "XPB Images",
-  dateLabel: "March 24, 2026"
+  dateLabel: "March 25, 2026"
   },
   {
    slotId: 4,
-  sourceLabel: "Motorsport.com",
-  title: "Pirelli reveals plan to combat one-stop races in F1 2026",
-  summary: "Pirelli is working on solutions to reduce the number of one-stop races in Formula 1 for 2026, with softer tyre compounds and more aggressive degradation among the options being considered. The aim is to force greater strategic variation and increase on-track action, as recent races have often been dominated by predictable single-stop strategies due to low tyre wear.",
-  kcsQuickShift: "If they get this right it could completely change how races play out. One stop races are predictable and this is exactly the kind of shake up the sport needs.",
-  url: "https://www.motorsport.com/f1/news/pirellis-plan-to-combat-continuous-one-stop-races-in-f1-2026/10807616/",
-  imagePath: "/img/news/news-monacopitstop.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 24, 2026"
+  sourceLabel: "Crash.net",
+  title: "Adrian Newey 'not doing well' amid Aston Martin struggles as Marko raises concern",
+  summary: "Helmut Marko has revealed that Adrian Newey is 'not doing well' as Aston Martin continues to struggle at the start of the 2026 season. The team is dealing with major reliability issues and ongoing performance problems, while Newey faces the challenge of balancing both leadership and technical responsibilities within the project.",
+  kcsQuickShift: "This feels bigger than just a slow car. When someone like Newey is struggling, it tells you the whole project is not in a good place right now.",
+  url: "https://www.crash.net/f1/news/1091912/1/adrian-newey-not-doing-well-amid-aston-martin-f1-woes-helmut-marko-reveals",
+  imagePath:  "/img/news/xpb/news-xpbneweystroll.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "March 25, 2026"
   },
   {
-  slotId: 6,
-  sourceLabel: "The Race",
-  title: "Cadillac facing reality check as early F1 promise meets growing problems",
-  summary: "Cadillac’s early Formula 1 performances have been respectable, but the team is now facing the true challenge of competing in the modern era. While it has managed solid race finishes and shown encouraging pace, a growing number of small but critical issues across systems, reliability, and development are beginning to surface. The team must now shift from simply completing races to closing the performance gap, a process expected to take years given the complexity of building a competitive F1 operation from scratch.",
-  kcsQuickShift: "This is where it gets real for Cadillac. Getting on the grid was the easy part now comes the grind of actually catching the field.",
-  url: "https://www.the-race.com/formula-1/cadillac-f1-2026-reality-biting-problems/",
-  imagePath: "/img/news/news-cadillac.jpg",
+  slotId: 5,
+  sourceLabel: "Motorsport.com",
+  title: "Audi engine earns early praise from rivals as 2026 performance impresses",
+  summary: "Audi’s new 2026 Formula 1 power unit is already drawing strong praise from rival teams, with Haas boss Ayao Komatsu describing it as ‘very, very good’ based on early performance data. Analysis of speed traces suggests Audi has quickly become competitive despite being a brand-new factory entry.",
+  kcsQuickShift: "That is not something you hear often about a brand new engine. If Audi has this figured out already, they could move up the grid faster than expected.",
+  url: "https://www.motorsport.com/f1/news/audi-f1-engine-earns-praise-from-competition-its-very-very-good/10807697/",
+  imagePath: "/img/news/news-audijapan.jpg",
   photoCredit: "KC",
-  dateLabel: "March 24, 2026"
+  dateLabel: "March 25, 2026"
+  },
+  {
+ slotId: 6,
+  sourceLabel: "The Race",
+  title: "Japanese GP set to define early 2026 season before long break",
+  summary: "The Japanese Grand Prix marks a key moment in the 2026 Formula 1 season as the final race before a five-week break. With Mercedes leading both championships and several teams facing performance and reliability concerns, Suzuka offers a crucial opportunity to reset momentum before development intensifies.",
+  kcsQuickShift: "This one feels bigger than a normal race weekend. Whatever happens at Suzuka could set the tone before everyone disappears for five weeks.",
+  url: "https://www.the-race.com/formula-1/japanese-gp-last-f1-2026-race-for-five-weeks-key-questions/",
+  imagePath: "/img/news/xpb/news-xpb3.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "March 25, 2026"
+},
+  { slotId: 7,
+  sourceLabel: "RacingNews365",
+  title: "Wolff shuts down Verstappen rumours as Mercedes backs current lineup",
+  summary: "Toto Wolff has dismissed speculation linking Max Verstappen to Mercedes, calling the rumours premature. He confirmed both George Russell and Kimi Antonelli are on long-term contracts and performing strongly, reinforcing the team’s commitment to its current lineup.",
+  kcsQuickShift: "This feels like Mercedes drawing a line early. They are all in on Russell and Antonelli and not getting pulled into the Verstappen noise.",
+  url: "https://racingnews365.com/toto-wolff-snaps-back-at-latest-max-verstappen-rumour",
+  imagePath: "/img/news/xpb/xpbimages1.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "March 25, 2026"
+  },
+  {
+  slotId: 10,
+  sourceLabel: "Formula1.com",
+  title: "Komatsu says Haas aiming higher as team adapts to 2026 challenge",
+  summary: "Haas team principal Ayao Komatsu says the team is targeting stronger performance levels in 2026 as it adapts to new regulations. Despite limited resources, Haas is focusing on improved development speed and better understanding of energy management to remain competitive in the midfield.",
+  kcsQuickShift: "Haas feels different right now. They are not just trying to hang on anymore they are starting to think bigger and that could make them a problem in the midfield.",
+  url: "https://www.formula1.com/en/latest/article/beyond-the-grid-ayao-komatsu-on-aiming-high-with-haas.1xgBl6KIswnAoHF7Le8Mbt",
+  imagePath: "/img/news/news-haaspitstop.jpg",
+  photoCredit: "KC",
+  dateLabel: "March 25, 2026"
   },
   {
   slotId: 9,
-  sourceLabel: "Crash.net",
-  title: "Honda yet to find cause of vibration issues as it gives Japan F1 battery update",
-  summary: "Honda has admitted it still has not identified the root cause of the severe vibration issues affecting its 2026 power unit, despite making some progress in reducing their intensity ahead of the Japanese Grand Prix. The problem has been damaging battery systems and contributing to Aston Martin’s difficult start to the season, with the team yet to complete a full race. Engineers continue working on a solution, but uncertainty remains as the issue persists into Honda’s home event.",
-  kcsQuickShift: "This is a serious problem and it is not going away yet. If Honda cannot fix this soon Aston Martin could be in for a very long start to the season.",
-  url: "https://www.crash.net/f1/news/1091907/1/honda-yet-find-cause-vibration-issues-it-gives-japan-f1-battery-update",
-  imagePath: "/img/news/news-f1hybridengine.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 24, 2026"
-},
-  { slotId: 10,
-  sourceLabel: "FormulaPassion",
-  title: "Power unit figuraccia, Alonso rivive il 'GP2 engine' a Suzuka EN:Power unit embarrassment as Alonso relives 'GP2 engine' moment at Suzuka",
-  summary: "Il difficile avvio della stagione 2026 per Honda riporta alla mente il famoso team radio di Fernando Alonso a Suzuka nel 2015, quando definì il motore un 'GP2 engine'. I problemi attuali, tra vibrazioni e difficoltà di affidabilità, stanno creando una situazione simile, con Aston Martin in difficoltà proprio alla vigilia del Gran Premio di casa Honda. EN:Honda’s troubled start to the 2026 season has brought back memories of Fernando Alonso’s famous 'GP2 engine' radio message at Suzuka in 2015. Current issues including severe vibrations and reliability concerns are creating a similar situation, with Aston Martin struggling heading into Honda’s home race.",
-  kcsQuickShift: "It is almost coming full circle for Alonso. Different year same kind of problem and that is not a good sign heading into Suzuka. IT:Sembra davvero un ritorno al passato per Alonso. Un anno diverso ma lo stesso tipo di problema e non è un buon segnale in vista di Suzuka.",
-  url: "https://www.formulapassion.it/f1/f1-news/power-unit-figuraccia-arrivo-gp-casa-giappone-suzuka-2015-team-radio-alonso-gp2-engine",
-  imagePath: "/img/news/news-fernando.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 24, 2026"
-  },
-  {
-  slotId: 7,
-  sourceLabel: "Crash.net",
-  title: "Explained: Why F1 break could hurt Red Bull more than its rivals",
-  summary: "Formula 1’s unexpected five-week break between the Japanese and Miami Grands Prix could put Red Bull at a disadvantage compared to its rivals. The gap, caused by cancelled Middle Eastern races, removes valuable track time that Red Bull needs to better understand its new power unit and fix early-season performance issues. While the break offers development time, rivals will also be improving, limiting any potential advantage for the team.",
-  kcsQuickShift: "Red Bull need track time more than anything right now. Sitting in the garage for five weeks is not ideal when you are trying to figure out a new package.",
-  url: "https://www.crash.net/f1/news/1091910/1/explained-why-f1-break-could-hurt-red-bull-more-its-rivals",
-  imagePath: "/img/news/news-maxchina.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 24, 2026"
-  },
-  {
-  slotId: 11,
   sourceLabel: "Livedoor News",
   title: "F1日本GP開催「選手にエールを届けて」三重・鈴鹿市がムード一色に EN:F1 Japanese GP opens as Suzuka is fully wrapped in support for the drivers",
   summary: "27日に開幕するF1日本グランプリを前に、三重県鈴鹿市では街全体がF1ムードに包まれている。鈴鹿インターチェンジ周辺の特別装飾や関連展示などで歓迎ムードが高まり、地元からはドライバーたちへエールを届けたいという思いが広がっている。 EN:Ahead of the Formula 1 Japanese Grand Prix opening on March 27, the city of Suzuka in Mie Prefecture has fully embraced the event atmosphere. Special decorations near the Suzuka Interchange and related displays have helped build excitement, with locals eager to show their support and send encouragement to the drivers.",
@@ -105,7 +105,9 @@ export const newsSlots = [
   photoCredit: "KC",
   dateLabel: "March 24, 2026"
 
-},
+}
+
+
 ];
 
   
