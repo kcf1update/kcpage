@@ -7,104 +7,103 @@
 
 export const newsSlots = [
   {
-
- slotId: 1,
-  sourceLabel: "The Race",
-  title: "F1 targets energy management fix as top priority for 2026 rules",
-  summary: "Formula 1 is already evaluating potential changes to its new 2026 regulations, with energy management emerging as the biggest concern after the opening races. Drivers have struggled with heavy battery management demands, leading to unusual driving behaviour such as lifting off on straights to recharge energy. The FIA and teams are now considering adjustments to how energy is harvested and deployed, with early changes possible as soon as the Japanese Grand Prix.",
-  kcsQuickShift: "This is the big one. If drivers cannot push naturally, the whole feel of racing changes and F1 knows it needs to fix that quickly.",
-  url: "https://www.the-race.com/formula-1/f1-has-a-clear-priority-fix-for-first-major-2026-rule-changes/",
-  imagePath: "/img/news/news-5050engine.jpg",
+  slotId: 1,
+  sourceLabel: "ESPN",
+  title: "FIA makes late qualifying change ahead of Japanese Grand Prix after driver concerns",
+  summary: "The FIA has made a late adjustment to qualifying rules for Suzuka after teams and drivers raised concerns about energy harvesting affecting lap performance. The change is aimed at reducing extreme lift and coast behaviour and restoring a more natural qualifying flow.",
+  kcsQuickShift: "This is a big signal that something was not working and the FIA had to step in quickly.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48310901/fia-f1-makes-late-change-qualifying-japanese-grand-prix-amid-driver-concerns",
+  imagePath: "/img/news/news-fiaruleschanges.jpg",
   photoCredit: "KC",
-  dateLabel: "March 25, 2026"
- },
-  {
-  slotId: 2,
-  sourceLabel: "Motorsport.com",
-  title: "Ferrari pushes energy recovery to the limit with new Suzuka strategy",
-  summary: "Ferrari is taking an aggressive new approach to energy management at the Japanese Grand Prix, focusing on maximizing battery recovery throughout the lap rather than chasing outright straight-line speed. The team is working to harvest more energy in slower corners and transitional sections, even adjusting gear usage to increase engine revs and improve recovery efficiency. The strategy is designed to better balance performance across the lap as Ferrari looks to close the gap to Mercedes.",
-  kcsQuickShift: "This is where things get interesting. Ferrari is not just chasing speed anymore they are changing how the whole lap is driven to make the energy work better.",
-  url: "https://www.motorsport.com/f1/news/f1-ferrari-takes-energy-recovery-to-the-extreme-strategies-are-changing-at-suzuka/10807714/",
-  imagePath: "/img/news/ferrari/news-ferrarilewis.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "March 25, 2026"
-  },
-  {
-  slotId: 3,
-  sourceLabel: "RacingNews365",
-  title: "Russell told to ‘destroy’ Antonelli as Mercedes title fight heats up",
-  summary: "George Russell has been warned he must stamp his authority over Kimi Antonelli as the Mercedes team-mates emerge as the clear favourites for the 2026 F1 title. With one win each from the opening two races, the battle is already evenly matched, but there are growing concerns that Antonelli’s rising confidence could shift the balance inside the team if Russell does not respond quickly.",
-  kcsQuickShift: "This is turning into a straight fight inside Mercedes. If Russell does not take control now, Antonelli could run away with this faster than anyone expected.",
-  url: "https://racingnews365.com/george-russell-told-to-destroy-kimi-antonelli-in-major-f1-title-advice",
-  imagePath: "/img/news/xpb/news-xpb3.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "March 25, 2026"
-  },
-  {
-   slotId: 4,
-  sourceLabel: "Crash.net",
-  title: "Adrian Newey 'not doing well' amid Aston Martin struggles as Marko raises concern",
-  summary: "Helmut Marko has revealed that Adrian Newey is 'not doing well' as Aston Martin continues to struggle at the start of the 2026 season. The team is dealing with major reliability issues and ongoing performance problems, while Newey faces the challenge of balancing both leadership and technical responsibilities within the project.",
-  kcsQuickShift: "This feels bigger than just a slow car. When someone like Newey is struggling, it tells you the whole project is not in a good place right now.",
-  url: "https://www.crash.net/f1/news/1091912/1/adrian-newey-not-doing-well-amid-aston-martin-f1-woes-helmut-marko-reveals",
-  imagePath:  "/img/news/xpb/news-xpbneweystroll.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "March 25, 2026"
-  },
-  {
-  slotId: 5,
-  sourceLabel: "Motorsport.com",
-  title: "Audi engine earns early praise from rivals as 2026 performance impresses",
-  summary: "Audi’s new 2026 Formula 1 power unit is already drawing strong praise from rival teams, with Haas boss Ayao Komatsu describing it as ‘very, very good’ based on early performance data. Analysis of speed traces suggests Audi has quickly become competitive despite being a brand-new factory entry.",
-  kcsQuickShift: "That is not something you hear often about a brand new engine. If Audi has this figured out already, they could move up the grid faster than expected.",
-  url: "https://www.motorsport.com/f1/news/audi-f1-engine-earns-praise-from-competition-its-very-very-good/10807697/",
-  imagePath: "/img/news/news-audijapan.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 25, 2026"
-  },
-  {
- slotId: 6,
-  sourceLabel: "The Race",
-  title: "Japanese GP set to define early 2026 season before long break",
-  summary: "The Japanese Grand Prix marks a key moment in the 2026 Formula 1 season as the final race before a five-week break. With Mercedes leading both championships and several teams facing performance and reliability concerns, Suzuka offers a crucial opportunity to reset momentum before development intensifies.",
-  kcsQuickShift: "This one feels bigger than a normal race weekend. Whatever happens at Suzuka could set the tone before everyone disappears for five weeks.",
-  url: "https://www.the-race.com/formula-1/japanese-gp-last-f1-2026-race-for-five-weeks-key-questions/",
-  imagePath: "/img/news/xpb/news-xpb3.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "March 25, 2026"
+  dateLabel: "March 26, 2026"
 },
-  { slotId: 7,
+{
+  slotId: 2,
+  sourceLabel: "The Race",
+  title: "Honda adds countermeasures as timeline for real 2026 fix becomes clearer",
+  summary: "Honda has introduced short-term countermeasures for Suzuka as it continues to deal with reliability problems caused by vibrations affecting its power unit systems. A more complete fix is expected in the coming races, leaving some uncertainty heading into the weekend.",
+  kcsQuickShift: "They are managing it for now but it is still not fully solved and that is a concern.",
+  url: "https://www.the-race.com/formula-1/more-honda-f1-2026-countermeasures-when-first-real-fix-may-come/",
+  imagePath: "/img/news/news-engine2.jpg",
+  photoCredit: "KC",
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 3,
+  sourceLabel: "ESPN",
+  title: "Hamilton disagrees with Verstappen over new F1 racing era",
+  summary: "Lewis Hamilton has rejected Max Verstappen’s criticism of the 2026 regulations, saying the current cars are producing strong racing despite the heavy focus on energy management. The disagreement highlights a growing divide in how drivers view the new era.",
+  kcsQuickShift: "This is turning into a real divide and it might come down to who adapts the fastest.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48310786/lewis-hamilton-disagrees-max-verstappen-f1-now-best-form-racing",
+  imagePath: "/img/news/xpb/news-xpblewis.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 4,
+  sourceLabel: "The Race",
+  title: "Nine things we learned from Thursday at the Japanese Grand Prix",
+  summary: "Thursday at Suzuka highlighted key early themes including ongoing concerns around energy management, reliability questions and how teams are adapting to the 2026 regulations. The paddock is still working through unpredictable behaviour as the season develops.",
+  kcsQuickShift: "It feels like teams are still figuring things out and that adds a lot of unpredictability.",
+  url: "https://www.the-race.com/formula-1/nine-things-we-learned-from-thursday-at-f1-japanese-gp/",
+  imagePath: "/img/tracks/suzuka.jpg",
+  photoCredit: "KC",
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 5,
   sourceLabel: "RacingNews365",
-  title: "Wolff shuts down Verstappen rumours as Mercedes backs current lineup",
-  summary: "Toto Wolff has dismissed speculation linking Max Verstappen to Mercedes, calling the rumours premature. He confirmed both George Russell and Kimi Antonelli are on long-term contracts and performing strongly, reinforcing the team’s commitment to its current lineup.",
-  kcsQuickShift: "This feels like Mercedes drawing a line early. They are all in on Russell and Antonelli and not getting pulled into the Verstappen noise.",
-  url: "https://racingnews365.com/toto-wolff-snaps-back-at-latest-max-verstappen-rumour",
-  imagePath: "/img/news/xpb/xpbimages1.jpg",
+  title: "What triggered major F1 qualifying rule change in Japan",
+  summary: "The FIA’s late qualifying change was driven by concerns over drivers dramatically lifting off to manage energy, creating inconsistent speeds and potential safety risks. Teams and drivers pushed for a solution ahead of the Suzuka weekend.",
+  kcsQuickShift: "When drivers have to slow down on purpose in qualifying you know something is off.",
+  url: "https://racingnews365.com/what-triggered-the-major-f1-qualifying-rule-change-in-japan",
+  imagePath: "/img/news/xpb/news-xpb4.jpg",
   photoCredit: "XPB Images",
-  dateLabel: "March 25, 2026"
-  },
-  {
-  slotId: 10,
-  sourceLabel: "Formula1.com",
-  title: "Komatsu says Haas aiming higher as team adapts to 2026 challenge",
-  summary: "Haas team principal Ayao Komatsu says the team is targeting stronger performance levels in 2026 as it adapts to new regulations. Despite limited resources, Haas is focusing on improved development speed and better understanding of energy management to remain competitive in the midfield.",
-  kcsQuickShift: "Haas feels different right now. They are not just trying to hang on anymore they are starting to think bigger and that could make them a problem in the midfield.",
-  url: "https://www.formula1.com/en/latest/article/beyond-the-grid-ayao-komatsu-on-aiming-high-with-haas.1xgBl6KIswnAoHF7Le8Mbt",
-  imagePath: "/img/news/news-haaspitstop.jpg",
-  photoCredit: "KC",
-  dateLabel: "March 25, 2026"
-  },
-  {
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 6,
+  sourceLabel: "The Race",
+  title: "What F1 could do to fix ‘silly’ qualifying lap losses",
+  summary: "F1 is exploring potential fixes to prevent drivers losing lap time due to energy management constraints, with ideas including revised deployment limits and improved system consistency. The issue has become more visible under the 2026 rules.",
+  kcsQuickShift: "If pushing harder makes you slower then qualifying is not working the way it should.",
+  url: "https://www.the-race.com/formula-1/what-f1-could-do-to-fix-silly-qualifying-lap-losses/",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 7,
+  sourceLabel: "RacingNews365",
+  title: "Verstappen stuurt journalist weg in opmerkelijk moment EN:Verstappen sends journalist away in unusual Suzuka moment",
+  summary: "Max Verstappen weigerde zijn mediasessie in Suzuka te starten totdat een journalist de ruimte had verlaten na eerdere spanningen. EN:Max Verstappen refused to begin his Suzuka media session until a journalist left the room, showing lingering tension from a past incident.",
+  kcsQuickShift: "You can tell this is still bothering him and it has not gone away. NL:Dit zit hem nog steeds dwars en dat is duidelijk te zien.",
+  url: "https://racingnews365.nl/verstappen-stuurt-journalist-weg-in-opmerkelijk-moment",
+  imagePath: "/img/news/xpb/xpbimageverstappen.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "March 26, 2026"
+},
+{
+  slotId: 8,
+  sourceLabel: "AutoSport Web",
+  title: "44歳のアロンソがパパに。第一子誕生で日本GP木曜メディア対応を欠席 EN:Alonso becomes a father at 44 and misses Suzuka media day",
+  summary: "アストンマーティンのフェルナンド・アロンソは第一子誕生のため、日本GPのメディア対応を欠席した。EN:Fernando Alonso missed Suzuka media day following the birth of his first child and will join later in the weekend.",
+  kcsQuickShift: "That is a special moment and you can understand why racing takes a back seat. JP:これは特別な瞬間でありレースよりも大切です。",
+  url: "https://www.as-web.jp/f1/1301803",
+  imagePath: "/img/news/xpb/news-xpbfernando.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "March 26, 2026"
+},
+{
   slotId: 9,
-  sourceLabel: "Livedoor News",
-  title: "F1日本GP開催「選手にエールを届けて」三重・鈴鹿市がムード一色に EN:F1 Japanese GP opens as Suzuka is fully wrapped in support for the drivers",
-  summary: "27日に開幕するF1日本グランプリを前に、三重県鈴鹿市では街全体がF1ムードに包まれている。鈴鹿インターチェンジ周辺の特別装飾や関連展示などで歓迎ムードが高まり、地元からはドライバーたちへエールを届けたいという思いが広がっている。 EN:Ahead of the Formula 1 Japanese Grand Prix opening on March 27, the city of Suzuka in Mie Prefecture has fully embraced the event atmosphere. Special decorations near the Suzuka Interchange and related displays have helped build excitement, with locals eager to show their support and send encouragement to the drivers.",
-  kcsQuickShift: "Suzuka always has a special feel and you can see it already building. When the whole city starts leaning into race week it makes the event feel even bigger. JP:鈴鹿はいつも特別な雰囲気がありますが、その盛り上がりがすでに伝わってきます。街全体がレースウィークに向けて動き出すと、このイベントはさらに大きく感じられます。",
-  url: "https://news.livedoor.com/topics/detail/30830724/",
-  imagePath: "/img/news/news-suzukacity.jpg",
+  sourceLabel: "Motorsport.com",
+  title: "What really caused McLaren’s similar looking China failures",
+  summary: "McLaren’s double issue in China was traced to two different failures within the same battery system, one software related and one hardware related. The findings exposed deeper reliability concerns beyond what initially appeared to be a single problem.",
+  kcsQuickShift: "Same outcome but different causes and that makes it a much bigger concern.",
+  url: "https://www.motorsport.com/f1/news/what-really-happened-with-mclarens-similar-looking-china-f1-issues/10808076/",
+  imagePath: "/img/news/news-landogarage.jpg",
   photoCredit: "KC",
-  dateLabel: "March 24, 2026"
-
+  dateLabel: "March 26, 2026"
 }
 
 

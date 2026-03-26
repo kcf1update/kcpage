@@ -11,9 +11,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Game On At Mercedes? | Japanese GP Preview | F1 Nation Podcast ",
-    youtubeInput: "https://youtu.be/lxNeD0qjFlU",
-    forceExternal: "blue"
+    title: "Max Verstappen's extraordinary media ban + what we learned on day 1 at F1's Japanese GP ",
+    youtubeInput: "https://youtu.be/gbjnPsuU6Z0",
+   
     
     
   },
@@ -21,17 +21,17 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "The Charles Leclerc lap that's exposed how F1 2026 has ruined qualifying",
-  youtubeInput: "https://youtu.be/pWnTFd7wdHo",
+  title: "Weekend Warm-Up | 2026 Japanese Grand Prix",
+  youtubeInput: "https://youtu.be/JXfK30F7Edw",
   description: "I'm really surprised Lawrence Stroll let things get this far.",
-  
+  forceExternal:"blue"
 },
   
 
   {
     slotId: "slot3",
-    title: "Why It costs $40,000 to fuel an F1 car!",
-    youtubeInput: "https://youtu.be/CkgSjFZ5omw",
+    title: "F1 livestream with Peter Windsor feat. Kenny Handkammer",
+    youtubeInput: "https://youtu.be/iAWHWewiosY",
     
      
   }
