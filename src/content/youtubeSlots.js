@@ -11,8 +11,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Max Verstappen's extraordinary media ban + what we learned on day 1 at F1's Japanese GP ",
-    youtubeInput: "https://youtu.be/gbjnPsuU6Z0",
+    title: "Why Max Verstappen EVICTED an F1 journalist in Japan! ",
+    youtubeInput: "https://youtu.be/ehVwmILc_Us",
    
     
     
