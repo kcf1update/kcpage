@@ -1,3 +1,5 @@
+import { buildQueries } from "@testing-library/dom";
+
 export const youtubeSlots = [
 
   {
@@ -11,9 +13,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Why Max Verstappen EVICTED an F1 journalist in Japan! ",
-    youtubeInput: "https://youtu.be/ehVwmILc_Us",
-   
+    title: "Kimi Antonelli's Pole Lap | 2026 Japanese Grand Prix | Pirelli ",
+    youtubeInput: "https://youtu.be/VT8ULSU6em8",
+   forceExternal :"blue"
     
     
   },
@@ -21,17 +23,16 @@ export const youtubeSlots = [
  
     {
   slotId: "slot2",
-  title: "Weekend Warm-Up | 2026 Japanese Grand Prix",
-  youtubeInput: "https://youtu.be/JXfK30F7Edw",
-  description: "I'm really surprised Lawrence Stroll let things get this far.",
-  forceExternal:"blue"
+  title: "Ted's Qualifying Notebook - Japanese Grand Prix 2026",
+  youtubeInput: "https://youtu.be/gqcO4OJ3uSQ",
+   
 },
   
 
   {
     slotId: "slot3",
-    title: "F1 livestream with Peter Windsor feat. Kenny Handkammer",
-    youtubeInput: "https://youtu.be/iAWHWewiosY",
+    title: "2026 F1 Japanese GP qualifying analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/G8ux9wQMsko",
     
      
   }

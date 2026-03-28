@@ -25,12 +25,13 @@ export default function CountdownBar() {
   }, []);
 
   if (timeLeft.total <= 0) {
-    return (
-      <div className="text-center text-red-400 font-semibold">
-        🇯🇵 JAPANESE GRAND PRIX LIVE NOW
-      </div>
-    );
-  }
+  return (
+    <div className="flex items-center justify-center gap-2 text-red-400 font-semibold">
+      <img src="/flags/jp.png" alt="Japan flag" className="h-4 w-auto" />
+      <span>JAPANESE GRAND PRIX LIVE NOW</span>
+    </div>
+  );
+}
 
   return (
   <div className="flex items-center justify-center gap-2 text-white font-semibold">
