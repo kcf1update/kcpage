@@ -260,28 +260,28 @@ ANT,1m30.035s,	1m29.048s,	1m28.778s
 `;
 
 const PASTE_RACE = `
-NOR,,,
-VER,,,
-RUS,,,
-PIA,,,
-LEC,,,
-HAM,,,
-ALB,,,
-SAI,,, 
-ALO,,,
-STR,,,
-OCO,,,
-BEA,,,
-HUL,,,
-BOR,,,
-GAS,,,
-COL,,,	
-PER,,, 
-BOT,,,
-LAW,,,
-LIN,,,
-HAD,,,
-ANT,,,
+NOR,5,23.479s,5,10
+VER,8,32.677s,11,4
+RUS,4,15.754s,2,12
+PIA,2,13.722s,3,18
+LEC,3,15.270s,4,15
+HAM,6,25.037s,6,8
+ALB,20,2 laps,17
+SAI,15,65.008s,16 
+ALO,18,1 lap,21
+STR,DNF,23 laps,22
+OCO,10,51.216s,12,1
+BEA,DNF,33 laps,18
+HUL,11,52.280s,13
+BOR,13,59.078s,9
+GAS,7,32.340s,7,6
+COL,16,65.773s,15	
+PER,17,92.453s,19 
+BOT,19,1 lap,20
+LAW,9,50.180s,14,2
+LIN,14,59.848s,10
+HAD,12,56.154s,8
+ANT,1,53,1,25
 `;
 
 // =====================================================
@@ -340,7 +340,7 @@ Sun: —⛅  Cloudy 22°`,
     id: "race",
     type: "race",
     label: "Race",
-    time: "2:00 AM AST",
+    time: "complete results below",
     trackNote: "",
     extraNote: "",
     results: parseRacePaste(PASTE_RACE),
