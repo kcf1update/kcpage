@@ -6,14 +6,19 @@ import React from "react";
 export default function TopCard({ children, className = "" }) {
   return (
     <section
-      className={[
-        "rounded-3xl border border-black/10 bg-white",
+  className={[
+    "relative rounded-3xl border border-black/10 bg-white",
         "shadow-[0_10px_30px_rgba(0,0,0,0.18)]",
         "px-5 py-3 sm:px-6 sm:py-4",
         className,
       ].join(" ")}
       data-topcard
     >
+     <img
+  src="/flags/ca.png"
+  alt="Canada flag"
+  className="absolute top-2 right-2 h-4 w-auto opacity-80"
+/> 
       {children}
     </section>
   );

@@ -12,21 +12,21 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "2026 F1 Japanese GP RACE analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/4cScmKSQXtI",
-    
+    title: "Radio Rewind | 2026 Japanese Grand Prix",
+    youtubeInput: "https://youtu.be/12zxTQJXfGw",
+    forceExternal: "blue",
   },
 
   {
     slotId: "slot2",
-    title: "Scary Ollie Bearman crash exposes major 2026 F1 safety flaw",
-    youtubeInput: "https://youtu.be/VSZYzs5X9q8",
+    title: "Max closer than ever to QUITTING F1",
+    youtubeInput: "https://youtu.be/6nLJOQ9yq5g",
   },
 
   {
     slotId: "slot3",
-    title: "Drivers React After The Race | 2026 Japanese Grand Prix",
-    youtubeInput: "https://youtu.be/ufI5ldkQu9w",
-    forceExternal: "blue",
+    title: "Will Kimi Antonelli become the YOUNGEST F1 CHAMPION?",
+    youtubeInput: "https://youtu.be/Q0Tqk7txKxY",
+    
   }
 ];

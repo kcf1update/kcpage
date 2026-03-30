@@ -10,101 +10,109 @@ export const newsSlots = [
 {
   slotId: 1,
   sourceLabel: "ESPN",
-  title: "Max Verstappen considering retiring from F1 at end of 2026 amid frustration with new rules",
-  summary: "Max Verstappen has revealed he is considering walking away from Formula 1 at the end of 2026, despite being under contract with Red Bull beyond that point. The four-time world champion admitted he is no longer enjoying the sport under the current regulations, pointing to frustration with how the cars drive and the overall racing experience. His comments come after a difficult start to the season, including an eighth-place finish in Japan, and follow reports suggesting crucial weeks ahead could shape his future.",
-  kcsQuickShift: "If Max was winning I don't think he would have the same attitude as he does now. He is simply use to winning and being the fastest",
-  url: "https://www.espn.co.uk/f1/story/_/id/48337907/max-verstappen-considering-retiring-f1-end-2026-report-world-champion-red-bull",
-  imagePath: "/img/news/xpb/xpbimageverstappen.jpg",
+  title: "Toto Wolff says Christian Horner may struggle to find F1 return",
+  summary: "Toto Wolff has cast doubt over Christian Horner’s chances of returning to Formula 1, suggesting his long-standing actions in the paddock could now work against him. Horner, who was dismissed from Red Bull last year, is actively exploring a comeback but has already seen potential opportunities close off. With teams like Aston Martin no longer an option and competition for investment routes intensifying, Wolff believes the repercussions of Horner’s past influence may limit where he can realistically land next.",
+  kcsQuickShift: "This feels like Wolff throwing a bit of reality into the situation because getting back into F1 isn’t just about results it’s about relationships too.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48346061/toto-wolff-says-christian-horner-find-f1-return-hard-come-by",
+  imagePath: "/img/news/xpb/news-xpbhandw.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 },
+
 {
   slotId: 2,
-  sourceLabel: "ESPN",
-  title: "George Russell rues safety car timing after Japanese Grand Prix as Antonelli takes advantage",
-  summary: "George Russell was left frustrated after the Japanese Grand Prix, feeling a differently timed Safety Car could have handed him the win instead of team-mate Kimi Antonelli. Russell had been in strong contention before pitting, but a crash-triggered Safety Car allowed Antonelli to stop at the perfect moment and jump into the lead. The Mercedes driver ultimately slipped to fourth and now trails Antonelli in the championship standings.",
-  kcsQuickShift: "Russell didn’t lose this on pace, he lost it on timing and that one moment changed everything.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48338288/george-russell-kimi-antonelli-safety-car-f1-japanese-grand-prix",
-  imagePath: "/img/news/xpb/news-xpbsafteycar.jpg",
-  photoCredit: "XPB IMAGE",
-  dateLabel: "March 29, 2026"
+  sourceLabel: "The Race",
+  title: "Max Verstappen closer than ever to quitting F1",
+  summary: "Max Verstappen has admitted he is now seriously considering walking away from Formula 1, saying he needs to reassess his future in the sport for the first time. The four-time world champion has been increasingly frustrated with the 2026 regulations, particularly the heavy focus on energy management and reduced driving feel. Despite being under contract with Red Bull until 2028, Verstappen made it clear he will not continue if he is no longer enjoying it, with his recent struggles and dissatisfaction pushing him closer than ever to a potential early exit.",
+  kcsQuickShift: "This feels like a real warning sign because when a driver like Verstappen stops enjoying it things can change very quickly.",
+  url: "https://www.the-race.com/formula-1/max-verstappen-is-closer-than-ever-to-quitting-f1/",
+  imagePath: "/img/news/xpb/xpbimageverstappen.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "March 30, 2026"
 },
+
 {
   slotId: 3,
-  sourceLabel: "The Race",
-  title: "FIA responds to Bearman crash concerns over dangerous closing speeds in 2026 F1 cars",
-  summary: "The FIA has acknowledged that high closing speeds played a role in Oliver Bearman’s heavy crash during the Japanese Grand Prix, but has warned that any immediate rule changes would be premature. The incident, caused by large speed differences between cars due to energy deployment and harvesting, has raised serious safety concerns among drivers and teams. The governing body confirmed ongoing discussions and scheduled meetings in April to review the 2026 regulations and assess whether adjustments are needed based on real-world data.",
-  kcsQuickShift: "They are admitting there is a problem, but they are not ready to fix it yet and that is where the tension is building.",
-  url: "https://www.the-race.com/formula-1/fia-response-to-contribution-of-closing-speeds-in-bearman-crash/",
+  sourceLabel: "ESPN",
+  title: "Carlos Sainz says FIA ignored driver warnings before Bearman crash",
+  summary: "Carlos Sainz has criticised Formula 1’s governing body, saying repeated warnings from drivers about dangerous speed differences were ignored before Oliver Bearman’s crash in Japan. Bearman hit the barriers at over 300 km/h after rapidly closing on a slower car, highlighting concerns around the new hybrid energy deployment systems. Sainz believes the risk had been clearly identified in advance, but no action was taken, with officials prioritising the spectacle of racing over safety improvements.",
+  kcsQuickShift: "This is the kind of crash drivers saw coming and now the pressure is on the FIA because ignoring those warnings looks really bad.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48337796/carlos-sainz-f1-oliver-bearman-ignored-crash-japanese-grand-prix",
   imagePath: "/img/news/news-overtake.jpg",
   photoCredit: "KC",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 },
+
 {
   slotId: 4,
-  sourceLabel: "Motorsport.com",
-  title: "Red Bull now behind Alpine in 2026 F1 championship – here’s how it happened",
-  summary: "Red Bull has slipped behind Alpine in the 2026 championship standings after a difficult start to the season marked by reliability issues and inconsistent performance. Both Max Verstappen and Isack Hadjar lost valuable points due to technical problems in earlier races, while the team has struggled to match its initial pace from Melbourne. Meanwhile, Alpine has taken advantage of steady results and improved consistency, highlighting how quickly the competitive order has shifted under the new regulations.",
-  kcsQuickShift: "Red Bull dropping behind Alpine was not on anyone’s radar.It shows how well that Mercedes engine is working in the Alpine.",
-  url: "https://www.motorsport.com/f1/news/red-bull-now-behind-alpine-in-2026-f1-championship-heres-how-it-happened/10809414/",
-  imagePath: "/img/news/news-alpinejapan.jpg",
-  photoCredit: "Courtesy of Apline F1",
-  dateLabel: "March 29, 2026"
-},
-{
-  slotId: 5,
-  sourceLabel: "FormulaPassion",
-  title: "Ferrari accorcia: Vasseur sorride, ‘eravamo a 8 decimi, ora a 4’ EN:Ferrari closes the gap: Vasseur pleased, ‘we were 0.8s behind, now 0.4’",
-  summary: "Fred Vasseur ha evidenziato i progressi della Ferrari dopo il Gran Premio del Giappone, sottolineando come il distacco dai rivali si sia dimezzato rispetto all’inizio della stagione. Il team ha mostrato segnali concreti di miglioramento sia in qualifica che in gara, anche se resta ancora del lavoro da fare per tornare stabilmente al vertice. EN:Fred Vasseur highlighted Ferrari’s progress after the Japanese Grand Prix, noting that the gap to rivals has been cut in half compared to the start of the season. The team showed clear signs of improvement in both qualifying and race pace, although more work is still needed to consistently fight at the front.",
-  kcsQuickShift: "Ferrari is quietly moving in the right direction and this could get interesting soon IT:Ferrari sta migliorando e potrebbe diventare interessante presto",
-  url: "https://www.formulapassion.it/f1/f1-news/ferrari-accorcia-fred-vasseur-sorride-eravamo-8-decimi-ora-4-giusta-direzione",
-  imagePath: "/img/news/ferrari/news-ferraricl.jpg",
-  photoCredit: "Courtesy of ferrari F1",
-  dateLabel: "March 29, 2026"
-},
-{
-  slotId: 6,
-  sourceLabel: "Crash.net",
-  title: "Ollie Bearman gives first reaction to scary Suzuka crash as FIA responds",
-  summary: "Ollie Bearman described his high-speed Suzuka crash as a ‘scary moment’ after a huge speed difference between cars led to the incident. The Haas driver pointed to the massive delta in closing speeds under the 2026 regulations, something drivers had already warned could become dangerous. The FIA acknowledged the role of these speed differences and confirmed further discussions are planned, though it stressed that any immediate rule changes would require detailed analysis.",
-  kcsQuickShift: "The drivers warned this could happen and now it has, so the pressure is really on the FIA to act. Most importantly I'm glad he is ok, that was a 50g hit.",
-  url: "https://www.crash.net/f1/news/1092651/1/ollie-bearman-gives-first-reaction-scary-suzuka-f1-crash-fia-responds",
+  sourceLabel: "RacingNews365",
+  title: "Oliver Bearman 'kicking himself' after scary Japanese GP crash",
+  summary: "Oliver Bearman has been left frustrated following his high-speed crash at the Japanese Grand Prix, admitting he feels he could have handled the situation better. The Haas driver was forced onto the grass while rapidly closing on a slower car, leaving him unable to slow down before spinning into the barriers in a heavy impact. Team boss Ayao Komatsu made it clear the incident was not solely Bearman’s fault, pointing instead to the massive speed difference between cars, but confirmed the young driver is already taking responsibility and looking to learn from it.",
+  kcsQuickShift: "You can see this one stuck with him because even when it’s not fully your fault drivers always feel like they could have done something differently.",
+  url: "https://racingnews365.com/oliver-bearman-kicking-himself-after-scary-japanese-gp-crash",
   imagePath: "/img/news/xpb/news-xpbbearman.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 },
+
+{
+  slotId: 5,
+  sourceLabel: "SoyMotor",
+  title: "Un coche de seguridad lleva a Antonelli a ganar en Japón EN:A safety car helps Antonelli win in Japan",
+  summary: "Kimi Antonelli ha conseguido su segunda victoria consecutiva en el Gran Premio de Japón tras una carrera marcada por el coche de seguridad. El piloto de Mercedes aprovechó el accidente de Oliver Bearman para realizar su parada en el momento perfecto y asegurar el liderato. EN:Kimi Antonelli secured his second straight win at the Japanese Grand Prix in a race shaped by a safety car period, capitalizing on Oliver Bearman’s crash to take control of the race.",
+  kcsQuickShift: "Antonelli is making the most of every opportunity right now and that’s exactly how championships start to take shape. ES:Antonelli está aprovechando cada oportunidad y así es como empiezan a construirse los campeonatos.",
+  url: "https://soymotor.com/f1/noticias/cronica-carrera-gp-japon-f1-2026",
+  imagePath: "/img/news/xpb/news-xpbkimi2.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "March 30, 2026"
+},
+
+{
+  slotId: 6,
+  sourceLabel: "Formula1.com",
+  title: "Vasseur identifies where Ferrari have room for improvement after Japan",
+  summary: "Ferrari team principal Fred Vasseur says the team has clear areas to improve despite a strong showing in Japan. While race pace and execution were encouraging, Ferrari continues to struggle with straight-line speed and energy deployment compared to rivals, leaving key gains still on the table.",
+  kcsQuickShift: "Ferrari look close but not quite there yet and it feels like they need a bit more to really take the fight to the front.",
+  url: "https://www.formula1.com/en/latest/article/vasseur-identifies-where-ferrari-have-room-for-improvement-after-japan.6LLhKIo4mZtBr6pJwlwVGG",
+  imagePath: "/img/news/ferrari/news-ferraricharles.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "March 30, 2026"
+},
+
 {
   slotId: 7,
   sourceLabel: "Formula1.com",
-  title: "JAPAN LOWDOWN: All the key moments as Antonelli takes championship lead and McLaren show their potential",
-  summary: "Kimi Antonelli came away from Suzuka with a second straight victory, and the result pushed the Mercedes rookie into the championship lead after three rounds. Formula1.com’s race lowdown also pointed to McLaren’s growing strength across the Japanese Grand Prix weekend, with the team showing it has the pace to stay firmly in the fight near the front.",
-  kcsQuickShift: "Antonelli is suddenly looking like the real early title story, but McLaren still feels very much in this fight.",
-  url: "https://www.formula1.com/en/latest/article/japan-lowdown-all-the-key-moments-as-antonelli-takes-championship-lead-and.7vOFczaFym1E0dor7zK0oC",
-  imagePath: "/img/news/xpb/news-xpb5kimi.jpg",
+  title: "McLaren surprised themselves with Japan pace as Stella hails positive day",
+  summary: "McLaren exceeded expectations at the Japanese Grand Prix, showing strong pace and improved balance after a difficult start to the season. The team’s performance, including a podium finish, highlighted gains in execution and energy management that could signal a turning point.",
+  kcsQuickShift: "This is a big step forward for McLaren because after the rough start they finally look like they belong at the front again.",
+  url: "https://www.formula1.com/en/latest/article/mclaren-surprised-themselves-with-japan-pace-as-stella-hails-positive-day.zLAeK0FyiqKEAwJSiQbEg",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 },
+
 {
   slotId: 8,
-  sourceLabel: "AutoSport Web",
-  title: "アントネッリが2戦連続の完勝。ホンダPU＆アロンソが鈴鹿で今季初完走 EN:Antonelli dominates again with back-to-back wins as Honda PU and Alonso secure first finish in Japan",
-  summary: "アントネッリが鈴鹿でポール・トゥ・ウインを達成し、2戦連続優勝で今季2勝目を挙げた。19歳のメルセデスドライバーはレースをコントロールし、ランキングでもトップに立つ結果となった。ホンダPUを搭載するアストンマーティンではアロンソが今季初完走を記録し、信頼性面で前進を見せた。 EN:Kimi Antonelli secured a dominant pole-to-win victory at Suzuka, marking his second consecutive win of the season. The 19-year-old Mercedes driver controlled the race and moved into the championship lead. Aston Martin, powered by Honda, also saw Fernando Alonso reach the finish for the first time this season, signaling progress on reliability.",
-  kcsQuickShift: "Antonelli is not just winning now he is controlling races like a veteran JP:アントネッリはただ勝っているだけでなくレースを支配している",
-  url: "https://www.as-web.jp/f1/1303245",
-  imagePath: "/img/news/xpb/news-xpbkimi2.jpg",
+  sourceLabel: "AA",
+  title: "Formula 1'de sezonun üçüncü etabı Japonya Grand Prix'sini Kimi Antonelli kazandı EN:Kimi Antonelli wins Japanese Grand Prix as third round of the season",
+  summary: "Formula 1'de sezonun üçüncü yarışı olan Japonya Grand Prix'sini Mercedes pilotu Kimi Antonelli kazandı. Genç sürücü yarışta güçlü bir performans sergileyerek üst üste ikinci galibiyetini elde etti ve şampiyona liderliğini ele geçirdi. EN:Mercedes driver Kimi Antonelli won the Japanese Grand Prix, the third race of the season, delivering another strong performance. The young driver secured back-to-back victories and moved into the championship lead with the result.",
+  kcsQuickShift: "Antonelli is quickly turning into the real deal because two wins in a row this early changes everything. TR:Antonelli gerçekten büyük bir yıldız olmaya doğru gidiyor çünkü sezonun başında iki galibiyet her şeyi değiştirir.",
+  url: "https://www.aa.com.tr/tr/dunyadan-spor/formula-1de-sezonun-ucuncu-etabi-japonya-grand-prixsini-kimi-antonelli-kazandi/3883657",
+  imagePath: "/img/news/xpb/news-xpb5kimi.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 },
+
 {
   slotId: 9,
-  sourceLabel: "Canal+",
-  title: "Formule 1 : Antonelli entre dans l’histoire, le résumé du Grand Prix du Japon EN:Antonelli makes history as Japanese Grand Prix unfolds",
-  summary: "Andrea Kimi Antonelli est entré dans l’histoire à Suzuka en décrochant une deuxième victoire consécutive et en prenant la tête du championnat du monde. Le jeune pilote Mercedes a profité d’une voiture de sécurité au bon moment pour s’installer en tête avant de contrôler la course jusqu’à l’arrivée. Derrière lui, Oscar Piastri et Charles Leclerc complètent le podium dans une course marquée par plusieurs batailles stratégiques. EN:Kimi Antonelli made history at Suzuka by claiming his second consecutive win and moving into the championship lead. The Mercedes rookie benefited from a well-timed Safety Car to take control of the race before managing it to the finish. Oscar Piastri and Charles Leclerc completed the podium in a race shaped by key strategy battles.",
-  kcsQuickShift: "Antonelli is already making history and this season is starting to feel like it could belong to him FR:Antonelli est déjà en train d’écrire l’histoire et cette saison pourrait bien lui appartenir",
-  url: "https://www.canalplus.com/articles/sports/formule-1-antonelli-entre-dans-l-histoire-le-resume-du-grand-prix-du-japon",
-  imagePath: "/img/news/xpb/news-xpbkimiwin.jpg",
+  sourceLabel: "Motorsport.com",
+  title: "Stroll and Alonso resort to 'Aston Martin championship' battle in Japan",
+  summary: "Fernando Alonso and Lance Stroll were left effectively racing each other during the Japanese Grand Prix as Aston Martin’s struggles continued. Ongoing performance and reliability issues have left the team off the pace and focusing on internal battles rather than fighting at the front.",
+  kcsQuickShift: "Right now Aston Martin aren’t racing anyone else they’re just trying to figure themselves out and that’s a tough place to be.",
+  url: "https://www.motorsport.com/f1/news/lance-stroll-and-fernando-alonso-resort-to-aston-martin-championship-battle-in-japan/10809796/",
+  imagePath: "/img/news/xpb/news-xpbfernando.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "March 29, 2026"
+  dateLabel: "March 30, 2026"
 }
 
 ];

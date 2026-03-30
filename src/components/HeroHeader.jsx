@@ -9,6 +9,12 @@ export default function HeroHeader() {
         src="/img/hero-worldwide10.png"
         alt="KC's Worldwide F1 Update"
       />
+
+      <img
+        className="canadaFlag"
+        src="/flags/ca.png"
+        alt="Canada flag"
+      />
     </div>
   );
 }
