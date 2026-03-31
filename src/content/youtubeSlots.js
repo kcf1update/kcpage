@@ -12,21 +12,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Radio Rewind | 2026 Japanese Grand Prix",
-    youtubeInput: "https://youtu.be/12zxTQJXfGw",
+    title: "Why This Genius Race Car Was Banned",
+    youtubeInput: "https://youtu.be/--gfBRgeIZo",
     forceExternal: "blue",
   },
 
   {
     slotId: "slot2",
-    title: "Max closer than ever to QUITTING F1",
-    youtubeInput: "https://youtu.be/6nLJOQ9yq5g",
+    title: "Kimi Puts Pressure On George | 2026 Japanese GP Review | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/pbJLSRj2cPA",
+    forceExternal: "blue",
   },
 
   {
     slotId: "slot3",
-    title: "Will Kimi Antonelli become the YOUNGEST F1 CHAMPION?",
-    youtubeInput: "https://youtu.be/Q0Tqk7txKxY",
+    title: "WHY did OSCAR stop so early? Suzuka F1 analysis with Mark Slade and Peter Windsor",
+    youtubeInput: "https://youtu.be/zluznywjBzY",
     
   }
 ];

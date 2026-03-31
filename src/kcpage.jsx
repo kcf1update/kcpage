@@ -205,6 +205,11 @@ export default function KCpage() {
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
         {/* ✅ TOP CARD AT THE VERY TOP (full width like PageHero) */}
         <section className="relative rounded-none border border-orange-400/70 bg-white text-slate-900 shadow-[0_0_30px_rgba(255,165,0,0.35)]">
+        <img
+  src="/flags/ca.png"
+  alt="Canada flag"
+  className="absolute top-2 right-2 h-5 w-auto z-10 opacity-90"
+/>
           <div className="flex items-center justify-center">
             <div className="relative w-full max-w-6xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
               <img
