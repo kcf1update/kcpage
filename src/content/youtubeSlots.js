@@ -4,30 +4,30 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC's Channel (Subscribe)",
-    youtubeInput: "https://www.youtube.com/shorts/E6fk5HBWigk?feature=share",
-    description: "Shock Exit: Wheatley Leaves Audi–Aston Martin Move Next?",
-    ctaUrl: "https://www.youtube.com/shorts/E6fk5HBWigk?feature=share",
+    youtubeInput: "https://youtu.be/jEgviMp0xFA",
+    description: "Antonelli Wins Suzuka After Huge Crash Flips the Race | Japanese GP Recap",
+    ctaUrl: "https://youtu.be/jEgviMp0xFA",
     ctaLabel: "Visit KC's YouTube →",
   },
 
   {
     slotId: "slot1",
-    title: "Why This Genius Race Car Was Banned",
-    youtubeInput: "https://youtu.be/--gfBRgeIZo",
-    forceExternal: "blue",
+    title: "Could Max Verstappen really leave F1?! | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/8n45wLFIKk0",
+    
   },
 
   {
     slotId: "slot2",
-    title: "Kimi Puts Pressure On George | 2026 Japanese GP Review | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/pbJLSRj2cPA",
-    forceExternal: "blue",
+    title: "What does an F1 driver's house REALLY look like?! | At Home with Valtteri Bottas",
+    youtubeInput: "https://youtu.be/sJu-VPApLPA",
+    
   },
 
   {
     slotId: "slot3",
-    title: "WHY did OSCAR stop so early? Suzuka F1 analysis with Mark Slade and Peter Windsor",
-    youtubeInput: "https://youtu.be/zluznywjBzY",
+    title: "The new F1 2026 engine trick exposed by its bizarre side-effect",
+    youtubeInput: "https://youtu.be/YRIq5AoyEX8",
     
   }
 ];
