@@ -12,22 +12,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Could Max Verstappen really leave F1?! | The F1 Show Podcast",
-    youtubeInput: "https://youtu.be/8n45wLFIKk0",
-    
+    title: "Top 10 Onboards | 2026 Japanese Grand Prix",
+    youtubeInput: "https://youtu.be/MhWkelz3-sw",
+    forceExternal: "blue" 
   },
 
   {
     slotId: "slot2",
-    title: "What does an F1 driver's house REALLY look like?! | At Home with Valtteri Bottas",
-    youtubeInput: "https://youtu.be/sJu-VPApLPA",
+    title: "F1's plan for six 2026 rules fixes revealed",
+    youtubeInput: "https://youtu.be/a1FGZRtNndE",
     
   },
 
   {
     slotId: "slot3",
-    title: "The new F1 2026 engine trick exposed by its bizarre side-effect",
-    youtubeInput: "https://youtu.be/YRIq5AoyEX8",
+    title: "Is Max Verstappen REALLY leaving F1? | Paddock Access F1 Podcast",
+    youtubeInput: "https://youtu.be/Mie4z9zPbtM",
     
   }
 ];

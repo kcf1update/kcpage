@@ -681,7 +681,7 @@ export default function NextRacePage() {
 
               <div className="mt-3 grid grid-cols-2 gap-2 sm:mt-4 sm:flex sm:flex-wrap">
                 <a
-                  href="/img/tracks/japanesetrack.jpg"
+                  href="/img/tracks/shutterstockmiami.jpg"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
@@ -691,7 +691,7 @@ export default function NextRacePage() {
                 </a>
 
                 <a
-                  href="/img/Tracks/tek2.jpg"
+                  href="/img/Tracks/shutterstock_miamitech.jpg"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
