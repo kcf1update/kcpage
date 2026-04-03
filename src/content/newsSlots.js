@@ -70,7 +70,7 @@ export const newsSlots = [
   kcsQuickShift: "This feels like a reset moment for Williams and the next few weeks are going to define their season.",
   url: "https://www.formula1.com/en/latest/article/williams-boss-vowles-hopeful-that-painful-japanese-gp-weekend-will-be-a-line.Vh8EeQdznG04sMgeiiqR3",
   imagePath: "/img/news/news-williams2.jpg",
-  photoCredit: "Shutterstock",
+  photoCredit: "KC",
   dateLabel: "April 3, 2026"
 },
 {
