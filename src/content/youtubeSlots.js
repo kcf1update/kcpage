@@ -19,15 +19,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "F1's plan for six 2026 rules fixes revealed",
-    youtubeInput: "https://youtu.be/a1FGZRtNndE",
+    title: "The INSANE Weekly Routine of an F1 Driver!",
+    youtubeInput: "https://youtu.be/94-qIt9ubFM",
     
   },
 
   {
     slotId: "slot3",
-    title: "Is Max Verstappen REALLY leaving F1? | Paddock Access F1 Podcast",
-    youtubeInput: "https://youtu.be/Mie4z9zPbtM",
-    
+    title: "F1 Drivers Play Fill In The Blanks!",
+    youtubeInput: "https://youtu.be/xsEZCW3Lz90",
+    forceExternal: "blue" 
   }
 ];
