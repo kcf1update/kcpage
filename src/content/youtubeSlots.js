@@ -19,8 +19,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "The INSANE Weekly Routine of an F1 Driver!",
-    youtubeInput: "https://youtu.be/94-qIt9ubFM",
+    title: "Can Adrian Newey's F1 genius really save Aston Martin-Honda?",
+    youtubeInput: "https://youtu.be/UNGgOgWi6E8",
     
   },
 
