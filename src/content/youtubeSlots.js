@@ -12,8 +12,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Top 10 Onboards | 2026 Japanese Grand Prix",
-    youtubeInput: "https://youtu.be/MhWkelz3-sw",
+    title: "Five troubled F1 teams who most need surprise break",
+    youtubeInput: "https://youtu.be/Eg_YTX37LYI",
     forceExternal: "blue" 
   },
 
