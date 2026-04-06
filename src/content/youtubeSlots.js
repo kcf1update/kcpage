@@ -12,9 +12,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Five troubled F1 teams who most need surprise break",
-    youtubeInput: "https://youtu.be/Eg_YTX37LYI",
-    forceExternal: "blue" 
+    title: "Crofty answers 11 questions you've ALWAYS wanted to ask an F1 commentator! | F1 Unpacked",
+    youtubeInput: "https://youtu.be/fEjFCRGR718",
+     
   },
 
   {
@@ -26,8 +26,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "F1 Drivers Play Fill In The Blanks!",
-    youtubeInput: "https://youtu.be/xsEZCW3Lz90",
+    title: "Laurent Mekies: Relishing Red Bull Challenge | F1 Beyond The Grid Podcast",
+    youtubeInput: "https://youtu.be/ADjpL-YeW-k",
     forceExternal: "blue" 
   }
 ];
