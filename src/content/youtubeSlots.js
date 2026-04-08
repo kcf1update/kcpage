@@ -4,9 +4,9 @@ export const youtubeSlots = [
   {
     slotId: "slotKC",
     title: "KC's Channel (Subscribe)",
-    youtubeInput: "https://youtu.be/jEgviMp0xFA",
-    description: "Antonelli Wins Suzuka After Huge Crash Flips the Race | Japanese GP Recap",
-    ctaUrl: "https://youtu.be/jEgviMp0xFA",
+    youtubeInput: "https://youtu.be/cjdGEeGj43c",
+    description: "F1 2026 Problem: Cars Are Deciding Overtakes… Not Drivers",
+    ctaUrl: "https://youtu.be/cjdGEeGj43c",
     ctaLabel: "Visit KC's YouTube →",
   },
 
