@@ -12,9 +12,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Rivals & Stars Of The F1 Season So Far | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/ylYWdzF2iXs",
-     forceExternal: "blue" 
+    title: "Arvid Lindblad and Ted Kravitz explore Delhi",
+    youtubeInput: "https://youtu.be/ZM1ysbOxa9U",
+     
   },
 
   {
@@ -26,8 +26,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "F1 Can't Keep Doing This! | F1 News",
-    youtubeInput: "https://youtu.be/OQAm-yRV6KE",
-    
+    title: "Race Winning Overtakes But They Happen Progressively Later",
+    youtubeInput: "https://youtu.be/DXpJ93iJZ0M",
+    forceExternal: "blue" 
   }
 ];
