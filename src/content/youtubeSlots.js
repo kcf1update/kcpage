@@ -12,15 +12,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Arvid Lindblad and Ted Kravitz explore Delhi",
-    youtubeInput: "https://youtu.be/ZM1ysbOxa9U",
+    title: "BREAKING: Gianpiero Lambiase set to leave Red Bull Racing for rival team!",
+    youtubeInput: "https://youtu.be/Vj8YMZUtZKs",
      
   },
 
   {
     slotId: "slot2",
-    title: "Are the NEW F1 REGULATIONS good or bad for the sport?",
-    youtubeInput: "https://youtu.be/UCSOGCPD3NI",
+    title: "What does GP Lambiase leaving Red Bull mean for Max Verstappen?",
+    youtubeInput: "https://youtu.be/YQG_R6S1rPM",
     
   },
 
