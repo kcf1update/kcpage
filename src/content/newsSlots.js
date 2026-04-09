@@ -33,15 +33,15 @@ export const newsSlots = [
   dateLabel: "April 9, 2026"
 },
 {
-  slotId: 3,
-  sourceLabel: "Motorsport.com",
-  title: "Gianpiero Lambiase could leave Red Bull and join McLaren in 2028",
-  summary: "Reports suggest Gianpiero Lambiase could leave Red Bull to join McLaren in a senior role starting in 2028 once his current contract expires. The move, which has not been officially confirmed, would see the long-time race engineer potentially take on a leadership position as McLaren continues to strengthen its technical structure following recent success.",
-  kcsQuickShift: "If this move happens, it is another massive hit to Red Bull’s core. Even as a future move, it shows where momentum in F1 might be shifting.",
-  url: "https://www.motorsport.com/f1/news/gianpiero-lambiase-could-leave-red-bull-and-join-mclaren-in-2028/10811617/",
-  imagePath: "/img/news/news-shutterstockmclarenpit.jpg",
+ slotId: 10,
+  sourceLabel: "Autoweek",
+  title: "McLaren lands Verstappen race engineer Gianpiero Lambiase in major F1 move",
+  summary: "McLaren has secured Gianpiero Lambiase in a major long-term signing, with the Red Bull race engineer set to join the team after his current contract ends. Lambiase, who has worked with Max Verstappen since 2016 and helped guide multiple championship-winning campaigns, will take on a senior leadership role as McLaren continues to strengthen its technical structure.",
+  kcsQuickShift: "This confirms it, McLaren is building something serious behind the scenes. Taking one of Red Bull’s most important figures is a massive statement.",
+  url: "https://www.autoweek.com/racing/formula-1/a70973880/mclaren-lands-verstappen-race-engineer-lambiase/",
+  imagePath: "/img/news/news-shutterstockstella.jpg",
   photoCredit: "Shutterstock",
-  imageSource: "Motorsport.com",
+  imageSource: "Autoweek",
   dateLabel: "April 9, 2026"
 },
 {
