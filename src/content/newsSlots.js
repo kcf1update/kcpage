@@ -1,123 +1,120 @@
-// src/content/newsSlots.js
-// IMPORTANT:
-// - Use ONLY local images you own (stock you licensed or original art).
-// - Put images in: public/img/news/
-// - Use local paths like: "/img/news/my-image.jpg"
-// - Do NOT paste external image URLs.
-
 export const newsSlots = [
-  
 
-{
-  slotId: 1,
-  sourceLabel: "RacingNews365",
-  title: "Gianpiero Lambiase bombshell exit continues worrying Red Bull trend",
-  summary: "Gianpiero Lambiase’s departure from Red Bull has raised fresh concerns about internal stability within the team. The long-time race engineer, closely associated with Max Verstappen’s success, is the latest high-profile figure linked to ongoing changes behind the scenes as Red Bull faces increasing scrutiny over its structure.",
-  kcsQuickShift: "This is not just another staff change, this is a key piece of Verstappen’s success leaving the building. Red Bull’s stability is starting to look very different right now.",
-  url: "https://racingnews365.com/gianpiero-lambiase-bombshell-exit-continues-worrying-red-bull-trend",
-  imagePath: "/img/news/news-shutterstockredbull.jpg",
-  photoCredit: "Shutterstock",
-  imageSource: "RacingNews365",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 2,
-  sourceLabel: "RacingNews365",
-  title: "Who is Gianpiero Lambiase? The stunning Red Bull exit that has rocked F1",
-  summary: "Gianpiero Lambiase has been one of the most influential figures behind Red Bull’s recent dominance, serving as Max Verstappen’s race engineer since 2016 and playing a key role in multiple championship-winning campaigns. Known for his direct communication style and strong relationship with Verstappen, Lambiase has become one of the most respected engineers in Formula 1, making his reported exit another major blow to the team’s stability.",
-  kcsQuickShift: "If you don’t know who Lambiase is, he’s basically Verstappen’s voice in the car every race. Losing him is not just technical, it changes the whole dynamic at Red Bull.",
-  url: "https://racingnews365.com/who-is-gianpiero-lambiase-the-stunning-red-bull-exit-that-has-rocked-f1",
-  imagePath: "/img/news/news-shutterstocklambiase.jpg",
-  photoCredit: "Shutterstock",
-  imageSource: "RacingNews365",
-  dateLabel: "April 9, 2026"
-},
-{
- slotId: 10,
-  sourceLabel: "Autoweek",
-  title: "McLaren lands Verstappen race engineer Gianpiero Lambiase in major F1 move",
-  summary: "McLaren has secured Gianpiero Lambiase in a major long-term signing, with the Red Bull race engineer set to join the team after his current contract ends. Lambiase, who has worked with Max Verstappen since 2016 and helped guide multiple championship-winning campaigns, will take on a senior leadership role as McLaren continues to strengthen its technical structure.",
-  kcsQuickShift: "This confirms it, McLaren is building something serious behind the scenes. Taking one of Red Bull’s most important figures is a massive statement.",
-  url: "https://www.autoweek.com/racing/formula-1/a70973880/mclaren-lands-verstappen-race-engineer-lambiase/",
-  imagePath: "/img/news/news-shutterstockstella.jpg",
-  photoCredit: "Shutterstock",
-  imageSource: "Autoweek",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 4,
-  sourceLabel: "RacingNews365 NL",
-  title: "Red Bull behoudt volste vertrouwen in architect auto Verstappen EN: Red Bull retains full confidence in architect of Verstappen’s car",
-  summary: "Red Bull behoudt het volledige vertrouwen in technisch directeur Pierre Waché ondanks de tegenvallende start van het 2026-seizoen. Max Verstappen heeft aangegeven dat de problemen niet bij de motor liggen, maar bij de auto zelf, wat de druk op het technische team vergroot. EN: Red Bull continues to fully back technical director Pierre Waché despite a difficult start to the 2026 season, with Verstappen pointing to car-related issues rather than the engine as the main concern.",
-  kcsQuickShift: "Red Bull is standing behind their technical leadership for now, but the pressure is clearly building. NL: Het vertrouwen is er nog, maar de druk begint nu echt toe te nemen bij Red Bull.",
-  url: "https://racingnews365.nl/red-bull-behoudt-volste-vertrouwen-in-architect-auto-verstappen",
-  imagePath: "/img/news/xpb/xpbimageverstappen.jpg",
-  photoCredit: "XPB IMAGES",
-  imageSource: "RacingNews365",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 5,
-  sourceLabel: "ESPN",
-  title: "Formula 1 begin discussions over rule changes for 2026 season",
-  summary: "Formula 1 has begun formal discussions about potential rule tweaks for the 2026 season following growing concerns from teams and drivers. The new regulations, which feature a 50-50 split between combustion and electric power, have created challenges around energy management, with drivers forced into lift-and-coast strategies that have drawn criticism despite increased overtaking on track.",
-  kcsQuickShift: "F1 is already looking at adjusting these new rules just three races in. That tells you teams and drivers are still trying to figure out if this direction really works.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48435713/formula-1-begin-discussions-rule-changes-2026-season",
-  imagePath: "/img/news/news-fiaruleschanges.jpg",
-  photoCredit: "KC",
-  imageSource: "ESPN",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 6,
-  sourceLabel: "FormulaPassion",
-  title: "F1 regole 2026 power unit riunione Londra EN: F1 2026 power unit rules set for key London meeting",
-  summary: "La Formula 1 si prepara a una riunione chiave a Londra per discutere possibili modifiche alle power unit 2026 dopo le prime tre gare della stagione. Le principali preoccupazioni riguardano la gestione dell’energia e le differenze di velocità tra vetture in fasi diverse di utilizzo della batteria, con il rapporto 50-50 tra parte elettrica e termica al centro del dibattito. EN: Formula 1 is set for a key London meeting to discuss potential changes to the 2026 power unit rules after early-season concerns over energy management and speed differences between cars, with the 50-50 electric and combustion split at the centre of discussions.",
-  kcsQuickShift: "This is becoming the story of the season, these 2026 engines are forcing changes already. IT: Questo regolamento sta già mostrando i suoi limiti e la F1 è costretta a reagire.",
-  url: "https://www.formulapassion.it/f1/f1-news/f1-regole-2026-power-unit-riunione-londra-motore-elettrico-termico",
-  imagePath: "/img/news/news-f1hybridengine.jpg",
-  photoCredit: "KC",
-  imageSource: "FormulaPassion",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 7,
-  sourceLabel: "RacingNews365",
-  title: "Lewis Hamilton in Ferrari action during crucial F1 test",
-  summary: "Lewis Hamilton has been back on track with Ferrari during a key test session as the team continues to refine its 2026 car. The running provided valuable data for both Hamilton and Ferrari as they work to better understand performance under the new regulations, with the focus on consistency, reliability and adapting to the demands of the revised power unit systems.",
-  kcsQuickShift: "Hamilton getting more time in the Ferrari is exactly what this team needs right now. The more comfortable he gets with this car, the more dangerous Ferrari becomes.",
-  url: "https://racingnews365.com/lewis-hamilton-in-ferrari-action-during-crucial-f1-test",
-  imagePath: "/img/news/ferrari/news-ferrarilewis.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  imageSource: "RacingNews365",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 8,
-  sourceLabel: "Formula1.com",
-  title: "‘That’s not something we can control’ – Komatsu not worrying about potentially losing Bearman to Ferrari in future",
-  summary: "Haas Team Principal Ayao Komatsu says there is no point worrying about potentially losing Oliver Bearman to Ferrari as the young British driver continues to impress early in the 2026 season. Bearman’s strong performances have already strengthened links to Ferrari, where he remains closely tied through their driver academy, but Komatsu insists Haas must stay focused on maximizing what they can control.",
-  kcsQuickShift: "Bearman is quickly becoming one of the hottest young drivers in F1 right now. If he keeps performing like this, Ferrari coming calling feels like a matter of when, not if.",
-  url: "https://www.formula1.com/en/latest/article/thats-not-something-we-can-control-komatsu-not-worrying-about-potentially.6ZQixWy54nP1Z9BIhEzzrT",
-  imagePath: "/img/news/xpb/news-xpbbearman.jpg",
-  photoCredit: "XPB IMAGES",
-  imageSource: "Formula1.com",
-  dateLabel: "April 9, 2026"
-},
-{
-  slotId: 9,
-  sourceLabel: "The Race",
-  title: "Stroll consulted Verstappen over GT racing debut",
-  summary: "Lance Stroll revealed he spoke with Max Verstappen before committing to his GT racing debut during Formula 1’s early-season break. Verstappen, who has significant experience in GT and endurance racing, provided insight as Stroll prepares to compete in the GT World Challenge Europe at Paul Ricard alongside Aston Martin.",
-  kcsQuickShift: "Interesting to see Stroll leaning on Verstappen here, it shows how much respect there is for what Max is doing outside F1. GT racing is becoming part of the modern driver toolkit.",
-  url: "https://www.the-race.com/formula-1/stroll-consulted-verstappen-over-gt-racing-debut/",
-  imagePath: "/img/news/news-shutterstocklance.jpg",
-  photoCredit: "Shutterstock",
-  imageSource: "The Race",
-  dateLabel: "April 9, 2026"
-}
+  {
+    slotId: 1,
+    sourceLabel: "RacingNews365",
+    title: "Zak Brown reacts as McLaren lands Verstappen’s race engineer Lambiase",
+    summary: "McLaren CEO Zak Brown has welcomed the signing of Gianpiero Lambiase, long-time race engineer to Max Verstappen, who will join the team as Chief Racing Officer no later than 2028. The move is another major recruitment win for McLaren as it continues to strengthen its leadership structure, while Red Bull faces the loss of yet another key figure from its dominant era.",
+    kcsQuickShift: "This is a big one. McLaren keeps stacking talent while Red Bull keeps losing it and that balance is starting to shift fast.",
+    url: "https://racingnews365.com/zak-brown-shares-feelings-over-shock-gianpiero-lambiase-coup",
+    imagePath: "/img/news/news-shutterstockbrown.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "April 10, 2026",
+    imageSource: "RacingNews365"
+  },
+
+  {
+    slotId: 2,
+    sourceLabel: "ESPN",
+    title: "Verstappen’s inner circle begins to unravel as Lambiase exit raises Red Bull concerns",
+    summary: "Max Verstappen’s long-standing partnership with race engineer Gianpiero Lambiase is coming to an end, a move that could significantly impact Red Bull’s ability to retain its four-time world champion. The two have worked closely since 2016, building one of Formula 1’s most successful driver-engineer relationships, but Lambiase’s departure comes at a time when Verstappen is already questioning his future in the sport amid performance struggles and ongoing concerns over the 2026 regulations.",
+    kcsQuickShift: "This is where it gets serious. It is not just staff leaving this is Verstappen’s inner circle breaking apart and that could decide his future.",
+    url: "https://www.espn.co.uk/f1/story/_/id/48438624/max-verstappen-inner-circle-gianpiero-lambiase-unravelling-red-bull-hopes-keeping-f1-2026",
+    imagePath: "/img/news/news-shutterstockmax.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "April 10, 2026",
+    imageSource: "ESPN"
+  },
+
+  {
+    slotId: 3,
+    sourceLabel: "Motorsport-Magazin",
+    title: "Großer Verlust für Red Bull durch Lambiase-Abgang",
+    summary: "Red Bull verliert mit Gianpiero Lambiase einen zentralen Bestandteil seines Erfolgs, wie Berater Helmut Marko bestätigt. Der langjährige Renningenieur von Max Verstappen wird nach Ablauf seines Vertrags zu McLaren wechseln und hinterlässt eine große Lücke in der Entwicklung und Abstimmung.EN:Red Bull is losing a central part of its success with Gianpiero Lambiase, as advisor Helmut Marko has confirmed. The long-time race engineer of Max Verstappen will move to McLaren after his contract expires, leaving a significant gap in both development and car setup",
+    kcsQuickShift: "This is bigger than it looks. Red Bull is not just losing people they are losing key performance pieces and Lambiase is one of the biggest. DE:Das ist größer als es wirkt Red Bull verliert entscheidende Leistungsträger und Lambiase ist einer der wichtigsten.",
+    url: "https://www.motorsport-magazin.com/formel1/news.html#:~:text=Offiziell%3A%20Max%20Verstappens%20Renningenieur%20GianPiero,Verstappen%2DRenningenieurs%20ist%20schon%20fix.",
+    imagePath: "/img/news/news-shutterstocklambiase.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "April 10, 2026",
+    imageSource: "Motorsport-Magazin"
+  },
+
+  {
+    slotId: 4,
+    sourceLabel: "ESPN",
+    title: "FIA and F1 bosses push for 2026 rule tweaks focused on energy management",
+    summary: "Formula 1’s governing body and team representatives are already discussing potential tweaks to the 2026 regulations, with a major focus on the heavy energy management demands created by the new power units. Early feedback has highlighted concerns around qualifying and safety risks caused by large speed differences between cars.",
+    kcsQuickShift: "This is the real issue with 2026. Drivers are managing batteries more than racing and F1 knows it needs to fix that quickly.",
+    url: "https://www.espn.co.uk/f1/story/_/id/48445569/fia-f1-bosses-targeting-tweaks-2026-regulations-focus-energy-management",
+    imagePath: "/img/news/news-5050engine.jpg",
+    photoCredit: "KC",
+    dateLabel: "April 10, 2026",
+    imageSource: "ESPN"
+  },
+
+  {
+    slotId: 5,
+    sourceLabel: "Motorsport.com",
+    title: "FIA outlines timeline for 2026 rule changes after ‘constructive dialogue’ with teams",
+    summary: "The FIA has confirmed a structured timeline for potential adjustments to Formula 1’s 2026 regulations following meetings with teams and manufacturers. Discussions focused on energy management concerns, including qualifying limitations and safety risks linked to speed differences.",
+    kcsQuickShift: "This is not talk anymore this is action. F1 now has a timeline to fix 2026 and they are moving quickly.",
+    url: "https://www.motorsport.com/f1/news/fia-reports-constructive-dialogue-on-f1-2026-tweaks-outlines-decision-timeline/10811803/",
+    imagePath: "/img/news/news-fiaruleschanges.jpg",
+    photoCredit: "KC",
+    dateLabel: "April 10, 2026",
+    imageSource: "Motorsport.com"
+  },
+
+  {
+    slotId: 6,
+    sourceLabel: "Autosport",
+    title: "Ferrari stepping up fight to end long Formula 1 championship drought",
+    summary: "Ferrari is intensifying its efforts to return to championship-winning form, focusing on improvements across the entire car including power unit, aerodynamics, tyre management and consistency.",
+    kcsQuickShift: "Ferrari is not far off but they are not there yet. This is about finding gains everywhere not just one big fix.",
+    url: "https://www.autosport.com/f1/news/how-ferrari-is-stepping-up-its-battle-to-end-its-long-championship-wait-/10811249/",
+    imagePath: "/img/news/ferrari/news-ferrari6.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "April 10, 2026",
+    imageSource: "Autosport"
+  },
+
+  {
+    slotId: 7,
+    sourceLabel: "RacingNews365 NL",
+    title: "Piastri weerlegt ‘Derde Wereldoorlog’-verhalen over McLaren",
+    summary: "Oscar Piastri reageert op mediaberichten die suggereren dat er grote spanningen binnen McLaren zijn ontstaan. Hij erkent moeilijke momenten maar benadrukt dat de situatie sterk overdreven wordt. EN:Piastri says reports of major internal conflict at McLaren are exaggerated and the team remains stable.",
+    kcsQuickShift: "This feels like media vs reality. Piastri is basically saying things were tough but nowhere near the chaos people are trying to sell. NL:Dit is media versus realiteit Piastri zegt dat het lastig was maar zeker geen chaos.",
+    url: "https://racingnews365.nl/piastri-weerlegt-derde-wereldoorlog-verhalen-over-mclaren",
+    imagePath: "/img/news/news-shutterstockoscar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "April 10, 2026",
+    imageSource: "RacingNews365"
+  },
+
+  {
+    slotId: 8,
+    sourceLabel: "Crash.net",
+    title: "Lance Stroll says victory is possible on his GT racing debut",
+    summary: "Lance Stroll believes he has a realistic shot at a strong result as he prepares for his GT World Challenge debut during Formula 1’s April break.",
+    kcsQuickShift: "This is a nice change of pace for Stroll. He knows he is not fighting to win in F1 right now so this gives him a real shot at something positive.",
+    url: "https://www.crash.net/f1/news/1092946/1/why-lance-stroll-thinks-winning-possible-his-gt-racing-debut",
+    imagePath: "/img/news/news-shutterstocklance.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "April 10, 2026",
+    imageSource: "Crash.net"
+  },
+
+  {
+    slotId: 9,
+    sourceLabel: "Motorsport.com",
+    title: "Norris and Sainz reunite for head-to-head karting challenge",
+    summary: "Lando Norris and Carlos Sainz reunited off-track for a karting challenge, revisiting their former McLaren partnership.",
+    kcsQuickShift: "This is just fun but it matters. Norris and Sainz still have that competitive edge and fans love that dynamic.",
+    url: "https://www.motorsport.com/f1/news/lando-norris-and-carlos-sainz-reunite-as-they-go-head-to-head-in-historic-karting-challenge/10811871/",
+    imagePath: "/img/news/xpb/news-xpblandoandcarlos.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "April 10, 2026",
+    imageSource: "Motorsport.com"
+  }
 
 ];
-
-  
-
