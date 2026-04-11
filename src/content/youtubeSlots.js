@@ -12,16 +12,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "F1 will change its 2026 rules! ",
-    youtubeInput: "https://youtu.be/AIFxKtSLCIo",
+    title: "F1 livestream with Peter Windsor and Jock Clear ",
+    youtubeInput: "https://youtu.be/4lxRbgGTciI",
      
   },
 
   {
     slotId: "slot2",
-    title: "What does GP Lambiase leaving Red Bull mean for Max Verstappen?",
-    youtubeInput: "https://youtu.be/YQG_R6S1rPM",
-    
+    title: "So You Think You Know F1 Drivers?",
+    youtubeInput: "https://youtu.be/ERIjcNtISH0",
+    forceExternal: "blue"
   },
 
   {
