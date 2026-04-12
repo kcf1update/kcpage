@@ -2,9 +2,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import AdBar from "./AdBar.jsx";
+
 import PageNav from "./components/PageNav";
-import BookmarkCTA from "./components/BookmarkCTA";
+
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
 import { youtubeSlots } from "./content/youtubeSlots";
@@ -225,7 +225,7 @@ export default function KCpage() {
         <div className="flex items-center">
           <PageNav />
         </div>
-<BookmarkCTA />
+
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
   <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
@@ -381,8 +381,7 @@ export default function KCpage() {
             })()
           : null}
 
-        {/* MAIN TOP AD BANNER */}
-        <AdBar />
+        
 
         {/* CONTENT GRID */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
@@ -513,16 +512,8 @@ export default function KCpage() {
                 })()
               : null}
 
-            {/* Small ad card */}
-            <GlassyCard
-              highlight="yellow"
-              title="Place Your Ad Here"
-              subtitle="Smaller ad block (yellow highlight)."
-            >
-              <p className="text-xs sm:text-sm text-yellow-100/90">
-                Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
-              </p>
-            </GlassyCard>
+            
+            
           </div>
 
           {/* ✅ NEWS COLUMN (desktop right, mobile after YouTube) */}
@@ -764,21 +755,29 @@ export default function KCpage() {
                   })()
                 : null}
 
-              {/* Small ad card (mobile) */}
-              <GlassyCard
-                highlight="yellow"
-                title="Place Your Ad Here"
-                subtitle="Smaller ad block (yellow highlight)."
-                className="mt-5 sm:mt-6"
-              >
-                <p className="text-xs sm:text-sm text-yellow-100/90">
-                  Ideal for a secondary sponsor, affiliate link, merch promo, ticket partner.
-                </p>
-              </GlassyCard>
+             
             </div>
           </div>
         </section>
-      </div>
-    </div>
+
+{/* BOTTOM AD / PARTNER SLOT */}
+<GlassyCard
+  highlight="yellow"
+  title="Partner With KC’s F1 Update"
+  subtitle="Curated F1 headlines + KC QuickShift takes + YouTube content"
+  className="mt-6 sm:mt-8"
+>
+  <div className="text-center">
+    <p className="text-sm sm:text-base text-yellow-100/90">
+      Reach dedicated Formula 1 fans across the website and KC’s video content.
+    </p>
+    <p className="mt-3 text-sm sm:text-base font-semibold text-white">
+      Contact: kcf1update@gmail.com
+    </p>
+  </div>
+</GlassyCard>
+
+</div>
+</div>
   );
 }

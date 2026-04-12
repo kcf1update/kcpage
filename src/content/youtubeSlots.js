@@ -26,8 +26,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "F1 Drivers Race 100 Years of Go Karts",
-    youtubeInput: "https://youtu.be/pAIQC08lq_w",
+    title: "What do F1 PRESS OFFICERS actually do?",
+    youtubeInput: "https://youtu.be/442bPbm3dtA",
     
   }
 ];
