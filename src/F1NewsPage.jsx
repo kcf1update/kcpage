@@ -39,7 +39,7 @@ function safeLocalImagePath(imagePath) {
 export default function F1NewsPage() {
   // Home uses the first 3 slots
   // This page shows news4..news9 (6 cards)
-  const newsPageCards = newsSlots.slice(3, 9);
+  const newsPageCards = newsSlots.slice(4, 10);
 
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">

@@ -236,7 +236,7 @@ export default function KCpage() {
  
 </div>
 
-        {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
+                {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {
               const item = topStory;

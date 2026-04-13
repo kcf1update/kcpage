@@ -12,16 +12,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "F1 livestream with Peter Windsor and Jock Clear ",
-    youtubeInput: "https://youtu.be/4lxRbgGTciI",
+    title: "very 2026 F1 team’s biggest weakness ",
+    youtubeInput: "https://youtu.be/0VUkUuwi5eg",
      
   },
 
   {
     slotId: "slot2",
-    title: "So You Think You Know F1 Drivers?",
-    youtubeInput: "https://youtu.be/ERIjcNtISH0",
-    forceExternal: "blue"
+    title: "Crofty answers 11 questions you've ALWAYS wanted to ask an F1 commentator! | F1 Unpacked",
+    youtubeInput: "https://youtu.be/fEjFCRGR718",
+    
   },
 
   {
