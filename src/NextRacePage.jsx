@@ -653,62 +653,60 @@ export default function NextRacePage() {
             </div>
           </article>
 
-          {/* Weather + track guide */}
-          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
-            <div className="bg-white p-3 sm:p-4">
-              <h2 className="text-sm font-semibold text-gray-900 sm:text-base">
-                Weather <span className="text-sky-700">Forecast</span>
-              </h2>
-              <p className="mt-1 text-[11px] text-gray-600 sm:text-xs">
-                Quick notes for the race weekend.
-              </p>
+          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+  <div>
+    <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
+      Weather Forecast
+    </h2>
+   
 
-              <div className="mt-2 h-auto min-h-[72px] w-full overflow-auto whitespace-pre-line rounded-2xl border border-black/10 bg-white px-3 py-2 text-xs text-gray-900 sm:mt-3 sm:h-24 sm:text-sm">
-                {nextRaceContent.weather || "—"}
-              </div>
-            </div>
+    <div className="mt-3 rounded-2xl border border-black/20 bg-gray-50 px-3 py-2 text-xs text-gray-900 sm:text-sm">
+      {nextRaceContent.weather || "—"}
+    </div>
+  </div>
 
-            <div className="h-[4px] w-full bg-sky-800" />
+  <div className="mt-4">
+    <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
+      Race Centre Tools
+    </h2>
 
-            <div className="flex flex-1 flex-col justify-between bg-sky-900 p-3 sm:p-4">
-              <div>
-                <div className="flex h-20 items-center justify-center sm:h-32">
-                  <div className="text-center text-2xl font-bold uppercase tracking-wide text-white sm:text-4xl">
-                    TRACK GUIDE
-                  </div>
-                </div>
-              </div>
+    <div className="mt-3 grid grid-cols-2 gap-2">
+      <a
+        href="/img/tracks/shutterstockmiami.jpg"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
+        title="Open page 1"
+      >
+        Track Guide
+      </a>
 
-              <div className="mt-3 grid grid-cols-2 gap-2 sm:mt-4 sm:flex sm:flex-wrap">
-                <a
-                  href="/img/tracks/shutterstockmiami.jpg"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
-                  title="Open page 1"
-                >
-                  Track Guide (1/2)
-                </a>
+      <a
+        href="/img/Tracks/shutterstock_miamitech.jpg"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
+        title="Open page 2"
+      >
+        Tech Guide
+      </a>
 
-                <a
-                  href="/img/Tracks/shutterstock_miamitech.jpg"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
-                  title="Open page 2"
-                >
-                  Tech Guide (2/2)
-                </a>
+      <Link
+        to="/previous-results"
+        className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
+      >
+        Previous Results
+      </Link>
 
-                <Link
-                  to="/previous-results"
-                  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
-                >
-                  Previous Results
-                </Link>
-              </div>
-            </div>
-          </article>
+      <Link
+        to="/points"
+        className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
+      >
+        Driver and Constructor Standings
+      </Link>
+    </div>
+  </div>
+</article>
         </section>
 
         {/* Results */}

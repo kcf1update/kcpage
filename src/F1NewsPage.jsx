@@ -1,6 +1,5 @@
 // src/F1NewsPage.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 
 import PageNav from "./components/PageNav";
 import TopCard from "./components/TopCard";
@@ -16,7 +15,7 @@ import { newsSlots } from "./content/newsSlots";
  * - No "imageUrl" anywhere.
  */
 
-// Allow only safe http(s) URLs for outbound links (and mailto if you ever need it)
+// Allow only safe http(s) URLs for outbound links
 function safeUrl(url) {
   if (!url || typeof url !== "string") return "";
   try {
@@ -31,7 +30,6 @@ function safeUrl(url) {
 // Only allow local image paths that start with "/"
 function safeLocalImagePath(imagePath) {
   if (!imagePath || typeof imagePath !== "string") return "";
-  // enforce local only
   if (!imagePath.startsWith("/")) return "";
   return imagePath;
 }
@@ -43,50 +41,31 @@ export default function F1NewsPage() {
 
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">
-      {/* Foreground content */}
-      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-
-        {/* ✅ TOP CARD FIRST (full width across) */} 
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 px-4 pt-3 pb-8 sm:gap-4 sm:pt-4 sm:pb-10">
         <TopCard>
-  <TopCard.Header
-    title="F1 News – Quick, Clear, Updated Daily"
-    subtitle="Latest F1 headlines with quick, easy-to-read summaries."
-    logoSrc="/img/kcs-f1-car.png"
-  />
-</TopCard>
+          <TopCard.Header
+            title="F1 News – Quick, Clear, Updated Daily"
+                        logoSrc="/img/kcs-f1-car.png"
+          />
+        </TopCard>
 
-        {/* ✅ NAV UNDER TOP CARD */} 
         <div className="flex items-center">
           <PageNav />
           <div className="shrink-0">{/* language selector hidden for launch */}</div>
         </div>
 
-        {/* Main ad banner */} 
-        <AdBar />
-
-        {/* News grid */} 
         <main className="grid gap-4 lg:grid-cols-2">
-
           {newsPageCards.map((item) => {
             const href = safeUrl(item.url);
             const imgPath = safeLocalImagePath(item.imagePath);
-
-            // NEW FIELD NAME (renamed from kcOuttake)
             const quickShift = (item.kcsQuickShift || "").trim();
-
-            // Photo credit (required in content for copyright safety)
-            const photoCredit = (item.photoCredit || "").trim();
-            const photoCreditUrl = (item.photoCreditUrl || "").trim();
-
-            // Prefer imageAlt, fallback to title
             const altText = (item.imageAlt || item.title || "F1 news").trim();
 
             return (
               <article
                 key={item.slotId}
-                className="flex flex-col overflow-hidden rounded-3xl border border-cyan-400/30 bg-black/60 backdrop-blur shadow-[0_0_20px_rgba(34,211,238,0.35)]"
+                className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-lg"
               >
-                {/* Image (optional – LOCAL ONLY) */} 
                 {imgPath ? (
                   href ? (
                     <a
@@ -96,7 +75,7 @@ export default function F1NewsPage() {
                       className="block"
                       title="Open article"
                     >
-                      <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
+                      <div className="aspect-[16/9] w-full overflow-hidden bg-black/40">
                         <img
                           src={imgPath}
                           alt={altText}
@@ -106,7 +85,7 @@ export default function F1NewsPage() {
                       </div>
                     </a>
                   ) : (
-                    <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden">
+                    <div className="aspect-[16/9] w-full overflow-hidden bg-black/40">
                       <img
                         src={imgPath}
                         alt={altText}
@@ -115,46 +94,13 @@ export default function F1NewsPage() {
                       />
                     </div>
                   )
-                ) : (
-                  <div className="aspect-[16/9] w-full bg-black/40 flex items-center justify-center text-xs text-gray-400">
-                    Image optional (use local stock/original via imagePath)
-                  </div>
-                )}
-
-                {/* Photo credit */} 
-                {photoCredit ? (
-                  <div className="px-4 pt-3 text-[11px] text-white/55">
-                    Photo:{" "}
-                    {photoCreditUrl ? (
-                      <a
-                        href={safeUrl(photoCreditUrl)}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="underline hover:text-cyan-200"
-                      >
-                        {photoCredit}
-                      </a>
-                    ) : (
-                      <span>{photoCredit}</span>
-                    )}
-                  </div>
                 ) : null}
 
-                {/* Text */} 
-                <div className="p-4 space-y-2">
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="text-[11px] uppercase tracking-wide text-cyan-200/80">
-                      {item.sourceLabel || "Source"}
-                    </div>
-
-                    {item.badge ? (
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white/80">
-                        {item.badge}
-                      </span>
-                    ) : null}
+                <div className="p-4 space-y-3">
+                  <div className="text-[11px] uppercase tracking-wide text-cyan-200/80">
+                    {item.sourceLabel || "Source"}
                   </div>
 
-                  {/* ✅ Title clickable */} 
                   {href ? (
                     <a
                       href={href}
@@ -164,75 +110,38 @@ export default function F1NewsPage() {
                       title="Open article"
                     >
                       <h3 className="text-lg font-semibold leading-snug text-white hover:text-cyan-200 transition">
-                        {item.title || "Headline (replace me)"}
+                        {item.title || "Headline"}
                       </h3>
                     </a>
                   ) : (
                     <h3 className="text-lg font-semibold leading-snug text-white">
-                      {item.title || "Headline (replace me)"}
+                      {item.title || "Headline"}
                     </h3>
                   )}
 
                   {item.summary ? (
-                    <p className="text-sm text-white/75 leading-relaxed">
+                    <p className="text-sm leading-relaxed text-white/75">
                       {item.summary}
                     </p>
-                  ) : (
-                    <p className="text-sm text-white/50 leading-relaxed">
-                      Add a summary in{" "}
-                      <span className="font-mono">newsSlots.js</span>
-                    </p>
-                  )}
+                  ) : null}
 
-                  {/* KC’s Quick Shift (only shows if filled in newsSlots.js) */} 
                   {quickShift ? (
-                    <div className="mt-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                    <div className="rounded-2xl border border-cyan-400/25 bg-cyan-400/10 px-4 py-3">
                       <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                         KC’s Quick Shift
                       </div>
-
-                      <p className="mt-1 text-sm text-white/90 leading-relaxed">
+                      <p className="mt-1 text-sm leading-relaxed text-white/90">
                         {quickShift}
                       </p>
                     </div>
                   ) : null}
-
-                  <div className="pt-2 flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2">
-                      {href ? (
-                        <a
-                          href={href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-300/15 transition"
-                        >
-                          Read article
-                          <span className="text-cyan-200/80">&rarr;</span>
-                        </a>
-                      ) : (
-                        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/40">
-                          Add a url in newsSlots.js
-                        </span>
-                      )}
-
-                      <Link
-                        to={`/comments?ref=${encodeURIComponent(item.slotId || "")}`}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                        title="Go to Comments page"
-                      >
-                        💬 Comment and join the discussion
-                      </Link>
-                    </div>
-
-                    {item.dateLabel ? (
-                      <span className="text-xs text-white/45">{item.dateLabel}</span>
-                    ) : null}
-                  </div>
                 </div>
               </article>
             );
           })}
         </main>
+
+        <AdBar />
       </div>
     </div>
   );

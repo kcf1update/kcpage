@@ -47,9 +47,13 @@ function GlassyCard({
           {title ? (
             titleUrl ? (
               <a href={titleUrl} target="_blank" rel="noreferrer" className="block">
-                <h2 className="text-lg sm:text-xl font-semibold tracking-tight hover:text-cyan-200 transition">
-                  {title}
-                </h2>
+              <h2
+  className={`text-xl sm:text-2xl font-bold tracking-tight transition
+    ${highlight === "blue" ? "text-cyan-300" : "text-white hover:text-cyan-300"}
+  `}
+>
+  {title}
+</h2>
               </a>
             ) : (
               <h2 className="text-lg sm:text-xl font-semibold tracking-tight">{title}</h2>
@@ -138,10 +142,10 @@ export default function KCpage() {
 
   const YouTubeCard = () => (
     <GlassyCard
-      highlight="red"
-      title={featuredVideo?.title || "KC's QUICKSHIFTS"}
-      subtitle="KC's QUICKSHIFTS"
-    >
+  highlight="red"
+  title="KC’s QUICK SHIFT"
+  subtitle="Quick hits, race recaps, and F1 insight"
+>
       <>
         {getYouTubeId(featuredVideo?.youtubeInput) ? (
           <div className="aspect-video rounded-xl overflow-hidden border border-red-400/40">
@@ -156,38 +160,9 @@ export default function KCpage() {
           <p className="text-sm text-slate-300">No video selected yet.</p>
         )}
 
-        {featuredVideo?.description ? (
-          <p className="text-sm text-slate-300 mt-2">{featuredVideo.description}</p>
-        ) : null}
+        
 
-        <div className="mt-3 flex items-center gap-3">
-          <Link
-            to={`/comments?ref=${encodeURIComponent(featuredVideo?.slotId || "youtube")}`}
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-            title="Go to Comments page"
-          >
-            💬 Comment and join the discussion
-          </Link>
-
-          <Link
-            to="/youtube"
-            className="inline-flex items-center gap-2 rounded-full border border-red-400/40 bg-red-400/10 px-4 py-2 text-sm font-semibold text-red-200 hover:bg-red-400/15 transition"
-            title="See all videos"
-          >
-            More videos <span aria-hidden>↗</span>
-          </Link>
-        </div>
-
-        {featuredVideo?.ctaUrl ? (
-          <a
-            href={featuredVideo.ctaUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-2 inline-flex items-center gap-2 text-xs font-semibold text-red-300 hover:text-red-200 transition"
-          >
-            {featuredVideo?.ctaLabel || "Open link"} <span aria-hidden>↗</span>
-          </a>
-        ) : null}
+        
       </>
     </GlassyCard>
   );
@@ -220,23 +195,7 @@ export default function KCpage() {
             </div>
           </div>
         </section>
-
-        {/* ✅ NAV UNDER TOP CARD */}
-        <div className="flex items-center">
-          <PageNav />
-        </div>
-
-        {/* ✅ UPDATED DAILY BAR UNDER NAV */}
-        <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
-  <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
-  <CountdownBar />
-</p>
-
- 
- 
-</div>
-
-                {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
+{/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {
               const item = topStory;
@@ -251,30 +210,11 @@ export default function KCpage() {
 
               return (
                 <section className="mt-1">
-                  <div className="mb-2 flex items-center justify-between gap-3">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-white/80">
-                      Top Story
-                    </p>
-
-                    {href ? (
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-[11px] font-semibold text-cyan-200 shadow-[0_0_18px_rgba(34,211,238,0.25)] hover:bg-cyan-300/15 hover:text-cyan-100 transition"
-                        title="Open the full article"
-                      >
-                        Read full story →
-                      </a>
-                    ) : null}
-
-                    <Link
-                      to="/news"
-                      className="text-xs text-blue-300 hover:text-blue-200 whitespace-nowrap"
-                    >
-                      More headlines →
-                    </Link>
-                  </div>
+                 <div className="mb-2 text-center">
+  <span className="text-sm font-semibold text-cyan-300">
+    F1 news summarized for quick reading
+  </span>
+</div>
 
                   <GlassyCard
                     highlight="blue"
@@ -293,26 +233,31 @@ export default function KCpage() {
                             className="block"
                             title="Open article"
                           >
-                            <img
-                              src={imgPath}
-                              alt={altText}
-                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                              onError={(e) => {
-                                e.currentTarget.style.display = "none";
-                              }}
-                            />
+                            <div className="aspect-[16/9] lg:aspect-[18/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+  <img
+    src={imgPath}
+    alt={altText}
+   className="h-full w-full object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+</div>
                           </a>
                         ) : (
                           <img
                             src={imgPath}
                             alt={altText}
-                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
+                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-contain bg-black/30 rounded-2xl"
                             onError={(e) => {
                               e.currentTarget.style.display = "none";
                             }}
                           />
                         )
                       ) : null}
+      
+
+                
 
                       {/* Photo credit */}
                       {photoCredit ? (
@@ -350,30 +295,11 @@ export default function KCpage() {
                         </div>
                       ) : null}
 
-                      <div className="flex items-center gap-3 pt-1">
-                        {href ? (
-                          <a
-                            href={href}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
-                          >
-                            Read full article →
-                          </a>
-                        ) : null}
-
-                        <Link
-                          to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
-                          className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                          title="Go to Comments page"
-                        >
-                          💬 Comment and join the discussion
-                        </Link>
-
-                        {item?.dateLabel ? (
-                          <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
-                        ) : null}
-                      </div>
+                      <div className="flex items-center pt-1">
+  {item?.dateLabel ? (
+    <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+  ) : null}
+</div>
                     </div>
                   </GlassyCard>
                 </section>
@@ -381,7 +307,20 @@ export default function KCpage() {
             })()
           : null}
 
-        
+         {/* ✅ NAV UNDER TOP CARD */} 
+        <div className="w-full">
+  <PageNav />
+</div>
+
+        {/* ✅ UPDATED DAILY BAR UNDER NAV */}
+        <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
+  <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
+  <CountdownBar />
+</p>
+
+ 
+ 
+</div>
 
         {/* CONTENT GRID */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
@@ -410,7 +349,7 @@ export default function KCpage() {
                   return (
                     <GlassyCard
                       key={item?.slotId || "featured-under-video"}
-                      highlight="blue"
+                      highlight="none"
                       title={item?.title || "News"}
                       titleUrl={href || undefined}
                       subtitle={item?.sourceLabel || "Source"}
@@ -425,24 +364,28 @@ export default function KCpage() {
                               className="block"
                               title="Open article"
                             >
-                              <img
-                                src={imgPath}
-                                alt={altText}
-                                className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                                onError={(e) => {
-                                  e.currentTarget.style.display = "none";
-                                }}
-                              />
+                              <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+  <img
+    src={imgPath}
+    alt={altText}
+    className="h-full w-full object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+</div>
                             </a>
                           ) : (
-                            <img
-                              src={imgPath}
-                              alt={altText}
-                              className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                              onError={(e) => {
-                                e.currentTarget.style.display = "none";
-                              }}
-                            />
+                            <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+  <img
+    src={imgPath}
+    alt={altText}
+    className="h-full w-full object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+</div>
                           )
                         ) : null}
 
@@ -532,8 +475,9 @@ export default function KCpage() {
 
               return (
                 <GlassyCard
+
                   key={item?.slotId || `featured-${idx}`}
-                  highlight="blue"
+                  highlight="none"
                   title={item?.title || `News ${idx + 1}`}
                   titleUrl={href || undefined}
                   subtitle={item?.sourceLabel || "Source"}
@@ -542,30 +486,34 @@ export default function KCpage() {
                     {showImage ? (
                       href ? (
                         <a
-                          href={href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="block"
-                          title="Open article"
-                        >
-                          <img
-                            src={imgPath}
-                            alt={altText}
-                            className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                            onError={(e) => {
-                              e.currentTarget.style.display = "none";
-                            }}
-                          />
-                        </a>
+  href={href}
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+  title="Open article"
+>
+  <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+    <img
+      src={imgPath}
+      alt={altText}
+      className="h-full w-full object-cover"
+      onError={(e) => {
+        e.currentTarget.style.display = "none";
+      }}
+    />
+  </div>
+</a>
                       ) : (
-                        <img
-                          src={imgPath}
-                          alt={altText}
-                          className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                          onError={(e) => {
-                            e.currentTarget.style.display = "none";
-                          }}
-                        />
+                        <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+  <img
+    src={imgPath}
+    alt={altText}
+    className="h-full w-full object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+</div>
                       )
                     ) : null}
 
@@ -607,30 +555,11 @@ export default function KCpage() {
                     ) : null}
 
                     {/* ACTIONS ROW (Read + Comment + optional date) */}
-                    <div className="flex items-center gap-3 pt-1">
-                      {href ? (
-                        <a
-                          href={href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
-                        >
-                          Read full article →
-                        </a>
-                      ) : null}
-
-                      <Link
-                        to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                        title="Go to Comments page"
-                      >
-                        💬 Comment and join the discussion
-                      </Link>
-
-                      {item?.dateLabel ? (
-                        <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
-                      ) : null}
-                    </div>
+                    <div className="flex items-center pt-1">
+  {item?.dateLabel ? (
+    <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>
+  ) : null}
+</div>
                   </div>
                 </GlassyCard>
               );
@@ -653,7 +582,7 @@ export default function KCpage() {
                     return (
                       <GlassyCard
                         key={item?.slotId || "featured-under-video-mobile"}
-                        highlight="blue"
+                        highlight="none"
                         title={item?.title || "News"}
                         titleUrl={href || undefined}
                         subtitle={item?.sourceLabel || "Source"}
@@ -662,30 +591,34 @@ export default function KCpage() {
                           {showImage ? (
                             href ? (
                               <a
-                                href={href}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="block"
-                                title="Open article"
-                              >
-                                <img
-                                  src={imgPath}
-                                  alt={altText}
-                                  className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                                  onError={(e) => {
-                                    e.currentTarget.style.display = "none";
-                                  }}
-                                />
-                              </a>
+  href={href}
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+  title="Open article"
+>
+  <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+    <img
+      src={imgPath}
+      alt={altText}
+      className="h-full w-full object-cover"
+      onError={(e) => {
+        e.currentTarget.style.display = "none";
+      }}
+    />
+  </div>
+</a>
                             ) : (
-                              <img
-                                src={imgPath}
-                                alt={altText}
-                                className="w-full h-44 sm:h-48 md:h-52 lg:h-64 object-cover lg:object-contain lg:bg-black/30 rounded-2xl"
-                                onError={(e) => {
-                                  e.currentTarget.style.display = "none";
-                                }}
-                              />
+                             <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
+  <img
+    src={imgPath}
+    alt={altText}
+    className="h-full w-full object-cover"
+    onError={(e) => {
+      e.currentTarget.style.display = "none";
+    }}
+  />
+</div>
                             )
                           ) : null}
 

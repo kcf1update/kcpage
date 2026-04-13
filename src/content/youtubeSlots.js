@@ -2,17 +2,14 @@
 
 export const youtubeSlots = [
   {
-    slotId: "slotKC",
-    title: "KC's Channel (Subscribe)",
-    youtubeInput: "https://youtu.be/mbozm1S5JNY",
-    description: "Lambiase LEAVES Red Bull",
-    ctaUrl: "https://youtu.be/mbozm1S5JNY",
-    ctaLabel: "Visit KC's YouTube →",
-  },
+  slotId: "slotKC",
+  title: "KC's QUICK SHIFT -- Quick hits, race recaps, and F1 insight",
+  youtubeInput: "https://youtu.be/mbozm1S5JNY",
+},
 
   {
     slotId: "slot1",
-    title: "very 2026 F1 team’s biggest weakness ",
+    title: "Every 2026 F1 team’s biggest weakness ",
     youtubeInput: "https://youtu.be/0VUkUuwi5eg",
      
   },

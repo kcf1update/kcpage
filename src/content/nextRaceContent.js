@@ -289,7 +289,7 @@ ANT,,,,
 // =====================================================
 
 export const nextRaceContent = {
-  raceName: "Miami Gran Prix ",
+  raceName: "Miami Grand Prix ",
   raceDates: "May 01st to May 3rd",
   location: "Miami International Autodrome, US",
   trackInfoUrl: "/img/tracks/shutterstockmiami.jpg",

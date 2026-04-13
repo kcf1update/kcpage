@@ -1,6 +1,6 @@
 // src/YouTubeNewsPage.jsx
 import React, { useMemo } from "react";
-import { Link } from "react-router-dom";
+
 
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
@@ -85,21 +85,19 @@ export default function YouTubeNewsPage() {
           <div className="shrink-0"></div>
         </div>
 
-        {/* ✅ AdBar spacing handled by container gap (same rhythm) */}
-        <AdBar />
+        
 
         {/* Video grid */}
         <main className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {slots.map((slot, idx) => {
             const embedUrl = buildEmbedUrl(slot);
 
-            const showSubscribeBadge = idx === 0;
+            
             const title = slot?.title || "F1 video";
             const description = slot?.description || "";
-            const sponsor = !!slot?.isSponsor;
+          
 
-            const commentRef = slot?.slotId ? String(slot.slotId) : `video-${idx + 1}`;
-
+            
             const showWatchButton = !!slot?.forceExternal;
 
             const videoIdForWatch = extractYouTubeId(slot?.videoId || slot?.youtubeInput || "");
@@ -113,17 +111,8 @@ export default function YouTubeNewsPage() {
                 key={slot?.slotId || `${idx}`}
                 className="relative flex flex-col overflow-hidden rounded-3xl border border-red-400/40 bg-black/60 backdrop-blur shadow-[0_0_25px_rgba(248,113,113,0.7)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_35px_rgba(248,113,113,0.9)] hover:border-red-400/70"
               >
-                {showSubscribeBadge && (
-                  <div className="absolute left-3 top-3 z-20 rounded-full bg-red-600 px-3 py-1 text-[11px] font-semibold text-white shadow-[0_0_12px_rgba(255,0,0,0.55)]">
-                    Subscribe
-                  </div>
-                )}
-
-                {sponsor && (
-                  <div className="absolute right-3 top-3 z-20 rounded-full bg-yellow-400 px-3 py-1 text-[11px] font-semibold text-black">
-                    Sponsor
-                  </div>
-                )}
+                
+                
 
                 <div className="aspect-video bg-black/40">
                   {embedUrl ? (
@@ -141,33 +130,19 @@ export default function YouTubeNewsPage() {
                   )}
                 </div>
 
-                <div className="space-y-2 p-4 text-sm">
-                  <h2 className="text-base font-semibold text-white">{title}</h2>
+                <div className="p-4">
+  <h2 className="text-sm font-semibold text-white">
+    {title}
+  </h2>
+</div>
 
-                  {description && <p className="text-xs text-gray-300">{description}</p>}
-
-                  {showWatchButton && watchUrl && (
-                    <a
-                      href={watchUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600/90 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-600 transition"
-                    >
-                      ▶ Watch on YouTube ↗
-                    </a>
-                  )}
-
-                  <Link
-                    to={`/comments?ref=${encodeURIComponent(commentRef)}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                  >
-                    💬 Comment and join the discussion
-                  </Link>
-                </div>
+                  
+                
               </article>
             );
           })}
         </main>
+        <AdBar />
       </div>
     </div>
   );
