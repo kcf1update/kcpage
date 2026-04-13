@@ -91,20 +91,15 @@ export default function YouTubeNewsPage() {
         <main className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {slots.map((slot, idx) => {
             const embedUrl = buildEmbedUrl(slot);
-
-            
+          
             const title = slot?.title || "F1 video";
-            const description = slot?.description || "";
+            
           
 
             
-            const showWatchButton = !!slot?.forceExternal;
+           
 
-            const videoIdForWatch = extractYouTubeId(slot?.videoId || slot?.youtubeInput || "");
-
-            const watchUrl = videoIdForWatch
-              ? `https://www.youtube.com/watch?v=${videoIdForWatch}`
-              : "";
+           
 
             return (
               <article
