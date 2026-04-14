@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-    title: "Every 2026 F1 team’s biggest weakness ",
-    youtubeInput: "https://youtu.be/0VUkUuwi5eg",
-     
+  title: "Lambiase Leaving: What Next For Max + Red Bull? | F1 Nation Podcast",
+  youtubeInput: "https://youtu.be/CInZ5Swt0kk",
+  forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "Crofty answers 11 questions you've ALWAYS wanted to ask an F1 commentator! | F1 Unpacked",
-    youtubeInput: "https://youtu.be/fEjFCRGR718",
+    title: "George Russell & Oscar Piastri give update from Nürburgring F1 tyre test",
+    youtubeInput: "https://youtu.be/K2dyQm8j5Mo",
     
   },
 
   {
     slotId: "slot3",
-    title: "What do F1 PRESS OFFICERS actually do?",
-    youtubeInput: "https://youtu.be/442bPbm3dtA",
+    title: "F1 Livestream 0410 with Jock Clear and Peter Windsor",
+    youtubeInput: "https://youtu.be/74NApatJUBg",
     
   }
 ];
