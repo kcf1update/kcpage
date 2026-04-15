@@ -426,24 +426,10 @@ export default function KCpage() {
                         ) : null}
 
                         <div className="flex items-center gap-3 pt-1">
-                          {href ? (
-                            <a
-                              href={href}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
-                            >
-                              Read full article →
-                            </a>
-                          ) : null}
+                          
+                             
 
-                          <Link
-                            to={`/comments?ref=${encodeURIComponent(item?.slotId || "")}`}
-                            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 hover:bg-white/10 transition"
-                            title="Go to Comments page"
-                          >
-                            💬 Discuss
-                          </Link>
+                          
 
                           {item?.dateLabel ? (
                             <span className="ml-auto text-xs text-white/45">{item.dateLabel}</span>

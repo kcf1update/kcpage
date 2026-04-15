@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lambiase Leaving: What Next For Max + Red Bull? | F1 Nation Podcast",
-  youtubeInput: "https://youtu.be/CInZ5Swt0kk",
+  title: "What Lambiase leaving Red Bull means for Max Verstappen & Formula 1 | F1 Show Podcast",
+  youtubeInput: "https://youtu.be/Zre0zig4VIg",
   forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "George Russell & Oscar Piastri give update from Nürburgring F1 tyre test",
-    youtubeInput: "https://youtu.be/K2dyQm8j5Mo",
+    title: "F1 Drivers Race 100 Years of Go Karts",
+    youtubeInput: "https://youtu.be/pAIQC08lq_w",
     
   },
 

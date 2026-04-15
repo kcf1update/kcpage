@@ -95,7 +95,11 @@ export default function F1NewsPage() {
                     </div>
                   )
                 ) : null}
-
+{(item.photoCredit || item.imageSource) ? (
+                  <div className="px-4 pt-2 text-[11px] uppercase tracking-wide text-white/60">
+                    Photo: {item.photoCredit || item.imageSource}
+                  </div>
+                ) : null}
                 <div className="p-4 space-y-3">
                   <div className="text-[11px] uppercase tracking-wide text-cyan-200/80">
                     {item.sourceLabel || "Source"}
