@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "F1 Livestream 0410 with Jock Clear and Peter Windsor",
-    youtubeInput: "https://youtu.be/74NApatJUBg",
+    title: "DOMENICALI CALLS OUT VERSTAPPEN! | F1 News",
+    youtubeInput: "https://youtu.be/mJHsKEwof0Q",
     
   }
 ];
