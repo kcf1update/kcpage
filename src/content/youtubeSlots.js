@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "KC's QUICK SHIFT -- Quick hits, race recaps, and F1 insight",
-  youtubeInput: "https://youtu.be/mbozm1S5JNY",
+  title: "KC's QUICK SHIFT -- F1’s 2026 Problem: Too Much Power, Not Enough Energy",
+  youtubeInput: "https://youtu.be/RS_Jbv0q3x0",
 },
 
   {
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "DOMENICALI CALLS OUT VERSTAPPEN! | F1 News",
-    youtubeInput: "https://youtu.be/mJHsKEwof0Q",
+    title: "The Real Leclerc by Jock Clear with Peter Windsor",
+    youtubeInput: "https://youtu.be/hLif00NfktI",
     
   }
 ];
