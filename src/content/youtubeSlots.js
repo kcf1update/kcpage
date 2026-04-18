@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "What Lambiase leaving Red Bull means for Max Verstappen & Formula 1 | F1 Show Podcast",
-  youtubeInput: "https://youtu.be/Zre0zig4VIg",
+  title: "Every F1 Team Analysed in 2026 Season So Far",
+  youtubeInput: "https://youtu.be/2nD0Dk7R5IE",
   forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "F1 Drivers Race 100 Years of Go Karts",
-    youtubeInput: "https://youtu.be/pAIQC08lq_w",
+    title: "The F1 engine that’s better than Ferrari and Mercedes?!",
+    youtubeInput: "https://youtu.be/ohNqMlUdPug",
     
   },
 
