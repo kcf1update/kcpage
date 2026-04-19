@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Every F1 Team Analysed in 2026 Season So Far",
-  youtubeInput: "https://youtu.be/2nD0Dk7R5IE",
+  title: "Fatal Nurburgring crash: Driver Juha Miettinen dies in NLS round",
+  youtubeInput: "https://youtu.be/LGpSh0Am-c0",
   forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "The F1 engine that’s better than Ferrari and Mercedes?!",
-    youtubeInput: "https://youtu.be/ohNqMlUdPug",
+    title: "What’s Inside an F1 PHOTOGRAPHER’S $90,000 Camera Bag?",
+    youtubeInput: "https://youtu.be/4qap2xwWNGo",
     
   },
 
