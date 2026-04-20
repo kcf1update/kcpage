@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Fatal Nurburgring crash: Driver Juha Miettinen dies in NLS round",
-  youtubeInput: "https://youtu.be/LGpSh0Am-c0",
+  title: "F1 Drivers Play The Generation Game!",
+  youtubeInput: "https://youtu.be/a68iJOry-Lw",
   forceExternal: true,
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The Real Leclerc by Jock Clear with Peter Windsor",
-    youtubeInput: "https://youtu.be/hLif00NfktI",
+    title: "What we learned from another lost Verstappen Nurburgring win",
+    youtubeInput: "https://youtu.be/bLdPESxqDII",
     
   }
 ];

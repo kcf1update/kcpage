@@ -1,7 +1,6 @@
 // src/YouTubeNewsPage.jsx
 import React, { useMemo } from "react";
 
-
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
 import PageNav from "./components/PageNav";
@@ -67,48 +66,32 @@ export default function YouTubeNewsPage() {
 
   return (
     <div className="relative min-h-screen bg-[#545454] text-white">
-      {/* Foreground content — MATCH F1NewsPage rhythm */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-        
-        {/* ✅ TOP CARD FIRST */}
         <TopCard>
-  <TopCard.Header
-    title="F1 YouTube News"
-    subtitle="Latest videos, highlights, interviews, and race coverage."
-    logoSrc="/img/kcs-f1-car.png"
-  />
-</TopCard>
+          <TopCard.Header
+            title="F1 YouTube News"
+            subtitle="Latest videos, highlights, interviews, and race coverage."
+            logoSrc="/img/kcs-f1-car.png"
+          />
+        </TopCard>
 
-        {/* ✅ NAV UNDER TOP CARD — SAME spacing as F1NewsPage */}
         <div className="flex items-center">
           <PageNav />
           <div className="shrink-0"></div>
         </div>
 
-        
-
-        {/* Video grid */}
         <main className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {slots.map((slot, idx) => {
             const embedUrl = buildEmbedUrl(slot);
-          
             const title = slot?.title || "F1 video";
-            
-          
-
-            
-           
-
-           
+            const watchUrl = slot?.youtubeInput || "";
+            const forceExternal = !!slot?.forceExternal;
 
             return (
               <article
                 key={slot?.slotId || `${idx}`}
                 className="relative flex flex-col overflow-hidden rounded-3xl border border-red-400/40 bg-black/60 backdrop-blur shadow-[0_0_25px_rgba(248,113,113,0.7)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_35px_rgba(248,113,113,0.9)] hover:border-red-400/70"
               >
-                
-                
-
                 <div className="aspect-video bg-black/40">
                   {embedUrl ? (
                     <iframe
@@ -126,17 +109,26 @@ export default function YouTubeNewsPage() {
                 </div>
 
                 <div className="p-4">
-  <h2 className="text-sm font-semibold text-white">
-    {title}
-  </h2>
-</div>
+                  <h2 className="text-sm font-semibold text-white">
+                    {title}
+                  </h2>
 
-                  
-                
+                  {forceExternal && watchUrl && (
+                    <a
+                      href={watchUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-3 inline-block rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white no-underline transition hover:bg-blue-500"
+                    >
+                      Watch on YouTube ↗
+                    </a>
+                  )}
+                </div>
               </article>
             );
           })}
         </main>
+
         <AdBar />
       </div>
     </div>
