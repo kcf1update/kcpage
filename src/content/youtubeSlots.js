@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "F1 Drivers Play The Generation Game!",
-  youtubeInput: "https://youtu.be/a68iJOry-Lw",
+  title: "Will the NEW F1 RULE CHANGES actually improve racing?",
+  youtubeInput: "https://youtu.be/W1vn7_hLM_Q",
   forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "What’s Inside an F1 PHOTOGRAPHER’S $90,000 Camera Bag?",
-    youtubeInput: "https://youtu.be/4qap2xwWNGo",
+    title: "What F1's latest rules mean for fans by Mark Slade with Peter Windsor",
+    youtubeInput: "https://youtu.be/tPXA5JeALjM",
     
   },
 
