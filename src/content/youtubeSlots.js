@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Will the NEW F1 RULE CHANGES actually improve racing?",
-  youtubeInput: "https://youtu.be/W1vn7_hLM_Q",
-  forceExternal: true,
+  title: "Updated regulation proposals EXPLAINED ahead of Miami GP--The F1 Show Podcast",
+  youtubeInput: "https://youtu.be/uVXcKBUj8xw",
+  
   },
 
   {
     slotId: "slot2",
-    title: "What F1's latest rules mean for fans by Mark Slade with Peter Windsor",
-    youtubeInput: "https://youtu.be/tPXA5JeALjM",
+    title: "F1 livestream with Peter Windsor",
+    youtubeInput: "https://youtu.be/hm2Kc_ju1bQ",
     
   },
 
