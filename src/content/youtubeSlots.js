@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "F1 livestream with Peter Windsor",
-    youtubeInput: "https://youtu.be/hm2Kc_ju1bQ",
+    title: "What F1's latest rules mean for fans by Mark Slade with Peter Windsor",
+    youtubeInput: "https://youtu.be/tPXA5JeALjM",
     
   },
 
   {
     slotId: "slot3",
-    title: "What we learned from another lost Verstappen Nurburgring win",
-    youtubeInput: "https://youtu.be/bLdPESxqDII",
+    title: "How will the rule changes impact qualifying?",
+    youtubeInput: "https://youtu.be/J1XEGHFuAVU",
     
   }
 ];

@@ -46,7 +46,13 @@ function GlassyCard({
         <header className="mb-3">
           {title ? (
             titleUrl ? (
-              <a href={titleUrl} target="_blank" rel="noreferrer" className="block">
+              <a
+  href={titleUrl}
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+  onClick={() => trackArticleClick(title, titleUrl, "card_title")}
+>
               <h2
   className={`text-xl sm:text-2xl font-bold tracking-tight transition
     ${highlight === "blue" ? "text-cyan-300" : "text-white hover:text-cyan-300"}
@@ -105,7 +111,15 @@ function safeUrl(url) {
     return "";
   }
 }
-
+function trackArticleClick(title, url, location = "unknown") {
+  if (window.gtag) {
+    window.gtag("event", "article_click", {
+      article_title: title || "",
+      article_url: url || "",
+      article_location: location,
+    });
+  }
+}
 // Only allow local image paths that start with "/"
 function safeLocalImagePath(imagePath) {
   if (!imagePath || typeof imagePath !== "string") return "";
@@ -215,7 +229,9 @@ export default function KCpage() {
     F1 news summarized for quick reading
   </span>
 </div>
-
+<div className="text-center text-xs text-cyan-300 mt-1 font-medium animate-pulse">
+  ↓ More F1 headlines below
+</div>
                   <GlassyCard
                     highlight="blue"
                     title={item?.title || "Top Story"}
@@ -227,12 +243,13 @@ export default function KCpage() {
                       {showImage ? (
                         href ? (
                           <a
-                            href={href}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="block"
-                            title="Open article"
-                          >
+  href={href}
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+  title="Open article"
+  onClick={() => trackArticleClick(item?.title, href, "top_story_image")}
+>
                             <div className="aspect-[16/9] lg:aspect-[18/9] w-full bg-black/40 overflow-hidden rounded-2xl">
   <img
     src={imgPath}
@@ -358,12 +375,13 @@ export default function KCpage() {
                         {showImage ? (
                           href ? (
                             <a
-                              href={href}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="block"
-                              title="Open article"
-                            >
+  href={href}
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+  title="Open article"
+  onClick={() => trackArticleClick(item?.title, href, "under_video_image_mobile")}
+>
                               <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
   <img
     src={imgPath}
@@ -471,12 +489,13 @@ export default function KCpage() {
                   <div className="space-y-3">
                     {showImage ? (
                       href ? (
-                        <a
+  <a
   href={href}
   target="_blank"
   rel="noreferrer"
   className="block"
   title="Open article"
+  onClick={() => trackArticleClick(item?.title, href, "featured_news_image")}
 >
   <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
     <img
@@ -576,12 +595,13 @@ export default function KCpage() {
                         <div className="space-y-3">
                           {showImage ? (
                             href ? (
-                              <a
+  <a
   href={href}
   target="_blank"
   rel="noreferrer"
   className="block"
   title="Open article"
+  onClick={() => trackArticleClick(item?.title, href, "under_video_image_desktop")}
 >
   <div className="aspect-[16/9] w-full bg-black/40 overflow-hidden rounded-2xl">
     <img
