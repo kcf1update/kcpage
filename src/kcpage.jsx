@@ -112,13 +112,14 @@ function safeUrl(url) {
   }
 }
 function trackArticleClick(title, url, location = "unknown") {
-  if (window.gtag) {
-    window.gtag("event", "article_click", {
-      article_title: title || "",
-      article_url: url || "",
-      article_location: location,
-    });
-  }
+  if (!window.gtag) return;
+
+  window.gtag("event", "article_click", {
+    article_title: title || "",
+    article_url: url || "",
+    article_location: location,
+    transport_type: "beacon",
+  });
 }
 // Only allow local image paths that start with "/"
 function safeLocalImagePath(imagePath) {
@@ -667,13 +668,14 @@ export default function KCpage() {
                           <div className="flex items-center gap-3 pt-1">
                             {href ? (
                               <a
-                                href={href}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
-                              >
-                                Read full article →
-                              </a>
+  href={href}
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex text-sm text-cyan-200 hover:text-cyan-100"
+  onClick={() => trackArticleClick(item?.title, href, "read_full_article")}
+>
+  Read full article →
+</a>
                             ) : null}
 
                             <Link
