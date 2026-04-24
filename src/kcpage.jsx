@@ -257,12 +257,14 @@ export default function KCpage() {
       article_title: item?.title || "",
       article_url: href || "",
       article_location: "top_story_image",
+      event_callback: () => {
+        window.open(href, "_blank");
+      },
+      event_timeout: 1000,
     });
-  }
-
-  setTimeout(() => {
+  } else {
     window.open(href, "_blank");
-  }, 150);
+  }
 }}
 >
                             <div className="aspect-[16/9] lg:aspect-[18/9] w-full bg-black/40 overflow-hidden rounded-2xl">
