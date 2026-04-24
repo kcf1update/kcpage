@@ -249,7 +249,21 @@ export default function KCpage() {
   rel="noreferrer"
   className="block"
   title="Open article"
-  onClick={() => trackArticleClick(item?.title, href, "top_story_image")}
+  onClick={(e) => {
+  e.preventDefault();
+
+  if (window.gtag) {
+    window.gtag("event", "article_click", {
+      article_title: item?.title || "",
+      article_url: href || "",
+      article_location: "top_story_image",
+    });
+  }
+
+  setTimeout(() => {
+    window.open(href, "_blank");
+  }, 150);
+}}
 >
                             <div className="aspect-[16/9] lg:aspect-[18/9] w-full bg-black/40 overflow-hidden rounded-2xl">
   <img
