@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Updated regulation proposals EXPLAINED ahead of Miami GP--The F1 Show Podcast",
-  youtubeInput: "https://youtu.be/uVXcKBUj8xw",
+  title: "Stefano, F1 '26 and Mission Impossible by Peter Windsor",
+  youtubeInput: "https://youtu.be/MvVgcqemkz0",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "How will the rule changes impact qualifying?",
-    youtubeInput: "https://youtu.be/J1XEGHFuAVU",
+    title: "Revealed: First look at how F1’s new rules will work",
+    youtubeInput: "https://youtu.be/tGg171cK5dI",
     
   }
 ];
