@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import AdBar from "./AdBar.jsx";
 import TopCard from "./components/TopCard";
-import PageNav from "./components/PageNav";
+
 
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 const nowText = () => new Date().toLocaleString();
@@ -275,7 +275,7 @@ export default function CommentsPage() {
         </TopCard>
 
         <div className="flex items-center">
-          <PageNav />
+          
           <div className="shrink-0" />
         </div>
 

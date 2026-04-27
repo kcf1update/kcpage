@@ -1,9 +1,9 @@
 // src/KCpage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import SiteHeader from "./components/SiteHeader";
 
 
-import PageNav from "./components/PageNav";
 
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
@@ -129,6 +129,7 @@ function safeLocalImagePath(imagePath) {
 }
 
 export default function KCpage() {
+ 
   // ✅ Stage A: Featured content is file-driven (not localStorage)
   // Option A change: show a Top Story above the fold, without duplicating it below.
   // We pull 4 items to keep the two-left + one-under-video structure intact after removing Top Story.
@@ -193,23 +194,8 @@ export default function KCpage() {
 
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-        {/* ✅ TOP CARD AT THE VERY TOP (full width like PageHero) */}
-        <section className="relative rounded-none border border-orange-400/70 bg-white text-slate-900 shadow-[0_0_30px_rgba(255,165,0,0.35)]">
-        <img
-  src="/flags/ca.png"
-  alt="Canada flag"
-  className="absolute top-2 right-2 h-5 w-auto z-10 opacity-90"
-/>
-          <div className="flex items-center justify-center">
-            <div className="relative w-full max-w-6xl h-20 sm:h-24 md:h-28 rounded-none overflow-hidden flex items-center">
-              <img
-                src="/img/kcs-f1-car.png"
-                alt="KC's F1 Worldwide Update car"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </section>
+<SiteHeader />
+        
 {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {
@@ -225,13 +211,10 @@ export default function KCpage() {
 
               return (
                 <section className="mt-1">
-                 <div className="mb-2 text-center">
+                <div className="-mt-2 mb-2 text-center">
   <span className="text-sm font-semibold text-cyan-300">
     F1 news summarized for quick reading
   </span>
-</div>
-<div className="text-center text-xs text-cyan-300 mt-1 font-medium animate-pulse">
-  ↓ More F1 headlines below
 </div>
                   <GlassyCard
                     highlight="blue"
@@ -343,7 +326,7 @@ export default function KCpage() {
 
          {/* ✅ NAV UNDER TOP CARD */} 
         <div className="w-full">
-  <PageNav />
+  
 </div>
 
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}

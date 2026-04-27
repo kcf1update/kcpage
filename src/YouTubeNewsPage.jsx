@@ -1,9 +1,9 @@
 // src/YouTubeNewsPage.jsx
 import React, { useMemo } from "react";
-
+import SiteHeader from "./components/SiteHeader";
 import AdBar from "./AdBar.jsx";
-import TopCard from "./components/TopCard";
-import PageNav from "./components/PageNav";
+
+
 
 // ✅ Stage A content source
 import { youtubeSlots } from "./content/youtubeSlots";
@@ -67,16 +67,10 @@ export default function YouTubeNewsPage() {
   return (
     <div className="relative min-h-screen bg-[#545454] text-white">
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-        <TopCard>
-          <TopCard.Header
-            title="F1 YouTube News"
-            subtitle="Latest videos, highlights, interviews, and race coverage."
-            logoSrc="/img/kcs-f1-car.png"
-          />
-        </TopCard>
+        <SiteHeader />
 
         <div className="flex items-center">
-          <PageNav />
+         
           <div className="shrink-0"></div>
         </div>
 

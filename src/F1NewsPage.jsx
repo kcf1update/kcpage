@@ -1,10 +1,10 @@
 // src/F1NewsPage.jsx
 import React from "react";
 
-import PageNav from "./components/PageNav";
-import TopCard from "./components/TopCard";
-import AdBar from "./AdBar.jsx";
 
+
+import AdBar from "./AdBar.jsx";
+import SiteHeader from "./components/SiteHeader";
 import { newsSlots } from "./content/newsSlots";
 
 /**
@@ -42,15 +42,12 @@ export default function F1NewsPage() {
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 px-4 pt-3 pb-8 sm:gap-4 sm:pt-4 sm:pb-10">
-        <TopCard>
-          <TopCard.Header
-            title="F1 News – Quick, Clear, Updated Daily"
-                        logoSrc="/img/kcs-f1-car.png"
-          />
-        </TopCard>
+        
+             <SiteHeader />
+          
 
         <div className="flex items-center">
-          <PageNav />
+         
           <div className="shrink-0">{/* language selector hidden for launch */}</div>
         </div>
 

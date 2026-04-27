@@ -2,8 +2,8 @@
 import React, { useMemo } from "react";
 
 import AdBar from "./AdBar.jsx";
-import TopCard from "./components/TopCard";
-import PageNav from "./components/PageNav";
+import SiteHeader from "./components/SiteHeader";
+
 
 import { DRIVERS } from "./content/drivers";
 import {
@@ -183,18 +183,11 @@ export default function PointsPage() {
     <div className="relative min-h-screen bg-[#545454]">
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
         {/* TOP CARD */}
-        <TopCard>
-          <TopCard.Header
-            title="Driver & Team Points"
-                       logoSrc="/img/kcs-f1-car.png"
-            logoClassName="h-16 sm:h-18 md:h-20 lg:h-24 w-auto"
-            titleClassName="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.05] break-words"
-          />
-        </TopCard>
+        <SiteHeader />
 
         {/* NAV */}
         <div className="flex items-center">
-          <PageNav />
+          
           <div className="shrink-0" />
         </div>
 

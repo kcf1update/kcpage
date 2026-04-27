@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
-import TopCard from "./components/TopCard";
-import PageNav from "./components/PageNav";
+
+import SiteHeader from "./components/SiteHeader";
 
 import { nextRaceContent, NEXT_RACE_DRIVER_IDS } from "./content/nextRaceContent";
 import { getDriverById } from "./content/drivers";
@@ -563,6 +563,9 @@ export default function NextRacePage() {
     return getSessionWeekendRank(a) - getSessionWeekendRank(b);
   });
 
+
+
+
   const raceSession = orderedSessions.find((s) => s.type === "race") || null;
   const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
@@ -575,24 +578,19 @@ export default function NextRacePage() {
 
   return (
     <div className="relative min-h-screen w-full max-w-full overflow-x-hidden text-white">
+      
       <div className="absolute inset-0 -z-10 bg-black/70" />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 overflow-x-hidden px-4 pb-10 pt-1 sm:pt-3 lg:px-8">
-        <TopCard>
-          <TopCard.Header
-            title="Race Centre"
-            subtitle="Schedule, weather, session results & race results."
-            logoSrc="/img/car-smoking.png"
-          />
-        </TopCard>
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-3 overflow-x-hidden px-4 pb-6 pt-1 sm:pt-2">
+        <SiteHeader />
 
         <div className="mt-1 flex items-center justify-between gap-4">
-          <PageNav />
+          
           <div className="shrink-0" />
         </div>
 
         {/* Top row */}
-        <section className="mt-2 grid gap-4 md:grid-cols-3 md:gap-6">
+        <section className="mt-1 grid gap-3 md:grid-cols-3 md:gap-4">
           <article className="min-w-0 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur md:col-span-2">
             <header className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
@@ -653,7 +651,7 @@ export default function NextRacePage() {
             </div>
           </article>
 
-          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur">
   <div>
     <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
       Weather Forecast

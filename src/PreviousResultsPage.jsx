@@ -1,6 +1,6 @@
 import React from "react";
-import TopCard from "./components/TopCard";
-import PageNav from "./components/PageNav";
+
+import SiteHeader from "./components/SiteHeader";
 import AdBar from "./AdBar.jsx";
 
 import { previousRaceResults } from "./content/previousRaceResults";
@@ -214,16 +214,10 @@ export default function PreviousResultsPage() {
       <div className="absolute inset-0 -z-10 bg-black/70" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 overflow-x-hidden px-4 pb-10 pt-1 sm:pt-3 lg:px-8">
-        <TopCard>
-          <TopCard.Header
-            title="Previous Results"
-            subtitle="Past race result cards archived in the same format as Race Centre."
-            logoSrc="/img/car-smoking.png"
-          />
-        </TopCard>
+        <SiteHeader />
 
         <div className="mt-1 flex items-center justify-between gap-4">
-          <PageNav />
+         
           <div className="shrink-0" />
         </div>
 
