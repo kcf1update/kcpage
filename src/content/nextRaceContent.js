@@ -294,7 +294,7 @@ export const nextRaceContent = {
   location: "Miami International Autodrome, US",
   trackInfoUrl: "/img/tracks/shutterstockmiami.jpg",
 
- weather:  "Thu: no info yet, Fri: no info yet, Sat: no info yet, Sun: no info yet",
+ weather:  "Thu: 28°C Mostly Sunny 🌤️, Fri: 28°C Mostly Sunny🌤️, Sat: 30°C Humid amd Breezy☀️, Sun: 29°C Scattered Showers🌦️",
 
  sessions: [
   {

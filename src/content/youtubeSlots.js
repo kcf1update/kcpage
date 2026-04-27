@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Stefano, F1 '26 and Mission Impossible by Peter Windsor",
-  youtubeInput: "https://youtu.be/MvVgcqemkz0",
+  title: "Brundle: Miami will be a RELAUNCH to the season after rule update",
+  youtubeInput: "https://youtu.be/Hy_6mbTPhJw",
   
   },
 
   {
     slotId: "slot2",
-    title: "What F1's latest rules mean for fans by Mark Slade with Peter Windsor",
-    youtubeInput: "https://youtu.be/tPXA5JeALjM",
+    title: "How F1 drivers lost their power",
+    youtubeInput: "https://youtu.be/F7frBMOlYEg",
     
   },
 
