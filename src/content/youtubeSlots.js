@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "How F1 drivers lost their power",
-    youtubeInput: "https://youtu.be/F7frBMOlYEg",
+    title: "Laurent Mekies opens up on Max Verstappen's future at Red Bull | We're an open book",
+    youtubeInput: "https://youtu.be/1opy-oF3gyg",
     
   },
 
