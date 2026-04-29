@@ -9,16 +9,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Brundle: Miami will be a RELAUNCH to the season after rule update",
-  youtubeInput: "https://youtu.be/Hy_6mbTPhJw",
+  title: "Everything you need to know about F1 2026's big return in Miami",
+  youtubeInput: "https://youtu.be/gYFKR1GVF-g",
   
   },
 
   {
     slotId: "slot2",
-    title: "Laurent Mekies opens up on Max Verstappen's future at Red Bull | We're an open book",
-    youtubeInput: "https://youtu.be/1opy-oF3gyg",
-    
+    title: "Arvid Lindblad | Fast, Fresh + Fearless | F1 Beyond The Grid Podcast",
+    youtubeInput: "https://youtu.be/WR9_1khpen8",
+    forceExternal: true,
   },
 
   {
