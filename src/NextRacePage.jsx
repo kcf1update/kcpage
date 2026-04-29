@@ -459,12 +459,11 @@ function RaceTable({ session }) {
       <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
         <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
           <tr>
-            <th className="w-[9%] px-1 py-1 text-left sm:px-2">Pos</th>
-            <th className="w-[39%] px-1 py-1 text-left sm:px-2">Driver</th>
-            <th className="w-[24%] px-1 py-1 text-left sm:px-2">Time/Status</th>
-            <th className="w-[12%] px-1 py-1 text-left sm:px-2">Grid</th>
-            <th className="w-[16%] px-1 py-1 text-left sm:px-2">Pts</th>
-          </tr>
+  <th className="w-[10%] px-1 py-1 text-left sm:px-2">Pos</th>
+  <th className="w-[45%] px-1 py-1 text-left sm:px-2">Driver</th>
+  <th className="w-[30%] px-1 py-1 text-left sm:px-2">Time/Status</th>
+  <th className="w-[15%] px-1 py-1 text-left sm:px-2">Pts</th>
+</tr>
         </thead>
 
         <tbody>
@@ -481,9 +480,7 @@ function RaceTable({ session }) {
                   {row.status || "—"}
                 </div>
               </td>
-              <td className="px-1 py-1 text-gray-100 sm:px-2">
-                {Number.isFinite(row.grid) ? row.grid : "—"}
-              </td>
+              
               <td className="px-1 py-1 sm:px-2">
                 <span className="inline-flex rounded-full bg-white/10 px-2 py-1 font-semibold sm:px-3">
                   {Number.isFinite(row.points) ? row.points : "—"}
@@ -500,10 +497,11 @@ function RaceTable({ session }) {
 // ---------- card renderer ----------
 function SessionCard({ session }) {
   const type = session.type || "practice";
-  const isPracticeLike = type === "practice";
+
+const isPracticeLike = type === "practice";
 const isQualifyingLike = type === "qualifying" || type === "sprint_shootout";
 const isRaceLike = type === "sprint_race";
-
+const hasResults = hasSessionResults(session);
   
 
   
@@ -511,7 +509,21 @@ const isRaceLike = type === "sprint_race";
   
 
   
+if (!hasResults) {
+  return (
+    <article className="min-w-0 max-w-full overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
+      <div className="flex items-center justify-between gap-3">
+        <h2 className="text-lg font-semibold">
+          <span className="text-sky-200">{session.label || "Session"}</span>
+        </h2>
 
+        <span className="rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-300">
+          Results pending
+        </span>
+      </div>
+    </article>
+  );
+}
   return (
     <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
       <header className="mb-3 flex items-center justify-between gap-2">
@@ -530,6 +542,24 @@ const isRaceLike = type === "sprint_race";
 }
 
 function RaceCard({ session }) {
+  const hasResults = hasRaceResults(session);
+
+  if (!hasResults) {
+    return (
+      <article className="min-w-0 max-w-full overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-lg font-semibold">
+            <span className="text-sky-200">{session.label || "Race Results"}</span>
+          </h2>
+
+          <span className="rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-300">
+            Results pending
+          </span>
+        </div>
+      </article>
+    );
+  }
+
   const sum = computeRaceSummary(session);
   const podiumIds = sum.podiumIds || [];
 
@@ -566,10 +596,11 @@ export default function NextRacePage() {
 
 
 
-  const raceSession = orderedSessions.find((s) => s.type === "race") || null;
-  const sessionResults = orderedSessions.filter((s) => s.type !== "race");
+ const raceSession = orderedSessions.find((s) => s.type === "race") || null;
 
-  const raceHasResults = hasRaceResults(raceSession);
+const sessionResults = orderedSessions.filter((s) => s.type !== "race");
+
+
 
   useEffect(() => {
     const raceName = nextRaceContent.raceName ? ` – ${nextRaceContent.raceName}` : "";
@@ -708,53 +739,22 @@ export default function NextRacePage() {
         </section>
 
         {/* Results */}
-        <section className="grid min-w-0 gap-4 lg:grid-cols-2 lg:gap-6">
-          {raceHasResults ? (
-            <>
-              <div className="order-1 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
-                {raceSession ? (
-                  <RaceCard session={raceSession} />
-                ) : (
-                  <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-                    <h2 className="text-lg font-semibold text-sky-200">Race</h2>
-                    <p className="mt-2 text-sm text-gray-300">
-                      Add a session with <span className="font-semibold">type: "race"</span>{" "}
-                      in nextRaceContent.js to show race results here.
-                    </p>
-                  </article>
-                )}
-              </div>
+        {/* Results */}
+<section className="grid min-w-0 gap-4 lg:grid-cols-2 lg:gap-6">
+  {sessionResults.length > 0 ? (
+    <div className="order-1 min-w-0 space-y-6 lg:order-1">
+      {sessionResults.map((s) => (
+        <SessionCard key={s.id || s.label} session={s} />
+      ))}
+    </div>
+  ) : null}
 
-              <div className="order-2 min-w-0 space-y-6 lg:order-1">
-                {sessionResults.map((s) => (
-                  <SessionCard key={s.id || s.label} session={s} />
-                ))}
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="order-1 min-w-0 space-y-6 lg:order-1">
-                {sessionResults.map((s) => (
-                  <SessionCard key={s.id || s.label} session={s} />
-                ))}
-              </div>
-
-              <div className="order-2 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
-                {raceSession ? (
-                  <RaceCard session={raceSession} />
-                ) : (
-                  <article className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-                    <h2 className="text-lg font-semibold text-sky-200">Race</h2>
-                    <p className="mt-2 text-sm text-gray-300">
-                      Add a session with <span className="font-semibold">type: "race"</span>{" "}
-                      in nextRaceContent.js to show race results here.
-                    </p>
-                  </article>
-                )}
-              </div>
-            </>
-          )}
-        </section>
+  {raceSession ? (
+    <div className="order-2 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
+      <RaceCard session={raceSession} />
+    </div>
+  ) : null}
+</section>
 
         <div className="mt-2">
           <AdBar />
