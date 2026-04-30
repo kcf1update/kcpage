@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Everything you need to know about F1 2026's big return in Miami",
-  youtubeInput: "https://youtu.be/gYFKR1GVF-g",
+  title: "Why the 2026 MIAMI F1 RACE is under HUGE PRESSURE!",
+  youtubeInput: "https://youtu.be/UVj00MSpkPc",
   
   },
 
   {
     slotId: "slot2",
     title: "Arvid Lindblad | Fast, Fresh + Fearless | F1 Beyond The Grid Podcast",
-    youtubeInput: "https://youtu.be/WR9_1khpen8",
-    forceExternal: true,
+    youtubeInput: "https://youtu.be/gYFKR1GVF-g",
+    
   },
 
   {
     slotId: "slot3",
-    title: "Revealed: First look at how F1’s new rules will work",
-    youtubeInput: "https://youtu.be/tGg171cK5dI",
+    title: "F1 livestream with Peter Windsor feat. Mark Slade",
+    youtubeInput: "https://youtu.be/sKy_PTHoHJw",
     
   }
 ];

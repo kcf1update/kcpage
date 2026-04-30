@@ -34,10 +34,10 @@ export default function CountdownBar() {
 }
 
   return (
-  <div className="flex items-center justify-center gap-2 text-white font-semibold">
+  <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base text-white font-semibold">
     <img src="/flags/us.png" alt="United States flag" className="h-4 w-auto" />
     <span>MIAMI GRAND PRIX STARTS IN:</span>
-    <span className="text-sky-300">
+    <span className="text-sky-300 text-sm sm:text-base md:text-lg">
       {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     </span>
   </div>

@@ -43,7 +43,13 @@ export default function SiteHeader() {
           <div className="flex flex-col gap-3 text-base font-semibold text-cyan-300">
             <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
             <Link onClick={() => setMenuOpen(false)} to="/news">More News</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/next-race">Race Centre</Link>
+            <Link
+  onClick={() => setMenuOpen(false)}
+  to="/next-race"
+  className="text-cyan-200 font-extrabold drop-shadow-[0_0_8px_rgba(34,211,238,0.9)]"
+>
+  Race Centre
+</Link>
             <Link onClick={() => setMenuOpen(false)} to="/youtube">YouTube</Link>
           </div>
         </div>
