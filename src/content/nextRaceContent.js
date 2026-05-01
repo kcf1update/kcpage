@@ -325,7 +325,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "1:30 PM AST",
+          time: "1:00 PM AST",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),

@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why the 2026 MIAMI F1 RACE is under HUGE PRESSURE!",
-  youtubeInput: "https://youtu.be/UVj00MSpkPc",
-  
+  title: "Weekend Warm-Up | 2026 Miami Grand Prix",
+  youtubeInput: "https://youtu.be/_HT3EE1aAq8",
+  forceExternal: true, // This will force the link to open in a new tab instead of embedding the video
   },
 
   {
     slotId: "slot2",
-    title: "Arvid Lindblad | Fast, Fresh + Fearless | F1 Beyond The Grid Podcast",
-    youtubeInput: "https://youtu.be/gYFKR1GVF-g",
+    title: "Lando Norris' INSANE car collection!",
+    youtubeInput: "https://youtu.be/ZA_VZksaQyc",
     
   },
 
