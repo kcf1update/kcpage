@@ -282,6 +282,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+Charles Leclerc	MON	Scuderia Ferrari HP	1m29.310s
+2	Max Verstappen	NED	Oracle Red Bull Racing	1m29.607s
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m29.758s
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m29.777s
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m30.079s
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m30.100s
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m30.208s
+8	Pierre Gasly	FRA	BWT Alpine F1 Team	1m30.587s
+9	Isack Hajdar	FRA	Oracle Red Bull Racing	1m30.873s
+10	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m30.930s
+11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m31.015s
+12	Alex Albon	THA	Atlassian Williams F1 Team	1m31.024s
+13	Oliver Bearman	GBR	TGR Haas F1 Team	1m31.091s
+14	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m31.111s
+15	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m31.595s
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m31.635s
+17	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m31.648s
+18	Sergio Perez	MEX	Cadillac F1 Team	1m32.047s
+19	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m32.593s
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m32.762s
+21	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m32.862s
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m32.959s
 
 `;
 
@@ -325,7 +347,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "1:00 PM AST",
+          time: "Complete results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
