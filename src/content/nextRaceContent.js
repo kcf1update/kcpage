@@ -315,7 +315,28 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
-	 
+	1	Lando Norris	GBR	McLaren Mastercard F1 Team	1m27.869s
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m28.091s
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m28.108s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m28.239s
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m28.461s
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m28.493s
+7	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m28.618s
+8	Franco Colapinto	ARG	BWT Alpine F1 Team	1m29.320s
+9	Isack Hadjar	FRA	Oracle Red Bull Racing	1m29.422s
+10	Pierre Gasly	FRA	BWT Alpine F1 Team	1m29.474s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	 
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
+13	Oliver Bearman	GBR	TGR Haas F1 Team	 
+14	Alex Albon	THA	Atlassian Williams F1 Team	 
+15	Carlos Sainz	ESP	Atlassian Williams F1 Team	 
+16	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	 
+17	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	 
+18	Esteban Ocon	FRA	TGR Haas F1 Team	 
+19	Sergio Perez	MEX	Cadillac F1 Team	 
+20	Valtteri Bottas	FIN	Cadillac F1 Team	 
+21	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	 
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team 
 `;
 const PASTE_SPRINT = `
 
