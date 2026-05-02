@@ -527,7 +527,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "1:00 PM AST",
+          time: "Complete results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
