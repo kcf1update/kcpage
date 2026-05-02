@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 export default function CountdownBar() {
   const getTimeRemaining = () => {
     const targetTime = new Date("2026-05-01T16:30:00Z").getTime();
@@ -26,10 +26,15 @@ export default function CountdownBar() {
 
   if (timeLeft.total <= 0) {
   return (
-    <div className="flex items-center justify-center gap-2 text-red-400 font-semibold">
+    <Link
+      to="/next-race"
+      className="inline-flex items-center justify-center gap-2 rounded-full border border-red-400/70 bg-red-500/10 px-3 py-1.5 text-xs sm:text-sm font-bold text-red-300 shadow-[0_0_10px_rgba(248,113,113,0.35)] transition hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
+      title="Go to Race Centre"
+    >
       <img src="/flags/us.png" alt="United States flag" className="h-4 w-auto" />
-     <span>MIAMI GRAND PRIX LIVE NOW</span>
-    </div>
+      <span>MIAMI GRAND PRIX LIVE NOW</span>
+      <span className="text-cyan-300">Race Centre ↗</span>
+    </Link>
   );
 }
 
