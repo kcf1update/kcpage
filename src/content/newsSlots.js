@@ -1,28 +1,28 @@
 const newsSlots = [
   {
-   slotId: 1,
+   slotId: 3,
   sourceLabel: "Crash.net",
-  title: "Norris wins Miami Sprint as McLaren lock out the top two",
+  title: "Antonelli takes third straight pole as Mercedes bounce back in Miami",
   summary:
-    "Lando Norris controlled the Miami Sprint from the front, leading home Oscar Piastri for a McLaren one-two. Charles Leclerc finished third, while Max Verstappen and Lewis Hamilton produced one of the race’s livelier battles further back in the pack.",
+    "Kimi Antonelli claimed his third consecutive F1 pole position with a standout lap in Miami qualifying. The Mercedes driver beat Max Verstappen by 0.166 seconds, while Charles Leclerc took third for Ferrari and Lando Norris could only manage fourth after winning the earlier Sprint.",
   kcsQuickShift:
-    "McLaren looked sharp again in Miami, and Norris did exactly what he needed to do by turning sprint pole into a clean win.",
-  url: "https://www.crash.net/f1/news/1094092/1/lando-norris-wins-f1-miami-sprint-max-verstappen-and-lewis-hamilton-duel",
-  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
-  photoCredit: "Shutterstock",
+    "Antonelli is starting to look seriously comfortable at the front, and Miami qualifying was another big statement from the Mercedes rookie.",
+  url: "https://www.crash.net/f1/news/1094199/1/kimi-antonelli-seals-hat-trick-f1-poles-mercedes-bounce-back-miami-grand-prix",
+  imagePath: "/img/news/xpb/news-xpbkimimiami.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "May 2, 2026",
 },
 
 {
-   slotId: 2,
-  sourceLabel: "Autosport",
-  title: "Norris leads McLaren one-two in Miami Sprint",
+   slotId: 4,
+  sourceLabel: "Formula1.com",
+  title: "Russell plays down Miami qualifying gap to Antonelli",
   summary:
-    "Lando Norris gave McLaren its first win of the 2026 season with a controlled drive in the Miami Sprint. Oscar Piastri completed a McLaren one-two, while Charles Leclerc finished third and Mercedes’ early-season run took a hit after Kimi Antonelli slipped back from the front row.",
+    "George Russell says there is no major cause for concern after qualifying fifth for the Miami Grand Prix, four-tenths behind Mercedes team mate Kimi Antonelli. Russell admitted the hot, low-grip conditions have been a struggle for him, but still felt a top-three starting spot was possible before losing time late in his final Q3 lap.",
   kcsQuickShift:
-    "That upgraded McLaren looked properly alive in Miami, and Norris turned it into exactly the kind of sprint win the team needed.",
-  url: "https://www.autosport.com/f1/news/k/10817362/",
-  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+    "Russell is not panicking, but Antonelli’s Miami pace is making the Mercedes story very interesting heading into race day.",
+  url: "https://www.formula1.com/en/latest/article/russell-sees-no-major-cause-for-concern-over-sizeable-qualifying-gap-to-antonelli-in-miami.2QzSNtED7TWq6nMmCUbPTA",
+  imagePath: "/img/news/xpb/news-xpbrussellmiami.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "May 2, 2026",
 },

@@ -483,6 +483,116 @@ DNS	Arvid Lindblad	GBR	Racing Bulls
 DNS	Nico Hulkenberg	GER	Audi Revolut F1 Team
 `;
 const PASTE_Q = `
+1	12	
+
+Kimi Antonelli
+
+Mercedes	1:28.653	1:28.289	1:27.798	17
+2	3	
+
+Max Verstappen
+
+Red Bull Racing	1:29.099	1:28.116	1:27.964	15
+3	16	
+
+Charles Leclerc
+
+Ferrari	1:28.938	1:28.315	1:28.143	21
+4	1	
+
+Lando Norris
+
+McLaren	1:29.183	1:28.920	1:28.183	20
+5	63	
+
+George Russell
+
+Mercedes	1:29.492	1:28.477	1:28.197	18
+6	44	
+
+Lewis Hamilton
+
+Ferrari	1:29.483	1:28.477	1:28.319	21
+7	81	
+
+Oscar Piastri
+
+McLaren	1:29.920	1:28.332	1:28.500	20
+8	43	
+
+Franco Colapinto
+
+Alpine	1:29.584	1:28.975	1:28.762	19
+9	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:29.324	1:28.941	1:28.789	21
+10	10	
+
+Pierre Gasly
+
+Alpine	1:29.914	1:29.070	1:28.810	20
+11	27	
+
+Nico Hulkenberg
+
+Audi	1:29.645	1:29.439		14
+12	30	
+
+Liam Lawson
+
+Racing Bulls	1:29.595	1:29.499		14
+13	87	
+
+Oliver Bearman
+
+Haas F1 Team	1:29.340	1:29.567		12
+14	55	
+
+Carlos Sainz
+
+Williams	1:29.540	1:29.568		15
+15	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:29.838	1:29.772		15
+16	23	
+
+Alexander Albon
+
+Williams	1:29.720	1:29.946		15
+17	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:30.133			9
+18	14	
+
+Fernando Alonso
+
+Aston Martin	1:31.098			8
+19	18	
+
+Lance Stroll
+
+Aston Martin	1:31.164			9
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:31.629			9
+21	11	
+
+Sergio Perez
+
+Cadillac	1:31.967			9
+22	5	
+
+Gabriel Bortoleto
+
+Audi	1:33.737			3
 
 `;
 
@@ -536,7 +646,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "5:00 PM AST",
+          time: "Complete results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
