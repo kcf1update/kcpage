@@ -479,7 +479,7 @@ export const nextRaceContent = {
   location: "Miami International Autodrome, US",
   trackInfoUrl: "/img/tracks/shutterstockmiami.jpg",
 
- weather:  "Thu: 28°C Mostly Sunny 🌤️, Fri: 28°C Mostly Sunny🌤️, Sat: 30°C Humid amd Breezy☀️, Sun: 29°C Scattered Showers🌦️",
+ weather:  "Thu: 28°C Mostly Sunny 🌤️, Fri: 28°C Mostly Sunny🌤️, Sat: 30°C Humid Mostly Sunny🌤️, Sun: 29°C Possible Thunderstorms⛈️",
 
  sessions:
   WEEKEND_FORMAT === "sprint"

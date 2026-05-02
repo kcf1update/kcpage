@@ -1,122 +1,142 @@
 const newsSlots = [
   {
   slotId: 1,
-  sourceLabel: "Motorsport.com",
-  title: "Verstappen Taking His Time Over F1 Future",
-  summary: "Max Verstappen says there is no fresh update on his Formula 1 future, but he is still taking time to weigh things up after a difficult start to the 2026 season. His comments come as Red Bull struggles with its RB22, the new regulations continue to divide opinion, and Verstappen’s interest in GT3 endurance racing keeps growing.",
-  kcsQuickShift: "This one feels less like a quick decision and more like Verstappen watching how Red Bull responds before showing his hand.",
-  url: "https://www.motorsport.com/f1/news/max-verstappen-to-take-his-time-to-decide-on-his-f1-future/10816831/",
-  imagePath: "/img/news/shut/news-shutterstockmax.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 1, 2026",
+    sourceLabel: "Formula 1",
+    title: "Norris grabs Miami Sprint pole ahead of Antonelli and Piastri",
+    summary:
+      "Lando Norris put McLaren on top in Miami Sprint Qualifying, beating Kimi Antonelli and Oscar Piastri as the team’s upgrade package made an immediate impact. It was also the first time this season Mercedes has been beaten in a qualifying style session, which makes this a proper statement from McLaren.",
+    kcsQuickShift:
+      "McLaren needed a sign that the upgrades were real and Norris gave them exactly that in Miami.",
+    url: "https://www.formula1.com/en/latest/article/norris-seizes-pole-position-in-miami-sprint-qualifying-ahead-of-antonelli-and-piastri.3RVsemdZrx7agWsQaMzrm5",
+    imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 2, 2026",
 },
 
 {
-  slotId: 2,
-  sourceLabel: "PlanetF1",
-  title: "Norris Warns F1’s 2026 Racing May Barely Change",
-  summary: "Lando Norris says the FIA’s latest 2026 rule tweaks are a step in the right direction, especially for qualifying, but he doubts they will dramatically change the racing. The McLaren driver says F1 still needs to move closer to flat-out racing, with cars that can follow better instead of relying so much on battery-driven battles.",
-  kcsQuickShift: "Norris is basically saying the tweaks help, but they do not fix the bigger problem with how the 2026 racing feels.",
-  url: "https://www.planetf1.com/news/lando-norris-slams-f1-2026-rules-warns-racing-barely-change",
-  imagePath: "/img/news/xpb/news-xpb6lando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 1, 2026",
+   slotId: 2,
+    sourceLabel: "Formula 1",
+    title: "Leclerc leads Verstappen and Piastri in only Miami practice session",
+    summary:
+      "Charles Leclerc topped the only practice session of the Miami Grand Prix weekend, with Max Verstappen second and Oscar Piastri third. Ferrari looked sharp early, while Mercedes dealt with power unit trouble on a weekend where teams are trying to understand major upgrade packages quickly.",
+    kcsQuickShift:
+      "Ferrari started Miami with real pace but the bigger question is whether that speed carries through the Sprint and qualifying.",
+    url: "https://www.formula1.com/en/latest/article/fp1-leclerc-leads-verstappen-and-piastri-during-miami-practice-as-mercedes-hit-trouble.5DlhsKDvclB0W01S0mk1lB",
+    imagePath: "/img/news/xpb/news-xpbcharles.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "May 2, 2026",
 },
 
 {
   slotId: 3,
-  sourceLabel: "FormulaPassion.it",
-  title: "Leclerc: con la pioggia siamo passeggeri, non piloti EN: Leclerc Warns 2026 Cars Could Be Risky In The Wet",
-  summary: "Charles Leclerc avverte che con le F1 2026 la pioggia potrebbe creare situazioni difficili, perché le velocità in rettilineo e le strategie di gestione dell’energia possono variare in modo controintuitivo. EN: Leclerc says wet conditions with the 2026 cars could become tricky because poor visibility, different engine strategies and unusual straight-line speed patterns may leave drivers reacting more than controlling.",
-  kcsQuickShift: "Leclerc is raising a real concern here because wet weather and unpredictable speed differences are not a great mix. IT: Leclerc sta sollevando un punto serio, perché pioggia e differenze di velocità imprevedibili non sono una grande combinazione.",
-  url: "https://www.formulapassion.it/f1/f1-news/allarme-meteo-miami-leclerc-se-piove-auto-2026-passeggeri-non-piloti-velocita-rettilineo",
-  imagePath: "/img/news/xpb/news-xpbcharles.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 1, 2026",
+    sourceLabel: "RacingNews365",
+    title: "Miami Sprint grid adjusted after late Albon penalty",
+    summary:
+      "The Miami Sprint grid was adjusted after Alex Albon received a late penalty, leaving Norris on pole ahead of Antonelli, Piastri and Leclerc. Verstappen starts fifth, with Russell sixth and Hamilton seventh, setting up a packed fight behind the McLarens.",
+    kcsQuickShift:
+      "The front looks spicy but the real action may come from Verstappen, Russell and Hamilton all starting close together.",
+    url: "https://racingnews365.com/adjusted-2026-f1-miami-grand-prix-sprint-starting-grid-after-bizarre-penalty",
+    imagePath: "/img/news/shut/news-shutterstockalexcar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 2, 2026",
 },
 
 {
   slotId: 4,
-  sourceLabel: "Motorsport.com",
-  title: "Honda Brings Miami Fixes After Aston Martin’s Rough Start",
-  summary: "Honda has brought hardware-related countermeasures to Miami as it tries to solve the vibration problems that have hurt Aston Martin’s start to the 2026 F1 season. The team has struggled badly through the opening races, but Honda says factory testing at Sakura showed progress on both the power unit side and driver comfort.",
-  kcsQuickShift: "This is the kind of fix Aston Martin badly needs because their season has started about as rough as it gets.",
-  url: "https://www.motorsport.com/f1/news/honda-bring-countermeasures-to-miami-after-aston-martins-horror-start-to-f1-2026/10816617/",
-  imagePath: "/img/news/xpb/news-xpbfernando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "April 30, 2026",
+    sourceLabel: "ESPN",
+    title: "Miami Grand Prix schedule under watch as thunderstorm threat builds",
+    summary:
+      "Sunday’s Miami Grand Prix could be affected by heavy rain and thunderstorms, with lightning risk becoming the main concern around the event. A full cancellation still feels like the extreme outcome, but delays, red flags or disrupted running are realistic if storms hit near the circuit.",
+    kcsQuickShift:
+      "This is not panic time but Miami weather could absolutely turn Sunday into a strategy mess.",
+    url: "https://www.espn.com/f1/story/_/id/48647468/miami-grand-prix-formula-1-schedule-doubt-amid-thunderstorm-threat",
+    imagePath: "/img/news/kcai/news-lightmiami.jpg",
+    photoCredit: "KC AI",
+    dateLabel: "May 2, 2026",
 },
 
 {
   slotId: 5,
-  sourceLabel: "F1news.se",
-  title: "Miami GP ställer F1-teamen inför extrema krav EN: Miami GP Puts F1 Teams Under Extreme Pressure",
-  summary: "Miami GP ställer teamen inför en svår strategisk helg med Sprint-format, begränsad träningstid, däckval, energihantering och väderrisker som alla spelar in. EN: The Miami GP is shaping up as a demanding weekend for teams, with the Sprint format, limited practice, tire choices, battery management, weather risk and safety cars all adding extra pressure.",
-  kcsQuickShift: "Miami already has enough variables, and with the Sprint format in play this could turn into a very tricky weekend for the teams. SE: Miami har redan många osäkra faktorer, och med Sprint-formatet kan det bli en riktigt knepig helg för teamen.",
-  url: "https://f1news.se/miami-gp-staller-f1-teamen-infor-extrema-krav",
-  imagePath: "/img//tracks/shutterstockmiami.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "April 30, 2026",
+    sourceLabel: "RacingNews365",
+    title: "Max Verstappen finds more trust in upgraded Red Bull",
+    summary:
+      "Max Verstappen says Red Bull’s Miami upgrades have helped him trust the RB22 more, even if the car is still not where he wants it. Starting fifth for the Sprint is not where Red Bull wants to be, but Verstappen’s comments suggest the team may have found a better direction.",
+    kcsQuickShift:
+      "Red Bull is not back on top yet but Verstappen finally sounds like he has a car he can start working with.",
+    url: "https://racingnews365.com/max-verstappen-makes-major-red-bul-discovery-after-f1-upgrades",
+    imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 2, 2026",
 },
 
 {
-  slotId: 6,
-  sourceLabel: "L'Équipe",
-  title: "Excitation de la rentrée à Miami EN: F1 Gets a Fresh Start in Miami",
-  summary: "Après cinq semaines de pause forcée, la Formule 1 reprend à Miami avec beaucoup de sujets ouverts, dont les ajustements réglementaires, le retour en piste des équipes et la météo orageuse attendue dimanche. EN: After a forced five-week pause, Formula 1 returns in Miami with several major storylines, including adjusted regulations, updated cars, heavy media attention and the risk of storms on race day.",
-  kcsQuickShift: "Miami feels like more than just another race weekend because the long break has turned this into a reset point for the whole season. FR: Miami ressemble à plus qu’un simple week-end de course, car cette longue pause en a fait un vrai nouveau départ pour la saison.",
-  url: "https://www.lequipe.fr/Formule-1/Article/Excitation-de-la-rentree-et-reglementation-ajustee-a-miami-des-airs-de-nouveau-depart-pour-la-formule-1-apres-cinq-semaines-de-pause-forcee/1672208",
-  imagePath: "/img/news/kcai/news-miamiwet.jpg",
-  photoCredit: "KC AI",
-  dateLabel: "April 30, 2026",
+   slotId: 6,
+  sourceLabel: "PlanetF1",
+  title: "Zak Brown cools talk of Lambiase becoming McLaren team principal",
+  summary:
+    "Zak Brown has pushed back on claims that Gianpiero Lambiase is being lined up to become McLaren team principal when he joins from Red Bull. McLaren says Verstappen’s long-time race engineer will become Chief Racing Officer, reporting to Andrea Stella, with Brown insisting Stella remains the team boss while Lambiase strengthens the racing side of the operation.",
+  kcsQuickShift:
+    "This still feels like a major McLaren move but Brown is making it clear that Stella is not being pushed aside.",
+  url: "https://www.planetf1.com/news/gianpiero-lambiase-mclaren-role-zak-brown-team-principal-claim",
+  imagePath: "/img/news/shut/news-shutterstockbrown.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 2, 2026",
 },
 
 {
   slotId: 7,
-  sourceLabel: "RacingNews365",
-  title: "Leclerc Doubts Ferrari Can Catch Mercedes With Miami Upgrades",
-  summary: "Charles Leclerc says Ferrari’s Miami upgrade package should help, but he does not expect it to be enough to close the gap to Mercedes. With many teams bringing major updates after the long break, Leclerc believes Miami could shape the next phase of development more than immediately change the competitive order.",
-  kcsQuickShift: "Ferrari may be bringing upgrades, but Leclerc sounds realistic that Mercedes is still a step too far ahead right now.",
-  url: "https://racingnews365.com/charles-leclerc-hands-ferrari-upgrades-blow-in-mercedes-pursuit",
-  imagePath: "/img/news/ferrari/news-ferraricl.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 1, 2026",
+  sourceLabel: "FormulaPassion",
+  title: "Hamilton a Miami: mi aspettavo di meglio EN: Hamilton in Miami: I expected better",
+  summary:
+    "Lewis Hamilton ha chiuso le Qualifiche Sprint di Miami al settimo posto, a circa quattro decimi dal compagno Charles Leclerc. Il britannico ha ammesso che si aspettava una Ferrari più competitiva, ma resta fiducioso che il potenziale della macchina possa emergere meglio nel resto del weekend. EN: Lewis Hamilton finished Miami Sprint Qualifying in seventh, around four tenths behind Ferrari teammate Charles Leclerc. Hamilton admitted he expected Ferrari to be more competitive, but he still believes the car has more potential to show during the rest of the weekend.",
+  kcsQuickShift:
+    "Hamilton sounds disappointed but not defeated and Ferrari still has time to turn the weekend around. IT: Hamilton sembra deluso ma non sconfitto e la Ferrari ha ancora tempo per raddrizzare il weekend.",
+  url: "https://www.formulapassion.it/f1/f1-news/hamilton-miami-ferrari-pensavo-che-saremmo-stati-piu-forti-ottimista-possiamo-stare-molto-piu-in-alto",
+  imagePath: "/img/news/xpb/news-xpblewis.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 2, 2026",
 },
 
 {
   slotId: 8,
   sourceLabel: "RacingNews365.nl",
-  title: "Verstappen nuchter over gevaren in autosport EN: Verstappen Calm About Motorsport Risks",
-  summary: "Max Verstappen reageert nuchter op de risico’s in de autosport na recente zware incidenten rond de Nordschleife en rallysport. EN: Verstappen says racing will always carry danger, but he sees risk as part of life in general and believes bad luck can sometimes be the deciding factor, even with modern safety measures.",
-  kcsQuickShift: "Verstappen’s view is pretty straightforward here because for him racing is dangerous, but that risk is part of why drivers respect it. NL: Verstappen kijkt er vrij nuchter naar, want voor hem hoort risico bij racen en juist daarom respecteren coureurs het.",
-  url: "https://racingnews365.nl/max-verstappen-nuchter-over-gevaren-in-de-autosport-soms-heb-je-gewoon-pech",
+  title: "Verstappen verrast op positieve wijze in sprintkwalificatie Miami EN: Verstappen delivers a positive surprise in Miami Sprint Qualifying",
+  summary:
+    "Max Verstappen eindigde als vijfde in de Sprintkwalificatie voor de Grand Prix van Miami, achter Lando Norris, Kimi Antonelli, Oscar Piastri en Charles Leclerc. RacingNews365.nl noemt het een positieve verrassing, omdat Verstappen zich vóór George Russell en Lewis Hamilton plaatste na een hoopvolle training voor Red Bull. EN: Max Verstappen finished fifth in Sprint Qualifying for the Miami Grand Prix, behind Lando Norris, Kimi Antonelli, Oscar Piastri and Charles Leclerc. RacingNews365.nl framed it as a positive surprise because Verstappen qualified ahead of George Russell and Lewis Hamilton after a more promising practice session for Red Bull.",
+  kcsQuickShift:
+    "Verstappen is not on pole but fifth looks a lot better when both Mercedes cars are behind him. NL: Verstappen staat niet op pole maar vijfde ziet er een stuk beter uit als beide Mercedessen achter hem staan.",
+  url: "https://racingnews365.nl/verstappen-verrast-op-positieve-wijze-in-sprintkwalificatie-miami",
   imagePath: "/img/news/xpb/xpbverstappen.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 1, 2026",
+  dateLabel: "May 2, 2026",
 },
 
 {
-  slotId: 9,
-  sourceLabel: "F1news.se",
-  title: "Lawson ser stora möjligheter i ny F1-era EN: Lawson Sees Big Opportunity In F1’s New Era",
-  summary: "Liam Lawson tror att Racing Bulls kan dra nytta av den nya regelcykeln, där större uppgraderingar och snabbare utveckling kan ge teamen större kliv framåt. EN: Lawson believes Racing Bulls can benefit from the new F1 rule cycle, where early development gains could be much bigger than they were near the end of the previous ground-effect era.",
-  kcsQuickShift: "Lawson sees this new era as a real opening for Racing Bulls, and early in a rule cycle that is exactly when smaller teams can make noise. SE: Lawson ser den nya eran som en riktig chans för Racing Bulls, och tidigt i en regelcykel är det precis då mindre team kan överraska.",
-  url: "https://f1news.se/lawson-ser-stora-mojligheter-i-ny-f1-era",
-  imagePath: "/img/news/xpb/news-xpblawson.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "April 30, 2026",
-},
-
-{
-  slotId: 10,
+  slotId: 4,
   sourceLabel: "Crash.net",
-  title: "Colapinto Talks Up Possible Argentine GP Return",
-  summary: "Franco Colapinto says talks over a possible Argentine Grand Prix return are quite advanced after a huge Buenos Aires show run drew massive local interest. Crash.net notes that while Argentina is keen and discussions have happened, F1’s packed calendar could make a return difficult before 2029.",
-  kcsQuickShift: "Colapinto is clearly pushing the dream, but getting Argentina back on the calendar still looks like a tough squeeze.",
-  url: "https://www.crash.net/f1/news/1093770/1/franco-colapinto-makes-big-claim-about-prospect-argentinian-gp-f1-return",
-  imagePath: "/img/news/xpb/XPB-colapinto.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 1, 2026",
+  title: "Former F1 driver and Paralympic champion Alex Zanardi dies aged 59",
+  summary:
+    "Alex Zanardi, the former Formula 1 driver, two-time CART champion and Paralympic gold medalist, has died at the age of 59. Zanardi raced in F1 during the 1990s before building one of motorsport’s most inspiring legacies, returning to competition after losing both legs in a 2001 CART crash and later becoming a Paralympic champion in handcycling.",
+  kcsQuickShift:
+    "This is sad news for motorsport because Zanardi’s story went far beyond racing and his resilience inspired people all over the world.",
+  url: "https://www.crash.net/f1/news/1093981/1/ex-f1-driver-and-paralympic-gold-medalist-alex-zanardi-has-died",
+  imagePath: "/img/news/kcai/alexzanardi.jpg",
+  photoCredit: "KC AI",
+  dateLabel: "May 2, 2026",
+},
+
+{
+  slotId: 8,
+    sourceLabel: "RacingNews365",
+    title: "Leclerc questions whether McLaren’s pace surge was always there",
+    summary:
+      "Charles Leclerc suggested McLaren’s sudden Miami jump may not be completely new pace, but rather the team finally getting more out of a package that was already capable. With Norris on Sprint pole and Piastri third, McLaren has quickly become the team everyone is watching in Miami.",
+    kcsQuickShift:
+      "Leclerc seems to think McLaren may have had this pace hiding in the car all along.",
+    url: "https://racingnews365.com/charles-leclerc-delivers-theory-over-shock-mclaren-pace-surge",
+    imagePath: "/img/news/ferrari/news-ferrari16.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "May 2, 2026",
 },
 ];
 
