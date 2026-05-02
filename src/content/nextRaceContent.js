@@ -497,7 +497,7 @@ export const nextRaceContent = {
           id: "sq",
           type: "sprint_shootout",
           label: "Sprint Qualifying",
-          time: "5:30 PM AST",
+          time: "Complete results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_SQ),
