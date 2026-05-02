@@ -139,15 +139,50 @@ function parseLapPaste(text) {
 function parseQualifyingPaste(text) {
   const base = makeQualifyingResultsTemplate();
 
-  const lines = String(text || "")
+  const rawLines = String(text || "")
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean);
 
-  for (const line of lines) {
-    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+  const rows = [];
+  let currentRow = "";
 
-    // Keeps your old manual format working: ANT,1m30.035s,1m29.048s,1m28.778s
+  for (const line of rawLines) {
+    // Skip headers / notes
+    if (
+      /^POS\.?/i.test(line) ||
+      /^NO\.?/i.test(line) ||
+      /^DRIVER/i.test(line) ||
+      /^TEAM/i.test(line) ||
+      /^Q1/i.test(line) ||
+      /^Q2/i.test(line) ||
+      /^Q3/i.test(line) ||
+      /^LAPS/i.test(line) ||
+      /^Note/i.test(line)
+    ) {
+      continue;
+    }
+
+    // F1 copy format often starts each driver block with:
+    // 1 1
+    // 2 12
+    // NC 14
+    const startsNewDriver = /^(\d+|NC)\s+\d+\b/i.test(line);
+
+    if (startsNewDriver) {
+      if (currentRow) rows.push(currentRow.trim());
+      currentRow = line;
+    } else {
+      currentRow += " " + line;
+    }
+  }
+
+  if (currentRow) rows.push(currentRow.trim());
+
+  for (const row of rows) {
+    // Keeps your old manual format working:
+    // Example: ANT,1m30.035s,1m29.048s,1m28.778s
+    const parts = row.split(/[,\t]+/).map((p) => p.trim());
     const manualId = (parts[0] || "").toUpperCase();
 
     if (manualId && base[manualId]) {
@@ -159,11 +194,12 @@ function parseQualifyingPaste(text) {
       continue;
     }
 
-    // New copied-table format from Crash/F1
-    const id = getDriverIdFromLine(line);
+    // Rebuilt F1 row format:
+    // 1 1 Lando Norris McLaren 1:28.723 1:29.366 1:27.869 15
+    const id = getDriverIdFromLine(row);
     if (!id || !base[id]) continue;
 
-    const times = line.match(/\b\d+m\d+\.\d+s\b|\b\d+:\d+\.\d+\b/g) || [];
+    const times = row.match(/\b\d{1,2}:\d{2}\.\d{3}\b/g) || [];
 
     base[id] = {
       q1: times[0] || "",
@@ -315,28 +351,112 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
-	1	Lando Norris	GBR	McLaren Mastercard F1 Team	1m27.869s
-2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m28.091s
-3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m28.108s
-4	Charles Leclerc	MON	Scuderia Ferrari HP	1m28.239s
-5	Max Verstappen	NED	Oracle Red Bull Racing	1m28.461s
-6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m28.493s
-7	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m28.618s
-8	Franco Colapinto	ARG	BWT Alpine F1 Team	1m29.320s
-9	Isack Hadjar	FRA	Oracle Red Bull Racing	1m29.422s
-10	Pierre Gasly	FRA	BWT Alpine F1 Team	1m29.474s
-11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	 
-12	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
-13	Oliver Bearman	GBR	TGR Haas F1 Team	 
-14	Alex Albon	THA	Atlassian Williams F1 Team	 
-15	Carlos Sainz	ESP	Atlassian Williams F1 Team	 
-16	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	 
-17	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	 
-18	Esteban Ocon	FRA	TGR Haas F1 Team	 
-19	Sergio Perez	MEX	Cadillac F1 Team	 
-20	Valtteri Bottas	FIN	Cadillac F1 Team	 
-21	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	 
-22	Lance Stroll	CAN	Aston Martin Aramco F1 Team 
+1	1	
+
+Lando Norris
+
+McLaren	1:28.723	1:29.366	1:27.869	15
+2	12	
+
+Kimi Antonelli
+
+Mercedes	1:29.312	1:29.209	1:28.091	14
+3	81	
+
+Oscar Piastri
+
+McLaren	1:29.169	1:28.506	1:28.108	11
+4	16	
+
+Charles Leclerc
+
+Ferrari	1:28.733	1:28.333	1:28.239	15
+5	3	
+
+Max Verstappen
+
+Red Bull Racing	1:29.801	1:29.093	1:28.461	12
+6	63	
+
+George Russell
+
+Mercedes	1:29.659	1:28.903	1:28.493	15
+7	44	
+
+Lewis Hamilton
+
+Ferrari	1:29.255	1:28.841	1:28.618	15
+8	43	
+
+Franco Colapinto
+
+Alpine	1:30.386	1:29.527	1:29.320	15
+9	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:30.352	1:29.750	1:29.422	15
+10	10	
+
+Pierre Gasly
+
+Alpine	1:29.984	1:29.973	1:29.474	15
+11	5	
+
+Gabriel Bortoleto
+
+Audi	1:30.561	1:29.994		12
+12	27	
+
+Nico Hulkenberg
+
+Audi	1:30.270	1:30.019		12
+13	87	
+
+Oliver Bearman
+
+Haas F1 Team	1:30.614	1:30.116		9
+14	23	
+
+Alex Albon
+
+Williams	1:30.988	1:30.216		12
+15	55	
+
+Carlos Sainz
+
+Williams	1:30.987	1:30.224		12
+16	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:30.872	1:30.573		9
+17	30	
+
+Liam Lawson
+
+Racing Bulls	1:31.043			5
+18	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:31.245			6
+19	11	
+
+Sergio Perez
+
+Cadillac	1:31.255			3
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:31.826			6
+NC	14	
+
+Fernando Alonso
+
+Aston Martin	1:41.311			6
+	
 `;
 const PASTE_SPRINT = `
 
