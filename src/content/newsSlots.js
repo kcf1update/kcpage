@@ -1,30 +1,30 @@
 const newsSlots = [
   {
-  slotId: 1,
-    sourceLabel: "Formula 1",
-    title: "Norris grabs Miami Sprint pole ahead of Antonelli and Piastri",
-    summary:
-      "Lando Norris put McLaren on top in Miami Sprint Qualifying, beating Kimi Antonelli and Oscar Piastri as the team’s upgrade package made an immediate impact. It was also the first time this season Mercedes has been beaten in a qualifying style session, which makes this a proper statement from McLaren.",
-    kcsQuickShift:
-      "McLaren needed a sign that the upgrades were real and Norris gave them exactly that in Miami.",
-    url: "https://www.formula1.com/en/latest/article/norris-seizes-pole-position-in-miami-sprint-qualifying-ahead-of-antonelli-and-piastri.3RVsemdZrx7agWsQaMzrm5",
-    imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 2, 2026",
+   slotId: 1,
+  sourceLabel: "Crash.net",
+  title: "Norris wins Miami Sprint as McLaren lock out the top two",
+  summary:
+    "Lando Norris controlled the Miami Sprint from the front, leading home Oscar Piastri for a McLaren one-two. Charles Leclerc finished third, while Max Verstappen and Lewis Hamilton produced one of the race’s livelier battles further back in the pack.",
+  kcsQuickShift:
+    "McLaren looked sharp again in Miami, and Norris did exactly what he needed to do by turning sprint pole into a clean win.",
+  url: "https://www.crash.net/f1/news/1094092/1/lando-norris-wins-f1-miami-sprint-max-verstappen-and-lewis-hamilton-duel",
+  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 2, 2026",
 },
 
 {
    slotId: 2,
-    sourceLabel: "Formula 1",
-    title: "Leclerc leads Verstappen and Piastri in only Miami practice session",
-    summary:
-      "Charles Leclerc topped the only practice session of the Miami Grand Prix weekend, with Max Verstappen second and Oscar Piastri third. Ferrari looked sharp early, while Mercedes dealt with power unit trouble on a weekend where teams are trying to understand major upgrade packages quickly.",
-    kcsQuickShift:
-      "Ferrari started Miami with real pace but the bigger question is whether that speed carries through the Sprint and qualifying.",
-    url: "https://www.formula1.com/en/latest/article/fp1-leclerc-leads-verstappen-and-piastri-during-miami-practice-as-mercedes-hit-trouble.5DlhsKDvclB0W01S0mk1lB",
-    imagePath: "/img/news/xpb/news-xpbcharles.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 2, 2026",
+  sourceLabel: "Autosport",
+  title: "Norris leads McLaren one-two in Miami Sprint",
+  summary:
+    "Lando Norris gave McLaren its first win of the 2026 season with a controlled drive in the Miami Sprint. Oscar Piastri completed a McLaren one-two, while Charles Leclerc finished third and Mercedes’ early-season run took a hit after Kimi Antonelli slipped back from the front row.",
+  kcsQuickShift:
+    "That upgraded McLaren looked properly alive in Miami, and Norris turned it into exactly the kind of sprint win the team needed.",
+  url: "https://www.autosport.com/f1/news/k/10817362/",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 2, 2026",
 },
 
 {

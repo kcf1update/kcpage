@@ -459,7 +459,28 @@ Aston Martin	1:41.311			6
 	
 `;
 const PASTE_SPRINT = `
-
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	19
+2	Oscar Piastri	AUS	McLaren Mastercard F1 Team	3.766s
+3	Charles Leclerc	MON	Scuderia Ferrari HP	6.251s
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	12.951s
+5	Max Verstappen	NED	Oracle Red Bull Racing	13.639s
+6	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	13.777s
+7	Lewis Hamilton	GBR	Scuderia Ferrari HP	21.665s
+8	Pierre Gasly	FRA	BWT Alpine F1 Team	30.525s
+9	Isack Hadjar	FRA	Oracle Red Bull Racing	35.346s
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	36.970s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	48.438s
+12	Esteban Ocon	FRA	TGR Haas F1 Team	56.972s
+13	Oliver Bearman	GBR	TGR Haas F1 Team	57.365s
+14	Carlos Sainz	ESP	Atlassian Williams F1 Team	58.504s
+15	Liam Lawson	NZD	Racing Bulls	59.358s
+16	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	76.067s
+17	Sergio Perez	MEX	Cadillac F1 Team	76.691s
+18	Lance Stroll	CAN	Aston Martin Aramco F1 Team	77.626s
+19	Alex Albon	THA	Atlassian Williams F1 Team	88.173s
+20	Valtteri Bottas	FIN	Cadillac F1 Team	89.597s
+DNS	Arvid Lindblad	GBR	Racing Bulls	 
+DNS	Nico Hulkenberg	GER	Audi Revolut F1 Team
 `;
 const PASTE_Q = `
 
