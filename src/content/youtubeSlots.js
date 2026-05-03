@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Are Mercedes VULNERABLE at the 2026 MIAMI GP?",
-  youtubeInput: "https://youtu.be/Z9BXrkfBO-E",
-   // This will force the link to open in a new tab instead of embedding the video
+  title: "Drivers React To Qualifying | 2026 Miami Grand Prix",
+  youtubeInput: "https://youtu.be/_xW81tjO3X8",
+   forceExternal: true
   },
 
   {
     slotId: "slot2",
-    title: "2026 F1 MIAMI GP Friday P1 with Scarbs and Peter Windsor",
-    youtubeInput: "https://youtu.be/7R_JDA4QY_Y",
-    
+    title: "Qualifying Highlights | 2026 Miami Grand Prix",
+    youtubeInput: "https://youtu.be/83GJM1S0FnE",
+    forceExternal: true
   },
 
   {
     slotId: "slot3",
-    title: "Why Mercedes is suddenly struggling in Miami",
-    youtubeInput: "https://youtu.be/bJ29QZObpyo",
+    title: "Ted's Qualifying Notebook - Miami Grand Prix 2026",
+    youtubeInput: "https://youtu.be/u02tl5Rmd8A",
     
   }
 ];
