@@ -227,34 +227,50 @@ function parseRacePaste(text) {
     .map((line) => line.trim())
     .filter(Boolean);
 
-  const toIntOrNull = (value) => {
-    const s = String(value ?? "").trim();
-    if (!s) return null;
-    const n = Number(s);
-    return Number.isFinite(n) ? n : null;
+  const pointsByPosition = {
+    1: 25,
+    2: 18,
+    3: 15,
+    4: 12,
+    5: 10,
+    6: 8,
+    7: 6,
+    8: 4,
+    9: 2,
+    10: 1,
   };
 
-  const getRacePoints = (pos) => {
-    const pointsByPosition = {
-      1: 25,
-      2: 18,
-      3: 15,
-      4: 12,
-      5: 10,
-      6: 8,
-      7: 6,
-      8: 4,
-      9: 2,
-      10: 1,
-    };
+  const getRacePoints = (pos) => pointsByPosition[pos] ?? 0;
 
-    return pointsByPosition[pos] ?? 0;
+  const formatRaceStatus = (value) => {
+    const clean = String(value || "").trim();
+
+    if (!clean) return "";
+
+    if (/^DNF$/i.test(clean)) {
+      return "DNF";
+    }
+
+    if (/^\d+L$/i.test(clean)) {
+      const laps = clean.replace(/L/i, "");
+      return laps === "1" ? "1 lap down" : `${laps} laps down`;
+    }
+
+    if (/^\d+$/.test(clean)) {
+      return `${clean} laps`;
+    }
+
+    if (/^\+?\d+\.\d+s$/i.test(clean)) {
+      return clean.startsWith("+") ? clean : `+${clean}`;
+    }
+
+    return clean;
   };
 
   for (const line of lines) {
-    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+    const parts = line.split(/[,\t]+/).map((p) => p.trim());
 
-    // Keeps your old manual format working: ANT,1,53,,25
+    // Keeps your old manual format working: ANT,1,57,,25
     const manualId = (parts[0] || "").toUpperCase();
 
     if (manualId && base[manualId]) {
@@ -269,13 +285,13 @@ function parseRacePaste(text) {
         rawPos === "DSQ" ||
         String(rawStatus).toUpperCase() === "DNF";
 
-      const pos = isDNF ? null : toIntOrNull(rawPos);
-      const grid = toIntOrNull(rawGrid);
-      const points = toIntOrNull(rawPoints);
+      const pos = isDNF ? null : Number(rawPos);
+      const grid = rawGrid ? Number(rawGrid) : null;
+      const points = rawPoints ? Number(rawPoints) : getRacePoints(pos);
 
       base[manualId] = {
         pos,
-        status: isDNF ? rawPos : rawStatus,
+        status: isDNF ? "DNF" : formatRaceStatus(rawStatus),
         grid,
         points,
       };
@@ -283,28 +299,33 @@ function parseRacePaste(text) {
       continue;
     }
 
-    // New copied-table format from Crash/F1
+    // Copied table format from Crash/F1
     const id = getDriverIdFromLine(line);
     if (!id || !base[id]) continue;
 
-    const posMatch = line.match(/^\s*(\d+)\b/);
-    const pos = posMatch ? Number(posMatch[1]) : null;
-
-    const statusMatch =
-      line.match(/\+\d+(?:\.\d+)?s\b/) ||
-      line.match(/\b\d+(?:\.\d+)?s\b/) ||
-      line.match(/\b\d+\s+lap(?:s)?\b/i) ||
-      line.match(/\bDNF\b|\bDNS\b|\bDSQ\b/i);
+    const posMatch = line.match(/^\s*(\d+|DNF)\b/i);
+    const rawPos = posMatch ? posMatch[1].toUpperCase() : "";
 
     let status = "";
+
+    const statusMatch =
+      line.match(/\b\d+L\b/i) ||
+      line.match(/\b\d+\.\d+s\b/i) ||
+      line.match(/\bDNF\b/i) ||
+      line.match(/\bDNS\b/i) ||
+      line.match(/\bDSQ\b/i) ||
+      line.match(/\b\d+\b$/);
 
     if (statusMatch) {
       status = statusMatch[0];
     }
 
+    const isDNF = rawPos === "DNF" || /^(DNF|DNS|DSQ)$/i.test(status);
+    const pos = isDNF ? null : Number(rawPos);
+
     base[id] = {
       pos,
-      status,
+      status: isDNF ? "DNF" : formatRaceStatus(status),
       grid: null,
       points: Number.isFinite(pos) ? getRacePoints(pos) : null,
     };
@@ -597,6 +618,28 @@ Audi	1:33.737			3
 `;
 
 const PASTE_RACE = `
+1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	57
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	3.264s
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	27.092s
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	43.051s
+5	Max Verstappen	NED	Oracle Red Bull Racing	43.946s
+6	Charles Leclerc	MON	Scuderia Ferrari HP	44.245s
+7	Lewis Hamilton	GBR	Scuderia Ferrari HP	53.753s
+8	Franco Colapinto	ARG	BWT Alpine F1 Team	61.871s
+9	Carlos Sainz	ESP	Atlassian Williams F1 Team	82.072s
+10	Alex Albon	THA	Atlassian Williams F1 Team	90.972s
+11	Oliver Bearman	GBR	TGR Haas F1 Team	1L
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1L
+13	Esteban Ocon	FRA	TGR Haas F1 Team	1L
+14	Arvid Lindblad	GBR	Racing Bulls	1L
+15	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1L
+16	Sergio Perez	MEX	Cadillac F1 Team	1L
+17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1L
+18	Valtteri Bottas	FIN	Cadillac F1 Team	2L
+DNF	Liam Lawson	NZD	Racing Bulls	 
+DNF	Pierre Gasly	FRA	BWT Alpine F1 Team	 
+DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
+DNF	Isack Hadjar	FRA	Oracle Red Bull Racing	 
 
 `;
 
@@ -655,7 +698,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "2:00 PM AST",
+          time: "Kimi Antonelli Wins, full results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

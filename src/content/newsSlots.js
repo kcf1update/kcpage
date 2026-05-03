@@ -1,40 +1,48 @@
 const newsSlots = [
   {
   slotId: 1,
-  sourceLabel: "ESPN",
-  title: "Miami Grand Prix brought forward due to threat of storms",
-  summary: "The Miami Grand Prix has been moved forward by three hours because of the threat of severe thunderstorms later in the day. The race is now scheduled for 1:00 PM Miami time, which is 2:00 PM in Nova Scotia and 6:00 PM in the UK, as Formula 1 tries to avoid major weather disruption and give the race the best chance of running safely.",
-  kcsQuickShift: "This is exactly the kind of race-day twist that can change everything. Miami now starts earlier, but if storms still roll in, strategy and patience could matter as much as outright pace.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48660661/f1-miami-grand-prix-brought-forward-due-threat-storms",
-  imagePath: "/img/news/kcai/news-timechange.jpg",
-  photoCredit: "KCAI",
+  sourceLabel: "Formula1.com",
+  title: "Antonelli wins thrilling Miami Grand Prix from Norris and Piastri",
+  summary:
+    "Kimi Antonelli took victory in a dramatic Miami Grand Prix, holding off Lando Norris to claim his third straight win of the season. Oscar Piastri completed the podium after a chaotic finish, while early contact involving Max Verstappen and Charles Leclerc helped turn the race into one of the most eventful Sundays of the year.",
+  kcsQuickShift:
+    "Antonelli is starting to look like the real deal, and Miami gave us everything: early chaos, Safety Cars, McLaren pressure, and a Mercedes driver who refused to crack.",
+  url: "https://www.formula1.com/en/latest/article/antonelli-wins-thrilling-miami-grand-prix-from-norris-and-piastri.2bxaKuYKJjxlXx8KOJf7lc",
+  imagePath: "/img/news/xpb/news-xpbkimiwinsmiami.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "May 3, 2026"
 },
 
 {
    slotId: 2,
-  sourceLabel: "Crash.net",
-  title: "Deployment fears raised for wet Miami F1 race",
-  summary: "Oscar Piastri has raised concerns about how the 2026 Formula 1 cars will behave if the Miami Grand Prix turns wet. With very little rain running completed under the current regulations, drivers still do not have a clear picture of how energy deployment and power delivery will feel in slippery conditions, especially when the systems are partly controlled by software.",
-  kcsQuickShift: "This is the part of a wet Miami race that fans may not see coming. It is not just grip and tires anymore, because the way the car deploys power could make the conditions even trickier.",
-  url: "https://www.crash.net/f1/news/1094241/1/deployment-fears-raised-wet-miami-f1-race-its-computers-hands",
-  imagePath: "/img/news/kcai/news-lightmiami.jpg",
-  photoCredit: "KC AI",
+  sourceLabel: "RacingNews365",
+  title: "Norris gives ‘no excuses’ verdict after painful McLaren defeat in Miami",
+  summary:
+    "Lando Norris admitted McLaren had no real excuse for missing out on victory in Miami after Kimi Antonelli undercut him during the pit-stop phase. Norris said the win was possible, but once Antonelli got ahead, he could not find the pace needed to fight back and had to settle for second place.",
+  kcsQuickShift:
+    "Norris knew this one got away from McLaren, and that makes Antonelli’s win look even stronger because he handled the pressure when it mattered.",
+  url: "https://racingnews365.com/lando-norris-delivers-no-excuses-verdict-over-gutting-mclaren-defeat",
+  imagePath: "/img/news/xpb/news-xpb6lando.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "May 3, 2026"
 },
 
 
- {
-  slotId: 3,
-  sourceLabel: "Motorsport.com",
-  title: "Wolff hails Antonelli’s spectacular Miami qualifying performance",
-  summary: "Toto Wolff has praised Kimi Antonelli’s Miami Grand Prix pole lap, calling the teenager’s performance special after he put Mercedes at the front of the grid. Wolff also defended Mercedes’ long-term support of Antonelli, pointing to the team’s belief in his talent and development as he continues to deliver under pressure.",
-  kcsQuickShift: "Antonelli is not just showing flashes anymore. Miami qualifying looked like another sign that Mercedes may have backed the right young driver at exactly the right time.",
-  url: "https://www.motorsport.com/f1/news/toto-wolff-hails-kimi-antonellis-spectacular-miami-qualifying-performance/10817549/",
+ 
+  {
+  slotId: 1,
+  sourceLabel: "FormulaPassion.it",
+  title: "Antonelli trionfa a Miami davanti a Norris e Piastri EN: Antonelli triumphs in Miami ahead of Norris and Piastri",
+  summary:
+    "Andrea Kimi Antonelli ha conquistato la vittoria nel Gran Premio di Miami, precedendo Lando Norris e Oscar Piastri dopo una gara intensa e ricca di colpi di scena. Per il giovane pilota italiano, è un successo importante che conferma il suo momento straordinario con Mercedes. EN: Andrea Kimi Antonelli claimed victory in the Miami Grand Prix, finishing ahead of Lando Norris and Oscar Piastri after an intense and dramatic race. For the young Italian driver, it is an important win that confirms his outstanding form with Mercedes.",
+  kcsQuickShift:
+    "Antonelli winning in Miami is already a huge story, but using an Italian source gives this one a proper worldwide feel for the site. IT: La vittoria di Antonelli a Miami è già una grande storia, ma usare una fonte italiana dà davvero un tocco internazionale al sito.",
+  url: "https://www.formulapassion.it/editoriale/antonelli-antonelli-antonelli",
   imagePath: "/img/news/xpb/news-xpbkimimiami.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "May 3, 2026"
 },
+
 {
   slotId: 4,
   sourceLabel: "ESPN",
