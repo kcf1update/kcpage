@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React To Qualifying | 2026 Miami Grand Prix",
-  youtubeInput: "https://youtu.be/_xW81tjO3X8",
+  title: "Drivers React To The Race | 2026 Miami Grand Prix",
+  youtubeInput: "https://youtu.be/0QyBQJWsQk4",
    forceExternal: true
   },
 
   {
     slotId: "slot2",
-    title: "Qualifying Highlights | 2026 Miami Grand Prix",
-    youtubeInput: "https://youtu.be/83GJM1S0FnE",
-    forceExternal: true
+    title: "Why the 2026 MIAMI GP was so CHAOTIC!",
+    youtubeInput: "https://youtu.be/DaGkU8zGlCs",
+    
   },
 
   {
     slotId: "slot3",
-    title: "Ted's Qualifying Notebook - Miami Grand Prix 2026",
-    youtubeInput: "https://youtu.be/u02tl5Rmd8A",
+    title: "Ted's Race Notebook - Miami Grand Prix 2026",
+    youtubeInput: "https://youtu.be/HaHHOUyWceI",
     
   }
 ];

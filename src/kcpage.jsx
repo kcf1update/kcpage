@@ -332,7 +332,7 @@ export default function KCpage() {
         {/* ✅ UPDATED DAILY BAR UNDER NAV */}
         <div className="relative rounded-2xl border border-white/10 bg-black/50 backdrop-blur px-4 py-3 text-center">
   <p className="text-xs sm:text-sm text-slate-200 leading-wide flex items-center justify-center gap-2">
-  <CountdownBar />
+  
 </p>
 
  

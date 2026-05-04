@@ -623,9 +623,9 @@ const PASTE_RACE = `
 3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	27.092s
 4	George Russell	GBR	Mercedes AMG Petronas F1 Team	43.051s
 5	Max Verstappen	NED	Oracle Red Bull Racing	43.946s
-6	Charles Leclerc	MON	Scuderia Ferrari HP	44.245s
-7	Lewis Hamilton	GBR	Scuderia Ferrari HP	53.753s
-8	Franco Colapinto	ARG	BWT Alpine F1 Team	61.871s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	53.753s
+7	Franco Colapinto	ARG	BWT Alpine F1 Team	61.871s
+8 Charles Leclerc	MON	Scuderia Ferrari HP	44.245s
 9	Carlos Sainz	ESP	Atlassian Williams F1 Team	82.072s
 10	Alex Albon	THA	Atlassian Williams F1 Team	90.972s
 11	Oliver Bearman	GBR	TGR Haas F1 Team	1L

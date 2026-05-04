@@ -1,127 +1,113 @@
 const newsSlots = [
   {
   slotId: 1,
-  sourceLabel: "Formula1.com",
-  title: "Antonelli wins thrilling Miami Grand Prix from Norris and Piastri",
-  summary:
-    "Kimi Antonelli took victory in a dramatic Miami Grand Prix, holding off Lando Norris to claim his third straight win of the season. Oscar Piastri completed the podium after a chaotic finish, while early contact involving Max Verstappen and Charles Leclerc helped turn the race into one of the most eventful Sundays of the year.",
-  kcsQuickShift:
-    "Antonelli is starting to look like the real deal, and Miami gave us everything: early chaos, Safety Cars, McLaren pressure, and a Mercedes driver who refused to crack.",
-  url: "https://www.formula1.com/en/latest/article/antonelli-wins-thrilling-miami-grand-prix-from-norris-and-piastri.2bxaKuYKJjxlXx8KOJf7lc",
-  imagePath: "/img/news/xpb/news-xpbkimiwinsmiami.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
-},
-
-{
-   slotId: 2,
-  sourceLabel: "RacingNews365",
-  title: "Norris gives ‘no excuses’ verdict after painful McLaren defeat in Miami",
-  summary:
-    "Lando Norris admitted McLaren had no real excuse for missing out on victory in Miami after Kimi Antonelli undercut him during the pit-stop phase. Norris said the win was possible, but once Antonelli got ahead, he could not find the pace needed to fight back and had to settle for second place.",
-  kcsQuickShift:
-    "Norris knew this one got away from McLaren, and that makes Antonelli’s win look even stronger because he handled the pressure when it mattered.",
-  url: "https://racingnews365.com/lando-norris-delivers-no-excuses-verdict-over-gutting-mclaren-defeat",
-  imagePath: "/img/news/xpb/news-xpb6lando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
-},
-
-
- 
-  {
-  slotId: 1,
-  sourceLabel: "FormulaPassion.it",
-  title: "Antonelli trionfa a Miami davanti a Norris e Piastri EN: Antonelli triumphs in Miami ahead of Norris and Piastri",
-  summary:
-    "Andrea Kimi Antonelli ha conquistato la vittoria nel Gran Premio di Miami, precedendo Lando Norris e Oscar Piastri dopo una gara intensa e ricca di colpi di scena. Per il giovane pilota italiano, è un successo importante che conferma il suo momento straordinario con Mercedes. EN: Andrea Kimi Antonelli claimed victory in the Miami Grand Prix, finishing ahead of Lando Norris and Oscar Piastri after an intense and dramatic race. For the young Italian driver, it is an important win that confirms his outstanding form with Mercedes.",
-  kcsQuickShift:
-    "Antonelli winning in Miami is already a huge story, but using an Italian source gives this one a proper worldwide feel for the site. IT: La vittoria di Antonelli a Miami è già una grande storia, ma usare una fonte italiana dà davvero un tocco internazionale al sito.",
-  url: "https://www.formulapassion.it/editoriale/antonelli-antonelli-antonelli",
-  imagePath: "/img/news/xpb/news-xpbkimimiami.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
-},
-
-{
-  slotId: 4,
   sourceLabel: "ESPN",
-  title: "Russell not surprised Antonelli beat him in Miami qualifying",
-  summary: "George Russell says he was not surprised to see Mercedes teammate Kimi Antonelli come out ahead in Miami Grand Prix qualifying. Russell admitted he made a mistake on his final Q3 lap, but also suggested Antonelli had looked strong enough over one lap that the result was not a major shock inside the team.",
-  kcsQuickShift: "Antonelli keeps looking more comfortable under pressure, and Russell does not sound panicked yet. But if this keeps happening, the Mercedes teammate battle could become one of the big stories of the season.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48655952/miami-grand-prix-formula-1-george-russell-not-surprised-mercedes-teammate-kimi-antonelli-beat-miami-qualifying",
+  title: "Antonelli’s Miami win raises the pressure on Russell",
+  summary: "Kimi Antonelli’s third straight Grand Prix victory has sharpened the internal Mercedes story, with ESPN arguing that George Russell may now have met his match. Antonelli’s Miami win extended his championship lead over Russell to 20 points and added to the feeling that F1 may already have its next major star.",
+  kcsQuickShift: "This is becoming a real Mercedes storyline. Russell is still strong, but Antonelli is starting to look like more than a fast rookie in a great car.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48670437/kimi-antonelli-george-russell-met-match-f1-new-superstar-miami-grand-prix-2026",
   imagePath: "/img/news/xpb/xpbimages1.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "May 3, 2026"
 },
-
+{
+  slotId: 2,
+  sourceLabel: "Formula1.com",
+  title: "Verstappen penalized for Miami pit exit breach",
+  summary: "Max Verstappen received a five-second penalty after stewards ruled that he crossed the solid white pit exit line during the Miami Grand Prix. The incident happened after an early Safety Car pit stop, and although the penalty initially looked set to drop him behind Charles Leclerc, Leclerc’s own post-race penalty meant Verstappen stayed fifth.",
+  kcsQuickShift: "Another post-race penalty added to the Miami shuffle. Verstappen was caught out by the pit exit line, but Leclerc’s bigger penalty meant the final damage was limited.",
+  url: "https://www.formula1.com/en/latest/article/verstappen-hit-with-penalty-for-pit-exit-breach-during-miami-grand-prix.y0KVGAbtL5liHWc02fZMB",
+  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 3, 2026"
+},
+{
+  slotId: 3,
+  sourceLabel: "The Race",
+  title: "Leclerc handed 20-second penalty after late Miami spin",
+  summary: "Charles Leclerc was given a 20-second penalty after repeatedly leaving the track on the final lap of the Miami Grand Prix following a spin and contact with the wall. The penalty dropped him to eighth, behind Lewis Hamilton and Franco Colapinto, while stewards cleared him of driving the car in an unsafe condition.",
+  kcsQuickShift: "A rough end for Leclerc. The damage clearly hurt him, but the stewards still decided the repeated corner cuts gave him too much advantage to ignore.",
+  url: "https://www.the-race.com/formula-1/leclerc-given-20-second-penalty-for-repeated-cuts-after-spin/",
+  imagePath: "/img/news/xpb/news-xpbcharles.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 3, 2026"
+},
+{
+  slotId: 4,
+  sourceLabel: "The Race",
+  title: "Antonelli, McLaren and Colapinto lead Miami GP winners list",
+  summary: "The Race picked out Kimi Antonelli, McLaren, Franco Colapinto and Williams among the big Miami Grand Prix winners, while Charles Leclerc, George Russell, Max Verstappen and Isack Hadjar landed on the losers side after a chaotic race. Antonelli’s win strengthened the view that his form is about more than just having a quick Mercedes, while McLaren’s double podium still left questions about how it let victory slip away.",
+  kcsQuickShift: "Miami gave us a messy but useful form check. Antonelli looks more convincing every week, McLaren is clearly dangerous, and Ferrari’s race unravelled in a very Ferrari way.",
+  url: "https://www.the-race.com/formula-1/winners-losers-action-packed-f1-2026-miami-gp/",
+  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 4, 2026"
+},
 {
   slotId: 5,
-  sourceLabel: "The Race",
-  title: "Hadjar disqualified from Miami qualifying over Red Bull floor breach",
-  summary: "Isack Hadjar has been disqualified from Miami Grand Prix qualifying after his Red Bull failed post-session technical checks. The issue was linked to the car’s floorboards being outside the permitted dimensions, wiping out what had been a strong qualifying result and forcing Hadjar to start from the back or pit lane.",
-  kcsQuickShift: "That is a brutal one for Hadjar. A strong qualifying result disappears because of a technical breach, and now his Miami race becomes damage limitation before it even starts.",
-  url: "https://www.the-race.com/formula-1/isack-hadjar-red-bull-miami-gp-qualifying-disqualification/",
+  sourceLabel: "Olé",
+  title: "Franco Colapinto histórico en Miami: salió 7° y consiguió su mejor resultado en F1 EN: Franco Colapinto makes history in Miami with his best F1 result",
+  summary: "Franco Colapinto terminó octavo en pista en el Gran Premio de Miami, pero subió al séptimo lugar después de la sanción a Charles Leclerc. Fue su mejor resultado en la Fórmula 1 y un día importante para Alpine, con el argentino aprovechando una carrera caótica para sumar puntos valiosos. EN: Franco Colapinto finished eighth on the road in the Miami Grand Prix, then moved up to seventh after Charles Leclerc’s penalty. It was his best Formula 1 result and a big day for Alpine, with the Argentine driver taking advantage of a chaotic race to score valuable points.",
+  kcsQuickShift: "Colapinto made the most of Miami’s chaos and turned it into his best F1 result so far. ES: Colapinto aprovechó el caos de Miami y logró su mejor resultado en la Fórmula 1.",
+  url: "https://www.ole.com.ar/autos/f1-gran-premio-miami-2026-franco-colapinto-carrera-hoy-domingo-vivo-alpine_0_oD6A8SJj20.html#google_vignette",
+  imagePath: "/img/news/Alpine/news-colapintoas.jpg",
+  photoCredit: "Courtesy of Aplpine F1",
+  dateLabel: "May 4, 2026"
+},
+{
+  slotId: 6,
+  sourceLabel: "PlanetF1",
+  title: "Hamilton urges Ferrari to study rivals’ front wings",
+  summary: "Lewis Hamilton believes Ferrari needs to look closely at the front wing designs being used by McLaren, Mercedes and Red Bull after a frustrating Miami Grand Prix weekend. Ferrari brought several updates to Miami, but Hamilton said rival teams appeared to find a bigger step, with their front wing concepts possibly giving them an advantage Ferrari is missing.",
+  kcsQuickShift: "Hamilton is basically saying Ferrari’s upgrades helped, but not enough. The interesting bit is that he thinks McLaren, Mercedes and Red Bull may all be finding something Ferrari has not unlocked yet with the front wing.",
+  url: "https://www.planetf1.com/news/lewis-hamilton-ferrari-front-wing-mclaren-mercedes-red-bull-advantage",
+  imagePath: "/img/news/Ferrari/news-ferrarilewis.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "May 4, 2026"
+},
+{
+  slotId: 7,
+  sourceLabel: "PlanetF1",
+  title: "Lawson apologizes to Gasly after Miami crash scare",
+  summary: "Liam Lawson apologized to Pierre Gasly after a gearbox failure sent his car into the Alpine during the Miami Grand Prix. Gasly’s car was flipped into the barrier, but he climbed out without injury, while stewards later cleared Lawson after telemetry showed the failure happened just before the collision.",
+  kcsQuickShift: "That was a scary one. Gasly was thankfully okay, and the FIA data backed up Lawson’s explanation that a sudden gearbox failure left him with nowhere to go.",
+  url: "https://www.planetf1.com/news/liam-lawson-gearbox-failure-pierre-gasly-miami-crash",
+  imagePath: "/img/news/xpb/news-xpbliam.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 4, 2026"
+},
+{
+  slotId: 8,
+  sourceLabel: "Motorsport.com",
+  title: "Hadjar admits Miami mistake after early crash from pit lane start",
+  summary: "Isack Hadjar said he was “flying” in the opening laps of the Miami Grand Prix before losing focus and crashing out at Turn 14. The Red Bull driver had started from the pit lane after being disqualified from qualifying over a floorboard issue, then made quick progress before clipping the inside wall and breaking his front-left suspension.",
+  kcsQuickShift: "Hadjar owned this one. The pace was there, but after a pit lane start and a quick charge forward, one small lapse in Miami’s tight middle sector ended his race.",
+  url: "https://www.motorsport.com/f1/news/isack-hadjar-explains-how-he-went-from-flying-to-hitting-the-wall-in-miami-gp/10817942/",
   imagePath: "/img/news/xpb/news-xpbisack.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "May 3, 2026"
 },
 {
-  slotId: 6,
-  sourceLabel: "Motorsport.com",
-  title: "Verstappen reveals hidden factor behind Red Bull’s F1 turnaround",
-  summary: "Max Verstappen says Red Bull’s stronger Miami form was not only down to the team’s latest upgrades. During the break, Red Bull also found a steering-system issue, helping explain why the car felt more predictable and why Verstappen was able to put it on the front row for the Miami Grand Prix.",
-  kcsQuickShift: "This makes Red Bull’s jump more interesting than just a normal upgrade story. If the steering issue really was holding the car back, Verstappen may finally have a car he can lean on again.",
-  url: "https://www.motorsport.com/f1/news/max-verstappen-reveals-hidden-factor-behind-red-bulls-f1-turnaround/10817674/",
-  imagePath: "/img/news/xpb/xpbverstappen.jpg",
+  slotId: 9,
+  sourceLabel: "RacingNews365.nl",
+  title: "Sainz beklaagt zich over Verstappen, Max reageert EN: Sainz complains about Verstappen as Max responds",
+  summary: "Carlos Sainz was niet blij met de agressieve inhaalactie van Max Verstappen in bocht 17 tijdens de openingsfase van de Grand Prix van Miami. Sainz vond dat Verstappen hem van de baan drukte en drie posities kostte, terwijl Verstappen nuchter reageerde dat racen in het middenveld “een jungle” is. EN: Carlos Sainz was unhappy with Max Verstappen’s aggressive Turn 17 move early in the Miami Grand Prix. Sainz felt Verstappen forced him off track and cost him three positions, while Verstappen calmly responded that racing in the midfield is “a jungle.”",
+  kcsQuickShift: "Verstappen and Sainz clearly saw this one very differently. Max called the midfield a jungle, while Sainz felt the move went too far and cost him badly. NL: Verstappen en Sainz zagen dit duidelijk heel anders. Max noemde het middenveld een jungle, terwijl Sainz vond dat de actie te ver ging en hem duur kwam te staan.",
+  url: "https://racingnews365.nl/sainz-beklaagt-zich-over-verstappen-max-reageert",
+  imagePath: "/img/news/xpb/news-xpbcarlos.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
-},
-
-{
-  slotId: 7,
-  sourceLabel: "Motorsport.com",
-  title: "Why McLaren felt Miami qualifying showed the real picture",
-  summary: "McLaren believes the Grand Prix qualifying order in Miami gave a more accurate picture of the weekend than its Sprint pole and Sprint 1-2 finish. Lando Norris and Oscar Piastri both felt their rivals had underperformed earlier in the weekend, then maximized their cars better for qualifying as McLaren slipped to fourth and seventh on the grid.",
-  kcsQuickShift: "This keeps McLaren’s Sprint win in perspective. They were quick, but Miami qualifying showed Mercedes and Red Bull may still have more pace when everyone puts the lap together.",
-  url: "https://www.motorsport.com/f1/news/why-mclaren-felt-the-real-picture-was-miami-gp-qualifying-and-not-its-sprint-pole-and-win/10817592/",
-  imagePath: "/img/news/shut/news-shutterstockmclarenpit.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 3, 2026"
-},
-{
-  slotId: 8,
-  sourceLabel: "M4 Sport",
-  title: "Colapinto újra Gasly előtt EN: Colapinto ahead of Gasly again",
-  summary: "Franco Colapinto ismét legyőzte rutinosabb Alpine-csapattársát, Pierre Gaslyt a Miami Nagydíj időmérőjén. Colapinto a nyolcadik, Gasly pedig a tizedik helyen végzett, így az Alpine két autóval jutott be a Q3-ba, az argentin pedig abban bízik, hogy a jó rajthelyet pontokra válthatja. EN: Franco Colapinto beat his more experienced Alpine teammate Pierre Gasly again in Miami Grand Prix qualifying. Colapinto finished eighth and Gasly tenth, putting both Alpine cars into Q3, and the Argentine now hopes to turn his strong starting position into points.",
-  kcsQuickShift: "Colapinto is quietly making this Alpine battle interesting. If he converts P8 into points, that will be another strong message inside the team. HU: Colapinto csendben egyre érdekesebbé teszi az Alpine-on belüli csatát. Ha a nyolcadik rajthelyből pontokat szerez, az újabb erős üzenet lesz a csapaton belül.",
-  url: "https://m4sport.hu/forma-1/f1-hirek/cikk/2026/05/03/colapinto-ujra-gasly-elott",
-  imagePath: "/img/news/xpb/xpb-colapinto.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
-},
-
-{
-  slotId: 8,
-  sourceLabel: "Crash.net",
-  title: "Ben Sulayem says F1’s V8 engine return is coming",
-  summary: "FIA president Mohammed Ben Sulayem says Formula 1’s return to V8 engines is coming, with the governing body pushing for a possible 2030 switch. The current 2026-style V6 hybrid rules have brought more electrical power and extra complexity, but Ben Sulayem says the future target is simpler, lighter and louder engines with minimal electrification and sustainable fuel.",
-  kcsQuickShift: "This would be a major shift in F1’s direction. After all the debate around the 2026 power units, the FIA now sounds serious about moving back toward simpler, louder engines.",
-  url: "https://www.crash.net/f1/news/1094248/1/fias-ben-sulayem-claims-f1-v8-return-coming-pushing-2030-switch",
-  imagePath: "/img/news/shut/news-shutterstocksalam.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 3, 2026"
+  dateLabel: "May 4, 2026"
 },
 {
   slotId: 10,
-  sourceLabel: "F1News.se",
-  title: "Tung lördag för Lindblad EN: Tough Saturday for Lindblad",
-  summary: "Arvid Lindblad fick en tung lördag i Miami. Racing Bulls-föraren tvingades starta sprinten från depån efter ett ovanligt teammisstag, men kom sedan inte ens till start på grund av ett tekniskt problem. Senare blev kvalet också svårt, och Lindblad får starta Grand Prix från 17:e plats. EN: Arvid Lindblad had a tough Saturday in Miami. The Racing Bulls driver was forced to start the Sprint from the pit lane after an unusual team error, but then did not even make the start because of a technical problem. Qualifying was also difficult later in the day, leaving Lindblad set to start the Grand Prix from 17th.",
-  kcsQuickShift: "A tough Miami Saturday for Lindblad, but this is exactly the kind of rookie weekend he has to learn from fast. SV: En tung lördag för Lindblad, men det här är precis den typen av rookiehelg han snabbt måste lära sig av.",
-  url: "https://f1news.se/tung-lordag-for-lindblad",
-  imagePath: "/img/news/xpb/news-xpblindblad.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 3, 2026"
+  sourceLabel: "Motorsport.com",
+  title: "Media reaction captures the chaos of the Miami Grand Prix",
+  summary: "Motorsport.com rounded up how international media reacted to a chaotic Miami Grand Prix, with attention on Kimi Antonelli’s victory, McLaren’s missed chance, Ferrari’s messy finish and the post-race penalties that reshaped the final order. The coverage shows how many different storylines came out of one of the busiest races of the season.",
+  kcsQuickShift: "The race created a pile of storylines, from Antonelli’s rise to Ferrari’s trouble and the late penalty shuffle.",
+  url: "https://www.motorsport.com/f1/news/What-media-are-saying-about-the-chaotic-F1-Miami-GP/10818083/",
+  imagePath: "/img/tracks/shutterstockmiami.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 4, 2026"
 }
 ];
 
