@@ -8,7 +8,7 @@ import SiteHeader from "./components/SiteHeader";
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
 import { youtubeSlots } from "./content/youtubeSlots";
-import CountdownBar from "./components/CountdownBar";
+
 // =======================================================
 // ✅ BETA FEEDBACK (Formspree)
 // 1) Create a Formspree form for kcf1update@gmail.com
@@ -195,7 +195,7 @@ export default function KCpage() {
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
-        <CountdownBar />
+        
 {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {
@@ -211,10 +211,14 @@ export default function KCpage() {
 
               return (
                 <section className="mt-1">
-                <div className="-mt-2 mb-2 text-center">
+                <div className="mt-2 mb-2 text-center">
   <span className="text-sm font-semibold text-cyan-300">
     F1 news summarized for quick reading
   </span>
+
+  <div className="mt-1 text-xs font-medium text-gray-300 opacity-85">
+    🌍 Viewed by F1 fans in 28 countries
+  </div>
 </div>
                   <GlassyCard
                     highlight="blue"

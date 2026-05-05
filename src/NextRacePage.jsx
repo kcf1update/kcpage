@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AdBar from "./AdBar.jsx";
 
 import SiteHeader from "./components/SiteHeader";
-
+import CountdownBar from "./components/CountdownBar";
 import { nextRaceContent, NEXT_RACE_DRIVER_IDS } from "./content/nextRaceContent";
 import { getDriverById } from "./content/drivers";
 
@@ -614,7 +614,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-3 overflow-x-hidden px-4 pb-6 pt-1 sm:pt-2">
         <SiteHeader />
-
+<CountdownBar />
         <div className="mt-1 flex items-center justify-between gap-4">
           
           <div className="shrink-0" />

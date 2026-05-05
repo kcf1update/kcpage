@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React To The Race | 2026 Miami Grand Prix",
-  youtubeInput: "https://youtu.be/0QyBQJWsQk4",
+  title: "F1 will definitely switch to V8 engines - what we know",
+  youtubeInput: "https://youtu.be/xZjaeJhUX1Y",
    forceExternal: true
   },
 
   {
     slotId: "slot2",
-    title: "Why the 2026 MIAMI GP was so CHAOTIC!",
-    youtubeInput: "https://youtu.be/DaGkU8zGlCs",
+    title: "Radio Rewind | 2026 Miami Grand Prix",
+    youtubeInput: "https://youtu.be/rXbpZSTBefI",
     
   },
 
   {
     slotId: "slot3",
-    title: "Ted's Race Notebook - Miami Grand Prix 2026",
-    youtubeInput: "https://youtu.be/HaHHOUyWceI",
+    title: "V8 cars COMING BACK sooner rather than later! | Paddock Access F1 Podcast",
+    youtubeInput: "https://youtu.be/zitGG5BEWb8",
     
   }
 ];
