@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "KC's QUICK SHIFT -- F1’s 2026 Problem: Too Much Power, Not Enough Energy",
-  youtubeInput: "https://youtu.be/RS_Jbv0q3x0",
+  title: "Antonelli Wins Miami GP Thriller After Norris Undercut | 2026 F1 Race Recap",
+  youtubeInput: "https://youtu.be/1fM7Kfuv71k",
 },
 
   {
