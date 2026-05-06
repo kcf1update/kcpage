@@ -39,38 +39,138 @@ function parseRacePaste(text) {
     return Number.isFinite(n) ? n : null;
   };
 
-  for (const line of lines) {
-    const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+  const normalizeStatus = (status, pos) => {
+    const s = String(status ?? "").trim();
+    const p = String(pos ?? "").trim().toUpperCase();
 
-    const id = (parts[0] || "").toUpperCase();
+    if (p === "DNF" || p === "DNS") return p;
+    if (!s) return "";
+    if (/^winner$/i.test(s)) return "Winner";
+    if (/^\d+$/.test(s)) return "Winner";
+    return s;
+  };
+
+  const getDriverIdFromName = (name) => {
+    const n = String(name || "").toLowerCase();
+
+    if (n.includes("norris")) return "NOR";
+    if (n.includes("verstappen")) return "VER";
+    if (n.includes("russell")) return "RUS";
+    if (n.includes("piastri")) return "PIA";
+    if (n.includes("leclerc")) return "LEC";
+    if (n.includes("hamilton")) return "HAM";
+    if (n.includes("albon")) return "ALB";
+    if (n.includes("sainz")) return "SAI";
+    if (n.includes("alonso")) return "ALO";
+    if (n.includes("stroll")) return "STR";
+    if (n.includes("ocon")) return "OCO";
+    if (n.includes("bearman")) return "BEA";
+    if (n.includes("hulkenberg") || n.includes("hülkenberg")) return "HUL";
+    if (n.includes("bortoleto")) return "BOR";
+    if (n.includes("gasly")) return "GAS";
+    if (n.includes("colapinto")) return "COL";
+    if (n.includes("perez") || n.includes("pérez")) return "PER";
+    if (n.includes("bottas")) return "BOT";
+    if (n.includes("lawson")) return "LAW";
+    if (n.includes("lindblad")) return "LIN";
+    if (n.includes("hadjar")) return "HAD";
+    if (n.includes("antonelli")) return "ANT";
+
+    return "";
+  };
+
+  const pointsByPosition = {
+    1: 25,
+    2: 18,
+    3: 15,
+    4: 12,
+    5: 10,
+    6: 8,
+    7: 6,
+    8: 4,
+    9: 2,
+    10: 1,
+  };
+
+  for (const line of lines) {
+    // OLD FORMAT:
+    // DRIVER_ID, POS, STATUS, GRID, POINTS
+    if (line.includes(",")) {
+      const parts = line.split(/[\t,|]+/).map((p) => p.trim());
+
+      const id = (parts[0] || "").toUpperCase();
+      if (!id || !base[id]) continue;
+
+      const rawPos = (parts[1] || "").toUpperCase();
+      const rawStatus = parts[2] || "";
+      const rawGrid = parts[3] || "";
+      const rawPoints = parts[4] || "";
+
+      const isDNF =
+        rawPos === "DNF" ||
+        rawPos === "DNS" ||
+        String(rawStatus).toUpperCase() === "DNF" ||
+        String(rawStatus).toUpperCase() === "DNS";
+
+      const pos = isDNF ? null : toIntOrNull(rawPos);
+      const grid = toIntOrNull(rawGrid);
+      const points = toIntOrNull(rawPoints);
+
+      base[id] = {
+        pos,
+        status: normalizeStatus(rawStatus, rawPos),
+        grid,
+        points,
+      };
+
+      continue;
+    }
+
+    // NEW COPY-PASTE FORMAT:
+    // 1  Andrea Kimi Antonelli  ITA  Mercedes AMG Petronas F1 Team  57
+    // 2  Lando Norris           GBR  McLaren Mastercard F1 Team      3.264s
+    // DNF Liam Lawson           NZD  Racing Bulls
+    const parts = line.split(/\t+/).map((p) => p.trim()).filter(Boolean);
+
+    let rawPos = "";
+    let driverName = "";
+    let status = "";
+
+    if (parts.length >= 5) {
+      rawPos = parts[0];
+      driverName = parts[1];
+      status = parts[4];
+    } else {
+      // Fallback for rows where tabs/spaces paste unevenly.
+      const match = line.match(/^(\d+|DNF|DNS)\s+(.+?)\s+(ITA|GBR|AUS|NED|MON|ARG|ESP|THA|BRA|FRA|MEX|CAN|FIN|NZD|GER)\s+(.+?)(?:\s+(\d+(?:\.\d+)?s|[12]L|\d+\s*Laps?|\d+))?$/i);
+
+      if (!match) continue;
+
+      rawPos = match[1];
+      driverName = match[2];
+      status = match[5] || rawPos;
+    }
+
+    const id = getDriverIdFromName(driverName);
     if (!id || !base[id]) continue;
 
-    const rawPos = (parts[1] || "").toUpperCase();
-    const rawStatus = parts[2] || "";
-    const rawGrid = parts[3] || "";
-    const rawPoints = parts[4] || "";
-
-    const isDNF =
-      rawPos === "DNF" ||
-      rawPos === "DNS" ||
-      String(rawStatus).toUpperCase() === "DNF" ||
-      String(rawStatus).toUpperCase() === "DNS";
+    const upperPos = String(rawPos).toUpperCase();
+    const isDNF = upperPos === "DNF" || upperPos === "DNS";
 
     const pos = isDNF ? null : toIntOrNull(rawPos);
-    const grid = toIntOrNull(rawGrid);
-    const points = toIntOrNull(rawPoints);
+    const cleanStatus = isDNF ? upperPos : normalizeStatus(status, rawPos);
+    const points = pos && pointsByPosition[pos] ? pointsByPosition[pos] : 0;
 
     base[id] = {
       pos,
-      status: isDNF ? rawPos : rawStatus,
-      grid,
+      status: cleanStatus,
+      grid: "",
       points,
     };
   }
 
   return base;
 }
-
 // =====================================================
 // 3) YOUR PASTE BOXES (EDIT THESE ONLY)
 // =====================================================
@@ -147,7 +247,30 @@ LIN,14,59.848s,10
 HAD,12,56.154s,8
 ANT,1,53,1,25
 `;
-
+const PASTE_MIAMI_RACE = `
+1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	57
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	3.264s
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	27.092s
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	43.051s
+5	Max Verstappen	NED	Oracle Red Bull Racing	43.946s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	53.753s
+7	Franco Colapinto	ARG	BWT Alpine F1 Team	61.871s
+8 Charles Leclerc	MON	Scuderia Ferrari HP	44.245s
+9	Carlos Sainz	ESP	Atlassian Williams F1 Team	82.072s
+10	Alex Albon	THA	Atlassian Williams F1 Team	90.972s
+11	Oliver Bearman	GBR	TGR Haas F1 Team	1L
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1L
+13	Esteban Ocon	FRA	TGR Haas F1 Team	1L
+14	Arvid Lindblad	GBR	Racing Bulls	1L
+15	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1L
+16	Sergio Perez	MEX	Cadillac F1 Team	1L
+17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1L
+18	Valtteri Bottas	FIN	Cadillac F1 Team	2L
+DNF	Liam Lawson	NZD	Racing Bulls	 
+DNF	Pierre Gasly	FRA	BWT Alpine F1 Team	 
+DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
+DNF	Isack Hadjar	FRA	Oracle Red Bull Racing
+`;
 // =====================================================
 // 4) CONTENT
 // =====================================================
@@ -191,6 +314,19 @@ raceName: "JAPANESE GRAND PRIX ",
     time: "Winner name here, full results below.",
     extraNote: "Dry Track",
     results: parseRacePaste(PASTE_JAPANESE_RACE),
+  },
+},
+{
+raceName: "MIAMI GRAND PRIX ",
+  raceDates: "May 01st–03rd, 2026",
+  location: "Miami International Autodrome, US",
+  session: {
+    id: "race",
+    type: "race",
+    label: "Race",
+    time: "Winner name here, full results below.",
+    extraNote: "Dry Track",
+    results: parseRacePaste(PASTE_MIAMI_RACE),
   },
 },
 ];

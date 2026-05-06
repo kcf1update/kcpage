@@ -339,28 +339,7 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-Charles Leclerc	MON	Scuderia Ferrari HP	1m29.310s
-2	Max Verstappen	NED	Oracle Red Bull Racing	1m29.607s
-3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m29.758s
-4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m29.777s
-5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m30.079s
-6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m30.100s
-7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m30.208s
-8	Pierre Gasly	FRA	BWT Alpine F1 Team	1m30.587s
-9	Isack Hajdar	FRA	Oracle Red Bull Racing	1m30.873s
-10	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m30.930s
-11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m31.015s
-12	Alex Albon	THA	Atlassian Williams F1 Team	1m31.024s
-13	Oliver Bearman	GBR	TGR Haas F1 Team	1m31.091s
-14	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m31.111s
-15	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m31.595s
-16	Esteban Ocon	FRA	TGR Haas F1 Team	1m31.635s
-17	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m31.648s
-18	Sergio Perez	MEX	Cadillac F1 Team	1m32.047s
-19	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m32.593s
-20	Valtteri Bottas	FIN	Cadillac F1 Team	1m32.762s
-21	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m32.862s
-22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m32.959s
+
 
 `;
 
@@ -372,274 +351,18 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
-1	1	
 
-Lando Norris
-
-McLaren	1:28.723	1:29.366	1:27.869	15
-2	12	
-
-Kimi Antonelli
-
-Mercedes	1:29.312	1:29.209	1:28.091	14
-3	81	
-
-Oscar Piastri
-
-McLaren	1:29.169	1:28.506	1:28.108	11
-4	16	
-
-Charles Leclerc
-
-Ferrari	1:28.733	1:28.333	1:28.239	15
-5	3	
-
-Max Verstappen
-
-Red Bull Racing	1:29.801	1:29.093	1:28.461	12
-6	63	
-
-George Russell
-
-Mercedes	1:29.659	1:28.903	1:28.493	15
-7	44	
-
-Lewis Hamilton
-
-Ferrari	1:29.255	1:28.841	1:28.618	15
-8	43	
-
-Franco Colapinto
-
-Alpine	1:30.386	1:29.527	1:29.320	15
-9	6	
-
-Isack Hadjar
-
-Red Bull Racing	1:30.352	1:29.750	1:29.422	15
-10	10	
-
-Pierre Gasly
-
-Alpine	1:29.984	1:29.973	1:29.474	15
-11	5	
-
-Gabriel Bortoleto
-
-Audi	1:30.561	1:29.994		12
-12	27	
-
-Nico Hulkenberg
-
-Audi	1:30.270	1:30.019		12
-13	87	
-
-Oliver Bearman
-
-Haas F1 Team	1:30.614	1:30.116		9
-14	23	
-
-Alex Albon
-
-Williams	1:30.988	1:30.216		12
-15	55	
-
-Carlos Sainz
-
-Williams	1:30.987	1:30.224		12
-16	41	
-
-Arvid Lindblad
-
-Racing Bulls	1:30.872	1:30.573		9
-17	30	
-
-Liam Lawson
-
-Racing Bulls	1:31.043			5
-18	31	
-
-Esteban Ocon
-
-Haas F1 Team	1:31.245			6
-19	11	
-
-Sergio Perez
-
-Cadillac	1:31.255			3
-20	77	
-
-Valtteri Bottas
-
-Cadillac	1:31.826			6
-NC	14	
-
-Fernando Alonso
-
-Aston Martin	1:41.311			6
 	
 `;
 const PASTE_SPRINT = `
-1	Lando Norris	GBR	McLaren Mastercard F1 Team	19
-2	Oscar Piastri	AUS	McLaren Mastercard F1 Team	3.766s
-3	Charles Leclerc	MON	Scuderia Ferrari HP	6.251s
-4	George Russell	GBR	Mercedes AMG Petronas F1 Team	12.951s
-5	Max Verstappen	NED	Oracle Red Bull Racing	13.639s
-6	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	13.777s
-7	Lewis Hamilton	GBR	Scuderia Ferrari HP	21.665s
-8	Pierre Gasly	FRA	BWT Alpine F1 Team	30.525s
-9	Isack Hadjar	FRA	Oracle Red Bull Racing	35.346s
-10	Franco Colapinto	ARG	BWT Alpine F1 Team	36.970s
-11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	48.438s
-12	Esteban Ocon	FRA	TGR Haas F1 Team	56.972s
-13	Oliver Bearman	GBR	TGR Haas F1 Team	57.365s
-14	Carlos Sainz	ESP	Atlassian Williams F1 Team	58.504s
-15	Liam Lawson	NZD	Racing Bulls	59.358s
-16	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	76.067s
-17	Sergio Perez	MEX	Cadillac F1 Team	76.691s
-18	Lance Stroll	CAN	Aston Martin Aramco F1 Team	77.626s
-19	Alex Albon	THA	Atlassian Williams F1 Team	88.173s
-20	Valtteri Bottas	FIN	Cadillac F1 Team	89.597s
-DNS	Arvid Lindblad	GBR	Racing Bulls	 
-DNS	Nico Hulkenberg	GER	Audi Revolut F1 Team
+
 `;
 const PASTE_Q = `
-1	12	
-
-Kimi Antonelli
-
-Mercedes	1:28.653	1:28.289	1:27.798	17
-2	3	
-
-Max Verstappen
-
-Red Bull Racing	1:29.099	1:28.116	1:27.964	15
-3	16	
-
-Charles Leclerc
-
-Ferrari	1:28.938	1:28.315	1:28.143	21
-4	1	
-
-Lando Norris
-
-McLaren	1:29.183	1:28.920	1:28.183	20
-5	63	
-
-George Russell
-
-Mercedes	1:29.492	1:28.477	1:28.197	18
-6	44	
-
-Lewis Hamilton
-
-Ferrari	1:29.483	1:28.477	1:28.319	21
-7	81	
-
-Oscar Piastri
-
-McLaren	1:29.920	1:28.332	1:28.500	20
-8	43	
-
-Franco Colapinto
-
-Alpine	1:29.584	1:28.975	1:28.762	19
-9	6	
-
-Isack Hadjar
-
-Red Bull Racing	1:29.324	1:28.941	1:28.789	21
-10	10	
-
-Pierre Gasly
-
-Alpine	1:29.914	1:29.070	1:28.810	20
-11	27	
-
-Nico Hulkenberg
-
-Audi	1:29.645	1:29.439		14
-12	30	
-
-Liam Lawson
-
-Racing Bulls	1:29.595	1:29.499		14
-13	87	
-
-Oliver Bearman
-
-Haas F1 Team	1:29.340	1:29.567		12
-14	55	
-
-Carlos Sainz
-
-Williams	1:29.540	1:29.568		15
-15	31	
-
-Esteban Ocon
-
-Haas F1 Team	1:29.838	1:29.772		15
-16	23	
-
-Alexander Albon
-
-Williams	1:29.720	1:29.946		15
-17	41	
-
-Arvid Lindblad
-
-Racing Bulls	1:30.133			9
-18	14	
-
-Fernando Alonso
-
-Aston Martin	1:31.098			8
-19	18	
-
-Lance Stroll
-
-Aston Martin	1:31.164			9
-20	77	
-
-Valtteri Bottas
-
-Cadillac	1:31.629			9
-21	11	
-
-Sergio Perez
-
-Cadillac	1:31.967			9
-22	5	
-
-Gabriel Bortoleto
-
-Audi	1:33.737			3
 
 `;
 
 const PASTE_RACE = `
-1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	57
-2	Lando Norris	GBR	McLaren Mastercard F1 Team	3.264s
-3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	27.092s
-4	George Russell	GBR	Mercedes AMG Petronas F1 Team	43.051s
-5	Max Verstappen	NED	Oracle Red Bull Racing	43.946s
-6	Lewis Hamilton	GBR	Scuderia Ferrari HP	53.753s
-7	Franco Colapinto	ARG	BWT Alpine F1 Team	61.871s
-8 Charles Leclerc	MON	Scuderia Ferrari HP	44.245s
-9	Carlos Sainz	ESP	Atlassian Williams F1 Team	82.072s
-10	Alex Albon	THA	Atlassian Williams F1 Team	90.972s
-11	Oliver Bearman	GBR	TGR Haas F1 Team	1L
-12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1L
-13	Esteban Ocon	FRA	TGR Haas F1 Team	1L
-14	Arvid Lindblad	GBR	Racing Bulls	1L
-15	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1L
-16	Sergio Perez	MEX	Cadillac F1 Team	1L
-17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1L
-18	Valtteri Bottas	FIN	Cadillac F1 Team	2L
-DNF	Liam Lawson	NZD	Racing Bulls	 
-DNF	Pierre Gasly	FRA	BWT Alpine F1 Team	 
-DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
-DNF	Isack Hadjar	FRA	Oracle Red Bull Racing	 
+ 
 
 `;
 
@@ -648,21 +371,21 @@ DNF	Isack Hadjar	FRA	Oracle Red Bull Racing
 // =====================================================
 
 export const nextRaceContent = {
-  raceName: "Miami Grand Prix ",
-  raceDates: "May 01st to May 3rd",
-  location: "Miami International Autodrome, US",
-  trackInfoUrl: "/img/tracks/shutterstockmiami.jpg",
+  raceName: "Canada Grand Prix",
+  raceDates: "May 22nd to May 24th, 2026",
+  location: "Circuit Gilles-Villenuve, Montreal",
+  trackInfoUrl: "/img/tracks/shutterstockcanadiangp2.jpg",
 
  weather:  "Thu: 28°C Mostly Sunny 🌤️, Fri: 28°C Mostly Sunny🌤️, Sat: 30°C Humid Mostly Sunny🌤️, Sun: 29°C Possible Thunderstorms⛈️",
 
  sessions:
-  WEEKEND_FORMAT === "sprint"
+  WEEKEND_FORMAT === "standard"
     ? [
         {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Complete results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -671,7 +394,7 @@ export const nextRaceContent = {
           id: "sq",
           type: "sprint_shootout",
           label: "Sprint Qualifying",
-          time: "Complete results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_SQ),
@@ -680,7 +403,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "Complete results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
@@ -689,7 +412,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "Complete results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -698,7 +421,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "Kimi Antonelli Wins, full results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
@@ -718,7 +441,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "5:00 PM AST",
+          time: "5:30 PM AST",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -727,7 +450,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "1:30 PM AST",
+          time: "1:00 PM AST",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
@@ -745,7 +468,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race ",
-          time: "2:00 PM AST",
+          time: "5:00 PM AST",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

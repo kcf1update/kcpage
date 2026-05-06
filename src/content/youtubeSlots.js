@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "F1 will definitely switch to V8 engines - what we know",
-  youtubeInput: "https://youtu.be/xZjaeJhUX1Y",
-   forceExternal: true
+  title: "Is Kimi Antonelli the favourite for the Drivers' Championship? | Sky Sports F1 Podcast",
+  youtubeInput: "https://youtu.be/ZmK9wGMlX-M",
+   
   },
 
   {
     slotId: "slot2",
-    title: "Radio Rewind | 2026 Miami Grand Prix",
-    youtubeInput: "https://youtu.be/rXbpZSTBefI",
+    title: "Why McLaren confronted Red Bull over surprise F1 team boss claim",
+    youtubeInput: "https://youtu.be/Gfqul5VJpuU",
     
   },
 
