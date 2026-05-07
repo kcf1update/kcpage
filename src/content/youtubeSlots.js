@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Is Kimi Antonelli the favourite for the Drivers' Championship? | Sky Sports F1 Podcast",
-  youtubeInput: "https://youtu.be/ZmK9wGMlX-M",
+  title: "V8 ENGINES to RETURN TO F1 by 2031!",
+  youtubeInput: "https://youtu.be/-lQZTzso110",
    
   },
 
   {
     slotId: "slot2",
-    title: "Why McLaren confronted Red Bull over surprise F1 team boss claim",
-    youtubeInput: "https://youtu.be/Gfqul5VJpuU",
-    
+    title: "Top 10 Onboards | 2026 Miami Grand Prix | Qatar Airways",
+    youtubeInput: "https://youtu.be/3XPArI7pgJU",
+    forceExternal: true
   },
 
   {
     slotId: "slot3",
-    title: "V8 cars COMING BACK sooner rather than later! | Paddock Access F1 Podcast",
-    youtubeInput: "https://youtu.be/zitGG5BEWb8",
+    title: "David Croft shares thoughts on Sky Sports' new deal with Formula 1",
+    youtubeInput: "https://youtu.be/SDNkZS4-N-Q",
     
   }
 ];
