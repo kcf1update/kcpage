@@ -376,7 +376,7 @@ export const nextRaceContent = {
   location: "Circuit Gilles-Villenuve, Montreal",
   trackInfoUrl: "/img/tracks/shutterstockcanadiangp2.jpg",
 
- weather:  "Thu: 28°C Mostly Sunny 🌤️, Fri: 28°C Mostly Sunny🌤️, Sat: 30°C Humid Mostly Sunny🌤️, Sun: 29°C Possible Thunderstorms⛈️",
+ weather:  "No full forecast yet",
 
  sessions:
   WEEKEND_FORMAT === "standard"

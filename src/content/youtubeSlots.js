@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "David Croft shares thoughts on Sky Sports' new deal with Formula 1",
-    youtubeInput: "https://youtu.be/SDNkZS4-N-Q",
+    title: "It was a mess' - Zak Brown reveals how McLaren turned its F1 fortunes around",
+    youtubeInput: "https://youtu.be/Cg0KiWGpSos",
     
   }
 ];

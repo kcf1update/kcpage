@@ -1,114 +1,136 @@
 const newsSlots = [
+   {
+    slotId: 1,
+    sourceLabel: "Formula 1",
+    title: "Brown responds to talk of McLaren making future move for Verstappen after Lambiase deal",
+    summary:
+      "Zak Brown has addressed the growing chatter around McLaren, Gianpiero Lambiase and Max Verstappen after McLaren confirmed Lambiase will join the team once his Red Bull contract ends in 2028. Brown played down the idea that the move automatically points toward a future Verstappen switch, but the timing still adds another layer to one of F1’s biggest long-term storylines.",
+    kcsQuickShift:
+      "McLaren may be trying to keep this calm, but anytime Verstappen and Lambiase are mentioned in the same future move, people are going to pay attention.",
+    url: "https://www.formula1.com/en/latest/article/brown-responds-to-talk-of-mclaren-making-future-move-for-verstappen-after-lambiase-deal.7DTcxUAPRHe5ZVXgCQkZak",
+    imagePath: "/img/news/shut/news-shutterstockbrown.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 8, 2026",
+  },
   {
-  slotId: 1,
-  sourceLabel: "Motorsport.com",
-  title: "Red Bull Reportedly Eyes Piastri As Verstappen Backup Plan",
-  summary: "Red Bull has reportedly identified Oscar Piastri as its preferred replacement option if Max Verstappen were to leave the team. Verstappen remains under contract, and Red Bull continues to say he is part of its future, but the report says the team is preparing a serious contingency plan in case its lead driver moves elsewhere, takes time away, or exits F1.",
-  kcsQuickShift: "This is not a done deal, but it is a big signal. Red Bull clearly knows replacing Verstappen would take more than promoting a junior driver, and Piastri is exactly the kind of calm, fast, polished option they would want.",
-  url: "https://www.motorsport.com/f1/news/red-bull-targets-oscar-piastri-as-max-verstappen-replacement/10818715/",
-  imagePath: "/img/news/shut/news-shutterstockoscar.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 2,
-  sourceLabel: "Crash.net",
-  title: "Leclerc Demands Answers After Ferrari’s Miami Drop-Off",
-  summary: "Charles Leclerc wants Ferrari to investigate why its Miami Grand Prix pace fell away after the team arrived with a major upgrade package. Leclerc said Ferrari struggled badly on the medium tyre and never recovered the performance it had shown earlier in the weekend. He still believes the upgrades worked, but admitted rival teams may simply have made bigger gains.",
-  kcsQuickShift: "Ferrari’s problem is not just one messy race. Leclerc sounds like he wants clear answers because the upgrades may be working, but not enough if McLaren and others are moving faster.",
-  url: "https://www.crash.net/f1/news/1094521/1/charles-leclerc-demands-answers-after-ferrari-miami-f1-drop",
-  imagePath: "/img/news/Ferrari/ferraricharlesmiami.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 3,
-  sourceLabel: "Formula1.com",
-  title: "F1 Breaks Down The Pecking Order After Miami",
-  summary: "Formula1.com says Miami gave the clearest picture yet of how the 2026 field is shifting. Mercedes are still narrowly ahead, but McLaren appear to have jumped Ferrari as the closest threat, Red Bull made a major step back toward the front, Alpine led the midfield, and Williams showed signs of progress with both cars scoring points.",
-  kcsQuickShift: "This is the big picture after Miami. Mercedes still look strongest, but the gap is shrinking and the field suddenly feels a lot more alive.",
-  url: "https://www.formula1.com/en/latest/article/what-we-learned-about-the-pecking-order-after-miami.4BnWP8L4gcgLBWb5eX5RrP",
-  imagePath: "/img/news/xpb/news-xpbmiaimrace.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 4,
-  sourceLabel: "The Race",
-  title: "Drivers Still Frustrated By 2026 F1 Energy Management",
-  summary: "F1’s 2026 rule tweaks improved the Miami spectacle, but several drivers still say the cars have a basic problem: pushing harder through corners can leave them slower on the next straight because of battery energy demands. The article explains why drivers like Max Verstappen, Lando Norris, Esteban Ocon and Fernando Alonso still believe the cars reward energy saving too much, with Canada expected to give a clearer test of the issue.",
-  kcsQuickShift: "This is the 2026 problem in simple terms. Drivers want to attack the lap, but the cars can still reward saving energy instead of just going faster.",
-  url: "https://www.the-race.com/formula-1/the-biggest-annoyance-drivers-still-have-with-2026-f1-cars/",
-  imagePath: "/img/news/xpb/xpbverstappen.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 5,
-  sourceLabel: "Formula1.com",
-  title: "F1 And Sky Lock In Major Long-Term Broadcast Deal",
-  summary: "Formula 1 and Sky have agreed a major long-term broadcast partnership covering the UK, Ireland and Italy. Sky will continue showing every practice, qualifying, sprint and Grand Prix, with the UK and Ireland agreement running through 2034 and the Italian agreement running through 2032. The deal keeps one of F1’s most important broadcast partners in place well into the next decade.",
-  kcsQuickShift: "This is bigger than a normal TV deal. Sky is one of F1’s main broadcast homes, so locking this in through the 2030s gives fans and the sport long-term stability.",
-  url: "https://www.formula1.com/en/latest/article/f1-and-sky-agree-new-long-term-partnership-across-uk-ireland-and-italy.Yd2VK2z6QxZkrR6zH2ssr",
-  imagePath: "/img/news/xpb/news-xpbnicomartin.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 6,
-  sourceLabel: "F1news.se",
-  title: "Kan Mercedes tappa greppet i F1 2026? EN: Could Mercedes Lose Control Of The 2026 F1 Season?",
-  summary: "Miami GP visade att Mercedes fortfarande har ett litet övertag, men att konkurrenterna nu närmar sig. McLaren, Ferrari och Red Bull tog alla med sig uppgraderingar som gav effekt, medan Mercedes väntar med sitt större paket till Kanada. EN: The Miami Grand Prix showed Mercedes still has a small advantage, but its rivals are closing in. McLaren, Ferrari and Red Bull all brought upgrades that made an impact, while Mercedes is waiting until Canada to introduce its own major package.",
-  kcsQuickShift: "Mercedes is still the team to beat, but Miami made the title fight look a lot less comfortable. SV: Mercedes är fortfarande laget att slå, men Miami gjorde titelstriden betydligt mindre bekväm.",
-  url: "https://f1news.se/kan-mercedes-tappa-greppet-i-f1-2026",
-  imagePath: "/img/news/xpb/news-xpbkimiwinsmiami.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 7,
-  sourceLabel: "ESPN",
-  title: "Hamilton To Step Back From Ferrari Simulator Before Canada",
-  summary: "Lewis Hamilton is set to change his Canadian Grand Prix preparation after a frustrating Miami weekend with Ferrari. Hamilton said the simulator work did not translate properly to the real car, leaving him with a setup direction that did not work once the weekend began. He also pointed to Ferrari’s straight-line speed deficit as a key issue the team needs to address before Montreal.",
-  kcsQuickShift: "This says a lot about Ferrari’s current problem. Hamilton is not just chasing pace, he is questioning the preparation tools that are supposed to help him find it.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48683970/formula-1-lewis-hamilton-back-away-simulator-canadian-gp-miami-struggle",
-  imagePath: "/img/news/xpb/news-xpblewis.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 8,
-  sourceLabel: "AutoRacing1",
-  title: "Newey Recovery Update Comes As Aston Martin Battles Honda Issues",
-  summary: "Adrian Newey has reportedly been recovering after an illness that required hospital treatment, while Aston Martin continues to work through a difficult start to the 2026 season. The team declined to discuss personal details, but said Newey is working and was on campus last week. The wider issue is Aston Martin’s poor form, with Honda-related vibration and drivability problems still a major focus despite some improvement in Miami.",
-  kcsQuickShift: "This is a health story first, so it needs a careful touch. The racing angle is Aston Martin trying to fix a rough Honda partnership start while Newey continues contributing during his recovery.",
-  url: "https://www.autoracing1.com/pl/492446/formula-1-news-illness-sidelines-newey-amid-aston-honda-crisis/",
-  imagePath: "/img/news/xpb/news-xpbneweystroll.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 9,
-  sourceLabel: "RacingNews365",
-  title: "Ford And Red Bull Urged To Pressure Verstappen Over Mercedes GT3 Drive",
-  summary: "Juan Pablo Montoya believes Red Bull and Ford should push Max Verstappen away from racing Mercedes machinery in GT3 competition. Verstappen has been preparing for the Nürburgring 24 Hours in a Mercedes-AMG GT3, which Montoya says creates awkward optics because Mercedes is a direct Formula 1 rival and Ford is now tied to Red Bull’s power unit project.",
-  kcsQuickShift: "This is not just about GT3 racing. With Verstappen still linked to Mercedes rumours, even his choice of endurance car is becoming part of the wider Red Bull pressure story.",
-  url: "https://racingnews365.com/ford-and-red-bull-urged-to-pressure-max-verstappen-against-mercedes-drive",
-  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
-  photoCredit: "shutterstock",
-  dateLabel: "May 7, 2026"
-},
-{
-  slotId: 10,
-  sourceLabel: "RacingNews365.nl",
-  title: "Teamgenoot Verstappen hekelt FIA: \"Die dubbele standaard faalt nooit!\" EN: Verstappen Teammate Criticizes FIA Over Hamilton Gesture",
-  summary: "Lewis Hamilton maakte volgens RacingNews365 na zijn botsing met Franco Colapinto in Miami een middelvingergebaar, maar kreeg daar geen boete voor. Dani Juncadella, teamgenoot van Max Verstappen tijdens de 24 uur van de Nürburgring, reageerde met kritiek op de FIA omdat hij zelf eerder in het WEC een boete van €5.000 kreeg voor een vergelijkbaar gebaar. EN: RacingNews365 reports that Lewis Hamilton appeared to make a middle-finger gesture toward Franco Colapinto after their Miami clash, but received no fine. Dani Juncadella, Max Verstappen’s teammate for the Nürburgring 24 Hours, criticized the FIA’s consistency because he previously received a €5,000 WEC fine for a similar gesture.",
-  kcsQuickShift: "This is really about FIA consistency. Hamilton may not have meant much by it, but once another driver was fined for something similar, people were always going to ask questions. NL: Dit draait vooral om de consistentie van de FIA. Hamilton bedoelde er misschien weinig mee, maar als een andere coureur eerder voor iets vergelijkbaars is beboet, komen er vanzelf vragen.",
-  url: "https://racingnews365.nl/teamgenoot-verstappen-hekelt-fia-die-dubbele-standaard-faalt-nooit",
-  imagePath: "/img/news/ferrari/news-ferrari6.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 7, 2026"
-}
+    slotId: 2,
+    sourceLabel: "RacingNews365",
+    title: "McLaren shut down Lewis Hamilton claim",
+    summary:
+      "Andrea Stella has pushed back against Lewis Hamilton’s suggestion that McLaren’s Miami upgrade may have delivered more than expected. McLaren was strong across the sprint weekend and grand prix, but Stella insisted the team’s performance was not some surprise breakthrough and instead reflected the work already built into the package.",
+    kcsQuickShift:
+      "Hamilton noticed something, but McLaren clearly does not want the paddock thinking its Miami step was bigger than planned.",
+    url: "https://racingnews365.com/mclaren-shut-down-lewis-hamilton-claim",
+    imagePath: "/img/news/shut/news-shutterstockstella.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 3,
+    sourceLabel: "RacingNews365",
+    title: "Charles Leclerc makes Ferrari demand after confirming new upgrade plan",
+    summary:
+      "Charles Leclerc says Ferrari has more upgrades coming, but warned that every step now has to be executed perfectly if the team wants to close the gap at the front. Ferrari has shown flashes of strong race-start performance, but Miami also exposed how much work remains before the team can fight consistently with Mercedes and McLaren.",
+    kcsQuickShift:
+      "Ferrari has upgrades coming, but Leclerc knows the real issue is whether they are clean, immediate and actually good enough.",
+    url: "https://racingnews365.com/charles-leclerc-delivers-perfect-ferrari-chore-after-f1-setback",
+    imagePath: "/img/news/Ferrari/news-ferrari16.jpg",
+    photoCredit: "Cortesy of Ferrari F1",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 4,
+    sourceLabel: "The Race",
+    title: "What you need to know about new F1 2026 rules meeting",
+    summary:
+      "Formula 1 teams and the FIA are holding another round of discussions over possible changes to the 2026 rules. The talks follow earlier refinements introduced around the Miami Grand Prix, with further ideas now being considered as the sport tries to improve racing, safety and the overall behaviour of the new-generation cars.",
+    kcsQuickShift:
+      "The 2026 rules are not standing still, and that tells you teams and the FIA know there is still work to do.",
+    url: "https://www.the-race.com/formula-1/what-you-need-to-know-about-new-f1-2026-rules-meeting/",
+    imagePath: "/img/news/kcai/news-FIA.jpg",
+    photoCredit: "KC",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 5,
+    sourceLabel: "RacingNews365",
+    title: "Fernando Alonso wary of 'bad taste' dilemma over F1 future decision",
+    summary:
+      "Fernando Alonso has admitted he is thinking carefully about how his F1 career should eventually end. The Aston Martin driver remains competitive and motivated, but he does not want to stay too long and leave the sport with a bad final impression after such a long and successful career.",
+    kcsQuickShift:
+      "Alonso still has the fire, but he is honest enough to know the ending matters almost as much as the career itself.",
+    url: "https://racingnews365.com/fernando-alonso-wary-of-bad-taste-dilemma-over-f1-future-decision",
+    imagePath: "/img/news/xpb/news-xpbfernando.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 6,
+    sourceLabel: "RacingNews365",
+    title: "Max Verstappen voices Red Bull pride despite F1 struggles",
+    summary:
+      "Max Verstappen says he is proud of Red Bull’s in-house power unit programme, even as the team continues to work through a difficult start to the new regulation cycle. Red Bull’s partnership with Ford has placed major pressure on the team, but Verstappen’s comments suggest he still sees long-term value in the project.",
+    kcsQuickShift:
+      "Red Bull may not be where it wants to be yet, but Verstappen backing the engine project matters.",
+    url: "https://racingnews365.com/max-verstappen-voices-red-bull-pride-despite-f1-struggles",
+    imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 7,
+    sourceLabel: "Road & Track",
+    title: "Cadillac Already Has a Running Formula 1 Engine of Its Own Hidden in North Carolina",
+    summary:
+      "Cadillac’s F1 project has already reached a major milestone, with GM president Mark Reuss confirming that a full V6 engine has run in America. Cadillac will begin its F1 entry using Ferrari power units, but its own engine programme is already active as the team works toward becoming a true works operation.",
+    kcsQuickShift:
+      "Cadillac is not just putting a badge on an F1 entry, it is already building toward something much bigger.",
+    url: "https://www.roadandtrack.com/news/a71238575/cadillac-already-has-a-running-formula-1-engine/",
+    imagePath: "/img/news/shut/news-shutterstockbottas.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 7, 2026",
+  },
+  {
+    slotId: 8,
+    sourceLabel: "RacingNews365",
+    title: "F1 warned over 'sleepless nights' danger of Max Verstappen exit",
+    summary:
+      "Mark Webber has warned that Formula 1 would feel the impact if Max Verstappen walked away from the sport earlier than expected. Verstappen’s future has become a recurring talking point, and Webber believes F1 should understand how much attention and intensity the Dutch driver brings to the championship.",
+    kcsQuickShift:
+      "F1 can survive without any one driver, but losing Verstappen would absolutely change the temperature of the sport.",
+    url: "https://racingnews365.com/f1-warned-over-sleepless-nights-danger-of-max-verstappen-exit",
+    imagePath: "/img/news/shut/news-shutterstockmax.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 9,
+    sourceLabel: "RacingNews365 NL",
+    title:
+      'Verstappen verrast Red Bull met extraatje: "Dat zagen we niet aankomen" EN: Verstappen surprises Red Bull with an extra boost: "We did not see that coming"',
+    summary:
+      "Red Bull maakte in Miami een duidelijke stap met een uitgebreid upgradepakket, maar volgens Pierre Waché kwam er ook nog iets extra’s van Max Verstappen zelf. EN: Red Bull made a clear step in Miami with a major upgrade package, but Pierre Waché says Verstappen also delivered something extra that the team had not expected.",
+    kcsQuickShift:
+      "Red Bull brought the upgrades, but Max still found something extra of his own. NL: Red Bull bracht de upgrades, maar Max vond zelf ook nog iets extra’s.",
+    url: "https://racingnews365.nl/verstappen-verrast-red-bull-met-extraatje-dat-zagen-we-niet-aankomen",
+    imagePath: "/img/news/xpb/xpbverstappen.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "May 8, 2026",
+  },
+  {
+    slotId: 10,
+    sourceLabel: "F1GrandPrix Motorionline",
+    title:
+      "Formula 1 | Ferrari partecipa alla discussione sui V8, Vigna EN: Ferrari joins the V8 discussion, says Vigna",
+    summary:
+      "Ferrari resta coinvolta nel dibattito sul futuro dei motori di Formula 1, con Benedetto Vigna che ha parlato del lavoro del team e del quadro regolamentare. EN: Ferrari remains part of the discussion around F1’s future engine direction, with Benedetto Vigna speaking about the team’s progress and the wider regulatory picture.",
+    kcsQuickShift:
+      "Ferrari will always have a voice when F1 talks engines, especially if V8s are back on the table. IT: Ferrari avrà sempre voce quando la F1 parla di motori, soprattutto se i V8 tornano in discussione.",
+    url: "https://f1grandprix.motorionline.com/f1-ferrari-vigna-motori-v8-regolamenti-futuro/",
+    imagePath: "/img/news/Ferrari/news-ferraricL.jpg",
+    photoCredit: "Cortesy of Ferrari F1",
+    dateLabel: "May 8, 2026",
+  },
 ];
 
 export { newsSlots };
