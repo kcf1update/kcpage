@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Top 10 Onboards | 2026 Miami Grand Prix | Qatar Airways",
-    youtubeInput: "https://youtu.be/3XPArI7pgJU",
+    title: "F1 agrees plan for 2027 engine rule changes - what we know",
+    youtubeInput: "https://youtu.be/LJjKPw3FCb8",
     forceExternal: true
   },
 
