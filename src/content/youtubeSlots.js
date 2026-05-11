@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "F1 agrees plan for 2027 engine rule changes - what we know",
-    youtubeInput: "https://youtu.be/LJjKPw3FCb8",
-    forceExternal: true
+    title: "Every LAS VEGAS F1 TICKET explained!",
+    youtubeInput: "https://youtu.be/xYvDZ3T0zYo",
+    
   },
 
   {
     slotId: "slot3",
-    title: "It was a mess' - Zak Brown reveals how McLaren turned its F1 fortunes around",
-    youtubeInput: "https://youtu.be/Cg0KiWGpSos",
+    title: "WEBBER: VERSTAPPEN COULD DESTROY F1! F1 News",
+    youtubeInput: "https://youtu.be/7IAbLvpjc9s",
     
   }
 ];
