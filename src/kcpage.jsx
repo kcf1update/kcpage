@@ -217,7 +217,7 @@ export default function KCpage() {
   </span>
 
   <div className="mt-1 text-xs font-medium text-gray-300 opacity-85">
-    🌍 Viewed by F1 fans in 96 countries
+    🌍 Viewed by F1 fans in 95 countries
   </div>
 </div>
                   <GlassyCard
