@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "V8 ENGINES to RETURN TO F1 by 2031!",
-  youtubeInput: "https://youtu.be/-lQZTzso110",
-   
+  title: "The Greatest Formula 1 Rivalries | F1 Nation Podcast",
+  youtubeInput: "https://youtu.be/_XSCzqvwKZM",
+   forceExternal: true
   },
 
   {
