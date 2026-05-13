@@ -3,28 +3,28 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "Antonelli Wins Miami GP Thriller After Norris Undercut | 2026 F1 Race Recap",
-  youtubeInput: "https://youtu.be/1fM7Kfuv71k",
+  title: "95 Countries in 2 Months- Thank You Worldwide F1 Fans!",
+  youtubeInput: "https://www.youtube.com/shorts/FqUmOFtQtW8?feature=share",
 },
 
   {
     slotId: "slot1",
-  title: "The Greatest Formula 1 Rivalries | F1 Nation Podcast",
-  youtubeInput: "https://youtu.be/_XSCzqvwKZM",
-   forceExternal: true
+  title: "Max Verstappen causes TICKET CHAOS at Nürburgring 24 hours",
+  youtubeInput: "https://youtu.be/E2DO9Mjq4OY",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Every LAS VEGAS F1 TICKET explained!",
-    youtubeInput: "https://youtu.be/xYvDZ3T0zYo",
+    title: "Man Builds Formula 1 Car at Home",
+    youtubeInput: "https://youtu.be/PsHTtMEydE0",
     
   },
 
   {
     slotId: "slot3",
-    title: "WEBBER: VERSTAPPEN COULD DESTROY F1! F1 News",
-    youtubeInput: "https://youtu.be/7IAbLvpjc9s",
+    title: "ECCLESTONE DISRESPECTS GEORGE RUSSELL! F1 News",
+    youtubeInput: "https://youtu.be/dQaWNdt5I4Q",
     
   }
 ];

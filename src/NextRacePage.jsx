@@ -690,7 +690,24 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
    
 
     <div className="mt-3 rounded-2xl border border-black/20 bg-gray-50 px-3 py-2 text-xs text-gray-900 sm:text-sm">
-      {nextRaceContent.weather || "—"}
+     {Array.isArray(nextRaceContent.weather) ? (
+  <div className="weather-grid">
+    {nextRaceContent.weather.map((day) => (
+      <div className="weather-card" key={day.date}>
+        <div className="weather-icon">{day.icon}</div>
+        <div className="weather-info">
+          <strong>
+            {day.day} {day.date}
+          </strong>
+          <span>{day.temp}</span>
+          <p>{day.summary}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+) : (
+  <p>{nextRaceContent.weather}</p>
+)}
     </div>
   </div>
 

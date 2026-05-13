@@ -376,7 +376,29 @@ export const nextRaceContent = {
   location: "Circuit Gilles-Villenuve, Montreal",
   trackInfoUrl: "/img/tracks/shutterstockcanadiangp2.jpg",
 
- weather:  "No full forecast yet",
+  weather: [
+  {
+    day: "Friday",
+    date: "May 22",
+    icon: "🌧️",
+    temp: "12°C / 9°C",
+    summary: "Cool and unsettled with possible showers.",
+  },
+  {
+    day: "Saturday",
+    date: "May 23",
+    icon: "⛅",
+    temp: "18°C / 11°C",
+    summary: "Partly cloudy and a little milder.",
+  },
+  {
+    day: "Sunday",
+    date: "May 24",
+    icon: "🌦️",
+    temp: "19°C / 13°C",
+    summary: "Mild race day with cloud and a chance of light showers.",
+  },
+],
 
  sessions:
   WEEKEND_FORMAT === "standard"
