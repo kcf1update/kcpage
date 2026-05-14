@@ -1,137 +1,137 @@
 const newsSlots = [
      {
-    slotId: 1,
-    sourceLabel: "RacingNews365",
-    title: "Max Verstappen 'speaking' with three-team F1 shortlist as Red Bull exit rumours persist",
-    summary:
-      "Max Verstappen's long-term future is back in focus, with Guenther Steiner suggesting Ferrari, Mercedes and McLaren would be the obvious shortlist if the Dutchman ever decided to leave Red Bull. The report makes clear that Verstappen remains under contract until the end of 2028, so any early move would depend on contract clauses and whether Red Bull can keep giving him a winning package.",
-    kcsQuickShift:
-      "This is not a confirmed move, but it shows how quickly the paddock conversation changes when Red Bull looks vulnerable.",
-    url: "https://racingnews365.com/max-verstappen-speaking-with-three-team-f1-shortlist-as-red-bull-exit-rumours-persist",
-    imagePath: "/img/news/xpb/xpbverstappen.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 2,
-    sourceLabel: "The Race",
-    title: "The shocking trait that Vasseur has driven out of Ferrari",
-    summary:
-      "Ferrari's 2026 car has become one of the more interesting technical talking points on the grid, with Fred Vasseur pushing the team away from conservative thinking and toward more aggressive design ideas. The Race highlights Ferrari's unusual concepts this season, including the so-called Macarena rear wing, exhaust wing and halo winglets, as signs of a team willing to hunt for performance in less obvious places.",
-    kcsQuickShift:
-      "Ferrari are not just bolting on clever parts, Vasseur is trying to change the team's whole risk culture.",
-    url: "https://www.the-race.com/formula-1/ferrari-fred-vasseur-f1-design-ideas-innovation/",
-    imagePath: "/img/news/ferrari/news-ferrari6.jpg",
-    photoCredit: "Courtesy of Ferarri F1",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 3,
-    sourceLabel: "Crash.net",
-    title: "‘If you don’t like it, don’t watch’ - F1 veteran Nico Hulkenberg claps back at 2026 rules critics",
-    summary:
-      "Nico Hulkenberg has defended Formula 1's controversial 2026 regulations, arguing that the sport has always had to evolve with technology and the wider automotive world. While drivers and fans have raised concerns about energy management and closing speeds, Hulkenberg says the racing has still been entertaining and believes F1 has to keep moving with the times.",
-    kcsQuickShift:
-      "Hulkenberg is basically saying the sport cannot live in the past, even if the new rules still need polishing.",
-    url: "https://www.crash.net/f1/news/1094930/1/if-you-dont-it-dont-watch-f1-veteran-claps-back-rules-critics",
-    imagePath: "/img/news/shut/news-shutterstocknico.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 4,
-    sourceLabel: "PlanetF1",
-    title: "No Aston Martin timeframe as Fernando Alonso reveals AMR26 upgrade reality",
-    summary:
-      "Fernando Alonso says Aston Martin may need to wait for a major performance gain before committing valuable budget-cap money to new AMR26 parts. Rather than spend on small upgrades that do not change the team's competitive position, Alonso suggested the team needs a much bigger step before pressing the button on production.",
-    kcsQuickShift:
-      "Alonso's message is blunt, Aston Martin need a proper breakthrough, not another small update that changes very little.",
-    url: "https://www.planetf1.com/news/no-aston-martin-timeframe-fernando-alonso-reveals-amr26-upgrade-reality",
-    imagePath: "/img/news/xpb/news-xpbneweystroll.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 5,
-    sourceLabel: "PlanetF1",
-    title: "Hamilton’s Ferrari dream dealt reality check by former Mercedes engineer",
-    summary:
-      "Former Ferrari and Mercedes engineer Aldo Costa has questioned whether Lewis Hamilton can still realistically chase an eighth world title with Ferrari. Costa stopped short of saying Hamilton is finished, but pointed to age, Ferrari's current performance picture and the strength of Charles Leclerc as serious factors in the challenge ahead.",
-    kcsQuickShift:
-      "This is opinion, not a Ferrari decision, but it adds more pressure to a Hamilton project that still needs a real breakthrough.",
-    url: "https://www.planetf1.com/news/lewis-hamilton-ferrari-dream-reality-check-former-mercedes-engineer",
-    imagePath: "/img/news/xpb/news-xpblewis.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 6,
-    sourceLabel: "RacingNews365",
-    title: "Lando Norris explains F1 drivers' fault in call for major change",
-    summary:
-      "Lando Norris says drivers want a stronger voice in Formula 1's rule-making process, especially after frustration with the 2026 cars. Norris admits drivers do not always see the full commercial and regulatory picture, but says they are aligned on wanting cars that can be pushed hard, raced closely and deliver a better show for fans.",
-    kcsQuickShift:
-      "Norris is asking for influence, not control, and that is a reasonable middle ground for the drivers.",
-    url: "https://racingnews365.com/lando-norris-explains-f1-drivers-fault-in-call-for-major-change",
-    imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 7,
-    sourceLabel: "RacingNews365",
-    title: "Mercedes 'nuke' prediction made in George Russell-Kimi Antonelli title fight",
-    summary:
-      "Jolyon Palmer believes Kimi Antonelli is unlikely to damage his Mercedes partnership with George Russell while the team remains in a strong title position. The bigger question is what happens later in the season if both drivers stay in championship contention and Mercedes has to manage a rising internal fight.",
-    kcsQuickShift:
-      "Mercedes have a great problem right now, but great problems can still become messy if both drivers keep winning.",
-    url: "https://racingnews365.com/mercedes-nuke-prediction-made-in-george-russell-kimi-antonelli-title-fight",
-    imagePath: "/img/news/xpb/xpbimages1.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 8,
-    sourceLabel: "Grande Prêmio",
-    title:
-      "Alpine conversa com gigante da moda e estuda até mudar de nome na Fórmula 1 em 2027 EN: Alpine talks with fashion giant and even considers changing its Formula 1 name in 2027",
-    summary:
-      "A Alpine negocia com a Gucci para uma possível parceria principal a partir de 2027, em meio à expectativa de fim do acordo com a BWT no final de 2026. O texto afirma que a marca de luxo poderia até entrar no nome da equipe, embora a Alpine tenha dito apenas que conversas comerciais permanecem confidenciais até serem confirmadas. EN: Alpine is reportedly in talks with Gucci over a possible title partnership from 2027, with the team's BWT deal expected to end after 2026. The report says the luxury brand could even become part of the team name, although Alpine only said partnership talks remain confidential until confirmed.",
-    kcsQuickShift:
-      "This is only reported talks for now, but Alpine and Gucci would be a very modern F1 business story. PT: Ainda são apenas conversas relatadas, mas Alpine e Gucci seriam uma história de negócios bem moderna para a F1.",
-    url: "https://www.grandepremio.com.br/f1/noticias/alpine-conversa-gigante-moda-estuda-mudar-nome-formula-1-2027/",
-    imagePath: "/img/news/alpine/news-alpinejapan.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "May 12, 2026"
-  },
-  {
-    slotId: 9,
-    sourceLabel: "F1News.se",
-    title:
-      "Wolff varnar Ferrari inför Antonelli-övergång EN: Wolff warns Ferrari ahead of Antonelli switch",
-    summary:
-      "Toto Wolff menar att Kimi Antonelli redan håller på att skapa stort intresse i Italien, även i ett land där Ferrari normalt dominerar känslorna hos fansen. Artikeln lyfter hur Antonellis snabba start hos Mercedes kan bli en känslig berättelse för Ferrari om den unga italienaren fortsätter att växa. EN: Toto Wolff believes Kimi Antonelli is already creating major attention in Italy, even in a country where Ferrari usually owns the emotional space with fans. The article frames Antonelli's fast start at Mercedes as a potentially uncomfortable story for Ferrari if the young Italian keeps rising.",
-    kcsQuickShift:
-      "Antonelli is becoming more than a Mercedes story, he is becoming an Italian F1 story Ferrari cannot ignore. SV: Antonelli blir mer än en Mercedes-historia, han blir en italiensk F1-historia som Ferrari inte kan ignorera.",
-    url: "https://f1news.se/wolff-varnar-ferrari-infor-antonelli-overgang",
-    imagePath: "/img/news/xpb/news-xpbkimimiami.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 13, 2026"
-  },
-  {
-    slotId: 10,
-    sourceLabel: "RacingNews365.nl",
-    title:
-      "Juncadella zet compagnon Verstappen op zijn nummer: \"Heb het je blijkbaar goed geleerd\" EN: Juncadella puts Verstappen in his place: \"Apparently I taught you well\"",
-    summary:
-      "Dani Juncadella reageerde speels op beelden van Max Verstappen rond de Nürburgring, waarbij de twee coureurs online een luchtig moment deelden. Het verhaal is minder zwaar dan de grote team- en regelverhalen, maar geeft wel een leuke Verstappen-link richting zijn Nürburgring-programma. EN: Dani Juncadella jokingly responded to footage involving Max Verstappen at the Nürburgring, giving fans a lighter online exchange between the two drivers. It is not as major as the bigger team and rules stories, but it adds a fun Verstappen link around his Nürburgring programme.",
-    kcsQuickShift:
-  "Verstappen’s Nürburgring run is another reminder that even away from F1, Max still knows how to keep fans watching. NL: Verstappens Nürburgring-rit herinnert ons eraan dat Max zelfs buiten de F1 nog steeds weet hoe hij fans laat kijken.",
-    url: "https://racingnews365.nl/juncadella-zet-compagnon-verstappen-op-zijn-nummer-heb-het-je-blijkbaar-goed-geleerd",
-    imagePath: "/img/news/kcai/news-GP3max.jpg",
-    photoCredit: "KC AI",
-    dateLabel: "May 13, 2026"
-  }
+  slotId: 1,
+  sourceLabel: "RacingNews365",
+  title: "LIVE: Nurburgring 24 Hours with Max Verstappen - Qualifying 1",
+  summary:
+    "Max Verstappen is back on the Nordschleife this weekend as his Nürburgring 24 Hours programme gets underway with qualifying action. It is not a Formula 1 race weekend, but Verstappen stepping into one of the toughest endurance events in the world is a major fan story and a clear sign of how seriously he is taking racing outside F1.",
+  kcsQuickShift:
+    "This is classic Verstappen, because even away from F1 he is chasing the hardest racing challenge he can find.",
+  url: "https://racingnews365.com/live-nurburgring-24-hours-with-max-verstappen-qualifying-1",
+  imagePath: "/img/news/kcai/news-GP3max2.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 2,
+  sourceLabel: "RacingNews365.nl",
+  title:
+    "Verstappen laat direct van zich horen op de Nordschleife EN: Verstappen makes himself heard straight away on the Nordschleife",
+  summary:
+    "Max Verstappen liet er weinig twijfel over bestaan dat hij klaar was voor zijn Nürburgring-weekend, want al vroeg in de eerste kwalificatiesessie kwam hij in actie op de Nordschleife. Voor Nederlandse fans is dit een groot moment, omdat Verstappen zijn GT-project duidelijk serieus neemt naast zijn Formule 1-carrière. EN: Max Verstappen wasted little time getting involved at the Nürburgring, heading out early in the first qualifying session on the Nordschleife. For Dutch fans, this is a big storyline because Verstappen is clearly treating his GT programme as more than just a side project.",
+  kcsQuickShift:
+    "Verstappen does not seem interested in doing this halfway, and that is exactly why fans are watching. NL: Verstappen lijkt dit niet half te willen doen, en precies daarom kijken de fans mee.",
+  url: "https://racingnews365.nl/verstappen-laat-direct-van-zich-horen-op-de-nordschleife",
+  imagePath: "/img/news/kcai/news-GP3max.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 3,
+  sourceLabel: "Reuters",
+  title: "Honda set for $19 million boost to address F1 engine woes",
+  summary:
+    "Honda could receive extra FIA-approved development support under the ADUO system if its 2026 power unit is judged to be far enough behind after the Canadian Grand Prix. That matters directly to Aston Martin, because Honda is now its works engine partner, and any extra development room could become a major factor in the new power unit era.",
+  kcsQuickShift:
+    "This could be a quiet but important 2026 story, because engine development help can change the shape of a season fast.",
+  url: "https://www.reuters.com/sports/formula1/honda-set-19-million-boost-address-f1-engine-woes-2026-05-13/",
+  imagePath: "/img/news/kcai/news-aduo1.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 4,
+  sourceLabel: "The Race",
+  title: "McLaren expansion approval includes new in-house F1 test rig",
+  summary:
+    "McLaren has secured planning approval for an extension at its Woking base that includes a new in-house F1 test rig. With track testing so limited in modern Formula 1, factory tools like this can make a real difference in how quickly teams understand parts, validate upgrades, and keep development moving.",
+  kcsQuickShift:
+    "This is the kind of factory investment that helps winning teams stay ahead.",
+  url: "https://www.the-race.com/formula-1/mclaren-technology-centre-planning-approval-new-f1-test-rig/",
+  imagePath: "/img/news/kcai/news-carrig.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 5,
+  sourceLabel: "Formula1.com",
+  title: "'This is a long game' – Wolff on the importance of keeping the pressure off Antonelli",
+  summary:
+    "Toto Wolff says Mercedes must keep the pressure under control around Kimi Antonelli despite the teenager's impressive early form. Antonelli has already shown serious pace, but Mercedes clearly wants to protect the bigger picture rather than turning every strong weekend into a championship-level expectation.",
+  kcsQuickShift:
+    "Mercedes knows Antonelli is special, but rushing the story now would only make his job harder.",
+  url: "https://www.formula1.com/en/latest/article/this-is-a-long-game-wolff-on-the-importance-of-keeping-the-pressure-off-antonelli.p3Xlsv1Qc4MubArhnOSAd",
+  imagePath: "/img/news/xpb/news-kimimiami.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 6,
+  sourceLabel: "Formula1.com",
+  title: "EXCLUSIVE: Towriss on the importance of experience in building Cadillac up from scratch",
+  summary:
+    "Cadillac CEO Dan Towriss has explained why experience has been central to building the new F1 operation from the ground up. With Cadillac preparing for life as Formula 1's newest team, the challenge is not just getting to the grid, but building the people, systems, and structure needed to survive once racing starts.",
+  kcsQuickShift:
+    "Cadillac is learning that entering F1 is not just about money, it is about building a real racing machine from zero.",
+  url: "https://www.formula1.com/en/latest/article/exclusive-towriss-on-the-importance-of-experience-in-building-cadillac-up-from-scratch.3BnhOwDwyHDxHT6tE9lGwi",
+  imagePath: "/img/news/xpb/news-xpbperez.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 7,
+  sourceLabel: "The Race",
+  title: "McLaren brings tech giant Intel back to F1 team sponsorship",
+  summary:
+    "McLaren has brought Intel back into Formula 1 as a team sponsor after nearly 17 years away from direct team involvement. The partnership gives McLaren another major technology name alongside its racing operation, and it adds another sign that big tech still sees value in F1's global reach.",
+  kcsQuickShift:
+    "McLaren is not just winning on track right now, it is also looking very strong commercially.",
+  url: "https://www.the-race.com/formula-1/mclaren-brings-tech-giant-intel-back-to-f1-team-sponsorship/",
+  imagePath: "/img/news/kcai/news-sponsor.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 8,
+  sourceLabel: "Motorsport.com",
+  title: "Why Haas fears it's losing ground to Alpine in midfield battle",
+  summary:
+    "Haas is concerned that Alpine's latest updates may have helped close one of its biggest weaknesses in the midfield fight. Oliver Bearman pointed to Alpine's high-speed improvement after Miami, and with Haas bringing fewer upgrades at that stage, the team knows the development race could quickly shift the order.",
+  kcsQuickShift:
+    "The midfield is tight enough that one good upgrade package can turn a team from vulnerable to dangerous.",
+  url: "https://www.motorsport.com/f1/news/why-haas-fears-loss-of-ground-to-alpine-in-f1s-upper-midfield-battle/10820490/",
+  imagePath: "/img/news/shut/news-shutterstockollie.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 9,
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "Palmer avverte la Ferrari: “Duello Hamilton-Leclerc per il titolo? Vasseur non potrebbe gestirlo” EN: Palmer warns Ferrari: “A Hamilton-Leclerc title duel? Vasseur could not manage it”",
+  summary:
+    "Jolyon Palmer ha avvertito che una vera lotta per il titolo tra Lewis Hamilton e Charles Leclerc potrebbe diventare molto difficile da gestire per Fred Vasseur. È un tema più di opinione che di notizia pura, ma tocca una delle domande più interessanti in casa Ferrari: cosa succede se entrambi i piloti diventano contendenti reali? EN: Jolyon Palmer has warned that a real title fight between Lewis Hamilton and Charles Leclerc could become very difficult for Fred Vasseur to manage. It is more opinion than hard news, but it hits one of Ferrari's biggest questions: what happens if both drivers become genuine contenders?",
+  kcsQuickShift:
+    "Ferrari wants two stars, but two stars fighting for the same title can become complicated fast. IT: La Ferrari vuole due stelle, ma due stelle in lotta per lo stesso titolo possono complicare tutto molto in fretta.",
+  url: "https://www.formulapassion.it/f1/f1-news/palmer-avverte-ferrari-duello-hamilton-leclerc-titolo-vasseur-non-potrebbe-gestirlo",
+  imagePath: "/img/news/ferrari/news-ferrarilc.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "May 14, 2026"
+},
+{
+  slotId: 10,
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "La Danimarca presenta il progetto per un Gran Premio di F1 EN: Denmark presents project for a Formula 1 Grand Prix",
+  summary:
+    "La Danimarca ha presentato un progetto per portare un Gran Premio di Formula 1 a Padborg, aggiungendo un altro possibile nome alla discussione sul futuro calendario. Non è ancora una gara confermata, ma mostra quanto sia forte l'interesse internazionale per entrare o rientrare nel calendario F1. EN: Denmark has presented a project to bring a Formula 1 Grand Prix to Padborg, adding another possible name to the future calendar discussion. It is not a confirmed race, but it shows how strong international interest remains in joining the F1 schedule.",
+  kcsQuickShift:
+    "Another country wants into F1, and that tells you how valuable a Grand Prix slot has become. IT: Un altro Paese vuole entrare in F1, e questo mostra quanto sia diventato prezioso un posto in calendario.",
+  url: "https://www.formulapassion.it/f1/f1-news/danimarca-presenta-progetto-per-gp-f1",
+  imagePath: "/img/news/kcai/news-track.jpg",
+  photoCredit: "KC AI original illustration",
+  dateLabel: "May 14, 2026"
+}
 ];
 
 export { newsSlots };

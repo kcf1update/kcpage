@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Man Builds Formula 1 Car at Home",
-    youtubeInput: "https://youtu.be/PsHTtMEydE0",
+    title: "Honda’s $19million F1 bailout explained",
+    youtubeInput: "https://youtu.be/8fysik7NnVo",
     
   },
 
