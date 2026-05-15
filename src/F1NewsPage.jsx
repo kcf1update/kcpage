@@ -72,21 +72,21 @@ export default function F1NewsPage() {
                       className="block"
                       title="Open article"
                     >
-                      <div className="aspect-[16/9] w-full overflow-hidden bg-black/40">
+                      <div className="h-[210px] sm:h-[230px] lg:h-[240px] w-full overflow-hidden bg-black/40">
                         <img
                           src={imgPath}
                           alt={altText}
-                          className="h-full w-full object-cover"
+                          className="h-full w-full object-contain"
                           loading="lazy"
                         />
                       </div>
                     </a>
                   ) : (
-                    <div className="aspect-[16/9] w-full overflow-hidden bg-black/40">
+                    <div className="h-[210px] sm:h-[230px] lg:h-[240px] w-full overflow-hidden bg-black/40">
                       <img
                         src={imgPath}
                         alt={altText}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain"
                         loading="lazy"
                       />
                     </div>

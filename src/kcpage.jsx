@@ -258,7 +258,7 @@ export default function KCpage() {
   <img
     src={imgPath}
     alt={altText}
-   className="h-full w-full object-cover"
+   className="h-full w-full object-contain"
     onError={(e) => {
       e.currentTarget.style.display = "none";
     }}
@@ -390,7 +390,7 @@ export default function KCpage() {
   <img
     src={imgPath}
     alt={altText}
-    className="h-full w-full object-cover"
+    className="h-full w-full object-contain"
     onError={(e) => {
       e.currentTarget.style.display = "none";
     }}
@@ -402,7 +402,7 @@ export default function KCpage() {
   <img
     src={imgPath}
     alt={altText}
-    className="h-full w-full object-cover"
+    className="h-full w-full object-contain"
     onError={(e) => {
       e.currentTarget.style.display = "none";
     }}
@@ -505,7 +505,7 @@ export default function KCpage() {
     <img
       src={imgPath}
       alt={altText}
-      className="h-full w-full object-cover"
+      className="h-full w-full object-contain"
       onError={(e) => {
         e.currentTarget.style.display = "none";
       }}
@@ -517,7 +517,7 @@ export default function KCpage() {
   <img
     src={imgPath}
     alt={altText}
-    className="h-full w-full object-cover"
+    className="h-full w-full object-contain"
     onError={(e) => {
       e.currentTarget.style.display = "none";
     }}
@@ -611,7 +611,7 @@ export default function KCpage() {
     <img
       src={imgPath}
       alt={altText}
-      className="h-full w-full object-cover"
+      className="h-full w-full object-contain"
       onError={(e) => {
         e.currentTarget.style.display = "none";
       }}
@@ -623,7 +623,7 @@ export default function KCpage() {
   <img
     src={imgPath}
     alt={altText}
-    className="h-full w-full object-cover"
+    className="h-full w-full object-contain"
     onError={(e) => {
       e.currentTarget.style.display = "none";
     }}
