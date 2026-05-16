@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Max Verstappen causes TICKET CHAOS at Nürburgring 24 hours",
-  youtubeInput: "https://youtu.be/E2DO9Mjq4OY",
-  
+  title: "Carlos Sainz's First Laps of Spain's New F1 Track",
+  youtubeInput: "https://youtu.be/yKsOHifPokY",
+  forceExternal: true
   },
 
   {
     slotId: "slot2",
-    title: "Honda’s $19million F1 bailout explained",
-    youtubeInput: "https://youtu.be/8fysik7NnVo",
+    title: "Why George Russell is also losing F1's off-track battle | Stay On Track with Hill & Herbert E8",
+    youtubeInput: "https://youtu.be/mJ7p2hnG4s4",
     
   },
 
   {
     slotId: "slot3",
-    title: "ECCLESTONE DISRESPECTS GEORGE RUSSELL! F1 News",
-    youtubeInput: "https://youtu.be/dQaWNdt5I4Q",
+    title: "The Ridiculous Engineering of Formula 1 Gearboxes",
+    youtubeInput: "https://youtu.be/8E1ecqCo6gM",
     
   }
 ];
