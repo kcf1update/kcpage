@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Carlos Sainz's First Laps of Spain's New F1 Track",
-  youtubeInput: "https://youtu.be/yKsOHifPokY",
-  forceExternal: true
+  title: "Heartbreak for Max Verstappen! Nürburgring 24H Race Recap & Highlights",
+  youtubeInput: "https://youtu.be/aUkZw9dOgZs",
+  
   },
 
   {
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The Ridiculous Engineering of Formula 1 Gearboxes",
-    youtubeInput: "https://youtu.be/8E1ecqCo6gM",
-    
+    title: "Ricciardo Chases His First Victory | 2014 Canadian Grand Prix",
+    youtubeInput: "https://youtu.be/C3HS_xMcerg",
+    forceExternal : true,
   }
 ];
