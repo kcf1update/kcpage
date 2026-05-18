@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Heartbreak for Max Verstappen! Nürburgring 24H Race Recap & Highlights",
-  youtubeInput: "https://youtu.be/aUkZw9dOgZs",
+  title: "What we learned from Team Verstappen’s lost Nurburgring win",
+  youtubeInput: "https://youtu.be/QceMCNKbrnM",
   
   },
 
   {
     slotId: "slot2",
-    title: "Why George Russell is also losing F1's off-track battle | Stay On Track with Hill & Herbert E8",
-    youtubeInput: "https://youtu.be/mJ7p2hnG4s4",
+    title: "GUESS THE DRIVER with Alpine's Franco Colapinto | Pick the Pro",
+    youtubeInput: "https://youtu.be/e4eAJtZlvaA",
     
   },
 
   {
     slotId: "slot3",
-    title: "Ricciardo Chases His First Victory | 2014 Canadian Grand Prix",
-    youtubeInput: "https://youtu.be/C3HS_xMcerg",
+    title: "2000 Canadian Grand Prix ITV highlights",
+    youtubeInput: "https://youtu.be/Nf8Bv_H7HKc",
     forceExternal : true,
   }
 ];

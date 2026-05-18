@@ -2,169 +2,163 @@ const newsSlots = [
     
    {
   slotId: 1,
-  sourceLabel: "ESPN",
-  title:
-    "Max Verstappen's Nürburgring 24 Hours team forced into late retirement while leading",
-  summary:
-    "Max Verstappen’s Nürburgring 24 Hours hopes ended in brutal fashion after the car he was sharing suffered a late mechanical failure while in contention for victory. The issue took his team out after a strong run, while the Mercedes crew of Maro Engel, Luca Stolz, Fabian Schiller, and Maxime Martin went on to win.",
-  kcsQuickShift:
-    "That one will sting because Verstappen’s team had the pace, but at the Nürburgring, surviving the race is half the battle.",
-  url:
-    "https://www.espn.co.uk/f1/story/_/id/48794384/max-verstappen-nurburgring-nordschleife-germany-24-hours-team-forced-late-retirement-leading",
-  imagePath: "/img/news/kcai/news-maxbreaksGP3.jpg",
-  photoCredit: "KC AI generated images",
-  dateLabel: "May 17, 2026",
-},
-{
-  slotId: 2,
-  sourceLabel: "The Race",
-  title:
-    "10 ways F1 2026 would be different if Horner still ran Red Bull",
-  summary:
-    "The Race looks at how Red Bull’s 2026 season might have unfolded differently if Christian Horner had still been running the team. The piece compares a fictional alternate version of events with what has actually happened since Horner left, including staffing moves, McLaren tensions, Mercedes politics and Verstappen’s future.",
-  kcsQuickShift:
-    "This is more of a what if than breaking news, but it is a useful read because it shows how much Red Bull’s tone has changed without Horner in charge.",
-  url:
-    "https://www.the-race.com/formula-1/what-would-have-happened-if-horner-still-ran-red-bull/",
-  imagePath:
-    "/img/news/xpb/news-xpbhandw.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 16, 2026"
-},
-{
-  slotId: 3,
   sourceLabel: "Formula1.com",
   title:
-    "EXCLUSIVE: Inside a hot lap of the newly-built Madring with home hero Sainz",
+    "IT'S RACE WEEK: 5 storylines we're excited about ahead of the 2026 Canadian Grand Prix",
   summary:
-    "Carlos Sainz has taken fans inside a lap of the new Madring circuit as Madrid continues building toward its Formula 1 future. The feature gives an early look at the layout, the atmosphere, and how Spain’s newest F1 venue is beginning to take shape.",
+    "Formula 1’s official race-week preview sets up the main Canadian Grand Prix storylines, including the form fight at the front, the Sprint weekend format and the key talking points heading into Montreal.",
   kcsQuickShift:
-    "Madrid is starting to feel real now, and having Sainz involved gives the whole project a much stronger home-race feel.",
+     "Race week is finally here, and Montreal already has plenty of storylines before the cars even roll out.",
   url:
-    "https://www.formula1.com/en/latest/article/exclusive-inside-a-hot-lap-of-the-newly-built-madring-with-home-hero-sainz.5iwY8ze8zaW9WMAYbC5fzR",
-  imagePath: "/img/news/xpb/news-xpbcarlos.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 16, 2026",
+    "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-canadian-grand-prix.1kJgsu7hhr6ZHFriJrYEnA",
+  imagePath: "/img/news/raceposter/canadiangp.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 18, 2026"
 },
+
 {
-  slotId: 4,
-  sourceLabel: "Autosport",
-  title:
-    "How Colton Herta is chasing his F1 dream",
-  summary:
-    "Colton Herta’s path toward Formula 1 remains one of the more interesting American driver stories around the sport. With Cadillac’s F1 project drawing attention, Herta’s next steps could be important as he tries to prove he belongs in the conversation.",
-  kcsQuickShift:
-    "Herta still has work to do, but the Cadillac link keeps his F1 dream very much alive.",
-  url:
-    "https://au.motorsport.com/f1/news/how-colton-herta-is-chasing-his-f1-dream-/10821552/",
-  imagePath: "/img/news/xpb/news-xpbperez.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 17, 2026",
-},
-{
-  slotId: 5,
-  sourceLabel: "Autosport",
-  title:
-    "Can George Russell take inspiration from Lando Norris in quest for F1 title?",
-  summary:
-    "George Russell’s push toward becoming a regular title threat is being compared with the path Lando Norris has taken at McLaren. The question is whether Russell can turn strong weekends and leadership at Mercedes into a proper championship challenge.",
-  kcsQuickShift:
-    "Russell has the speed and the discipline, but now Mercedes needs to give him a car that makes a title run realistic.",
-  url:
-    "https://www.autosport.com/f1/news/can-george-russell-take-inspiration-from-lando-norris-in-quest-for-f1-title/10821504/",
-  imagePath: "/img/news/xpb/news-xpbrussellmiami.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 17, 2026",
-},
-{
-  slotId: 6,
-  sourceLabel: "F1 Oversteer",
-  title:
-    "Former Honda engineer says HRC weren't brave enough to stop Adrian Newey's Aston Martin disaster",
-  summary:
-    "A former Honda engineer has suggested that Honda Racing Corporation should have pushed harder against a major Aston Martin technical direction linked to Adrian Newey’s 2026 project. The comments add another layer to the pressure around Aston Martin’s new works Honda era, where Newey’s design influence, Honda’s power unit programme and the team’s long-term ambitions all have to come together quickly.",
-  kcsQuickShift:
-    "This is the kind of 2026 story worth watching because Aston Martin has big names and big money, but the real test is whether the car and engine package actually works.",
-  url:
-    "https://www.f1oversteer.com/news/former-honda-engineer-says-hrc-werent-brave-enough-to-stop-adrian-neweys-aston-martin-disaster/",
-  imagePath:
-    "/img/news/xpb/news-xpbneweystroll.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 17, 2026"
-},
-{
-  slotId: 7,
-  sourceLabel: "F1News.se",
-  title:
-    "Brown attackerar Red Bull i brev till FIA EN: Brown attacks Red Bull in letter to FIA",
-  summary:
-    "McLarens VD Zak Brown har skrivit till FIA:s president Mohammed Ben Sulayem och krävt hårdare regler kring samarbete och ägande mellan Formel 1-stall. Fokus ligger på Red Bulls kontroll över både Red Bull Racing och Racing Bulls, något Brown menar kan hota sportens rättvisa och integritet. EN: McLaren CEO Zak Brown has written to FIA president Mohammed Ben Sulayem calling for tougher rules around cooperation and ownership links between Formula 1 teams. The focus is Red Bull’s control of both Red Bull Racing and Racing Bulls, which Brown argues could threaten sporting fairness and integrity.",
-  kcsQuickShift:
-    "This is not just team politics because Brown is pushing the FIA on whether Red Bull’s two-team setup gives them too much influence. SV: Det här handlar inte bara om stallpolitik eftersom Brown pressar FIA om Red Bulls tvåstallsstruktur ger dem för mycket inflytande.",
-  url:
-    "https://f1news.se/brown-attackerar-red-bull-i-brev-till-fia",
-  imagePath:
-    "/img/news/shut/news-shutterstockbrown.jpg",
-  photoCredit:
-    "Shutterstock",
-  dateLabel:
-    "May 15, 2026"
-},
-{
-  slotId: 8,
-  sourceLabel: "F1News.se",
-  title:
-    "Bomben: Tunga finansiärer vill ta F1 till Danmark! EN: Bombshell: Major financiers want to bring F1 to Denmark!",
-  summary:
-    "Överraskande planer har dykt upp om ett möjligt danskt Grand Prix, med investerare som vill bygga ut Padborg Park till en ny bana kallad Circuit of Denmark. Projektet uppges kosta 3,8 miljarder danska kronor, med en 6,006 kilometer lång bana, plats för 100 000 åskådare och extra faciliteter som hotell, konferenslokaler, gokart och motocross. EN: Surprise plans have emerged for a possible Danish Grand Prix, with investors looking to expand Padborg Park into a new venue called Circuit of Denmark. The project is reported to cost 3.8 billion Danish kroner, with a 6.006-kilometre circuit, space for 100,000 fans and additional facilities including hotels, conference spaces, karting and motocross.",
-  kcsQuickShift:
-    "This is still very early, but a Danish Grand Prix would be a major Nordic expansion story for Formula 1. SV: Det här är fortfarande väldigt tidigt, men ett danskt Grand Prix skulle vara en stor nordisk expansionsnyhet för Formel 1.",
-  url:
-    "https://f1news.se/bomben-tunga-finansiarer-vill-ta-f1-till-danmark",
-  imagePath:
-    "/img/news/kcai/news-track.jpg",
-  photoCredit:
-    "KC AI generated imagesWS",
-  dateLabel:
-    "May 13, 2026"
-},
-{
-  slotId: 9,
-  sourceLabel: "FormulaPassion.it",
-  title:
-    "Beffa atroce per Verstappen: la Mercedes va k.o., addio vittoria al Ring EN: Cruel blow for Verstappen as the Mercedes fails and Nürburgring victory slips away",
-  summary:
-    "La corsa di Max Verstappen verso una possibile vittoria alla 24 Ore del Nürburgring si è chiusa con un guasto meccanico quando la Mercedes numero 3 era ancora in piena lotta. È stata una fine durissima per un equipaggio che aveva mostrato ritmo e solidità per gran parte della gara. EN: Max Verstappen’s push toward a possible Nürburgring 24 Hours victory ended with a mechanical failure while the No. 3 Mercedes was still firmly in the fight. It was a harsh finish for a crew that had shown pace and strength through much of the race.",
-  kcsQuickShift:
-    "A cruel ending for Verstappen’s team, because they had done the hard part before the car gave up. IT: Finale crudele per la squadra di Verstappen, perché il lavoro più difficile era già stato fatto prima del cedimento della macchina.",
-  url:
-    "https://www.formulapassion.it/f1/f1-news/beffa-atroce-verstappen-ko-24-ore-nurburgring-cedimento-albero-trasmissione-mercedes",
-  imagePath: "/img/news/kcai/news-GP3max.jpg",
-  photoCredit: "KC AI generated images",
-  dateLabel: "May 17, 2026",
-},
-{
-  slotId: 10,
+  slotId: 2,
   sourceLabel: "Motorsport.com",
   title:
-    "Kimi Antonelli’s rivals issued warning as Otmar Szafnauer predicts further growth",
+    "Will Mercedes or McLaren land the next blow at F1's Canadian GP?",
   summary:
-    "Otmar Szafnauer believes Kimi Antonelli is already showing serious potential, but says the Mercedes driver should become even stronger as he gains age, experience and mental maturity. The article also points to Antonelli’s strong start to the season and frames the Canadian Grand Prix as another useful test against George Russell, who has past success in Montreal.",
+    "Mercedes and McLaren arrive in Canada with momentum, upgrades and pressure all playing into the weekend. The article looks at which team could make the stronger statement around Montreal’s stop-start layout.",
   kcsQuickShift:
-    "Antonelli already looks dangerous, but the bigger warning for the grid is that he may still be years away from his full level.",
+   "McLaren and Mercedes both look dangerous right now, and Montreal could tell us which one is ready to hit harder.",
   url:
-    "https://www.motorsport.com/f1/news/kimi-antonelli-rivals-warning-otmar-szafnauer-predicts-further-growth/10821704/",
-  imagePath:
-    "/img/news/xpb/news-xpbkimi3.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 17, 2026"
+    "https://www.motorsport.com/f1/news/will-mercedes-or-mclaren-land-the-next-blow-at-f1s-canadian-gp/10821878/",
+  imagePath: "/img/news/xpb/news-xpbwolffbrown.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 18, 2026"
 },
+
+{
+  slotId: 3,
+  sourceLabel: "Crash.net",
+  title:
+    "How Canadian Grand Prix prepared for early F1 return through \"rough\" winter",
+  summary:
+    "Canadian Grand Prix organisers have had to adjust to an earlier place on the F1 calendar after a difficult winter. The story explains how Montreal prepared the circuit and event setup for a much earlier race weekend than usual.",
+  kcsQuickShift:
+     "The earlier race date sounds simple on paper, but Montreal has had a real winter battle just to get ready.",
+  url:
+    "https://www.crash.net/f1/news/1095651/1/how-canadian-grand-prix-prepared-early-f1-return-through-rough-winter",
+  imagePath: "/img/news/kcai/news-montrealsnow.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 4,
+  sourceLabel: "CityNews Montréal",
+  title:
+    "Canadian Grand Prix organizers prepare for earlier race date, possible Habs run",
+  summary:
+    "A local Montréal report explains how Canadian Grand Prix organisers are handling the earlier race date, weather concerns, ticket demand, expanded facilities and the possible overlap with a Canadiens playoff run.",
+  kcsQuickShift:
+    "This is a big week for Montreal, and the Grand Prix could feel even bigger if the city has playoff energy around it too.",
+  url:
+    "https://montreal.citynews.ca/2026/05/13/canadian-grand-prix-organizers-prepare-for-earlier-race-date-possible-habs-run/",
+  imagePath: "/img/news/kcai/news-paddockcanada.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 13, 2026"
+},
+
+{
+  slotId: 5,
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "Il Canada si prepara alla prima sprint: “Domenicali ha ragione, è un valore aggiunto” EN: Canada prepares for its first Sprint: “Domenicali is right, it is added value”",
+  summary:
+    "A Montreal è tutto pronto per il primo weekend sprint del Gran Premio del Canada, con gli organizzatori convinti che il format aggiunga valore all’evento. L’articolo parla anche degli aggiornamenti alle strutture e della sfida di gestire un weekend più grande e più competitivo. EN: Montreal is getting ready for the Canadian Grand Prix’s first Sprint weekend, with organisers backing the format as added value for the event. The article also looks at facility upgrades and the challenge of making the weekend bigger and more competitive.",
+  kcsQuickShift:
+     "Montreal getting a Sprint weekend changes the rhythm of the whole event, and Friday suddenly matters a lot more. IT: Montreal con il weekend Sprint cambia il ritmo dell’intero evento, e il venerdì diventa subito molto più importante.",
+  url:
+    "https://www.formulapassion.it/f1/f1-news/canada-si-prepara-prima-sprint-domenicali-ragione-valore-aggiunto",
+  imagePath: "/img/news/kcai/news-sprintweekend.jpg",
+  photoCredit: "",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 6,
+  sourceLabel: "The Race",
+  title:
+    "The huge 2026 F1 technology change that's going under the radar",
+  summary:
+    "The Race looks at a major 2026 power-unit battleground that may not be getting enough attention. The piece focuses on how energy systems and deployment could shape the competitive order under the next regulations.",
+  kcsQuickShift:
+     "The 2026 engine fight is not just about horsepower anymore, because energy use could decide who gets it right.",
+  url:
+    "https://www.the-race.com/formula-1/the-overlooked-but-critical-part-of-f1s-2026-power-battle/",
+  imagePath: "/img/news/kcai/news-f1hybridengine.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 7,
+  sourceLabel: "PlanetF1",
+  title:
+    "FIA breaks silence on ADUO ‘magic bullet’ concern amid engine debate",
+  summary:
+    "The FIA has warned that ADUO should not be treated as a simple fix for any power-unit supplier that struggles under the 2026 rules. The system is intended to help with development opportunities, but it will not automatically erase performance gaps.",
+  kcsQuickShift:
+    "ADUO may help struggling engine suppliers, but it will not magically turn a weak power unit into a winner.",
+  url:
+    "https://www.planetf1.com/news/fia-chief-warns-aduo-not-magic-bullet-underperforming-f1-power-unit-suppliers",
+  imagePath: "/img/news/kcai/news-newrules.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 8,
+  sourceLabel: "Crash.net",
+  title:
+    "Christian Horner’s latest surprise paddock appearance explained as key F1 clause expires",
+  summary:
+    "Christian Horner has made another surprise motorsport paddock appearance, this time at Formula E in Monaco. The timing is notable because his Red Bull non-compete clause has now expired, leaving the door open to a possible return to F1.",
+  kcsQuickShift:
+    "Horner showing up around racing paddocks again is only going to make the comeback talk louder.",
+  url:
+    "https://www.crash.net/f1/news/1095648/1/christian-horners-latest-surprise-paddock-appearance-explained-key-f1-clause",
+  imagePath: "/img/news/xpb/news-xpbhandw.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 9,
+  sourceLabel: "RacingNews365.nl",
+  title:
+    "Norris onthult plannen voor speciale test EN: Norris reveals plans for special test",
+  summary:
+    "Lando Norris heeft plannen onthuld voor een speciale test, waarmee hij buiten zijn normale Formule 1-programma nieuwe ervaring wil opdoen. Het verhaal geeft een leuke McLaren- en coureursinvalshoek naast de grotere Grand Prix-verhalen. EN: Lando Norris has revealed plans for a special test, giving him a chance to gain experience outside his regular Formula 1 programme. It adds a useful McLaren and driver-focused angle alongside the bigger Grand Prix stories.",
+  kcsQuickShift:
+   "Norris trying something outside the usual F1 routine is interesting, especially with McLaren already carrying so much momentum. NL: Norris die iets buiten zijn normale F1 programma probeert is interessant, zeker nu McLaren al zoveel momentum heeft.",
+  url:
+    "https://racingnews365.nl/norris-onthult-plannen-voor-speciale-test",
+  imagePath: "/img/news/xpb/news-xpblando.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 18, 2026"
+},
+
+{
+  slotId: 10,
+  sourceLabel: "F1news.se",
+  title:
+    "Red Bull tar Verstappens avgångshot på allvar EN: Red Bull takes Verstappen’s exit threat seriously",
+  summary:
+    "Red Bull uppges ta Max Verstappens möjliga avsked på större allvar och har enligt rapporter börjat titta på möjliga ersättare. Oscar Piastri nämns som ett namn att hålla koll på om Verstappens framtid verkligen blir osäker. EN: Red Bull is reportedly taking the possibility of Max Verstappen leaving more seriously and has started looking at potential replacements. Oscar Piastri is mentioned as a name to watch if Verstappen’s future becomes genuinely uncertain.",
+  kcsQuickShift:
+    "This is still a speculation story, but it matters because Red Bull even thinking about life after Verstappen would be massive. SE: Det här är fortfarande spekulation, men det spelar roll eftersom Red Bull redan verkar tänka på livet efter Verstappen.",
+  url:
+    "https://f1news.se/red-bull-tar-verstappens-avgangshot-pa-allvar",
+  imagePath: "/img/news/xpb/xpbverstappen.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 18, 2026"
+}
 ];
 
 export { newsSlots };
