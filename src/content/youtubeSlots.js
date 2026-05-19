@@ -9,16 +9,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "What we learned from Team Verstappen’s lost Nurburgring win",
-  youtubeInput: "https://youtu.be/QceMCNKbrnM",
+  title: "Why the 2026 CANADIAN F1 RACE will be SURPRISING!",
+  youtubeInput: "https://youtu.be/rQFxYbbCuDk",
   
   },
 
   {
     slotId: "slot2",
-    title: "GUESS THE DRIVER with Alpine's Franco Colapinto | Pick the Pro",
-    youtubeInput: "https://youtu.be/e4eAJtZlvaA",
-    
+    title: "Extended Highlights | 1999 Canadian Grand Prix",
+    youtubeInput: "https://youtu.be/Y9RTTUvd6Nc",
+    forceExternal : true,
   },
 
   {
