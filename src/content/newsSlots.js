@@ -1,148 +1,153 @@
 const newsSlots = [
     
    {
-    slotId: 1,
-    sourceLabel: "Formula1.com",
-    title: "What time is the 2026 Canadian Grand Prix and how can I watch it?",
-    summary:
-      "Formula 1 heads to Montreal for Round 5 of the 2026 season, with Canada running as a Sprint weekend from May 22 to 24. Fans will get one practice session before Sprint Qualifying on Friday, the Sprint and Qualifying on Saturday, and the 70 lap Grand Prix on Sunday afternoon.",
-    kcsQuickShift:
-      "Canada is a Sprint weekend, so everything gets serious fast. For Atlantic Canada viewers, Sunday’s Grand Prix starts at 5 PM.",
-    url: "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-canadian-grand-prix-and-how-can-i-watch-it.1n6eOmot6IDcyeqwwK60KA",
-    imagePath: "/img/news/raceposter/canadiangp.jpg",
-    photoCredit: "KC AI Generated Image",
-    dateLabel: "May 18, 2026",
-  },
+  slotId: 1,
+  sourceLabel: "Motorsport.com",
+  title:
+    "Five things to look out for at F1's Canada GP",
+  summary:
+    "Motorsport.com previews the main storylines for the Canadian Grand Prix, from McLaren and Mercedes upgrades to Ferrari’s next test after Miami. Montreal’s layout, weather risk and heavy braking zones should give teams and drivers a very different challenge from recent races.",
+  kcsQuickShift:
+    "Montreal usually gives us a proper shake-up, and with upgrades, weather and braking all in play, this weekend has plenty to watch.",
+  url: "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-f1s-canada-gp/10822274/",
+  imagePath: "/img/news/kcai/news-canadiangp.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 20, 2026",
+},
 
   {
-    slotId: 2,
-    sourceLabel: "RacingNews365",
-    title: "McLaren face major question over unleashing own 'Ferrari Macarena' wing",
-    summary:
-      "McLaren could be preparing its own version of Ferrari’s flexible rear wing concept for the Canadian Grand Prix, but the Sprint format makes the decision more complicated. With only one practice session before competitive running begins, the team has to decide whether the potential performance gain is worth the limited track time for evaluation.",
-    kcsQuickShift:
-      "McLaren may have the part ready, but Montreal being a Sprint weekend makes the timing tricky. Bringing a new rear wing with limited practice is bold when the championship margins are this tight.",
-    url: "https://racingnews365.com/mclaren-face-major-question-over-unleashing-own-ferrari-macarena-wing",
-    imagePath: "/img/news/shut/news-shutterstocklando.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 19, 2026",
-  },
+  slotId: 2,
+  sourceLabel: "RacingNews365",
+  title:
+    "McLaren confirm huge upgrade package for Canadian GP as Mercedes fight looms",
+  summary:
+    "McLaren is bringing another major upgrade package to Montreal, with new parts across the floor, chassis, wings, bodywork, halo and roll hoop. The update follows its Miami development push and sets up a direct Canadian Grand Prix comparison with Mercedes, which is also expected to arrive with a major package.",
+  kcsQuickShift:
+    "McLaren and Mercedes both showing up with upgrades in Montreal makes this a proper measuring stick weekend.",
+  url: "https://racingnews365.com/mclaren-confirm-huge-upgrade-package-for-canadian-gp-as-mercedes-fight-looms",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 20, 2026",
+},
 
   {
-    slotId: 3,
-    sourceLabel: "Motorsport.com",
-    title: "Honda reveals “important target” for F1 Canadian GP",
-    summary:
-      "Honda says its main Canadian Grand Prix target is improving how the Aston Martin power unit feels for Fernando Alonso and Lance Stroll. Reliability has moved forward, but Honda now wants better driveability and energy management so both drivers can carry more confidence through Montreal’s stop start layout.",
-    kcsQuickShift:
-      "Honda says reliability is improving, but now the real job is giving Aston Martin a power unit the drivers can trust. Montreal matters because ADUO opens right after Canada.",
-    url: "https://www.motorsport.com/f1/news/honda-reveals-important-target-for-f1-canadian-gp/10822131/",
-    imagePath: "/img/news/xpb/news-xpbfernando.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 19, 2026",
-  },
+  slotId: 3,
+  sourceLabel: "RacingNews365",
+  title:
+    "Mercedes face major Canadian GP test due to unusual F1 demand",
+  summary:
+    "Mercedes could face a tougher power-unit test in Montreal, where Circuit Gilles Villeneuve’s stop-start layout puts more pressure on energy recovery and fuel use. RacingNews365 reports that the Canadian Grand Prix may show whether the FIA’s recent energy-management changes really hold up on a more demanding track.",
+  kcsQuickShift:
+    "Montreal could tell us a lot about whether Mercedes still has the same power-unit edge when energy recovery gets tougher.",
+  url: "https://racingnews365.com/mercedes-face-major-canadian-gp-test-due-to-unusual-f1-demand",
+  imagePath: "/img/news/shut/news-shutterstockrace2.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 20, 2026",
+},
 
   {
-    slotId: 4,
-    sourceLabel: "Sky Sports F1",
-    title:
-      "Canadian GP: George Russell needs to stop Kimi Antonelli in his tracks for 'psychological' gain says Martin Brundle",
-    summary:
-      "Martin Brundle believes George Russell needs a strong response against Kimi Antonelli in Canada, not just for points but for momentum inside Mercedes. Antonelli has made a major early impression, and Montreal now gives Russell a chance to reset the teammate story before the season gets deeper.",
-    kcsQuickShift:
-      "Russell knows Canada is a big one, not just for points but for momentum inside Mercedes. Antonelli has grabbed the early spotlight, and Montreal gives George a real chance to answer.",
-    url: "https://www.skysports.com/f1/news/12433/13545585/canadian-gp-george-russell-needs-to-stop-kimi-antonelli-in-his-tracks-for-psychological-gain-says-martin-brundle",
-    imagePath: "/img/news/shut/news-shutterstockgeorgemiami2.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 19, 2026",
-  },
+  slotId: 4,
+  sourceLabel: "Formula1.com",
+  title:
+    "TECH WEEKLY: Why there should be more to come from Ferrari’s major Miami upgrade package",
+  summary:
+    "Formula1.com’s Tech Weekly looks at Ferrari’s major Miami upgrade and why Canada should give a clearer read on its real impact. The package appeared to add performance, but Miami’s Sprint format and high track temperatures made it harder to judge exactly where Ferrari now stands.",
+  kcsQuickShift:
+    "Ferrari brought a serious upgrade in Miami, but Montreal should give us a much cleaner answer on whether it really moved them forward.",
+  url: "https://www.formula1.com/en/latest/article/tech-weekly-why-there-should-be-more-to-come-from-ferraris-major-miami-upgrade-package.3bR9GGw2vicxyoVKbxhszt",
+  imagePath: "/img/news/Ferrari/ferrarimiami.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "May 20, 2026",
+},
+
 
   {
-    slotId: 5,
-    sourceLabel: "F1news.se",
-    title:
-      "Mercedes uppgraderar inför Kanada-GP EN: Mercedes upgrades ahead of the Canadian GP",
-    summary:
-      "Mercedes förbereder sitt första större uppgraderingspaket för säsongen när teamet kommer till Montreal. Toto Wolff vill att stallet håller förväntningarna under kontroll, särskilt efter att McLaren visade tydliga framsteg i Miami. EN: Mercedes is preparing its first major upgrade package of the season for Montreal. Toto Wolff wants the team to keep expectations under control, especially after McLaren showed clear progress in Miami.",
-    kcsQuickShift:
-      "Mercedes is bringing upgrades to Canada, but Wolff is keeping the hype under control. Montreal should tell us whether Mercedes can answer McLaren’s progress.",
-    url: "https://f1news.se/mercedes-uppgraderar-infor-kanada-gp",
-    imagePath: "/img/news/xpb/news-xpbtoto.JPG  ",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 19, 2026",
-  },
+  slotId: 10,
+  sourceLabel: "Motorsport.com",
+  title:
+    "Cadillac details new F1 upgrade package for Canadian GP",
+  summary:
+    "Cadillac is bringing another update package to the Canadian Grand Prix as it tries to close the gap in its first F1 season. The MAC-26 will get new front brake drums, diffuser trim, winglets and front torsion bars aimed at helping the car handle Montreal’s steep kerbs more effectively.",
+  kcsQuickShift:
+    "Cadillac is not sitting still, and Montreal’s kerbs should give us a good read on whether these updates are actually helping.",
+  url: "https://www.motorsport.com/f1/news/cadillac-details-new-f1-upgrade-package-for-canadian-gp/10822214/",
+  imagePath: "/img/news/shut/news-shutterstockbottas.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 19, 2026",
+},
 
   {
-    slotId: 6,
-    sourceLabel: "RacingNews365",
-    title: "Lando Norris issues blueprint over how to fix F1 racing",
-    summary:
-      "Lando Norris says Formula 1 needs to focus on better natural racing rather than leaning too heavily on artificial performance swings. His ideas point toward lighter cars, cleaner air, better tyres, and a racing product that lets drivers fight more directly instead of being shaped too much by battery deployment gaps.",
-    kcsQuickShift:
-      "Lando is saying what a lot of fans feel. F1 needs closer racing, not cars taking turns with battery advantage.",
-    url: "https://racingnews365.com/lando-norris-issues-blueprint-over-how-to-fix-f1-racing",
-    imagePath: "/img/news/xpb/news-xpb6lando.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 19, 2026",
-  },
+  slotId: 6,
+  sourceLabel: "F1news.se",
+  title:
+    "Horner och BYD utforskar F1-samarbete EN: Horner and BYD explore F1 partnership",
+  summary:
+    "Christian Horner uppges utforska en möjlig Formel 1-satsning tillsammans med den kinesiska elbilsjätten BYD. Inget är bekräftat av parterna, men ett sådant samarbete skulle vara ett intressant steg med tanke på F1:s växande intresse i Asien och sportens fokus på elektrifiering. EN: Christian Horner is reportedly exploring a possible Formula 1 project with Chinese electric vehicle giant BYD. Nothing has been confirmed by either side, but the idea would be an interesting move given F1’s growing interest in Asia and the sport’s focus on electrification.",
+  kcsQuickShift:
+    "Horner and BYD is only talk for now, but it is the kind of story worth watching because it could point to a much bigger F1 move. SV: Horner och BYD är bara samtal just nu, men det är en sådan historia som är värd att följa eftersom den kan peka mot något mycket större i F1.",
+  url: "https://f1news.se/horner-och-byd-utforskar-f1-samarbete",
+  imagePath: "/img/news/kcai/news-hornerbyd.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 20, 2026",
+},
 
-  {
-    slotId: 7,
-    sourceLabel: "Infobae",
-    title:
-      "Franco Colapinto saldrá a pista en el Gran Premio de Canadá tras su mejor resultado en la Fórmula 1: días y horarios de toda la actividad EN: Franco Colapinto heads to the Canadian Grand Prix after his best Formula 1 result: dates and times for all the action",
-    summary:
-      "Franco Colapinto llega a Canadá después de terminar séptimo en Miami, el mejor resultado de su trayectoria en la Fórmula 1. Alpine también llega con impulso, ya que sus puntos ayudaron al equipo a subir al quinto puesto en el campeonato de constructores. EN: Franco Colapinto arrives in Canada after finishing seventh in Miami, the best result of his Formula 1 career so far. Alpine also comes in with momentum after his points helped the team move up to fifth in the Constructors’ Championship.",
-    kcsQuickShift:
-      "Colapinto comes into Canada with real momentum after Miami, and that gives Alpine another storyline to watch. Montreal is a Sprint weekend, so he has to be sharp right away.",
-    url: "https://www.infobae.com/deportes/2026/05/19/franco-colapinto-saldra-a-pista-en-el-gran-premio-de-canada-tras-su-mejor-resultado-en-la-formula-1-dias-y-horarios-de-toda-la-actividad/",
-    imagePath: "/img/news/Alpine/news-43japan.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "May 19, 2026",
-  },
+ {
+  slotId: 3,
+  sourceLabel: "RacingNews365",
+  title:
+    "Martin Brundle points to F1 unknown: 'Drivers are scared'",
+  summary:
+    "Martin Brundle believes drivers still have real questions about how the 2026 cars will behave in wet conditions. With less downforce, less grip and more power in play, a rainy Canadian Grand Prix could become the first serious wet-weather test for the new generation of F1 machinery.",
+  kcsQuickShift:
+    "If the rain shows up in Montreal, we might finally see who really trusts these new 2026 cars.",
+  url: "https://racingnews365.com/martin-brundle-points-to-f1-unknown-drivers-are-scared",
+  imagePath: "/img/news/kcai/news-rainmontreal.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "May 20, 2026",
+},
 
   {
   slotId: 8,
-  sourceLabel: "La Presse",
+  sourceLabel: "PlanetF1",
   title:
-    "Le Grand Prix du Canada et son histoire EN: The Canadian Grand Prix and its history",
+    "Mercedes brings first W17 upgrade as Toto Wolff issues honest Canadian GP message",
   summary:
-    "La Presse prend un angle local avant le Grand Prix du Canada avec un regard sur l’histoire de l’événement à Montréal. C’est un bon changement de rythme avant le week-end, surtout pour les lecteurs qui veulent autre chose que les mises à jour techniques et les rivalités entre équipes. EN: La Presse takes a local angle before the Canadian Grand Prix with a look back at the history of the Montreal event. It is a good change of pace before the weekend, especially for readers who want something beyond upgrades and team battles.",
+    "Mercedes will bring its first W17 upgrade package of the season to the Canadian Grand Prix as the development fight with McLaren starts to build. Toto Wolff says the package only matters once the performance shows up on track, while Kimi Antonelli has also warned that McLaren’s Miami step was too big to ignore.",
   kcsQuickShift:
-    "Montreal has a lot of F1 history, and race week is a good time to look back at how big this Grand Prix has become in Canada.",
-  url: "https://www.lapresse.ca/sports/course-automobile/2026-05-19/quiz/le-grand-prix-du-canada-et-son-histoire.php",
-  imagePath: "/img/news/kcai/news-montrealhistory.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "May 19, 2026",
+    "Mercedes is finally bringing its first big update, and Montreal should tell us pretty quickly if McLaren has forced them to respond.",
+  url: "https://www.planetf1.com/news/mercedes-w17-upgrades-toto-wolff-mclaren-canada-update",
+  imagePath: "/img/news/xpb/news-xpbtoto.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 20, 2026",
 },
 
 {
   slotId: 9,
-  sourceLabel: "Formula1.com",
+  sourceLabel: "Crash.net",
   title:
-    "Track time, red Cannes carpets and flag-waving – what F1 drivers have been up to before Canada",
+    "'It's psychological' - Martin Brundle issues warning to George Russell about Mercedes F1 team-mate Kimi Antonelli",
   summary:
-    "Formula 1’s official driver roundup looks at what the grid has been doing between Miami and Canada, from Max Verstappen’s Nürburgring 24 Hours run to Charles Leclerc and Carlos Sainz at Cannes. It is a lighter pre race story, but it adds some personality and variety before the Montreal weekend begins.",
+    "Martin Brundle says George Russell needs a strong Canadian Grand Prix to slow Andrea Kimi Antonelli’s early-season momentum at Mercedes. Russell is already chasing his teenage team-mate in the standings, and Brundle believes Montreal could matter as much mentally as it does on points.",
   kcsQuickShift:
-    "The drivers have been busy away from F1, but now the focus turns back to Montreal. Canada usually has a way of getting everyone’s attention pretty quickly.",
-  url: "https://www.formula1.com/en/latest/article/track-time-red-cannes-carpets-and-flag-waving-what-f1-drivers-have-been-up-to-before-canada.2C1OP2USftT71KMwtI1APp",
-  imagePath: "/img/news/xpb/news-xpblandoandcarlos.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 19, 2026",
+    "Russell has been strong in Canada before, but this weekend feels like a big chance to remind Antonelli this fight is not one way traffic.",
+  url: "https://www.crash.net/f1/news/1095676/1/martin-brundle-issues-psychological-warning-george-russell-ahead-f1-canadian-gp",
+  imagePath: "/img/news/shut/news-shutterstockbrundle.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 20, 2026",
 },
 
 {
   slotId: 10,
-  sourceLabel: "Marca",
+  sourceLabel: "Infobae",
   title:
-    "Honda se centra en dar confianza a Alonso y Stroll EN: Honda focuses on giving Alonso and Stroll confidence",
+    "Los motivos detrás de la huelga de strippers en medio del GP de Canadá de F1 EN: The reasons behind the strippers’ strike during the Canadian F1 GP",
   summary:
-    "Honda llega al Gran Premio de Canadá con el objetivo de mejorar la confianza de Fernando Alonso y Lance Stroll en el Aston Martin. La prioridad está en hacer que la unidad de potencia sea más fácil de usar, con mejor entrega, gestión de energía y sensaciones para los pilotos en un circuito exigente como Montreal. EN: Honda arrives at the Canadian Grand Prix focused on giving Fernando Alonso and Lance Stroll more confidence in the Aston Martin. The priority is making the power unit easier to use, with better delivery, energy management and driver feel around a demanding Montreal circuit.",
+    "Infobae informa que trabajadoras de clubes nocturnos en Montreal convocaron una huelga para el sábado del Gran Premio de Canadá, buscando presionar en uno de los fines de semana más lucrativos del año. El reclamo apunta a eliminar las tarifas obligatorias que deben pagar para trabajar, además de pedir mejores condiciones de seguridad, higiene y derechos laborales. EN: Infobae reports that nightclub workers in Montreal have called a strike for Canadian Grand Prix Saturday, aiming to apply pressure during one of the city’s most profitable weekends of the year. Their demands focus on ending mandatory fees they must pay to work, along with better safety, hygiene and labour protections.",
   kcsQuickShift:
-    "Alonso and Stroll need a car they can trust in Montreal, and Honda knows driveability matters just as much as raw power around this place.",
-  url: "https://www.marca.com/motor/formula1/gp-canada/2026/05/19/honda-centra-dar-confianza-alonso-stroll.html",
-  imagePath: "/img/news/xpb/news-xpbracejapan.jpg",
-  photoCredit: "XPB IMAGES",
+    "Montreal’s Grand Prix weekend is huge business, and this strike shows how much pressure comes with that spotlight. ES: El fin de semana del Gran Premio en Montreal mueve muchísimo dinero, y esta huelga muestra cuánta presión viene con esa atención.",
+  url: "https://www.infobae.com/deportes/2026/05/19/los-motivos-detras-de-la-huelga-de-strippers-en-medio-del-gp-de-canada-de-f1/",
+  imagePath: "/img/news/kcai/news-downtownmontreal.jpg",
+  photoCredit: "KC AI Generated Image",
   dateLabel: "May 19, 2026",
 },
 ];

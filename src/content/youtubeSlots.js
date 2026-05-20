@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why the 2026 CANADIAN F1 RACE will be SURPRISING!",
-  youtubeInput: "https://youtu.be/rQFxYbbCuDk",
+  title: "George Russell and Crofty go Silverstone Karting in a two-seater!",
+  youtubeInput: "https://youtu.be/c8pVMBp-eMo",
   
   },
 
   {
     slotId: "slot2",
-    title: "Extended Highlights | 1999 Canadian Grand Prix",
-    youtubeInput: "https://youtu.be/Y9RTTUvd6Nc",
+    title: "Big Weekends For George, Lewis & Charles? | 2026 Canadian GP Preview | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/F-HH0J2jPyw",
     forceExternal : true,
   },
 
   {
     slotId: "slot3",
-    title: "2000 Canadian Grand Prix ITV highlights",
-    youtubeInput: "https://youtu.be/Nf8Bv_H7HKc",
+    title: "Why F1 must abandon its manufacturer obsession",
+    youtubeInput: "https://youtu.be/0aau-hpOuzo",
     forceExternal : true,
   }
 ];
