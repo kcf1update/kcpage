@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "George Russell and Crofty go Silverstone Karting in a two-seater!",
-  youtubeInput: "https://youtu.be/c8pVMBp-eMo",
+  title: "Lewis will turn up with a lot of confidence” | Jenson Button PREVIEWS the Canadian Grand Prix",
+  youtubeInput: "https://youtu.be/jJInnVjUmgQ",
   
   },
 
   {
     slotId: "slot2",
-    title: "Big Weekends For George, Lewis & Charles? | 2026 Canadian GP Preview | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/F-HH0J2jPyw",
-    forceExternal : true,
+    title: "New F1 team plan from car giant - what we know",
+    youtubeInput: "https://youtu.be/cO2NZ3tNd98",
+    
   },
 
   {
     slotId: "slot3",
-    title: "Why F1 must abandon its manufacturer obsession",
-    youtubeInput: "https://youtu.be/0aau-hpOuzo",
-    forceExternal : true,
+    title: "I was NERVOUS to fly through the MIDDLE EAST!",
+    youtubeInput: "https://youtu.be/kalK_cKpV7k",
+    
   }
 ];

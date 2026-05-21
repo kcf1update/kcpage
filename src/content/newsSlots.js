@@ -1,154 +1,151 @@
 const newsSlots = [
     
-   {
-  slotId: 1,
-  sourceLabel: "Motorsport.com",
-  title:
-    "Five things to look out for at F1's Canada GP",
-  summary:
-    "Motorsport.com previews the main storylines for the Canadian Grand Prix, from McLaren and Mercedes upgrades to Ferrari’s next test after Miami. Montreal’s layout, weather risk and heavy braking zones should give teams and drivers a very different challenge from recent races.",
-  kcsQuickShift:
-    "Montreal usually gives us a proper shake-up, and with upgrades, weather and braking all in play, this weekend has plenty to watch.",
-  url: "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-f1s-canada-gp/10822274/",
-  imagePath: "/img/news/kcai/news-canadiangp.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "May 20, 2026",
-},
-
   {
-  slotId: 2,
-  sourceLabel: "RacingNews365",
-  title:
-    "McLaren confirm huge upgrade package for Canadian GP as Mercedes fight looms",
-  summary:
-    "McLaren is bringing another major upgrade package to Montreal, with new parts across the floor, chassis, wings, bodywork, halo and roll hoop. The update follows its Miami development push and sets up a direct Canadian Grand Prix comparison with Mercedes, which is also expected to arrive with a major package.",
-  kcsQuickShift:
-    "McLaren and Mercedes both showing up with upgrades in Montreal makes this a proper measuring stick weekend.",
-  url: "https://racingnews365.com/mclaren-confirm-huge-upgrade-package-for-canadian-gp-as-mercedes-fight-looms",
-  imagePath: "/img/news/xpb/news-xpboscar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 20, 2026",
-},
-
-  {
-  slotId: 3,
-  sourceLabel: "RacingNews365",
-  title:
-    "Mercedes face major Canadian GP test due to unusual F1 demand",
-  summary:
-    "Mercedes could face a tougher power-unit test in Montreal, where Circuit Gilles Villeneuve’s stop-start layout puts more pressure on energy recovery and fuel use. RacingNews365 reports that the Canadian Grand Prix may show whether the FIA’s recent energy-management changes really hold up on a more demanding track.",
-  kcsQuickShift:
-    "Montreal could tell us a lot about whether Mercedes still has the same power-unit edge when energy recovery gets tougher.",
-  url: "https://racingnews365.com/mercedes-face-major-canadian-gp-test-due-to-unusual-f1-demand",
-  imagePath: "/img/news/shut/news-shutterstockrace2.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 20, 2026",
-},
-
-  {
-  slotId: 4,
+   slotId: 1,
   sourceLabel: "Formula1.com",
   title:
-    "TECH WEEKLY: Why there should be more to come from Ferrari’s major Miami upgrade package",
+    "What is the Wall of Champions – and which drivers have crashed there?",
   summary:
-    "Formula1.com’s Tech Weekly looks at Ferrari’s major Miami upgrade and why Canada should give a clearer read on its real impact. The package appeared to add performance, but Miami’s Sprint format and high track temperatures made it harder to judge exactly where Ferrari now stands.",
+    "Formula1.com explains the story behind Montreal’s famous Wall of Champions, located at the exit of the final chicane. The nickname took hold after the 1999 Canadian Grand Prix weekend, when title-winning drivers including Damon Hill, Michael Schumacher and Jacques Villeneuve were all caught out at the same section of track.",
   kcsQuickShift:
-    "Ferrari brought a serious upgrade in Miami, but Montreal should give us a much cleaner answer on whether it really moved them forward.",
-  url: "https://www.formula1.com/en/latest/article/tech-weekly-why-there-should-be-more-to-come-from-ferraris-major-miami-upgrade-package.3bR9GGw2vicxyoVKbxhszt",
-  imagePath: "/img/news/Ferrari/ferrarimiami.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 20, 2026",
+    "The Wall of Champions is part of what makes Montreal feel different. You can gain time there, but one small mistake can ruin the whole weekend.",
+  url: "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
+  imagePath: "/img/news/kcai/news-wallofchampions.jpg",
+  photoCredit: "KC AI Original illustration",
+  dateLabel: "May 21, 2026",
 },
 
-
-  {
-  slotId: 10,
-  sourceLabel: "Motorsport.com",
+{
+  slotId: 2,
+  sourceLabel: "Formula1.com",
   title:
-    "Cadillac details new F1 upgrade package for Canadian GP",
+    "NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Canadian Grand Prix",
   summary:
-    "Cadillac is bringing another update package to the Canadian Grand Prix as it tries to close the gap in its first F1 season. The MAC-26 will get new front brake drums, diffuser trim, winglets and front torsion bars aimed at helping the car handle Montreal’s steep kerbs more effectively.",
+    "Formula1.com’s Canadian Grand Prix preview rounds up the key details for Montreal, including the Sprint weekend schedule, track statistics, tyre choices and recent race history. The guide also highlights the stop-and-go nature of Circuit Gilles Villeneuve, the high Safety Car probability and the chance that cooler weather could influence tyre warm-up.",
   kcsQuickShift:
-    "Cadillac is not sitting still, and Montreal’s kerbs should give us a good read on whether these updates are actually helping.",
-  url: "https://www.motorsport.com/f1/news/cadillac-details-new-f1-upgrade-package-for-canadian-gp/10822214/",
-  imagePath: "/img/news/shut/news-shutterstockbottas.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 19, 2026",
+    "This is a strong weekend primer. Montreal usually brings braking, walls, weather and strategy into the same conversation.",
+  url: "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-canadian-grand-prix.5mxhs5HB0dFrvjaz7sbBGR",
+  imagePath: "/img/news/kcai/news-montrealnews.jpg",
+  photoCredit: "KC AI Original illustration",
+  dateLabel: "May 21, 2026",
 },
 
-  {
-  slotId: 6,
-  sourceLabel: "F1news.se",
-  title:
-    "Horner och BYD utforskar F1-samarbete EN: Horner and BYD explore F1 partnership",
-  summary:
-    "Christian Horner uppges utforska en möjlig Formel 1-satsning tillsammans med den kinesiska elbilsjätten BYD. Inget är bekräftat av parterna, men ett sådant samarbete skulle vara ett intressant steg med tanke på F1:s växande intresse i Asien och sportens fokus på elektrifiering. EN: Christian Horner is reportedly exploring a possible Formula 1 project with Chinese electric vehicle giant BYD. Nothing has been confirmed by either side, but the idea would be an interesting move given F1’s growing interest in Asia and the sport’s focus on electrification.",
-  kcsQuickShift:
-    "Horner and BYD is only talk for now, but it is the kind of story worth watching because it could point to a much bigger F1 move. SV: Horner och BYD är bara samtal just nu, men det är en sådan historia som är värd att följa eftersom den kan peka mot något mycket större i F1.",
-  url: "https://f1news.se/horner-och-byd-utforskar-f1-samarbete",
-  imagePath: "/img/news/kcai/news-hornerbyd.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "May 20, 2026",
-},
-
- {
+{
   slotId: 3,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "Formula1.com",
   title:
-    "Martin Brundle points to F1 unknown: 'Drivers are scared'",
+    "CIRCUIT GUIDE: Everything you need to know about the Circuit Gilles Villeneuve",
   summary:
-    "Martin Brundle believes drivers still have real questions about how the 2026 cars will behave in wet conditions. With less downforce, less grip and more power in play, a rainy Canadian Grand Prix could become the first serious wet-weather test for the new generation of F1 machinery.",
+    "Formula1.com’s circuit guide looks at the history and driving challenge of Circuit Gilles Villeneuve. The Montreal track combines long full-throttle sections, tight chicanes, heavy braking zones and close walls, with the final chicane and Wall of Champions remaining one of the lap’s biggest risk points.",
   kcsQuickShift:
-    "If the rain shows up in Montreal, we might finally see who really trusts these new 2026 cars.",
-  url: "https://racingnews365.com/martin-brundle-points-to-f1-unknown-drivers-are-scared",
-  imagePath: "/img/news/kcai/news-rainmontreal.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "May 20, 2026",
+    "Montreal looks simple on a map, but it's not. Add some rain and the unpredictability of the new cars, and it could be a very tricky weekend.",
+  url: "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-gilles-villeneuve.5RUqO9YE80jmCiuODWNX9g",
+  imagePath: "/img/news/kcai/news-montreal10.jpg",
+  photoCredit: "KC AI Original illustration",
+  dateLabel: "May 21, 2026",
 },
 
-  {
-  slotId: 8,
+{
+  slotId: 4,
   sourceLabel: "PlanetF1",
   title:
-    "Mercedes brings first W17 upgrade as Toto Wolff issues honest Canadian GP message",
+    "Williams under FIA scrutiny as Carlos Sainz FW48 clears extensive Miami checks",
   summary:
-    "Mercedes will bring its first W17 upgrade package of the season to the Canadian Grand Prix as the development fight with McLaren starts to build. Toto Wolff says the package only matters once the performance shows up on track, while Kimi Antonelli has also warned that McLaren’s Miami step was too big to ignore.",
+    "Carlos Sainz’s Williams passed a detailed FIA post-race inspection after the Miami Grand Prix. The FIA checked the FW48’s front wing adjuster system, sensors, wiring and related data, with all inspected parts found to comply with the 2026 technical regulations.",
   kcsQuickShift:
-    "Mercedes is finally bringing its first big update, and Montreal should tell us pretty quickly if McLaren has forced them to respond.",
-  url: "https://www.planetf1.com/news/mercedes-w17-upgrades-toto-wolff-mclaren-canada-update",
-  imagePath: "/img/news/xpb/news-xpbtoto.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 20, 2026",
+    "This is the kind of technical check that sounds dramatic at first, but the result is simple. Williams was inspected closely and the car passed.",
+  url: "https://www.planetf1.com/williams/fia-confirms-findings-carlos-sainz-williams-inspection-miami-gp",
+  imagePath: "/img/news/shut/news-shutterstockalexcar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 21, 2026",
+},
+  
+{
+  slotId: 5,
+  sourceLabel: "PlanetF1",
+  title:
+    "Max Verstappen future decided? David Coulthard makes ‘Red Bull for life’ claim",
+  summary:
+    "David Coulthard believes Max Verstappen will stay with Red Bull for the rest of his Formula 1 career. Coulthard argues that Red Bull gives Verstappen the freedom to be himself, pointing to his Nürburgring 24 Hours appearance as an example of something rival F1 teams may not allow.",
+  kcsQuickShift:
+    "Coulthard may be right about the freedom part. Verstappen clearly values doing things his way, and Red Bull still gives him more room than most teams would.",
+  url: "https://www.planetf1.com/news/max-verstappen-future-red-bull-for-life-david-coulthard",
+  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 21, 2026",
 },
 
 {
-  slotId: 9,
+  slotId: 6,
+  sourceLabel: "Motorsport.com",
+  title: "Lewis Hamilton’s unusual preparation for F1’s Canadian GP",
+  summary:
+    "Lewis Hamilton is changing his preparation for the Canadian Grand Prix after another difficult Ferrari weekend in Miami. Hamilton suggested the simulator has not been helping him find the right direction with the SF-26, and he expects Montreal to be another demanding test because of Ferrari’s straight-line speed deficit.",
+  kcsQuickShift:
+    "Hamilton changing his preparation says a lot. Ferrari needs answers fast, because Montreal is not exactly the place to hide a straight line weakness.",
+  url: "https://www.motorsport.com/f1/news/lewis-hamiltons-unusual-preparation-for-f1s-canadian-gp/10822505/",
+  imagePath: "/img/news/xpb/news-xpblewis.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 21, 2026",
+},
+
+{
+   slotId: 7,
   sourceLabel: "Crash.net",
   title:
-    "'It's psychological' - Martin Brundle issues warning to George Russell about Mercedes F1 team-mate Kimi Antonelli",
+    "'The future is bright' Lance Stroll issues defiant message despite Aston Martin struggles",
   summary:
-    "Martin Brundle says George Russell needs a strong Canadian Grand Prix to slow Andrea Kimi Antonelli’s early-season momentum at Mercedes. Russell is already chasing his teenage team-mate in the standings, and Brundle believes Montreal could matter as much mentally as it does on points.",
+    "Lance Stroll says he still believes strongly in Aston Martin’s long-term project despite the team’s difficult start to the 2026 season. Ahead of his home race in Canada, Stroll pointed to the team’s new facilities, technical tools and long-term potential while admitting the current run has been frustrating.",
   kcsQuickShift:
-    "Russell has been strong in Canada before, but this weekend feels like a big chance to remind Antonelli this fight is not one way traffic.",
-  url: "https://www.crash.net/f1/news/1095676/1/martin-brundle-issues-psychological-warning-george-russell-ahead-f1-canadian-gp",
-  imagePath: "/img/news/shut/news-shutterstockbrundle.jpg",
+    "A home race is probably the right time for Stroll to steady the message. Aston Martin still has a lot to prove, but he is clearly not backing away from the project.",
+  url: "https://www.crash.net/f1/news/1095692/1/future-bright-lance-stroll-issues-defiant-message-despite-aston-martin-struggles",
+  imagePath: "/img/news/shut/news-shutterstocklance.jpg",
   photoCredit: "Shutterstock",
   dateLabel: "May 20, 2026",
 },
 
 {
-  slotId: 10,
-  sourceLabel: "Infobae",
+  slotId: 8,
+  sourceLabel: "RacingNews365",
   title:
-    "Los motivos detrás de la huelga de strippers en medio del GP de Canadá de F1 EN: The reasons behind the strippers’ strike during the Canadian F1 GP",
+    'Jenson Button tells Kimi Antonelli how to become "unstoppable" in F1 title fight',
   summary:
-    "Infobae informa que trabajadoras de clubes nocturnos en Montreal convocaron una huelga para el sábado del Gran Premio de Canadá, buscando presionar en uno de los fines de semana más lucrativos del año. El reclamo apunta a eliminar las tarifas obligatorias que deben pagar para trabajar, además de pedir mejores condiciones de seguridad, higiene y derechos laborales. EN: Infobae reports that nightclub workers in Montreal have called a strike for Canadian Grand Prix Saturday, aiming to apply pressure during one of the city’s most profitable weekends of the year. Their demands focus on ending mandatory fees they must pay to work, along with better safety, hygiene and labour protections.",
+    "Jenson Button believes Kimi Antonelli could become even harder to beat if he cleans up his race starts. Antonelli has already built strong momentum in the 2026 title fight, but Button says the Mercedes driver is still losing ground too often when the lights go out.",
   kcsQuickShift:
-    "Montreal’s Grand Prix weekend is huge business, and this strike shows how much pressure comes with that spotlight. ES: El fin de semana del Gran Premio en Montreal mueve muchísimo dinero, y esta huelga muestra cuánta presión viene con esa atención.",
-  url: "https://www.infobae.com/deportes/2026/05/19/los-motivos-detras-de-la-huelga-de-strippers-en-medio-del-gp-de-canada-de-f1/",
-  imagePath: "/img/news/kcai/news-downtownmontreal.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "May 19, 2026",
+    "That is the scary part for the rest of the field. Antonelli is already winning, and Button thinks there is still a clear weakness he can fix.",
+  url: "https://racingnews365.com/jenson-button-tells-kimi-antonelli-how-to-become-unstoppable-in-f1-title-fight",
+  imagePath: "/img/news/xpb/news-xpbkimi2.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 21, 2026",
+},
+
+{
+ slotId: 9,
+  sourceLabel: "RacingNews365",
+  title: "Christian Horner in 'serious discussions' over possible F1 return",
+  summary:
+    "Christian Horner is reportedly exploring a possible route back into Formula 1, with RacingNews365 linking him to talks involving Chinese manufacturer BYD. The report says Horner is still keeping his options open, including interest in an Alpine stake, while any BYD entry would face a long and complicated process before reaching the grid.",
+  kcsQuickShift:
+    "This is one to watch carefully. Horner coming back would be a huge F1 story, but right now it is still talks and possibilities, not a done deal.",
+  url: "https://racingnews365.com/christian-horner-in-serious-discussions-over-possible-f1-return",
+  imagePath: "/img/news/xpb/news-xpbhandw.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 21, 2026",
+},
+
+{
+  slotId: 10,
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "Bearman vicino al recupero di 2 punti sulla Superlicenza FIA EN: Bearman close to recovering 2 points on his FIA Super Licence",
+  summary:
+    "Oliver Bearman potrebbe ridurre il rischio di una squalifica se riuscirà a superare venerdì e sabato in Canada senza nuove penalità. FormulaPassion spiega che il pilota Haas passerebbe da 10 a 8 punti sulla Superlicenza FIA, allontanandosi dalla soglia dei 12 punti che porta al ban automatico per una gara. EN: Oliver Bearman could reduce his suspension risk if he gets through Friday and Saturday in Canada without new penalties. FormulaPassion explains that the Haas driver would drop from 10 to 8 FIA Super Licence penalty points, moving farther away from the 12-point threshold that triggers an automatic one-race ban.",
+  kcsQuickShift:
+    "Bearman just needs a clean start to the Canadian weekend and the pressure starts to ease. IT: Bearman deve solo iniziare pulito il weekend canadese e la pressione comincia a calare.",
+  url: "https://www.formulapassion.it/f1/f1-news/bearman-vicino-recupero-2-punti-sulla-superlicenza-fia",
+  imagePath: "/img/news/shut/news-shutterstockollie.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 21, 2026",
 },
 ];
 
