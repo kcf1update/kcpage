@@ -9,13 +9,20 @@ import CountdownBar from "./components/CountdownBar";
 import { newsSlots } from "./content/newsSlots";
 import { youtubeSlots } from "./content/youtubeSlots";
 
-// =======================================================
-// ✅ BETA FEEDBACK (Formspree)
-// 1) Create a Formspree form for kcf1update@gmail.com
-// 2) Paste your endpoint URL below
-// Example: https://formspree.io/f/abcdwxyz
-// =======================================================
 
+// =======================================================
+// Race weekend homepage promo
+// Turn this on/off here for each Grand Prix weekend
+// =======================================================
+const raceWeekendPromo = {
+  enabled: true,
+  label: "Canadian GP Weekend",
+  title: "Follow the full race weekend in the KC F1 Race Centre",
+  body:
+    "Session times, results, weather, qualifying, race updates, and the key stories from Circuit Gilles-Villeneuve, all summarized for a quick read.",
+  buttonText: "Go to Race Centre →",
+  buttonLink: "/next-race",
+};
 // Simple glassy card helper for the lower sections
 function GlassyCard({
   title,
@@ -127,7 +134,36 @@ function safeLocalImagePath(imagePath) {
   if (!imagePath.startsWith("/")) return "";
   return imagePath;
 }
+function RaceWeekendPromo() {
+  if (!raceWeekendPromo.enabled) return null;
 
+  return (
+    <section className="mt-1 rounded-3xl border border-cyan-400/35 bg-black/70 px-4 py-4 text-center shadow-[0_0_24px_rgba(34,211,238,0.35)] backdrop-blur-2xl sm:px-6 sm:py-5">
+      <div className="mx-auto max-w-3xl">
+        <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-cyan-300 sm:text-xs">
+          {raceWeekendPromo.label}
+        </div>
+
+        <h1 className="mt-2 text-xl font-extrabold leading-tight text-white sm:text-2xl md:text-3xl">
+          {raceWeekendPromo.title}
+        </h1>
+
+        <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-slate-200/90 sm:text-base">
+          {raceWeekendPromo.body}
+        </p>
+
+        <div className="mt-4 flex justify-center">
+          <Link
+            to={raceWeekendPromo.buttonLink}
+            className="inline-flex items-center justify-center rounded-full border border-cyan-300/60 bg-cyan-400/15 px-5 py-2.5 text-sm font-bold text-cyan-100 shadow-[0_0_18px_rgba(34,211,238,0.35)] transition hover:bg-cyan-400/25 hover:text-white sm:px-6"
+          >
+            {raceWeekendPromo.buttonText}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
 export default function KCpage() {
  
   // ✅ Stage A: Featured content is file-driven (not localStorage)
@@ -195,7 +231,9 @@ export default function KCpage() {
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
-<CountdownBar />        
+<CountdownBar />
+<RaceWeekendPromo />
+
 {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
           ? (() => {

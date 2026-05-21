@@ -32,7 +32,7 @@ const rawDrivers = [
 
   // Haas
   { id: "OCO", name: "Esteban Ocon", number: 31, countryCode: "fr", team: "Haas" },
-  { id: "BEA", name: "Oliver Bearman", number: 87, countryCode: "gb", team: "Haas" },
+  { id: "BEA", name: "Ollie Bearman", number: 87, countryCode: "gb", team: "Haas" },
 
   // Audi / Sauber
   { id: "HUL", name: "Nico Hulkenberg", number: 27, countryCode: "de", team: "Audi" },

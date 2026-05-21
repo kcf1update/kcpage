@@ -363,13 +363,119 @@ const PASTE_Q = `
 
 const PASTE_RACE = `
  
-
 `;
 
 // =====================================================
 // 4) CONTENT
 // =====================================================
-
+// =======================================================
+// Race weekend recap links
+// Add session article links and KC summaries here
+// This keeps race-weekend content with the rest of the race data
+// =======================================================
+// =======================================================
+// Race weekend recap links
+// Add session article links and KC summaries here
+// This follows WEEKEND_FORMAT so sprint and standard weekends match automatically
+// =======================================================
+export const raceWeekendRecap = {
+  enabled: true,
+  title: "Canadian GP Weekend Recap",
+  sections:
+    WEEKEND_FORMAT === "sprint"
+      ? [
+          {
+            heading: "Practice",
+            items: [
+              {
+                title: "Canadian GP practice report test",
+                summary:
+                  "This is a test KC summary to confirm the practice report card displays correctly with a link.",
+                url: "https://www.formula1.com/",
+              },
+            ],
+          },
+          {
+            heading: "Sprint Qualifying",
+            items: [
+              {
+                title: "Sprint qualifying report coming soon",
+                summary:
+                  "Sprint qualifying updates and grid-setting storylines will be added here after the session.",
+                url: "",
+              },
+            ],
+          },
+          {
+            heading: "Sprint Race",
+            items: [
+              {
+                title: "Sprint race report coming soon",
+                summary:
+                  "Sprint race winner, points, incidents, and key takeaways will be added here after the sprint.",
+                url: "",
+              },
+            ],
+          },
+          {
+            heading: "Qualifying",
+            items: [
+              {
+                title: "Qualifying report coming soon",
+                summary:
+                  "Grand Prix qualifying updates and race grid storylines will be added here after qualifying.",
+                url: "",
+              },
+            ],
+          },
+          {
+            heading: "Race",
+            items: [
+              {
+                title: "Race report coming soon",
+                summary:
+                  "Winner, podium, incidents, and championship impact will be added here after the race.",
+                url: "",
+              },
+            ],
+          },
+        ]
+      : [
+          {
+            heading: "Practice",
+            items: [
+              {
+                title: "Practice report coming soon",
+                summary:
+                  "The key practice storylines will be added here once practice is complete.",
+                url: "",
+              },
+            ],
+          },
+          {
+            heading: "Qualifying",
+            items: [
+              {
+                title: "Qualifying report coming soon",
+                summary:
+                  "Grid-setting updates and qualifying storylines will be added here after qualifying.",
+                url: "",
+              },
+            ],
+          },
+          {
+            heading: "Race",
+            items: [
+              {
+                title: "Race report coming soon",
+                summary:
+                  "Winner, podium, incidents, and championship impact will be added here after the race.",
+                url: "",
+              },
+            ],
+          },
+        ],
+};
 export const nextRaceContent = {
   raceName: "Canada Grand Prix",
   raceDates: "May 22nd to May 24th, 2026",
@@ -401,55 +507,8 @@ export const nextRaceContent = {
 ],
 
  sessions:
-  WEEKEND_FORMAT === "standard"
+  WEEKEND_FORMAT === "sprint"
     ? [
-        {
-          id: "p1",
-          type: "practice",
-          label: "Practice 1",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseLapPaste(PASTE_P1),
-        },
-        {
-          id: "sq",
-          type: "sprint_shootout",
-          label: "Sprint Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_SQ),
-        },
-        {
-          id: "sprint",
-          type: "sprint_race",
-          label: "Sprint Race",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_SPRINT),
-        },
-        {
-          id: "q",
-          type: "qualifying",
-          label: "Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_Q),
-        },
-        {
-          id: "race",
-          type: "race",
-          label: "Race Results",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_RACE),
-        },
-      ]
-    : [
         {
           id: "p1",
           type: "practice",
@@ -460,10 +519,57 @@ export const nextRaceContent = {
           results: parseLapPaste(PASTE_P1),
         },
         {
+          id: "sq",
+          type: "sprint_shootout",
+          label: "Sprint Qualifying",
+          time: "5:30 PM AST",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_SQ),
+        },
+        {
+          id: "sprint",
+          type: "sprint_race",
+          label: "Sprint Race",
+          time: "1:00 PM AST",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_SPRINT),
+        },
+        {
+          id: "q",
+          type: "qualifying",
+          label: "Qualifying",
+          time: "5:00 PM AST ",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_Q),
+        },
+        {
+          id: "race",
+          type: "race",
+          label: "Race Results",
+          time: "5:00 PM AST",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_RACE),
+        },
+      ]
+    : [
+        {
+          id: "p1",
+          type: "practice",
+          label: "Practice 1",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseLapPaste(PASTE_P1),
+        },
+        {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "5:30 PM AST",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -472,7 +578,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "1:00 PM AST",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
@@ -481,7 +587,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "5:00 PM AST",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -490,7 +596,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race ",
-          time: "5:00 PM AST",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

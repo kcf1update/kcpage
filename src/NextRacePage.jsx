@@ -5,7 +5,11 @@ import AdBar from "./AdBar.jsx";
 
 import SiteHeader from "./components/SiteHeader";
 import CountdownBar from "./components/CountdownBar";
-import { nextRaceContent, NEXT_RACE_DRIVER_IDS } from "./content/nextRaceContent";
+import {
+  nextRaceContent,
+  NEXT_RACE_DRIVER_IDS,
+  raceWeekendRecap,
+} from "./content/nextRaceContent";
 import { getDriverById } from "./content/drivers";
 
 
@@ -540,7 +544,121 @@ if (!hasResults) {
     </article>
   );
 }
+function RaceWeekendRecapCard() {
+  if (!raceWeekendRecap.enabled) return null;
 
+  return (
+    <article className="min-w-0 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+      <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
+        {raceWeekendRecap.title}
+      </h2>
+
+      <div className="mt-3 space-y-4">
+        {raceWeekendRecap.sections.map((section) => (
+          <div
+            key={section.heading}
+            className="rounded-2xl border border-white/10 bg-black/35 px-3 py-3"
+          >
+            <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+              {section.heading}
+            </h3>
+
+            <div className="mt-2 space-y-3">
+              {section.items.map((item, idx) => (
+                <div key={`${section.heading}-${idx}`} className="min-w-0">
+                  <p className="text-sm font-semibold leading-snug text-white">
+                    {item.title}
+                  </p>
+
+                  {item.summary ? (
+                    <p className="mt-1 text-xs leading-relaxed text-slate-200/85 sm:text-sm">
+                      {item.summary}
+                    </p>
+                  ) : null}
+
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-flex text-xs font-semibold text-cyan-200 hover:text-cyan-100 sm:text-sm"
+                    >
+                      Read full story →
+                    </a>
+                  ) : (
+                    <span className="mt-2 inline-flex text-xs text-white/45 sm:text-sm">
+                      Link coming soon
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </article>
+  );
+}
+function MobileSessionRecapCard({ session }) {
+  if (!raceWeekendRecap.enabled || !session) return null;
+
+  const normalize = (value = "") =>
+    String(value)
+      .toLowerCase()
+      .replace("results", "")
+      .replace("grand prix", "")
+      .trim();
+
+  const sessionName = normalize(session.label || session.type || "");
+
+  const recapSection = raceWeekendRecap.sections.find((section) => {
+    const heading = normalize(section.heading);
+    return heading === sessionName || sessionName.includes(heading) || heading.includes(sessionName);
+  });
+
+  if (!recapSection || !Array.isArray(recapSection.items) || recapSection.items.length === 0) {
+    return null;
+  }
+
+  return (
+    <article className="lg:hidden rounded-3xl border border-sky-500/25 bg-sky-950/35 px-4 py-3 shadow-[0_0_14px_rgba(14,165,233,0.16)]">
+      <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+        {recapSection.heading} Report
+      </h3>
+
+      <div className="mt-2 space-y-3">
+        {recapSection.items.map((item, idx) => (
+          <div key={`${recapSection.heading}-mobile-${idx}`}>
+            <p className="text-sm font-semibold leading-snug text-white">
+              {item.title}
+            </p>
+
+            {item.summary ? (
+              <p className="mt-1 text-xs leading-relaxed text-slate-200/85">
+                {item.summary}
+              </p>
+            ) : null}
+
+            {item.url ? (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 inline-flex text-xs font-semibold text-cyan-200 hover:text-cyan-100"
+              >
+                Read full story →
+              </a>
+            ) : (
+              <span className="mt-2 inline-flex text-xs text-white/45">
+                Link coming soon
+              </span>
+            )}
+          </div>
+        ))}
+      </div>
+    </article>
+  );
+}
 function RaceCard({ session }) {
   const hasResults = hasRaceResults(session);
 
@@ -678,11 +796,114 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
                     </div>
                   </div>
                 ))}
-              </div>
+                     </div>
             </div>
+
+            {/* Mobile-only Weather + Race Centre Tools */}
+            <article className="mt-4 flex min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur lg:hidden">
+              <div>
+                <h2 className="text-sm font-semibold text-sky-200">
+                  Weather Forecast
+                </h2>
+
+                <div className="mt-3 rounded-2xl border border-black/20 bg-gray-50 px-3 py-2 text-xs text-gray-900">
+                  {Array.isArray(nextRaceContent.weather) ? (
+                    <div className="weather-grid">
+                      {nextRaceContent.weather.map((day) => (
+                        <div className="weather-card" key={day.date}>
+                          <div className="weather-icon">{day.icon}</div>
+                          <div className="weather-info">
+                            <strong>
+                              {day.day} {day.date}
+                            </strong>
+                            <span>{day.temp}</span>
+                            <p>{day.summary}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p>{nextRaceContent.weather}</p>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <h2 className="text-sm font-semibold text-sky-200">
+                  Race Centre Information
+                </h2>
+
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  <a
+                    href="/img/tracks/shutterstockcanadiangp2.jpg"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+                    title="Open track map"
+                  >
+                    Track
+                  </a>
+
+                  <a
+                    href="/img/tracks/shutterstockcanadiantech.jpg"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+                    title="Open tech guide"
+                  >
+                    Tech Guide
+                  </a>
+
+                  <Link
+                    to="/previous-results"
+                    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+                  >
+                    Previous Results
+                  </Link>
+
+                  <Link
+                    to="/points"
+                    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+                  >
+                    Driver and Constructor Standings
+                  </Link>
+                </div>
+              </div>
+            </article>
+
+           <div className="mt-5 border-t-2 border-sky-500/50 pt-4">
+  <div className="mb-4 rounded-2xl border border-sky-500/30 bg-sky-950/70 px-4 py-3 shadow-[0_0_16px_rgba(14,165,233,0.20)]">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+      <h2 className="text-sm font-bold text-sky-100">
+        Session Results <span className="text-cyan-300">(Weekend Updates)</span>
+      </h2>
+
+      <span className="w-fit rounded-full border border-sky-300/25 bg-black/45 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-sky-100/80">
+        Updates as sessions finish
+      </span>
+    </div>
+  </div>
+
+  <div className="space-y-4">
+  {sessionResults.map((s) => (
+    <React.Fragment key={s.id || s.label}>
+      <SessionCard session={s} />
+      <MobileSessionRecapCard session={s} />
+    </React.Fragment>
+  ))}
+
+  {raceSession ? (
+    <React.Fragment key={raceSession.id || raceSession.label || "race"}>
+      <RaceCard session={raceSession} />
+      <MobileSessionRecapCard session={raceSession} />
+    </React.Fragment>
+  ) : null}
+</div>
+</div>
           </article>
 
-          <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur">
+          <div className="hidden min-w-0 space-y-4 lg:block">
+  <article className="flex min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur">
   <div>
     <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
       Weather Forecast
@@ -752,26 +973,15 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
       </Link>
     </div>
   </div>
-</article>
+  </article>
+
+  <div className="hidden lg:block">
+  <RaceWeekendRecapCard />
+</div>
+</div>
         </section>
 
-        {/* Results */}
-        {/* Results */}
-<section className="grid min-w-0 gap-4 lg:grid-cols-2 lg:gap-6">
-  {sessionResults.length > 0 ? (
-    <div className="order-1 min-w-0 space-y-6 lg:order-1">
-      {sessionResults.map((s) => (
-        <SessionCard key={s.id || s.label} session={s} />
-      ))}
-    </div>
-  ) : null}
 
-  {raceSession ? (
-    <div className="order-2 min-w-0 self-start lg:order-2 lg:sticky lg:top-4">
-      <RaceCard session={raceSession} />
-    </div>
-  ) : null}
-</section>
 
         <div className="mt-2">
           <AdBar />
