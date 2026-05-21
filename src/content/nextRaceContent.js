@@ -388,10 +388,10 @@ export const raceWeekendRecap = {
             heading: "Practice",
             items: [
               {
-                title: "Canadian GP practice report test",
+                title: "Practice report coming soon",
                 summary:
-                  "This is a test KC summary to confirm the practice report card displays correctly with a link.",
-                url: "https://www.formula1.com/",
+                  "The key practice storylines will be added here once practice is complete.",
+                url: "",
               },
             ],
           },
