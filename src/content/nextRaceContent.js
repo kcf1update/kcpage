@@ -350,14 +350,14 @@ const PASTE_P1 = `
 9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m15.698s
 10	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m15.863s
 11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m16.214s
-12	Isack Hajdar	FRA	Oracle Red Bull Racing	1m16.253s
+12	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.253s
 13	Esteban Ocon	FRA	TGR Haas F1 Team	1m16.497s
 14	Alex Albon	THA	Atlassian Williams F1 Team	1m16.642s
 15	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m16.660s
 16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m16.809s
 17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m16.978s
 18	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m17.431s
-19	Oliver Bearman	GBR	TGR Haas F1 Team	1m17.770s
+19	Ollie Bearman	GBR	TGR Haas F1 Team	1m17.770s
 20	Valtteri Bottas	FIN	Cadillac F1 Team	1m17.868s
 21	Sergio Perez	MEX	Cadillac F1 Team	1m17.926s
 22	Franco Colapinto	ARG	BWT Alpine F1 Team	No time set
