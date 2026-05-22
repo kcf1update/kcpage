@@ -33,7 +33,7 @@ export default function CountdownBar() {
     >
       <img src="/flags/us.png" alt="United States flag" className="h-4 w-auto" />
       <span>CANADIAN GRAND PRIX LIVE NOW</span>
-      <span className="text-cyan-300">Race Centre ↗</span>
+      
     </Link>
   );
 }

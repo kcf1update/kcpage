@@ -10,6 +10,12 @@ export default function SiteHeader() {
         
         {/* Car Banner */}
         <div className="relative w-[88%] max-w-6xl h-20 sm:h-24 md:h-28 overflow-hidden bg-white">
+          {/* Kyle Busch tribute badge */}
+  <img
+    src="/img/kyle-busch-18-tribute.png"
+    alt="Kyle Busch 18 tribute badge"
+    className="absolute left-2 top-2 z-20 w-12 sm:w-14 md:w-16 opacity-95 drop-shadow-[0_0_8px_rgba(0,0,0,0.7)]"
+  />
           <img
             src="/flags/ca.png"
             alt="Canada flag"

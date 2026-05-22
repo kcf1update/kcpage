@@ -339,6 +339,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m13.402s
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.554s
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m14.176s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m14.355s
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m14.366s
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m14.799s
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m14.963s
+8	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m15.452s
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m15.698s
+10	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m15.863s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m16.214s
+12	Isack Hajdar	FRA	Oracle Red Bull Racing	1m16.253s
+13	Esteban Ocon	FRA	TGR Haas F1 Team	1m16.497s
+14	Alex Albon	THA	Atlassian Williams F1 Team	1m16.642s
+15	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m16.660s
+16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m16.809s
+17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m16.978s
+18	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m17.431s
+19	Oliver Bearman	GBR	TGR Haas F1 Team	1m17.770s
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m17.868s
+21	Sergio Perez	MEX	Cadillac F1 Team	1m17.926s
+22	Franco Colapinto	ARG	BWT Alpine F1 Team	No time set
 
 
 `;
@@ -388,10 +410,10 @@ export const raceWeekendRecap = {
             heading: "Practice",
             items: [
               {
-                title: "Practice report coming soon",
+                title: "First practice report: Antonelli leads Mercedes 1-2 in red-flag interrupted session",
                 summary:
-                  "The key practice storylines will be added here once practice is complete.",
-                url: "",
+                  "Kimi Antonelli set the pace in the only Canadian Grand Prix practice session, leading a strong Mercedes one-two ahead of George Russell. The session was messy and heavily interrupted, with red flags for Liam Lawson, Alex Albon’s groundhog strike, and a late Esteban Ocon crash.",
+                url: "https://www.crash.net/f1/news/1095798/1/kimi-antonelli-tops-canada-f1-practice-after-alex-albon-strikes-groundhog",
               },
             ],
           },
@@ -513,7 +535,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "1:30 PM AST",
+          time: "Kimi fastest full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
