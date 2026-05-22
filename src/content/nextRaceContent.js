@@ -373,6 +373,106 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
+1	63	
+
+George Russell
+
+Mercedes	1:14.772	1:13.026	1:12.965	19
+2	12	
+
+Kimi Antonelli
+
+Mercedes	1:14.010	1:13.551	1:13.033	16
+3	1	
+
+Lando Norris
+
+McLaren	1:14.265	1:13.957	1:13.280	15
+4	81	
+
+Oscar Piastri
+
+McLaren	1:14.665	1:13.858	1:13.299	15
+5	44	
+
+Lewis Hamilton
+
+Ferrari	1:13.889	1:13.465	1:13.326	23
+6	16	
+
+Charles Leclerc
+
+Ferrari	1:15.006	1:13.554	1:13.410	19
+7	3	
+
+Max Verstappen
+
+Red Bull Racing	1:14.028	1:14.412	1:13.504	15
+8	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:14.541	1:14.239	1:13.605	17
+9	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:14.517	1:14.140	1:13.737	19
+10	55	
+
+Carlos Sainz
+
+Williams	1:15.500	1:14.547	1:14.536	24
+11	27	
+
+Nico Hulkenberg
+
+Audi	1:15.673	1:14.595		14
+12	5	
+
+Gabriel Bortoleto
+
+Audi	1:15.801	1:14.627		14
+13	43	
+
+Franco Colapinto
+
+Alpine	1:15.484	1:14.702		16
+14	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:15.760	1:14.928		17
+15	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:15.872	1:15.197		17
+16	14	
+
+Fernando Alonso
+
+Aston Martin	1:15.760			7
+17	11	
+
+Sergio Perez
+
+Cadillac	1:16.002			8
+18	18	
+
+Lance Stroll
+
+Aston Martin	1:16.354			9
+19	10	
+
+Pierre Gasly
+
+Alpine	1:16.642			8
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:16.866			8
 
 	
 `;
@@ -421,10 +521,10 @@ export const raceWeekendRecap = {
             heading: "Sprint Qualifying",
             items: [
               {
-                title: "Sprint qualifying report coming soon",
+                title: "Sprint qualifying report: Russell edges Antonelli for pole as Alonso crash causes red flag",
                 summary:
-                  "Sprint qualifying updates and grid-setting storylines will be added here after the session.",
-                url: "",
+                  "George Russell grabbed sprint pole in Canada, narrowly beating Mercedes teammate Kimi Antonelli to give the team a front-row lockout. McLaren stayed close behind with Lando Norris and Oscar Piastri, while Fernando Alonso’s crash brought out a red flag and Max Verstappen could only manage seventh.",
+                url: "https://www.planetf1.com/news/2026-canadian-grand-prix-sprint-qualifying-report",
               },
             ],
           },
@@ -535,7 +635,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Kimi fastest full results below",
+          time: "Kimi fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -544,7 +644,7 @@ export const nextRaceContent = {
           id: "sq",
           type: "sprint_shootout",
           label: "Sprint Qualifying",
-          time: "5:30 PM AST",
+          time: "George on pole for sprint, full results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_SQ),
