@@ -484,25 +484,25 @@ export const nextRaceContent = {
 
   weather: [
   {
-    day: "Friday",
-    date: "May 22",
-    icon: "🌧️",
-    temp: "12°C / 9°C",
-    summary: "Cool and unsettled with possible showers.",
-  },
+  day: "Friday",
+  date: "May 22",
+  icon: "☀️",
+  temp: "19°C / 8°C",
+  summary: "Sunny.",
+},
   {
     day: "Saturday",
     date: "May 23",
-    icon: "⛅",
-    temp: "18°C / 11°C",
-    summary: "Partly cloudy and a little milder.",
+    icon: "🌥️",
+    temp: "21°C / 11°C",
+    summary: "Partly cloudy and mild.",
   },
   {
     day: "Sunday",
     date: "May 24",
     icon: "🌦️",
-    temp: "19°C / 13°C",
-    summary: "Mild race day with cloud and a chance of light showers.",
+    temp: "12°C / 11°C",
+    summary: "Cool with a chance of light showers.",
   },
 ],
 

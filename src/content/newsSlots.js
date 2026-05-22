@@ -1,151 +1,193 @@
 const newsSlots = [
     
   {
-   slotId: 1,
-  sourceLabel: "Formula1.com",
+  slotId: 1,
+  sourceLabel: "Crash.net",
   title:
-    "What is the Wall of Champions – and which drivers have crashed there?",
+    "F1 Canadian Grand Prix at Montreal: Sprint qualifying start times and how to watch",
   summary:
-    "Formula1.com explains the story behind Montreal’s famous Wall of Champions, located at the exit of the final chicane. The nickname took hold after the 1999 Canadian Grand Prix weekend, when title-winning drivers including Damon Hill, Michael Schumacher and Jacques Villeneuve were all caught out at the same section of track.",
+    "Crash.net breaks down the full schedule and viewing details for the 2026 Canadian Grand Prix weekend in Montreal. This year’s event runs from May 22 to 24 and features a sprint format, with one practice session, sprint qualifying, the sprint race, qualifying and Sunday’s Grand Prix at Circuit Gilles Villeneuve.",
   kcsQuickShift:
-    "The Wall of Champions is part of what makes Montreal feel different. You can gain time there, but one small mistake can ruin the whole weekend.",
-  url: "https://www.formula1.com/en/latest/article/what-is-the-wall-of-champions-and-which-drivers-have-crashed-there.QcBubomZFL79vkmooy8n3",
-  imagePath: "/img/news/kcai/news-wallofchampions.jpg",
-  photoCredit: "KC AI Original illustration",
-  dateLabel: "May 21, 2026",
+    "This is a useful one for race weekend because Montreal has a sprint format this year, so fans need the session times right from the start.",
+  url:
+    "https://www.crash.net/f1/news/1095637/1/f1-canadian-grand-prix-montreal-start-times-and-how-watch",
+  imagePath:
+    "/img/news/kcai/news-montreal10.jpg",
+  photoCredit:
+    "KC AI Generated Image",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 2,
-  sourceLabel: "Formula1.com",
+  sourceLabel: "ESPN",
   title:
-    "NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Canadian Grand Prix",
+    "Kimi Antonelli cuts social media focus for F1 title ambitions",
   summary:
-    "Formula1.com’s Canadian Grand Prix preview rounds up the key details for Montreal, including the Sprint weekend schedule, track statistics, tyre choices and recent race history. The guide also highlights the stop-and-go nature of Circuit Gilles Villeneuve, the high Safety Car probability and the chance that cooler weather could influence tyre warm-up.",
+    "Kimi Antonelli is taking a more disciplined approach away from the track by cutting back on social media as he focuses on his Formula 1 title ambitions. The Mercedes rookie is trying to keep distractions down and stay locked in as the pressure around his breakthrough season continues to build.",
   kcsQuickShift:
-    "This is a strong weekend primer. Montreal usually brings braking, walls, weather and strategy into the same conversation.",
-  url: "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-canadian-grand-prix.5mxhs5HB0dFrvjaz7sbBGR",
-  imagePath: "/img/news/kcai/news-montrealnews.jpg",
-  photoCredit: "KC AI Original illustration",
-  dateLabel: "May 21, 2026",
+    "Smart move from Antonelli because when the title pressure starts building, blocking out the noise can be just as important as finding another tenth on track.",
+  url:
+    "https://www.espn.co.uk/f1/story/_/id/48842865/kimi-antonelli-cuts-social-media-focus-f1-title-ambitions",
+  imagePath:
+    "/img/news/xpb/news-kimimiami.jpg",
+  photoCredit:
+    "XPB IMAGES",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 3,
   sourceLabel: "Formula1.com",
   title:
-    "CIRCUIT GUIDE: Everything you need to know about the Circuit Gilles Villeneuve",
+    "'That's the question mark' – Antonelli questions how long winning form will last ahead of Canadian Grand Prix",
   summary:
-    "Formula1.com’s circuit guide looks at the history and driving challenge of Circuit Gilles Villeneuve. The Montreal track combines long full-throttle sections, tight chicanes, heavy braking zones and close walls, with the final chicane and Wall of Champions remaining one of the lap’s biggest risk points.",
+    "Kimi Antonelli heads into the Canadian Grand Prix leading the Drivers’ Championship after three straight pole positions and Grand Prix wins. The Mercedes driver says he feels more in control after learning from last season, but admits even he does not know how long this level of form can last.",
   kcsQuickShift:
-    "Montreal looks simple on a map, but it's not. Add some rain and the unpredictability of the new cars, and it could be a very tricky weekend.",
-  url: "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-gilles-villeneuve.5RUqO9YE80jmCiuODWNX9g",
-  imagePath: "/img/news/kcai/news-montreal10.jpg",
-  photoCredit: "KC AI Original illustration",
-  dateLabel: "May 21, 2026",
+    "Antonelli sounds confident, but not careless, and that is probably exactly what Mercedes wants from him with the title fight already getting serious.",
+  url:
+    "https://www.formula1.com/en/latest/article/thats-the-question-mark-antonelli-questions-how-long-winning-form-will-last-ahead-of-canadian-grand-prix.4pvcPK5cLxLLE96ak2MWIJ",
+  imagePath:
+    "/img/news/xpb/news-xpbkimimiami.jpg",
+  photoCredit:
+    "XPB IMAGES",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 4,
-  sourceLabel: "PlanetF1",
+  sourceLabel: "NASCAR.com",
   title:
-    "Williams under FIA scrutiny as Carlos Sainz FW48 clears extensive Miami checks",
+    "Kyle Busch, two-time NASCAR Cup Series champion, dies at age 41",
   summary:
-    "Carlos Sainz’s Williams passed a detailed FIA post-race inspection after the Miami Grand Prix. The FIA checked the FW48’s front wing adjuster system, sensors, wiring and related data, with all inspected parts found to comply with the 2026 technical regulations.",
+    "Kyle Busch, one of NASCAR’s most successful and recognizable drivers, has died at the age of 41 after reportedly being hospitalized with a severe illness. The two-time Cup Series champion won 63 races at NASCAR’s top level and leaves behind a major legacy across the Cup, Xfinity and Truck Series.",
   kcsQuickShift:
-    "This is the kind of technical check that sounds dramatic at first, but the result is simple. Williams was inspected closely and the car passed.",
-  url: "https://www.planetf1.com/williams/fia-confirms-findings-carlos-sainz-williams-inspection-miami-gp",
-  imagePath: "/img/news/shut/news-shutterstockalexcar.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 21, 2026",
+    "This is a devastating loss for motorsport because Kyle Busch was one of those rare drivers who could win, divide opinion and still pull everyone’s attention toward the race. It just a huge shock and loss for the entire racing community.",
+  url:
+    "https://www.nascar.com/news-media/2026/05/21/kyle-busch-two-time-nascar-cup-series-champion-dies-at-age-41/",
+  imagePath:
+    "/img/news/shut/news-shutkyle.jpg",
+  photoCredit:
+    "Shutterstock",
+  dateLabel:
+    "May 22, 2026"
 },
   
 {
   slotId: 5,
-  sourceLabel: "PlanetF1",
+  sourceLabel: "The Race",
   title:
-    "Max Verstappen future decided? David Coulthard makes ‘Red Bull for life’ claim",
+    "Seven things we need to know from F1’s Canadian GP",
   summary:
-    "David Coulthard believes Max Verstappen will stay with Red Bull for the rest of his Formula 1 career. Coulthard argues that Red Bull gives Verstappen the freedom to be himself, pointing to his Nürburgring 24 Hours appearance as an example of something rival F1 teams may not allow.",
+    "The Race looks at the biggest questions heading into the Canadian Grand Prix, including whether Mercedes can respond with its first real 2026 upgrade package, how McLaren’s updates compare, and whether the revised energy rules will hold up at a tougher circuit. The article also highlights Red Bull’s push toward Ferrari, Alpine’s midfield position, Audi’s reliability problems, Aston Martin’s driveability concerns and the unresolved 2027 engine debate.",
   kcsQuickShift:
-    "Coulthard may be right about the freedom part. Verstappen clearly values doing things his way, and Red Bull still gives him more room than most teams would.",
-  url: "https://www.planetf1.com/news/max-verstappen-future-red-bull-for-life-david-coulthard",
-  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 21, 2026",
+    "Canada should tell us a lot more than just who is quick in Montreal because upgrades, engine rules and the midfield picture are all coming under pressure at the same time.",
+  url:
+    "https://www.the-race.com/formula-1/seven-things-we-need-to-know-from-f1-canadian-gp/",
+  imagePath:
+    "/img/news/kcai/news-rainmontreal.jpg",
+  photoCredit:
+    "KC AI Generated Image",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 6,
-  sourceLabel: "Motorsport.com",
-  title: "Lewis Hamilton’s unusual preparation for F1’s Canadian GP",
+  sourceLabel: "The Race",
+  title:
+    "An F1 team boss's fury at 'absolute bulls***' driver exit rumours",
   summary:
-    "Lewis Hamilton is changing his preparation for the Canadian Grand Prix after another difficult Ferrari weekend in Miami. Hamilton suggested the simulator has not been helping him find the right direction with the SF-26, and he expects Montreal to be another demanding test because of Ferrari’s straight-line speed deficit.",
+    "Haas boss Ayao Komatsu strongly dismissed rumours of a breakdown between himself and Esteban Ocon, calling the claims completely unfounded. The speculation had suggested tension after Miami and even raised questions about Ocon’s future, but Komatsu said there was no argument and no crisis inside the team.",
   kcsQuickShift:
-    "Hamilton changing his preparation says a lot. Ferrari needs answers fast, because Montreal is not exactly the place to hide a straight line weakness.",
-  url: "https://www.motorsport.com/f1/news/lewis-hamiltons-unusual-preparation-for-f1s-canadian-gp/10822505/",
-  imagePath: "/img/news/xpb/news-xpblewis.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 21, 2026",
+    "Komatsu did not leave much room for interpretation here, and it sounds like Haas is tired of rumours turning into paddock noise before anyone checks the facts.",
+  url:
+    "https://www.the-race.com/formula-1/an-f1-team-boss-fury-at-absolute-bulls-driver-exit-rumours/",
+  imagePath:
+    "/img/news/xpb/news-xpbestoban.jpg",
+  photoCredit:
+    "XPB IMAGES",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
-   slotId: 7,
-  sourceLabel: "Crash.net",
+  slotId: 7,
+  sourceLabel: "FormulaPassion.it",
   title:
-    "'The future is bright' Lance Stroll issues defiant message despite Aston Martin struggles",
+    "Motori, si parla già di compromesso: aumento moderato del flusso carburante e GP più corti nel 2027. 60:40 dal 2028 EN: Engines, a compromise is already being discussed: moderate fuel-flow increase and shorter GPs in 2027. 60:40 from 2028",
   summary:
-    "Lance Stroll says he still believes strongly in Aston Martin’s long-term project despite the team’s difficult start to the 2026 season. Ahead of his home race in Canada, Stroll pointed to the team’s new facilities, technical tools and long-term potential while admitting the current run has been frustrating.",
+    "FormulaPassion riporta che la FIA starebbe valutando un compromesso sulle modifiche ai motori, dopo le perplessità di alcuni team e costruttori. L’idea sarebbe introdurre nel 2027 un aumento più moderato del flusso carburante, senza obbligare le squadre a costruire nuovi telai, e poi passare alla ripartizione 60:40 dal 2028. EN: FormulaPassion reports that the FIA is considering a compromise on engine changes after concerns from some teams and manufacturers. The plan would be a more moderate fuel-flow increase in 2027, avoiding the need for new chassis, before moving to a 60:40 power split from 2028.",
   kcsQuickShift:
-    "A home race is probably the right time for Stroll to steady the message. Aston Martin still has a lot to prove, but he is clearly not backing away from the project.",
-  url: "https://www.crash.net/f1/news/1095692/1/future-bright-lance-stroll-issues-defiant-message-despite-aston-martin-struggles",
-  imagePath: "/img/news/shut/news-shutterstocklance.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 20, 2026",
+    "This feels like F1 trying to fix the problem without blowing up everyone’s 2027 plans, but shorter races would be a hard sell for a lot of fans. IT: Sembra che la F1 stia cercando di risolvere il problema senza stravolgere i piani per il 2027, ma gare più corte sarebbero difficili da accettare per molti tifosi.",
+  url:
+    "https://www.formulapassion.it/f1/f1-news/motori-compromesso-flusso-carburante-gp-piu-corti-nel-2027-60-40-dal-2028",
+  imagePath:
+    "/img/news/kcai/new6040engine.jpg",
+  photoCredit:
+    "KC AI Generated Image",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 8,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "Motorsport.com",
   title:
-    'Jenson Button tells Kimi Antonelli how to become "unstoppable" in F1 title fight',
+    "What will F1’s switch to a 60-40 power split bring? Here’s the drivers’ verdict",
   summary:
-    "Jenson Button believes Kimi Antonelli could become even harder to beat if he cleans up his race starts. Antonelli has already built strong momentum in the 2026 title fight, but Button says the Mercedes driver is still losing ground too often when the lights go out.",
+    "Formula 1’s planned move from a 50-50 combustion and electric power split to a 60-40 balance has been broadly welcomed by several drivers. Lando Norris, Max Verstappen and Isack Hadjar all see it as a positive step, while Oscar Piastri warned it may still not fully solve the energy deployment concerns on long straights.",
   kcsQuickShift:
-    "That is the scary part for the rest of the field. Antonelli is already winning, and Button thinks there is still a clear weakness he can fix.",
-  url: "https://racingnews365.com/jenson-button-tells-kimi-antonelli-how-to-become-unstoppable-in-f1-title-fight",
-  imagePath: "/img/news/xpb/news-xpbkimi2.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 21, 2026",
+    "This sounds like progress, but Piastri is right that F1 still has to make sure the cars race properly on every straight, not just look better on paper.",
+  url:
+    "https://www.motorsport.com/f1/news/what-will-f1s-switch-to-a-60-40-power-split-bring-heres-the-drivers-verdict/10822866/",
+  imagePath:
+    "/img/news/kcai/news-engine60402.jpg",
+  photoCredit:
+    "KC AI Generated Image",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
- slotId: 9,
-  sourceLabel: "RacingNews365",
-  title: "Christian Horner in 'serious discussions' over possible F1 return",
+  slotId: 9,
+  sourceLabel: "RacingNews365.nl",
+  title:
+    "Verstappen reageert op interesse Russell in 24 uur Nürburgring EN: Verstappen responds to Russell’s interest in the 24 Hours of Nürburgring",
   summary:
-    "Christian Horner is reportedly exploring a possible route back into Formula 1, with RacingNews365 linking him to talks involving Chinese manufacturer BYD. The report says Horner is still keeping his options open, including interest in an Alpine stake, while any BYD entry would face a long and complicated process before reaching the grid.",
+    "George Russell heeft gezegd dat hij Max Verstappen volgde tijdens de 24 uur van de Nürburgring en dat hij in de toekomst graag eens met hem een team zou vormen. Verstappen vindt de belangstelling mooi, maar denkt dat Russell op dit moment vooral met zijn Formule 1-titelstrijd bezig is. EN: George Russell said he followed Max Verstappen during the 24 Hours of Nürburgring and would like to team up with him in the future. Verstappen appreciated the interest, but said Russell’s main focus right now is likely his Formula 1 title fight.",
   kcsQuickShift:
-    "This is one to watch carefully. Horner coming back would be a huge F1 story, but right now it is still talks and possibilities, not a done deal.",
-  url: "https://racingnews365.com/christian-horner-in-serious-discussions-over-possible-f1-return",
-  imagePath: "/img/news/xpb/news-xpbhandw.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 21, 2026",
+    "Russell and Verstappen together at the Nürburgring would be a huge story, but Max is right that Russell has bigger F1 business in front of him right now. NL: Russell en Verstappen samen op de Nürburgring zou een enorm verhaal zijn, maar Max heeft gelijk dat Russell nu belangrijkere F1-zaken aan zijn hoofd heeft.",
+  url:
+    "https://racingnews365.nl/verstappen-reageert-op-interesse-russell-in-24-uur-nurburgring",
+  imagePath:
+    "/img/news/kcai/news-GP3max2.jpg",
+  photoCredit:
+    "KC AI Generated Image",
+  dateLabel:
+    "May 22, 2026"
 },
 
 {
   slotId: 10,
-  sourceLabel: "FormulaPassion.it",
+  sourceLabel: "RacingNews365",
   title:
-    "Bearman vicino al recupero di 2 punti sulla Superlicenza FIA EN: Bearman close to recovering 2 points on his FIA Super Licence",
+    "Carlos Sainz issues plea to the FIA and F1 over major fear",
   summary:
-    "Oliver Bearman potrebbe ridurre il rischio di una squalifica se riuscirà a superare venerdì e sabato in Canada senza nuove penalità. FormulaPassion spiega che il pilota Haas passerebbe da 10 a 8 punti sulla Superlicenza FIA, allontanandosi dalla soglia dei 12 punti che porta al ban automatico per una gara. EN: Oliver Bearman could reduce his suspension risk if he gets through Friday and Saturday in Canada without new penalties. FormulaPassion explains that the Haas driver would drop from 10 to 8 FIA Super Licence penalty points, moving farther away from the 12-point threshold that triggers an automatic one-race ban.",
+    "Carlos Sainz has urged the FIA and Formula 1 to stand firm over the planned 2027 rule changes, with a key power unit proposal now facing political pushback. Sainz believes the sport is moving in a better direction by reducing dependence on electrical power, but he warned that manufacturer interests could still get in the way.",
   kcsQuickShift:
-    "Bearman just needs a clean start to the Canadian weekend and the pressure starts to ease. IT: Bearman deve solo iniziare pulito il weekend canadese e la pressione comincia a calare.",
-  url: "https://www.formulapassion.it/f1/f1-news/bearman-vicino-recupero-2-punti-sulla-superlicenza-fia",
-  imagePath: "/img/news/shut/news-shutterstockollie.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 21, 2026",
+    "Sainz is saying what a lot of drivers probably feel because better racing should come before politics between the manufacturers.",
+  url:
+    "https://racingnews365.com/carlos-sainz-issues-plea-to-the-fia-and-f1-over-major-fear",
+  imagePath:
+    "/img/news/xpb/news-xpbcarlos.jpg",
+  photoCredit:
+    "XPB IMAGES",
+  dateLabel:
+    "May 22, 2026"
 },
 ];
 
