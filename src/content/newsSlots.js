@@ -1,193 +1,147 @@
 const newsSlots = [
     
   {
-  slotId: 1,
-  sourceLabel: "Crash.net",
-  title:
-    "F1 Canadian Grand Prix at Montreal: Sprint qualifying start times and how to watch",
+  slotId: 11,
+  sourceLabel: "The Race",
+  title: "Canada F1 2026 sprint starting grid",
   summary:
-    "Crash.net breaks down the full schedule and viewing details for the 2026 Canadian Grand Prix weekend in Montreal. This year’s event runs from May 22 to 24 and features a sprint format, with one practice session, sprint qualifying, the sprint race, qualifying and Sunday’s Grand Prix at Circuit Gilles Villeneuve.",
+    "George Russell will start the Canadian Grand Prix sprint from pole, with Mercedes team-mate Kimi Antonelli beside him on the front row. Lando Norris and Oscar Piastri line up third and fourth for McLaren, while Alex Albon and Liam Lawson were cleared to start after missing sprint qualifying because of practice damage.",
   kcsQuickShift:
-    "This is a useful one for race weekend because Montreal has a sprint format this year, so fans need the session times right from the start.",
-  url:
-    "https://www.crash.net/f1/news/1095637/1/f1-canadian-grand-prix-montreal-start-times-and-how-watch",
-  imagePath:
-    "/img/news/kcai/news-montreal10.jpg",
-  photoCredit:
-    "KC AI Generated Image",
-  dateLabel:
-    "May 22, 2026"
+    "Mercedes has the front row, McLaren is right behind, and that first sprint lap in Montreal could get messy very quickly.",
+  url: "https://www.the-race.com/formula-1/canada-f1-2026-sprint-starting-grid/",
+  imagePath: "/img/news/shut/news-shutterstockmiamipit.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 23, 2026"
 },
-
 {
   slotId: 2,
-  sourceLabel: "ESPN",
+  sourceLabel: "Crash.net",
   title:
-    "Kimi Antonelli cuts social media focus for F1 title ambitions",
+    "Williams verdict after Alex Albon's 'freak accident' taints 2026 F1 first for Carlos Sainz",
   summary:
-    "Kimi Antonelli is taking a more disciplined approach away from the track by cutting back on social media as he focuses on his Formula 1 title ambitions. The Mercedes rookie is trying to keep distractions down and stay locked in as the pressure around his breakthrough season continues to build.",
+    "Williams had a mixed Canadian sprint qualifying day after Alex Albon’s practice crash left him unable to take part, with the team needing to change the power unit and gearbox. Carlos Sainz gave Williams a lift by reaching Q3 for the first time this season, with James Vowles pointing to recent weight, aero, suspension and power unit gains as signs the team is moving forward.",
   kcsQuickShift:
-    "Smart move from Antonelli because when the title pressure starts building, blocking out the noise can be just as important as finding another tenth on track.",
-  url:
-    "https://www.espn.co.uk/f1/story/_/id/48842865/kimi-antonelli-cuts-social-media-focus-f1-title-ambitions",
-  imagePath:
-    "/img/news/xpb/news-kimimiami.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 22, 2026"
+    "Williams finally got a proper step forward with Sainz, but Albon’s freak groundhog hit turned what should have been a clean team result into another hard-luck Montreal story.",
+  url: "https://www.crash.net/f1/news/1095879/1/williams-verdict-after-alex-albons-freak-accident-taints-2026-f1-first-carlos",
+  imagePath: "/img/news/shut/news-shutterstockalbon.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 23, 2026"
 },
 
 {
   slotId: 3,
-  sourceLabel: "Formula1.com",
+  sourceLabel: "PlanetF1",
   title:
-    "'That's the question mark' – Antonelli questions how long winning form will last ahead of Canadian Grand Prix",
+    "Leclerc delivers Ferrari reality check ahead of first ADUO of F1 2026",
   summary:
-    "Kimi Antonelli heads into the Canadian Grand Prix leading the Drivers’ Championship after three straight pole positions and Grand Prix wins. The Mercedes driver says he feels more in control after learning from last season, but admits even he does not know how long this level of form can last.",
+    "Charles Leclerc says Ferrari is unlikely to fully close the power unit gap to Mercedes even if it receives extra development help through F1’s ADUO system. The first ADUO assessment ends after the Canadian Grand Prix, with Ferrari hoping for relief but Leclerc warning that Mercedes still appears to have a clear advantage.",
   kcsQuickShift:
-    "Antonelli sounds confident, but not careless, and that is probably exactly what Mercedes wants from him with the title fight already getting serious.",
-  url:
-    "https://www.formula1.com/en/latest/article/thats-the-question-mark-antonelli-questions-how-long-winning-form-will-last-ahead-of-canadian-grand-prix.4pvcPK5cLxLLE96ak2MWIJ",
-  imagePath:
-    "/img/news/xpb/news-xpbkimimiami.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 22, 2026"
+    "ADUO may help Ferrari claw something back, but Leclerc sounds realistic that this is not going to magically erase Mercedes’ engine edge.",
+  url: "https://www.planetf1.com/news/charles-leclerc-delivers-ferrari-mercedes-reality-check-first-aduo-f1-2026",
+  imagePath: "/img/news/xpb/news-xpbcharles.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 23, 2026"
 },
-
 {
   slotId: 4,
-  sourceLabel: "NASCAR.com",
+  sourceLabel: "PlanetF1",
   title:
-    "Kyle Busch, two-time NASCAR Cup Series champion, dies at age 41",
+    "Ferrari launch edge under scrutiny as Oscar Piastri fires back",
   summary:
-    "Kyle Busch, one of NASCAR’s most successful and recognizable drivers, has died at the age of 41 after reportedly being hospitalized with a severe illness. The two-time Cup Series champion won 63 races at NASCAR’s top level and leaves behind a major legacy across the Cup, Xfinity and Truck Series.",
+    "Oscar Piastri has pushed back on the idea that McLaren should be worried about Ferrari’s launch strength in the Canadian Grand Prix sprint. Ferrari’s starts have been a talking point under the 2026 power unit rules, but Piastri said McLaren has been stronger off the line this season and is more focused on attacking the Mercedes cars ahead.",
   kcsQuickShift:
-    "This is a devastating loss for motorsport because Kyle Busch was one of those rare drivers who could win, divide opinion and still pull everyone’s attention toward the race. It just a huge shock and loss for the entire racing community.",
-  url:
-    "https://www.nascar.com/news-media/2026/05/21/kyle-busch-two-time-nascar-cup-series-champion-dies-at-age-41/",
-  imagePath:
-    "/img/news/shut/news-shutkyle.jpg",
-  photoCredit:
-    "Shutterstock",
-  dateLabel:
-    "May 22, 2026"
+    "Ferrari may still have a launch reputation, but Piastri clearly is not buying the idea that McLaren needs to spend the sprint looking backward.",
+  url: "https://www.planetf1.com/news/ferrari-launch-edge-under-scrutiny-oscar-piastri-fires-back",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 23, 2026"
 },
   
 {
   slotId: 5,
-  sourceLabel: "The Race",
+  sourceLabel: "Crash.net",
   title:
-    "Seven things we need to know from F1’s Canadian GP",
+    "Red Bull doubles down on surprise Gianpiero Lambiase McLaren claim",
   summary:
-    "The Race looks at the biggest questions heading into the Canadian Grand Prix, including whether Mercedes can respond with its first real 2026 upgrade package, how McLaren’s updates compare, and whether the revised energy rules will hold up at a tougher circuit. The article also highlights Red Bull’s push toward Ferrari, Alpine’s midfield position, Audi’s reliability problems, Aston Martin’s driveability concerns and the unresolved 2027 engine debate.",
+    "Red Bull boss Laurent Mekies has repeated his belief that Gianpiero Lambiase will eventually become McLaren team principal, despite McLaren saying he is joining as chief racing officer. Lambiase is set to leave Red Bull for McLaren by 2028, but the disagreement over his future role has kept the story alive through the Canadian Grand Prix weekend.",
   kcsQuickShift:
-    "Canada should tell us a lot more than just who is quick in Montreal because upgrades, engine rules and the midfield picture are all coming under pressure at the same time.",
-  url:
-    "https://www.the-race.com/formula-1/seven-things-we-need-to-know-from-f1-canadian-gp/",
-  imagePath:
-    "/img/news/kcai/news-rainmontreal.jpg",
-  photoCredit:
-    "KC AI Generated Image",
-  dateLabel:
-    "May 22, 2026"
+    "This one still feels messy, because McLaren says one thing and Red Bull keeps hinting at something bigger behind the scenes.",
+  url: "https://www.crash.net/f1/news/1095876/1/red-bull-doubles-down-surprise-gianpiero-lambiase-mclaren-claim",
+  imagePath: "/img/news/shut/news-miekes.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 23, 2026"
 },
 
 {
   slotId: 6,
-  sourceLabel: "The Race",
-  title:
-    "An F1 team boss's fury at 'absolute bulls***' driver exit rumours",
+  sourceLabel: "Motorsport.com",
+  title: "Why Aston Martin hasn’t updated its F1 car since March",
   summary:
-    "Haas boss Ayao Komatsu strongly dismissed rumours of a breakdown between himself and Esteban Ocon, calling the claims completely unfounded. The speculation had suggested tension after Miami and even raised questions about Ocon’s future, but Komatsu said there was no argument and no crisis inside the team.",
+    "Aston Martin has held back on major AMR26 upgrades because the team believes small gains would not be enough to change its current position. Fernando Alonso said the gap is so large that spending budget-cap resources on minor updates would not make sense, with bigger parts now expected around the summer.",
   kcsQuickShift:
-    "Komatsu did not leave much room for interpretation here, and it sounds like Haas is tired of rumours turning into paddock noise before anyone checks the facts.",
-  url:
-    "https://www.the-race.com/formula-1/an-f1-team-boss-fury-at-absolute-bulls-driver-exit-rumours/",
-  imagePath:
-    "/img/news/xpb/news-xpbestoban.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 22, 2026"
+    "Aston Martin looks like it is choosing patience over panic, but that is a tough sell when Alonso and Stroll are still stuck near the back.",
+  url: "https://www.motorsport.com/f1/news/why-aston-martin-hasnt-updated-its-f1-car-since-march/10823312/",
+  imagePath: "/img/news/xpb/news-xpbneweystroll.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 23, 2026"
 },
 
 {
-  slotId: 7,
-  sourceLabel: "FormulaPassion.it",
-  title:
-    "Motori, si parla già di compromesso: aumento moderato del flusso carburante e GP più corti nel 2027. 60:40 dal 2028 EN: Engines, a compromise is already being discussed: moderate fuel-flow increase and shorter GPs in 2027. 60:40 from 2028",
+   slotId: 7,
+  sourceLabel: "The Race",
+  title: "Gary Anderson on the front wing McLaren had to remove",
   summary:
-    "FormulaPassion riporta che la FIA starebbe valutando un compromesso sulle modifiche ai motori, dopo le perplessità di alcuni team e costruttori. L’idea sarebbe introdurre nel 2027 un aumento più moderato del flusso carburante, senza obbligare le squadre a costruire nuovi telai, e poi passare alla ripartizione 60:40 dal 2028. EN: FormulaPassion reports that the FIA is considering a compromise on engine changes after concerns from some teams and manufacturers. The plan would be a more moderate fuel-flow increase in 2027, avoiding the need for new chassis, before moving to a 60:40 power split from 2028.",
+    "Gary Anderson breaks down McLaren’s new Montreal front wing and why the team had to revert to the older version for sprint qualifying. The issue appears to be less about peak downforce and more about how consistently the airflow reattached under braking, especially with the added complexity of active aero.",
   kcsQuickShift:
-    "This feels like F1 trying to fix the problem without blowing up everyone’s 2027 plans, but shorter races would be a hard sell for a lot of fans. IT: Sembra che la F1 stia cercando di risolvere il problema senza stravolgere i piani per il 2027, ma gare più corte sarebbero difficili da accettare per molti tifosi.",
-  url:
-    "https://www.formulapassion.it/f1/f1-news/motori-compromesso-flusso-carburante-gp-piu-corti-nel-2027-60-40-dal-2028",
-  imagePath:
-    "/img/news/kcai/new6040engine.jpg",
-  photoCredit:
-    "KC AI Generated Image",
-  dateLabel:
-    "May 22, 2026"
+    "This is the kind of 2026 problem teams are still learning, because more downforce means nothing if the car loses balance when the driver needs it most.",
+  url: "https://www.the-race.com/formula-1/gary-anderson-on-the-front-wing-mclaren-had-to-remove/",
+  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 23, 2026"
 },
 
 {
   slotId: 8,
-  sourceLabel: "Motorsport.com",
+  sourceLabel: "RacingNews365 NL",
   title:
-    "What will F1’s switch to a 60-40 power split bring? Here’s the drivers’ verdict",
+    "Red Bull verwelkomt positief signaal Verstappen over F1-toekomst EN: Red Bull welcomes positive Verstappen signal over F1 future",
   summary:
-    "Formula 1’s planned move from a 50-50 combustion and electric power split to a 60-40 balance has been broadly welcomed by several drivers. Lando Norris, Max Verstappen and Isack Hadjar all see it as a positive step, while Oscar Piastri warned it may still not fully solve the energy deployment concerns on long straights.",
+    "Max Verstappen heeft in Canada aangegeven dat hij positiever is over de richting van de toekomstige F1-regels, vooral nu er grotere aanpassingen voor 2027 worden besproken. Laurent Mekies ziet dat als een belangrijk teken dat Verstappen nog altijd veel om de sport geeft en vooral wil dat F1 puur en aanvallend blijft. EN: Max Verstappen indicated in Canada that he is more positive about the direction of F1’s future rules, especially with larger 2027 changes now being discussed. Laurent Mekies sees that as an important sign that Verstappen still cares deeply about the sport and wants F1 to stay pure and attack-focused.",
   kcsQuickShift:
-    "This sounds like progress, but Piastri is right that F1 still has to make sure the cars race properly on every straight, not just look better on paper.",
-  url:
-    "https://www.motorsport.com/f1/news/what-will-f1s-switch-to-a-60-40-power-split-bring-heres-the-drivers-verdict/10822866/",
-  imagePath:
-    "/img/news/kcai/news-engine60402.jpg",
-  photoCredit:
-    "KC AI Generated Image",
-  dateLabel:
-    "May 22, 2026"
+    "Verstappen sounds a little less negative about F1’s future, and that matters because when Max pushes this hard, the sport usually has to listen. NL: Verstappen klinkt iets minder negatief over de toekomst van F1, en dat is belangrijk want als Max zo hard duwt, moet de sport meestal luisteren.",
+  url: "https://racingnews365.nl/red-bull-verwelkomt-positief-signaal-verstappen-over-f1-toekomst",
+  imagePath: "/img/news/shut/news-shutterstockmax.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 23, 2026"
 },
 
 {
-  slotId: 9,
-  sourceLabel: "RacingNews365.nl",
-  title:
-    "Verstappen reageert op interesse Russell in 24 uur Nürburgring EN: Verstappen responds to Russell’s interest in the 24 Hours of Nürburgring",
+   slotId: 9,
+  sourceLabel: "The Race",
+  title: "F1 teams ready to shorten races to get 2027 changes agreed",
   summary:
-    "George Russell heeft gezegd dat hij Max Verstappen volgde tijdens de 24 uur van de Nürburgring en dat hij in de toekomst graag eens met hem een team zou vormen. Verstappen vindt de belangstelling mooi, maar denkt dat Russell op dit moment vooral met zijn Formule 1-titelstrijd bezig is. EN: George Russell said he followed Max Verstappen during the 24 Hours of Nürburgring and would like to team up with him in the future. Verstappen appreciated the interest, but said Russell’s main focus right now is likely his Formula 1 title fight.",
+    "F1 teams have shown support for shortening selected races by one or two laps if needed to help push through 2027 power unit changes. The idea is tied to the proposed move away from the 50/50 combustion-electric split toward a 60/40 balance, which could require more fuel and create problems for teams carrying over chassis designs.",
   kcsQuickShift:
-    "Russell and Verstappen together at the Nürburgring would be a huge story, but Max is right that Russell has bigger F1 business in front of him right now. NL: Russell en Verstappen samen op de Nürburgring zou een enorm verhaal zijn, maar Max heeft gelijk dat Russell nu belangrijkere F1-zaken aan zijn hoofd heeft.",
-  url:
-    "https://racingnews365.nl/verstappen-reageert-op-interesse-russell-in-24-uur-nurburgring",
-  imagePath:
-    "/img/news/kcai/news-GP3max2.jpg",
-  photoCredit:
-    "KC AI Generated Image",
-  dateLabel:
-    "May 22, 2026"
+    "Shorter races would sound odd at first, but if it helps fix the 2027 power unit mess, F1 may see it as the cleaner compromise.",
+  url: "https://www.the-race.com/formula-1/f1-teams-ready-to-shorten-races-to-get-2027-changes-agreed/",
+  imagePath: "/img/news/xpb/news-xpbracejapan.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 23, 2026"
 },
 
 {
   slotId: 10,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "F1news.se",
   title:
-    "Carlos Sainz issues plea to the FIA and F1 over major fear",
+    "Sprintkvalet: Russell i topp – Lindblad stark nia! EN: Sprint qualifying: Russell on top as Lindblad impresses in ninth",
   summary:
-    "Carlos Sainz has urged the FIA and Formula 1 to stand firm over the planned 2027 rule changes, with a key power unit proposal now facing political pushback. Sainz believes the sport is moving in a better direction by reducing dependence on electrical power, but he warned that manufacturer interests could still get in the way.",
+    "George Russell tog pole position för sprinten i Kanada efter att ha slagit Mercedes-teamkamraten Kimi Antonelli med 0,068 sekunder i SQ3. Bakom Mercedes-duon följde Lando Norris och Oscar Piastri för McLaren, medan svenske rookien Arvid Lindblad imponerade med nionde plats för Racing Bulls. EN: George Russell took sprint pole in Canada after beating Mercedes team-mate Kimi Antonelli by 0.068 seconds in SQ3. Behind the Mercedes pair came McLaren’s Lando Norris and Oscar Piastri, while Swedish rookie Arvid Lindblad impressed by qualifying ninth for Racing Bulls.",
   kcsQuickShift:
-    "Sainz is saying what a lot of drivers probably feel because better racing should come before politics between the manufacturers.",
-  url:
-    "https://racingnews365.com/carlos-sainz-issues-plea-to-the-fia-and-f1-over-major-fear",
-  imagePath:
-    "/img/news/xpb/news-xpbcarlos.jpg",
-  photoCredit:
-    "XPB IMAGES",
-  dateLabel:
-    "May 22, 2026"
+    "Russell gave Mercedes the headline, but Lindblad sneaking into ninth as a rookie is the kind of drive people will notice. SV: Russell gav Mercedes rubriken, men Lindblad på nionde plats som rookie är en sådan insats som folk kommer att lägga märke till.",
+  url: "https://f1news.se/sprintkvalet-russel-i-topp-lindblad-stark-nia1",
+  imagePath: "/img/news/xpb/news-xpbkimimiami.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 23, 2026"
 },
 ];
 
