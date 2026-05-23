@@ -477,7 +477,28 @@ Cadillac	1:16.866			8
 	
 `;
 const PASTE_SPRINT = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	23
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	+1.272s
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+1.843s
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+9.797s
+5	Charles Leclerc	MON	Scuderia Ferrari HP	+9.929s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	+10.545s
+7	Max Verstappen	NED	Oracle Red Bull Racing	+15.935s
+8	Arvid Lindblad	GBR	Racing Bulls	+29.710s
+9	Franco Colapinto	ARG	BWT Alpine F1 Team	+31.621s
+10	Carlos Sainz	ESP	Atlassian Williams F1 Team	+36.793s
+11	Liam Lawson	NZD	Racing Bulls	+61.344s
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+61.814s
+13	Esteban Ocon	FRA	TGR Haas F1 Team	+64.209s
+14	Sergio Perez	MEX	Cadillac F1 Team	+70.402
+15	Nico Hulkenberg	GER	Audi Revolut F1 Team	+72.158s
+16	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+1 Lap
+17	Valtteri Bottas	FIN	Cadillac F1 Team	+1 Lap
+18	Ollie Bearman	GBR	TGR Haas F1 Team	+1 Lap
+19	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
+20	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+21	Isack Hadjar	FRA	Oracle Red Bull Racing	+3 Laps
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+5 Laps
 `;
 const PASTE_Q = `
 
@@ -532,10 +553,10 @@ export const raceWeekendRecap = {
             heading: "Sprint Race",
             items: [
               {
-                title: "Sprint race report coming soon",
+                title: "Russell Wins Canadian Sprint After Antonelli Clash Clears Steward Review",
                 summary:
-                  "Sprint race winner, points, incidents, and key takeaways will be added here after the sprint.",
-                url: "",
+                  "George Russell won the Canadian GP sprint after a tense early fight with Mercedes teammate Kimi Antonelli, who attacked around the outside at Turn 1 and then made another move into Turn 8 before running wide and losing ground. The stewards briefly checked the incidents but decided no formal investigation was needed, with Russell keeping the win while Antonelli was left frustrated by what he felt was hard defending.",
+                url: "https://www.the-race.com/formula-1/canadian-gp-f1-stewards-antonelli-russell-no-investigation/",
               },
             ],
           },
@@ -653,7 +674,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "1:00 PM AST",
+          time: "Russell Wins Canadian Sprint ",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
