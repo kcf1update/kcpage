@@ -609,11 +609,31 @@ function MobileSessionRecapCard({ session }) {
       .replace("grand prix", "")
       .trim();
 
-  const sessionName = normalize(session.label || session.type || "");
+  const getMobileRecapKey = (session) => {
+    const type = session.type || "";
+    const id = session.id || "";
+    const label = normalize(session.label || "");
+
+    if (type === "sprint_shootout") return "sprint qualifying";
+    if (type === "sprint_race") return "sprint race";
+    if (type === "qualifying") return "qualifying";
+    if (type === "race") return "race";
+
+    if (type === "practice") {
+      if (id === "p1") return "practice 1";
+      if (id === "p2") return "practice 2";
+      if (id === "p3") return "practice 3";
+      return label;
+    }
+
+    return label;
+  };
+
+  const sessionKey = getMobileRecapKey(session);
 
   const recapSection = raceWeekendRecap.sections.find((section) => {
     const heading = normalize(section.heading);
-    return heading === sessionName || sessionName.includes(heading) || heading.includes(sessionName);
+    return heading === sessionKey;
   });
 
   if (!recapSection || !Array.isArray(recapSection.items) || recapSection.items.length === 0) {
@@ -658,6 +678,7 @@ function MobileSessionRecapCard({ session }) {
       </div>
     </article>
   );
+
 }
 function RaceCard({ session }) {
   const hasResults = hasRaceResults(session);
