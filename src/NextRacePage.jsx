@@ -632,9 +632,30 @@ function MobileSessionRecapCard({ session }) {
   const sessionKey = getMobileRecapKey(session);
 
   const recapSection = raceWeekendRecap.sections.find((section) => {
-    const heading = normalize(section.heading);
-    return heading === sessionKey;
-  });
+  const heading = normalize(section.heading);
+
+  if (sessionKey === "race") {
+    return heading === "race";
+  }
+
+  if (sessionKey === "sprint race") {
+    return heading === "sprint race";
+  }
+
+  if (sessionKey === "sprint qualifying") {
+    return heading === "sprint qualifying";
+  }
+
+  if (sessionKey === "qualifying") {
+    return heading === "qualifying";
+  }
+
+  if (sessionKey.startsWith("practice")) {
+    return heading === sessionKey || heading === "practice";
+  }
+
+  return heading === sessionKey;
+});
 
   if (!recapSection || !Array.isArray(recapSection.items) || recapSection.items.length === 0) {
     return null;
