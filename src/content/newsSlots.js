@@ -1,16 +1,16 @@
 const newsSlots = [
     
   {
-  slotId: 11,
-  sourceLabel: "The Race",
-  title: "Canada F1 2026 sprint starting grid",
+  slotId: 1,
+  sourceLabel: "Crash.net",
+  title: "George Russell hails 'epic' F1 Canadian GP pole lap that 'came from nowhere'",
   summary:
-    "George Russell will start the Canadian Grand Prix sprint from pole, with Mercedes team-mate Kimi Antonelli beside him on the front row. Lando Norris and Oscar Piastri line up third and fourth for McLaren, while Alex Albon and Liam Lawson were cleared to start after missing sprint qualifying because of practice damage.",
+    "George Russell said his Canadian Grand Prix pole lap came almost out of nowhere after Mercedes struggled to find the right balance through qualifying. The team had made setup changes with possible race-day rain in mind, and Russell admitted the car felt out of sync before he pulled everything together on his final Q3 run.",
   kcsQuickShift:
-    "Mercedes has the front row, McLaren is right behind, and that first sprint lap in Montreal could get messy very quickly.",
-  url: "https://www.the-race.com/formula-1/canada-f1-2026-sprint-starting-grid/",
-  imagePath: "/img/news/shut/news-shutterstockmiamipit.jpg",
-  photoCredit: "Shutterstock",
+    "Russell looked like he was on the back foot, then found one big lap when it mattered most.",
+  url: "https://www.crash.net/f1/news/1096003/1/george-russell-hails-epic-f1-canadian-gp-pole-lap-came-nowhere",
+  imagePath: "/img/news/xpb/news-xpb3.jpg",
+  photoCredit: "XPB Images",
   dateLabel: "May 23, 2026"
 },
 {

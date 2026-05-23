@@ -501,6 +501,116 @@ const PASTE_SPRINT = `
 DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+5 Laps
 `;
 const PASTE_Q = `
+1	63	
+
+George Russell
+
+Mercedes	1:13.953	1:13.079	1:12.578	24
+2	12	
+
+Kimi Antonelli
+
+Mercedes	1:13.380	1:13.076	1:12.646	24
+3	1	
+
+Lando Norris
+
+McLaren	1:13.503	1:13.049	1:12.729	28
+4	81	
+
+Oscar Piastri
+
+McLaren	1:13.559	1:13.285	1:12.781	29
+5	44	
+
+Lewis Hamilton
+
+Ferrari	1:13.767	1:13.041	1:12.868	27
+6	3	
+
+Max Verstappen
+
+Red Bull Racing	1:14.067	1:13.479	1:12.907	23
+7	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:13.654	1:12.975	1:12.935	22
+8	16	
+
+Charles Leclerc
+
+Ferrari	1:13.825	1:13.496	1:12.976	29
+9	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:13.895	1:13.548	1:13.280	28
+10	43	
+
+Franco Colapinto
+
+Alpine	1:14.466	1:13.857	1:13.697	27
+11	27	
+
+Nico Hulkenberg
+
+Audi	1:14.562	1:13.886		21
+12	30	
+
+Liam Lawson
+
+Racing Bulls	1:14.346	1:13.897		22
+13	5	
+
+Gabriel Bortoleto
+
+Audi	1:14.775	1:14.071		22
+14	10	
+
+Pierre Gasly
+
+Alpine	1:14.698	1:14.187		20
+15	55	
+
+Carlos Sainz
+
+Williams	1:14.276	1:14.273		21
+16	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:14.449	1:14.416		22
+17	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:14.845			12
+18	23	
+
+Alex Albon
+
+Williams	1:14.851			13
+19	14	
+
+Fernando Alonso
+
+Aston Martin	1:15.196			11
+20	11	
+
+Sergio Perez
+
+Cadillac	1:15.429			11
+21	18	
+
+Lance Stroll
+
+Aston Martin	1:16.195			10
+22	77	
+
+Valtteri Bottas
+
+Cadillac	1:16.272			10
 
 `;
 
@@ -564,10 +674,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "Qualifying report coming soon",
+                title: "Mercedes Locks Out Canada Front Row as Hamilton Faces Stewards",
                 summary:
-                  "Grand Prix qualifying updates and race grid storylines will be added here after qualifying.",
-                url: "",
+                  "George Russell grabbed Canadian Grand Prix pole with a late Mercedes one-two over Kimi Antonelli, putting the team in control at the front after a tense day in Montreal. Behind them, Lewis Hamilton qualified fifth but could still face a grid penalty after being called to the stewards for allegedly impeding Pierre Gasly in Q1.",
+                url: "https://www.crash.net/f1/news/1096003/1/george-russell-hails-epic-f1-canadian-gp-pole-lap-came-nowhere",
               },
             ],
           },
