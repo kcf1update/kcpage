@@ -242,26 +242,40 @@ function parseRacePaste(text) {
 
   const getRacePoints = (pos) => pointsByPosition[pos] ?? 0;
 
-  const formatRaceStatus = (value) => {
+     const formatRaceStatus = (value, pos) => {
     const clean = String(value || "").trim();
 
     if (!clean) return "";
 
-    if (/^DNF$/i.test(clean)) {
-      return "DNF";
+    if (/^(DNF|DNS|DSQ)$/i.test(clean)) {
+      return clean.toUpperCase();
     }
 
-    if (/^\d+L$/i.test(clean)) {
-      const laps = clean.replace(/L/i, "");
-      return laps === "1" ? "1 lap down" : `${laps} laps down`;
-    }
-
-    if (/^\d+$/.test(clean)) {
+    // Winner total race laps, example: 68
+    if (Number(pos) === 1 && /^\d+$/.test(clean)) {
       return `${clean} laps`;
     }
 
-    if (/^\+?\d+\.\d+s$/i.test(clean)) {
-      return clean.startsWith("+") ? clean : `+${clean}`;
+    // Time gap, examples: +10.768, 10.768, +10.768s
+    if (/^\+?\d+\.\d+s?$/i.test(clean)) {
+      return clean.startsWith("+") ? clean.replace(/s$/i, "") : `+${clean.replace(/s$/i, "")}`;
+    }
+
+    // Lapped cars, examples: +1 lap, +2 laps, +1 Lap, +3 Laps
+    if (/^\+\d+\s+laps?$/i.test(clean)) {
+      const laps = clean.match(/\d+/)?.[0];
+      return `+${laps} ${Number(laps) === 1 ? "lap" : "laps"}`;
+    }
+
+    // Short lapped format, examples: 1L, 2L
+    if (/^\d+L$/i.test(clean)) {
+      const laps = Number(clean.replace(/L/i, ""));
+      return `+${laps} ${laps === 1 ? "lap" : "laps"}`;
+    }
+
+    // Fallback for total laps
+    if (/^\d+$/.test(clean)) {
+      return `${clean} laps`;
     }
 
     return clean;
@@ -291,7 +305,7 @@ function parseRacePaste(text) {
 
       base[manualId] = {
         pos,
-        status: isDNF ? "DNF" : formatRaceStatus(rawStatus),
+                status: isDNF ? rawPos : formatRaceStatus(rawStatus, pos),
         grid,
         points,
       };
@@ -299,33 +313,32 @@ function parseRacePaste(text) {
       continue;
     }
 
-    // Copied table format from Crash/F1
+       // Copied table format from Crash/F1
     const id = getDriverIdFromLine(line);
     if (!id || !base[id]) continue;
 
-    const posMatch = line.match(/^\s*(\d+|DNF)\b/i);
-    const rawPos = posMatch ? posMatch[1].toUpperCase() : "";
+    const rawPos = parts[0] ? parts[0].toUpperCase() : "";
 
-    let status = "";
+    const isDNF =
+      rawPos === "DNF" ||
+      rawPos === "DNS" ||
+      rawPos === "DSQ";
 
-    const statusMatch =
-      line.match(/\b\d+L\b/i) ||
-      line.match(/\b\d+\.\d+s\b/i) ||
-      line.match(/\bDNF\b/i) ||
-      line.match(/\bDNS\b/i) ||
-      line.match(/\bDSQ\b/i) ||
-      line.match(/\b\d+\b$/);
-
-    if (statusMatch) {
-      status = statusMatch[0];
-    }
-
-    const isDNF = rawPos === "DNF" || /^(DNF|DNS|DSQ)$/i.test(status);
     const pos = isDNF ? null : Number(rawPos);
+
+    let rawStatus = "";
+
+    if (isDNF) {
+      rawStatus = rawPos;
+    } else {
+      // Crash table is tab-based. The final column is the race status:
+      // 68, +10.768, +1 lap, +2 laps, etc.
+      rawStatus = parts[parts.length - 1] || "";
+    }
 
     base[id] = {
       pos,
-      status: isDNF ? "DNF" : formatRaceStatus(status),
+      status: formatRaceStatus(rawStatus, pos),
       grid: null,
       points: Number.isFinite(pos) ? getRacePoints(pos) : null,
     };
@@ -615,7 +628,28 @@ Cadillac	1:16.272			10
 `;
 
 const PASTE_RACE = `
- 
+ 1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	68
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	+10.768
+3	Max Verstappen	NED	Oracle Red Bull Racing	+11.276
+4	Charles Leclerc	MON	Scuderia Ferrari HP	+44.151
+5	Isack Hadjar	FRA	Oracle Red Bull Racing	+1 lap
+6	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 lap
+7	Liam Lawson	NZD	Racing Bulls	+1 lap
+8	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 lap
+9	Carlos Sainz	ESP	Atlassian Williams F1 Team	+1 lap
+10	Ollie Bearman	GBR	TGR Haas F1 Team	+1 lap
+11	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+2 laps
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	+2 laps
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+2 laps
+14	Esteban Ocon	FRA	TGR Haas F1 Team	+2 laps
+15	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+4 laps
+16	Valtteri Bottas	FIN	Cadillac F1 Team	+4 laps
+DNF	Sergio Perez	MEX	Cadillac F1 Team	 
+DNF	Lando Norris	GBR	McLaren Mastercard F1 Team	 
+DNF	George Russell	GBR	Mercedes AMG Petronas F1 Team	 
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	 
+DNF	Alex Albon	THA	Atlassian Williams F1 Team	 
+DNS	Arvid Lindblad	GBR	Racing Bulls
 `;
 
 // =====================================================
@@ -685,10 +719,10 @@ export const raceWeekendRecap = {
             heading: "Race",
             items: [
               {
-                title: "Race report coming soon",
+                title: "Antonelli wins again as Russell’s Canadian GP heartbreak changes everything",
                 summary:
-                  "Winner, podium, incidents, and championship impact will be added here after the race.",
-                url: "",
+                  "Kimi Antonelli took another major step in the 2026 title fight by winning the Canadian Grand Prix after George Russell retired from the lead with a power unit failure. Russell had looked set to challenge his Mercedes teammate head-on, but his lap 30 stoppage handed Antonelli control of the race and turned a potential team duel into a major championship swing.",
+                url: "https://www.motorsport.com/f1/news/f1-canadian-gp-kimi-antonelli-lands-f1-2026-blow-as-george-russell-retires-from-canada-gp/10823926/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
               },
             ],
           },
@@ -793,7 +827,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "George Russell on pole, full results below",
+          time: "George on pole, full results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -802,7 +836,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "5:00 PM AST",
+          time: "Kimi Antonelli wins Canadian GP, full results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

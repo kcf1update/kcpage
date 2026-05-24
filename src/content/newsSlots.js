@@ -2,32 +2,32 @@ const newsSlots = [
     
  {
   slotId: 1,
-  sourceLabel: "GPFans",
+  sourceLabel: "RacingNews365",
   title:
-    "F1 Race Today: Canadian Grand Prix 2026 new start time, schedule, TV channel and FREE live stream",
+    "George Russell shock retirement hands Kimi Antonelli record-breaking Canada win",
   summary:
-    "The 2026 Canadian Grand Prix starts today at 4:00 p.m. local Montreal time, two hours later than usual to avoid clashing with the Indy 500. GPFans also breaks down the main broadcast options by region, with Canadian viewers able to watch live on TSN, RDS, CTV, and Noovo.",
+    "Kimi Antonelli claimed a dramatic Canadian Grand Prix victory after George Russell retired from the lead with a power unit failure on lap 30. Mercedes had looked set for a tense team battle before Russell’s stoppage changed the race, while Lewis Hamilton and Max Verstappen completed the podium after McLaren’s strategy and reliability problems ruined its Sunday.",
   kcsQuickShift:
-    "The later start time gives Canada a bigger race-day window, and it should make the Grand Prix easier for more fans to follow live.",
+    "That one flipped fast. Russell looked like he had a real shot, then Antonelli took the win and the championship picture got a lot bigger.",
   url:
-    "https://www.gpfans.com/en/f1-news/1084389/f1-race-today-canadian-grand-prix-2026-start-time-schedule-tv-channel-free-live-stream/",
-  imagePath: "/img/news/kcai/canadianGP24.jpg",
-  photoCredit: "KC AI Generated Image",
+    "https://racingnews365.com/george-russell-shock-retirement-hands-kimi-antonelli-record-breaking-canada-win",
+  imagePath: "/img/news/xpb/news-kimimontreal.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "May 24, 2026"
 },
 {
   slotId: 2,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "FormulaPassion",
   title:
-    "2026 F1 Canadian Grand Prix - Sunday morning weather forecast",
+    "F1 GP Canada 2026, Gara: Antonelli vince facile dopo il ko di Russell, Hamilton batte Verstappen! – DIRETTA EN: 2026 F1 Canadian GP Race: Antonelli wins comfortably after Russell’s retirement, Hamilton beats Verstappen",
   summary:
-    "The Canadian Grand Prix is facing a wet and windy race day in Montreal, with RacingNews365 reporting a high chance of rain and possible strong gusts. Conditions may improve later in the day, but cool temperatures and a damp track could still make tyre warm-up and race strategy difficult.",
+    "Andrea Kimi Antonelli ha vinto il Gran Premio del Canada dopo il ritiro di George Russell, che si è fermato mentre era in lotta per la testa della gara. FormulaPassion racconta una gara movimentata a Montreal, con Antonelli davanti a Lewis Hamilton e Max Verstappen, mentre Leclerc ha chiuso quarto e Sainz è entrato in zona punti. EN: Andrea Kimi Antonelli won the Canadian Grand Prix after George Russell retired while fighting at the front of the race. FormulaPassion described a busy race in Montreal, with Antonelli finishing ahead of Lewis Hamilton and Max Verstappen, while Leclerc came home fourth and Sainz scored points.",
   kcsQuickShift:
-    "This could turn Canada into a proper survival race if the rain eases but the track stays cold and tricky.",
+    "Antonelli didn’t just inherit this one, he was already putting Russell under serious pressure before the race turned. IT: Antonelli non l’ha solo ereditata, stava già mettendo Russell sotto seria pressione prima che la gara cambiasse.",
   url:
-    "https://racingnews365.com/2026-f1-canadian-grand-prix-sunday-morning-weather-forecast",
-  imagePath: "/img/news/kcai/news-montrealwindy.jpg",
-  photoCredit: "KC AI Generated Image",
+    "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-canada-2026-montreal-gara-pioggia-russell-antonelli-ferrari-hamilton-norris-verstappen",
+  imagePath: "/img/news/xpb/news-kimigeorgemontreal.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "May 24, 2026"
 },
 {
