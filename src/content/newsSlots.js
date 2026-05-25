@@ -2,154 +2,139 @@ const newsSlots = [
     
  {
   slotId: 1,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "ESPN",
   title:
-    "George Russell shock retirement hands Kimi Antonelli record-breaking Canada win",
+    "Canadian Grand Prix: Lewis Hamilton, Max Verstappen battle for podium",
   summary:
-    "Kimi Antonelli claimed a dramatic Canadian Grand Prix victory after George Russell retired from the lead with a power unit failure on lap 30. Mercedes had looked set for a tense team battle before Russell’s stoppage changed the race, while Lewis Hamilton and Max Verstappen completed the podium after McLaren’s strategy and reliability problems ruined its Sunday.",
+    "Lewis Hamilton delivered his strongest Ferrari race so far in Canada, fighting back past Max Verstappen late on to finish second behind Kimi Antonelli. Verstappen still reached the podium in third, but Hamilton’s pass around Turn 1 gave Ferrari a much-needed breakthrough result after a difficult start to his time with the team.",
   kcsQuickShift:
-    "That one flipped fast. Russell looked like he had a real shot, then Antonelli took the win and the championship picture got a lot bigger.",
+    "Hamilton and Verstappen fighting for a podium again just felt right, and Ferrari badly needed that result.",
   url:
-    "https://racingnews365.com/george-russell-shock-retirement-hands-kimi-antonelli-record-breaking-canada-win",
-  imagePath: "/img/news/xpb/news-kimimontreal.jpg",
+    "https://www.espn.co.uk/f1/story/_/id/48870160/canadian-grand-prix-lewis-hamilton-max-verstappen-battle-podium",
+  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 2,
-  sourceLabel: "FormulaPassion",
+  sourceLabel: "ESPN",
   title:
-    "F1 GP Canada 2026, Gara: Antonelli vince facile dopo il ko di Russell, Hamilton batte Verstappen! – DIRETTA EN: 2026 F1 Canadian GP Race: Antonelli wins comfortably after Russell’s retirement, Hamilton beats Verstappen",
+    "Canadian Grand Prix: Lando Norris, Oscar Piastri question McLaren tyre strategy call",
   summary:
-    "Andrea Kimi Antonelli ha vinto il Gran Premio del Canada dopo il ritiro di George Russell, che si è fermato mentre era in lotta per la testa della gara. FormulaPassion racconta una gara movimentata a Montreal, con Antonelli davanti a Lewis Hamilton e Max Verstappen, mentre Leclerc ha chiuso quarto e Sainz è entrato in zona punti. EN: Andrea Kimi Antonelli won the Canadian Grand Prix after George Russell retired while fighting at the front of the race. FormulaPassion described a busy race in Montreal, with Antonelli finishing ahead of Lewis Hamilton and Max Verstappen, while Leclerc came home fourth and Sainz scored points.",
+    "McLaren’s Canadian Grand Prix unravelled early after Lando Norris and Oscar Piastri started on intermediate tyres while most of the field went slicks. The gamble needed more rain to work, but the track dried instead, forcing both drivers into early recovery mode and leaving McLaren with a costly missed opportunity from the second row.",
   kcsQuickShift:
-    "Antonelli didn’t just inherit this one, he was already putting Russell under serious pressure before the race turned. IT: Antonelli non l’ha solo ereditata, stava già mettendo Russell sotto seria pressione prima che la gara cambiasse.",
+    "McLaren took a gamble early, and Canada made them pay for it fast.",
   url:
-    "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-canada-2026-montreal-gara-pioggia-russell-antonelli-ferrari-hamilton-norris-verstappen",
-  imagePath: "/img/news/xpb/news-kimigeorgemontreal.jpg",
+    "https://www.espn.co.uk/f1/story/_/id/48870329/canadian-grand-prix-lando-norris-oscar-piastri-mclaren-tyre-strategy-call",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 3,
-  sourceLabel: "PlanetF1",
+  sourceLabel: "RacingNews365",
   title:
-    "Mercedes rules of engagement in spotlight after George Russell and Kimi Antonelli clash in Canada Sprint",
+    "George Russell issues apology after 'embarrassing' Canadian GP incident",
   summary:
-    "Mercedes’ Canadian Sprint tension has put the team’s rules of engagement back under the spotlight after George Russell and Kimi Antonelli went wheel-to-wheel for the lead. Toto Wolff said the moment gives Mercedes a chance to reset expectations internally, especially with both drivers now looking like serious title contenders.",
+    "George Russell apologised to the Canadian Grand Prix marshals and the FIA after throwing his headrest onto the circuit following his lap 30 retirement. The stewards investigated the incident and handed Russell a suspended €5,000 fine after his Mercedes power unit failure ended a fierce fight with Kimi Antonelli.",
   kcsQuickShift:
-    "Mercedes wanted two fast drivers, and now it has the good problem and the dangerous problem at the same time.",
+    "Russell was frustrated, but throwing the headrest onto the track was never going to end quietly.",
   url:
-    "https://www.planetf1.com/news/mercedes-rules-engagement-spotlight-georrge-russell-kimi-antonelli-clash-canada-sprint",
-  imagePath: "/img/news/shut/news-shutterstockrace.jpg",
+    "https://racingnews365.com/george-russell-issues-apology-after-embarrassing-canadian-gp-incident",
+  imagePath: "/img/news/xpb/news-georgemontreal.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 4,
-  sourceLabel: "M4 Sport",
+  sourceLabel: "FormulaPassion",
   title:
-    "Russell and Antonelli talked through their Sprint fight: We know what we have to do HU: Elbeszélgetett a sprintes csatáról Russell és Antonelli: „Tudjuk, mit kell tennünk”",
+    "Mercedes spaventa: “Penalizzati dal freddo, non si è visto il potenziale del pacchetto” EN: Mercedes sends a warning: “Held back by the cold, the package’s potential was not fully seen”",
   summary:
-    "George Russell and Andrea Kimi Antonelli have cleared the air with Toto Wolff after their tense Canadian GP Sprint battle, where the two Mercedes drivers nearly came together while fighting for position. Both drivers say they are still free to race each other, but the message is clear: race hard without putting the team at risk. HU: George Russell és Andrea Kimi Antonelli Toto Wolff-fal együtt tisztázták a helyzetet a feszült Kanadai Nagydíj sprintfutam után, ahol a két Mercedes-pilóta majdnem összeért a pozícióért folytatott csatában. Mindkét versenyző szerint továbbra is szabadon versenyezhetnek egymással, de az üzenet egyértelmű: keményen versenyezni anélkül, hogy veszélybe sodornák a csapatot.",
+    "FormulaPassion analizza il passo avanti della Mercedes dopo gli aggiornamenti portati in Canada, con Kimi Antonelli convinto che il freddo abbia persino nascosto parte del potenziale della W17. Il nuovo pacchetto ha aumentato carico e grip, ma il lavoro sul raffreddamento delle gomme ha reso più difficile portarle nella finestra giusta nelle basse temperature di Montréal. EN: FormulaPassion looks at Mercedes’ step forward after its Canadian Grand Prix upgrades, with Kimi Antonelli believing the cold may have hidden part of the W17’s true potential. The new package added downforce and grip, but the team’s tyre-cooling work made it harder to bring the rubber into the right window in Montréal’s low temperatures.",
   kcsQuickShift:
-    "Mercedes can say everything is settled, but if Russell and Antonelli are side by side again, this gets tense fast. HU: A Mercedes mondhatja, hogy minden rendeződött, de ha Russell és Antonelli újra egymás mellé kerül, ez gyorsan feszültté válik.",
+    "Mercedes already looked strong in Canada, and they think there is still more in the car. IT: La Mercedes è già sembrata forte in Canada, e pensa che ci sia ancora di più nella macchina.",
   url:
-    "https://m4sport.hu/forma-1/f1-hirek/cikk/2026/05/24/elbeszelgetett-a-sprintes-csatarol-russell-es-antonelli-tudjuk-mit-kell-tennunk",
-  imagePath: "/img/news/xpb/xpbimages1.jpg",
+    "https://www.formulapassion.it/f1/f1-news/mercedes-spaventa-penalizzati-freddo-non-si-e-visto-potenziale-pacchetto",
+  imagePath: "/img/news/xpb/news-kimimontreal.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 5,
-  sourceLabel: "M4 Sport",
+  sourceLabel: "Infobae",
   title:
-    "Lindblad: We have been competitive on every lap so far HU: Lindblad: Eddig minden körben versenyképesek voltunk",
+    "Las repercusiones en los medios del mundo tras la actuación de Franco Colapinto en el GP de Canadá de F1: “Implacable” EN: Global media reaction to Franco Colapinto’s Canadian GP performance: “Relentless”",
   summary:
-    "Arvid Lindblad continued his impressive Canadian Grand Prix weekend by reaching Q3 and taking ninth on the grid for Racing Bulls after already scoring points in the Sprint. The rookie said the team’s upgrades have helped him feel comfortable in the car, and he remains confident heading into the race even if rain arrives in Montreal. HU: Arvid Lindblad folytatta erős hétvégéjét a Kanadai Nagydíjon, miután a sprintfutamon szerzett pontok után az időmérőn is bejutott a Q3-ba, és a kilencedik rajthelyet szerezte meg a Racing Bulls csapatával. Az újonc szerint a csapat fejlesztései segítettek neki kényelmesen érezni magát az autóban, és magabiztosan várja a futamot akkor is, ha eső érkezik Montrealba.",
+    "Infobae repasa cómo varios medios internacionales destacaron el gran fin de semana de Franco Colapinto en Canadá, donde terminó sexto con Alpine y logró el mejor resultado de su carrera en Fórmula 1. El argentino superó problemas en la práctica, llegó a la Q3, sumó puntos importantes y volvió a reforzar su posición dentro del equipo tras otro resultado fuerte después de Miami. EN: Infobae rounds up how international media praised Franco Colapinto’s strong Canadian Grand Prix weekend, where he finished sixth for Alpine and earned the best result of his Formula 1 career. The Argentine overcame practice problems, reached Q3, scored valuable points and strengthened his place in the team with another strong result after Miami.",
   kcsQuickShift:
-    "Lindblad is starting to look like more than a promising rookie. He looks fast, calm, and ready to make life difficult for the midfield. HU: Lindblad már nem csak ígéretes újoncnak tűnik. Gyorsnak, nyugodtnak látszik, és készen áll arra, hogy megnehezítse a középmezőny dolgát.",
+    "Colapinto keeps turning pressure into points, and Argentina has a real F1 story to follow now. ES: Colapinto sigue convirtiendo la presión en puntos, y Argentina tiene ahora una verdadera historia de F1 para seguir.",
   url:
-    "https://m4sport.hu/forma-1/kanadai-nagydij/cikk/2026/05/24/lindblad-eddig-minden-korben-versenykepesek-voltunk",
-  imagePath: "/img/news/xpb/news-xpblindblad.jpg",
+    "https://www.infobae.com/deportes/2026/05/25/las-repercusiones-en-los-medios-del-mundo-tras-la-actuacion-de-franco-colapinto-en-el-gp-de-canada-de-f1-implacable/",
+  imagePath: "/img/news/xpb/XPB-colapinto.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 6,
-  sourceLabel: "The Race",
+  sourceLabel: "1News",
   title:
-    "Major McLaren and Mercedes performance difference explained",
+    "F1: Liam Lawson drives to seventh in Canada as Antonelli secures win",
   summary:
-    "The Canadian Grand Prix has exposed a key technical split between McLaren and Mercedes, with McLaren running shorter gear ratios that help acceleration but cost time on Montreal’s long straights. Andrea Stella says McLaren understands the trade-off, but the team is not planning to use its allowed 2026 gearbox ratio change because it still believes the overall balance works in its favour.",
+    "Liam Lawson matched his season-best result at the Canadian Grand Prix, climbing from 12th on the grid to finish seventh after a tough weekend affected by reliability problems. The Racing Bulls driver gained ground early, later held off Pierre Gasly, and kept the result after stewards took no further action over a yellow-flag investigation.",
   kcsQuickShift:
-    "This is the kind of small technical choice that can decide a weekend at Montreal.",
+    "Lawson had to dig himself out of a tough weekend, and seventh was a solid result.",
   url:
-    "https://www.the-race.com/formula-1/major-mclaren-and-mercedes-performance-difference-explained/",
-  imagePath: "/img/news/shut/news-shutterstocklando.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 24, 2026"
+    "https://www.1news.co.nz/2026/05/25/f1-liam-lawson-drives-to-seventh-in-canada-as-antonelli-secures-win/",
+  imagePath: "/img/news/xpb/news-xpblawson.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 7,
-  sourceLabel: "ESPN",
+  sourceLabel: "Crash.net",
   title:
-    "Lewis Hamilton: Ferrari have strongest chassis, but 'lacking' power holds car back",
+    "'Most difficult weekend of my F1 career' - Charles Leclerc's glum Canada GP verdict",
   summary:
-    "Lewis Hamilton says Ferrari may have the strongest chassis in F1, but its lack of straight-line power is stopping the team from fully challenging Mercedes and McLaren. With the FIA set to decide after the Canadian Grand Prix which engine manufacturers qualify for extra development help, Ferrari’s power deficit has become one of the biggest technical storylines of the weekend.",
+    "Charles Leclerc called his Canadian Grand Prix one of the most difficult weekends of his Formula 1 career after struggling to find confidence in the Ferrari throughout the event. While earlier issues centred around braking, Leclerc said tyre performance became the main problem in the race, leaving him well short of the feeling he needed around Montréal.",
   kcsQuickShift:
-    "Hamilton is basically saying Ferrari has built a strong car, but the engine is still holding it back.",
+    "Leclerc just never looked comfortable in Canada, and Hamilton’s podium made that stand out even more.",
   url:
-    "https://www.espn.co.uk/f1/story/_/id/48856110/canadian-grand-prix-ferrari-lewis-hamilton-ferrari-best-chassis-engine",
-  imagePath: "/img/news/ferrari/news-ferrari6.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 24, 2026"
+    "https://www.crash.net/f1/news/1096207/1/most-difficult-weekend-my-f1-career-charles-leclercs-glum-canada-gp-verdict",
+  imagePath: "/img/news/Ferrari/news-lewisandcharlesmontreal.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 8,
-  sourceLabel: "Crash.net",
+  sourceLabel: "Motorsport.com",
   title:
-    "Max Verstappen 'at the heart of the F1 project' - Red Bull dismisses exit fears",
+    "Isack Hadjar apologises to Charles Leclerc for “stupid” defence move in Canadian GP",
   summary:
-    "Red Bull team principal Laurent Mekies has played down fresh speculation over Max Verstappen’s future, insisting the four-time champion remains central to the team’s plans. Verstappen’s comments about his long-term F1 conditions and the public sight of Jos Verstappen speaking with Toto Wolff have kept the rumours alive, but Red Bull says its focus is on giving Max a more competitive car.",
+    "Isack Hadjar finished fifth in Canada, his best result with Red Bull so far, but his late defensive move on Charles Leclerc nearly turned into a major incident. The stewards gave Hadjar a 10-second penalty, though it did not change his final position, and he later apologised to Leclerc for what he called a stupid move.",
   kcsQuickShift:
-    "Red Bull can dismiss the rumours, but until the car is back where Max expects it to be, this story is not going away.",
+    "Hadjar still had a strong result, but that move on Leclerc was way too close.",
   url:
-    "https://www.crash.net/f1/news/1095881/1/max-verstappen-heart-f1-project-red-bull-dismiss-exit-fears",
-  imagePath: "/img/news/xpb/xpbverstappen.jpg",
+    "https://www.motorsport.com/f1/news/isack-hadjar-apologises-to-charles-leclerc-for-stupid-defence-move-in-canadian-gp/10824127/",
+  imagePath: "/img/news/xpb/news-xpbisack.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 24, 2026"
+  dateLabel: "May 25, 2026"
 },
 {
   slotId: 9,
-  sourceLabel: "RacingNews365 NL",
+  sourceLabel: "RacingNews365",
   title:
-    "F1 teams agree on new 2027 measure NL: F1-teams bereiken akkoord over nieuwe maatregel voor 2027",
+    "2026 F1 Canadian Grand Prix - Driver Ratings",
   summary:
-    "F1 teams have reportedly reached an agreement that could slightly shorten certain Grands Prix in 2027 if fuel and chassis packaging become a problem under the revised engine rules. Racing Bulls boss Alan Permane says some races could be cut by one or two laps only where necessary, while McLaren’s Andrea Stella and Red Bull’s Laurent Mekies both suggested the chassis side can handle the proposed changes. NL: F1-teams hebben naar verluidt een akkoord bereikt over een maatregel die sommige Grands Prix in 2027 iets korter kan maken als brandstof en chassisontwerp een probleem worden onder de aangepaste motorregels. Racing Bulls-teambaas Alan Permane zegt dat sommige races alleen waar nodig met één of twee ronden kunnen worden ingekort, terwijl Andrea Stella van McLaren en Laurent Mekies van Red Bull aangeven dat de chassiskant de voorgestelde wijzigingen aankan.",
+    "RacingNews365 handed George Russell its highest Canadian Grand Prix rating after his sprint pole, sprint win, grand prix pole and strong race pace before a power unit failure ended his Sunday. Lewis Hamilton and Franco Colapinto also scored highly, while Charles Leclerc, Aston Martin and Valtteri Bottas were placed among the weekend’s lower performers.",
   kcsQuickShift:
-    "This sounds small now, but fuel load and chassis packaging could become a real 2027 headache. NL: Dit klinkt nu klein, maar brandstof en chassisontwerp kunnen in 2027 een echt probleem worden.",
+    "Russell’s weekend was still strong, even if the ending was brutal.",
   url:
-    "https://racingnews365.nl/f1-teams-bereiken-akkoord-over-nieuwe-maatregel-voor-2027",
-  imagePath: "/img/news/shut/news-shutterstockmiamipit.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 24, 2026"
-},
-{
-  slotId: 10,
-  sourceLabel: "FormulaPassion",
-  title:
-    "Vasseur: Mercedes driver management is a rich person's problem IT: Vasseur: “La gestione tra Antonelli e Russell? Roba da ricchi”",
-  summary:
-    "Ferrari team principal Fred Vasseur joked that Mercedes has a “rich person’s problem” as it manages the internal fight between George Russell and Andrea Kimi Antonelli after their Canadian GP Sprint battle. Vasseur said it is difficult when both drivers are competitive, but added that those rivalries can also drive performance when handled properly. IT: Il team principal Ferrari Fred Vasseur ha scherzato dicendo che la Mercedes ha un “problema da ricchi” nella gestione del duello interno tra George Russell e Andrea Kimi Antonelli dopo la loro battaglia nella Sprint del GP del Canada. Vasseur ha detto che la situazione è complicata quando entrambi i piloti sono competitivi, ma ha aggiunto che queste rivalità possono anche spingere le prestazioni se vengono gestite bene.",
-  kcsQuickShift:
-    "Vasseur is not wrong. Mercedes has the kind of driver headache most teams would love to have. IT: Vasseur non ha tutti i torti. La Mercedes ha quel tipo di problema tra piloti che molte squadre vorrebbero avere.",
-  url:
-    "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/vasseur-la-gestione-tra-antonelli-e-russell-roba-da-ricchi",
-  imagePath: "/img/news/ferrari/news-ferrarilc.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "May 24, 2026"
-},
+    "https://racingnews365.com/2026-f1-canadian-grand-prix-driver-ratings",
+  imagePath: "/img/news/xpb/news-xpbgeorge.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 25, 2026"
+}
 ];
 
 export { newsSlots };

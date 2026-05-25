@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React To Qualifying | 2026 Canadian Grand Prix",
-  youtubeInput: "https://youtu.be/88gDTJs1j94",
+  title: "Drivers React After To The Race | 2026 Canadian Grand Prix",
+  youtubeInput: "https://youtu.be/SW_ROPQPxMw",
   forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "2026 F1 Canadian GP qualifying analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/ycfxwLap4bA",
+    title: "2026 F1 Canadian GP race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/iSy95EdffK4",
     
   },
 
   {
     slotId: "slot3",
-    title: "F1’s 2027 rule changes AT RISK?! 😱",
-    youtubeInput: "https://www.youtube.com/shorts/03IwZ04A48M?feature=share",
+    title: "Why the CANADIAN GP was a HUGE WIN for F1!",
+    youtubeInput: "https://youtu.be/i13Lu6wlxEQ",
     
   }
 ];
