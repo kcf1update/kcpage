@@ -16,8 +16,8 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 const raceWeekendPromo = {
   enabled: true,
-  label: "Canadian GP Weekend",
-  title: "Follow the full race weekend in the KC F1 Race Centre",
+  label: "Canadian GP Recap",
+  title: "Full Canadian GP race results in the KC F1 Race Centre",
   body:
     "Session times, results, weather, qualifying, race updates, and the key stories from Circuit Gilles-Villeneuve, all summarized for a quick read.",
   buttonText: "Go to Race Centre →",
@@ -34,7 +34,7 @@ function GlassyCard({
 }) {
   const highlightRing = {
     blue: "shadow-[0_0_25px_rgba(56,189,248,0.7)] border-cyan-400/40",
-    red: "shadow-[0_0_25px_rgba(248,113,113,0.7)] border-red-400/40",
+    red: "shadow-[0_0_25px_rgba(248,113,13,0.7)] border-red-400/40",
     yellow: "shadow-[0_0_25px_rgba(250,204,21,0.8)] border-yellow-400/40",
     none: "shadow-[0_0_20px_rgba(0,0,0,0.7)] border-white/10",
   };
