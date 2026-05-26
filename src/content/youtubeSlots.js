@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "2026 F1 Canadian GP race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/iSy95EdffK4",
+    title: "Everything we learned from F1’s 2026 Canadian Grand Prix",
+    youtubeInput: "https://youtu.be/Tuf7qteyGnc",
     
   },
 
   {
     slotId: "slot3",
-    title: "Why the CANADIAN GP was a HUGE WIN for F1!",
-    youtubeInput: "https://youtu.be/i13Lu6wlxEQ",
+    title: "Teds Race Notebook - Canadian Grand Prix 2026 - Sky Sports F1",
+    youtubeInput: "https://youtu.be/xIn7c9Qqhts",
     
   }
 ];

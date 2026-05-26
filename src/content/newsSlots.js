@@ -2,139 +2,141 @@ const newsSlots = [
     
  {
   slotId: 1,
-  sourceLabel: "ESPN",
-  title:
-    "Canadian Grand Prix: Lewis Hamilton, Max Verstappen battle for podium",
+  sourceLabel: "The Race",
+  title: "Why Audi is now key to Verstappen’s F1 future",
   summary:
-    "Lewis Hamilton delivered his strongest Ferrari race so far in Canada, fighting back past Max Verstappen late on to finish second behind Kimi Antonelli. Verstappen still reached the podium in third, but Hamilton’s pass around Turn 1 gave Ferrari a much-needed breakthrough result after a difficult start to his time with the team.",
+    "Audi has suddenly become a major player in the debate over F1’s future engine direction, with Max Verstappen’s frustration over the current rules adding real pressure to the discussion. The issue is no longer just about technical balance, it is also about whether F1 can keep its biggest stars happy with the racing product.",
   kcsQuickShift:
-    "Hamilton and Verstappen fighting for a podium again just felt right, and Ferrari badly needed that result.",
-  url:
-    "https://www.espn.co.uk/f1/story/_/id/48870160/canadian-grand-prix-lewis-hamilton-max-verstappen-battle-podium",
-  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+    "Verstappen’s future may come down to politics as much as performance, and Audi now looks like one of the biggest pressure points in the whole rules fight.",
+  url: "https://www.the-race.com/formula-1/why-audi-is-now-key-to-max-verstappen-f1-future/",
+  imagePath: "/img/news/shut/news-audibinitto.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 2,
-  sourceLabel: "ESPN",
+  sourceLabel: "Formula 1",
   title:
-    "Canadian Grand Prix: Lando Norris, Oscar Piastri question McLaren tyre strategy call",
+    "‘It’s only the beginning’ – Mekies insists Red Bull will take more risks after their return to the podium in Canada",
   summary:
-    "McLaren’s Canadian Grand Prix unravelled early after Lando Norris and Oscar Piastri started on intermediate tyres while most of the field went slicks. The gamble needed more rain to work, but the track dried instead, forcing both drivers into early recovery mode and leaving McLaren with a costly missed opportunity from the second row.",
+    "Laurent Mekies says Red Bull’s Canada podium was only a starting point, with the team prepared to keep taking setup risks as they try to unlock more from the car. Verstappen’s result was positive, but the message from Red Bull is clear: they still know there is more performance to find.",
   kcsQuickShift:
-    "McLaren took a gamble early, and Canada made them pay for it fast.",
-  url:
-    "https://www.espn.co.uk/f1/story/_/id/48870329/canadian-grand-prix-lando-norris-oscar-piastri-mclaren-tyre-strategy-call",
-  imagePath: "/img/news/xpb/news-xpboscar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+    "Red Bull finally looked alive again in Canada, but Mekies knows they may have to keep gambling with setup if they want to properly close the gap.",
+  url: "https://www.formula1.com/en/latest/article/its-only-the-beginning-mekies-insists-red-bull-will-take-more-risks-after-their-return-to-the-podium-in-canada.19EUr2gQA8uScvk3Ee6DbV",
+  imagePath: "/img/news/shut/news-miekes.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 3,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "Motorsport.com",
   title:
-    "George Russell issues apology after 'embarrassing' Canadian GP incident",
+    "‘Not sure we had that pace’ – Were Lewis Hamilton and Max Verstappen out of reach for McLaren?",
   summary:
-    "George Russell apologised to the Canadian Grand Prix marshals and the FIA after throwing his headrest onto the circuit following his lap 30 retirement. The stewards investigated the incident and handed Russell a suspended €5,000 fine after his Mercedes power unit failure ended a fierce fight with Kimi Antonelli.",
+    "McLaren’s Canada race was hurt by strategy calls, race incidents, and colder conditions that exposed weakness in front-tyre temperature. Andrea Stella’s bigger concern was that even without the messy execution, Hamilton and Verstappen may still have been out of reach on raw race pace.",
   kcsQuickShift:
-    "Russell was frustrated, but throwing the headrest onto the track was never going to end quietly.",
-  url:
-    "https://racingnews365.com/george-russell-issues-apology-after-embarrassing-canadian-gp-incident",
-  imagePath: "/img/news/xpb/news-georgemontreal.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+    "McLaren had a messy Canada race, but Stella’s bigger point is the worrying one: even without the mistakes, the pace may not have been there.",
+  url: "https://www.motorsport.com/f1/news/not-sure-we-had-that-pace-were-lewis-hamilton-and-max-verstappen-out-of-reach-for-mclaren/10824326/",
+  imagePath: "/img/news/shut/news-shutterstockmclarenpit.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 4,
-  sourceLabel: "FormulaPassion",
+  sourceLabel: "Formula 1",
   title:
-    "Mercedes spaventa: “Penalizzati dal freddo, non si è visto il potenziale del pacchetto” EN: Mercedes sends a warning: “Held back by the cold, the package’s potential was not fully seen”",
+    "Vasseur praises ‘strong weekend’ for Ferrari despite difficult race for Leclerc",
   summary:
-    "FormulaPassion analizza il passo avanti della Mercedes dopo gli aggiornamenti portati in Canada, con Kimi Antonelli convinto che il freddo abbia persino nascosto parte del potenziale della W17. Il nuovo pacchetto ha aumentato carico e grip, ma il lavoro sul raffreddamento delle gomme ha reso più difficile portarle nella finestra giusta nelle basse temperature di Montréal. EN: FormulaPassion looks at Mercedes’ step forward after its Canadian Grand Prix upgrades, with Kimi Antonelli believing the cold may have hidden part of the W17’s true potential. The new package added downforce and grip, but the team’s tyre-cooling work made it harder to bring the rubber into the right window in Montréal’s low temperatures.",
+    "Fred Vasseur took a positive view of Ferrari’s Canadian Grand Prix weekend, even though Charles Leclerc’s race did not deliver the result he wanted. Ferrari showed encouraging pace, but the split between Hamilton’s stronger performance and Leclerc’s tougher weekend shows there is still work to do across both sides of the garage.",
   kcsQuickShift:
-    "Mercedes already looked strong in Canada, and they think there is still more in the car. IT: La Mercedes è già sembrata forte in Canada, e pensa che ci sia ancora di più nella macchina.",
-  url:
-    "https://www.formulapassion.it/f1/f1-news/mercedes-spaventa-penalizzati-freddo-non-si-e-visto-potenziale-pacchetto",
-  imagePath: "/img/news/xpb/news-kimimontreal.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+    "Ferrari had enough pace in Canada to take positives, but Leclerc’s tough weekend shows they still need to make the car easier to trust across both sides of the garage.",
+  url: "https://www.formula1.com/en/latest/article/vasseur-praises-strong-weekend-for-ferrari-despite-difficult-race-for-leclerc.6mBLVynRYKTpSC6pfM2X9z",
+  imagePath: "/img/news/shut/news-fredferrari.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 5,
-  sourceLabel: "Infobae",
-  title:
-    "Las repercusiones en los medios del mundo tras la actuación de Franco Colapinto en el GP de Canadá de F1: “Implacable” EN: Global media reaction to Franco Colapinto’s Canadian GP performance: “Relentless”",
+  sourceLabel: "Motorsport.com",
+  title: "Alpine continues quest to fix Pierre Gasly’s mystifying car issues",
   summary:
-    "Infobae repasa cómo varios medios internacionales destacaron el gran fin de semana de Franco Colapinto en Canadá, donde terminó sexto con Alpine y logró el mejor resultado de su carrera en Fórmula 1. El argentino superó problemas en la práctica, llegó a la Q3, sumó puntos importantes y volvió a reforzar su posición dentro del equipo tras otro resultado fuerte después de Miami. EN: Infobae rounds up how international media praised Franco Colapinto’s strong Canadian Grand Prix weekend, where he finished sixth for Alpine and earned the best result of his Formula 1 career. The Argentine overcame practice problems, reached Q3, scored valuable points and strengthened his place in the team with another strong result after Miami.",
+    "Pierre Gasly’s eighth-place finish in Canada looked solid on paper, but Alpine is still trying to understand why the car has not given him the same confidence since recent upgrades. The concern is especially around one-lap pace and how the car behaves when Gasly needs to fully trust it.",
   kcsQuickShift:
-    "Colapinto keeps turning pressure into points, and Argentina has a real F1 story to follow now. ES: Colapinto sigue convirtiendo la presión en puntos, y Argentina tiene ahora una verdadera historia de F1 para seguir.",
-  url:
-    "https://www.infobae.com/deportes/2026/05/25/las-repercusiones-en-los-medios-del-mundo-tras-la-actuacion-de-franco-colapinto-en-el-gp-de-canada-de-f1-implacable/",
-  imagePath: "/img/news/xpb/XPB-colapinto.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+    "Gasly’s eighth place looked solid, but Alpine still has a real mystery to solve because the car clearly is not giving him the same trust over one lap.",
+  url: "https://www.motorsport.com/f1/news/alpine-continues-quest-to-fix-pierre-gaslys-mystifying-car-issues/10824331/",
+  imagePath: "/img/news/Alpine/news-gaslyag.jpg",
+  photoCredit: "Courtesy of Alpine F1",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 6,
-  sourceLabel: "1News",
-  title:
-    "F1: Liam Lawson drives to seventh in Canada as Antonelli secures win",
+  sourceLabel: "Crash.net",
+  title: "Sergio Perez explains bizarre Cadillac F1 failure in Canadian GP",
   summary:
-    "Liam Lawson matched his season-best result at the Canadian Grand Prix, climbing from 12th on the grid to finish seventh after a tough weekend affected by reliability problems. The Racing Bulls driver gained ground early, later held off Pierre Gasly, and kept the result after stewards took no further action over a yellow-flag investigation.",
+    "Sergio Perez’s Canadian Grand Prix ended with another frustrating Cadillac setback after a strange mechanical problem took him out of the race. For a new F1 project still trying to build rhythm, Canada was a reminder that reliability and confidence matter just as much as outright pace.",
   kcsQuickShift:
-    "Lawson had to dig himself out of a tough weekend, and seventh was a solid result.",
-  url:
-    "https://www.1news.co.nz/2026/05/25/f1-liam-lawson-drives-to-seventh-in-canada-as-antonelli-secures-win/",
-  imagePath: "/img/news/xpb/news-xpblawson.jpg",
+    "Cadillac is still learning the hard way, and Perez’s Canada issue shows how quickly a small problem can turn into a messy race weekend.",
+  url: "https://www.crash.net/f1/news/1096238/1/sergio-perez-explains-bizarre-cadillac-f1-failure-canadian-gp",
+  imagePath: "/img/news/xpb/news-xpbperez.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 7,
-  sourceLabel: "Crash.net",
+  sourceLabel: "RacingNews365 NL",
   title:
-    "'Most difficult weekend of my F1 career' - Charles Leclerc's glum Canada GP verdict",
+    "NL: McLaren knabbelt aan voorsprong Mercedes met nieuw updatepakket EN: McLaren chips away at Mercedes’ advantage with new update package",
   summary:
-    "Charles Leclerc called his Canadian Grand Prix one of the most difficult weekends of his Formula 1 career after struggling to find confidence in the Ferrari throughout the event. While earlier issues centred around braking, Leclerc said tyre performance became the main problem in the race, leaving him well short of the feeling he needed around Montréal.",
+    "NL: McLaren bracht in Canada opnieuw zichtbare updates mee in de jacht op Mercedes, met aanpassingen die vooral bedoeld lijken om de aerodynamische efficiëntie en balans van de auto verder te verbeteren. Toch blijft de vraag of het pakket genoeg is om Mercedes over een volledig raceweekend echt onder druk te zetten. EN: McLaren brought more visible updates to Canada in its chase of Mercedes, with changes aimed at improving aerodynamic efficiency and overall balance. The bigger question is whether the package is enough to seriously pressure Mercedes across a full race weekend.",
   kcsQuickShift:
-    "Leclerc just never looked comfortable in Canada, and Hamilton’s podium made that stand out even more.",
-  url:
-    "https://www.crash.net/f1/news/1096207/1/most-difficult-weekend-my-f1-career-charles-leclercs-glum-canada-gp-verdict",
-  imagePath: "/img/news/Ferrari/news-lewisandcharlesmontreal.jpg",
-  photoCredit: "XPB Images",
-  dateLabel: "May 25, 2026"
+    "McLaren is getting closer on the aero side, but Mercedes still looks like it has the cleaner overall package right now. NL: McLaren komt dichterbij aan de aerokant, maar Mercedes lijkt voorlopig nog steeds het completere pakket te hebben.",
+  url: "https://racingnews365.nl/mclaren-knabbelt-aan-voorsprong-mercedes-met-nieuw-updatepakket",
+  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 8,
-  sourceLabel: "Motorsport.com",
+  sourceLabel: "M4 Sport",
   title:
-    "Isack Hadjar apologises to Charles Leclerc for “stupid” defence move in Canadian GP",
+    "HU: Russell: Ez a csata az új motoroknak köszönhető. Nem értem, miért akar bárki változtatni rajtuk EN: Russell: This fight was thanks to the new engines. I do not understand why anyone wants to change them",
   summary:
-    "Isack Hadjar finished fifth in Canada, his best result with Red Bull so far, but his late defensive move on Charles Leclerc nearly turned into a major incident. The stewards gave Hadjar a 10-second penalty, though it did not change his final position, and he later apologised to Leclerc for what he called a stupid move.",
+    "HU: George Russell szerint a Kanadai Nagydíjon látott hosszú csata éppen azt bizonyította, hogy az új erőforrás-szabályok képesek izgalmasabb versenyzést teremteni. A Mercedes versenyzője nem érti, miért akar bárki változtatni azon, ami szerinte már több futamon is jobb küzdelmeket hozott. EN: George Russell believes the long Canadian Grand Prix fight showed that the new power-unit rules can create more exciting racing. The Mercedes driver says he does not understand why anyone wants to change a rules package that he feels has already produced better battles at several races.",
   kcsQuickShift:
-    "Hadjar still had a strong result, but that move on Leclerc was way too close.",
-  url:
-    "https://www.motorsport.com/f1/news/isack-hadjar-apologises-to-charles-leclerc-for-stupid-defence-move-in-canadian-gp/10824127/",
-  imagePath: "/img/news/xpb/news-xpbisack.jpg",
+    "Russell sees the Canada fight as proof the new engine rules can work, and that is a useful counterpoint to all the pressure for another rules rethink. HU: Russell szerint a kanadai csata bizonyítja, hogy az új motorszabályok működhetnek, és ez fontos ellenpont a változtatást sürgető nyomással szemben.",
+  url: "https://m4sport.hu/forma-1/f1-hirek/cikk/2026/05/26/russell-ez-a-csata-az-uj-motoroknak-koszonheto-nem-ertem-miert-akar-barki-valtoztatni-rajtuk",
+  imagePath: "/img/news/xpb/news-canadiangp.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
+  dateLabel: "May 26, 2026",
 },
 {
   slotId: 9,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "ESPN",
   title:
-    "2026 F1 Canadian Grand Prix - Driver Ratings",
+    "Canadian Grand Prix: Max Verstappen wants F1 rule engine tweaks for more ‘pure racing’ despite podium",
   summary:
-    "RacingNews365 handed George Russell its highest Canadian Grand Prix rating after his sprint pole, sprint win, grand prix pole and strong race pace before a power unit failure ended his Sunday. Lewis Hamilton and Franco Colapinto also scored highly, while Charles Leclerc, Aston Martin and Valtteri Bottas were placed among the weekend’s lower performers.",
+    "Max Verstappen was pleased to return to the podium in Canada, but he still made it clear that he does not like how complex the current engine rules feel from inside the car. His argument is that F1 should lean more toward pure racing and less toward constant energy-management calculations.",
   kcsQuickShift:
-    "Russell’s weekend was still strong, even if the ending was brutal.",
-  url:
-    "https://racingnews365.com/2026-f1-canadian-grand-prix-driver-ratings",
-  imagePath: "/img/news/xpb/news-xpbgeorge.jpg",
+    "Verstappen enjoyed being back in the fight, but his bigger message has not changed: he wants F1 cars that feel more natural to race.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48869629/canadian-grand-prix-max-verstappen-f1-rule-engine-tweaks-pure-racing-podium",
+  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "May 25, 2026"
-}
+  dateLabel: "May 26, 2026",
+},
+{
+  slotId: 10,
+  sourceLabel: "F1news.se",
+  title:
+    "SE: Hamilton och Verstappen charmade fansen i Kanada EN: Hamilton and Verstappen charmed the fans in Canada",
+  summary:
+    "SE: Efter 68 intensiva varv i Kanada gav Lewis Hamilton och Max Verstappen fansen ett annat slags ögonblick, när deras avslappnade samtal efter loppet visade respekt bakom rivaliteten. Det blev en påminnelse om varför deras dueller fortfarande betyder så mycket för F1-publiken. EN: After 68 intense laps in Canada, Lewis Hamilton and Max Verstappen gave fans a different kind of moment, with their relaxed post-race conversation showing respect behind the rivalry. It was a reminder of why their battles still mean so much to F1 fans.",
+  kcsQuickShift:
+    "Hamilton and Verstappen still bring something different when they fight on track, and Canada gave fans a pretty good reminder of that. SE: Hamilton och Verstappen ger fortfarande något extra när de möts på banan, och Kanada gav fansen en tydlig påminnelse om det.",
+  url: "https://f1news.se/hamilton-och-verstappen-charmade-fansen-i-kanada",
+  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 26, 2026",
+},
 ];
 
 export { newsSlots };
