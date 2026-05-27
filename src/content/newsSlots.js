@@ -2,126 +2,129 @@ const newsSlots = [
     
  {
   slotId: 1,
-  sourceLabel: "The Race",
-  title: "Why Audi is now key to Verstappen’s F1 future",
+  sourceLabel: "RacingNews365",
+  title: "Max Verstappen handed opening after Red Bull 'tensions'",
   summary:
-    "Audi has suddenly become a major player in the debate over F1’s future engine direction, with Max Verstappen’s frustration over the current rules adding real pressure to the discussion. The issue is no longer just about technical balance, it is also about whether F1 can keep its biggest stars happy with the racing product.",
+    "Max Verstappen’s frustration with Red Bull’s Canadian Grand Prix direction has put more attention on the team’s internal decision making. Ralf Schumacher believes Verstappen now has a chance to prove whether his preferred set up path is the one Red Bull should follow.",
   kcsQuickShift:
-    "Verstappen’s future may come down to politics as much as performance, and Audi now looks like one of the biggest pressure points in the whole rules fight.",
-  url: "https://www.the-race.com/formula-1/why-audi-is-now-key-to-max-verstappen-f1-future/",
-  imagePath: "/img/news/shut/news-audibinitto.jpg",
+    "This feels like one of those Red Bull moments where the stopwatch will settle the argument pretty quickly.",
+  url: "https://racingnews365.com/max-verstappen-handed-opening-after-red-bull-tensions",
+  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
   photoCredit: "Shutterstock",
-  dateLabel: "May 26, 2026",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 2,
-  sourceLabel: "Formula 1",
-  title:
-    "‘It’s only the beginning’ – Mekies insists Red Bull will take more risks after their return to the podium in Canada",
+  sourceLabel: "RacingNews365",
+  title: "F1 confirm 'contingency plan' for 2026 grand prix calendar",
   summary:
-    "Laurent Mekies says Red Bull’s Canada podium was only a starting point, with the team prepared to keep taking setup risks as they try to unlock more from the car. Verstappen’s result was positive, but the message from Red Bull is clear: they still know there is more performance to find.",
+    "Formula 1 is keeping backup options open in case the late season Middle East races cannot go ahead. Stefano Domenicali said the sport has to stay pragmatic while the regional situation remains uncertain.",
   kcsQuickShift:
-    "Red Bull finally looked alive again in Canada, but Mekies knows they may have to keep gambling with setup if they want to properly close the gap.",
-  url: "https://www.formula1.com/en/latest/article/its-only-the-beginning-mekies-insists-red-bull-will-take-more-risks-after-their-return-to-the-podium-in-canada.19EUr2gQA8uScvk3Ee6DbV",
-  imagePath: "/img/news/shut/news-miekes.jpg",
+    "This is F1 trying to stay flexible before a calendar problem turns into a season ending mess.",
+  url: "https://racingnews365.com/f1-confirm-contingency-plan-for-2026-grand-prix-calendar",
+  imagePath: "/img/news/shut/news-shutterstockstefano.jpg",
   photoCredit: "Shutterstock",
-  dateLabel: "May 26, 2026",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 3,
-  sourceLabel: "Motorsport.com",
-  title:
-    "‘Not sure we had that pace’ – Were Lewis Hamilton and Max Verstappen out of reach for McLaren?",
+  sourceLabel: "RacingNews365",
+  title: "F1 issue clear stance on return of V8 engines",
   summary:
-    "McLaren’s Canada race was hurt by strategy calls, race incidents, and colder conditions that exposed weakness in front-tyre temperature. Andrea Stella’s bigger concern was that even without the messy execution, Hamilton and Verstappen may still have been out of reach on raw race pace.",
+    "Formula 1’s future engine direction is already becoming a major talking point even as the current rules cycle gets underway. Stefano Domenicali has signalled support for a possible V8 return, but the bigger question remains how F1 balances sound, cost, sustainability, and manufacturer interest.",
   kcsQuickShift:
-    "McLaren had a messy Canada race, but Stella’s bigger point is the worrying one: even without the mistakes, the pace may not have been there.",
-  url: "https://www.motorsport.com/f1/news/not-sure-we-had-that-pace-were-lewis-hamilton-and-max-verstappen-out-of-reach-for-mclaren/10824326/",
-  imagePath: "/img/news/shut/news-shutterstockmclarenpit.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 26, 2026",
+    "The V8 talk is not just nostalgia anymore, it is becoming a real future rules conversation.",
+  url: "https://racingnews365.com/f1-issue-clear-stance-on-return-of-v8-engines",
+  imagePath: "/img/news/kcai/news-v8.jpg",
+  photoCredit: "KC AI generated image",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 4,
-  sourceLabel: "Formula 1",
-  title:
-    "Vasseur praises ‘strong weekend’ for Ferrari despite difficult race for Leclerc",
+  sourceLabel: "Crash.net",
+  title: "\"On the edge\" - Kimi Antonelli's verdict on frantic F1 battle with George Russell",
   summary:
-    "Fred Vasseur took a positive view of Ferrari’s Canadian Grand Prix weekend, even though Charles Leclerc’s race did not deliver the result he wanted. Ferrari showed encouraging pace, but the split between Hamilton’s stronger performance and Leclerc’s tougher weekend shows there is still work to do across both sides of the garage.",
+    "Kimi Antonelli says his Canadian Grand Prix fight with George Russell was right on the limit as the Mercedes pair pushed each other hard for the lead. Antonelli admitted the battle could have gone either way before Russell’s power unit issue ended the contest early.",
   kcsQuickShift:
-    "Ferrari had enough pace in Canada to take positives, but Leclerc’s tough weekend shows they still need to make the car easier to trust across both sides of the garage.",
-  url: "https://www.formula1.com/en/latest/article/vasseur-praises-strong-weekend-for-ferrari-despite-difficult-race-for-leclerc.6mBLVynRYKTpSC6pfM2X9z",
-  imagePath: "/img/news/shut/news-fredferrari.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 26, 2026",
+    "Mercedes has a real fight on its hands now, and it is coming from inside its own garage.",
+  url: "https://www.crash.net/f1/news/1096251/1/edge-kimi-antonellis-verdict-frantic-f1-battle-george-russell",
+  imagePath: "/img/news/xpb/news-xpbkimi3.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 5,
-  sourceLabel: "Motorsport.com",
-  title: "Alpine continues quest to fix Pierre Gasly’s mystifying car issues",
+  sourceLabel: "Crash.net",
+  title: "Oscar Piastri apologises to Alex Albon as he reveals F1 Canadian GP crash cause",
   summary:
-    "Pierre Gasly’s eighth-place finish in Canada looked solid on paper, but Alpine is still trying to understand why the car has not given him the same confidence since recent upgrades. The concern is especially around one-lap pace and how the car behaves when Gasly needs to fully trust it.",
+    "Oscar Piastri apologised to Alex Albon after locking up and hitting the Williams at the Canadian Grand Prix hairpin. Piastri said the grip level caught him out, while Albon felt points were possible before the contact forced him out of the race.",
   kcsQuickShift:
-    "Gasly’s eighth place looked solid, but Alpine still has a real mystery to solve because the car clearly is not giving him the same trust over one lap.",
-  url: "https://www.motorsport.com/f1/news/alpine-continues-quest-to-fix-pierre-gaslys-mystifying-car-issues/10824331/",
-  imagePath: "/img/news/Alpine/news-gaslyag.jpg",
-  photoCredit: "Courtesy of Alpine F1",
-  dateLabel: "May 26, 2026",
+    "Piastri owned the mistake, but for Albon and Williams this was a painful case of points thrown away by someone else.",
+  url: "https://www.crash.net/f1/news/1096250/1/oscar-piastri-apologises-alex-albon-he-reveals-f1-canadian-gp-crash-cause",
+  imagePath: "/img/news/shut/news-shutterstockoscar.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 6,
-  sourceLabel: "Crash.net",
-  title: "Sergio Perez explains bizarre Cadillac F1 failure in Canadian GP",
+  sourceLabel: "Formula1.com",
+  title: "Alpine enjoy ‘fantastic’ Grand Prix in Canada but have 'a lot of work ahead'",
   summary:
-    "Sergio Perez’s Canadian Grand Prix ended with another frustrating Cadillac setback after a strange mechanical problem took him out of the race. For a new F1 project still trying to build rhythm, Canada was a reminder that reliability and confidence matter just as much as outright pace.",
+    "Alpine left Canada with a strong double points result as Franco Colapinto delivered a career best sixth place and Pierre Gasly also recovered into the top 10. The team still admits it needs more performance, especially with the midfield fight tightening heading into Monaco.",
   kcsQuickShift:
-    "Cadillac is still learning the hard way, and Perez’s Canada issue shows how quickly a small problem can turn into a messy race weekend.",
-  url: "https://www.crash.net/f1/news/1096238/1/sergio-perez-explains-bizarre-cadillac-f1-failure-canadian-gp",
-  imagePath: "/img/news/xpb/news-xpbperez.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 26, 2026",
+    "Alpine took a big result in Canada, but the next test is proving this was progress and not just a good day in a messy race.",
+  url: "https://www.formula1.com/en/latest/article/alpine-enjoy-fantastic-grand-prix-in-canada-but-have-a-lot-of-work-ahead.61HXcOZwXFssgSrXG5rWFU",
+  imagePath: "/img/news/Alpine/news-CanadaSun.jpg",
+  photoCredit: "Courtesy of Alpine F1 m",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 7,
-  sourceLabel: "RacingNews365 NL",
-  title:
-    "NL: McLaren knabbelt aan voorsprong Mercedes met nieuw updatepakket EN: McLaren chips away at Mercedes’ advantage with new update package",
+  sourceLabel: "PlanetF1",
+  title: "Aston Martin boss admits team must ‘get its act together’ after Alonso pain",
   summary:
-    "NL: McLaren bracht in Canada opnieuw zichtbare updates mee in de jacht op Mercedes, met aanpassingen die vooral bedoeld lijken om de aerodynamische efficiëntie en balans van de auto verder te verbeteren. Toch blijft de vraag of het pakket genoeg is om Mercedes over een volledig raceweekend echt onder druk te zetten. EN: McLaren brought more visible updates to Canada in its chase of Mercedes, with changes aimed at improving aerodynamic efficiency and overall balance. The bigger question is whether the package is enough to seriously pressure Mercedes across a full race weekend.",
+    "Fernando Alonso’s Canadian Grand Prix ended early because of seat related pain, adding another operational problem to Aston Martin’s difficult weekend. Mike Krack admitted the team must improve while also acknowledging the AMR26 still lacks the performance needed to move up the order.",
   kcsQuickShift:
-    "McLaren is getting closer on the aero side, but Mercedes still looks like it has the cleaner overall package right now. NL: McLaren komt dichterbij aan de aerokant, maar Mercedes lijkt voorlopig nog steeds het completere pakket te hebben.",
-  url: "https://racingnews365.nl/mclaren-knabbelt-aan-voorsprong-mercedes-met-nieuw-updatepakket",
-  imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 26, 2026",
+    "A seat problem forcing Alonso out is the kind of basic issue Aston Martin simply cannot afford right now.",
+  url: "https://www.planetf1.com/news/fernando-alonso-seat-pain-canada-retirement-aston-martin-mistakes",
+  imagePath: "/img/news/xpb/news-xpbfernando.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 8,
-  sourceLabel: "M4 Sport",
+  sourceLabel: "Monaco Tribune",
   title:
-    "HU: Russell: Ez a csata az új motoroknak köszönhető. Nem értem, miért akar bárki változtatni rajtuk EN: Russell: This fight was thanks to the new engines. I do not understand why anyone wants to change them",
+    "Charles Leclerc 4e au Canada après un week-end difficile, cap sur le Grand Prix de Monaco EN: Charles Leclerc 4th in Canada after a difficult weekend, focus turns to the Monaco Grand Prix",
   summary:
-    "HU: George Russell szerint a Kanadai Nagydíjon látott hosszú csata éppen azt bizonyította, hogy az új erőforrás-szabályok képesek izgalmasabb versenyzést teremteni. A Mercedes versenyzője nem érti, miért akar bárki változtatni azon, ami szerinte már több futamon is jobb küzdelmeket hozott. EN: George Russell believes the long Canadian Grand Prix fight showed that the new power-unit rules can create more exciting racing. The Mercedes driver says he does not understand why anyone wants to change a rules package that he feels has already produced better battles at several races.",
+    "Charles Leclerc a limité les dégâts à Montréal avec une quatrième place après un week-end compliqué, pendant que Lewis Hamilton montait sur le podium pour Ferrari. Le Monégasque tourne maintenant son attention vers son Grand Prix à domicile, où Ferrari aura besoin d’un week-end plus propre. EN: Charles Leclerc limited the damage in Montreal with fourth place after a difficult weekend, while Lewis Hamilton reached the podium for Ferrari. The Monegasque driver now turns his focus to his home Grand Prix, where Ferrari will need a cleaner weekend.",
   kcsQuickShift:
-    "Russell sees the Canada fight as proof the new engine rules can work, and that is a useful counterpoint to all the pressure for another rules rethink. HU: Russell szerint a kanadai csata bizonyítja, hogy az új motorszabályok működhetnek, és ez fontos ellenpont a változtatást sürgető nyomással szemben.",
-  url: "https://m4sport.hu/forma-1/f1-hirek/cikk/2026/05/26/russell-ez-a-csata-az-uj-motoroknak-koszonheto-nem-ertem-miert-akar-barki-valtoztatni-rajtuk",
-  imagePath: "/img/news/xpb/news-canadiangp.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 26, 2026",
+    "Leclerc got something out of a tough Canada weekend, but Monaco is where the pressure really ramps up. FR: Leclerc a sauvé quelque chose d’un week-end difficile au Canada, mais Monaco est le moment où la pression monte vraiment.",
+  url: "https://www.monaco-tribune.com/2026/05/charles-leclerc-4e-au-canada-apr%c3%a8s-un-week-end-difficile-cap-sur-le-grand-prix-de-monaco/",
+  imagePath: "/img/news/xpb/news-xpbcharles.jpg",
+  photoCredit: "Monaco Tribune",
+  dateLabel: "May 27, 2026",
 },
+
 {
   slotId: 9,
-  sourceLabel: "ESPN",
-  title:
-    "Canadian Grand Prix: Max Verstappen wants F1 rule engine tweaks for more ‘pure racing’ despite podium",
+  sourceLabel: "RacingNews365",
+  title: "Formula E CEO offers Saudi Arabia update as calendar announcement looms",
   summary:
-    "Max Verstappen was pleased to return to the podium in Canada, but he still made it clear that he does not like how complex the current engine rules feel from inside the car. His argument is that F1 should lean more toward pure racing and less toward constant energy-management calculations.",
+    "Formula E CEO Jeff Dodds says the series will fight hard to keep Saudi Arabia on next season’s calendar despite uncertainty in the Middle East. Jeddah remains important to Formula E’s plans, but the final calendar decision will depend on how the wider situation develops.",
   kcsQuickShift:
-    "Verstappen enjoyed being back in the fight, but his bigger message has not changed: he wants F1 cars that feel more natural to race.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48869629/canadian-grand-prix-max-verstappen-f1-rule-engine-tweaks-pure-racing-podium",
-  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "May 26, 2026",
+    "This is not F1, but it's still important because the same regional uncertainty is now affecting major motorsport calendars.",
+  url: "https://racingnews365.com/formula-e-ceo-offers-saudi-arabia-update-as-calendar-announcement-looms",
+  imagePath: "/img/news/shut/news-saudijeddah .jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "May 27, 2026",
 },
 {
   slotId: 10,
@@ -136,6 +139,20 @@ const newsSlots = [
   imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "May 26, 2026",
+},
+{
+  slotId: 10,
+  sourceLabel: "F1news.se",
+  title:
+    "FIA undersöker Piastri efter Kanadas Grand Prix EN: FIA investigates Piastri after the Canadian Grand Prix",
+  summary:
+    "Oscar Piastri har hamnat i FIA:s fokus efter Kanadas Grand Prix, där nya bevis nu ska ha dykt upp i granskningen efter loppet i Montreal. Ärendet håller McLaren-föraren kvar i centrum av en pågående regelverksdiskussion, även om det fortfarande är oklart exakt vad det nya materialet visar. EN: Oscar Piastri has come under FIA scrutiny after the Canadian Grand Prix, with new evidence reportedly emerging in the post-race review from Montreal. The case keeps the McLaren driver at the centre of an ongoing rules discussion, although it remains unclear exactly what the new material shows.",
+  kcsQuickShift:
+    "This is one to watch carefully because post-race FIA reviews can stay quiet for a while and then suddenly matter. SV: Det här är en att hålla ögonen på, eftersom FIA:s granskningar efter lopp kan vara tysta ett tag och sedan plötsligt få stor betydelse.",
+  url: "https://f1news.se/fia-undersoker-piastri-efter-kanadas-grand-prix",
+  imagePath: "/img/news/xpb/news-xpboscar.jpg",
+  photoCredit: "Bildbyrån",
+  dateLabel: "May 27, 2026",
 },
 ];
 

@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React After To The Race | 2026 Canadian Grand Prix",
-  youtubeInput: "https://youtu.be/SW_ROPQPxMw",
-  forceExternal: true,
+  title: "Mercedes tensions rise as Kimi Antonelli makes it four in a row! | The F1 Show Podcast",
+  youtubeInput: "https://youtu.be/anzEEJ3T0tg",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Everything we learned from F1’s 2026 Canadian Grand Prix",
-    youtubeInput: "https://youtu.be/Tuf7qteyGnc",
+    title: "Behind the scenes at the Canadian Grand Prix",
+    youtubeInput: "https://youtu.be/6JT6r_c130s",
     
   },
 
