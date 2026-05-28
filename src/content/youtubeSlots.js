@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Mercedes tensions rise as Kimi Antonelli makes it four in a row! | The F1 Show Podcast",
-  youtubeInput: "https://youtu.be/anzEEJ3T0tg",
+  title: "Alpine's $150 million deal with Gucci - What you need to know",
+  youtubeInput: "https://youtu.be/y3P-3btV6Oo",
   
   },
 
   {
     slotId: "slot2",
-    title: "Behind the scenes at the Canadian Grand Prix",
-    youtubeInput: "https://youtu.be/6JT6r_c130s",
+    title: "Live F1 livestream chat with Peter Windsor",
+    youtubeInput: "https://youtu.be/mhhNOsLc4MA",
     
   },
 
   {
     slotId: "slot3",
-    title: "Teds Race Notebook - Canadian Grand Prix 2026 - Sky Sports F1",
-    youtubeInput: "https://youtu.be/xIn7c9Qqhts",
+    title: "Isack Hadjar & Pierre Gasly become Cirque du Soleil performers for the day!",
+    youtubeInput: "https://youtu.be/uUgRax4TVpo",
     
   }
 ];
