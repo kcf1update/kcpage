@@ -2,136 +2,123 @@ const newsSlots = [
     
  {
     slotId: 1,
-    sourceLabel: "Crash.net",
-    title: "Mohammed Ben Sulayem wants to abolish FIA presidency rule in latest controversial move",
-    summary:
-      "FIA president Mohammed Ben Sulayem is reportedly pushing to remove the current presidential term-limit rule, which would allow him to remain in office beyond the existing 12-year maximum. The proposal is expected to go before FIA members at the next General Assembly, adding another political flashpoint to his already controversial leadership.",
-    kcsQuickShift:
-      "This one matters because it is not just about one FIA president, it is about how much power the top office should be allowed to hold.",
-    url: "https://www.crash.net/f1/news/1096272/1/mohammed-ben-sulayem-wants-abolish-fia-presidency-rule-latest-controversial-move",
-    imagePath: "/img/news/shut/news-shutterstocksalam.JPG",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 28, 2026",
+    sourceLabel: "The Race",
+    title: "Hamilton's big Ferrari F1 'breakthrough' explained",
+    summary: "Lewis Hamilton’s Canadian Grand Prix performance may have shown why Ferrari’s SF26 is finally starting to work with his natural driving style. The car’s low-speed balance, braking response, and adjustability appeared to give Hamilton the confidence he had been missing, although one strong Montreal weekend is not enough to prove a permanent return to peak form.",
+    kcsQuickShift: "This feels like real progress for Hamilton, but the smarter read is to wait and see if it carries over beyond tracks where he already tends to shine.",
+    url: "https://www.the-race.com/formula-1/lewis-hamilton-big-ferrari-f1-breakthrough-explained/",
+    imagePath: "/img/news/Ferrari/newscanadiangp4.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 2,
-    sourceLabel: "Crash.net",
-    title: "Mercedes uncovers details of George Russell’s “catastrophic failure” at F1 Canadian GP",
-    summary:
-      "Mercedes has confirmed George Russell’s Canadian Grand Prix retirement was caused by a catastrophic battery failure that shut down the engine while he was leading. James Allison said the battery showed signs of heat damage, leaving Mercedes with more investigation to do after a weekend that had looked strong on performance.",
-    kcsQuickShift:
-      "That one hurts for Russell because the pace was there, the fight was there, and then the car simply took him out of the win.",
-    url: "https://www.crash.net/f1/news/1096268/1/mercedes-uncovers-details-george-russells-catastrophic-failure-f1-canadian-gp",
-    imagePath: "/img/news/xpb/news-georgemontreal.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 28, 2026",
+    sourceLabel: "The Race",
+    title: "'Three second rule' among reasons F1's dropped active aero for Monaco",
+    summary: "Formula 1’s 2026 active aero system will not be used in straight-mode zones at Monaco, with the FIA deciding the circuit does not offer safe or useful areas for activation. The decision comes down to Monaco’s short straights, heavy braking and traction zones, and the risk of adding driver workload without enough performance or efficiency benefit.",
+    kcsQuickShift: "This is a sensible Monaco call because active aero only makes sense if it helps the racing without making an already tight circuit even more awkward.",
+    url: "https://www.the-race.com/formula-1/why-f1-cars-wont-run-active-aero-in-monaco/",
+    imagePath: "/img/news/kcai/news-activeaero.jpg",
+    photoCredit: "KC AI generated image",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 3,
-    sourceLabel: "The Race",
-    title: "Why Mercedes' F1 2026 driver fights may not last",
-    summary:
-      "Mercedes is still willing to let George Russell and Kimi Antonelli race each other, but Toto Wolff says the team may step in if their battles start costing too much time or risking both cars. Their Canadian GP fight was entertaining, but Mercedes knows that letting two title contenders go wheel to wheel can turn from great racing into lost points very quickly.",
-    kcsQuickShift:
-      "Mercedes wants the show, but not the mess. If Russell and Antonelli keep getting this close, team orders may not be far away.",
-    url: "https://www.the-race.com/formula-1/mercedes-f1-2026-driver-fights-may-not-last-russell-antonelli/",
-    imagePath: "/img/news/xpb/xpbimages1.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "May 28, 2026",
+    sourceLabel: "RacingNews365",
+    title: "Cadillac issue damning response to shock Valtteri Bottas F1 axe rumours",
+    summary: "Cadillac has firmly shut down rumours that Valtteri Bottas could already be at risk of losing his Formula 1 seat. Team principal Graeme Lowdon said the speculation has no truth behind it, while also pointing out that talk of Colton Herta stepping in ignores the basic issue of FIA super licence eligibility.",
+    kcsQuickShift: "Cadillac is making this pretty clear: Bottas is part of the build, and the team does not sound interested in letting outside noise steer the project.",
+    url: "https://racingnews365.com/cadillac-issue-damning-response-to-shock-valtteri-bottas-f1-axe-rumours",
+    imagePath: "/img/news/shut/news-shutterstockbottas.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 4,
-    sourceLabel: "Motorsport.com",
-    title: "Why McLaren will try rejected front wing again in Monaco",
-    summary:
-      "McLaren removed its new front wing during the Canadian Grand Prix weekend after Norris and Piastri lacked confidence with it, but the team does not consider the concept finished. Monaco will give McLaren another chance to test the part and better understand why its track behaviour did not fully match the simulation work.",
-    kcsQuickShift:
-      "This sounds less like a failed upgrade and more like McLaren needing cleaner data before deciding if the wing is worth racing.",
-    url: "https://www.motorsport.com/f1/news/why-mclaren-will-try-rejected-front-wing-again-in-monaco/10824768/",
-    imagePath: "/img/news/shut/news-shutterstocklandocar.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 28, 2026",
+    sourceLabel: "RacingNews365.nl",
+    title: "Schumacher wijst naar Verstappen in succesrecept Antonelli: \"Bij Max heb je dat gevoel ook\" EN: Schumacher points to Verstappen in Antonelli’s success formula: \"You get that feeling with Max too\"",
+    summary: "Ralf Schumacher ziet in Kimi Antonelli een kwaliteit die hem aan Max Verstappen doet denken: snelheid die natuurlijk lijkt te komen, zonder dat de jonge Italiaan zichzelf overdreven onder druk hoeft te zetten. Volgens Schumacher is dat precies waarom Antonelli zo snel groeit en zo overtuigend met druk omgaat. EN: Ralf Schumacher sees a quality in Kimi Antonelli that reminds him of Max Verstappen: speed that looks natural, without the young Italian appearing to put too much pressure on himself. Schumacher believes that is a big reason why Antonelli is developing so quickly and handling the pressure so well.",
+    kcsQuickShift: "Antonelli is starting to get the kind of praise that usually only follows a driver when people believe the speed is real, not forced. NL: Antonelli krijgt nu het soort lof dat meestal pas komt als mensen geloven dat de snelheid echt is en niet geforceerd.",
+    url: "https://racingnews365.nl/schumacher-wijst-naar-verstappen-in-succesrecept-antonelli-bij-max-heb-je-dat-gevoel-ook",
+    imagePath: "/img/news/xpb/news-kimimiami.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 5,
-    sourceLabel: "Crash.net",
-    title: "McLaren outlines conditions to become F1 power unit manufacturer",
-    summary:
-      "Zak Brown says McLaren would consider building its own Formula 1 power unit only if the engine rules became financially realistic and technologically attractive. For now, McLaren remains happy with Mercedes power, but a future move toward simpler or cheaper engine regulations could change the long-term picture.",
-    kcsQuickShift:
-      "McLaren is not closing the door, but Zak Brown is basically saying the numbers have to make sense before they even think about it.",
-    url: "https://www.crash.net/f1/news/1096262/1/mclaren-outlines-conditions-become-f1-power-unit-manufacturer",
-    imagePath: "/img/news/shut/news-shutterstockbrown.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 27, 2026",
+    sourceLabel: "The Race",
+    title: "Alpine is ready to act if Verstappen joins Mercedes",
+    summary: "Alpine is keeping its 2027 driver options open while the wider Formula 1 market waits to see whether Max Verstappen could trigger movement at Mercedes. Flavio Briatore says Franco Colapinto is in a strong position after his recent performances, but Alpine is not ready to lock in its second seat until it knows whether George Russell or Kimi Antonelli could unexpectedly become available.",
+    kcsQuickShift: "This is classic driver-market patience from Briatore: back Colapinto publicly, but keep one eye on any chaos that could come from Mercedes.",
+    url: "https://www.the-race.com/formula-1/alpine-f1-2027-line-up-mercedes-driver-admission/",
+    imagePath: "/img/news/Alpine/2405CanadaSun.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "May 29, 2026"
   },
+
   {
-    slotId: 11,
-  sourceLabel: "Autosport",
-  title: "When Haas will decide on its F1 2027 driver line-up",
-  summary:
-    "Haas team boss Ayao Komatsu says the team is likely to look at its 2027 driver plans around May, June or July, with both Oliver Bearman and Esteban Ocon out of contract at the end of 2026. Bearman appears well placed after a strong start, while Ocon’s future looks less secure after another difficult weekend in Canada and a slow start to the season.",
-  kcsQuickShift:
-    "Haas looks like it has one seat pretty settled with Bearman, but Ocon may need results soon if he wants to stay in the picture.",
-  url: "https://www.autosport.com/f1/news/when-haas-will-decide-on-its-f1-2027-driver-line-up/10824628/",
-  imagePath: "/img/news/shut/news-shutterstockollie.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "May 27, 2026",
+    slotId: 6,
+    sourceLabel: "Formula1.com",
+    title: "Alonso outlines when Aston Martin are expecting performance step forward as he explains ‘extra hope’ for Monaco",
+    summary: "Fernando Alonso says Aston Martin showed better pace in Canada, but the team is still waiting for a proper performance step from upgrades expected around the summer break. He also sees Monaco as a possible opportunity, with the slow-speed layout reducing the importance of engine performance and giving Aston Martin a little more reason for hope.",
+    kcsQuickShift: "Alonso is being realistic here: Aston Martin may have found a bit more, but the real test is whether the summer upgrades actually move the car forward.",
+    url: "https://www.formula1.com/en/latest/article/alonso-outlines-when-aston-martin-are-expecting-performance-step-forward-as-he-explains-extra-hope-for-monaco.frrDDlNZLsxcuS7uY4fHY",
+    imagePath: "/img/news/xpb/news-xpbfernando.jpg",
+    photoCredit: "XPB Images",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 7,
-    sourceLabel: "The Race",
-    title: "What we've learned about Alpine's $150million Gucci deal",
-    summary:
-      "Alpine’s Gucci deal is being framed as more than a simple title sponsorship, with the partnership expected to reshape the team’s look, clothing, branding and commercial direction. The agreement also strengthens Alpine’s claim that it remains committed to Formula 1, even while questions continue around the team’s future ownership structure.",
-    kcsQuickShift:
-      "The Gucci deal gives Alpine money and attention, but the real test is whether it helps them build a faster race car.",
-    url: "https://www.the-race.com/formula-1/what-we-learned-about-alpine-150-million-gucci-deal/",
-    imagePath: "/img/news/Alpine/2705GucciAlpine.jpg",
+    sourceLabel: "Infobae",
+    title: "Briatore catapultó a Schumacher y a Alonso y hoy sonríe con Colapinto: la historia detrás del resurgimiento de Alpine en la F1 EN: Briatore launched Schumacher and Alonso, and now smiles with Colapinto: the story behind Alpine’s F1 resurgence",
+    summary: "Infobae repasa el peso de Flavio Briatore dentro de la historia de la Fórmula 1, desde su papel junto a Michael Schumacher y Fernando Alonso hasta su influencia actual en Alpine con Franco Colapinto. El artículo presenta a Briatore como una figura clave en el intento del equipo francés de recuperar dirección, carácter y resultados dentro de la parrilla. EN: Infobae looks at Flavio Briatore’s weight in Formula 1 history, from his role with Michael Schumacher and Fernando Alonso to his current influence at Alpine with Franco Colapinto. The article presents Briatore as a key figure in the French team’s attempt to regain direction, identity, and results on the grid.",
+    kcsQuickShift: "Colapinto’s rise with Alpine is not just about one driver, because Briatore’s fingerprints are all over the bigger rebuild story. ES: El ascenso de Colapinto con Alpine no se trata solo de un piloto, porque las huellas de Briatore están en toda la historia más grande de reconstrucción.",
+    url: "https://www.infobae.com/deportes/2026/05/29/briatore-catapulto-a-schumacher-y-a-alonso-y-hoy-sonrie-con-colapinto-la-historia-detras-del-resurgimiento-de-alpine-en-la-f1/",
+    imagePath: "/img/news/Alpine/news-colapintoas.jpg",
     photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "May 28, 2026",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 8,
-    sourceLabel: "RacingNews365",
-    title: "Max Verstappen makes 'crazy' point after messy start to F1 season",
-    summary:
-      "Max Verstappen called Canada his first race of the season where nothing crazy happened to him, after finally taking his first podium of the year. Red Bull’s RB22 has been difficult and inconsistent, but Montreal at least gave Verstappen a cleaner weekend and a better result after a rough start to the campaign.",
-    kcsQuickShift:
-      "When Verstappen says a normal race feels unusual, that tells you exactly how messy Red Bull’s season has been so far.",
-    url: "https://racingnews365.com/max-verstappen-makes-crazy-point-after-messy-start-to-f1-season",
-    imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "May 28, 2026",
+    sourceLabel: "PlanetF1",
+    title: "Adrian Newey makes £10,000 donation to F1 unsung hero facing life-saving kidney transplant",
+    summary: "Adrian Newey is among several major motorsport figures supporting a fundraiser for respected driver coach Rob Wilson, who is awaiting a life-saving kidney transplant. Wilson has worked with a long list of top drivers over the years, and the response from across racing shows how deeply respected he is inside the sport.",
+    kcsQuickShift: "This is one of those stories that shows the human side of F1, with people across the paddock stepping up for someone who has helped a lot of drivers over the years.",
+    url: "https://www.planetf1.com/news/adrian-newey-rob-wilson-kidney-transplant",
+    imagePath: "/img/news/xpb/news-xpbneweystroll.jpg",
+    photoCredit: "XPB Images",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 9,
-    sourceLabel: "RacingNews365 NL",
-    title:
-      "Ford looft Verstappen na bijzondere Red Bull-mijlpaal EN: Ford praises Verstappen after special Red Bull milestone",
-    summary:
-      "Ford heeft Verstappen geprezen nadat zijn podium in Canada het eerste podium werd voor Red Bull met de nieuwe Red Bull Ford Powertrains-krachtbron. Ford Racing-topman Mark Rushbrook noemde het resultaat een mijlpaal voor de samenwerking en een verdiende beloning voor het werk van Red Bull en Ford. EN: Ford praised Verstappen after his Canada podium became the first podium for Red Bull with the new Red Bull Ford Powertrains power unit. Ford Racing boss Mark Rushbrook called the result a milestone for the partnership and a deserved reward for the work done by Red Bull and Ford.",
-    kcsQuickShift:
-      "This podium matters because it gives Red Bull and Ford something real to build on after a difficult start. NL: Dit podium is belangrijk omdat Red Bull en Ford eindelijk iets tastbaars hebben om op voort te bouwen na een moeilijke start.",
-    url: "https://racingnews365.nl/ford-looft-verstappen-na-bijzondere-red-bull-mijlpaal",
-    imagePath: "/img/news/xpb/xpbverstappen.jpg",
+    sourceLabel: "RacingNews365",
+    title: "Toto Wolff branded a 'rock star' after embracing 'cleaning-his-pants' scare",
+    summary: "Toto Wolff has earned praise from Guenther Steiner for letting Mercedes drivers Kimi Antonelli and George Russell race each other hard during the Canadian Grand Prix weekend. Steiner said Wolff showed real nerve by staying out of the fight from the pit wall, even as the intra-team battle became one of the biggest talking points of the weekend.",
+    kcsQuickShift: "This is the kind of Mercedes story people notice, because letting two fast teammates race sounds great until both cars are one mistake away from disaster.",
+    url: "https://racingnews365.com/toto-wolff-branded-a-rock-star-after-embracing-cleaning-his-pants-scare",
+    imagePath: "/img/news/xpb/news-kimiandgeorgecanadiangp.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "May 28, 2026",
+    dateLabel: "May 29, 2026"
   },
+
   {
     slotId: 10,
-    sourceLabel: "FormulaPassion.it",
-    title:
-      "Motori 60:40 dal 2027: Audi e Ferrari sempre più a rischio sconfitta. Cadillac si unisce al sì? EN: 60:40 engines from 2027, Audi and Ferrari increasingly at risk of defeat as Cadillac may join the yes side",
-    summary:
-      "FormulaPassion riporta che la proposta per modificare il rapporto tra motore termico ed elettrico a 60:40 dal 2027 potrebbe avvicinarsi alla supermaggioranza necessaria nel comitato dei motoristi. Secondo il quadro riportato, Honda e Cadillac potrebbero sostenere il cambiamento, lasciando Ferrari e Audi sempre più isolate nelle loro resistenze. EN: FormulaPassion reports that the proposal to change the combustion and electric power split to 60:40 from 2027 may be close to the supermajority needed in the power unit committee. The report suggests Honda and Cadillac could support the change, leaving Ferrari and Audi increasingly isolated in their opposition.",
-    kcsQuickShift:
-      "This engine vote could be a big political loss for Ferrari and Audi if Cadillac really moves toward the yes side. IT: Questo voto sui motori potrebbe diventare una grossa sconfitta politica per Ferrari e Audi se Cadillac si sposta davvero verso il sì.",
-    url: "https://www.formulapassion.it/f1/f1-news/motori-6040-2027-audi-ferrari-sempre-piu-rischio-sconfitta-cadillac-si",
-    imagePath: "/img/news/kcai/new6040engine.jpg",
-    photoCredit: "KC AI Generated Image",
-    dateLabel: "May 28, 2026",
-  },
+    sourceLabel: "Crash.net",
+    title: "Oscar Piastri receives unique honour after new wasp species named after McLaren F1 driver",
+    summary: "Oscar Piastri has picked up one of the stranger honours of his racing career, with a newly discovered wasp species being named after him. The discovery has a McLaren link too, with the amber colour reminding researchers of the team’s papaya colours.",
+    kcsQuickShift: "This is a fun one for Piastri after a rough Canadian Grand Prix.",
+    url: "https://www.crash.net/f1/news/1096285/1/oscar-piastri-receives-unique-honour-after-new-wasp-species-named-after-mclaren",
+    imagePath: "/img/news/shut/news-shutterstockoscar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "May 29, 2026"
+  }
 ];
 
 export { newsSlots };

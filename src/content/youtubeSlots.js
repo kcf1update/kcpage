@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Alpine's $150 million deal with Gucci - What you need to know",
-  youtubeInput: "https://youtu.be/y3P-3btV6Oo",
+  title: "Why Hamilton Is Faster WITHOUT The Simulator!! I Peter Windsor Reacts",
+  youtubeInput: "https://youtu.be/LKE2KoMB1I8",
   
   },
 
   {
     slotId: "slot2",
-    title: "Live F1 livestream chat with Peter Windsor",
-    youtubeInput: "https://youtu.be/mhhNOsLc4MA",
-    
+    title: "Radio Rewind | 2026 Canadian Grand Prix",
+    youtubeInput: "https://youtu.be/0xjdAwKzRtk",
+    forceExternal: true
   },
 
   {
     slotId: "slot3",
-    title: "Isack Hadjar & Pierre Gasly become Cirque du Soleil performers for the day!",
-    youtubeInput: "https://youtu.be/uUgRax4TVpo",
+    title: "Lando Norris Tries Food From Every Country He’s Raced",
+    youtubeInput: "https://youtu.be/YjYgA1RAIYM",
     
   }
 ];
