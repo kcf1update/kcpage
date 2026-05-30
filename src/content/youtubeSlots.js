@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why Hamilton Is Faster WITHOUT The Simulator!! I Peter Windsor Reacts",
-  youtubeInput: "https://youtu.be/LKE2KoMB1I8",
+  title: "BYD to start CHINESE F1 TEAM with Christian Horner?",
+  youtubeInput: "https://youtu.be/mKETw5ZqD5g",
   
   },
 
   {
     slotId: "slot2",
-    title: "Radio Rewind | 2026 Canadian Grand Prix",
-    youtubeInput: "https://youtu.be/0xjdAwKzRtk",
-    forceExternal: true
+    title: "Lewis Hamilton's big Ferrari F1 breakthrough explained",
+    youtubeInput: "https://youtu.be/o28G5XX8k2k",
+    
   },
 
   {
     slotId: "slot3",
-    title: "Lando Norris Tries Food From Every Country He’s Raced",
-    youtubeInput: "https://youtu.be/YjYgA1RAIYM",
+    title: "Isack Hadjar & Pierre Gasly become Cirque du Soleil performers for the day!",
+    youtubeInput: "https://youtu.be/uUgRax4TVpo",
     
   }
 ];
