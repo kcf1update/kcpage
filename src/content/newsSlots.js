@@ -2,113 +2,123 @@ const newsSlots = [
     
  {
   slotId: "news1",
-  sourceLabel: "ESPN",
-  title: "Horner Reportedly Targeting F1 Return With BYD",
-  summary: "Christian Horner is reportedly looking at a Formula 1 return with BYD, only months after his Red Bull exit. If it happens, it could be one of the biggest paddock moves in years and would add a major new storyline around F1’s future team landscape.",
-  kcsQuickShift: "This one could be huge if it happens because Horner coming back with a new project would shake up the whole paddock.",
-  url: "https://www.espn.com/f1/story/_/id/48826861/christian-horner-targets-formula-1-return-byd-10-months-red-bull-sacking-sources",
-  imagePath: "/img/news/shut/news-christian.jpg",
-  imageSource: "Shutterstock",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "RacingNews365",
+  title: "What has triggered Max Verstappen F1 exit threats explained",
+  summary: "Max Verstappen’s frustration with F1’s new rules continues to grow, with the focus mainly on power unit balance, energy management, and whether the sport is moving too far away from pure racing.",
+  kcsQuickShift: "This is a big one because when Verstappen talks about not enjoying the direction of F1, the sport has to take that seriously.",
+  url: "https://racingnews365.com/what-has-triggered-max-verstappen-f1-exit-threats-explained",
+  imagePath: "/img/news/xpb/xpbverstappen.jpg",
+  imageSource: "XPB IMAGES",
+  dateLabel: "May 31, 2026"
 },
+
 {
   slotId: "news2",
-  sourceLabel: "Crash.net",
-  title: "Mercedes Walks Away From Alpine Share Talks",
-  summary: "Mercedes has reportedly stepped back from talks over buying a minority stake in Alpine after the asking price became too high. The possible deal had moved far enough to become serious, but Mercedes now appears to have walked away from the table.",
-  kcsQuickShift: "That is a pretty big business story because Alpine’s future still feels like one of the more unsettled situations on the grid.",
-  url: "https://www.crash.net/f1/news/1096410/1/mercedes-walks-away-overpriced-alpine-f1-share-purchase",
-  imagePath: "/img/news/xpb/news-xpbtoto.jpg",
+  sourceLabel: "RacingNews365",
+  title: "Lewis Hamilton highlights key boost to Kimi Antonelli maiden F1 title hopes",
+  summary: "Lewis Hamilton says Kimi Antonelli has a stronger support system around him at Mercedes than Hamilton had during his first title fight in 2007, with Toto Wolff helping guide the young Italian through the pressure.",
+  kcsQuickShift: "Antonelli has the speed, but having the right people around him may be just as important in a title fight.",
+  url: "https://racingnews365.com/lewis-hamilton-highlights-key-boost-to-kimi-antonelli-maiden-f1-title-hopes",
+  imagePath: "/img/news/xpb/news-xpblewis.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "May 30, 2026"
+  dateLabel: "May 31, 2026"
 },
+
 {
   slotId: "news3",
-  sourceLabel: "Formula1.com",
-  title: "Antonelli Says He Must Keep Levelling Up In Title Fight",
-  summary: "Kimi Antonelli says he cannot relax despite building a strong lead over George Russell in the drivers’ championship. The Mercedes driver says the season is still early, the competition is getting closer, and he needs to keep raising his level.",
-  kcsQuickShift: "Antonelli sounds calm, but this title fight with Russell is only going to get more interesting from here.",
-  url: "https://www.formula1.com/en/latest/article/antonelli-vows-to-keep-levelling-up-as-he-shares-mindset-over-developing-title-fight-with-russell.5sFGYIv70MRth0rdk3Osdp",
-  imagePath: "/img/news/xpb/news-kimimiami.jpg",
-  imageSource: "Formula1.com",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "Crash.net",
+  title: "Why Fernando Alonso is convinced he’s ‘the best’ in F1 despite Aston Martin woes",
+  summary: "Fernando Alonso remains fully confident in his own level despite Aston Martin’s difficult start to 2026, saying he does not need the car’s results to prove he is still operating at the top.",
+  kcsQuickShift: "That is classic Alonso, and honestly, that confidence is probably part of why he is still so dangerous after all these years.",
+  url: "https://www.crash.net/f1/news/1096355/1/why-fernando-alonso-convinced-hes-best-f1-despite-aston-martin-woes",
+  imagePath: "/img/news/shut/news-shutfernando.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "May 31, 2026"
 },
+
 {
   slotId: "news4",
   sourceLabel: "Crash.net",
-  title: "Hamilton Loved Throwback Duel With Verstappen",
-  summary: "Lewis Hamilton said he loved hunting down Max Verstappen during their late Canadian Grand Prix fight. Hamilton eventually passed Verstappen for second place, while both drivers said they enjoyed the battle after a tough, strategic fight to the flag.",
-  kcsQuickShift: "It was good to see Hamilton and Verstappen fighting like that again, and it felt like a real throwback moment.",
-  url: "https://www.crash.net/f1/news/1096290/1/lewis-hamilton-loved-hunting-down-one-greats-throwback-max-verstappen-duel",
-  imagePath: "/img/news/xpb/news-maxlewismontreal.jpg",
+  title: "Why Carlos Sainz thinks the time has come to stop complaining about F1 2026 rules",
+  summary: "Carlos Sainz says the current 2026 rules are still not ideal, but he believes drivers may have to stop complaining for now and focus on improving the package for next season.",
+  kcsQuickShift: "Sainz is not saying the rules are perfect, but he seems ready to stop fighting the same battle every weekend.",
+  url: "https://www.crash.net/f1/news/1096291/1/why-carlos-sainz-thinks-time-has-come-stop-complaining-about-f1-2026-rules",
+  imagePath: "/img/news/xpb/news-xpbcarlos.jpg",
   imageSource: "XPB IMAGES",
   dateLabel: "May 30, 2026"
 },
+
 {
   slotId: "news5",
-  sourceLabel: "Motorsport.com",
-  title: "Hamilton Simulator Decision Raises Ferrari Questions",
-  summary: "David Croft has called Lewis Hamilton’s decision to avoid Ferrari’s simulator programme “quite damning” after Hamilton’s improved Canadian Grand Prix weekend. The comments raise more questions about Ferrari’s factory-to-track correlation and whether Hamilton has found a better direction outside the normal process.",
-  kcsQuickShift: "Hamilton’s Canada weekend looked like progress, but this simulator story still makes you wonder what is really going on at Ferrari.",
-  url: "https://www.motorsport.com/f1/news/lewis-hamilton-ferrari-simulator-decision-branded-quite-damning-after-canada-breakthrough/10825186/",
-  imagePath: "/img/news/Ferrari/news-lewisandcharlesmontreal.jpg",
-  imageSource: "Courtesy of Ferrari F1",
+  sourceLabel: "AUTOhebdo",
+  title: "Décryptage – Aménagement moteur : Urgent d’attendre ? EN: Analysis: Engine adjustments, is it urgent to wait?",
+  summary: "Nouvelle répartition de puissance, réduction des courses trop énergivores et discussions autour de l’ADUO continuent d’alimenter les débats entre les équipes, la FOM et la FIA. EN: The debate over F1’s engine rules continues, with power split, energy management, and ADUO all part of the discussion as the sport tries to find common ground.",
+  kcsQuickShift: "This engine debate is not going away, and it may shape how good or frustrating this new era of F1 really becomes. FR: Ce débat moteur ne va pas disparaître, et il pourrait définir cette nouvelle ère de la F1.",
+  url: "https://www.autohebdo.fr/actualites/f1/decryptage-amenagement-moteur-urgent-dattendre.html",
+  imagePath: "/img/news/kcai/news-aduo1.jpg",
+  imageSource: "KC AI generated image",
   dateLabel: "May 30, 2026"
 },
+
 {
   slotId: "news6",
-  sourceLabel: "FormulaPassion",
-  title: "Stella e Norris: “La Ferrari è favorita per Monaco, lo dice il GPS” EN: Stella And Norris Say Ferrari Is Favourite For Monaco",
-  summary: "Andrea Stella ha detto che i dati GPS mostrano una Ferrari molto competitiva in curva, soprattutto in vista di Monaco dove i rettilinei sono pochi. EN: Andrea Stella says GPS data points to Ferrari being very strong in the corners, making them a serious favourite for pole position at Monaco.",
-  kcsQuickShift: "Ferrari could be right in the mix at Monaco if the car really is that strong in the slow corners. IT: La Ferrari potrebbe essere davvero in lotta a Monaco se la macchina è così forte nelle curve lente.",
-  url: "https://www.formulapassion.it/f1/f1-news/stella-norris-ha-ragione-la-ferrari-e-la-favorita-per-la-pole-position-a-monaco",
-  imagePath: "/img/news/Ferrari/news-ferrari6.jpg",
-  imageSource: "Courtesy of Ferrari F1",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "Motorsport.com",
+  title: "The reclined seating position that caused Fernando Alonso's Canadian GP retirement",
+  summary: "Fernando Alonso’s Canadian Grand Prix retirement was linked to severe back pain caused by Aston Martin’s more reclined cockpit position, with the issue becoming too much after repeated kerb impacts in Montreal.",
+  kcsQuickShift: "That is a rough way to end a race, and it shows how even small cockpit changes can become a big problem for the driver.",
+  url: "https://www.motorsport.com/f1/news/fernando-alonso-canadian-gp-retirement-cause/10825683/",
+  imagePath: "/img/news/shut/news-shutaston.jpg",
+  imageSource: "Motorsport.com",
+  dateLabel: "May 31, 2026"
 },
+
 {
   slotId: "news7",
-  sourceLabel: "Marca México",
-  title: "Cadillac No Es Red Bull Con Checo Pérez, Pero Sí Lo Defienden EN: Cadillac Is Not Red Bull With Checo Pérez, But They Are Defending Him",
-  summary: "Cadillac ha cerrado la puerta a los rumores sobre una posible salida temprana de Sergio Pérez, con Graeme Lowdon defendiendo el trabajo de Checo y Valtteri Bottas en el nuevo proyecto. EN: Cadillac has pushed back against rumours about Sergio Pérez leaving early, with Graeme Lowdon backing both Checo and Valtteri Bottas as the team builds its first F1 season.",
-  kcsQuickShift: "Cadillac backing Checo this early matters because a new team needs stability before it needs drama. ES: Que Cadillac respalde a Checo tan pronto importa porque un equipo nuevo necesita estabilidad antes que drama.",
-  url: "https://www.marca.com/mx/motor/formula-1/2026/05/30/6a1aaf5f22601d214d8b4588.html",
-  imagePath: "/img/news/xpb/news-xpbperez.jpg",
+  sourceLabel: "PlanetF1",
+  title: "James Vowles sends clear Carlos Sainz message before F1 silly season ignites",
+  summary: "James Vowles believes Carlos Sainz and Alex Albon still want to be part of the Williams project, even with driver market talk starting to build around the grid.",
+  kcsQuickShift: "This is really about trust, because Williams has to show Sainz and Albon that the progress is real.",
+  url: "https://www.planetf1.com/news/carlos-sainz-williams-james-vowles-driver-market",
+  imagePath: "/img/news/xpb/news-xpbjames.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "May 30, 2026"
+  dateLabel: "May 31, 2026"
 },
+
 {
   slotId: "news8",
-  sourceLabel: "The Race",
-  title: "How Worried Should Bottas Be About His F1 Future?",
-  summary: "Valtteri Bottas is under more pressure after a difficult start beside Sergio Pérez at Cadillac, but his seat does not appear to be in immediate danger. The bigger concern is that Pérez has looked stronger so far, especially across recent weekends where Cadillac is still trying to find its footing.",
-  kcsQuickShift: "Bottas probably is not in trouble right now, but he does need to stop this from turning into a clear trend.",
-  url: "https://www.the-race.com/formula-1/how-worried-bottas-should-really-be-about-his-f1-future/",
-  imagePath: "/img/news/shut/news-shutterstockbottas.jpg",
+  sourceLabel: "Autosport",
+  title: "From Benetton to Gucci: Is Briatore closing the circle at Enstone?",
+  summary: "Autosport looks at the parallels between Benetton’s rise in F1 and Gucci’s arrival at Alpine, with Flavio Briatore again sitting near the centre of the Enstone story.",
+  kcsQuickShift: "This is one of those bigger picture F1 stories where business, history, and team politics all cross over.",
+  url: "https://www.autosport.com/f1/news/from-benetton-to-gucci-is-briatore-closing-the-circle-at-enstone/10825180/",
+  imagePath: "/img/news/shut/news-shutflavio.jpg",
   imageSource: "Shutterstock",
-  dateLabel: "May 30, 2026"
+  dateLabel: "May 29, 2026"
 },
+
 {
   slotId: "news9",
-  sourceLabel: "RacingNews365",
-  title: "Aston Martin Or Cadillac: Who Scores First?",
-  summary: "Aston Martin and Cadillac remain the only teams without points this season, but both are trying to move closer to the midfield. Cadillac appears to be improving its qualifying gap and race performance, while Aston Martin is still waiting for bigger upgrades to move the AMR26 forward.",
-  kcsQuickShift: "This bottom-of-the-table fight is actually worth watching because one messy race could change everything for either team.",
-  url: "https://racingnews365.com/aston-martin-or-cadillac-who-wins-the-race-to-a-first-point",
-  imagePath: "/img/news/shut/news-shutaston.jpg",
-  imageSource: "Shutterstock",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "F1news.se",
+  title: "Antonelli får vägledning från Wolff och Bono EN: Antonelli gets guidance from Wolff and Bono",
+  summary: "Kimi Antonelli fick stöd och tydliga instruktioner från Toto Wolff och Peter Bonnington efter den intensiva Mercedes-duellen med George Russell under Kanadas sprintlopp. EN: Kimi Antonelli received guidance from Toto Wolff and Peter Bonnington after his heated Mercedes battle with George Russell during the Canadian sprint.",
+  kcsQuickShift: "Antonelli is fast, but moments like this show how much learning still happens even when a young driver is winning. SE: Antonelli är snabb, men sådana här stunder visar hur mycket en ung förare fortfarande lär sig även när han vinner.",
+  url: "https://f1news.se/antonelli-far-vagledning-fran-wolff-och-bono",
+  imagePath: "/img/news/xpb/news-xpbkimi3.jpg",
+  imageSource: "XPB IMAGES",
+  dateLabel: "May 29, 2026"
 },
+
 {
   slotId: "news10",
-  sourceLabel: "Motorsport.com",
-  title: "Bearman And Ocon Entertain Fans On Hot Ones",
-  summary: "Ollie Bearman and Esteban Ocon gave fans a lighter F1 moment with their appearance on Hot Ones Versus. The Haas team-mates answered awkward questions, joked through the challenge, and showed off a more relaxed side away from the track.",
-  kcsQuickShift: "This is just a fun one, and it is good to see a bit of personality from the drivers once in a while.",
-  url: "https://www.motorsport.com/f1/news/ollie-bearman-and-esteban-ocon-leave-f1-fans-in-stitched-with-hot-ones-appearance/10825288/",
-  imagePath: "/img/news/xpb/news-xpbestoban.jpg",
-  imageSource: "XPB IMAGES",
+  sourceLabel: "Formula 1",
+  title: "Which football team does each Formula 1 driver support?",
+  summary: "Formula1.com takes a lighter look at the football teams followed by drivers on the F1 grid, including Lewis Hamilton and Oscar Piastri backing Arsenal and several French drivers supporting PSG.",
+  kcsQuickShift: "A bit of a lighter story here, but it’s always fun seeing what the drivers are into away from the race track.",
+  url: "https://www.formula1.com/en/latest/article/which-football-team-does-each-formula-1-driver-support.7hpW93YPgRMYmsSHEzw29L",
+  imagePath: "/img/news/kcai/news-premier.jpg",
+  imageSource: "Formula 1",
   dateLabel: "May 30, 2026"
-}];
+}
+];
 
 export { newsSlots };

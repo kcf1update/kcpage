@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Isack Hadjar & Pierre Gasly become Cirque du Soleil performers for the day!",
-    youtubeInput: "https://youtu.be/uUgRax4TVpo",
+    title: "Where Cadillac's F1 team is ‘lacking tremendously’",
+    youtubeInput: "https://youtu.be/Zkj9PIcbJNs",
     
   }
 ];
