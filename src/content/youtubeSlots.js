@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "95 Countries in 2 Months- Thank You Worldwide F1 Fans!",
-  youtubeInput: "https://www.youtube.com/shorts/FqUmOFtQtW8?feature=share",
+  title: "2026 Canadian Grand Prix Recap: Antonelli Wins, McLaren Gamble Fails",
+  youtubeInput: "https://youtu.be/8x8L35waR9Q",
 },
 
   {
