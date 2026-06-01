@@ -17,7 +17,141 @@ function makeRaceResultsTemplate() {
     ])
   );
 }
+function makeLapResultsTemplate() {
+  return Object.fromEntries(
+    DRIVER_IDS.map((id) => [
+      id,
+      {
+        pos: null,
+        lapTime: "",
+        laps: "",
+        status: "",
+      },
+    ])
+  );
+}
 
+function makeQualifyingResultsTemplate() {
+  return Object.fromEntries(
+    DRIVER_IDS.map((id) => [
+      id,
+      {
+        pos: null,
+        q1: "",
+        q2: "",
+        q3: "",
+      },
+    ])
+  );
+}
+
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function getDriverIdFromLine(line) {
+  const normalizedLine = normalizeText(line);
+
+  const driverMap = {
+    norris: "NOR",
+    verstappen: "VER",
+    russell: "RUS",
+    piastri: "PIA",
+    leclerc: "LEC",
+    hamilton: "HAM",
+    albon: "ALB",
+    sainz: "SAI",
+    alonso: "ALO",
+    stroll: "STR",
+    ocon: "OCO",
+    bearman: "BEA",
+    hulkenberg: "HUL",
+    hülkenberg: "HUL",
+    bortoleto: "BOR",
+    gasly: "GAS",
+    colapinto: "COL",
+    perez: "PER",
+    pérez: "PER",
+    bottas: "BOT",
+    lawson: "LAW",
+    lindblad: "LIN",
+    hadjar: "HAD",
+    antonelli: "ANT",
+  };
+
+  for (const [name, id] of Object.entries(driverMap)) {
+    if (normalizedLine.includes(normalizeText(name))) {
+      return id;
+    }
+  }
+
+  return null;
+}
+
+function parseLapPaste(text) {
+  const base = makeLapResultsTemplate();
+
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  for (const line of lines) {
+    const id = getDriverIdFromLine(line);
+    if (!id || !base[id]) continue;
+
+    const timeMatch = line.match(/\b\d+m\d+\.\d+s\b|\b\d+:\d+\.\d+\b/);
+    const lapTime = timeMatch ? timeMatch[0] : "";
+
+    let laps = "";
+    const afterTime = timeMatch ? line.slice(timeMatch.index + timeMatch[0].length) : "";
+    const lapsMatch = afterTime.match(/\b\d+\b/);
+    if (lapsMatch) laps = lapsMatch[0];
+
+    const posMatch = line.match(/^\s*(\d+)\b/);
+const pos = posMatch ? Number(posMatch[1]) : null;
+
+base[id] = {
+  pos,
+  lapTime,
+  laps,
+  status: lapTime ? "" : "No time",
+};
+  }
+
+  return base;
+}
+
+function parseQualifyingPaste(text) {
+  const base = makeQualifyingResultsTemplate();
+
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  for (const line of lines) {
+    const id = getDriverIdFromLine(line);
+    if (!id || !base[id]) continue;
+
+    const times = line.match(/\b\d{1,2}:\d{2}\.\d{3}\b/g) || [];
+
+  const posMatch = line.match(/^\s*(\d+)\b/);
+const pos = posMatch ? Number(posMatch[1]) : null;
+
+base[id] = {
+  pos,
+  q1: times[0] || "",
+  q2: times[1] || "",
+  q3: times[2] || "",
+};
+  }
+
+  return base;
+}
 // =====================================================
 // 2) PASTE PARSER
 // =====================================================
@@ -174,7 +308,128 @@ function parseRacePaste(text) {
 // =====================================================
 // 3) YOUR PASTE BOXES (EDIT THESE ONLY)
 // =====================================================
+const PASTE_CANADA_P1 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m13.402s
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.554s
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m14.176s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m14.355s
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m14.366s
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m14.799s
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m14.963s
+8	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m15.452s
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m15.698s
+10	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m15.863s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m16.214s
+12	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.253s
+13	Esteban Ocon	FRA	TGR Haas F1 Team	1m16.497s
+14	Alex Albon	THA	Atlassian Williams F1 Team	1m16.642s
+15	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m16.660s
+16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m16.809s
+17	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m16.978s
+18	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m17.431s
+19	Ollie Bearman	GBR	TGR Haas F1 Team	1m17.770s
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m17.868s
+21	Sergio Perez	MEX	Cadillac F1 Team	1m17.926s
+22	Franco Colapinto	ARG	BWT Alpine F1 Team	No time set
+`;
 
+const PASTE_CANADA_SQ = `
+1	63	George Russell	Mercedes	1:14.772	1:13.026	1:12.965	19
+2	12	Kimi Antonelli	Mercedes	1:14.010	1:13.551	1:13.033	16
+3	1	Lando Norris	McLaren	1:14.265	1:13.957	1:13.280	15
+4	81	Oscar Piastri	McLaren	1:14.665	1:13.858	1:13.299	15
+5	44	Lewis Hamilton	Ferrari	1:13.889	1:13.465	1:13.326	23
+6	16	Charles Leclerc	Ferrari	1:15.006	1:13.554	1:13.410	19
+7	3	Max Verstappen	Red Bull Racing	1:14.028	1:14.412	1:13.504	15
+8	6	Isack Hadjar	Red Bull Racing	1:14.541	1:14.239	1:13.605	17
+9	41	Arvid Lindblad	Racing Bulls	1:14.517	1:14.140	1:13.737	19
+10	55	Carlos Sainz	Williams	1:15.500	1:14.547	1:14.536	24
+11	27	Nico Hulkenberg	Audi	1:15.673	1:14.595		14
+12	5	Gabriel Bortoleto	Audi	1:15.801	1:14.627		14
+13	43	Franco Colapinto	Alpine	1:15.484	1:14.702		16
+14	31	Esteban Ocon	Haas F1 Team	1:15.760	1:14.928		17
+15	87	Ollie Bearman	Haas F1 Team	1:15.872	1:15.197		17
+16	14	Fernando Alonso	Aston Martin	1:15.760			7
+17	11	Sergio Perez	Cadillac	1:16.002			8
+18	18	Lance Stroll	Aston Martin	1:16.354			9
+19	10	Pierre Gasly	Alpine	1:16.642			8
+20	77	Valtteri Bottas	Cadillac	1:16.866			8
+`;
+
+const PASTE_CANADA_SPRINT = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	23
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	+1.272s
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+1.843s
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+9.797s
+5	Charles Leclerc	MON	Scuderia Ferrari HP	+9.929s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	+10.545s
+7	Max Verstappen	NED	Oracle Red Bull Racing	+15.935s
+8	Arvid Lindblad	GBR	Racing Bulls	+29.710s
+9	Franco Colapinto	ARG	BWT Alpine F1 Team	+31.621s
+10	Carlos Sainz	ESP	Atlassian Williams F1 Team	+36.793s
+11	Liam Lawson	NZD	Racing Bulls	+61.344s
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+61.814s
+13	Esteban Ocon	FRA	TGR Haas F1 Team	+64.209s
+14	Sergio Perez	MEX	Cadillac F1 Team	+70.402
+15	Nico Hulkenberg	GER	Audi Revolut F1 Team	+72.158s
+16	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+1 Lap
+17	Valtteri Bottas	FIN	Cadillac F1 Team	+1 Lap
+18	Ollie Bearman	GBR	TGR Haas F1 Team	+1 Lap
+19	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
+20	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+21	Isack Hadjar	FRA	Oracle Red Bull Racing	+3 Laps
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+5 Laps
+`;
+
+const PASTE_CANADA_Q = `
+1	63	George Russell	Mercedes	1:13.953	1:13.079	1:12.578	24
+2	12	Kimi Antonelli	Mercedes	1:13.380	1:13.076	1:12.646	24
+3	1	Lando Norris	McLaren	1:13.503	1:13.049	1:12.729	28
+4	81	Oscar Piastri	McLaren	1:13.559	1:13.285	1:12.781	29
+5	44	Lewis Hamilton	Ferrari	1:13.767	1:13.041	1:12.868	27
+6	3	Max Verstappen	Red Bull Racing	1:14.067	1:13.479	1:12.907	23
+7	6	Isack Hadjar	Red Bull Racing	1:13.654	1:12.975	1:12.935	22
+8	16	Charles Leclerc	Ferrari	1:13.825	1:13.496	1:12.976	29
+9	41	Arvid Lindblad	Racing Bulls	1:13.895	1:13.548	1:13.280	28
+10	43	Franco Colapinto	Alpine	1:14.466	1:13.857	1:13.697	27
+11	27	Nico Hulkenberg	Audi	1:14.562	1:13.886		21
+12	30	Liam Lawson	Racing Bulls	1:14.346	1:13.897		22
+13	5	Gabriel Bortoleto	Audi	1:14.775	1:14.071		22
+14	10	Pierre Gasly	Alpine	1:14.698	1:14.187		20
+15	55	Carlos Sainz	Williams	1:14.276	1:14.273		21
+16	87	Ollie Bearman	Haas F1 Team	1:14.449	1:14.416		22
+17	31	Esteban Ocon	Haas F1 Team	1:14.845			12
+18	23	Alex Albon	Williams	1:14.851			13
+19	14	Fernando Alonso	Aston Martin	1:15.196			11
+20	11	Sergio Perez	Cadillac	1:15.429			11
+21	18	Lance Stroll	Aston Martin	1:16.195			10
+22	77	Valtteri Bottas	Cadillac	1:16.272			10
+`;
+
+const PASTE_CANADA_RACE = `
+1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	68
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	+10.768
+3	Max Verstappen	NED	Oracle Red Bull Racing	+11.276
+4	Charles Leclerc	MON	Scuderia Ferrari HP	+44.151
+5	Isack Hadjar	FRA	Oracle Red Bull Racing	+1 lap
+6	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 lap
+7	Liam Lawson	NZD	Racing Bulls	+1 lap
+8	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 lap
+9	Carlos Sainz	ESP	Atlassian Williams F1 Team	+1 lap
+10	Ollie Bearman	GBR	TGR Haas F1 Team	+1 lap
+11	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+2 laps
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	+2 laps
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+2 laps
+14	Esteban Ocon	FRA	TGR Haas F1 Team	+2 laps
+15	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+4 laps
+16	Valtteri Bottas	FIN	Cadillac F1 Team	+4 laps
+DNF	Sergio Perez	MEX	Cadillac F1 Team	 
+DNF	Lando Norris	GBR	McLaren Mastercard F1 Team	 
+DNF	George Russell	GBR	Mercedes AMG Petronas F1 Team	 
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	 
+DNF	Alex Albon	THA	Atlassian Williams F1 Team	 
+DNS	Arvid Lindblad	GBR	Racing Bulls
+`;
 const PASTE_AUSTRALIA_RACE = `
 NOR,5,+51.741s,6,10
 VER,6,+54.617s,20,8
@@ -276,6 +531,174 @@ DNF	Isack Hadjar	FRA	Oracle Red Bull Racing
 // =====================================================
 
 export const previousRaceResults = [
+    {
+    raceName: "Canadian Grand Prix",
+    raceDates: "May 22nd–24th, 2026",
+    location: "Circuit Gilles-Villeneuve, Montreal",
+    weekendFormat: "sprint",
+
+    raceWeekendRecap: {
+      enabled: true,
+      title: "Canadian GP Weekend Recap",
+      sections: [
+        {
+          heading: "Practice",
+          items: [
+            {
+              title: "First practice report: Antonelli leads Mercedes 1-2 in red-flag interrupted session",
+              summary:
+                "Kimi Antonelli set the pace in the only Canadian Grand Prix practice session, leading a strong Mercedes one-two ahead of George Russell. The session was messy and heavily interrupted, with red flags for Liam Lawson, Alex Albon’s groundhog strike, and a late Esteban Ocon crash.",
+              url: "https://www.crash.net/f1/news/1095798/1/kimi-antonelli-tops-canada-f1-practice-after-alex-albon-strikes-groundhog",
+            },
+          ],
+        },
+        {
+          heading: "Sprint Qualifying",
+          items: [
+            {
+              title: "Sprint qualifying report: Russell edges Antonelli for pole as Alonso crash causes red flag",
+              summary:
+                "George Russell grabbed sprint pole in Canada, narrowly beating Mercedes teammate Kimi Antonelli to give the team a front-row lockout. McLaren stayed close behind with Lando Norris and Oscar Piastri, while Fernando Alonso’s crash brought out a red flag and Max Verstappen could only manage seventh.",
+              url: "https://www.planetf1.com/news/2026-canadian-grand-prix-sprint-qualifying-report",
+            },
+          ],
+        },
+        {
+          heading: "Sprint Race",
+          items: [
+            {
+              title: "Russell Wins Canadian Sprint After Antonelli Clash Clears Steward Review",
+              summary:
+                "George Russell won the Canadian GP sprint after a tense early fight with Mercedes teammate Kimi Antonelli, who attacked around the outside at Turn 1 and then made another move into Turn 8 before running wide and losing ground. The stewards briefly checked the incidents but decided no formal investigation was needed, with Russell keeping the win while Antonelli was left frustrated by what he felt was hard defending.",
+              url: "https://www.the-race.com/formula-1/canadian-gp-f1-stewards-antonelli-russell-no-investigation/",
+            },
+          ],
+        },
+        {
+          heading: "Qualifying",
+          items: [
+            {
+              title: "Mercedes Locks Out Canada Front Row as Hamilton Faces Stewards",
+              summary:
+                "George Russell grabbed Canadian Grand Prix pole with a late Mercedes one-two over Kimi Antonelli, putting the team in control at the front after a tense day in Montreal. Behind them, Lewis Hamilton qualified fifth but could still face a grid penalty after being called to the stewards for allegedly impeding Pierre Gasly in Q1.",
+              url: "https://www.crash.net/f1/news/1096003/1/george-russell-hails-epic-f1-canadian-gp-pole-lap-came-nowhere",
+            },
+          ],
+        },
+        {
+          heading: "Race",
+          items: [
+            {
+              title: "Antonelli wins again as Russell’s Canadian GP heartbreak changes everything",
+              summary:
+                "Kimi Antonelli took another major step in the 2026 title fight by winning the Canadian Grand Prix after George Russell retired from the lead with a power unit failure. Russell had looked set to challenge his Mercedes teammate head-on, but his lap 30 stoppage handed Antonelli control of the race and turned a potential team duel into a major championship swing.",
+              url: "https://www.motorsport.com/f1/news/f1-canadian-gp-kimi-antonelli-lands-f1-2026-blow-as-george-russell-retires-from-canada-gp/10823926/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+            },
+          ],
+        },
+      ],
+    },
+
+    sessions: [
+      {
+        id: "p1",
+        type: "practice",
+        label: "Practice 1",
+        time: "Kimi fastest, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseLapPaste(PASTE_CANADA_P1),
+      },
+      {
+        id: "sq",
+        type: "sprint_shootout",
+        label: "Sprint Qualifying",
+        time: "George on pole for sprint, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseQualifyingPaste(PASTE_CANADA_SQ),
+      },
+      {
+        id: "sprint",
+        type: "sprint_race",
+        label: "Sprint Race",
+        time: "George wins Canadian Sprint",
+        trackNote: "",
+        extraNote: "",
+        results: parseRacePaste(PASTE_CANADA_SPRINT),
+      },
+      {
+        id: "q",
+        type: "qualifying",
+        label: "Qualifying",
+        time: "George on pole, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseQualifyingPaste(PASTE_CANADA_Q),
+      },
+      {
+        id: "race",
+        type: "race",
+        label: "Race Results",
+        time: "Kimi Antonelli wins Canadian GP, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseRacePaste(PASTE_CANADA_RACE),
+      },
+    ],
+
+    // Keeps the old Previous Results page working until we update the display layout.
+    session: {
+      id: "race",
+      type: "race",
+      label: "Race Results",
+      time: "Kimi Antonelli wins Canadian GP, full results below",
+      extraNote: "Dry Track",
+      results: parseRacePaste(PASTE_CANADA_RACE),
+    },
+  },
+    {
+    raceName: "MIAMI GRAND PRIX ",
+    raceDates: "May 01st–03rd, 2026",
+    location: "Miami International Autodrome, US",
+    session: {
+      id: "race",
+      type: "race",
+      label: "Race",
+      time: "Winner name here, full results below.",
+      extraNote: "Dry Track",
+      results: parseRacePaste(PASTE_MIAMI_RACE),
+    },
+  },
+
+  {
+    raceName: "JAPANESE GRAND PRIX ",
+    raceDates: "Mar 26th–29th, 2026",
+    location: "Suzuka Circuit, Japan",
+    session: {
+      id: "race",
+      type: "race",
+      label: "Race",
+      time: "Winner name here, full results below.",
+      extraNote: "Dry Track",
+      results: parseRacePaste(PASTE_JAPANESE_RACE),
+    },
+  },
+
+  {
+    raceName: "Chinese Grand Prix",
+    raceDates: "Mar 19th–22nd, 2026",
+    location: "Shanghai, China",
+    session: {
+      id: "race",
+      type: "race",
+      label: "Race",
+      time: "Winner name here, full results below.",
+      extraNote: "Dry Track",
+      results: parseRacePaste(PASTE_CHINA_RACE),
+    },
+  },
+
   {
     raceName: "Australian Grand Prix",
     raceDates: "Mar 5th–8th, 2026",
@@ -289,44 +712,4 @@ export const previousRaceResults = [
       results: parseRacePaste(PASTE_AUSTRALIA_RACE),
     },
   },
-
-  {
-  raceName: "Chinese Grand Prix",
-  raceDates: "Mar 19th–22nd, 2026",
-  location: "Shanghai, China",
-  session: {
-    id: "race",
-    type: "race",
-    label: "Race",
-    time: "Winner name here, full results below.",
-    extraNote: "Dry Track",
-    results: parseRacePaste(PASTE_CHINA_RACE),
-  },
-},
-{
-raceName: "JAPANESE GRAND PRIX ",
-  raceDates: "Mar 26th–29th, 2026",
-  location: "Suzuka Circuit, Japan",
-  session: {
-    id: "race",
-    type: "race",
-    label: "Race",
-    time: "Winner name here, full results below.",
-    extraNote: "Dry Track",
-    results: parseRacePaste(PASTE_JAPANESE_RACE),
-  },
-},
-{
-raceName: "MIAMI GRAND PRIX ",
-  raceDates: "May 01st–03rd, 2026",
-  location: "Miami International Autodrome, US",
-  session: {
-    id: "race",
-    type: "race",
-    label: "Race",
-    time: "Winner name here, full results below.",
-    extraNote: "Dry Track",
-    results: parseRacePaste(PASTE_MIAMI_RACE),
-  },
-},
 ];

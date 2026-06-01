@@ -15,11 +15,11 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
-  label: "Canadian GP Recap",
-  title: "Full Canadian GP race results in the KC F1 Race Centre",
+  enabled: false,
+  label: "Monaco GP Race Centre",
+  title: "Monaco GP weekend coverage in the KC F1 Race Centre",
   body:
-    "Session times, results, weather, qualifying, race updates, and the key stories from Circuit Gilles-Villeneuve, all summarized for a quick read.",
+    "Session times, weather, qualifying, race updates, and the key Monaco storylines will be added as the weekend unfolds.",
   buttonText: "Go to Race Centre →",
   buttonLink: "/next-race",
 };

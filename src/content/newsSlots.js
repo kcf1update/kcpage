@@ -2,122 +2,113 @@ const newsSlots = [
     
  {
   slotId: "news1",
-  sourceLabel: "RacingNews365",
-  title: "What has triggered Max Verstappen F1 exit threats explained",
-  summary: "Max Verstappen’s frustration with F1’s new rules continues to grow, with the focus mainly on power unit balance, energy management, and whether the sport is moving too far away from pure racing.",
-  kcsQuickShift: "This is a big one because when Verstappen talks about not enjoying the direction of F1, the sport has to take that seriously.",
-  url: "https://racingnews365.com/what-has-triggered-max-verstappen-f1-exit-threats-explained",
-  imagePath: "/img/news/xpb/xpbverstappen.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "May 31, 2026"
+  sourceLabel: "Crash.net",
+  title: "F1 2026 Monaco Grand Prix: Start time, how to watch and full schedule",
+  summary: "Formula 1 heads to Monaco from June 5-7 for a traditional race weekend, with practice on Friday, final practice and qualifying on Saturday, and the Grand Prix on Sunday. The tight Monte Carlo streets put extra pressure on qualifying, with Mercedes looking strong but Ferrari tipped as a serious threat.",
+  kcsQuickShift: "Monaco week is here, and this is the one where Saturday qualifying can shape the whole weekend.",
+  url: "https://www.crash.net/f1/news/1096692/1/f1-2026-monaco-grand-prix-start-time-how-watch-and-full-schedule",
+  imagePath: "/img/news/raceposter/news-postermonaco.jpg",
+  imageSource: "KC AI Generated Image",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news2",
-  sourceLabel: "RacingNews365",
-  title: "Lewis Hamilton highlights key boost to Kimi Antonelli maiden F1 title hopes",
-  summary: "Lewis Hamilton says Kimi Antonelli has a stronger support system around him at Mercedes than Hamilton had during his first title fight in 2007, with Toto Wolff helping guide the young Italian through the pressure.",
-  kcsQuickShift: "Antonelli has the speed, but having the right people around him may be just as important in a title fight.",
-  url: "https://racingnews365.com/lewis-hamilton-highlights-key-boost-to-kimi-antonelli-maiden-f1-title-hopes",
-  imagePath: "/img/news/xpb/news-xpblewis.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "May 31, 2026"
+  sourceLabel: "Crash.net",
+  title: "Guenther Steiner dig at Max Verstappen over F1 2026 rules draws brutal clapback from Jos",
+  summary: "Guenther Steiner took a swipe at Max Verstappen’s complaints over the 2026 F1 rules, suggesting the debate is partly about keeping Max happy. Jos Verstappen fired back at Steiner, while Max continues to make it clear that the planned 2026 engine format still needs changes.",
+  kcsQuickShift: "This 2026 rules debate is not going away, and when Steiner and the Verstappen camp get involved, it gets personal fast.",
+  url: "https://www.crash.net/f1/news/1096685/1/guenther-steiner-dig-max-verstappen-over-f1-2026-rules-draws-brutal-clawback-jos",
+  imagePath: "/img/news/shut/news-shutterstockmax.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news3",
   sourceLabel: "Crash.net",
-  title: "Why Fernando Alonso is convinced he’s ‘the best’ in F1 despite Aston Martin woes",
-  summary: "Fernando Alonso remains fully confident in his own level despite Aston Martin’s difficult start to 2026, saying he does not need the car’s results to prove he is still operating at the top.",
-  kcsQuickShift: "That is classic Alonso, and honestly, that confidence is probably part of why he is still so dangerous after all these years.",
-  url: "https://www.crash.net/f1/news/1096355/1/why-fernando-alonso-convinced-hes-best-f1-despite-aston-martin-woes",
-  imagePath: "/img/news/shut/news-shutfernando.jpg",
-  imageSource: "Shutterstock",
-  dateLabel: "May 31, 2026"
+  title: "Explained: Why F1 has removed active aero at the Monaco Grand Prix",
+  summary: "F1 drivers will not have active aero available at Monaco after the FIA decided there will be no straight mode zones around the circuit. The decision comes down to safety and stability, with Monaco’s short straights, traction zones and braking areas not fitting the FIA’s criteria.",
+  kcsQuickShift: "This makes sense for Monaco, because the last thing anyone needs is cars getting unstable through those tight streets.",
+  url: "https://www.crash.net/f1/news/1096301/1/explained-why-f1-has-removed-active-aero-monaco-grand-prix",
+  imagePath: "/img/news/kcai/news-FIA.jpg",
+  imageSource: "KC AI Generated Image",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news4",
-  sourceLabel: "Crash.net",
-  title: "Why Carlos Sainz thinks the time has come to stop complaining about F1 2026 rules",
-  summary: "Carlos Sainz says the current 2026 rules are still not ideal, but he believes drivers may have to stop complaining for now and focus on improving the package for next season.",
-  kcsQuickShift: "Sainz is not saying the rules are perfect, but he seems ready to stop fighting the same battle every weekend.",
-  url: "https://www.crash.net/f1/news/1096291/1/why-carlos-sainz-thinks-time-has-come-stop-complaining-about-f1-2026-rules",
-  imagePath: "/img/news/xpb/news-xpbcarlos.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "RacingNews365",
+  title: "Lance Stroll reveals staggering Aston Martin upgrades timeline",
+  summary: "Lance Stroll says Aston Martin may not bring its first major upgrade until Spa or Zandvoort, meaning the team could be waiting until after the summer break for new parts. Stroll said the vibration issue has been fixed, but the AMR26 still needs a lot more power and downforce.",
+  kcsQuickShift: "That is a long wait for Aston Martin, especially when the car still sounds like it needs help in a few big areas.",
+  url: "https://racingnews365.com/lance-stroll-reveals-staggering-aston-martin-upgrades-timeline",
+  imagePath: "/img/news/shut/news-shutterstocklance.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news5",
-  sourceLabel: "AUTOhebdo",
-  title: "Décryptage – Aménagement moteur : Urgent d’attendre ? EN: Analysis: Engine adjustments, is it urgent to wait?",
-  summary: "Nouvelle répartition de puissance, réduction des courses trop énergivores et discussions autour de l’ADUO continuent d’alimenter les débats entre les équipes, la FOM et la FIA. EN: The debate over F1’s engine rules continues, with power split, energy management, and ADUO all part of the discussion as the sport tries to find common ground.",
-  kcsQuickShift: "This engine debate is not going away, and it may shape how good or frustrating this new era of F1 really becomes. FR: Ce débat moteur ne va pas disparaître, et il pourrait définir cette nouvelle ère de la F1.",
-  url: "https://www.autohebdo.fr/actualites/f1/decryptage-amenagement-moteur-urgent-dattendre.html",
-  imagePath: "/img/news/kcai/news-aduo1.jpg",
-  imageSource: "KC AI generated image",
-  dateLabel: "May 30, 2026"
+  sourceLabel: "PlanetF1",
+  title: "Williams targeting ‘next level’ as former McLaren insider joins in latest signing spree",
+  summary: "Williams has added former McLaren insider Piers Thynne as part of a wider recruitment push under James Vowles. Thynne helped McLaren during its recent rise, and Williams is also bringing in experienced names from Mercedes and Alpine as it tries to build back toward the front.",
+  kcsQuickShift: "Williams is not just talking about rebuilding anymore, they are bringing in serious people to try and make it happen.",
+  url: "https://www.planetf1.com/news/williams-mclaren-f1-jobs-piers-thynne",
+  imagePath: "/img/news/xpb/news-xpbjames.jpg",
+  imageSource: "XPB IMAGES",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news6",
   sourceLabel: "Motorsport.com",
-  title: "The reclined seating position that caused Fernando Alonso's Canadian GP retirement",
-  summary: "Fernando Alonso’s Canadian Grand Prix retirement was linked to severe back pain caused by Aston Martin’s more reclined cockpit position, with the issue becoming too much after repeated kerb impacts in Montreal.",
-  kcsQuickShift: "That is a rough way to end a race, and it shows how even small cockpit changes can become a big problem for the driver.",
-  url: "https://www.motorsport.com/f1/news/fernando-alonso-canadian-gp-retirement-cause/10825683/",
-  imagePath: "/img/news/shut/news-shutaston.jpg",
-  imageSource: "Motorsport.com",
-  dateLabel: "May 31, 2026"
+  title: "Max Verstappen jokes about Red Bull in Monaco: ‘I’m going to order a new back’",
+  summary: "Max Verstappen says Monaco could be another tough weekend for Red Bull, joking that he may need a new back because of how bumpy the circuit is. Red Bull has struggled with kerbs and bumps before, and Monaco’s tight street layout could expose that weakness again.",
+  kcsQuickShift: "Max is joking, but there is a real concern here because Monaco is exactly the kind of track that can make Red Bull uncomfortable.",
+  url: "https://www.motorsport.com/f1/news/max-verstappen-jokes-about-red-bull-in-monaco-im-going-to-order-a-new-back/10825961/",
+  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news7",
-  sourceLabel: "PlanetF1",
-  title: "James Vowles sends clear Carlos Sainz message before F1 silly season ignites",
-  summary: "James Vowles believes Carlos Sainz and Alex Albon still want to be part of the Williams project, even with driver market talk starting to build around the grid.",
-  kcsQuickShift: "This is really about trust, because Williams has to show Sainz and Albon that the progress is real.",
-  url: "https://www.planetf1.com/news/carlos-sainz-williams-james-vowles-driver-market",
-  imagePath: "/img/news/xpb/news-xpbjames.jpg",
+  sourceLabel: "RacingNews365 NL",
+  title: "Norris treedt in voetsporen Verstappen met Nordschleife-debuut EN: Norris follows in Verstappen’s footsteps with Nordschleife debut",
+  summary: "Lando Norris heeft zijn eerste rondes gereden op de Nürburgring Nordschleife in een McLaren 750S, nadat Max Verstappen eerder ook veel aandacht kreeg op het beroemde circuit. In de beelden is te zien dat Norris voorzichtig begint, maar steeds meer vertrouwen krijgt. EN: Lando Norris has completed his first laps of the Nürburgring Nordschleife in a McLaren 750S, following the recent attention around Max Verstappen at the same famous circuit. The onboard footage shows Norris starting carefully before growing more confident.",
+  kcsQuickShift: "Nice little side story here with Lando trying the Nordschleife, and you can see him getting more comfortable as the run goes on. NL: Mooi klein zijverhaal hier met Lando op de Nordschleife, en je ziet hem steeds meer vertrouwen krijgen tijdens de rit.",
+  url: "https://racingnews365.nl/norris-treedt-in-voetsporen-verstappen-met-nordschleife-debuut",
+  imagePath: "/img/news/xpb/news-xpblando.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "May 31, 2026"
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news8",
-  sourceLabel: "Autosport",
-  title: "From Benetton to Gucci: Is Briatore closing the circle at Enstone?",
-  summary: "Autosport looks at the parallels between Benetton’s rise in F1 and Gucci’s arrival at Alpine, with Flavio Briatore again sitting near the centre of the Enstone story.",
-  kcsQuickShift: "This is one of those bigger picture F1 stories where business, history, and team politics all cross over.",
-  url: "https://www.autosport.com/f1/news/from-benetton-to-gucci-is-briatore-closing-the-circle-at-enstone/10825180/",
-  imagePath: "/img/news/shut/news-shutflavio.jpg",
+  sourceLabel: "Motorsport.com",
+  title: "Williams prioritises Monaco spare parts after costly Alex Albon Canadian GP crash",
+  summary: "James Vowles says Williams is pushing hard to build up its spare parts supply before Monaco after a damaging Canadian Grand Prix weekend. Alex Albon’s Friday crash hit several major components, and Vowles warned that Monaco’s tight street circuit can be brutal if a team arrives short on spares.",
+  kcsQuickShift: "This is the hidden side of a crash weekend, because the damage does not end when the car gets back to the garage.",
+  url: "https://www.motorsport.com/f1/news/williams-prioritised-monaco-spare-parts-after-costly-alex-albon-canadian-gp-crash/10825763/",
+  imagePath: "/img/news/shut/news-shutterstockalbon.jpg",
   imageSource: "Shutterstock",
-  dateLabel: "May 29, 2026"
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news9",
-  sourceLabel: "F1news.se",
-  title: "Antonelli får vägledning från Wolff och Bono EN: Antonelli gets guidance from Wolff and Bono",
-  summary: "Kimi Antonelli fick stöd och tydliga instruktioner från Toto Wolff och Peter Bonnington efter den intensiva Mercedes-duellen med George Russell under Kanadas sprintlopp. EN: Kimi Antonelli received guidance from Toto Wolff and Peter Bonnington after his heated Mercedes battle with George Russell during the Canadian sprint.",
-  kcsQuickShift: "Antonelli is fast, but moments like this show how much learning still happens even when a young driver is winning. SE: Antonelli är snabb, men sådana här stunder visar hur mycket en ung förare fortfarande lär sig även när han vinner.",
-  url: "https://f1news.se/antonelli-far-vagledning-fran-wolff-och-bono",
+  sourceLabel: "Motorsport.com",
+  title: "Kimi Antonelli makes Lewis Hamilton-Nico Rosberg vow amid George Russell F1 fight",
+  summary: "Kimi Antonelli says Mercedes is letting him and George Russell race freely, but he does not want their fight to become another Hamilton-Rosberg situation. After tension between the two in Canada, Antonelli said they can race hard, but need to keep it fair and avoid hurting the team.",
+  kcsQuickShift: "This is exactly the balance Mercedes has to manage now, because Antonelli and Russell both want to win but the team cannot afford a teammate war.",
+  url: "https://www.motorsport.com/f1/news/kimi-antonelli-makes-lewis-hamilton-nico-rosberg-vow-amid-george-russell-f1-fight/10825867/",
   imagePath: "/img/news/xpb/news-xpbkimi3.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "May 29, 2026"
+  dateLabel: "Jun 1, 2026"
 },
-
 {
   slotId: "news10",
   sourceLabel: "Formula 1",
-  title: "Which football team does each Formula 1 driver support?",
-  summary: "Formula1.com takes a lighter look at the football teams followed by drivers on the F1 grid, including Lewis Hamilton and Oscar Piastri backing Arsenal and several French drivers supporting PSG.",
-  kcsQuickShift: "A bit of a lighter story here, but it’s always fun seeing what the drivers are into away from the race track.",
-  url: "https://www.formula1.com/en/latest/article/which-football-team-does-each-formula-1-driver-support.7hpW93YPgRMYmsSHEzw29L",
-  imagePath: "/img/news/kcai/news-premier.jpg",
-  imageSource: "Formula 1",
-  dateLabel: "May 30, 2026"
+  title: "It’s Race Week: 5 storylines we’re excited about ahead of the 2026 Monaco Grand Prix",
+  summary: "Formula 1’s Monaco preview looks at the biggest storylines heading into the weekend, including the importance of qualifying, Ferrari and McLaren’s chances of challenging Mercedes, George Russell trying to close the gap after Canada, and the added traffic challenge with 22 cars on track.",
+  kcsQuickShift: "This is a good Monaco setup piece, because it covers the big picture before the cars hit the streets.",
+  url: "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-monaco-grand-prix.6augu7uTvHvJRRmoxT9O8n",
+  imagePath: "/img/news/shut/news-shutmonaco.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 1, 2026"
 }
 ];
 

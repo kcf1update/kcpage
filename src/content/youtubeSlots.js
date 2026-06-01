@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Lewis Hamilton's big Ferrari F1 breakthrough explained",
-    youtubeInput: "https://youtu.be/o28G5XX8k2k",
+    title: "What can Charles learn from Max? By Peter Windsor",
+    youtubeInput: "https://youtu.be/RPNYL8Z3r-Y",
     
   },
 
   {
     slotId: "slot3",
-    title: "Where Cadillac's F1 team is ‘lacking tremendously’",
-    youtubeInput: "https://youtu.be/Zkj9PIcbJNs",
+    title: "Nico Rosberg: How Beating Lewis Hamilton Nearly Destroyed Me’",
+    youtubeInput: "https://youtu.be/YSi5_rvYuZ4",
     
   }
 ];

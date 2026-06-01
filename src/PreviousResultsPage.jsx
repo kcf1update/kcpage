@@ -181,7 +181,154 @@ function RaceTable({ session }) {
     </div>
   );
 }
+// ---------- practice / qualifying tables ----------
+function PracticeTable({ session }) {
+  const res = session?.results || {};
 
+  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
+    const r = res[id] || {};
+    return {
+  id,
+  pos: Number.isFinite(r.pos) ? r.pos : null,
+  lapTime: r.lapTime || "",
+  laps: r.laps || "",
+  status: r.status || "",
+};
+  });
+
+  rows.sort((a, b) => {
+  const aHasPos = Number.isFinite(a.pos);
+  const bHasPos = Number.isFinite(b.pos);
+
+  if (aHasPos && bHasPos) return a.pos - b.pos;
+  if (aHasPos) return -1;
+  if (bHasPos) return 1;
+
+  const aHasTime = Boolean(a.lapTime);
+  const bHasTime = Boolean(b.lapTime);
+
+  if (aHasTime && !bHasTime) return -1;
+  if (!aHasTime && bHasTime) return 1;
+
+  return (getDriverById(a.id)?.name || a.id).localeCompare(
+    getDriverById(b.id)?.name || b.id
+  );
+});
+
+  return (
+    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
+      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
+        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
+          <tr>
+            <th className="w-[48%] px-1 py-1 text-left sm:px-2">Driver</th>
+            <th className="w-[28%] px-1 py-1 text-left sm:px-2">Lap Time</th>
+            <th className="w-[12%] px-1 py-1 text-left sm:px-2">Laps</th>
+            <th className="w-[12%] px-1 py-1 text-left sm:px-2">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.id} className="align-middle">
+              <td className="min-w-0 px-1 py-1 sm:px-2">
+                <DriverPill driverId={row.id} />
+              </td>
+
+              <td className="px-1 py-1 sm:px-2">
+                <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                  {row.lapTime || "—"}
+                </div>
+              </td>
+
+              <td className="px-1 py-1 text-gray-100 sm:px-2">{row.laps || "—"}</td>
+
+              <td className="px-1 py-1 text-gray-100 sm:px-2">
+                {row.status || "—"}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function QualifyingTable({ session }) {
+  const res = session?.results || {};
+
+  const rows = NEXT_RACE_DRIVER_IDS.map((id) => {
+    const r = res[id] || {};
+    return {
+  id,
+  pos: Number.isFinite(r.pos) ? r.pos : null,
+  q1: r.q1 || "",
+  q2: r.q2 || "",
+  q3: r.q3 || "",
+};
+  });
+
+  rows.sort((a, b) => {
+  const aHasPos = Number.isFinite(a.pos);
+  const bHasPos = Number.isFinite(b.pos);
+
+  if (aHasPos && bHasPos) return a.pos - b.pos;
+  if (aHasPos) return -1;
+  if (bHasPos) return 1;
+
+  const aBest = a.q3 || a.q2 || a.q1;
+  const bBest = b.q3 || b.q2 || b.q1;
+
+  if (aBest && !bBest) return -1;
+  if (!aBest && bBest) return 1;
+
+  return (getDriverById(a.id)?.name || a.id).localeCompare(
+    getDriverById(b.id)?.name || b.id
+  );
+});
+
+  return (
+    <div className="max-w-full overflow-x-hidden overflow-y-auto pr-0 text-xs sm:text-sm">
+      <table className="w-full min-w-0 border-separate border-spacing-y-1 table-fixed">
+        <thead className="text-[10px] uppercase tracking-wide text-gray-300 sm:text-[11px]">
+          <tr>
+            <th className="w-[43%] px-1 py-1 text-left sm:px-2">Driver</th>
+            <th className="w-[19%] px-1 py-1 text-left sm:px-2">Q1</th>
+            <th className="w-[19%] px-1 py-1 text-left sm:px-2">Q2</th>
+            <th className="w-[19%] px-1 py-1 text-left sm:px-2">Q3</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.id} className="align-middle">
+              <td className="min-w-0 px-1 py-1 sm:px-2">
+                <DriverPill driverId={row.id} />
+              </td>
+
+              <td className="px-1 py-1 sm:px-2">
+                <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                  {row.q1 || "—"}
+                </div>
+              </td>
+
+              <td className="px-1 py-1 sm:px-2">
+                <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                  {row.q2 || "—"}
+                </div>
+              </td>
+
+              <td className="px-1 py-1 sm:px-2">
+                <div className="truncate rounded-full border border-white/10 bg-black/50 px-2 py-1">
+                  {row.q3 || "—"}
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 // ---------- race card ----------
 function RaceCard({ session }) {
   const sum = computeRaceSummary(session);
@@ -207,7 +354,90 @@ function RaceCard({ session }) {
     </article>
   );
 }
+function WeekendRecapCard({ recap }) {
+  if (!recap?.enabled || !Array.isArray(recap.sections)) return null;
 
+  return (
+    <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
+      <h2 className="text-lg font-semibold text-sky-200">
+        {recap.title || "Weekend Recap"}
+      </h2>
+
+      <div className="mt-3 space-y-3">
+        {recap.sections.map((section) => (
+          <div
+            key={section.heading}
+            className="rounded-2xl border border-white/10 bg-black/30 p-3"
+          >
+            <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-100">
+              {section.heading}
+            </h3>
+
+            <div className="mt-2 space-y-3">
+              {(section.items || []).map((item) => (
+                <div key={item.title} className="space-y-1">
+                  <p className="font-semibold text-white">{item.title}</p>
+
+                  {item.summary ? (
+                    <p className="text-sm leading-relaxed text-gray-300">
+                      {item.summary}
+                    </p>
+                  ) : null}
+
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex rounded-full border border-sky-400/40 bg-sky-500/10 px-3 py-1 text-xs font-semibold text-sky-100 hover:bg-sky-500/20"
+                    >
+                      Read article
+                    </a>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </article>
+  );
+}
+function SessionCard({ session }) {
+  if (!session) return null;
+
+  const isPractice = session.type === "practice";
+  const isQualifying =
+    session.type === "qualifying" || session.type === "sprint_shootout";
+  const isRace =
+    session.type === "race" || session.type === "sprint_race";
+
+  if (isRace) {
+    return <RaceCard session={session} />;
+  }
+
+  return (
+    <article className="min-w-0 max-w-full overflow-x-hidden rounded-3xl border border-white/10 bg-black/30 p-3 backdrop-blur sm:p-4">
+      <header className="mb-3">
+        <h2 className="text-lg font-semibold">
+          <span className="text-sky-200">{session.label || "Session"}</span>
+        </h2>
+
+        {session.time ? (
+          <p className="mt-1 text-sm text-gray-300">{session.time}</p>
+        ) : null}
+
+        {session.extraNote ? (
+          <p className="mt-1 text-xs text-amber-100">{session.extraNote}</p>
+        ) : null}
+      </header>
+
+      {isPractice ? <PracticeTable session={session} /> : null}
+
+      {isQualifying ? <QualifyingTable session={session} /> : null}
+    </article>
+  );
+}
 export default function PreviousResultsPage() {
   return (
     <div className="relative min-h-screen w-full max-w-full overflow-x-hidden text-white">
@@ -222,19 +452,48 @@ export default function PreviousResultsPage() {
         </div>
 
         <section className="space-y-6">
-          {previousRaceResults.map((race) => (
-            <div key={race.raceName} className="space-y-3">
-              <div className="rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
-                <h2 className="text-xl font-semibold text-sky-200">{race.raceName}</h2>
-                <p className="mt-1 text-sm text-gray-300">
-                  {race.raceDates} • {race.location}
-                </p>
-              </div>
+  {previousRaceResults.map((race) => {
+    const hasFullWeekend = Array.isArray(race.sessions) && race.sessions.length > 0;
 
-              <RaceCard session={race.session} />
-            </div>
-          ))}
-        </section>
+    return (
+      <div key={race.raceName} className="space-y-3">
+        <div className="rounded-3xl border border-sky-300/40 bg-sky-900/80 p-4 shadow-lg shadow-black/30 backdrop-blur">
+  <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-200">
+        Previous Race
+      </p>
+
+      <h2 className="mt-1 text-2xl font-bold tracking-wide text-white">
+        {race.raceName}
+      </h2>
+    </div>
+
+    <p className="text-sm font-medium text-sky-100">
+      {race.raceDates}
+    </p>
+  </div>
+
+  <p className="mt-2 text-sm text-sky-100/90">
+    {race.location}
+  </p>
+</div>
+
+        {hasFullWeekend ? (
+  <div className="space-y-3">
+    <WeekendRecapCard recap={race.raceWeekendRecap} />
+
+    {race.sessions.map((session) => (
+      <SessionCard key={session.id} session={session} />
+    ))}
+  </div>
+) : (
+  <RaceCard session={race.session} />
+)}
+      </div>
+    );
+  })}
+</section>
 
         <div className="mt-2">
           <AdBar />
