@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "BYD to start CHINESE F1 TEAM with Christian Horner?",
-  youtubeInput: "https://youtu.be/mKETw5ZqD5g",
+  title: "I’m gonna pee in your seat!’ 🤣 | Martin Brundle takes on the F1 Radio Challenge | Monaco Edition",
+  youtubeInput: "https://youtu.be/QVmzK2XiYQ8",
   
   },
 
   {
     slotId: "slot2",
-    title: "What can Charles learn from Max? By Peter Windsor",
-    youtubeInput: "https://youtu.be/RPNYL8Z3r-Y",
+    title: "The Insane Genius of a Formula 1 Gearbox",
+    youtubeInput: "https://youtu.be/8E1ecqCo6gM",
     
   },
 
