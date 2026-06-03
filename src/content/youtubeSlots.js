@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "I’m gonna pee in your seat!’ 🤣 | Martin Brundle takes on the F1 Radio Challenge | Monaco Edition",
-  youtubeInput: "https://youtu.be/QVmzK2XiYQ8",
+  title: "Lando Norris' first lap of the Nordschleife | McLaren Racing",
+  youtubeInput: "https://youtu.be/S5vED9DWKA0",
   
   },
 
   {
     slotId: "slot2",
     title: "The Insane Genius of a Formula 1 Gearbox",
-    youtubeInput: "https://youtu.be/8E1ecqCo6gM",
+    youtubeInput: "https://youtu.be/qMtyBDf8UmE",
     
   },
 
   {
     slotId: "slot3",
-    title: "Nico Rosberg: How Beating Lewis Hamilton Nearly Destroyed Me’",
-    youtubeInput: "https://youtu.be/YSi5_rvYuZ4",
+    title: "F1’s unusual rules to slow cars down in Monaco explained",
+    youtubeInput: "https://youtu.be/cryXT0_8-Xw",
     
   }
 ];
