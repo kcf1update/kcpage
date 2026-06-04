@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export default function CountdownBar() {
   const getTimeRemaining = () => {
-    const targetTime = new Date("2026-06-05T13:00:00Z").getTime();
+    const targetTime = new Date("2026-06-05T11:30:00Z").getTime();
     const now = Date.now();
     const total = targetTime - now;
 

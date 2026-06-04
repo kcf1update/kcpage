@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lando Norris' first lap of the Nordschleife | McLaren Racing",
-  youtubeInput: "https://youtu.be/S5vED9DWKA0",
+  title: "Leclerc's surprise deal and Ferrari Monaco F1 favourite status explained",
+  youtubeInput: "https://youtu.be/6nw-TkMQjAo",
   
   },
 
   {
     slotId: "slot2",
-    title: "The Insane Genius of a Formula 1 Gearbox",
-    youtubeInput: "https://youtu.be/qMtyBDf8UmE",
+    title: "Charles Leclerc's contract extension & why Monaco could suit Ferrari",
+    youtubeInput: "https://youtu.be/1US6HNsVMbI",
     
   },
 
   {
     slotId: "slot3",
-    title: "F1’s unusual rules to slow cars down in Monaco explained",
-    youtubeInput: "https://youtu.be/cryXT0_8-Xw",
+    title: "F1 Drivers' LUXURY SUPERYACHTS at the Monaco Grand Prix!",
+    youtubeInput: "https://youtu.be/NkTO2CFJJQ8",
     
   }
 ];
