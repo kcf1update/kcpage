@@ -378,7 +378,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
-
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m13.026s	35
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.137s	35
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m13.194s	34
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.405s	35
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m13.529s	34
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	1m14.087s	23
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m14.088s	30
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m14.094s	34
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m14.359s	34
+10	Ollie Bearman	GBR	TGR Haas F1 Team	1m14.456s	36
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m14.497s	36
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m14.512s	34
+13	Alex Albon	THA	Atlassian Williams F1 Team	1m14.600s	38
+14	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m14.748s	36
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m14.758s	30
+16	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m14.785s	35
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m14.845s	34
+18	Sergio Perez	MEX	Cadillac F1 Team	1m15.116s	31
+19	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.274s	8
+20	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m15.294s	30
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m15.759s	28
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m16.174s	27
 `;
 
 const PASTE_P3 = `
@@ -477,16 +498,39 @@ export const raceWeekendRecap = {
         ]
       : [
           {
-  heading: "Practice",
+  heading: "Practice 1",
   items: [
     {
       title: "Leclerc puts Ferrari on top in Monaco FP1",
       summary:
-        "Ferrari opened Monaco exactly the way it wanted, with Charles Leclerc fastest and Lewis Hamilton second in FP1. Max Verstappen was third, but the session was far from clean, with Isack Hadjar crashing at the Swimming Pool chicane and Fernando Alonso also clipping the barriers to trigger a second red flag.",
+        "Ferrari opened Monaco exactly the way it wanted, with Charles Leclerc fastest and Lewis Hamilton second in FP1. Max Verstappen was third, but the session was far from clean, with Isack Hadjar crashing at the Swimming Pool and Fernando Alonso dipping the barriers to trigger a second red flag.",
       url: "https://www.formula1.com/en/latest/article/fp1-leclerc-sets-the-pace-ahead-of-hamilton-and-verstappen-during-disrupted-first-practice-in-monaco.1yE6wEXZmEwE2WRfoLXVXz",
     },
   ],
 },
+{
+  heading: "Practice 2",
+  items: [
+    {
+      title: "Hamilton leads Ferrari 1-2 as Norris hits trouble in FP2",
+      summary:
+        "Ferrari stayed on top in FP2 as Hamilton led Leclerc for another 1-2, with Verstappen close behind in third. It was not a clean session, with several drivers skating close to the walls around Monaco. Norris had the biggest problem when his McLaren stopped near the Nouvelle Chicane, costing him valuable track time and bringing out a VSC. Hadjar recovered well from his FP1 crash to finish sixth, while late smoke from Perez’s Cadillac brought out a red flag before the session ended.",
+      url: "https://www.formula1.com/en/latest/article/fp2-hamilton-leads-another-ferrari-1-2-during-second-practice-in-monaco.bCQgEBYyVg0K6KvGKPj6V",
+    },
+  ],
+},
+{
+  heading: "Practice 3",
+  items: [
+    {
+      title: "Practice 3 report coming soon",
+      summary:
+        "Final practice updates and last setup clues will be added here after FP3.",
+      url: "",
+    },
+  ],
+},
+
           {
             heading: "Qualifying",
             items: [
@@ -605,7 +649,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:00 PM ADT",
+          time: "Hamilton Fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),

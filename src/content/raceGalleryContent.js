@@ -29,6 +29,11 @@ export const raceGalleryContent = {
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
+         {
+          src: "/img/news/xpb/news-xpbsergiomonaco.jpg",
+          alt: "Friday race weekend gallery image 3",
+          credit: "XPB Images",
+        },
       ],
     },
 

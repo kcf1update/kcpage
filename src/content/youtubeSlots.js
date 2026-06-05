@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Leclerc's surprise deal and Ferrari Monaco F1 favourite status explained",
-  youtubeInput: "https://youtu.be/6nw-TkMQjAo",
+  title: "Drivers Look Ahead To Race Weekend | 2026 Monaco Grand Prix",
+  youtubeInput: "https://youtu.be/UMU4PwzOB0c",
   
   },
 
   {
     slotId: "slot2",
-    title: "Charles Leclerc's contract extension & why Monaco could suit Ferrari",
-    youtubeInput: "https://youtu.be/1US6HNsVMbI",
+    title: "On board the M2B with Mika Häkkinen in Monaco | McLaren Racing",
+    youtubeInput: "https://youtu.be/e2dpe85JrcY",
     
   },
 

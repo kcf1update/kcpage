@@ -2,14 +2,14 @@ const newsSlots = [
     
  {
   slotId: "news1",
-  sourceLabel: "Crash.net",
-  title: "Leclerc leads Ferrari 1-2 in first Monaco practice",
-  summary: "Charles Leclerc set the pace in opening practice for the Monaco Grand Prix, leading a Ferrari 1-2 ahead of Lewis Hamilton. Max Verstappen was third, while Isack Hadjar and Fernando Alonso both crashed in a red-flagged session.",
-  kcsQuickShift: "That is exactly the start Ferrari wanted in Monaco, but with walls already catching drivers out, this weekend is not going to be calm.",
-  url: "https://www.crash.net/f1/news/1096934/1/charles-leclerc-heads-ferrari-1-2-first-monaco-gp-f1-practice-isack-hadjar",
-  imagePath: "/img/news/Ferrari/ferrarimonaco.jpg",
-  imageSource: "Courtesy of ferrari F1",
-  dateLabel: "Jun 5, 2026",
+  sourceLabel: "Motorsport.com",
+  title: "Hamilton Leads Ferrari 1-2 Again As Norris Hits Trouble In FP2",
+  summary: "Lewis Hamilton topped second practice in Monaco as Ferrari completed another 1-2, with Charles Leclerc just 0.111s behind. Lando Norris’ session ended early after a McLaren issue sent him down the Nouvelle Chicane escape road, while a late Sergio Perez stoppage brought out the red flag.",
+  kcsQuickShift: "Ferrari looks properly hooked up in Monaco, but Norris losing most of FP2 is a big headache for McLaren.",
+  url: "https://www.motorsport.com/f1/news/f1-monaco-gp-tktk/10827130/",
+  imagePath: "/img/news/Ferrari/ferrarilewismonaco.jpg",
+  imageSource: "Courtesy of Ferrari F1",
+  dateLabel: "June 5, 2026"
 },
 
 {
