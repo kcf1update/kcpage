@@ -10,6 +10,7 @@ import {
   NEXT_RACE_DRIVER_IDS,
   raceWeekendRecap,
 } from "./content/nextRaceContent";
+import { raceGalleryContent } from "./content/raceGalleryContent";
 import { getDriverById } from "./content/drivers";
 
 
@@ -544,6 +545,87 @@ if (!hasResults) {
     </article>
   );
 }
+function RaceGalleryCard() {
+  if (!raceGalleryContent.enabled) return null;
+
+  const galleries = raceGalleryContent.galleries || [];
+
+  const handleProtectedImage = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+    <section
+      id="race-gallery"
+      className="mt-5 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur"
+    >
+      <div className="mb-4">
+        <h2 className="text-sm font-bold text-sky-100 sm:text-base">
+          {raceGalleryContent.title || "Race Weekend Photo Gallery"}
+        </h2>
+
+        <p className="mt-2 rounded-2xl border border-amber-300/20 bg-black/45 px-3 py-2 text-[11px] leading-relaxed text-amber-100/90 sm:text-xs">
+          {raceGalleryContent.notice}
+        </p>
+      </div>
+
+      <div className="space-y-5">
+        {galleries.map((gallery) => {
+          const images = gallery.images || [];
+
+          if (images.length === 0) return null;
+
+          return (
+            <div
+              key={gallery.id}
+              className="rounded-2xl border border-white/10 bg-black/35 p-3"
+            >
+              <div className="mb-3">
+                <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+                  {gallery.label}
+                </h3>
+
+                {gallery.description ? (
+                  <p className="mt-1 text-xs text-slate-200/75">
+                    {gallery.description}
+                  </p>
+                ) : null}
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {images.map((image, index) => (
+                  <figure
+                    key={`${gallery.id}-${index}`}
+                    className="overflow-hidden rounded-2xl border border-white/10 bg-black/50"
+                    onContextMenu={handleProtectedImage}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt || "Race weekend gallery image"}
+                      loading="lazy"
+                      draggable="false"
+                      onContextMenu={handleProtectedImage}
+                      onDragStart={handleProtectedImage}
+                      className="h-auto w-full select-none object-cover"
+                      style={{
+                        WebkitUserDrag: "none",
+                        userSelect: "none",
+                      }}
+                    />
+
+                    <figcaption className="border-t border-white/10 px-3 py-2 text-[10px] text-slate-300/80">
+                      Image credit: {image.credit || "XPB Images"} — viewing only
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
 function RaceWeekendRecapCard() {
   if (!raceWeekendRecap.enabled) return null;
 
@@ -877,7 +959,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
                 <div className="mt-3 grid grid-cols-2 gap-2">
                  <a
-  href="/img/news/shut/news-shutmonaco.jpg"
+  href="/img/tracks/monaco.jpg"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
@@ -887,13 +969,11 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 </a>
 
 <a
-  href="/img/tracks/monaco.jpg"
-  target="_blank"
-  rel="noreferrer"
+  href="#race-gallery"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
-  title="Open Tech guide"
+  title="Jump to race weekend photo gallery"
 >
-  Tech Guide
+  Photo Gallery
 </a>
                   <Link
                     to="/previous-results"
@@ -979,24 +1059,21 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
     </h2>
 
     <div className="mt-3 grid grid-cols-2 gap-2">
-     <a
-  href="/img/news/shut/news-shutmonaco.jpg"
+    <a href="/img/tracks/monaco.jpg"
   target="_blank"
   rel="noreferrer"
-  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
-  title="Open track image"
+  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+  title="Open track map"
 >
   Track
 </a>
 
 <a
-  href="/img/tracks/monaco.jpg"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
-  title="Open tech guide"
+  href="#race-gallery"
+  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+  title="Jump to race weekend photo gallery"
 >
-  Tech Guide
+  Photo Gallery
 </a>
 
       <Link
@@ -1023,7 +1100,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
         </section>
 
 
-
+<RaceGalleryCard />
         <div className="mt-2">
           <AdBar />
         </div>

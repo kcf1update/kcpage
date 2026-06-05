@@ -21,6 +21,7 @@ export default function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/points" element={<PointsPage />} />
             <Route path="/next-race" element={<NextRacePage />} />
+            <Route path="/racecenter" element={<NextRacePage />} />
             <Route path="/news" element={<F1NewsPage />} />
             <Route path="/youtube" element={<YouTubeNewsPage />} />
             <Route path="/comments" element={<CommentsPage />} />

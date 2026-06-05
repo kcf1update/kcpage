@@ -15,13 +15,13 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
+  enabled: true,
   label: "Monaco GP Race Centre",
   title: "Monaco GP weekend coverage in the KC F1 Race Centre",
   body:
-    "Session times, weather, qualifying, race updates, and the key Monaco storylines will be added as the weekend unfolds.",
+    "Session times, weather, qualifying, race updates, results, and race-weekend photo gallery will be added as the weekend unfolds.",
   buttonText: "Go to Race Centre →",
-  buttonLink: "/next-race",
+  buttonLink: "/racecenter",
 };
 // Simple glassy card helper for the lower sections
 function GlassyCard({

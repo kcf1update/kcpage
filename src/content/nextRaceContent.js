@@ -352,7 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-
+1	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.978s	31
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m14.204s	28
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m14.491s	26
+4	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m14.537s	31
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m14.983s	29
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.291s	27
+7	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m15.343s	27
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m15.565s	29
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m15.750s	31
+10	Pierre Gasly	FRA	BWT Alpine F1 Team	1m15.828s	32
+11	Alex Albon	THA	Atlassian Williams F1 Team	1m15.989s	33
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m16.041s	31
+13	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.148s	14
+14	Sergio Perez	MEX	Cadillac F1 Team	1m16.170s	28
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m16.189s	32
+16	Ollie Bearman	GBR	TGR Haas F1 Team	1m16.292s	31
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m16.333s	31
+18	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m16.389s	34
+19	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m16.431s	31
+20	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m16.678s	21
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m17.460s	27
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m17.556s	16
 
 `;
 
@@ -456,16 +477,16 @@ export const raceWeekendRecap = {
         ]
       : [
           {
-            heading: "Practice",
-            items: [
-              {
-                title: "Practice report coming soon",
-                summary:
-                  "The key practice storylines will be added here once practice is complete.",
-                url: "",
-              },
-            ],
-          },
+  heading: "Practice",
+  items: [
+    {
+      title: "Leclerc puts Ferrari on top in Monaco FP1",
+      summary:
+        "Ferrari opened Monaco exactly the way it wanted, with Charles Leclerc fastest and Lewis Hamilton second in FP1. Max Verstappen was third, but the session was far from clean, with Isack Hadjar crashing at the Swimming Pool chicane and Fernando Alonso also clipping the barriers to trigger a second red flag.",
+      url: "https://www.formula1.com/en/latest/article/fp1-leclerc-sets-the-pace-ahead-of-hamilton-and-verstappen-during-disrupted-first-practice-in-monaco.1yE6wEXZmEwE2WRfoLXVXz",
+    },
+  ],
+},
           {
             heading: "Qualifying",
             items: [
@@ -574,10 +595,11 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 am ADT",
+          time: "Leclerc Fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
+          
         },
         {
           id: "p2",
