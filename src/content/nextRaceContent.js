@@ -428,13 +428,122 @@ const PASTE_P3 = `
 `;
 const PASTE_SQ = `
 
-
 	
 `;
 const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	12	
+
+Kimi Antonelli
+
+Mercedes	1:13.599	1:12.704	1:12.051	28
+2	3	
+
+Max Verstappen
+
+Red Bull Racing	1:13.490	1:12.499	1:12.094	26
+3	44	
+
+Lewis Hamilton
+
+Ferrari	1:13.777	1:12.934	1:12.279	28
+4	16	
+
+Charles Leclerc
+
+Ferrari	1:13.293	1:12.774	1:12.351	29
+5	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:14.408	1:12.722	1:12.434	25
+6	63	
+
+George Russell
+
+Mercedes	1:14.214	1:13.238	1:12.445	28
+7	81	
+
+Oscar Piastri
+
+McLaren	1:14.159	1:12.983	1:12.624	29
+8	1	
+
+Lando Norris
+
+McLaren	1:13.630	1:12.919	1:12.765	28
+9	10	
+
+Pierre Gasly
+
+Alpine	1:14.469	1:13.762	1:13.226	32
+10	30	
+
+Liam Lawson
+
+Racing Bulls	1:14.498	1:13.471	1:13.412	29
+11	23	
+
+Alex Albon
+
+Williams	1:14.321	1:13.787		24
+12	55	
+
+Carlos Sainz
+
+Williams	1:14.348	1:13.815		23
+13	27	
+
+Nico Hulkenberg
+
+Audi	1:13.923	1:13.902		21
+14	43	
+
+Franco Colapinto
+
+Alpine	1:14.573	1:13.995		24
+15	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:14.685	1:14.248		23
+16	5	
+
+Gabriel Bortoleto
+
+Audi	1:14.683			10
+17	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:14.722			14
+18	11	
+
+Sergio Perez
+
+Cadillac	1:14.747			12
+19	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:14.814			14
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:15.283			13
+21	14	
+
+Fernando Alonso
+
+Aston Martin	1:15.349			13
+22	18	
+
+Lance Stroll
+
+Aston Martin	1:16.061			11
 
 `;
 
@@ -556,10 +665,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "Qualifying report coming soon",
+                title: "Antonelli grabs Monaco pole after wild Q3 finish",
                 summary:
-                  "Grid-setting updates and qualifying storylines will be added here after qualifying.",
-                url: "",
+                  "Kimi Antonelli took a dramatic Monaco Grand Prix pole with a 1m12.051s, beating Max Verstappen by just 0.043s after a tight Q3 fight where the two were separated by only 0.001s after the first runs. Charles Leclerc briefly put Ferrari on provisional pole by 0.024s, but Verstappen then went fastest before Antonelli delivered the final blow. Leclerc’s last attempt ended with a tap against the barrier at Tabac, leaving him fourth behind teammate Lewis Hamilton, who qualified third. Isack Hadjar put the second Red Bull fifth, George Russell was only sixth and 0.394s slower than Antonelli, while McLaren struggled to seventh and eighth with Oscar Piastri ahead of Lando Norris. Gabriel Bortoleto’s Q1 crash at the Nouvelle Chicane caused a late red flag and a frantic finish, helping Carlos Sainz escape the drop zone while both Haas cars went out early. At Monaco, where passing is brutally difficult, Antonelli’s pole puts him in prime position for Sunday.",
+                url: "https://www.the-race.com/formula-1/antonelli-denies-verstappen-pole-f1-monaco-gp-qualifying-leclerc-hits-wall/",
               },
             ],
           },
@@ -688,7 +797,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Antonelli on pole after wild Q3, results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),

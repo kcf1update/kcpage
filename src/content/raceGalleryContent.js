@@ -52,6 +52,16 @@ export const raceGalleryContent = {
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
+        {
+          src: "/img/news/xpb/news-xpbkimipole.jpg",
+          alt: "Saturday race weekend gallery image 3",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/newspolemonaco.jpg",
+          alt: "Saturday race weekend gallery image 4",
+          credit: "XPB Images",
+        },
       ],
     },
 
