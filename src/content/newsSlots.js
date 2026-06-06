@@ -1,133 +1,114 @@
 const newsSlots = [
     
- {
+{
   slotId: "news1",
-  sourceLabel: "Motorsport.com",
-  title: "Hamilton Leads Ferrari 1-2 Again As Norris Hits Trouble In FP2",
-  summary: "Lewis Hamilton topped second practice in Monaco as Ferrari completed another 1-2, with Charles Leclerc just 0.111s behind. Lando Norris’ session ended early after a McLaren issue sent him down the Nouvelle Chicane escape road, while a late Sergio Perez stoppage brought out the red flag.",
-  kcsQuickShift: "Ferrari looks properly hooked up in Monaco, but Norris losing most of FP2 is a big headache for McLaren.",
-  url: "https://www.motorsport.com/f1/news/f1-monaco-gp-tktk/10827130/",
-  imagePath: "/img/news/Ferrari/ferrarilewismonaco.jpg",
-  imageSource: "Courtesy of Ferrari F1",
-  dateLabel: "June 5, 2026"
+  sourceLabel: "Crash.net",
+  title: "Antonelli Tops Final Monaco Practice As Mercedes Hit Back",
+  summary: "Kimi Antonelli put Mercedes on top in final practice at Monaco, beating Charles Leclerc by 0.327s after Ferrari had led both Friday sessions. Lewis Hamilton was third, just 0.004s behind Leclerc, while George Russell took fourth and Max Verstappen ended up fifth.",
+  kcsQuickShift: "Mercedes found something overnight, but Ferrari still looks right in the fight before a very important Monaco qualifying.",
+  url: "https://www.crash.net/f1/news/1097201/1/kimi-antonelli-fastest-charles-leclerc-mercedes-strike-back-monaco-f1-final",
+  imagePath: "/img/news/xpb/news-xpbkimi3.jpg",
+  imageSource: "XPB IMAGES",
+  dateLabel: "Jun 6, 2026"
 },
-
 {
   slotId: "news2",
-  sourceLabel: "Formula 1",
-  title: "Leclerc tops disrupted first Monaco practice",
-  summary: "Charles Leclerc led the way in FP1 for the Monaco Grand Prix, finishing ahead of Ferrari team mate Lewis Hamilton and Max Verstappen. The session was disrupted by red flags after Isack Hadjar crashed at the Swimming Pool chicane and debris from Fernando Alonso’s front wing caused another stoppage.",
-  kcsQuickShift: "Ferrari looks sharp early in Monaco, but FP1 also proved the barriers are already waiting for anyone who gets even slightly greedy.",
-  url: "https://www.formula1.com/en/latest/article/fp1-leclerc-sets-the-pace-ahead-of-hamilton-and-verstappen-during-disrupted-first-practice-in-monaco.1yE6wEXZmEwE2WRfoLXVXz",
-  imagePath: "/img/news/Ferrari/ferraricharlesmonaco.jpg",
+  sourceLabel: "Motorsport.com",
+  title: "Antonelli Pips Ferrari Pair In Red-Flagged Monaco FP3",
+  summary: "Kimi Antonelli topped a hectic final practice in Monaco with a 1m12.720s, finishing 0.327s clear of Charles Leclerc as Lewis Hamilton completed the top three for Ferrari. The session was interrupted by Oliver Bearman’s crash at Massenet, while George Russell, Max Verstappen, Oscar Piastri and Lando Norris all stayed inside the top nine.",
+  kcsQuickShift: "Antonelli made a big statement, but Monaco qualifying still looks wide open between Mercedes and Ferrari.",
+  url: "https://www.motorsport.com/f1/news/f1-monaco-gp-kimi-antonelli-tops-red-flagged-fp3/10827452/",
+  imagePath: "/img/news/shut/news-shutferrari.jpg",
   imageSource: "Courtesy of Ferrari F1",
-  dateLabel: "Jun 5, 2026",
+  dateLabel: "Jun 6, 2026"
 },
-
 {
   slotId: "news3",
-  sourceLabel: "Crash.net",
-  title: "McLaren still wants clarity over F1 A-B team relationships",
-  summary:
-    "McLaren CEO Zak Brown says Formula 1 still needs clearer rules around team co-operation, even after Mercedes ended talks over buying a stake in Alpine. Brown says the issue is bigger than one deal and argues F1 needs truly independent teams voting and racing in their own interests.",
-  kcsQuickShift:
-    "Brown is not letting this one go, and honestly it is a fair debate when sister teams and shared interests can still shape the politics of F1.",
-  url: "https://www.crash.net/f1/news/1096878/1/why-mclaren-still-wants-f1-b-team-clarity-despite-end-alpine-mercedes-deal",
-  imagePath: "/img/news/shut/news-shutzac.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 5, 2026",
+  sourceLabel: "The Race",
+  title: "McLaren Breaks Curfew To Fix Norris’s Monaco Problem",
+  summary: "McLaren broke one of its permitted curfews overnight in Monaco to work on Lando Norris’s car after his practice problems on Friday. Norris lost valuable track time during FP2, leaving McLaren with extra work to do before final practice and qualifying.",
+  kcsQuickShift: "Not ideal for Norris at Monaco, because every missed lap here can hurt when qualifying is everything.",
+  url: "https://www.the-race.com/formula-1/mclaren-broke-curfew-to-fix-norriss-practice-problems/",
+  imagePath: "/img/news/shut/news-shutterstockmclarenpit.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news4",
-  sourceLabel: "The Race",
-  title: "Every F1 team brings upgrades for Monaco GP",
-  summary:
-    "Every Formula 1 team has brought updates for the Monaco Grand Prix, with high-downforce parts and rear wing ideas getting plenty of attention. With active aero not being used at Monaco, teams have been chasing extra grip in different ways around the tight street circuit.",
-  kcsQuickShift:
-    "This is Monaco, so everyone is hunting downforce wherever they can find it. Some of these wing ideas look like proper old-school F1 creativity.",
-  url: "https://www.the-race.com/formula-1/every-f1-team-tech-upgrades-monaco-gp/",
-  imagePath: "/img/news/shut/news-shutmonaco.jpg",
-  imageSource: "Shutterstock",
-  dateLabel: "Jun 5, 2026",
+  sourceLabel: "Motorsport.com",
+  title: "Button Names Ferrari’s Biggest Monaco Qualifying Threats",
+  summary: "Jenson Button believes Ferrari still looks strong for Monaco qualifying, but he pointed to Mercedes and McLaren as the main threats around the streets of Monte Carlo. With track position so critical, the battle for pole could decide far more than just Saturday bragging rights.",
+  kcsQuickShift: "Ferrari may have the headline pace, but Monaco qualifying is tight enough that one clean lap could flip everything.",
+  url: "https://www.motorsport.com/f1/news/jenson-button-names-ferraris-biggest-monaco-gp-qualifying-threats/10827462/",
+  imagePath: "/img/news/xpb/news-xpbjenson.jpg",
+  imageSource: "XPB IMAGES",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news5",
-  sourceLabel: "ESPN",
-  title: "Antonelli and Russell still free to race as Mercedes tension builds",
-  summary:
-    "Kimi Antonelli and George Russell are still being allowed to race freely at Mercedes, despite recent close calls in Canada. The team wants cleaner racing between its title contenders, but Antonelli says drivers cannot simply be put on a leash once the championship fight gets serious.",
-  kcsQuickShift:
-    "Mercedes wants the points, but they also have two drivers who both know the title is sitting right there. That is not an easy thing to control.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48964950/monaco-grand-prix-formula-1-kimi-antonelli-george-russell-free-race-cant-put-title-rivals-leash",
-  imagePath: "/img/news/xpb/news-kimiandgeorgecanadiangp.jpg",
+  sourceLabel: "PlanetF1",
+  title: "Verstappen Encouraged As Red Bull Closes On Ferrari In Monaco",
+  summary: "Max Verstappen said Red Bull made a positive start in Monaco after finishing third in both Friday practice sessions. Ferrari still looked like the team to beat, but Verstappen, Charles Leclerc and George Russell all pointed to Red Bull being closer than expected around Monte Carlo.",
+  kcsQuickShift: "Ferrari still looks strong, but Verstappen being this close at Monaco is exactly the kind of thing that makes qualifying dangerous.",
+  url: "https://www.planetf1.com/news/max-verstappen-monaco-gp-red-bull-surprise-ferrari-crash-joke",
+  imagePath: "/img/news/xpb/xpbverstappen.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "Jun 5, 2026",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news6",
-  sourceLabel: "Autosport",
-  title: "Audi open to future F1 V8s if efficiency remains the focus",
-  summary:
-    "Audi says it is not opposed to Formula 1 moving toward V8 engines in a future rules cycle, but insists the bigger priority is keeping efficiency and sustainability at the heart of the regulations. CEO Gernot Döllner says turbocharging, sustainable fuels and the overall direction of the rules matter more to Audi than the number of cylinders.",
-  kcsQuickShift:
-    "Audi is basically saying V8s are not the problem, but F1 still has to prove the future engine plan makes sense beyond just sounding good.",
-  url: "https://www.autosport.com/f1/news/audi-responds-to-f1s-future-engine-plans-we-dont-have-problems-with-v8s/10827029/",
-  imagePath: "/img/news/xpb/news-xpbaudigabby.jpg",
+  sourceLabel: "Motorsport.com",
+  title: "Bearman Crashes Out As Red Flag Interrupts Monaco FP3",
+  summary: "Oliver Bearman brought out the red flags during final practice in Monaco after crashing at Massenet. The Haas driver hit the barriers and damaged the car, forcing a stoppage in a session where track time was already extremely valuable before qualifying.",
+  kcsQuickShift: "That is a rough one for Bearman, because Monaco gives drivers almost no room to recover from a mistake before qualifying.",
+  url: "https://www.motorsport.com/f1/news/ollie-bearman-crashes-out-of-monaco-fp3-as-red-flag-halts-session/10827456/",
+  imagePath: "/img/news/xpb/news-xpbbearman.jpg",
   imageSource: "XPB IMAGES",
-  dateLabel: "Jun 5, 2026",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news7",
-  sourceLabel: "Motorsport.com",
-  title: "Alonso wary of Monaco crashes amid Aston Martin downshift issue",
-  summary:
-    "Fernando Alonso says Aston Martin needs to get its gearbox and powertrain issue under control after the car suffered random downshifts in recent races. Alonso warned that Monaco is not the place for rear locking or sudden instability, especially with the walls so close around the street circuit.",
-  kcsQuickShift:
-    "Random downshifts at Monaco sounds about as fun as finding a wall with your name on it. Aston Martin needs this sorted fast.",
-  url: "https://www.motorsport.com/f1/news/alonso-aston-martin-random-downshifts/10826693/",
-  imagePath: "/img/news/shut/news-shutaston.jpg",
-  imageSource: "Shutterstock",
-  dateLabel: "Jun 5, 2026",
+  sourceLabel: "Infobae",
+  title: "Antes de la clasificación, Franco Colapinto quedó 19° en la última práctica libre del GP de Mónaco EN: Before qualifying, Franco Colapinto finished 19th in final Monaco practice",
+  summary: "Franco Colapinto cerró la FP3 del Gran Premio de Mónaco en el puesto 19° con un tiempo de 1:15.179, después de un leve despiste en la horquilla y de quedar por detrás de su compañero Pierre Gasly. EN: Franco Colapinto ended Monaco FP3 in 19th with a 1:15.179 after a small moment at the hairpin, while Pierre Gasly finished 13th for Alpine.",
+  kcsQuickShift: "Colapinto had a difficult final practice, and Monaco is not the easiest place to go into qualifying needing a clean reset. ES: Colapinto tuvo una última práctica complicada, y Mónaco no es el lugar más fácil para llegar a la clasificación necesitando empezar de nuevo.",
+  url: "https://www.infobae.com/deportes/2026/06/06/franco-colapinto-afrontara-la-ultima-practica-libre-y-la-clasificacion-del-gp-de-monaco-hora-tv-y-todo-lo-que-hay-que-saber/",
+  imagePath: "/img/news/Alpine/news-43japan.jpg",
+  imageSource: "Courtesy of Alpine F1",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news8",
-  sourceLabel: "RacingNews365",
-  title: "McLaren rules out Verstappen move as Brown backs current line-up",
-  summary:
-    "Zak Brown has played down the idea of McLaren making a move for Max Verstappen, saying the team is very happy with Lando Norris and Oscar Piastri. Verstappen’s future remains a major paddock talking point, but Brown says he does not see an opening at McLaren right now.",
-  kcsQuickShift:
-    "It is fun paddock gossip, but McLaren already has two top drivers and no obvious reason to blow that up.",
-  url: "https://racingnews365.com/mclaren-offers-clear-stance-on-possible-max-verstappen-swoop",
-  imagePath: "/img/news/shut/news-shutmclaren.jpg",
+  sourceLabel: "RacingNews365.nl",
+  title: "Verstappen moet groot gat laten naar ongenaakbare Antonelli EN: Verstappen left with big gap to untouchable Antonelli",
+  summary: "Kimi Antonelli sloot de derde vrije training in Monaco als snelste af, met Charles Leclerc, Lewis Hamilton, George Russell en Max Verstappen achter hem. Verstappen eindigde uiteindelijk vijfde en moest negen tienden toegeven op de Mercedes-coureur. EN: Kimi Antonelli ended final practice in Monaco fastest, ahead of Charles Leclerc, Lewis Hamilton, George Russell and Max Verstappen. Verstappen finished fifth, nine tenths off the Mercedes driver.",
+  kcsQuickShift: "Antonelli looked seriously quick, and Verstappen has work to do before qualifying. NL: Antonelli zag er serieus snel uit, en Verstappen heeft werk te doen voor de kwalificatie.",
+  url: "https://racingnews365.nl/verstappen-moet-gigantisch-gat-laten-naar-ongenaakbare-antonelli",
+  imagePath: "/img/news/shut/news-shutterstockmaxcar.jpg",
   imageSource: "Shutterstock",
-  dateLabel: "Jun 5, 2026",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news9",
-  sourceLabel: "FormulaPassion",
-  title:
-    "Ritardo in conferenza di Leclerc e Norris: Ferrari e McLaren multate con la condizionale EN: Leclerc and Norris delay leads to suspended fines for Ferrari and McLaren",
-  summary:
-    "IT: Charles Leclerc e Lando Norris sono arrivati in leggero ritardo alla conferenza stampa FIA della vigilia del GP di Monaco, portando Ferrari e McLaren a ricevere una multa sospesa da 5.000 euro. EN: Charles Leclerc and Lando Norris were slightly late to the FIA pre-race press conference in Monaco, leading Ferrari and McLaren to receive suspended €5,000 fines.",
-  kcsQuickShift:
-    "A small one, but still funny. F1 can spend millions chasing tenths, then get warned over being late to a press conference. IT: Una piccola notizia, ma divertente. In F1 si spendono milioni per cercare decimi, poi arriva l’avviso per un ritardo in conferenza stampa.",
-  url: "https://www.formulapassion.it/f1/f1-news/leclerc-norris-ritardo-conferenza-stampa-ferrari-mclaren-multate-5mila-euro-condizionale-gp-monaco",
-  imagePath: "/img/news/xpb/news-xpblando.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 5, 2026",
+  sourceLabel: "Formula 1",
+  title: "Briatore Says Gucci Deal Is Perfect For Alpine’s Future",
+  summary: "Flavio Briatore says Alpine’s new Gucci partnership is a major step for the team’s image, finances and long-term growth. Gucci is set to become Alpine’s title partner in 2027, with the team racing as Gucci Racing Alpine Formula One Team.",
+  kcsQuickShift: "This is bigger than a paint job, because Alpine is clearly trying to turn itself into a much more powerful brand.",
+  url: "https://www.formula1.com/en/latest/article/its-good-for-formula-1-briatore-explains-why-gucci-deal-is-perfect-for-alpines-future.7nNw6Ourmfer98S4OFwsox",
+  imagePath: "/img/news/shut/news-shutflavio.jpg",
+  imageSource: "Shutterstock",
+  dateLabel: "Jun 6, 2026"
 },
 {
   slotId: "news10",
-  sourceLabel: "Crash.net",
-  title: "McLaren leads Monaco upgrade push with six new parts",
-  summary:
-    "McLaren has brought the biggest upgrade package to the Monaco Grand Prix, with six new parts listed on the MCL40. The updates include cooling, suspension, beam wing, rear corner, rear wing winglets and diffuser changes as the team keeps pushing its development plan.",
-  kcsQuickShift:
-    "McLaren is not sitting around waiting for Monaco magic. They are throwing real development at the car, and that tells you how serious this fight is getting.",
-  url: "https://www.crash.net/f1/news/1096860/1/mclaren-leads-f1-development-charge-monaco-gp-host-upgrades",
-  imagePath: "/img/news/shut/news-shutterstockstella.jpg",
+  sourceLabel: "The Race",
+  title: "Monaco Qualifying Set To Create Major Headaches For F1 Teams",
+  summary: "Monaco qualifying is expected to be especially difficult for teams because traffic, tyre preparation and track position are all major problems on such a tight circuit. With overtaking so limited in the race, getting the timing right on Saturday could be just as important as raw pace.",
+  kcsQuickShift: "Monaco qualifying is always stressful, but this one feels like it could get messy very quickly.",
+  url: "https://www.the-race.com/formula-1/all-the-headaches-monaco-qualifying-will-give-f1-teams/",
+  imagePath: "/img/news/shut/news-shutterstockmiamipit.jpg",
   imageSource: "Shutterstock",
-  dateLabel: "Jun 5, 2026",
+  dateLabel: "Jun 6, 2026"
 },
 ];
 

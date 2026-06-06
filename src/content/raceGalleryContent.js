@@ -43,12 +43,12 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/race-gallery/saturday-01.jpg",
+          src: "/img/news/xpb/news-xpbkimimonaco2.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/race-gallery/saturday-02.jpg",
+          src: "/img/news/xpb/newsxpbmaxmonaco.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },

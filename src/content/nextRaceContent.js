@@ -403,7 +403,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m12.720s	22
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.047s	32
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m13.051s	30
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.483s	23
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m13.662s	23
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m13.698s	20
+7	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m13.820s	27
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m13.877s	25
+9	Lando Norris	GBR	McLaren Mastercard F1 Team	1m14.006s	24
+10	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m14.050s	22
+11	Esteban Ocon	FRA	TGR Haas F1 Team	1m14.278s	24
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m14.336s	26
+13	Pierre Gasly	FRA	BWT Alpine F1 Team	1m14.480s	22
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m14.487s	18
+15	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m14.587s	27
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m14.801s	24
+17	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m14.918s	24
+18	Sergio Perez	MEX	Cadillac F1 Team	1m14.945s	19
+19	Franco Colapinto	ARG	BWT Alpine F1 Team	1m15.179s	21
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m15.451s	17
+21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m15.567s	26
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m15.921s	22
 `;
 const PASTE_SQ = `
 
@@ -523,10 +544,10 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
     {
-      title: "Practice 3 report coming soon",
+      title: "Antonelli Tops FP3 As Mercedes Fight Back Before Monaco Qualifying",
       summary:
-        "Final practice updates and last setup clues will be added here after FP3.",
-      url: "",
+        "Kimi Antonelli put Mercedes on top in FP3 at Monaco with a 1:12.720, beating Charles Leclerc by 0.327s as Mercedes hit back after Ferrari controlled Friday. Lewis Hamilton was third, just 0.004s behind Leclerc, with George Russell fourth and Max Verstappen fifth, leaving Mercedes, Ferrari and Red Bull all in the mix before qualifying. The session was red-flagged when Oliver Bearman crashed at Massenet, while McLaren had already been under pressure after breaking curfew overnight to fix Lando Norris’s Friday practice issues. Oscar Piastri and Norris both stayed inside the top nine, but traffic, tyre preparation and track position remain the big Monaco headaches heading into the most important qualifying session of the weekend.",
+      url: "https://www.the-race.com/formula-1/antonelli-deposes-ferrari-in-final-monaco-gp-practice/",
     },
   ],
 },
@@ -658,7 +679,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Antonelli Fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),

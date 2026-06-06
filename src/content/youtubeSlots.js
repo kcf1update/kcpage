@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers Look Ahead To Race Weekend | 2026 Monaco Grand Prix",
-  youtubeInput: "https://youtu.be/UMU4PwzOB0c",
+  title: "McLaren's bizarre penalty and Monaco struggle explained",
+  youtubeInput: "https://youtu.be/DD7tdFeqZPE",
   
   },
 
   {
     slotId: "slot2",
-    title: "On board the M2B with Mika Häkkinen in Monaco | McLaren Racing",
-    youtubeInput: "https://youtu.be/e2dpe85JrcY",
+    title: "Unboxed: McLaren Racing celebrate their 1000th GP in Monaco | McLaren Racing",
+    youtubeInput: "https://youtu.be/11IVKmA-27I",
     
   },
 
