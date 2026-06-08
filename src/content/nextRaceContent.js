@@ -548,7 +548,28 @@ Aston Martin	1:16.061			11
 `;
 
 const PASTE_RACE = `
-
+1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	78
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	+6.271s
+3	Isack Hadjar	FRA	Oracle Red Bull Racing	+23.394s
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+24.261s
+5	Liam Lawson	NZD	Racing Bulls	+26.553s
+6	Arvid Lindblad	GBR	Racing Bulls	+29.010s
+7	Pierre Gasly	FRA	BWT Alpine F1 Team	+30.369s
+8	Alex Albon	THA	Atlassian Williams F1 Team	+33.413s
+9	Esteban Ocon	FRA	TGR Haas F1 Team	+37.140s
+10	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+41.899s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+42.748s
+12	George Russell	GBR	Mercedes AMG Petronas F1 Team	+43.353s
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	+44.102s
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	+48.964s
+15	Sergio Perez	MEX	Cadillac F1 Team	+49.153s
+16	Carlos Sainz	ESP	Atlassian Williams F1 Team	+8 laps
+DNF	Charles Leclerc	MON	Scuderia Ferrari HP	+14 laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+22 laps
+DNF	Lando Norris	GBR	McLaren Mastercard F1 Team	+35 laps
+DNF	Ollie Bearman	GBR	TGR Haas F1 Team	+51 laps
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	+63 laps
+DNF	Max Verstappen	NED	Oracle Red Bull Racing
 `;
 
 // =====================================================
@@ -676,10 +697,10 @@ export const raceWeekendRecap = {
             heading: "Race",
             items: [
               {
-                title: "Race report coming soon",
+                title: "Antonelli Wins Chaotic Monaco GP as Penalties Reshape Podium",
                 summary:
-                  "Winner, podium, incidents, and championship impact will be added here after the race.",
-                url: "",
+                  "Kimi Antonelli won a chaotic Monaco Grand Prix ahead of Lewis Hamilton and Isack Hadjar after a race packed with retirements, penalties and late drama. Max Verstappen retired after one lap when his Red Bull failed to launch from second on the grid, while Lando Norris later stopped with a McLaren power issue. Lance Stroll’s late crash triggered a Safety Car, then Charles Leclerc crashed after the restart and blamed major brake problems, bringing out the red flag. Pit lane speeding penalties reshuffled the order, with Pierre Gasly losing third on the road and George Russell falling out of contention, while Hadjar kept the podium after Red Bull was cleared by the stewards.",
+                url: "https://www.formula1.com/en/latest/article/antonelli-secures-brilliant-victory-in-chaotic-monaco-grand-prix-amid-multiple-shock-retirements.27e644586K83z0NZd6efsz",
               },
             ],
           },
@@ -806,7 +827,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race ",
-          time: "10:00 AM ADT",
+          time: "Antonelli wins chaotic Monaco GP, results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

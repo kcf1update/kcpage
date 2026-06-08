@@ -16,10 +16,10 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 const raceWeekendPromo = {
   enabled: true,
-  label: "Monaco GP Race Centre",
-  title: "Monaco GP weekend coverage in the KC F1 Race Centre",
+  label: "Monaco GP Weekend Recap",
+  title: "Monaco GP race result and weekend recap now in the KC F1 Race Centre",
   body:
-    "Session times, weather, qualifying, race updates, results, and race-weekend photo gallery will be added as the weekend unfolds.",
+    "Antonelli wins, Hadjar keeps a surprise podium, and penalties reshape the Monaco finishing order. Full race result and weekend recap are now posted.",
   buttonText: "Go to Race Centre →",
   buttonLink: "/racecenter",
 };

@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "McLaren's bizarre penalty and Monaco struggle explained",
-  youtubeInput: "https://youtu.be/DD7tdFeqZPE",
+  title: "Drivers React After The Race | 2026 Monaco Grand Prix",
+  youtubeInput: "https://youtu.be/5jLDJ4dL5yE",
   
   },
 
   {
     slotId: "slot2",
-    title: "Unboxed: McLaren Racing celebrate their 1000th GP in Monaco | McLaren Racing",
-    youtubeInput: "https://youtu.be/11IVKmA-27I",
+    title: "2026 F1 Monaco GP race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/4Yg4hnTZFlY,"
     
   },
 

@@ -71,16 +71,21 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/race-gallery/race-01.jpg",
+          src: "/img/news/xpb/newsxpbkimimonacowin.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/race-gallery/race-02.jpg",
+          src: "/img/news/xpb/news-xpbgeorgemonaco.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
+        {
+          src: "/img/news/xpb/news-xpbracemonaco.jpg",
+          alt: "Race day gallery image 3",
+          credit: "XPB Images",
+        },
       ],
-    },
+          },
   ],
 };
