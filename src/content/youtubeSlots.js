@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React After The Race | 2026 Monaco Grand Prix",
-  youtubeInput: "https://youtu.be/5jLDJ4dL5yE",
+  title: "What's really going on with Charles Leclerc's F1 braking 'nightmare'",
+  youtubeInput: "https://youtu.be/ChhYU_Th6Wo",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "F1 Drivers' LUXURY SUPERYACHTS at the Monaco Grand Prix!",
-    youtubeInput: "https://youtu.be/NkTO2CFJJQ8",
+    title: "Fearless, Peerless’ Kimi & ‘Bamboozled’ Russell | Monaco GP Review | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/VtZ1mClMam8",
     
   }
 ];

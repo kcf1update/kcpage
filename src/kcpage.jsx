@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
+  enabled: false,
   label: "Monaco GP Weekend Recap",
   title: "Monaco GP race result and weekend recap now in the KC F1 Race Centre",
   body:
@@ -243,7 +243,7 @@ export default function KCpage() {
               const showImage = !!imgPath;
               const quickShift = (item?.kcsQuickShift || "").trim();
 
-              const photoCredit = (item?.photoCredit || "").trim();
+              const photoCredit = (item?.photoCredit || item?.imageSource || "").trim();
               const photoCreditUrl = (item?.photoCreditUrl || "").trim();
               const altText = (item?.imageAlt || item?.title || "News image").trim();
 
@@ -401,7 +401,7 @@ export default function KCpage() {
                   const showImage = !!imgPath;
                   const quickShift = (item?.kcsQuickShift || "").trim();
 
-                  const photoCredit = (item?.photoCredit || "").trim();
+                  const photoCredit = (item?.photoCredit || item?.imageSource || "").trim();
                   const photoCreditUrl = (item?.photoCreditUrl || "").trim();
                   const altText = (item?.imageAlt || item?.title || "News image").trim();
 
@@ -515,7 +515,7 @@ export default function KCpage() {
               // ✅ NEW: KC’s Quick Shift (blue) — only shows if text exists
               const quickShift = (item?.kcsQuickShift || "").trim();
 
-              const photoCredit = (item?.photoCredit || "").trim();
+              const photoCredit = (item?.photoCredit || item?.imageSource || "").trim();
               const photoCreditUrl = (item?.photoCreditUrl || "").trim();
               const altText = (item?.imageAlt || item?.title || "News image").trim();
 
@@ -622,7 +622,7 @@ export default function KCpage() {
                     const showImage = !!imgPath;
                     const quickShift = (item?.kcsQuickShift || "").trim();
 
-                    const photoCredit = (item?.photoCredit || "").trim();
+                    const photoCredit = (item?.photoCredit || item?.imageSource || "").trim();
                     const photoCreditUrl = (item?.photoCreditUrl || "").trim();
                     const altText = (item?.imageAlt || item?.title || "News image").trim();
 

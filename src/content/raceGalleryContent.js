@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/news-xpblandomonaco.jpg",
+          src: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/news-astonlivery.jpg",
+          src: "/img/news/xpb/Aston/news-astonlivery.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/news-xpbsergiomonaco.jpg",
+          src: "/img/news/xpb/Mercedes/news-xpbsergiomonaco.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -43,22 +43,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/news-xpbkimimonaco2.jpg",
+          src: "/img/news/xpb/Mercedes/news-xpbkimimonaco2.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/newsxpbmaxmonaco.jpg",
+          src: "/img/news/xpb/RedBull/newsxpbmaxmonaco.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/news-xpbkimipole.jpg",
+          src: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/newspolemonaco.jpg",
+          src: "/img/news/xpb/Mercedes/newspolemonaco.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -71,17 +71,17 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/newsxpbkimimonacowin.jpg",
+          src: "/img/news/xpb/Mercedes/newsxpbkimimonacowin.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/news-xpbgeorgemonaco.jpg",
+          src: "/img/news/xpb/Mercedes/news-xpbgeorgemonaco.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/news-xpbracemonaco.jpg",
+          src: "/img/news/xpb/Races/news-xpbracemonaco.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },

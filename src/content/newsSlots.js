@@ -1,124 +1,124 @@
 const newsSlots = [
-    
-{
-  slotId: "news1",
-  sourceLabel: "Formula 1",
-  title: "Antonelli Wins Chaotic Monaco Grand Prix as Seven Drivers Retire",
-  summary: "Kimi Antonelli controlled a chaotic Monaco Grand Prix to take his fifth win of the season, beating Lewis Hamilton and Isack Hadjar after a race packed with penalties, crashes, a Safety Car, a red flag and seven retirements. Max Verstappen failed to get away properly at the start and retired early, Lando Norris also stopped with a power issue, while late crashes for Lance Stroll and Charles Leclerc helped shake up the final podium order.",
-  kcsQuickShift: "Antonelli looked calm while Monaco turned into a mess behind him, and Hadjar grabbing a podium after all that chaos is a pretty big story too.",
-  url: "https://www.formula1.com/en/latest/article/antonelli-secures-brilliant-victory-in-chaotic-monaco-grand-prix-amid-multiple-shock-retirements.27e644586K83z0NZd6efsz",
-  imagePath: "/img/news/xpb/newsxpbkimimonacowin.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+    {
+slotId: "news1",
+sourceLabel: "Crash.net",
+title: "Hamilton Points to Ferrari’s Mercedes Gap",
+summary: "Lewis Hamilton has outlined the difference he still feels between Ferrari and Mercedes, with straight-line performance again a key concern. He says Ferrari has strong cornering pace, but Mercedes continues to pull away on the straights, leaving Ferrari with work to do if it wants to fight at the front consistently.",
+kcsQuickShift: "Hamilton seems happier with the Ferrari in the corners, but the power gap to Mercedes is still biting hard.",
+url: "https://www.crash.net/f1/news/1097581/1/lewis-hamilton-outlines-night-and-day-difference-between-mercedes-and-ferrari-f1",
+imagePath: "/img/news/Ferrari/Lewis/Hamiltonmonaco.jpg",
+imageSource: "Courtesy of Ferrari F1",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news2",
-  sourceLabel: "Formula Passion",
-  title: "Antonelli trionfa, Wolff gongola: “Dicevano che era presto per lui, ma ora non fate troppo casino in Italia!” EN: Antonelli triumphs as Wolff celebrates: critics said it was too early, but now he warns Italy not to go overboard",
-  summary: "Toto Wolff ha celebrato la vittoria di Andrea Kimi Antonelli a Monaco, ricordando che molti ritenevano troppo presto il suo debutto diretto in Mercedes dopo la Formula 2. Wolff ha detto che il piano Mercedes era sempre stato quello di farlo crescere con pazienza, ma ha anche invitato l’Italia a restare calma nonostante il vantaggio di Antonelli sia salito a 66 punti su Lewis Hamilton. EN: Toto Wolff celebrated Andrea Kimi Antonelli’s Monaco victory by pointing out that many had said it was too early to put him straight into a Mercedes seat after Formula 2. Wolff said Mercedes always believed in the development plan, but also warned Italy not to get carried away even with Antonelli now 66 points clear of Lewis Hamilton.",
-  kcsQuickShift: "Wolff is clearly enjoying being proven right on Antonelli, but he also knows the hype in Italy could get wild pretty fast. IT: Wolff si sta godendo il fatto di aver avuto ragione su Antonelli, ma sa anche che l’entusiasmo in Italia può esplodere in fretta.",
-  url: "https://www.formulapassion.it/f1/f1-news/antonelli-trionfa-wolff-gongola-dicevano-troppo-presto-ora-non-fate-casino-italia",
-  imagePath: "/img/news/xpb/news-kimipole2.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news2",
+sourceLabel: "The Race",
+title: "McLaren Feels Customer-Team Pain Under 2026 Rules",
+summary: "McLaren believes the 2026 engine rules have exposed the downside of being a Mercedes customer team, especially with reliability and power-unit integration. Andrea Stella says McLaren must improve both performance and reliability after recent issues, including Lando Norris’ Monaco retirement and earlier electrical problems.",
+kcsQuickShift: "McLaren proved customer teams can win, but these new rules are making the works-team advantage feel very real again.",
+url: "https://www.the-race.com/formula-1/why-mclaren-is-suffering-more-as-a-customer-under-new-rules/",
+imagePath: "/img/news/xpb/Mclaren/news-xpboscar.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news3",
-  sourceLabel: "ESPN",
-  title: "Cadillac Loses First F1 Point After Perez Penalty Promotes Alonso",
-  summary: "Sergio Perez briefly appeared to have delivered Cadillac’s first Formula 1 point with 10th place in Monaco, but a post-race penalty dropped him to 15th and erased the result. The stewards ruled Perez’s front-right wheel was outside the starting box at the final restart, promoting Fernando Alonso to 10th and giving Aston Martin its first point of the season.",
-  kcsQuickShift: "That is a brutal way for Cadillac to lose its first point, but Perez at least showed they are close to finally getting on the board.",
-  url: "https://www.espn.co.uk/f1/story/_/id/48965028/monaco-grand-prix-formula-1-cadillac-sergio-perez-stripped-first-f1-points-aston-martin-promoted",
-  imagePath: "/img/news/xpb/news-xpbsergiomonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news3",
+sourceLabel: "The Race",
+title: "Monaco Exposes the 2026 F1 Pressure Points",
+summary: "The Race’s Monaco debrief points to several major 2026 storylines, including Antonelli’s growing title threat, Leclerc’s braking concerns, McLaren’s slower-than-expected progress, and the wider engine-rule headaches still affecting teams. It also highlights how Monaco’s chaos exposed problems for Ferrari, Audi, Aston Martin, Williams and Cadillac.",
+kcsQuickShift: "Monaco looked like one race, but it exposed problems almost everywhere on the grid.",
+url: "https://www.the-race.com/formula-1/f1-2026-monaco-grand-prix-everything-we-learned/",
+imagePath: "/img/news/xpb/Races/news-xpbracemonaco.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news4",
-  sourceLabel: "RacingNews365",
-  title: "Verstappen reageert op pijnlijke uitvalbeurt in Monaco EN: Verstappen reacts after painful Monaco retirement",
-  summary: "Max Verstappen kende een rampzalige start van de Grand Prix van Monaco toen zijn Red Bull vanaf de tweede startplek nauwelijks van zijn plaats kwam en hij na één ronde moest uitvallen. Verstappen zei dat de motor al tijdens de formatieronde niet goed aanvoelde en bij de start volledig wegviel, waardoor hij alleen nog kon hopen dat de rest van het veld hem zou ontwijken. EN: Max Verstappen’s Monaco Grand Prix fell apart immediately when his Red Bull barely launched from second on the grid and he retired after just one lap. Verstappen said the engine already felt wrong on the formation lap and then dropped away at the start, leaving him hoping the cars behind could avoid him.",
-  kcsQuickShift: "That was a scary one for Verstappen, because starting second at Monaco should be a huge chance, not a one-lap disaster. NL: Dat was een pijnlijke en ook gevaarlijke uitvaller voor Verstappen, want vanaf P2 in Monaco hoor je mee te doen voor het podium.",
-  url: "https://racingnews365.nl/verstappen-reageert-op-zeer-pijnlijke-uitvalbeurt-in-monaco",
-  imagePath: "/img/news/xpb/newsxpbmaxmonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news4",
+sourceLabel: "Formula 1",
+title: "Racing Bulls Celebrate Monaco Double Points",
+summary: "Liam Lawson and Arvid Lindblad praised Racing Bulls after both cars scored points in Monaco, with Lawson finishing fifth and Lindblad sixth. It was the team’s first double-points finish of the season, helped by a late red flag and penalties ahead, while Lawson said Racing Bulls had made a big turnaround after struggling earlier in the weekend.",
+kcsQuickShift: "Racing Bulls did exactly what midfield teams have to do right now: survive the chaos and grab the points.",
+url: "https://www.formula1.com/en/latest/article/a-big-turnaround-lawson-and-lindblad-praise-racing-bulls-performance-after-monaco-double-points-finish.kcmkqXQQfKKhcUG2fYaey",
+imagePath: "/img/news/xpb/Visa/news-xpblindblad.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news5",
-  sourceLabel: "PlanetF1",
-  title: "Norris Fears Grid Penalties After Another McLaren Failure in Monaco",
-  summary: "Lando Norris says McLaren and Mercedes need to “do a better job” after a power unit failure ended his Monaco Grand Prix and left him worried about future engine-related grid penalties. Norris has already had multiple reliability setbacks this season, including a DNS in China, a gearbox issue in Canada and now back-to-back retirements after stopping in Monaco.",
-  kcsQuickShift: "Norris is not hiding his frustration now, and with grid penalties possibly coming later, this title defence is starting to look seriously messy.",
-  url: "https://www.planetf1.com/news/lando-norris-grid-penalties-monaco-dnf",
-  imagePath: "/img/news/xpb/news-xpblandomonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news5",
+sourceLabel: "Formula 1",
+title: "Alonso Grabs Aston Martin’s First Point of 2026",
+summary: "Fernando Alonso gave Aston Martin its first point of the 2026 season with a P10 finish in Monaco after starting from P21. Aston Martin used an aggressive early stop and long soft-tyre run, while Alonso avoided penalties and chaos on a day with two Safety Cars, a red flag and only 15 finishers.",
+kcsQuickShift: "It was only one point, but for Aston Martin this probably felt like a small rescue mission.",
+url: "https://www.formula1.com/en/latest/article/how-aston-martins-aggressive-and-ambitious-strategy-earned-them-a-first-point-of-2026.693lqRXC0HX3AZps2gfVyn",
+imagePath: "/img/news/xpb/Aston/news-astonlivery.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news6",
-  sourceLabel: "PlanetF1",
-  title: "Russell Left ‘Beyond Frustration’ After Monaco Penalty Nightmare",
-  summary: "George Russell’s Monaco Grand Prix collapsed after a pit lane speeding penalty was not properly served, leading to a drive-through penalty that dropped him from podium contention to 13th. With teammate Kimi Antonelli winning again, Russell has now lost major ground in the title fight and sits 68 points behind Antonelli after two costly weekends.",
-  kcsQuickShift: "Russell’s season is starting to swing hard the wrong way, and watching Antonelli win again from the same garage will not make this any easier.",
-  url: "https://www.planetf1.com/news/george-russell-frustration-monaco-grand-prix-result",
-  imagePath: "/img/news/xpb/news-xpbgeorgemonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news6",
+sourceLabel: "RacingNews365",
+title: "Alpine Challenges FIA Over Monaco Penalties",
+summary: "Alpine has requested a Right of Review after Pierre Gasly lost a Monaco podium to two five-second pit lane speeding penalties, dropping him from third on the road to seventh. Flavio Briatore says Alpine strongly disagrees with the decision, arguing several teams were caught by marginal pit lane speed readings of less than 1kph over the limit.",
+kcsQuickShift: "When five-second penalties turn a podium into seventh, Alpine was never going to let this one go quietly.",
+url: "https://racingnews365.com/alpine-strongly-disagree-with-fia-over-monaco-controversy",
+imagePath: "/img/news/Alpine/Gasly/gaslyMonacoFri.jpg",
+imageSource: "Courtesy of Alpine F1",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news7",
-  sourceLabel: "Formula 1",
-  title: "Alpine Requests Review After Gasly Loses Monaco Podium",
-  summary: "Pierre Gasly thought he had scored Alpine’s first podium of the season after finishing third on the road in Monaco, but two five-second pit lane speeding penalties dropped him to seventh. Alpine has requested a Right of Review, arguing that Gasly used the pit limiter correctly and that the penalty cost the team a huge result.",
-  kcsQuickShift: "Gasly looked heartbroken after this one, and honestly it is hard not to feel for him when a podium disappears after the flag.",
-  url: "https://www.formula1.com/en/latest/article/alpine-request-right-of-review-after-gasly-left-heartbroken-by-missed-monaco-podium.3XZUuCqJbKzgf6v958kABM",
-  imagePath: "/img/news/Alpine/monacogasly.jpg",
-  imageSource: "Courtesy of Alpine F1",
-  dateLabel: "Jun 8, 2026"
+slotId: "news7",
+sourceLabel: "RacingNews365",
+title: "Norris Fears Grid Penalty After McLaren Reliability Blow",
+summary: "Lando Norris says he is moving closer to a possible grid penalty after McLaren had to use additional power-unit components following Monaco reliability issues. Norris suffered problems in practice and then retired from the race on Lap 45 after reporting strange noises from the power unit, adding more pressure to McLaren’s 2026 reliability concerns.",
+kcsQuickShift: "This is the last thing Norris needed after Monaco: not just a retirement, but possible grid-penalty trouble coming next.",
+url: "https://racingnews365.com/lando-norris-voices-penalty-fear-after-latest-f1-setback",
+imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news8",
-  sourceLabel: "Crash.net",
-  title: "Why So Many Drivers Broke Monaco’s Pit Lane Speed Limit",
-  summary: "Several drivers were caught speeding in the Monaco pit lane, including George Russell, Lewis Hamilton and Pierre Gasly, with the penalties having very different consequences across the field. The issue appears to have been linked to pit limiter and software confusion around Monaco’s tight pit lane procedures, with Russell saying he believed he was on the limiter before the line and Gasly losing a podium finish after being hit with two penalties.",
-  kcsQuickShift: "Monaco is already tight enough without drivers getting burned by pit lane speed penalties, and Gasly was the one who paid the biggest price.",
-  url: "https://www.crash.net/f1/news/1097561/1/explained-why-so-many-f1-drivers-broke-monaco-pit-lane-speed-limit",
-  imagePath: "/img/news/xpb/news-xpbracemonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
+slotId: "news8",
+sourceLabel: "Formel1.de",
+title: "Motorenüberraschung: Mercedes darf entwickeln, Red Bull nicht EN: Engine Surprise: Mercedes Can Develop, Red Bull Cannot",
+summary: "Da Red Bull laut dem 2026er Ausgleichssystem den stärksten V6-Motor im Feld haben soll, darf Red Bull Powertrains vorerst keine zusätzliche Entwicklung betreiben, während Mercedes und andere Hersteller weiter nachlegen dürfen. EN: Under F1’s 2026 engine equalisation system, Red Bull is believed to have the strongest V6 engine package, meaning Red Bull Powertrains cannot develop further for now while Mercedes and other manufacturers are allowed to keep improving.",
+kcsQuickShift: "This is a sneaky big story because Red Bull may have the strongest engine, but the rules could let everyone else close the gap. DE: Das ist eine heimlich große Geschichte, denn Red Bull hat möglicherweise den stärksten Motor, aber die Regeln könnten der Konkurrenz helfen aufzuholen.",
+url: "https://www.formel1.de/news/news/2026-06-09/motorenueberraschung-mercedes-darf-entwickeln-red-bull-nicht",
+imagePath: "/img/news/xpb/RedBull/newsxpbmaxmonaco.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news9",
-  sourceLabel: "The Race",
-  title: "Brembo Responds After Leclerc Blames Monaco Crash on Brake Nightmare",
-  summary: "Charles Leclerc blamed his Monaco Grand Prix crash on major brake problems, saying three of his four brakes were not working properly after the Safety Car period. Ferrari’s long-time brake supplier Brembo responded by saying it was too early to draw firm technical conclusions before the telemetry is analysed with Ferrari, while Leclerc said he now plans to switch to Lewis Hamilton’s brake configuration.",
-  kcsQuickShift: "This is a messy one for Ferrari, because Leclerc clearly felt something was badly wrong, but Brembo is not accepting the blame before the data is checked.",
-  url: "https://www.the-race.com/formula-1/charles-leclerc-f1-monaco-gp-crash-brake-supplier-responds-criticism/",
-  imagePath: "/img/news/Ferrari/ferraricharlesmonaco.jpg",
-  imageSource: "Courtesy of Ferrari F1",
-  dateLabel: "Jun 8, 2026"
+slotId: "news9",
+sourceLabel: "RacingNews365.nl",
+title: "Verstappen vertwijfeld over F1-risico's: Dat weet ik niet zo goed EN: Verstappen Unsure About F1 Risks After Becoming a Father",
+summary: "Max Verstappen zegt dat de komst van zijn dochter Lily hem als coureur niet heeft veranderd, al geeft hij toe dat hij niet precies weet hoe hij nu naar risico’s in de Formule 1 kijkt. EN: Max Verstappen says becoming a father to daughter Lily has not changed him as a racing driver, although he admits he is not completely sure how he now thinks about risk in Formula 1.",
+kcsQuickShift: "Verstappen still sounds like Verstappen, but even he seems to know fatherhood can change the way you think. NL: Verstappen klinkt nog steeds als Verstappen, maar zelfs hij lijkt te weten dat vaderschap je manier van denken kan veranderen.",
+url: "https://racingnews365.nl/verstappen-vertwijfeld-over-f1-risicos-dat-weet-ik-niet-zo-goed",
+imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
 },
 
 {
-  slotId: "news10",
-  sourceLabel: "The Race",
-  title: "Hadjar Keeps Monaco Podium After Red Bull Cleared by Stewards",
-  summary: "Isack Hadjar has kept his third-place finish in Monaco after Red Bull was cleared over a possible red flag technical infringement. Red Bull had tried to work on a power unit issue during the stoppage and looked at changing spark plugs or coils, but the FIA intervened before any parts were changed, with stewards ruling the car restarted in the same condition it had arrived in.",
-  kcsQuickShift: "Hadjar already earned that podium the hard way, so Red Bull avoiding a post-race penalty keeps one of Monaco’s best stories intact.",
-  url: "https://www.the-race.com/formula-1/red-bull-cleared-of-red-flag-infringement-hadjar-keeps-podium/",
-  imagePath: "/img/news/xpb/news-xpbisackmonaco.jpg",
-  imageSource: "XPB IMAGES",
-  dateLabel: "Jun 8, 2026"
-},
+slotId: "news10",
+sourceLabel: "Motorsport.com",
+title: "Sainz Blasts Monaco Restart Risks After Williams Retirement",
+summary: "Carlos Sainz was furious after his Monaco Grand Prix ended in restart chaos, with contact from Nico Hulkenberg and then Franco Colapinto forcing the Williams driver to retire. Sainz said rivals took stupid risks at Loews hairpin, while Hulkenberg argued he was forced onto the inside while avoiding another car.",
+kcsQuickShift: "Sainz had points on the table, and losing them in Monaco restart traffic was always going to sting.",
+url: "https://www.motorsport.com/f1/news/carlos-sainz-hits-out-at-stupid-risks-from-f1-rivals-how-can-a-veteran-like-nico-do-this/10828487/",
+imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
+imageSource: "XPB IMAGES",
+dateLabel: "Jun 9, 2026"
+}
+
 ];
 
 export { newsSlots };

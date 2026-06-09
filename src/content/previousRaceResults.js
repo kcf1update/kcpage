@@ -308,6 +308,136 @@ function parseRacePaste(text) {
 // =====================================================
 // 3) YOUR PASTE BOXES (EDIT THESE ONLY)
 // =====================================================
+const PASTE_MONACO_P1 = `
+1	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.978s	31
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m14.204s	28
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m14.491s	26
+4	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m14.537s	31
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m14.983s	29
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.291s	27
+7	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m15.343s	27
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m15.565s	29
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m15.750s	31
+10	Pierre Gasly	FRA	BWT Alpine F1 Team	1m15.828s	32
+11	Alex Albon	THA	Atlassian Williams F1 Team	1m15.989s	33
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m16.041s	31
+13	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.148s	14
+14	Sergio Perez	MEX	Cadillac F1 Team	1m16.170s	28
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m16.189s	32
+16	Ollie Bearman	GBR	TGR Haas F1 Team	1m16.292s	31
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m16.333s	31
+18	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m16.389s	34
+19	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m16.431s	31
+20	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m16.678s	21
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m17.460s	27
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m17.556s	16
+
+`;
+
+const PASTE_MONACO_P2 = `
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m13.026s	35
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.137s	35
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m13.194s	34
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.405s	35
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m13.529s	34
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	1m14.087s	23
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m14.088s	30
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m14.094s	34
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m14.359s	34
+10	Ollie Bearman	GBR	TGR Haas F1 Team	1m14.456s	36
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m14.497s	36
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m14.512s	34
+13	Alex Albon	THA	Atlassian Williams F1 Team	1m14.600s	38
+14	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m14.748s	36
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m14.758s	30
+16	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m14.785s	35
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m14.845s	34
+18	Sergio Perez	MEX	Cadillac F1 Team	1m15.116s	31
+19	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.274s	8
+20	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m15.294s	30
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m15.759s	28
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m16.174s	27
+`;
+
+const PASTE_MONACO_P3 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m12.720s	22
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.047s	32
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m13.051s	30
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.483s	23
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m13.662s	23
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m13.698s	20
+7	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m13.820s	27
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m13.877s	25
+9	Lando Norris	GBR	McLaren Mastercard F1 Team	1m14.006s	24
+10	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m14.050s	22
+11	Esteban Ocon	FRA	TGR Haas F1 Team	1m14.278s	24
+12	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m14.336s	26
+13	Pierre Gasly	FRA	BWT Alpine F1 Team	1m14.480s	22
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m14.487s	18
+15	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m14.587s	27
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m14.801s	24
+17	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m14.918s	24
+18	Sergio Perez	MEX	Cadillac F1 Team	1m14.945s	19
+19	Franco Colapinto	ARG	BWT Alpine F1 Team	1m15.179s	21
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m15.451s	17
+21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m15.567s	26
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m15.921s	22
+`;
+
+
+
+const PASTE_MONACO_Q = `
+1	12	Kimi Antonelli	Mercedes	1:13.599	1:12.704	1:12.051	28
+2	3	Max Verstappen	Red Bull Racing	1:13.490	1:12.499	1:12.094	26
+3	44	Lewis Hamilton	Ferrari	1:13.777	1:12.934	1:12.279	28
+4	16	Charles Leclerc	Ferrari	1:13.293	1:12.774	1:12.351	29
+5	6	Isack Hadjar	Red Bull Racing	1:14.408	1:12.722	1:12.434	25
+6	63	George Russell	Mercedes	1:14.214	1:13.238	1:12.445	28
+7	81	Oscar Piastri	McLaren	1:14.159	1:12.983	1:12.624	29
+8	1	Lando Norris	McLaren	1:13.630	1:12.919	1:12.765	28
+9	10	Pierre Gasly	Alpine	1:14.469	1:13.762	1:13.226	32
+10	30	Liam Lawson	Racing Bulls	1:14.498	1:13.471	1:13.412	29
+11	23	Alex Albon	Williams	1:14.321	1:13.787		24
+12	55	Carlos Sainz	Williams	1:14.348	1:13.815		23
+13	27	Nico Hulkenberg	Audi	1:13.923	1:13.902		21
+14	43	Franco Colapinto	Alpine	1:14.573	1:13.995		24
+15	41	Arvid Lindblad	Racing Bulls	1:14.685	1:14.248		23
+16	5	Gabriel Bortoleto	Audi	1:14.683			10
+17	31	Esteban Ocon	Haas F1 Team	1:14.722			14
+18	11	Sergio Perez	Cadillac	1:14.747			12
+19	87	Ollie Bearman	Haas F1 Team	1:14.814			14
+20	77	Valtteri Bottas	Cadillac	1:15.283			13
+21	14	Fernando Alonso	Aston Martin	1:15.349			13
+22	18	Lance Stroll	Aston Martin	1:16.061			11
+`;
+
+
+
+const PASTE_MONACO_RACE = `
+1	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	78
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	+6.271s
+3	Isack Hadjar	FRA	Oracle Red Bull Racing	+23.394s
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+24.261s
+5	Liam Lawson	NZD	Racing Bulls	+26.553s
+6	Arvid Lindblad	GBR	Racing Bulls	+29.010s
+7	Pierre Gasly	FRA	BWT Alpine F1 Team	+30.369s
+8	Alex Albon	THA	Atlassian Williams F1 Team	+33.413s
+9	Esteban Ocon	FRA	TGR Haas F1 Team	+37.140s
+10	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+41.899s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+42.748s
+12	George Russell	GBR	Mercedes AMG Petronas F1 Team	+43.353s
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	+44.102s
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	+48.964s
+15	Sergio Perez	MEX	Cadillac F1 Team	+49.153s
+16	Carlos Sainz	ESP	Atlassian Williams F1 Team	+8 laps
+DNF	Charles Leclerc	MON	Scuderia Ferrari HP	+14 laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+22 laps
+DNF	Lando Norris	GBR	McLaren Mastercard F1 Team	+35 laps
+DNF	Ollie Bearman	GBR	TGR Haas F1 Team	+51 laps
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	+63 laps
+DNF	Max Verstappen	NED	Oracle Red Bull Racing
+`;
+
 const PASTE_CANADA_P1 = `
 1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m13.402s
 2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.554s
@@ -531,6 +661,134 @@ DNF	Isack Hadjar	FRA	Oracle Red Bull Racing
 // =====================================================
 
 export const previousRaceResults = [
+  {
+    raceName: "Monaco Grand Prix",
+    raceDates: "June 5th–7th, 2026",
+    location: "Monte Carlo, Monaco",
+    weekendFormat: "standard",
+
+    raceWeekendRecap: {
+      enabled: true,
+      title: "Monaco Grand Prix Weekend Recap",
+      sections: [
+        {
+          heading: "Practice 1",
+          items: [
+            {
+              title: "Leclerc puts Ferrari on top in Monaco FP1",
+              summary:
+                "Ferrari opened Monaco exactly the way it wanted, with Charles Leclerc fastest and Lewis Hamilton second in FP1. Max Verstappen was third, but the session was far from clean, with Isack Hadjar crashing at the Swimming Pool and Fernando Alonso dipping the barriers to trigger a second red flag.",
+              url: "https://www.formula1.com/en/latest/article/fp1-leclerc-sets-the-pace-ahead-of-hamilton-and-verstappen-during-disrupted-first-practice-in-monaco.1yE6wEXZmEwE2WRfoLXVXz",
+            },
+          ],
+        },
+        {
+          heading: "Practice 2",
+          items: [
+            {
+              title: "Hamilton leads Ferrari 1-2 as Norris hits trouble in FP2",
+              summary:
+                "Ferrari stayed on top in FP2 as Hamilton led Leclerc for another 1-2, with Verstappen close behind in third. It was not a clean session, with several drivers skating close to the walls around Monaco. Norris had the biggest problem when his McLaren stopped near the Nouvelle Chicane, costing him valuable track time and bringing out a VSC. Hadjar recovered well from his FP1 crash to finish sixth, while late smoke from Perez’s Cadillac brought out a red flag before the session ended.",
+              url: "https://www.formula1.com/en/latest/article/fp2-hamilton-leads-another-ferrari-1-2-during-second-practice-in-monaco.bCQgEBYyVg0K6KvGKPj6V",
+            },
+          ],
+        },
+        {
+          heading: "Practice 3",
+          items: [
+            {
+              title: "Antonelli Tops FP3 As Mercedes Fight Back Before Monaco Qualifying",
+              summary:
+                "Kimi Antonelli put Mercedes on top in FP3 at Monaco with a 1:12.720, beating Charles Leclerc by 0.327s as Mercedes hit back after Ferrari controlled Friday. Lewis Hamilton was third, just 0.004s behind Leclerc, with George Russell fourth and Max Verstappen fifth, leaving Mercedes, Ferrari and Red Bull all in the mix before qualifying. The session was red-flagged when Oliver Bearman crashed at Massenet, while McLaren had already been under pressure after breaking curfew overnight to fix Lando Norris’s Friday practice issues. Oscar Piastri and Norris both stayed inside the top nine, but traffic, tyre preparation and track position remain the big Monaco headaches heading into the most important qualifying session of the weekend.",
+              url: "https://www.the-race.com/formula-1/antonelli-deposes-ferrari-in-final-monaco-gp-practice/",
+            },
+          ],
+        },
+        {
+          heading: "Qualifying",
+          items: [
+            {
+              title: "Antonelli grabs Monaco pole after wild Q3 finish",
+              summary:
+                "Kimi Antonelli took a dramatic Monaco Grand Prix pole with a 1m12.051s, beating Max Verstappen by just 0.043s after a tight Q3 fight. Charles Leclerc briefly put Ferrari on provisional pole before Verstappen went fastest and Antonelli delivered the final blow. Leclerc ended fourth behind Lewis Hamilton, while Isack Hadjar put the second Red Bull fifth and McLaren struggled to seventh and eighth with Oscar Piastri ahead of Lando Norris.",
+              url: "https://www.the-race.com/formula-1/antonelli-denies-verstappen-pole-f1-monaco-gp-qualifying-leclerc-hits-wall/",
+            },
+          ],
+        },
+        {
+          heading: "Race",
+          items: [
+            {
+              title: "Antonelli Wins Chaotic Monaco GP as Penalties Reshape Podium",
+              summary:
+                "Kimi Antonelli won a chaotic Monaco Grand Prix ahead of Lewis Hamilton and Isack Hadjar after a race packed with retirements, penalties and late drama. Max Verstappen retired after one lap, Lando Norris later stopped with a McLaren issue, and Charles Leclerc crashed after the restart following brake problems. Pit lane speeding penalties reshuffled the order, with Pierre Gasly losing third on the road and George Russell falling out of contention.",
+              url: "https://www.formula1.com/en/latest/article/antonelli-secures-brilliant-victory-in-chaotic-monaco-grand-prix-amid-multiple-shock-retirements.27e644586K83z0NZd6efsz",
+            },
+          ],
+        },
+      ],
+    },
+
+    sessions: [
+      {
+        id: "p1",
+        type: "practice",
+        label: "Practice 1",
+        time: "Leclerc fastest, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseLapPaste(PASTE_MONACO_P1),
+      },
+      {
+        id: "p2",
+        type: "practice",
+        label: "Practice 2",
+        time: "Hamilton fastest, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseLapPaste(PASTE_MONACO_P2),
+      },
+      {
+        id: "p3",
+        type: "practice",
+        label: "Practice 3",
+        time: "Antonelli fastest, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseLapPaste(PASTE_MONACO_P3),
+      },
+      {
+        id: "q",
+        type: "qualifying",
+        label: "Qualifying",
+        time: "Antonelli on pole, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseQualifyingPaste(PASTE_MONACO_Q),
+      },
+      {
+        id: "race",
+        type: "race",
+        label: "Race Results",
+        time: "Antonelli wins chaotic Monaco GP, full results below",
+        trackNote: "",
+        extraNote: "",
+        results: parseRacePaste(PASTE_MONACO_RACE),
+      },
+    ],
+
+    session: {
+      id: "race",
+      type: "race",
+      label: "Race Results",
+      time: "Antonelli wins chaotic Monaco GP, full results below",
+      extraNote: "Dry Track",
+      results: parseRacePaste(PASTE_MONACO_RACE),
+    },
+  },
+
+  
+
     {
     raceName: "Canadian Grand Prix",
     raceDates: "May 22nd–24th, 2026",
