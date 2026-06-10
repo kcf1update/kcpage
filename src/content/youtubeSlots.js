@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "What's really going on with Charles Leclerc's F1 braking 'nightmare'",
-  youtubeInput: "https://youtu.be/ChhYU_Th6Wo",
-  
+  title: "Top 10 Onboards | 2026 Monaco Grand Prix | Qatar Airways",
+  youtubeInput: "https://youtu.be/g6nv7anVzrU",
+  forceExternal: true
   },
 
   {
     slotId: "slot2",
-    title: "2026 F1 Monaco GP race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/4Yg4hnTZFlY,"
+    title: "What's really going on with Charles Leclerc's F1 braking 'nightmare'",
+    youtubeInput: "https://youtu.be/ChhYU_Th6Wo"
     
   },
 
   {
     slotId: "slot3",
-    title: "Fearless, Peerless’ Kimi & ‘Bamboozled’ Russell | Monaco GP Review | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/VtZ1mClMam8",
+    title: "Can Lewis Hamilton hunt down Kimi Antonelli for the F1 championship? 👀 | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/O_seT1_SSPQ",
     
   }
 ];

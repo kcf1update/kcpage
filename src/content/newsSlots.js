@@ -1,122 +1,103 @@
 const newsSlots = [
-    {
-slotId: "news1",
-sourceLabel: "Crash.net",
-title: "Hamilton Points to Ferrari’s Mercedes Gap",
-summary: "Lewis Hamilton has outlined the difference he still feels between Ferrari and Mercedes, with straight-line performance again a key concern. He says Ferrari has strong cornering pace, but Mercedes continues to pull away on the straights, leaving Ferrari with work to do if it wants to fight at the front consistently.",
-kcsQuickShift: "Hamilton seems happier with the Ferrari in the corners, but the power gap to Mercedes is still biting hard.",
-url: "https://www.crash.net/f1/news/1097581/1/lewis-hamilton-outlines-night-and-day-difference-between-mercedes-and-ferrari-f1",
-imagePath: "/img/news/Ferrari/Lewis/Hamiltonmonaco.jpg",
-imageSource: "Courtesy of Ferrari F1",
-dateLabel: "Jun 9, 2026"
-},
-
 {
-slotId: "news2",
-sourceLabel: "The Race",
-title: "McLaren Feels Customer-Team Pain Under 2026 Rules",
-summary: "McLaren believes the 2026 engine rules have exposed the downside of being a Mercedes customer team, especially with reliability and power-unit integration. Andrea Stella says McLaren must improve both performance and reliability after recent issues, including Lando Norris’ Monaco retirement and earlier electrical problems.",
-kcsQuickShift: "McLaren proved customer teams can win, but these new rules are making the works-team advantage feel very real again.",
-url: "https://www.the-race.com/formula-1/why-mclaren-is-suffering-more-as-a-customer-under-new-rules/",
-imagePath: "/img/news/xpb/Mclaren/news-xpboscar.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news1",
+  sourceLabel: "Crash.net",
+  title: "Toto Wolff Admits Monaco Podium Felt Uneasy Amid Antonelli Success",
+  summary: "Mercedes team principal Toto Wolff admitted he felt conflicted celebrating on the Monaco Grand Prix podium with Kimi Antonelli after the young Italian secured his fifth consecutive victory. While Antonelli continued his remarkable championship charge with a dominant win from pole position, Wolff revealed it was difficult to fully enjoy the moment knowing George Russell had endured another difficult weekend and failed to score points. The contrasting fortunes have widened the gap between the Mercedes teammates and highlighted Antonelli’s growing status as the team’s clear title contender.",
+  kcsQuickShift: "Antonelli keeps winning, but Wolff says Monaco was a reminder that Mercedes is still managing two very different championship stories.",
+  url: "https://www.crash.net/f1/news/1097590/1/what-made-mercedes-boss-toto-wolff-uneasy-about-joining-kimi-antonelli-f1-monaco",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  dateLabel: "XPB IMAGES"
 },
-
 {
-slotId: "news3",
-sourceLabel: "The Race",
-title: "Monaco Exposes the 2026 F1 Pressure Points",
-summary: "The Race’s Monaco debrief points to several major 2026 storylines, including Antonelli’s growing title threat, Leclerc’s braking concerns, McLaren’s slower-than-expected progress, and the wider engine-rule headaches still affecting teams. It also highlights how Monaco’s chaos exposed problems for Ferrari, Audi, Aston Martin, Williams and Cadillac.",
-kcsQuickShift: "Monaco looked like one race, but it exposed problems almost everywhere on the grid.",
-url: "https://www.the-race.com/formula-1/f1-2026-monaco-grand-prix-everything-we-learned/",
-imagePath: "/img/news/xpb/Races/news-xpbracemonaco.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news2",
+  sourceLabel: "Crash.net",
+  title: "Brundle Says Monaco Penalty Fest Went Too Far",
+  summary: "Martin Brundle has questioned the scale of the penalty-heavy Monaco Grand Prix, arguing that the race became too dominated by steward decisions. The chaotic weekend produced a long list of penalties and investigations, leaving Brundle concerned that the sport risks turning close racing into a constant rules debate instead of letting the action breathe.",
+  kcsQuickShift: "Monaco was already chaotic enough, but Brundle clearly thinks the penalty list started to take over the race.",
+  url: "https://www.crash.net/f1/news/1097591/1/martin-brundle-reveals-stance-brutal-f1-penalty-fest-monaco-gp",
+  imagePath: "/img/news/xpb/news-xpbnicomartin.jpg",
+  dateLabel: "XPB IMAGES"
 },
-
 {
-slotId: "news4",
-sourceLabel: "Formula 1",
-title: "Racing Bulls Celebrate Monaco Double Points",
-summary: "Liam Lawson and Arvid Lindblad praised Racing Bulls after both cars scored points in Monaco, with Lawson finishing fifth and Lindblad sixth. It was the team’s first double-points finish of the season, helped by a late red flag and penalties ahead, while Lawson said Racing Bulls had made a big turnaround after struggling earlier in the weekend.",
-kcsQuickShift: "Racing Bulls did exactly what midfield teams have to do right now: survive the chaos and grab the points.",
-url: "https://www.formula1.com/en/latest/article/a-big-turnaround-lawson-and-lindblad-praise-racing-bulls-performance-after-monaco-double-points-finish.kcmkqXQQfKKhcUG2fYaey",
-imagePath: "/img/news/xpb/Visa/news-xpblindblad.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news3",
+  sourceLabel: "ESPN",
+  title: "Mercedes and Ferrari Set for ADUO Engine Upgrade Help",
+  summary: "Mercedes and Ferrari are both set to receive additional engine development opportunities under F1’s ADUO system after Red Bull Ford Powertrains was judged to have the leading combustion engine. Mercedes is expected to receive one upgrade token for being more than 2% behind, while Ferrari is expected to receive two because its deficit is understood to be over 4%, giving both teams a chance to close the power-unit gap during the season.",
+  kcsQuickShift: "Red Bull having the best-rated engine while Mercedes and Ferrari get upgrade help is exactly the kind of F1 rule twist that keeps the paddock talking.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48965040/monaco-grand-prix-formula-1-mercedes-ferrari-receive-aduo-red-bull-best-engine-sources",
+  imagePath: "/img/news/xpb/Races/news-xpbmiami.jpg",
+  dateLabel: "XPB IMAGES"
 },
-
 {
-slotId: "news5",
-sourceLabel: "Formula 1",
-title: "Alonso Grabs Aston Martin’s First Point of 2026",
-summary: "Fernando Alonso gave Aston Martin its first point of the 2026 season with a P10 finish in Monaco after starting from P21. Aston Martin used an aggressive early stop and long soft-tyre run, while Alonso avoided penalties and chaos on a day with two Safety Cars, a red flag and only 15 finishers.",
-kcsQuickShift: "It was only one point, but for Aston Martin this probably felt like a small rescue mission.",
-url: "https://www.formula1.com/en/latest/article/how-aston-martins-aggressive-and-ambitious-strategy-earned-them-a-first-point-of-2026.693lqRXC0HX3AZps2gfVyn",
-imagePath: "/img/news/xpb/Aston/news-astonlivery.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news4",
+  sourceLabel: "RacingNews365",
+  title: "ADUO Engine Ruling Sparks Bigger F1 Power Unit Debate",
+  summary: "The FIA’s ADUO decision is creating fresh controversy because the system focuses on internal combustion engine performance, not the full hybrid power unit package. That matters because battery deployment, energy recovery and electrical output are major parts of the 2026 rules, meaning teams could argue the ruling does not show the complete competitive picture.",
+  kcsQuickShift: "This ADUO ruling could become a major political fight because in modern F1, engine performance is about much more than just the combustion engine.",
+  url: "https://racingnews365.com/controversial-aduo-ruling-could-have-far-reaching-consequences",
+  imagePath: "/img/news/kcai/newsaduo.jpg",
+  dateLabel: "Jun 10, 2026"
 },
-
 {
-slotId: "news6",
-sourceLabel: "RacingNews365",
-title: "Alpine Challenges FIA Over Monaco Penalties",
-summary: "Alpine has requested a Right of Review after Pierre Gasly lost a Monaco podium to two five-second pit lane speeding penalties, dropping him from third on the road to seventh. Flavio Briatore says Alpine strongly disagrees with the decision, arguing several teams were caught by marginal pit lane speed readings of less than 1kph over the limit.",
-kcsQuickShift: "When five-second penalties turn a podium into seventh, Alpine was never going to let this one go quietly.",
-url: "https://racingnews365.com/alpine-strongly-disagree-with-fia-over-monaco-controversy",
-imagePath: "/img/news/Alpine/Gasly/gaslyMonacoFri.jpg",
-imageSource: "Courtesy of Alpine F1",
-dateLabel: "Jun 9, 2026"
+  slotId: "news5",
+  sourceLabel: "PlanetF1",
+  title: "Russell Turns Pressure Back on Antonelli in Title Fight",
+  summary: "George Russell has suggested the 2026 title fight is now Kimi Antonelli’s to lose, a claim that adds another layer to the growing Mercedes teammate battle. Antonelli’s run of victories has put him firmly in control of the championship, while Russell is trying to keep pressure on the young Italian and avoid letting the points gap define the rest of his season.",
+  kcsQuickShift: "Russell may be playing it calm, but calling it Antonelli’s title to lose sounds like a little pressure being sent across the Mercedes garage.",
+  url: "https://www.planetf1.com/news/george-russell-mind-games-kimi-antonelli-title-pressure-claim",
+  imagePath: "/img/news/xpb/Mercedes/xpbimages1.jpg",
+  dateLabel: "Jun 10, 2026"
 },
-
 {
-slotId: "news7",
-sourceLabel: "RacingNews365",
-title: "Norris Fears Grid Penalty After McLaren Reliability Blow",
-summary: "Lando Norris says he is moving closer to a possible grid penalty after McLaren had to use additional power-unit components following Monaco reliability issues. Norris suffered problems in practice and then retired from the race on Lap 45 after reporting strange noises from the power unit, adding more pressure to McLaren’s 2026 reliability concerns.",
-kcsQuickShift: "This is the last thing Norris needed after Monaco: not just a retirement, but possible grid-penalty trouble coming next.",
-url: "https://racingnews365.com/lando-norris-voices-penalty-fear-after-latest-f1-setback",
-imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news6",
+  sourceLabel: "Formula1.com",
+  title: "Albon Set to Make Williams History in Barcelona",
+  summary: "Alex Albon is set to become the driver with the most race starts in Williams history at the upcoming Barcelona-Catalunya Grand Prix, moving past Nigel Mansell’s record of 95. On Beyond The Grid, Albon reflects on his Williams journey since joining the team in 2022, the team’s difficult start to F1’s new era, and how Williams has had to reset its targets around podiums, wins and championships.",
+  kcsQuickShift: "Albon passing Mansell on the Williams starts list is a big milestone, especially with how much he has helped carry that team forward.",
+  url: "https://www.formula1.com/en/latest/article/beyond-the-grid-albon-on-his-williams-journey-and-being-on-the-cusp-of-history.7Lp8Xr04nR40xJn2MChV87",
+  imagePath: "/img/news/xpb/Williams/xpbwilliams.jpg",
+  dateLabel: "XPB IMAGES"
 },
-
 {
-slotId: "news8",
-sourceLabel: "Formel1.de",
-title: "Motorenüberraschung: Mercedes darf entwickeln, Red Bull nicht EN: Engine Surprise: Mercedes Can Develop, Red Bull Cannot",
-summary: "Da Red Bull laut dem 2026er Ausgleichssystem den stärksten V6-Motor im Feld haben soll, darf Red Bull Powertrains vorerst keine zusätzliche Entwicklung betreiben, während Mercedes und andere Hersteller weiter nachlegen dürfen. EN: Under F1’s 2026 engine equalisation system, Red Bull is believed to have the strongest V6 engine package, meaning Red Bull Powertrains cannot develop further for now while Mercedes and other manufacturers are allowed to keep improving.",
-kcsQuickShift: "This is a sneaky big story because Red Bull may have the strongest engine, but the rules could let everyone else close the gap. DE: Das ist eine heimlich große Geschichte, denn Red Bull hat möglicherweise den stärksten Motor, aber die Regeln könnten der Konkurrenz helfen aufzuholen.",
-url: "https://www.formel1.de/news/news/2026-06-09/motorenueberraschung-mercedes-darf-entwickeln-red-bull-nicht",
-imagePath: "/img/news/xpb/RedBull/newsxpbmaxmonaco.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news7",
+  sourceLabel: "Marca",
+  title: "Leclerc Warns Ferrari After Dangerous Brake Failure",
+  summary: "Charles Leclerc has made clear that Ferrari must urgently solve its braking problems after his heavy Monaco crash, saying the car was in a dangerous situation with only one brake working properly. The issue has raised fresh pressure on Ferrari ahead of Barcelona, with Leclerc expected to move away from Brembo and switch to Carbon Industries brakes, the same supplier already used by Lewis Hamilton.",
+  kcsQuickShift: "When Leclerc is talking about a dangerous brake limit, that is not just frustration — that is a serious Ferrari reliability warning.",
+  url: "https://www.marca.com/motor/formula1/gp-barcelona-catalunya/2026/06/10/leclerc-destapa-problemon-ferrari-limite-peligroso.html",
+  imagePath: "/img/news/Ferrari/Leclerc/ferraricharlesmonaco.jpg",
+  dateLabel: "Courtesy of Ferrari F1"
 },
-
 {
-slotId: "news9",
-sourceLabel: "RacingNews365.nl",
-title: "Verstappen vertwijfeld over F1-risico's: Dat weet ik niet zo goed EN: Verstappen Unsure About F1 Risks After Becoming a Father",
-summary: "Max Verstappen zegt dat de komst van zijn dochter Lily hem als coureur niet heeft veranderd, al geeft hij toe dat hij niet precies weet hoe hij nu naar risico’s in de Formule 1 kijkt. EN: Max Verstappen says becoming a father to daughter Lily has not changed him as a racing driver, although he admits he is not completely sure how he now thinks about risk in Formula 1.",
-kcsQuickShift: "Verstappen still sounds like Verstappen, but even he seems to know fatherhood can change the way you think. NL: Verstappen klinkt nog steeds als Verstappen, maar zelfs hij lijkt te weten dat vaderschap je manier van denken kan veranderen.",
-url: "https://racingnews365.nl/verstappen-vertwijfeld-over-f1-risicos-dat-weet-ik-niet-zo-goed",
-imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news8",
+  sourceLabel: "Infobae",
+  title: "La estrategia de Alpine para revertir las sanciones a Colapinto y Gasly en Mónaco / Alpine Pushes to Overturn Monaco Penalties for Colapinto and Gasly",
+  summary: "Alpine presentó un pedido de revisión ante la FIA por las sanciones de velocidad en boxes que afectaron a Pierre Gasly y Franco Colapinto en Mónaco. El equipo sostiene que sus pilotos no superaron realmente el límite de 60 km/h y apunta al criterio usado por la FIA para medir la velocidad, después de que Gasly recibiera dos sanciones de cinco segundos y Colapinto una de cinco segundos. / Alpine has filed a right-of-review request with the FIA over the Monaco pit-lane speeding penalties given to Pierre Gasly and Franco Colapinto. The team argues its drivers did not truly exceed the 60 km/h limit and is challenging the FIA’s measuring method, after Gasly received two five-second penalties and Colapinto one five-second penalty.",
+  kcsQuickShift: "Alpine may not get the Monaco result changed, but this challenge could still force a bigger look at how pit-lane speed is measured. / Puede que Alpine no consiga cambiar el resultado de Mónaco, pero este reclamo podría abrir una discusión más grande sobre cómo se mide la velocidad en boxes.",
+  url: "https://www.infobae.com/deportes/2026/06/09/la-estrategia-de-alpine-para-revertir-las-sanciones-a-colapinto-y-gasly-en-monaco-el-video-revelador/",
+  imagePath: "/img/news/Alpine/colapinto/monacocolapinto.jpg",
+  dateLabel: "Courtesy of Alpine F1"
 },
-
 {
-slotId: "news10",
-sourceLabel: "Motorsport.com",
-title: "Sainz Blasts Monaco Restart Risks After Williams Retirement",
-summary: "Carlos Sainz was furious after his Monaco Grand Prix ended in restart chaos, with contact from Nico Hulkenberg and then Franco Colapinto forcing the Williams driver to retire. Sainz said rivals took stupid risks at Loews hairpin, while Hulkenberg argued he was forced onto the inside while avoiding another car.",
-kcsQuickShift: "Sainz had points on the table, and losing them in Monaco restart traffic was always going to sting.",
-url: "https://www.motorsport.com/f1/news/carlos-sainz-hits-out-at-stupid-risks-from-f1-rivals-how-can-a-veteran-like-nico-do-this/10828487/",
-imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
-imageSource: "XPB IMAGES",
-dateLabel: "Jun 9, 2026"
+  slotId: "news9",
+  sourceLabel: "The Race",
+  title: "Russell’s Driving Style Under Scrutiny as Antonelli Pulls Clear",
+  summary: "George Russell’s 2026 struggles are being linked to how his driving style interacts with the lower-downforce cars and the current Pirelli tyres. The Race argues that Russell’s smooth, high-commitment cornering style can overload the rear tyres when the fronts are not in the right window, while Kimi Antonelli’s more aggressive but precise approach appears better suited to managing small slides and keeping the tyres alive.",
+  kcsQuickShift: "This is not just about Russell being slower — it sounds like the 2026 car is asking for a style that Antonelli is handling better right now.",
+  url: "https://www.the-race.com/formula-1/george-russell-driving-style-f1-2026-struggles-kimi-antonelli/",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
+  dateLabel: "XPB IMAGES"
+},
+{
+  slotId: "news10",
+  sourceLabel: "ESPN",
+  title: "Hamilton Says Ferrari Move Has Made Him Happier",
+  summary: "Lewis Hamilton says he is happier this season after moving to Ferrari and feels he still has to remind people what he can do. After showing strong pace for Ferrari in Monaco practice, Hamilton made clear that the motivation is still there as he continues chasing his first Grand Prix win in red.",
+  kcsQuickShift: "Hamilton sounds happier at Ferrari, but there is still that edge — he clearly wants to remind everyone he is not finished yet.",
+  url: "https://www.espn.co.uk/f1/story/_/id/48965030/monaco-grand-prix-formula-1-lewis-hamilton-happier-year-ferrari-remind-people-am",
+  imagePath: "/img/news/Ferrari/Lewis/monacolewis.jpg",
+  dateLabel: "Courtesy of Ferrari F1"
 }
 
 ];
