@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Top 10 Onboards | 2026 Monaco Grand Prix | Qatar Airways",
-  youtubeInput: "https://youtu.be/g6nv7anVzrU",
-  forceExternal: true
+  title: "The driving problem deciding the F1 title",
+  youtubeInput: "https://youtu.be/aTeUn2huUJM",
+  
   },
 
   {
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Can Lewis Hamilton hunt down Kimi Antonelli for the F1 championship? 👀 | The F1 Show Podcast",
-    youtubeInput: "https://youtu.be/O_seT1_SSPQ",
-    
+    title: "Top 10 Onboards | 2026 Monaco Grand Prix | Qatar Airways",
+    youtubeInput: "https://youtu.be/g6nv7anVzrU",
+    forceExternal: true,
   }
 ];
