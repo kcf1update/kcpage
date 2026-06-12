@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "The driving problem deciding the F1 title",
-  youtubeInput: "https://youtu.be/aTeUn2huUJM",
-  
+  title: "Weekend Warm-Up | 2026 Barcelona-Catalunya Grand Prix",
+  youtubeInput: "https://youtu.be/hKhR7uZMGks",
+  forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "What's really going on with Charles Leclerc's F1 braking 'nightmare'",
-    youtubeInput: "https://youtu.be/ChhYU_Th6Wo"
-    
+    title: "Drivers Looks Ahead To Race Weekend | 2026 Barcelona-Catalunya Grand Prix'",
+    youtubeInput: "https://youtu.be/bnZ7bIFztUw",
+    forceExternal: true,
   },
 
   {
     slotId: "slot3",
-    title: "Top 10 Onboards | 2026 Monaco Grand Prix | Qatar Airways",
-    youtubeInput: "https://youtu.be/g6nv7anVzrU",
+    title: "Pierre GASLY claims Isack HADJAR’S Monaco podium finish",
+    youtubeInput: "https://youtu.be/53fBi3sdw8o",
     forceExternal: true,
   }
 ];

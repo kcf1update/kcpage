@@ -15,11 +15,11 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
-  label: "Monaco GP Weekend Recap",
-  title: "Monaco GP race result and weekend recap now in the KC F1 Race Centre",
+  enabled: true,
+  label: "Formula 1 MSC Cruises Gran Premio de Barcelona-Catalunya Grand Prix",
+  title: "Barcelona-Catalunya Grand Prix weekend is live",
   body:
-    "Antonelli wins, Hadjar keeps a surprise podium, and penalties reshape the Monaco finishing order. Full race result and weekend recap are now posted.",
+    "The Barcelona-Catalunya race weekend is now live in the Race Centre. Check the full weekend schedule, session results, practice recap, weather, track info, and race-weekend updates all in one place.",
   buttonText: "Go to Race Centre →",
   buttonLink: "/racecenter",
 };

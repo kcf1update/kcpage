@@ -352,7 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m16.363s	27
+2	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m16.566s	29
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m16.883s	29
+4	Max Verstappen	NED	Oracle Red Bull Racing	1m17.047s	29
+5	Leonardo Fornaoli	ITA	McLaren Mastercard F1 Team	1m17.216s	22
+6	Paul Aron	EST	Audi Revolut F1 Team	1m17.321s	24
+7	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m17.472s	24
+8	Dino Beganovic	SWE	Scuderia Ferrari HP	1m17.778s	30
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m17.804s	29
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	1m17.893s	28
+11	Oliver Bearman	GBR	TGR Haas F1 Team	1m18.172s	25
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m18.209s	28
+13	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m18.293s	27
+14	Ayumu Iwasa	JAP	Oracle Red Bull Racing	1m18.298s	21
+15	Fred Vesti	DEN	Mercedes AMG Petronas F1 Team	1m18.365s	28
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m18.372s	27
+17	Pierre Gasly	FRA	BWT Alpine F1 Team	1m18.508s	23
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m18.914s	23
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m20.067s	23
+20	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m20.318s	21
+21	Colton Herta	USA	Cadillac F1 Team	1m20.697s	27
+ 	Luke Browning	GBR	Atlassian Williams F1 Team	 
 
 `;
 
@@ -457,10 +478,10 @@ export const raceWeekendRecap = {
   heading: "Practice 1",
   items: [
     {
-      title: "",
+      title: "Russell Leads FP1 as Barcelona Weekend Gets Underway",
       summary:
-        "",
-      url: "",
+        "George Russell set the pace in first practice at Barcelona, putting Mercedes on top with a 1:16.363 as the high-speed Circuit de Barcelona-Catalunya appeared to suit his car and driving style. Oscar Piastri was second for McLaren, two tenths back, with Charles Leclerc third for Ferrari and Max Verstappen fourth for Red Bull. FP1 also featured several rookie and stand-in drivers, with Leonardo Fornaroli impressing in Lando Norris’s McLaren, Paul Aron strong for Audi, and Dino Beganovic also inside the top 10 for Ferrari. Colton Herta completed his first F1 race-weekend session for Cadillac, while Williams reserve Luke Browning missed out after an electrical issue on Alex Albon’s car.",
+      url: "https://www.the-race.com/formula-1/russell-sets-pace-in-spain-fp1-as-two-rookies-impress/",
     },
   ],
 },
@@ -597,7 +618,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 am ADT",
+          time: "Russell Fastest, Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
