@@ -1,14 +1,16 @@
 export const newsSlots = [
   {
-  slotId: "news1",
-  sourceLabel: "Formula 1",
-  title: "Russell Fastest in Barcelona FP1 as Seven Rookies Join the Session",
-  summary: "George Russell topped first practice for the Barcelona-Catalunya Grand Prix, leading Oscar Piastri and Charles Leclerc with a 1m16.363s. The session also featured seven rookie drivers, while Luke Browning failed to complete a lap for Williams because of an electrical issue.",
-  kcsQuickShift: "Russell starting fastest is interesting, but the rookie running and early reliability issues make this one worth watching.",
-  url: "https://www.formula1.com/en/latest/article/russell-sets-the-pace-in-free-practice-1-from-piastri-and-leclerc-for-barcelona-catalunya-grand-prix.6O6m3kDW16TxvfADOr5Lj8",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Jun 12, 2026"
+ slotId: "newsX",
+  sourceLabel: "Crash.net",
+  title: "Norris Tops FP2 as McLaren Hits Back in Barcelona",
+  summary:
+    "Lando Norris led second practice at the Barcelona-Catalunya Grand Prix, edging George Russell by just 0.009 seconds as McLaren responded strongly after sitting him out of FP1. Oscar Piastri made it two McLarens inside the top three, while Charles Leclerc was fourth for Ferrari and Kimi Antonelli completed the top five for Mercedes.",
+  kcsQuickShift:
+    "That is exactly the kind of session McLaren needed after Russell set the pace earlier in the day.",
+  url:
+    "https://www.crash.net/f1/news/1097779/1/lando-norris-pips-george-russell-mclaren-strikes-back-second-barcelona-f1",
+  imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
+  dateLabel: "Jun 12, 2026",
 },
 
 {

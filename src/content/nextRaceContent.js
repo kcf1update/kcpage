@@ -378,7 +378,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
-
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.426s	30
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m15.435s	28
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m15.483s	24
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m15.799s	29
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m16.015s	31
+6	Max Verstappen	NED	Oracle Red Bull Racing	1m16.321s	33
+7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m16.411s	29
+8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m16.611s	27
+9	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m16.631s	28
+10	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.674s	30
+11	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m16.934s	31
+12	Ollie Bearman	GBR	TGR Haas F1 Team	1m16.945s	31
+13	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m16.967s	8
+14	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m17.020s	29
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m17.051s	30
+16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m17.260s	29
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m17.538s	29
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m18.225s	6
+19	Alex Albon	THA	Atlassian Williams F1 Team	1m18.790s	29
+20	Sergio Perez	MEX	Cadillac F1 Team	1m19.261s	34
+21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m19.286s	21
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m19.459s	20
 `;
 
 const PASTE_P3 = `
@@ -489,10 +510,10 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "",
+      title: "Norris Puts McLaren on Top in FP2",
       summary:
-        "",
-      url: "",
+        "Lando Norris put McLaren fastest in FP2 at Barcelona, edging George Russell by just 0.009s after missing FP1 for rookie running. Oscar Piastri completed a strong McLaren session in third, only 0.057s off Norris, while Charles Leclerc and Kimi Antonelli rounded out the top five. The session also showed plenty of balance and tyre issues, with Verstappen struggling for grip, Hamilton reporting a rear-end problem on his Ferrari, and Liam Lawson briefly stopping at pit exit to trigger a Virtual Safety Car.",
+      url: "https://www.the-race.com/formula-1/mclaren-leads-mercedes-f1-2026-barcelona-gp-fp2/",
     },
   ],
 },
@@ -628,7 +649,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:00 PM ADT",
+          time: "Lando Fastest, Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),

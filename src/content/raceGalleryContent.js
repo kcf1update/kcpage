@@ -30,7 +30,7 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
