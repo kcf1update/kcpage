@@ -43,12 +43,12 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/Races/xpbracespain.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },

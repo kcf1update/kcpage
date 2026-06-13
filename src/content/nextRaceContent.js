@@ -403,6 +403,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m15.679s	11
+2	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m15.893s	12
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m15.922s	17
+4	Lando Norris	GBR	McLaren Mastercard F1 Team	1m15.925s	15
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m16.381s	16
+6	Max Verstappen	NED	Oracle Red Bull Racing	1m16.434s	12
+7	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m16.500s	12
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m16.684s	15
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m16.961s	22
+10	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m17.020s	16
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m17.027s	13
+12	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m17.324s	15
+13	Pierre Gasly	FRA	BWT Alpine F1 Team	1m17.583s	15
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	1m17.625s	14
+15	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m17.730s	19
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m18.040s	15
+17	Ollie Bearman	GBR	TGR Haas F1 Team	1m18.391s	13
+18	Alex Albon	THA	Atlassian Williams F1 Team	1m18.412s	15
+19	Sergio Perez	MEX	Cadillac F1 Team	1m18.691s	21
+20	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m19.496s	18
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m19.962s	14
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m20.103s	17
 `;
 const PASTE_SQ = `
 
@@ -523,8 +545,8 @@ export const raceWeekendRecap = {
     {
       title: "",
         summary:
-        "",
-      url: "",
+        "George Russell led final practice in Barcelona with a 1:15.679, putting Mercedes back on top before qualifying. Oscar Piastri finished second, Charles Leclerc third, with Lando Norris, Lewis Hamilton and Max Verstappen completing the top six. The session was disrupted by a red flag after Valtteri Bottas suffered a Cadillac failure, while Kimi Antonelli was left frustrated by traffic and ended the session seventh.",
+      url: "https://www.formula1.com/en/latest/article/russell-fastest-in-free-practice-3-ahead-of-piastri-and-leclerc-in-barcelona.5DnruoMHBsHXrKsBoXAS0H",
     },
   ],
 },
@@ -658,7 +680,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Russell Fastest, Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
