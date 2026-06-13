@@ -434,7 +434,117 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
-	
+	1	63	
+
+George Russell
+
+Mercedes	1:15.717	1:15.228	1:14.679	13
+2	44	
+
+Lewis Hamilton
+
+Ferrari	1:15.625	1:15.418	1:14.743	14
+3	12	
+
+Kimi Antonelli
+
+Mercedes	1:15.977	1:15.295	1:14.998	14
+4	1	
+
+Lando Norris
+
+McLaren	1:16.287	1:15.361	1:15.001	14
+5	3	
+
+Max Verstappen
+
+Red Bull Racing	1:16.352	1:15.484	1:15.021	12
+6	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:16.427	1:15.754	1:15.077	14
+7	81	
+
+Oscar Piastri
+
+McLaren	1:16.138	1:15.518	1:15.090	15
+8	30	
+
+Liam Lawson
+
+Racing Bulls	1:16.673	1:15.585	1:16.542	14
+9	27	
+
+Nico Hulkenberg
+
+Audi	1:16.066	1:15.768	1:16.657	17
+10	16	
+
+Charles Leclerc
+
+Ferrari	1:15.964	1:15.281	DNF	8
+11	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:16.425	1:15.840		8
+12	5	
+
+Gabriel Bortoleto
+
+Audi	1:16.616	1:16.001		9
+13	43	
+
+Franco Colapinto
+
+Alpine	1:16.590	1:16.191		12
+14	10	
+
+Pierre Gasly
+
+Alpine	1:16.599	1:16.261		12
+15	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:16.571	1:16.389		15
+16	55	
+
+Carlos Sainz
+
+Williams	1:16.881	1:17.827		15
+17	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:17.073			9
+18	23	
+
+Alex Albon
+
+Williams	1:17.424			9
+19	11	
+
+Sergio Perez
+
+Cadillac	1:17.545			6
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:17.757			9
+21	18	
+
+Lance Stroll
+
+Aston Martin	1:18.758			8
+22	14	
+
+Fernando Alonso
+
+Aston Martin	1:18.815			8
+
 `;
 
 const PASTE_RACE = `
@@ -555,10 +665,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Russell Takes Barcelona Pole After Dramatic Qualifying",
                 summary:
-                  "",
-                url: "",
+                  "George Russell bounced back in style at Barcelona, taking pole with a 1:14.679 after topping Q2 and delivering when it mattered in Q3. Lewis Hamilton nearly stole the spotlight by splitting the Mercedes drivers for second, while Kimi Antonelli had to settle for third ahead of Lando Norris, who missed the top three by just 0.003s. Charles Leclerc’s difficult weekend continued with a heavy Turn 4 crash that brought out a red flag and left him 10th on the grid.",
+                url: "https://racingnews365.com/george-russell-survives-late-lewis-hamilton-scare-for-bounce-back-barcelona-pole",
               },
             ],
           },
@@ -689,7 +799,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Russell on pole, Results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),

@@ -1,38 +1,38 @@
 export const newsSlots = [
  {
-  slotId: "news1",
+  slotId: "newsX",
   sourceLabel: "RacingNews365",
-  title: "Bottas Cadillac Failure Brings Out Barcelona FP3 Red Flag",
-  summary: "Valtteri Bottas triggered a red flag during final practice in Barcelona after suffering a scary failure in his Cadillac. The incident interrupted FP3 and added another reliability concern for Cadillac on a weekend where every minute of track time matters.",
-  kcsQuickShift: "That is the kind of failure Cadillac did not need right before qualifying.",
-  url: "https://racingnews365.com/valtteri-bottas-suffers-scary-cadillac-failure-in-barcelona-fp3-red-flag-incident",
-  imagePath: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
-   photoCredit: "XPB Images",
-  dateLabel: "April 13th, 2026",
+  title: "Russell Survives Hamilton Scare To Take Barcelona Pole",
+  summary: "George Russell bounced back from his Monaco disappointment by taking pole position for the Barcelona Grand Prix with a 1:14.679. Lewis Hamilton came close to stealing the moment late in Q3, putting Ferrari second on the grid, while Kimi Antonelli qualified third and Lando Norris missed the top three by just 0.003s.",
+  kcsQuickShift: "Russell needed that one, but Hamilton made sure Mercedes did not get it the easy way.",
+  url: "https://racingnews365.com/george-russell-survives-late-lewis-hamilton-scare-for-bounce-back-barcelona-pole",
+  imagePath: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Jun 13, 2026"
 },
 
 {
-  slotId: "news2",
+   slotId: "newsX",
+  sourceLabel: "MARCA",
+  title: "Leclerc Hits The Wall In Another Barcelona Qualifying Setback",
+  summary: "Charles Leclerc’s difficult Barcelona weekend continued when he went into the wall during qualifying, adding another costly mistake to Ferrari’s session. The incident hurt his qualifying run and left Ferrari with more questions after a weekend where pace and control have both been hard to lock down.",
+  kcsQuickShift: "Leclerc has the speed, but Barcelona has turned into one of those weekends where nothing is coming clean.",
+  url: "https://www.marca.com/motor/formula1/gp-barcelona-catalunya/2026/06/13/leclerc-sale-muro-nuevo-accidente-qualy-barcelona.html",
+  imagePath: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Jun 13, 2026"
+},
+
+{
+  slotId: "newsX",
   sourceLabel: "Crash.net",
-  title: "Russell Fastest In Final Barcelona Practice",
-  summary: "George Russell topped final practice at the Barcelona Grand Prix as Mercedes showed strong pace before qualifying. The session was interrupted when Valtteri Bottas suffered a failure in his Cadillac, bringing out the red flag and adding another reliability concern to Cadillac’s weekend.",
-  kcsQuickShift: "Russell looks sharp before qualifying, but Bottas gave Cadillac another headache at the worst possible time.",
-  url: "https://www.crash.net/f1/news/1097869/1/george-russell-fastest-final-f1-barcelona-gp-practice-valtteri-bottas-suffers",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbrussellmiami.jpg",
-    photoCredit: "XPB Images",
-  dateLabel: "April 13th, 2026",
-},
-
-{
-  slotId: "news3",
-  sourceLabel: "RacingNews365.nl",
-  title: "Verstappen moet pas op de plaats maken in generale repetitie Barcelona / Verstappen Forced To Take A Step Back In Barcelona Dress Rehearsal",
-  summary: "Max Verstappen kwam in de laatste training in Barcelona niet helemaal mee in de strijd bovenaan, terwijl George Russell de snelste tijd reed voor Mercedes. De sessie werd ook onderbroken door de rode vlag na het probleem van Valtteri Bottas, waardoor de laatste voorbereiding voor de kwalificatie rommelig verliep.\n\nMax Verstappen could not fully match the front-running pace in final practice at Barcelona, as George Russell set the fastest time for Mercedes. The session was also interrupted by a red flag after Valtteri Bottas hit trouble, making the final qualifying preparation more disrupted.",
-  kcsQuickShift: "Verstappen is usually there when it counts, but Red Bull does not look fully comfortable yet. / Verstappen staat er meestal wanneer het telt, maar Red Bull oogt nog niet helemaal comfortabel.",
-  url: "https://racingnews365.nl/verstappen-moet-pas-op-de-plaats-maken-in-generale-repetitie-barcelona",
-  imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+  title: "Antonelli Given Reprimand After Traffic Rage Incident",
+  summary: "Kimi Antonelli has received his first reprimand of the 2026 F1 season after stewards reviewed an incident involving erratic driving in traffic. The Mercedes rookie avoided a grid penalty, but the decision still puts a mark on what has already been a high-pressure run of races.",
+  kcsQuickShift: "Antonelli got away without a grid drop, but the stewards clearly wanted to send him a warning.",
+  url: "https://www.crash.net/f1/news/1097890/1/f1-stewards-cast-verdict-over-kimi-antonellis-erratic-driving-amid-traffic-rage",
+  imagePath: "/img/news/xpb/Mercedes/news-kimipole2.jpg",
   photoCredit: "XPB Images",
-  dateLabel: "April 13th, 2026",
+  dateLabel: "Jun 13, 2026"
 },
 
 {
