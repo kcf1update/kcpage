@@ -71,18 +71,33 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/Visa/xpblawsonspain.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/ferrari/xpblewiswin.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/.jpg",
+          src: "/img/news/xpb/ferrari/xpblewisspain2.jpg",
           alt: "Race day gallery image 3",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/Mercedes/xpbkimispain.jpg",
+          alt: "Race day gallery image 4",
+          credit: "XPB Images",
+        },
+         {
+          src: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+          alt: "Race day gallery image 5",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/Races/xpbracespain2.jpg",
+          alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
       ],

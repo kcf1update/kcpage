@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Weekend Warm-Up | 2026 Barcelona-Catalunya Grand Prix",
-  youtubeInput: "https://youtu.be/hKhR7uZMGks",
-  forceExternal: true,
+  title: "Emotional Lewis Hamilton reacts to 'childhood dream' Ferrari win | Barcelona-Catalunya GP Race 2026",
+  youtubeInput: "https://youtu.be/EpjVmDNLkrw",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Drivers Looks Ahead To Race Weekend | 2026 Barcelona-Catalunya Grand Prix'",
-    youtubeInput: "https://youtu.be/bnZ7bIFztUw",
+    title: "LIVE: Barcelona-Catalunya Grand Prix Post-Race Show",
+    youtubeInput: "https://youtu.be/ammthhuowxI",
     forceExternal: true,
   },
 

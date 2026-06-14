@@ -548,6 +548,29 @@ Aston Martin	1:18.815			8
 `;
 
 const PASTE_RACE = `
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	66
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	+19.561s
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	+23.719s
+4	Max Verstappen	NED	Oracle Red Bull Racing	+40.497s
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+58.661s
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	+1 Lap
+7	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+8	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 Lap
+9	Liam Lawson	NZD	Racing Bulls	+1 Lap
+10	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+2 Laps
+12	Carlos Sainz	ESP	Atlassian Williams F1 Team	+2 Laps
+13	Esteban Ocon	FRA	TGR Haas F1 Team	+2 Laps
+14	Sergio Perez	MEX	Cadillac F1 Team	+3 Laps
+15	Charles Leclerc	MON	Scuderia Ferrari HP	+4 Laps
+16	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+5 Laps
+17	Ollie Bearman	GBR	TGR Haas F1 Team	+6 Laps
+DNF	Alex Albon	THA	Atlassian Williams F1 Team	+11 Laps
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+29 Laps
+DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	+37 Laps
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	+51 Laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+61 Laps
+
 
 `;
 
@@ -676,10 +699,10 @@ export const raceWeekendRecap = {
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Hamilton Wins For Ferrari As Antonelli’s Late DNF Shakes Up Barcelona",
                 summary:
-                  "",
-                url: "",
+                  "Lewis Hamilton claimed his first Grand Prix victory for Ferrari at the Barcelona-Catalunya Grand Prix, beating George Russell by 19.561 seconds after Ferrari’s aggressive three-stop strategy and a perfectly timed Virtual Safety Car stop turned the race in his favour. Lando Norris completed an all-British podium in third, with Max Verstappen fourth, Oscar Piastri fifth, Isack Hadjar sixth, and Alpine scoring heavily with Pierre Gasly seventh and Franco Colapinto eighth. Racing Bulls also put both cars in the points with Liam Lawson ninth and Arvid Lindblad tenth. The biggest championship moment came late on when Kimi Antonelli, who had just passed Russell for second, slowed and retired on Lap 62 with what Mercedes later called an electrical shutdown. Charles Leclerc also retired late, while Aston Martin had a brutal home race for Fernando Alonso, who started from the pit lane after power unit changes and later stopped with a battery issue. Lance Stroll retired early with a gearbox problem, Nico Hulkenberg lost a likely points chance after gravel thrown up by Lawson triggered an emergency shutdown on his Audi, and both Williams cars were placed under post-race investigation for possible start-procedure breaches. Hamilton’s win ended Mercedes’ unbeaten run in 2026 and cut into Antonelli’s championship lead, turning Barcelona into one of the most important races of the season so far.",
+                url: "https://www.motorsport.com/f1/news/f1-barcelona-gp-race-report/10830256/",
               },
             ],
           },
@@ -808,7 +831,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race ",
-          time: "10:00 AM ADT",
+          time: "Ferrari Wins with Hamilton, Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
