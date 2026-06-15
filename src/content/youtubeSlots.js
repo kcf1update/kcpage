@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Emotional Lewis Hamilton reacts to 'childhood dream' Ferrari win | Barcelona-Catalunya GP Race 2026",
-  youtubeInput: "https://youtu.be/EpjVmDNLkrw",
+  title: "2026 F1 BARCELONA-CATALUNYA GP race analysis by Peter Windsor",
+  youtubeInput: "https://youtu.be/2NNblvQkAW4",
   
   },
 
   {
     slotId: "slot2",
-    title: "LIVE: Barcelona-Catalunya Grand Prix Post-Race Show",
-    youtubeInput: "https://youtu.be/ammthhuowxI",
+    title: "Has Hamilton Put Ferrari In The Fight? | Barcelona-Catalunya GP Review | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/sHVWv39z2OI",
     forceExternal: true,
   },
 
   {
     slotId: "slot3",
-    title: "Pierre GASLY claims Isack HADJAR’S Monaco podium finish",
-    youtubeInput: "https://youtu.be/53fBi3sdw8o",
+    title: "Did Hamilton’s CAREER RISK finally pay off at the BARCELONA GRAND PRIX?",
+    youtubeInput: "https://youtu.be/qqsqjql0VJI",
     forceExternal: true,
   }
 ];

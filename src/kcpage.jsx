@@ -17,9 +17,8 @@ import { youtubeSlots } from "./content/youtubeSlots";
 const raceWeekendPromo = {
   enabled: true,
   label: "Formula 1 MSC Cruises Gran Premio de Barcelona-Catalunya Grand Prix",
-  title: "Barcelona-Catalunya Grand Prix weekend is live",
-  body:
-    "The Barcelona-Catalunya race weekend is now live in the Race Centre. Check the full weekend schedule, session results, practice recap, weather, track info, and race-weekend updates all in one place.",
+  title: "Hamilton Wins In Barcelona As The Title Fight Tightens",
+  body: "The Barcelona-Catalunya Grand Prix Race Centre is updated with the full race result, weekend recap, session results, photo gallery.",
   buttonText: "Go to Race Centre →",
   buttonLink: "/racecenter",
 };
