@@ -555,9 +555,9 @@ const PASTE_RACE = `
 5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+58.661s
 6	Isack Hadjar	FRA	Oracle Red Bull Racing	+1 Lap
 7	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
-8	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 Lap
-9	Liam Lawson	NZD	Racing Bulls	+1 Lap
-10	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+8	Liam Lawson	NZD	Racing Bulls	+1 Lap
+9	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 Lap
 11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+2 Laps
 12	Carlos Sainz	ESP	Atlassian Williams F1 Team	+2 Laps
 13	Esteban Ocon	FRA	TGR Haas F1 Team	+2 Laps
