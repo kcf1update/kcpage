@@ -1,145 +1,122 @@
 export const newsSlots = [
-   {
+  {
     slotId: "news1",
     sourceLabel: "Crash.net",
-    title: "Antonelli Hit With Post-Race Penalty Despite Barcelona Retirement",
-    summary:
-      "Kimi Antonelli received a post-race five-second penalty for multiple track-limits breaches at the Barcelona-Catalunya Grand Prix, even though he had already retired from the race. The penalty did not change his result, but the stewards said one of the infringements had only been detected later, creating confusion over when the warning flag should have been issued.",
-    kcsQuickShift:
-      "Antonelli’s retirement was already costly, but the delayed penalty adds another layer to a messy Barcelona finish for the championship leader.",
-    url: "https://www.crash.net/f1/news/1098880/1/explained-why-kimi-antonelli-was-hit-post-race-f1-penalty-despite-retiring",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbkimimiami.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    title: "Brundle Weighs In on Hamilton’s Barcelona Breakthrough",
+    summary: "Martin Brundle says Lewis Hamilton’s Barcelona win answered one of the biggest questions around his Ferrari move, showing he still has the pace and race craft to win at the front. The result also shifts the focus from whether Hamilton can adapt to Ferrari to whether Ferrari can keep giving him a car capable of winning.",
+    kcsQuickShift: "You can never count Hamilton out, and this win was a reminder of just how much he can still do when the car is there.",
+    url: "https://www.crash.net/f1/news/1098895/1/martin-brundle-answers-crucial-question-hanging-over-lewis-hamiltons-barcelona-f1",
+    imagePath: "/img/news/shut/news-shutterstockbrundle.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news2",
-    sourceLabel: "Crash.net",
-    title: "Wolff Warns Hamilton Could Become Serious Title Threat",
-    summary:
-      "Toto Wolff has warned that Lewis Hamilton could become extremely difficult to stop now that he has claimed his first Grand Prix win for Ferrari. After Hamilton’s breakthrough victory in Barcelona, Wolff said his former Mercedes driver remains a major danger once he gains momentum in a title fight.",
-    kcsQuickShift:
-      "Hamilton’s Ferrari win was not just a one-off result — Wolff clearly sees it as the moment that could drag him properly into the championship battle.",
-    url: "https://www.crash.net/f1/news/1098874/1/toto-wolff-issues-strong-lewis-hamilton-warning-f1-title-fight",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+    sourceLabel: "ESPN",
+    title: "Wolff Opens Door to Mercedes Team Orders",
+    summary: "Toto Wolff has hinted Mercedes may need to rethink how freely George Russell and Kimi Antonelli are allowed to race each other after Barcelona. Antonelli showed stronger pace in parts of the race, while Lewis Hamilton and Ferrari took advantage as Mercedes lost its first Sunday win of the season.",
+    kcsQuickShift: "Mercedes has a real problem now: let Russell and Antonelli race, or protect the championship lead before Hamilton gets any closer.",
+    url: "https://www.espn.co.uk/f1/story/_/id/49028384/barcelona-catalunya-grand-prix-formula-1-mercedes-boss-toto-wolff-hints-possible-team-orders-george-russell-kimi-antonelli",
+    imagePath: "/img/news/xpb/Mercedes/xpbimages1.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news3",
-    sourceLabel: "ESPN",
-    title: "Norris Warns Ferrari Engine Gains Could Embarrass Rivals",
-    summary:
-      "Lando Norris believes Ferrari already has one of the strongest cornering packages on the grid and warned that further engine improvements could make life very difficult for its rivals. After finishing third in Barcelona behind Lewis Hamilton and George Russell, Norris said Ferrari’s current weakness is not the chassis, but straight-line performance.",
-    kcsQuickShift:
-      "Norris is basically saying Ferrari may already have the car — and if the power unit catches up, the rest of the field could be in trouble.",
-    url: "https://www.espn.co.uk/f1/story/_/id/49028382/barcelona-catalunya-grand-prix-formula-1-lando-norris-ferrari-making-engine-improvements-embarrass-rivals",
-    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+    sourceLabel: "RacingNews365",
+    title: "Norris Defends Hamilton After Ferrari Breakthrough",
+    summary: "Lando Norris has backed Lewis Hamilton after his first Ferrari victory in Barcelona, saying Hamilton’s critics have been answered on track. Norris finished third in the race and said sharing the podium with Hamilton and George Russell made the all-British top three especially meaningful.",
+    kcsQuickShift: "Norris knows exactly how loud the outside noise can get, and Hamilton’s Barcelona win gave the haters a big dose of reality. Hamilton can still do it!",
+    url: "https://racingnews365.com/lando-norris-hits-back-at-lewis-hamilton-critics-he-can-stick-the-middle-finger-up",
+    imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news4",
-    sourceLabel: "RacingNews365",
-    title: "Leclerc Explains Failure Behind Painful Late Barcelona Retirement",
-    summary:
-      "Charles Leclerc says his late Barcelona retirement came after Ferrari suffered a serious technical problem that began with power-steering trouble before worsening into gear and brake issues. Leclerc had recovered from a difficult qualifying to run inside the points and believed a stronger result may have been possible before the failure ended his race.",
-    kcsQuickShift:
-      "Hamilton gave Ferrari the headline win, but Leclerc’s retirement shows the team still has reliability concerns to clean up.",
-    url: "https://racingnews365.com/charles-leclerc-explains-full-reason-behind-agonising-late-retirement",
-    imagePath: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    sourceLabel: "The Race",
+    title: "Madrid’s New F1 Track Gets Its Signature Corner",
+    summary: "Madrid’s new Madring circuit will feature La Monumental, a long banked corner designed to become the track’s standout feature. The corner is expected to combine high speed, heavy compression, multiple racing lines and a blind exit, giving the future Spanish Grand Prix a very different feel from a typical street circuit.",
+    kcsQuickShift: "This is exactly what a new F1 venue needs — one corner fans can instantly recognize and drivers have to respect.",
+    url: "https://www.the-race.com/formula-1/madrid-f1-track-spanish-gp-standout-corner-la-monumental-our-verdict/",
+    imagePath: "/img/news/kcai/newsspaintrack.jpg",
+    photoCredit: "Courtesy of IFEMA MADRID",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news5",
-    sourceLabel: "RacingNews365 NL",
-    title:
-      "Verstappen Groeit Met Red Bull Richting Overwinningen / Verstappen and Red Bull Move Closer to Wins",
-    summary:
-      "Max Verstappen en Red Bull lijken stap voor stap dichter bij de strijd om overwinningen te komen, ondanks dat het team in Barcelona nog niet helemaal op het niveau van de koplopers zat. Het artikel schetst een beeld van vooruitgang, maar ook van werk dat nog moet gebeuren voordat Red Bull weer structureel om zeges kan vechten.\n\nMax Verstappen and Red Bull appear to be moving closer to race-winning form, even though Barcelona showed they are still not fully on the level of the front-running teams. The article frames Red Bull’s progress as real, but not yet complete.",
-    kcsQuickShift:
-      "Red Bull looks better than it did earlier in the season, but Verstappen still needs another step before wins become realistic again.\n\nRed Bull ziet er beter uit dan eerder dit seizoen, maar Verstappen heeft nog een extra stap nodig voordat overwinningen weer realistisch worden.",
-    url: "https://racingnews365.nl/verstappen-groeit-met-red-bull-richting-overwinningen",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+    sourceLabel: "The Race",
+    title: "Barcelona Exposes the Strengths and Weaknesses of Every 2026 Car",
+    summary: "Barcelona gave the 2026 grid its clearest all-round test so far, exposing tyre problems at McLaren, reliability and hard-tyre concerns at Mercedes, Ferrari’s cornering strength, Red Bull’s high-speed weakness, and Aston Martin’s deep performance problems. The race also underlined how tight the midfield has become, with Alpine, Racing Bulls, Audi, Williams, Haas and Cadillac all showing very different limitations.",
+    kcsQuickShift: "Barcelona is the kind of track that tells the truth, and this one gave every team a very clear homework list.",
+    url: "https://www.the-race.com/formula-1/what-barcelona-exposed-about-every-f1-2026-car/",
+    imagePath: "/img/news/xpb/Races/xpbracespain2.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news6",
-    sourceLabel: "The Race",
-    title: "Colapinto Loses P8 After Barcelona Yellow-Flag Penalty",
-    summary:
-      "Franco Colapinto lost eighth place at the Barcelona Grand Prix after receiving a post-race 10-second penalty for failing to slow enough under yellow flags while Fernando Alonso’s Aston Martin was being recovered at Turn 10. The penalty dropped the Alpine driver to 10th and reduced his points haul from four to one.",
-    kcsQuickShift:
-      "Colapinto still scored, but losing three points after the flag is a painful swing for Alpine after one of his stronger race days.",
-    url: "https://www.the-race.com/formula-1/franco-colapinto-loses-two-places-f1-barcelona-gp-post-race-penalty/",
-    imagePath: "/img/news/Alpine/colapinto/colapintospain.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "June 15, 2026",
+    sourceLabel: "FormulaPassion",
+    title: "Red Bull, aggiornamenti in Austria. Mekies: “Speriamo di ridurre il gap” / Red Bull Bringing Austria Updates as Mekies Targets Smaller Gap",
+    summary: "La Red Bull porterà un pacchetto di aggiornamenti a Spielberg dopo un GP di Barcellona difficile, con Laurent Mekies che stima ancora un ritardo di circa quattro o cinque decimi dai migliori. Mekies ha indicato le curve medie e veloci come una delle aree ancora irrisolte della RB22, pur dicendo che il team è fiducioso nei nuovi sviluppi. / Red Bull will bring an upgrade package to Spielberg after a difficult Barcelona Grand Prix, with Laurent Mekies estimating the team still needs to find four to five tenths. Mekies pointed to medium- and high-speed corners as a remaining weakness for the RB22, while saying the team is confident the new package can help.",
+    kcsQuickShift: "Red Bull’s Austria update is not just a normal upgrade — it looks like a real test of whether this car can still get back into the 2026 fight. / L’aggiornamento Red Bull in Austria non è solo un normale sviluppo: sembra un vero test per capire se questa macchina può ancora rientrare nella lotta del 2026.",
+    url: "https://www.formulapassion.it/f1/f1-news/red-bull-aggiornamenti-in-austria-mekies-speriamo-di-ridurre-gap",
+    imagePath: "/img/news/shut/RedBull/news-miekes.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news7",
-    sourceLabel: "Motorsport-Total",
-    title:
-      "Lando Norris Lobt McLaren-Pace: Eine Positive Überraschung / Norris Praises McLaren Pace After Positive Surprise",
-    summary:
-      "Lando Norris bewertete McLarens Rennpace in Barcelona als positive Überraschung, auch wenn Ferrari und Mercedes am Ende vor ihm lagen. Für McLaren war das Podium wichtig, weil Norris trotz schwieriger Ausgangslage zeigen konnte, dass das Team weiter im Kampf an der Spitze bleibt.\n\nLando Norris described McLaren’s Barcelona race pace as a positive surprise, even though Ferrari and Mercedes finished ahead of him. For McLaren, the podium mattered because Norris showed the team is still close enough to remain in the front-running fight.",
-    kcsQuickShift:
-      "Norris did not win, but a podium on a weekend where Ferrari and Mercedes looked strong keeps McLaren firmly in the championship conversation.\n\nNorris hat nicht gewonnen, aber ein Podium an einem Wochenende mit starken Ferrari- und Mercedes-Autos hält McLaren klar im Titelgespräch.",
-    url: "https://www.motorsport-total.com/formel-1/news/lando-norris-lobt-mclaren-pace-war-eine-positive-ueberraschung-aber-26061510",
-    imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
+    sourceLabel: "Formula1.com",
+    title: "Sainz Says Williams Must Reset After Barcelona Struggles",
+    summary: "Carlos Sainz says Williams needs to go back to the drawing board after a difficult Barcelona weekend exposed the FW48’s lack of downforce and excess weight. Sainz finished outside the points, while Alex Albon’s race was compromised by a loose camera mounting and became more of a test session than a points fight.",
+    kcsQuickShift: "Barcelona exposed the weak spots brutally for Williams. I admire Sainz for his loyalty to the team but he must be getting tired of it all. He should be in a car winning races. I wish he had stayed at Mclaren",
+    url: "https://www.formula1.com/en/latest/article/why-sainz-says-struggling-williams-must-go-back-to-the-drawing-board-after-barcelona.HEO0SykotUGMVoyLd82yf",
+    imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news8",
-    sourceLabel: "Formula1.com",
-    title: "F1 World Reacts to Hamilton’s First Ferrari Victory",
-    summary:
-      "Formula1.com collected the reaction to Lewis Hamilton’s first Grand Prix win for Ferrari after his dominant Barcelona victory. Hamilton won by nearly 20 seconds on a three-stop strategy, became the oldest Grand Prix winner since Jack Brabham in 1970, and shared the first all-British F1 podium since 1968 with George Russell and Lando Norris.",
-    kcsQuickShift:
-      "Hamilton’s first Ferrari win was not just another race result — it became one of the biggest F1 storylines of the season.",
-    url: "https://www.formula1.com/en/latest/article/how-the-f1-world-reacted-to-hamiltons-first-ferrari-win-in-the-barcelona-catalunya-gp.plaR948Q6TgLPdXZYaUBL",
-    imagePath: "/img/news/xpb/ferrari/xpblewiswin.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    sourceLabel: "F1news.se",
+    title: "Ben Sulayem kräver viktminskning i Formel 1 / Ben Sulayem Pushes for Lighter F1 Cars",
+    summary: "FIA-presidenten Mohammed Ben Sulayem vill att Formel 1-bilarna ska bli både mindre och lättare, trots att de redan har minskat i vikt jämfört med perioden 2023 till 2025. Artikeln kopplar frågan till den ökade vikten från hybridteknik, batterier och komplexa kraftenheter, samt Ben Sulayems bredare vilja att förenkla F1:s tekniska riktning. / FIA president Mohammed Ben Sulayem wants Formula 1 cars to become smaller and lighter, even after recent weight reductions compared with the 2023 to 2025 era. The article links the issue to heavier hybrid systems, battery packs and complex power units, while also fitting into Ben Sulayem’s wider push for a simpler technical direction in F1.",
+    kcsQuickShift: "Lighter cars would be good for racing, but the hard part is getting there without undoing the safety and hybrid gains F1 has already built in. / Lättare bilar vore bra för racingen, men den svåra delen är att nå dit utan att förlora säkerheten och hybridutvecklingen som F1 redan har byggt upp.",
+    url: "https://f1news.se/ben-sulayem-kraver-viktminskning-i-formel-1",
+    imagePath: "/img/news/shut/news-shutterstocksalam.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news9",
     sourceLabel: "PlanetF1",
-    title: "Verstappen Sends Hamilton Message After Barcelona Victory",
-    summary:
-      "Max Verstappen sent a public message to Lewis Hamilton after the seven-time champion claimed his first Ferrari win at the Barcelona Grand Prix. Hamilton’s victory, combined with Kimi Antonelli’s retirement, has sharpened the title picture and put Ferrari’s recent progress under a much brighter spotlight.",
-    kcsQuickShift:
-      "When Verstappen is reacting to Hamilton winning in red, you know Ferrari’s Barcelona breakthrough has changed the tone of the season.",
-    url: "https://www.planetf1.com/news/max-verstappen-lewis-hamilton-barcelona-grand-prix-2026",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+    title: "Rosberg Questions Wolff’s Soft Approach With Russell and Antonelli",
+    summary: "Nico Rosberg says Toto Wolff may be taking too soft an approach with George Russell and Kimi Antonelli after Mercedes’ Barcelona team-order debate. Rosberg also pointed to contract pressure as a factor, with Russell and Antonelli both needing clarity as Mercedes weighs how to manage two drivers fighting near the front.",
+    kcsQuickShift: "Rosberg speaks from experience here, and his point about contract pressure is a good one — this is not just about the championship, but also about how Mercedes manages its driver situation in the long term.",
+    url: "https://www.planetf1.com/news/nico-rosberg-toto-wolff-soft-russell-antonelli-contract-detail",
+    imagePath: "/img/news/xpb/news-xpbnicomartin.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    dateLabel: "June 16, 2026",
   },
 
   {
     slotId: "news10",
     sourceLabel: "PlanetF1",
-    title: "Russell Admits Title Fight Is Hard to Accept After Barcelona Blow",
-    summary:
-      "George Russell says the 2026 title fight has become difficult to accept after finishing second to Lewis Hamilton in Barcelona. Russell remains in the championship mix, but recent setbacks have left him focused less on the standings and more on controlling what he can from race to race.",
-    kcsQuickShift:
-      "Russell is still close enough to matter, but Barcelona felt like a missed chance on a weekend where Mercedes had the pace to fight for more.",
-    url: "https://www.planetf1.com/news/george-russell-hard-to-accept-f1-2026-title-battle-barcelona",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "June 15, 2026",
+    title: "Rosberg and Villeneuve Question Piastri’s Falling F1 Stock",
+    summary: "Nico Rosberg and Jacques Villeneuve believe Oscar Piastri’s standing in the paddock has slipped after a difficult run of form at McLaren. Piastri finished fifth in Barcelona, 35 seconds behind teammate Lando Norris, as questions continue around his pace, confidence and longer-term F1 value.",
+    kcsQuickShift: "I like both of these guys but come one give Piastri a break ",
+    url: "https://www.planetf1.com/news/oscar-piastri-f1-future-nico-rosberg-mclaren-value-plunged",
+    imagePath: "/img/news/shut/mclaren/news-shutterstockoscar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "June 16, 2026",
   },
 ];
-
 export default newsSlots;

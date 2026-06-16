@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "2026 F1 BARCELONA-CATALUNYA GP race analysis by Peter Windsor",
-  youtubeInput: "https://youtu.be/2NNblvQkAW4",
-  
+  title: "Radio Rewind | 2026 Barcelona-Catalunya Grand Prix",
+  youtubeInput: "https://youtu.be/pDN-8ubUZ8U",
+  forceExternal: true,
   },
 
   {
     slotId: "slot2",
-    title: "Has Hamilton Put Ferrari In The Fight? | Barcelona-Catalunya GP Review | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/sHVWv39z2OI",
-    forceExternal: true,
+    title: "What brutal Barcelona exposed about every F1 team",
+    youtubeInput: "https://youtu.be/fkw7CgjKSRM",
+   
   },
 
   {
     slotId: "slot3",
-    title: "Did Hamilton’s CAREER RISK finally pay off at the BARCELONA GRAND PRIX?",
-    youtubeInput: "https://youtu.be/qqsqjql0VJI",
+    title: "Behind the Scenes of Hamilton’s Historic First Ferrari Triumph in Spain",
+    youtubeInput: "https://youtu.be/M0-K-NujSgk",
     
   }
 ];
