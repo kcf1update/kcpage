@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "What brutal Barcelona exposed about every F1 team",
-    youtubeInput: "https://youtu.be/fkw7CgjKSRM",
+    title: "Can Lewis Hamilton push for F1 Drivers' Championship? | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/UbZVw6dXnJk",
    
   },
 
