@@ -5,7 +5,7 @@
 // Do not use download links.
 // Keep images inside: public/img/race-gallery/
 
-export const raceGalleryContent = {
+export const previousRaceCenterGalleryContent = {
   enabled: true,
 
   title: "Race Weekend Gallery",
@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpblewisspain.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -43,22 +43,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Races/xpbracespain.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -71,32 +71,32 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Visa/xpblawsonspain.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpblewiswin.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpblewisspain2.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpbkimispain.jpg",
           alt: "Race day gallery image 4",
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Races/xpbracespain2.jpg",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },

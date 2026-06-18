@@ -657,8 +657,9 @@ DNF	Pierre Gasly	FRA	BWT Alpine F1 Team
 DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	 
 DNF	Isack Hadjar	FRA	Oracle Red Bull Racing
 `;
+
 // =====================================================
-// 4) CONTENT
+// 4) CONTENT Paste race results and session results above this line.
 // =====================================================
 
 export const previousRaceResults = [
