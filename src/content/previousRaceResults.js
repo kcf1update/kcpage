@@ -308,6 +308,7 @@ function parseRacePaste(text) {
 // =====================================================
 // 3) YOUR PASTE BOXES (EDIT THESE ONLY)
 // =====================================================
+
 const PASTE_MONACO_P1 = `
 1	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.978s	31
 2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m14.204s	28

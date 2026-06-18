@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
+  enabled: false,
   label: "Formula 1 MSC Cruises Gran Premio de Barcelona-Catalunya Grand Prix",
   title: "Hamilton Wins In Barcelona As The Title Fight Tightens",
   body: "The Barcelona-Catalunya Grand Prix Race Centre is updated with the full race result, weekend recap, session results, photo gallery.",
