@@ -1,122 +1,113 @@
 export const newsSlots = [
   {
-  slotId: "news1",
-  sourceLabel: "ESPN",
-  title: "Hamilton’s Ferrari Push Starts to Pay Off",
-  summary: "Lewis Hamilton’s first Ferrari win has put fresh attention on the changes he pushed for inside the team, with Fred Vasseur giving him room to keep chasing improvements.",
-  kcsQuickShift: "This is the kind of story Ferrari wanted when they signed Hamilton: not just speed, but pressure to raise the whole operation.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49028385/formula-1-lewis-hamilton-relentless-changes-ferrari-fred-vasseur-enabled-happen",
-  imagePath: "/img/news/xpb/ferrari/xpblewisspain.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
-},
-
-{
-  slotId: "news2",
+  slotId: "1",
   sourceLabel: "Crash.net",
-  title: "Villeneuve Questions Leclerc’s Ferrari Title Role",
-  summary: "Jacques Villeneuve has suggested Ferrari may need to lean more toward Lewis Hamilton if the team wants to maximize its title push, putting fresh pressure on Charles Leclerc after Hamilton’s Barcelona win.",
-  kcsQuickShift: "It is a interesting Ferrari story, but the real question is whether Ferrari can manage both drivers without creating its own problem.",
-  url: "https://www.crash.net/f1/news/1098936/1/jacques-villeneuve-issues-damning-charles-leclerc-criticism-amid-ferrari-f1-title",
-  imagePath: "/img/news/Ferrari/Leclerc/ferraricharlesmonaco.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "June 18, 2026"
+  title: "Mercedes withdraw Monaco review request",
+  summary: "Mercedes has explained why it withdrew its Right of Review over George Russell’s Monaco penalties, saying talks with the FIA and Formula 1 showed the issue is already being reviewed.",
+  kcsQuickShift: "KC’s Quick Shift: Mercedes clearly wanted the point made, but once the FIA accepted the wider problem, there was little value in pushing it further.",
+  url: "https://www.crash.net/f1/news/1098960/1/mercedes-explain-monaco-f1-right-review-withdrawal",
+  imagePath: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "June 19, 2026"
 },
-
 {
-  slotId: "news3",
-  sourceLabel: "Motorsport.com",
-  title: "Mercedes Faces Team Orders Question",
-  summary: "Mercedes may need to review how freely George Russell and Kimi Antonelli are allowed to race each other now that Lewis Hamilton and Ferrari have entered the title fight.",
-  kcsQuickShift: "This is the championship pressure point: Mercedes can let its drivers race, but not if Ferrari starts cashing in on it.",
-  url: "https://www.motorsport.com/f1/news/will-mercedes-stop-its-drivers-fighting-now-with-lewis-hamilton-chasing/10831158/",
-  imagePath: "/img/news/xpb/Mercedes/xpbimages1.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
-},
-
-{
-  slotId: "news4",
+  slotId: "2",
   sourceLabel: "The Race",
-  title: "Mercedes Gets Hearing Date Over Monaco Penalty U-Turn",
-  summary: "Mercedes will have a virtual stewards’ hearing this Saturday over its right of review request following the Monaco penalty reversal that reinstated Pierre Gasly’s podium.",
-  kcsQuickShift: "This is a long shot by Mercedes, but it keeps the Monaco penalty mess alive and gives them a seat at the table.",
-  url: "https://www.the-race.com/formula-1/mercedes-gets-hearing-date-over-monaco-penalty-u-turn/",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  title: "Ferrari engine upgrades could shape title fight",
+  summary: "Ferrari’s upgraded SF-26 has already shown major cornering strength, and The Race says upcoming power unit updates could turn the title battle if they close the gap to Mercedes.",
+  kcsQuickShift: "KC’s Quick Shift: If Ferrari adds engine performance to the car’s current corner speed, this championship could tighten very quickly.",
+  url: "https://www.the-race.com/formula-1/upcoming-ferrari-engine-upgrades-could-decide-f1-title/",
+  imagePath: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
+  dateLabel: "June 19, 2026"
 },
-
 {
-  slotId: "news5",
-  sourceLabel: "PlanetF1",
-  title: "Verstappen Mercedes Rumours Take Another Twist",
-  summary: "Jos Verstappen has pushed back after fresh claims linked Max Verstappen with Mercedes for 2027, adding another layer to the speculation around Red Bull’s future.",
-  kcsQuickShift: "This one is still rumour territory, but anything involving Verstappen, Mercedes, and 2027 is going to get attention.",
-  url: "https://www.planetf1.com/news/max-verstappen-mercedes-f1-2027-jos-verstappen-wrong",
-  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
-},
-
-{
-  slotId: "news6",
-  sourceLabel: "PlanetF1",
-  title: "Red Bull Questions FIA Engine Benchmark Ruling",
-  summary: "Laurent Mekies says Red Bull wants further talks with the FIA after Red Bull Powertrains was identified as the internal combustion engine benchmark under the ADUO system.",
-  kcsQuickShift: "This is a proper technical-politics story, because Red Bull does not sound convinced the FIA’s benchmark call matches what they are seeing on track.",
-  url: "https://www.planetf1.com/news/laurent-mekies-fia-red-bull-powertrains-engine-benchmark-aduo",
+  slotId: "3",
+  sourceLabel: "MARCA",
+  title: "Red Bull planta cara a la FIA: “No vemos dato que sugiera ventaja”",
+  summary: "Red Bull has pushed back against the FIA’s ADUO position, arguing that it sees no data proving a clear performance advantage in the current power unit picture.",
+  kcsQuickShift: "KC’s Quick Shift: Red Bull is not just questioning the rule — it is questioning the evidence behind the rule. / Red Bull no solo cuestiona la norma, también cuestiona los datos que la respaldan.",
+  url: "https://www.marca.com/motor/formula1/gp-austria/2026/06/19/red-bull-planta-cara-fia-aduo-vemos-dato-sugiera-ventaja.html",
   imagePath: "/img/news/shut/Redbull/news-miekes.jpg",
   photoCredit: "Shutterstock",
-  dateLabel: "June 18, 2026"
+  dateLabel: "June 19, 2026"
 },
-
 {
-  slotId: "news7",
-  sourceLabel: "M4 Sport",
-  title: "Nem támogatja az Audi kérését az FIA: turbó nélküli motorral tervezik az F1 jövőjét — FIA Does Not Back Audi’s Request as F1 Plans a Turbo-Free Future",
-  summary: "Az FIA elnöke, Mohammed Ben Sulayem szerint a következő F1-es motorformula V8-as irányba halad, kisebb hibrid résszel, alacsonyabb tömeggel és egyszerűbb technikával. Audi would prefer turbo engines to remain, but the FIA is leaning toward a lighter, cheaper and louder concept without turbos.",
-  kcsQuickShift: "This is a big long-term rules story, because Audi wants one thing and the FIA appears to be pushing hard in another direction. Ez komoly szabálypolitikai történet, mert az Audi és az FIA elképzelései egyelőre nem ugyanabba az irányba mutatnak.",
-  url: "https://m4sport.hu/forma-1/f1-hirek/cikk/2026/06/18/nem-tamogatja-az-audi-kereset-az-fia-turbo-nelkuli-motorral-tervezik-az-f1-jovojet",
+  slotId: "4",
+  sourceLabel: "Formula1.com",
+  title: "Audi’s main focus after near misses",
+  summary: "Audi has shown real midfield promise in its first F1 season, but repeated near-misses and a power unit deficit have left the team looking for the next step forward.",
+  kcsQuickShift: "KC’s Quick Shift: Audi is closer than the points table suggests, but close does not matter much when P11 keeps replacing real results.",
+  url: "https://www.formula1.com/en/latest/article/where-audis-main-focus-lies-after-a-season-of-near-misses-so-far.7tef5TzBTtA1xGvkLurNCu",
   imagePath: "/img/news/xpb/Audi/news-xpbaudigabby.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
+    dateLabel: "June 19, 2026"
 },
-
 {
-  slotId: "news8",
-  sourceLabel: "RacingNews365",
-  title: "Norris Set for Goodwood Title Celebration",
-  summary: "Lando Norris is set to appear at the Goodwood Festival of Speed as McLaren celebrates his 2025 drivers’ title and the team’s recent championship success.",
-  kcsQuickShift: "This is a nice McLaren heritage piece, and it keeps Norris front and centre while the title fight keeps building.",
-  url: "https://racingnews365.com/lando-norris-set-for-title-celebrations-at-iconic-motorsport-event",
-  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
+  slotId: "5",
+  sourceLabel: "Motorsport.com",
+  title: "Sainz swaps supercars for a custom Topolino",
+  summary: "Carlos Sainz has been spotted in Monaco driving a customised Fiat Topolino, a small electric city car that is a long way from the usual Ferrari supercar image.",
+  kcsQuickShift: "KC’s Quick Shift: Not every F1 story needs to be title pressure — sometimes it is just Carlos Sainz rolling through Monaco in something completely different.",
+  url: "https://www.motorsport.com/f1/news/carlos-sainz-swaps-ferrari-supercars-for-custom-fiat-topolino-in-monaco/10831450/",
+  imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
+  dateLabel: "June 19, 2026"
 },
-
 {
-  slotId: "news9",
+  slotId: "6",
   sourceLabel: "PlanetF1",
-  title: "Sainz Urges Williams to Keep Pushing",
-  summary: "Carlos Sainz has called for Williams to do more as fresh Audi rumours continue to follow him, keeping attention on both his current project and his longer-term F1 future.",
-  kcsQuickShift: "This is another reminder that Williams has made progress, but Sainz clearly wants the next step to come faster.",
-  url: "https://www.planetf1.com/news/carlos-sainz-williams-do-more-audi-f1-rumours",
-  imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+  title: "Norris warns Russell over Antonelli chase",
+  summary: "Lando Norris says George Russell’s no-pressure approach may not work the same way in his fight with Kimi Antonelli, with Russell now facing a different kind of title pressure.",
+  kcsQuickShift: "KC’s Quick Shift: Russell is not chasing from the outside anymore — he is chasing his own teammate, and that changes the pressure completely.",
+  url: "https://www.planetf1.com/news/george-russell-title-race-lando-norris-warning-kimi-antonelli",
+  imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 19, 2026"
+},
+{
+  slotId: "7",
+  sourceLabel: "RacingNews365",
+  title: "Mercedes tells Italian media to cool Antonelli hype",
+  summary: "Toto Wolff has warned against overhyping Kimi Antonelli after his strong start to the season, urging the Italian media not to make unfair comparisons too early.",
+  kcsQuickShift: "KC’s Quick Shift: Antonelli is delivering, but Mercedes knows the fastest way to hurt a young driver is to turn every weekend into a legend test.",
+  url: "https://racingnews365.com/mercedes-issue-stern-warning-to-italian-media-after-unwanted-comparison",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  photoCredit: "Photo Credit: XPB Images",
+  dateLabel: "June 19, 2026"
+},
+{
+  slotId: "8",
+  sourceLabel: "Read Motorsport",
+  title: "Perez warning makes Herta’s Cadillac test bigger",
+  summary: "Sergio Perez says Barcelona exposed Cadillac’s weaknesses in high-speed corners and hotter track conditions, making Colton Herta’s FP1 run a more useful benchmark for the new team.",
+  kcsQuickShift: "KC’s Quick Shift: Herta’s run was not just a headline moment — it gave Cadillac real data on a weekend that showed exactly where the project still hurts.",
+  url: "https://readmotorsport.com/2026/06/18/perez-cadillac-herta-barcelona-f1-test/",
+  imagePath: "/img/news/xpb/Cadillac/news-xpbperez.jpg",
+  photoCredit: "Photo Credit: XPB Images",
+  dateLabel: "June 18, 2026"
+},
+{
+  slotId: "9",
+  sourceLabel: "F1 Oversteer",
+  title: "Hadjar comments raise fresh Red Bull questions",
+  summary: "Isack Hadjar’s comments about being quicker than Max Verstappen in one corner have added to the scrutiny around Red Bull’s current car balance and development direction.",
+  kcsQuickShift: "KC’s Quick Shift: When a Red Bull junior is openly surprised to be quicker than Verstappen anywhere, it tells you the car is still not giving Max what he needs.",
+  url: "https://www.f1oversteer.com/news/red-bull-should-be-worried-by-what-isack-hadjar-has-just-said-about-max-verstappen/",
+  imagePath: "/img/news/xpb/RedBull/news-xpbisack.jpg",
+  photoCredit: " XPB Images",
+  dateLabel: "June 19, 2026"
+},
+{
+  slotId: "10",
+  sourceLabel: "Crash.net",
+  title: "Coulthard questions Sainz’s Williams future",
+  summary: "David Coulthard believes Carlos Sainz will be looking at future options as Williams continues to struggle, although Sainz has recently reaffirmed his commitment to the project.",
+  kcsQuickShift: "KC’s Quick Shift: This is speculation, not a confirmed exit story — but Sainz wants to win, and Williams still looks years away from that.",
+  url: "https://www.crash.net/f1/news/1098942/1/f1-race-winner-david-coulthard-thinks-will-be-eyeballing-other-teams",
+  imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "June 18, 2026"
 },
-
-{
-  slotId: "news10",
-  sourceLabel: "Formula1.com",
-  title: "Komatsu Admits Haas Was Not Good Enough in Barcelona",
-  summary: "Ayao Komatsu says Haas lacked both pace and operational sharpness in Barcelona, with Esteban Ocon finishing outside the points and Oliver Bearman retiring late with a reliability issue.",
-  kcsQuickShift: "This is a blunt assessment from Komatsu, and Haas needs answers quickly because the midfield is too tight to waste weekends like this.",
-  url: "https://www.formula1.com/en/latest/article/operationally-we-werent-good-enough-in-barcelona-says-frustrated-komatsu.4OLSDe1QJT7LE2KmvXMSTh",
-  imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "June 18, 2026"
-}
 ];
 export default newsSlots;
