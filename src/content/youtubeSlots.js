@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "How Ferrari's mastered F1's new hidden development war",
-    youtubeInput: "https://youtu.be/p5lYyZYfYR0",
+    title: "Exploring F1's new Madrid circuit - everything we learned",
+    youtubeInput: "https://youtu.be/LV_9B-JTdis",
    
   },
 
   {
     slotId: "slot3",
-    title: "James Vowles Answers Your Barcelona Grand Prix Questions!",
-    youtubeInput: "https://youtu.be/38jKZyliUuY",
-    
+    title: "The F1 Pit Wall Explained | Globant",
+    youtubeInput: "https://youtu.be/XhdtWO6dAxo",
+    forceExternal: "true"
   }
 ];
