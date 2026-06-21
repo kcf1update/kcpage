@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Max Verstappen and Isack Hadjar PRANK Hotel Guests!",
-  youtubeInput: "https://youtu.be/Uv9JQZYGQVM",
+  title: "Which F1 DRIVERS live in MONACO?",
+  youtubeInput: "https://youtu.be/f2LFMMx55fo",
   
   },
 
