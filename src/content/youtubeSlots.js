@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Which F1 DRIVERS live in MONACO?",
-  youtubeInput: "https://youtu.be/f2LFMMx55fo",
+  title: "Race Highlights | 2025 Austrian Grand Prix",
+  youtubeInput: "https://youtu.be/Wj6DHG0X66k",
   
   },
 
   {
     slotId: "slot2",
-    title: "Exploring F1's new Madrid circuit - everything we learned",
-    youtubeInput: "https://youtu.be/LV_9B-JTdis",
+    title: "Welcome to my crib with Zak Brown | McLaren Racing",
+    youtubeInput: "https://youtu.be/dreSATpxCJ4",
    
   },
 
   {
     slotId: "slot3",
-    title: "The F1 Pit Wall Explained | Globant",
-    youtubeInput: "https://youtu.be/XhdtWO6dAxo",
+    title: "The Part of My Red Bull Story Nobody Knows | Liam Lawson",
+    youtubeInput: "https://youtu.be/yduTPs-RdmI",
     forceExternal: "true"
   }
 ];

@@ -518,31 +518,31 @@ export const nextRaceContent = {
   raceName: "LENOVO AUSTRIAN GRAND PRIX",
   raceDates: "June 26 - 27, 2026",
   location: "Spielberg, Styria, Austria.",
-  trackInfoUrl: "/img/tracks/redbullring.jpg",
+  trackInfoUrl: "/img/tracks/redbullring.png",
 
-  weather: [
-  {
-    day: "Friday",
-    date: "June 26th",
-    icon: "",
-    temp: "",
-    summary: "No info yet",
-  },
-  {
-    day: "Saturday",
-    date: "June 27th",
-    icon: "",
-    temp: "",
-    summary: "No info yet",
-  },
-  {
-    day: "Sunday",
-    date: "June 38th",
-    icon: "",
-    temp: "",
-    summary: "No info yet",
-  },
-],
+ weather: [
+    {
+      day: "Friday",
+      date: "June 26th",
+      icon: "☀️",
+      temp: "33°C / 15°C",
+      summary: "Very warm with plenty of sunshine. Extreme high temperature warning in effect for the Murtal region.",
+    },
+    {
+      day: "Saturday",
+      date: "June 27th",
+      icon: "☀️",
+      temp: "33°C / 17°C",
+      summary: "Sunny and hot. Heat stress could be a factor for fans, teams, tyres and cooling.",
+    },
+    {
+      day: "Sunday",
+      date: "June 28th",
+      icon: "🌤️",
+      temp: "34°C / 16°C",
+      summary: "Partly sunny and very hot for race day. The race is expected to run in demanding conditions.",
+    },
+  ],
 
 
 

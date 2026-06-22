@@ -15,11 +15,11 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
-  label: "Formula 1 MSC Cruises Gran Premio de Barcelona-Catalunya Grand Prix",
-  title: "Hamilton Wins In Barcelona As The Title Fight Tightens",
-  body: "The Barcelona-Catalunya Grand Prix Race Centre is updated with the full race result, weekend recap, session results, photo gallery.",
-  buttonText: "Go to Race Centre →",
+   enabled: true,
+  label: "Race Week: Austrian Grand Prix",
+  title: "Austrian Grand Prix Race Week Starts Now",
+  body: "F1 heads to Spielberg for a hot Austrian Grand Prix weekend. Practice begins Friday morning ADT, with qualifying Saturday and the race Sunday at 10:00 AM ADT.",
+  buttonText: "Preview Race Weekend →",
   buttonLink: "/racecenter",
 };
 // Simple glassy card helper for the lower sections
