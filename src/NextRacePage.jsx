@@ -969,7 +969,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 </a>
 
 <a
-  href="#race-gallery"
+  href="/img/tracks/redbull.jpg"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
   title="Jump to race weekend photo gallery"
 >
