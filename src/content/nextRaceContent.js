@@ -520,6 +520,13 @@ export const nextRaceContent = {
   location: "Spielberg, Styria, Austria.",
   trackInfoUrl: "/img/tracks/redbullring.png",
 
+  racePoster: {
+    enabled: true,
+    backgroundImage: "/img/news/raceposter/austriangrandprix.jpg",
+    downloadImage: "/img/news/raceposter/austriangrandprix.jpg",
+    buttonText: "Race Poster",
+  },
+
  weather: [
     {
       day: "Friday",

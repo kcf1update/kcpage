@@ -864,7 +864,23 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
         {/* Top row */}
         <section className="mt-1 grid gap-3 md:grid-cols-3 md:gap-4">
-          <article className="min-w-0 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur md:col-span-2">
+          <article
+          
+  className="relative min-w-0 overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur md:col-span-2"
+>
+  {nextRaceContent.racePoster?.enabled ? (
+    <div
+      className="pointer-events-none absolute inset-0 opacity-70"
+      style={{
+  backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.78)), url(${nextRaceContent.racePoster.backgroundImage})`,
+  backgroundSize: "100% auto",
+  backgroundPosition: "top center",
+  backgroundRepeat: "no-repeat",
+}}
+    />
+  ) : null}
+
+  <div className="relative z-10">
             <header className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
                 <div className="min-w-0">
@@ -1019,6 +1035,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
       <MobileSessionRecapCard session={raceSession} />
     </React.Fragment>
   ) : null}
+</div>
 </div>
 </div>
           </article>
