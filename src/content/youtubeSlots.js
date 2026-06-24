@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Race Highlights | 2025 Austrian Grand Prix",
-  youtubeInput: "https://youtu.be/Wj6DHG0X66k",
+  title: "Flavio Briatore: Growing Alpine with Colapinto, Gasly & Gucci | F1 Beyond The Grid Podcast",
+  youtubeInput: "https://youtu.be/CUPikjQGZvo",
    forceExternal: "true"
   },
 
   {
     slotId: "slot2",
-    title: "FERRARI TO DEBUT ROCKETSHIP ENGINE IN AUSTRIA! F1 News",
-    youtubeInput: "https://youtu.be/5ITumryskKE",
+    title: "MERCEDES HAS A BIG PROBLEM! F1 News",
+    youtubeInput: "https://youtu.be/0KD1olo1bZU",
    
   },
 
