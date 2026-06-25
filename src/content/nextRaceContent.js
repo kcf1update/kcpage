@@ -518,7 +518,7 @@ export const nextRaceContent = {
   raceName: "LENOVO AUSTRIAN GRAND PRIX",
   raceDates: "June 26 - 27, 2026",
   location: "Spielberg, Styria, Austria.",
-  trackInfoUrl: "/img/tracks/redbullring.png",
+  trackInfoUrl: "/img/tracks/redbullring.jpg",
 
   racePoster: {
     enabled: true,
