@@ -397,7 +397,7 @@ export const raceWeekendRecap = {
   enabled: true,
   title: "LENOVO AUSTRIAN GRAND PRIX",
   sections:
-    WEEKEND_FORMAT === "regular"
+    WEEKEND_FORMAT === "Sprint"
       ? [
           {
             heading: "Practice",
@@ -554,55 +554,8 @@ export const nextRaceContent = {
 
 
  sessions:
-  WEEKEND_FORMAT === "sprint"
+  WEEKEND_FORMAT === "regular"
     ? [
-        {
-          id: "p1",
-          type: "practice",
-          label: "Practice 1",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseLapPaste(PASTE_P1),
-        },
-        {
-          id: "sq",
-          type: "sprint_shootout",
-          label: "Sprint Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_SQ),
-        },
-        {
-          id: "sprint",
-          type: "sprint_race",
-          label: "Sprint Race",
-          time: " ",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_SPRINT),
-        },
-        {
-          id: "q",
-          type: "qualifying",
-          label: "Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_Q),
-        },
-        {
-          id: "race",
-          type: "race",
-          label: "Race Results",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_RACE),
-        },
-      ]
-    : [
         {
           id: "p1",
           type: "practice",
@@ -611,7 +564,6 @@ export const nextRaceContent = {
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
-          
         },
         {
           id: "p2",
@@ -643,8 +595,55 @@ export const nextRaceContent = {
         {
           id: "race",
           type: "race",
-          label: "Race ",
+          label: "Race",
           time: "10:00 AM ADT",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_RACE),
+        },
+      ]
+    : [
+        {
+          id: "p1",
+          type: "practice",
+          label: "Practice 1",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseLapPaste(PASTE_P1),
+        },
+        {
+          id: "sq",
+          type: "sprint_shootout",
+          label: "Sprint Qualifying",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_SQ),
+        },
+        {
+          id: "sprint",
+          type: "sprint_race",
+          label: "Sprint Race",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_SPRINT),
+        },
+        {
+          id: "q",
+          type: "qualifying",
+          label: "Qualifying",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_Q),
+        },
+        {
+          id: "race",
+          type: "race",
+          label: "Race Results",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
