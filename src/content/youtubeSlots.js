@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Flavio Briatore: Growing Alpine with Colapinto, Gasly & Gucci | F1 Beyond The Grid Podcast",
-  youtubeInput: "https://youtu.be/CUPikjQGZvo",
-   forceExternal: "true"
+  title: "We got hold of actual F1 team sim data on impact of 2027/28 engine rule changes",
+  youtubeInput: "https://youtu.be/DAczIrzjolw",
+   
   },
 
   {
     slotId: "slot2",
-    title: "MERCEDES HAS A BIG PROBLEM! F1 News",
-    youtubeInput: "https://youtu.be/0KD1olo1bZU",
+    title: "FERRARI GET MERCEDES TRICK DIFFUSER BANNED! F1 News",
+    youtubeInput: "https://youtu.be/ByhtZJFn5lI",
    
   },
 
   {
     slotId: "slot3",
-    title: "The Part of My Red Bull Story Nobody Knows | Liam Lawson",
-    youtubeInput: "https://youtu.be/yduTPs-RdmI",
+    title: "ADUO EXPOSED — FERRARI STANDS ALONE ON THE GRID - f1 news",
+    youtubeInput: "https://youtu.be/ysQFh0IWc8Q",
     
   }
 ];
