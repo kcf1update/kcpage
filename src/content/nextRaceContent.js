@@ -352,7 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m07.796s	29
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m07.836s	30
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m07.913s	26
+4	Max Verstappen	NED	Oracle Red Bull Racing	1m08.077s	17
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m08.461s	25
+6	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m08.726s	18
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m08.873s	9
+8	Franco Colapinto	ARG	BWT Alpine F1 Team	1m08.962s	27
+9	Dino Beganovic	SWE	Scuderia Ferrari HP	1m09.054s	26
+10	Ollie Bearman	GBR	TGR Haas F1 Team	1m09.071s	26
+11	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m09.165s	30
+12	Isack Hadjar	FRA	Oracle Red Bull Racing	1m09.481s	11
+13	Valtteri Bottas	FIN	Cadillac F1 Team	1m09.521s	21
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m09.546s	28
+15	Ayumu Iwasa	JAP	Visa Cash App Racing Bulls F1 Team	1m09.637s	19
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m09.644s	31
+17	Paul Aron	EST	Audi Revolut F1 Team	1m09.646s	20
+18	Luke Browning	GBR	Atlassian Williams F1 Team	1m09.979s	29
+19	Ryo Hirakawa	JAP	TGR Haas F1 Team	1m10.493s	23
+20	Jak Crawford	USA	Aston Martin Aramco F1 Team	1m11.202s	22
+21	Sergio Perez	MEX	Cadillac F1 Team	1m11.283s	14
+22	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m11.333s	21
 `;
 
 const PASTE_P2 = `
@@ -460,10 +481,10 @@ export const raceWeekendRecap = {
   heading: "Practice 1",
   items: [
     {
-      title: "",
+      title: "Antonelli Leads Mercedes 1-2 As FP1 Gets Messy In Austria",
       summary:
-        "",
-      url: "",
+        "Mercedes made the early statement in first practice for the Austrian Grand Prix, with Kimi Antonelli leading a Mercedes 1-2 ahead of George Russell. Oscar Piastri put McLaren third, but Lando Norris lost track time with a hydraulic issue, while Max Verstappen also had a disrupted session after software problems affected Red Bull’s running. The session ended with a red flag after Sergio Perez stopped his Cadillac at Turn 3, giving FP1 a messy finish despite Mercedes looking settled at the front.",
+      url: "https://www.crash.net/f1/news/1099399/1/kimi-antonelli-heads-mercedes-1-2-red-bull-lando-norris-hit-trouble-f1-austrian",
     },
   ],
 },
@@ -560,7 +581,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 AM ADT",
+          time: "Antonelli fastest, results below. I apologize results will not look correct for FP1 because of substitute drivers",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),

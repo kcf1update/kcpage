@@ -15,11 +15,11 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-   enabled: true,
-  label: "Race Week: Austrian Grand Prix",
-  title: "Austrian Grand Prix Race Week Starts Now",
-  body: "F1 heads to Spielberg for a hot Austrian Grand Prix weekend. Practice begins Friday morning ADT, with qualifying Saturday and the race Sunday at 10:00 AM ADT.",
-  buttonText: "Preview Race Weekend →",
+  enabled: true,
+  label: "Race Weekend: Austrian Grand Prix",
+  title: "Austrian Grand Prix Weekend Is Underway",
+  body: "The Austrian Grand Prix weekend is now underway. Follow practice, qualifying, race updates, weather, session times, and the full Race Centre at kcf1update.ca.",
+  buttonText: "Open Race Centre →",
   buttonLink: "/racecenter",
 };
 // Simple glassy card helper for the lower sections

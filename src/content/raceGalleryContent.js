@@ -20,12 +20,12 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimiaustria.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
