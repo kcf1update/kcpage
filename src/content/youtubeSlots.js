@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "We got hold of actual F1 team sim data on impact of 2027/28 engine rule changes",
-  youtubeInput: "https://youtu.be/DAczIrzjolw",
-   
+  title: "FP1 Highlights | 2026 Austrian Grand Prix",
+  youtubeInput: "https://youtu.be/ltmoQb3bJZ0",
+  forceExternal :"blue" 
   },
 
   {

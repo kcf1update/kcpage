@@ -377,7 +377,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m07.014s	32
+2	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m07.251s	32
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	1m07.339s	32
+4	Max Verstappen	NED	Oracle Red Bull Racing	1m07.564s	29
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m07.611s	33
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m07.637s	25
+7	Isack Hadjar	FRA	Oracle Red Bull Racing	1m07.758s	28
+8	Charles Leclerc	MON	Scuderia Ferrari HP	1m07.855s	35
+9	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m08.235s	34
+10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m08.300s	30
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m08.376s	33
+12	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m08.378s	29
+13	Ollie Bearman	GBR	TGR Haas F1 Team	1m08.532s	33
+14	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m08.559s	32
+15	Esteban Ocon	FRA	TGR Haas F1 Team	1m08.830s	33
+16	Franco Colapinto	ARG	BWT Alpine F1 Team	1m08.831s	30
+17	Alex Albon	THA	Atlassian Williams F1 Team	1m08.838s	34
+18	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m09.131s	30
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m10.544s	27
+20	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m10.698s	32
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m11.307s	6
+22	Sergio Perez	MEX	Cadillac F1 Team	No time set	2
 `;
 
 const PASTE_P3 = `
@@ -492,10 +513,11 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "",
+      title: "Antonelli tops FP2 as Mercedes keep control in Austria",
       summary:
-        "",
-      url: "",
+        "Kimi Antonelli completed a perfect opening day at the Austrian Grand Prix by topping FP2 after also leading FP1 earlier on Friday. Oscar Piastri kept McLaren close in second, but Mercedes still looked like the team with the cleanest pace over the first day at the Red Bull Ring.George Russell had a more difficult session on the other side of the Mercedes garage, finishing well off Antonelli’s benchmark. That gap gives Mercedes something to sort through overnight, while McLaren will take some encouragement from Piastri’s pace after Lando Norris’ earlier hydraulic issue disrupted his FP1 running.",
+
+      url: "https://racingnews365.com/kimi-antonelli-opening-day-perfection-as-george-russell-suffers-major-deficit",
     },
   ],
 },
@@ -590,7 +612,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:00 PM ADT",
+          time: "Kimi Antonelli fastest again! Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
