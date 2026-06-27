@@ -402,7 +402,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m07.096s	19
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m07.134s	17
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m07.211s	22
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m07.344s	17
+5	Lando Norris	GBR	McLaren Mastercard F1 Team	1m07.360s	20
+6	Max Verstappen	NED	Oracle Red Bull Racing	1m07.369s	16
+7	Charles Leclerc	MON	Scuderia Ferrari HP	1m07.452s	24
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m07.912s	27
+9	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m08.031s	21
+10	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m08.109s	24
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m08.193s	16
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m08.303s	22
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m08.311s	22
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	1m08.394s	18
+15	Ollie Bearman	GBR	TGR Haas F1 Team	1m08.529s	19
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m08.707s	15
+17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m08.843s	27
+18	Alex Albon	THA	Atlassian Williams F1 Team	1m08.992s	25
+19	Sergio Perez	MEX	Cadillac F1 Team	1m09.532s	29
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m09.740s	24
+21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m10.421s	21
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m10.567s	19
 `;
 const PASTE_SQ = `
 
@@ -525,10 +546,9 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
     {
-      title: "",
-        summary:
-        "",
-      url: "",
+      title: "Russell Leads Mercedes 1-2 As Ferrari Close In During FP3",
+summary: "George Russell topped final practice for the Austrian Grand Prix with a late 1m07.096s, edging Mercedes team-mate Kimi Antonelli by just 0.038s. Lewis Hamilton put Ferrari third and only 0.115s off the pace, while Oscar Piastri, Lando Norris and Max Verstappen all stayed within three tenths before qualifying.",
+      url: "https://www.the-race.com/formula-1/what-happened-in-final-f1-practice-at-austrian-gp/",
     },
   ],
 },
@@ -603,7 +623,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Antonelli fastest, results below. I apologize results will not look correct for FP1 because of substitute drivers",
+          time: "Antonelli fastest, Results below. I apologize results will not look correct for FP1 because of substitute drivers",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -621,7 +641,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Russell fastest this time! Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
