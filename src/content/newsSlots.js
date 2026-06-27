@@ -2,17 +2,28 @@ export const newsSlots = [
   
 {
    slotId: "1",
-sourceLabel: "Crash.net",
-title: "Russell Bounces Back As Ferrari Stay Close In Final Practice",
-summary: "George Russell topped a tight final practice session for the Austrian Grand Prix, giving Mercedes a strong response after a more difficult Friday afternoon. Ferrari stayed close behind, suggesting qualifying could be a narrow fight at the Red Bull Ring.",
-kcsQuickShift: "Russell needed that response, but Ferrari being this close means Mercedes may not have full control heading into qualifying.",
-url: "https://www.crash.net/f1/news/1099607/1/george-russell-bounces-back-ferrari-close-tight-final-practice-f1-austrian-gp",
-imagePath: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
+sourceLabel: "GrandPrix247",
+title: "Russell Takes Austria Pole As Verstappen Crashes",
+summary: "George Russell took pole position for the Austrian Grand Prix after a dramatic Q3, with Max Verstappen crashing at Turn 9 and triggering yellow flags late in the session. Russell was investigated after the lap but was later cleared, leaving him on pole ahead of Charles Leclerc and Lewis Hamilton.",
+kcsQuickShift: "This was a messy but massive pole for Russell, while Verstappen’s crash and the yellow flag question turned qualifying into a proper controversy.",
+url: "https://www.grandprix247.com/formula-1-news/austrian-grand-prix-qualifying-george-russell-on-pole-max-verstappen-crashes",
+imagePath: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
 photoCredit: "XPB IMAGES",
 dateLabel: "June 27, 2026"
 },
 {
  slotId: "2",
+sourceLabel: "Formula1.com",
+title: "Russell Beats Leclerc And Hamilton To Austrian GP Pole",
+summary: "George Russell claimed pole position for the Austrian Grand Prix with a dramatic late lap after Max Verstappen crashed at Turn 9 in Q3. Russell beat Charles Leclerc and Lewis Hamilton, while Kimi Antonelli ended fourth and Verstappen was left fifth after the crash brought out double yellow flags.",
+kcsQuickShift: "Russell delivered when it mattered, but the late Verstappen crash and yellow flags made this one of the messiest qualifying finishes of the season.",
+url: "https://www.formula1.com/en/latest/article/russell-beats-leclerc-and-hamilton-to-austrian-gp-pole-after-dramatic-late-verstappen-crash.6oiA7Tyo3B89DFJNLWtG8P",
+imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
+photoCredit: "XPB IMAGES",
+dateLabel: "June 27, 2026"
+},
+{
+ slotId: "3",
 sourceLabel: "The Race",
 title: "Russell Pips Antonelli In Final Austrian GP Practice",
 summary: "George Russell led the final practice session for the Austrian Grand Prix with a late lap ahead of Mercedes team-mate Kimi Antonelli. Lewis Hamilton put Ferrari third, while McLaren and Max Verstappen followed closely behind before qualifying.",
@@ -23,25 +34,14 @@ photoCredit: "XPB IMAGES",
 dateLabel: "June 27, 2026"
 },
 {
-  slotId: "3",
-sourceLabel: "Crash.net",
-title: "Red Bull Boss Fears Major ADUO Implications",
-summary: "Red Bull team boss Laurent Mekies has warned that the FIA’s ADUO decision could carry major consequences if the current engine ranking remains unchanged. Red Bull continues to dispute being treated as the benchmark while rivals are allowed extra development opportunities.",
-kcsQuickShift: "This is not just a technical argument. It could shape Red Bull’s development path for the rest of 2026 and into 2027.",
-url: "https://www.crash.net/f1/news/1099519/1/red-bull-boss-fears-large-implications-if-fia-doesnt-change-aduo-stance",
-imagePath:  "/img/news/shut/Redbull/news-miekes.jpg",
-photoCredit: "Shuttestock",
-dateLabel: "June 27, 2026"
-},
-{
   slotId: "4",
-sourceLabel: "Read Motorsport",
-title: "Pirelli Austria Tyre Warning Turns Heat Into Strategy Trap",
-summary: "Pirelli’s warning over Austria’s heat and softer tyre choices has added another layer to the weekend strategy picture. With temperatures rising and degradation still uncertain, teams may have to stay flexible between one-stop and multi-stop options.",
-kcsQuickShift: "Austria may look simple on paper, but tyre temperature could turn this into a race won from the pit wall as much as the cockpit.",
-url: "https://readmotorsport.com/2026/06/27/pirelli-austria-tyre-warning-strategy-trap-2/",
-imagePath: "/img/news/kcai/news-tiresmiami.jpg",
-photoCredit: "KC AI Generated image",
+sourceLabel: "Crash.net",
+title: "Russell Bounces Back As Ferrari Stay Close In Final Practice",
+summary: "George Russell topped a tight final practice session for the Austrian Grand Prix, giving Mercedes a strong response after a more difficult Friday afternoon. Ferrari stayed close behind, suggesting qualifying could be a narrow fight at the Red Bull Ring.",
+kcsQuickShift: "Russell needed that response, but Ferrari being this close means Mercedes may not have full control heading into qualifying.",
+url: "https://www.crash.net/f1/news/1099607/1/george-russell-bounces-back-ferrari-close-tight-final-practice-f1-austrian-gp",
+imagePath: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
+photoCredit: "XPB IMAGES",
 dateLabel: "June 27, 2026"
 },
 {

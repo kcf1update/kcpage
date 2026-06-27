@@ -433,7 +433,117 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
-	
+	1	63	
+
+George Russell
+
+Mercedes	1:07.398	1:06.979	1:06.113	20
+2	16	
+
+Charles Leclerc
+
+Ferrari	1:07.543	1:07.030	1:06.349	15
+3	44	
+
+Lewis Hamilton
+
+Ferrari	1:07.290	1:06.994	1:06.408	14
+4	12	
+
+Kimi Antonelli
+
+Mercedes	1:07.083	1:06.763	1:06.414	17
+5	3	
+
+Max Verstappen
+
+Red Bull Racing	1:07.407	1:07.183	1:06.475	11
+6	1	
+
+Lando Norris
+
+McLaren	1:07.259	1:06.897	1:06.502	15
+7	81	
+
+Oscar Piastri
+
+McLaren	1:07.487	1:06.890	1:06.511	14
+8	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:07.408	1:07.086	1:06.632	18
+9	30	
+
+Liam Lawson
+
+Racing Bulls	1:07.385	1:07.136	1:06.955	18
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:07.549	1:07.155	1:07.007	18
+11	10	
+
+Pierre Gasly
+
+Alpine	1:08.038	1:07.223		12
+12	5	
+
+Gabriel Bortoleto
+
+Audi	1:08.035	1:07.293		12
+13	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:08.061	1:07.523		12
+14	27	
+
+Nico Hulkenberg
+
+Audi	1:08.066	1:07.611		15
+15	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:08.231	1:07.817		15
+16	43	
+
+Franco Colapinto
+
+Alpine	1:07.894	1:08.171		11
+17	55	
+
+Carlos Sainz
+
+Williams	1:08.252			9
+18	23	
+
+Alex Albon
+
+Williams	1:08.509			9
+19	11	
+
+Sergio Perez
+
+Cadillac	1:08.945			9
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:09.030			9
+21	14	
+
+Fernando Alonso
+
+Aston Martin	1:09.942			9
+22	18	
+
+Lance Stroll
+
+Aston Martin	1:10.363			8
+
 
 `;
 
@@ -557,10 +667,9 @@ summary: "George Russell topped final practice for the Austrian Grand Prix with 
             heading: "Qualifying",
             items: [
               {
-                title: "",
-                summary:
-                  "",
-                url: "",
+                title: "Russell Takes Dramatic Austria Pole As Verstappen Crashes Late",
+summary: "George Russell claimed pole position for the Austrian Grand Prix after a chaotic finish to Q3, beating Charles Leclerc and Lewis Hamilton as Ferrari locked out second and third. Max Verstappen crashed at Turn 9 late in the session, bringing out yellow flags and triggering questions over Russell’s final lap, but the Mercedes driver was cleared and kept pole. Kimi Antonelli qualified fourth, with Verstappen fifth, leaving Mercedes, Ferrari and Red Bull all in the fight heading into race day.",
+                url: "https://www.grandprix247.com/formula-1-news/austrian-grand-prix-qualifying-george-russell-on-pole-crashes-ferrari-party-max-verstappen-crashes",
               },
             ],
           },
@@ -650,7 +759,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Russell on pole, Results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),

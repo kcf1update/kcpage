@@ -58,7 +58,7 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-georgeaustriapole.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
