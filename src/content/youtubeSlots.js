@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "FP1 Highlights | 2026 Austrian Grand Prix",
-  youtubeInput: "https://youtu.be/ltmoQb3bJZ0",
+  title: "Race Highlights | 2026 Austrian Grand Prix",
+  youtubeInput: "https://youtu.be/usP9O0zFVaA",
   forceExternal :"blue" 
   },
 

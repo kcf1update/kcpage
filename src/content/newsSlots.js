@@ -2,113 +2,133 @@ export const newsSlots = [
   
 {
    slotId: "1",
-sourceLabel: "GrandPrix247",
-title: "Russell Takes Austria Pole As Verstappen Crashes",
-summary: "George Russell took pole position for the Austrian Grand Prix after a dramatic Q3, with Max Verstappen crashing at Turn 9 and triggering yellow flags late in the session. Russell was investigated after the lap but was later cleared, leaving him on pole ahead of Charles Leclerc and Lewis Hamilton.",
-kcsQuickShift: "This was a messy but massive pole for Russell, while Verstappen’s crash and the yellow flag question turned qualifying into a proper controversy.",
-url: "https://www.grandprix247.com/formula-1-news/austrian-grand-prix-qualifying-george-russell-on-pole-max-verstappen-crashes",
-imagePath: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "The Race",
+  title: "Russell Holds Off Verstappen For Austrian GP Victory",
+  summary:
+    "George Russell claimed victory at the Austrian Grand Prix after resisting race-long pressure from Max Verstappen. Kimi Antonelli completed the podium as Mercedes converted its strong weekend pace into a major result.",
+  kcsQuickShift:
+    "Russell had to earn this one the hard way, and holding off Verstappen gives Mercedes a statement win at a very important point in the season.",
+  url: "https://www.the-race.com/formula-1/russell-resists-verstappen-for-first-victory-since-season-opener/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
  slotId: "2",
-sourceLabel: "Formula1.com",
-title: "Russell Beats Leclerc And Hamilton To Austrian GP Pole",
-summary: "George Russell claimed pole position for the Austrian Grand Prix with a dramatic late lap after Max Verstappen crashed at Turn 9 in Q3. Russell beat Charles Leclerc and Lewis Hamilton, while Kimi Antonelli ended fourth and Verstappen was left fifth after the crash brought out double yellow flags.",
-kcsQuickShift: "Russell delivered when it mattered, but the late Verstappen crash and yellow flags made this one of the messiest qualifying finishes of the season.",
-url: "https://www.formula1.com/en/latest/article/russell-beats-leclerc-and-hamilton-to-austrian-gp-pole-after-dramatic-late-verstappen-crash.6oiA7Tyo3B89DFJNLWtG8P",
-imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "GrandPrix247",
+  title: "Russell Bounces Back In Style With Austrian GP Win",
+  summary:
+    "George Russell bounced back in style at the Austrian Grand Prix, fending off Max Verstappen and Mercedes teammate Kimi Antonelli to take victory. The result gave Mercedes a major boost after Russell converted his front-running pace into a composed race win.",
+  kcsQuickShift:
+    "Russell needed a clean response, and this was exactly that — controlled, confident, and strong enough to hold off Verstappen when it mattered.",
+  url: "https://www.grandprix247.com/formula-1-news/austrian-grand-prix-george-russell-bounces-back-in-style-fends-off-max-verstappen-and-kimi-antonelli",
+  imagePath: "/img/news/xpb/Mercedes/xpb-georgepodiumaustria.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026"
 },
 {
- slotId: "3",
-sourceLabel: "The Race",
-title: "Russell Pips Antonelli In Final Austrian GP Practice",
-summary: "George Russell led the final practice session for the Austrian Grand Prix with a late lap ahead of Mercedes team-mate Kimi Antonelli. Lewis Hamilton put Ferrari third, while McLaren and Max Verstappen followed closely behind before qualifying.",
-kcsQuickShift: "Mercedes looks sharp heading into qualifying, but Ferrari, McLaren and Verstappen are close enough to make this far from settled.",
-url: "https://www.the-race.com/formula-1/what-happened-in-final-f1-practice-at-austrian-gp/",
-imagePath: "/img/news/xpb/Races/xpb-austria2.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  slotId: "3",
+  sourceLabel: "RacingNews365",
+  title: "Cadillac Hit By Double Austrian GP Retirement",
+  summary:
+    "Cadillac’s Austrian Grand Prix unravelled almost immediately as both Sergio Perez and Valtteri Bottas were forced out in the opening laps. The team’s weekend had already been difficult after mechanical issues and car fires during practice.",
+  kcsQuickShift:
+    "Cadillac came to Austria looking for progress, but two early retirements and more reliability trouble make this one of the team’s toughest weekends so far.",
+  url: "https://racingnews365.com/cadillac-suffer-double-austrian-gp-misery-with-early-car-fires",
+  imagePath: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
   slotId: "4",
-sourceLabel: "Crash.net",
-title: "Russell Bounces Back As Ferrari Stay Close In Final Practice",
-summary: "George Russell topped a tight final practice session for the Austrian Grand Prix, giving Mercedes a strong response after a more difficult Friday afternoon. Ferrari stayed close behind, suggesting qualifying could be a narrow fight at the Red Bull Ring.",
-kcsQuickShift: "Russell needed that response, but Ferrari being this close means Mercedes may not have full control heading into qualifying.",
-url: "https://www.crash.net/f1/news/1099607/1/george-russell-bounces-back-ferrari-close-tight-final-practice-f1-austrian-gp",
-imagePath: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "RacingNews365",
+  title: "Carlos Sainz Suffers Dramatic Austrian GP Retirement",
+  summary:
+    "Carlos Sainz’s difficult Austrian Grand Prix ended with a dramatic retirement after his Williams suffered a suspected electrical issue. You have to think he must be having some second thoughts.",
+  kcsQuickShift:
+    "Williams already looked short of points pace in Austria, and Sainz’s first DNF of the season only adds more pressure before the team brings upgrades to Silverstone.",
+  url: "https://racingnews365.com/williams-pain-continues-as-carlos-sainz-suffers-dramatic-dnf",
+  imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
   slotId: "5",
-sourceLabel: "RacingNews365",
-title: "Russell Says Mercedes Reliability Is A Priority",
-summary: "George Russell says Mercedes must make reliability a top priority after early-season failures raised concern inside the team. Mercedes has shown strong pace, but Russell and Toto Wolff both know that speed will not be enough if the car cannot consistently finish races.",
-kcsQuickShift: "Mercedes has the pace to fight at the front, but reliability problems can turn a title push into missed points very quickly.",
-url: "https://racingnews365.com/george-russell-highlights-mercedes-priority-over-major-concern",
-imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "MSN",
+  title: "Oscar Piastri Summoned To Austrian GP Stewards",
+  summary:
+    "Oscar Piastri was summoned to the stewards after the Austrian Grand Prix, adding another post-race flashpoint to McLaren’s difficult weekend. The hearing centred on a possible rules breach, with Piastri facing scrutiny after a race where McLaren was already left short of the podium fight.",
+  kcsQuickShift:
+    "McLaren did not need another complication after Austria, and any stewards visit for Piastri only adds to a weekend that was already miserable.",
+  url: "https://www.msn.com/en-ae/news/other/oscar-piastri-summoned-to-f1-austrian-gp-stewards/ar-AA26K4h9?ocid=BingNewsSerp",
+  imagePath: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
   slotId: "6",
-sourceLabel: "RacingNews365 NL",
-title: "Marko Koestert Vurige Verstappen-Wens / Marko Holds Firm Verstappen Wish",
-summary: "Helmut Marko hoopt dat Max Verstappen vertrouwen houdt in Red Bull en geen gebruik maakt van eventuele exitclausules. The story frames Verstappen’s future as a major Red Bull storyline while the team tries to steady its 2026 campaign.",
-kcsQuickShift: "Red Bull needs more than pace here — they need Max believing the project is still worth backing. / Red Bull heeft hier meer nodig dan snelheid — ze hebben Max nodig die blijft geloven in het project.",
-url: "https://racingnews365.nl/marko-koestert-vurige-verstappen-wens",
-imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "Nextgen-Auto",
+  title: "Sainz Joins Alonso In Questioning Rival Upgrade Push",
+  summary:
+    "Carlos Sainz has joined Fernando Alonso in questioning why some of Formula 1’s front-running teams are still bringing major upgrades while others have already shifted focus toward 2026. Sainz suggested it is surprising to see continued development at this stage, especially with the new regulations coming next season.",
+  kcsQuickShift:
+    "Sainz and Alonso are basically saying the same thing — if 2026 is the big reset, every upgrade choice now comes with a real strategic cost.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/sainz-joins-alonso-in-questioning-rivals-upgrades,209427.html",
+  imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
   slotId: "7",
-sourceLabel: "F1News.se",
-title: "Oväntade Fällan För Red Bull / Unexpected Trap For Red Bull",
-summary: "Red Bull kan fastna i ett svårt ADUO-läge om konkurrenterna använder sina extra utvecklingsmöjligheter utan att förändra FIA jämförelse tillräckligt mycket. The article explains how Red Bull could remain locked out of extra development if rivals improve in areas that do not change the FIA’s engine ranking.",
-kcsQuickShift: "The trap for Red Bull is simple — their rivals can improve while Red Bull still gets treated as the benchmark. / Fällan för Red Bull är enkel — rivalerna kan förbättra sig medan Red Bull fortfarande räknas som riktmärket.",
-url: "https://f1news.se/ovantade-fallan-for-red-bull",
-imagePath: "/img/news/xpb/RedBull/news-xpbisackmonaco.Jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "MARCA",
+  title: "Antológico Mano A Mano Entre Verstappen Y Hamilton Deja La Sanción En Duda / Classic Verstappen-Hamilton Fight Leaves Penalty Question Open",
+  summary:
+    "MARCA analiza el intenso duelo entre Max Verstappen y Lewis Hamilton en el Gran Premio de Austria, una pelea que dejó dudas sobre si debía haber sanción después de una batalla muy cerrada en pista. / MARCA looks at the intense fight between Max Verstappen and Lewis Hamilton at the Austrian Grand Prix, with questions over whether a penalty should have followed such a close on-track battle.",
+  kcsQuickShift:
+    "Verstappen and Hamilton still know how to turn one battle into the biggest talking point of a race weekend, and this one will keep fans arguing. / Verstappen y Hamilton todavía saben convertir una pelea en el gran tema del fin de semana, y esta seguirá dando que hablar entre los aficionados.",
+  url: "https://www.marca.com/motor/formula1/gp-austria/2026/06/28/antologico-mano-mano-verstappen-hamilton-sancion-duda.html",
+  imagePath: "/img/news/xpb/Races/xpb-austriarace.jpg",
+  photoCredit: "XPB Images",
+  dateLabel: "June 28, 2026",
 },
 {
   slotId: "8",
-sourceLabel: "Nextgen-Auto",
-title: "Perez Laughs Off Austrian GP Heat Concerns",
-summary: "Sergio Perez has played down concerns over the hot conditions at the Austrian Grand Prix, even as the FIA’s heat hazard rules remain part of the weekend. With temperatures expected to climb, cooling systems and driver comfort could still become part of the race story.",
-kcsQuickShift: "Perez may not be worried about the heat, but Austria’s conditions could still make life difficult for drivers and tyres on race day.",
-url: "https://motorsport.nextgen-auto.com/en/formula-1/perez-laughs-off-austrian-gp-heat-concerns,209381.html",
-imagePath: "/img/news/xpb/Cadillac/xpb-perezaustria.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "Crash.net",
+  title: "Zak Brown Leaves Door Open On Verstappen McLaren Rumours",
+  summary:
+    "Zak Brown has refused to completely rule out a future McLaren move for Max Verstappen, although he stressed that both Lando Norris and Oscar Piastri are happy and tied down to long-term deals.",
+  kcsQuickShift:
+    "This still feels more like paddock noise than a real move, but where there is smoke there can be fire",
+  url: "https://www.crash.net/f1/news/1099813/1/mclaren-boss-zak-brown-leaves-door-open-shock-max-verstappen-f1-switch",
+  imagePath: "/img/news/shut/mclaren/news-shutzac.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "June 28, 2026",
 },
 {
-  slotId: "9",
-sourceLabel: "Nextgen-Auto",
-title: "Verstappen Camp Says Nothing To McLaren Rumours",
-summary: "Max Verstappen’s camp has given little away as rumours continue linking him with McLaren. The speculation adds another layer to Red Bull’s Austrian Grand Prix weekend, especially with the team already facing questions over performance and future direction.",
-kcsQuickShift: "Until Verstappen or his camp says something concrete, this remains rumour — but the timing keeps pressure firmly on Red Bull.",
-url: "https://motorsport.nextgen-auto.com/en/formula-1/verstappen-camp-says-nothing-to-mclaren-rumours,209380.html",
-imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+ slotId: "9",
+  sourceLabel: "Nextgen-Auto",
+  title: "Wolff Says It Would Be Wrong To Oust Russell At Mercedes",
+  summary:
+    "Toto Wolff says Mercedes should not push George Russell aside, making clear that Russell’s performances and position inside the team deserve respect despite ongoing driver market speculation.",
+  kcsQuickShift:
+    "Russell keeps giving Mercedes strong reasons to stand by him and Verstappen must have said not interseted",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/would-be-wrong-to-oust-russell-at-mercedes-wolff,209418.html",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 },
 {
  slotId: "10",
-sourceLabel: "Motorsport.com",
-title: "Leclerc Plays Down Ferrari’s ADUO Upgrade",
-summary: "Charles Leclerc has cooled expectations around Ferrari’s first ADUO power-unit upgrade at the Austrian Grand Prix. Ferrari has brought development to Spielberg, but the team is not presenting it as an instant game-changing step.",
-kcsQuickShift: "Ferrari is moving forward, but Leclerc is right to keep expectations realistic until the stopwatch proves the upgrade works.",
-url: "https://www.motorsport.com/f1/news/charles-leclerc-plays-down-ferraris-aduo-upgrade-at-austrian-gp/10833857/",
-imagePath: "/img/news/xpb/ferrari/news-xpbcharles.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 27, 2026"
+  sourceLabel: "Nextgen-Auto",
+  title: "Racing Bulls Back Liam Lawson Amid Tsolov Speculation",
+  summary:
+    "Racing Bulls boss Alan Permane has again backed Liam Lawson, praising his form and focus amid continued speculation that Red Bull junior Nikola Tsolov could be pushing for a future F1 seat.",
+  kcsQuickShift:
+    "If they replace Liam Lawson it would be a stupid mistake.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/incredible-lawson-backed-again-amid-tsolov-speculation,209428.html",
+  imagePath: "/img/news/xpb/visa/news-xpbliam.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "June 28, 2026",
 }
 
 ];

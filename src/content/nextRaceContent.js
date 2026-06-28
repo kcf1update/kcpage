@@ -548,7 +548,28 @@ Aston Martin	1:10.363			8
 `;
 
 const PASTE_RACE = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	71
+2	Max Verstappen	NED	Oracle Red Bull Racing	+1.611s
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+1.986s
+4	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+21.809s
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	+26.393s
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	+31.505s
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	+45.659s
+8	Charles Leclerc	MON	Scuderia Ferrari HP	+1 Lap
+9	Liam Lawson	NZD	Racing Bulls	+1 Lap
+10	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
+13	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+14	Ollie Bearman	GBR	TGR Haas F1 Team	+1 Lap
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	+1 Lap
+16	Esteban Ocon	FRA	TGR Haas F1 Team	+2 Laps
+17	Alex Albon	THA	Atlassian Williams F1 Team	+2 Laps
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+3 Laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+26 Laps
+DNF	Carlos Sainz	ESP	Atlassian Williams F1 Team	+48 Laps
+DNF	Sergio Perez	MEX	Cadillac F1 Team	+67 Laps
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	+69 Laps
 
 
 `;
@@ -677,10 +698,10 @@ summary: "George Russell claimed pole position for the Austrian Grand Prix after
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Russell Holds Off Verstappen To Win In Austria",
                 summary:
-                  "",
-                url: "",
+                  "George Russell converted pole position into a hard-earned Austrian Grand Prix victory, holding off Max Verstappen by just 1.6 seconds after a tense race at the Red Bull Ring. Verstappen recovered from fifth on the grid to finish second, while Kimi Antonelli completed the podium in third for Mercedes. Oscar Piastri finished fourth for McLaren, with Lewis Hamilton fifth for Ferrari. In extreme heat, Russell also had to manage a faulty drinks system, but stayed composed to take his second win of the season and cut Antonelli’s championship lead to 40 points.",
+                url: "https://www.the-race.com/formula-1/russell-resists-verstappen-for-first-victory-since-season-opener/",
               },
             ],
           },
@@ -768,7 +789,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "10:00 AM ADT",
+          time: "Russell wins, Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
