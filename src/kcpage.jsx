@@ -16,9 +16,9 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 const raceWeekendPromo = {
   enabled: true,
-  label: "Race Weekend: Austrian Grand Prix",
-  title: "Austrian Grand Prix Weekend Is Underway",
-  body: "The Austrian Grand Prix weekend is now underway. Follow practice, qualifying, race updates, weather, session times, and the full Race Centre at kcf1update.ca.",
+  label: "Austria Delivered: Full Race Weekend Recap",
+  title: "Austria Delivered: Full Race Weekend Recap",
+  body: "The Austrian Grand Prix is complete, but the Race Centre remains open with the full weekend recap, session results, weather, and race updates.",
   buttonText: "Open Race Centre →",
   buttonLink: "/racecenter",
 };

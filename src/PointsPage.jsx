@@ -12,7 +12,7 @@ import {
   constructorPointsOverride,
 } from "./content/pointsContent";
 
-import { nextRaceContent } from "./content/nextRaceContent";
+
 
 // ---------------- helpers ----------------
 function safeNum(n) {
@@ -54,27 +54,7 @@ function buildManualPointsMap(pointsDriversAny) {
   return out;
 }
 
-function buildRacePointsMapFromNextRace(content) {
-  // Pull points ONLY from the Race session in nextRaceContent
-  // Expected shape: session.results = { NOR: { points: 25, ... }, ... }
-  const out = {};
 
-  const sessions = Array.isArray(content?.sessions) ? content.sessions : [];
-  const raceSession =
-    sessions.find((s) => s?.type === "race" || s?.id === "race") || null;
-
-  const results = raceSession?.results && typeof raceSession.results === "object"
-    ? raceSession.results
-    : {};
-
-  for (const [driverId, row] of Object.entries(results)) {
-    const id = String(driverId || "").toUpperCase();
-    if (!id) continue;
-    out[id] = safeNum(row?.points);
-  }
-
-  return out;
-}
 
 export default function PointsPage() {
   const { driverRows, teamRows, top3 } = useMemo(() => {
@@ -83,8 +63,7 @@ export default function PointsPage() {
     // 1) manual/base points (optional)
     const manualMap = buildManualPointsMap(pointsDrivers);
 
-    // 2) race centre points (from nextRaceContent race session)
-    const raceMap = buildRacePointsMapFromNextRace(nextRaceContent);
+    
 
     // 3) total per driver = manual + race
     const driverRowsBuilt = driversBase.map((d) => {
@@ -93,7 +72,7 @@ export default function PointsPage() {
       const team = teamKey(d?.team);
       const countryCode = d?.countryCode ?? "";
 
-      const totalPoints = safeNum(manualMap[id]) + safeNum(raceMap[id]);
+      const totalPoints = safeNum(manualMap[id]);
 
       return {
         id: id || name,

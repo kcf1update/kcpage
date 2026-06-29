@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export default function CountdownBar() {
   const getTimeRemaining = () => {
-    const targetTime = new Date("2026-06-26T11:30:00Z").getTime();
+    const targetTime = new Date("2026-07-03T11:30:00Z").getTime();
     const now = Date.now();
     const total = targetTime - now;
 
@@ -32,7 +32,7 @@ export default function CountdownBar() {
       title="Go to Race Centre"
     >
       <img src="/flags/es.png" alt="Spanish flag" className="h-4 w-auto" />
-      <span>FORMULA 1 LENOVO AUSTRIAN GRAND PRIX</span>
+      <span>FORMULA 1 PIRELLI BRITISH GRAND PRIX </span>
       
     </Link>
   );
@@ -41,7 +41,7 @@ export default function CountdownBar() {
   return (
   <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base text-white font-semibold">
     <img src="/flags/es.png" alt="Spanish Flag" className="h-4 w-auto" />
-    <span>FORMULA 1 LENOVO AUSTRIAN GRAND PRIX :</span>
+    <span>FORMULA 1 PIRELLI BRITISH GRAND PRIX:</span>
     <span className="text-sky-300 text-sm sm:text-base md:text-lg">
       {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     </span>
