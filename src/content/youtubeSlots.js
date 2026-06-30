@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "Hamilton Wins For Ferrari In Barcelona | Antonelli Retires Late, Penalties Hit Post-Race",
-  youtubeInput: "https://youtu.be/TfQPf5_HCdM",
+  title: "Russell Wins Austria Thriller! Verstappen Charges Late, Ferrari Fade | 2026 Austrian GP Recap",
+  youtubeInput: "https://youtu.be/iDsvhyAPZZ4",
 },
 
   {
