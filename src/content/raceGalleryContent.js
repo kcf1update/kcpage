@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimiaustria.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -43,22 +43,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Races/xpb-austria2.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Audi/xpb-audiaustria.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -71,32 +71,32 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgepodiumaustria.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
+          src: "",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
+          src: "",
           alt: "Race day gallery image 4",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Races/xpb-austriarace.jpg",
+          src: "",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Races/xpb-raceaustria2.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },

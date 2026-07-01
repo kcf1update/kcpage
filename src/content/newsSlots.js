@@ -1,143 +1,142 @@
 export const newsSlots = [
-  
-{
+{  
 slotId: "1",
 sourceLabel: "Crash.net",
-title: "Ferrari admits Mercedes focus hurt Austrian GP race",
+title: "Ocon urges Haas to fix his struggling car",
 summary:
-"Ferrari boss Fred Vasseur admitted the team may have focused too much on Mercedes during the Austrian Grand Prix, after Charles Leclerc and Lewis Hamilton faded from their strong qualifying positions.",
+"Esteban Ocon says Haas must get his VF-26 healthy after another difficult Austrian Grand Prix, with rear downforce problems leaving him sliding, hurting the tyres, and falling to 16th.",
 kcsQuickShift:
-"Ferrari had the grid position to make noise in Austria, but the race execution did not match the Saturday promise.",
-url: "https://www.crash.net/f1/news/1099908/1/ferrari-boss-admits-we-focused-mercedes-too-much-difficult-austrian-gp",
-imagePath: "/img/news/shut/ferrari/news-fredferrari.jpg",
-photoCredit: "Shutterstock",
-dateLabel: "June 29, 2026",
+"Ocon’s message is pretty clear: Haas cannot just chase upgrades — they need to understand why his car is not behaving properly.",
+url: "https://www.crash.net/f1/news/1099958/1/get-my-car-healthy-one-drivers-plea-after-tough-f1-austrian-gp",
+imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
+photoCredit: "XPB IMAGES",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "2",
-sourceLabel: "Motorsport.com",
-title: "Russell explains unusual driving style behind Austria win",
+sourceLabel: "RacingNews365",
+title: "Williams drivers spark questions over F1 futures",
 summary:
-"George Russell says he had to drive in an abnormal way to manage the tyres and get the most from Mercedes’ 2026 car on his way to victory at the Austrian Grand Prix.",
+"Carlos Sainz and Alex Albon gave very different answers when asked about their Williams futures, with Sainz saying his focus remains on helping the team while Albon refused to confirm his plans.",
 kcsQuickShift:
-"This was not just a clean lights-to-flag win — Russell had to adapt his style and manage pressure from Verstappen late in the race.",
-url: "https://www.motorsport.com/f1/news/george-russell-resorted-to-abnormal-driving-style-to-win-f1-austrian-gp/10834809/",
-imagePath: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
+"Williams already has enough performance pressure on track, and now the driver future questions are starting to get louder too.",
+url: "https://racingnews365.com/williams-drivers-spark-intrigue-over-responses-to-f1-future-question",
+imagePath: "/img/news/xpb/Williams/xpbAlex.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 29, 2026",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "3",
-sourceLabel: "The Race",
-title: "Verstappen-McLaren talk adds another layer to F1 driver market",
+sourceLabel: "RacingNews365",
+title: "Verstappen warns Red Bull still has too many issues",
 summary:
-"The Race reports that preliminary contact between Max Verstappen’s camp and McLaren did take place, but frames it more as long-term driver-market pressure than an immediate move away from Red Bull.",
+"Max Verstappen played down talk of a full Red Bull title charge after Austria, saying the team still has too many issues despite his second-place finish and the upgraded car.",
 kcsQuickShift:
-"This feels less like a simple transfer story and more like Verstappen making sure Red Bull knows exactly what is at stake.",
-url: "https://www.the-race.com/formula-1/max-verstappen-mclaren-talks-what-is-really-going-on/",
+"Red Bull looked more alive in Austria, but Verstappen clearly does not think one strong weekend fixes the bigger picture.",
+url: "https://racingnews365.com/max-verstappen-aims-cryptic-too-many-issues-response-at-red-bull",
 imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 29, 2026",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "4",
-sourceLabel: "The Race",
-title: "Racing Bulls team-order tension emerges after Austria",
+sourceLabel: "RacingNews365.nl",
+title: "Jubelstemming Verstappen maakt plaats voor nieuw sentiment op weg naar GP Groot-Brittannië / Verstappen optimism shifts ahead of British GP",
 summary:
-"An unseen Racing Bulls team-order issue became a talking point after the Austrian Grand Prix, with Liam Lawson unhappy after Arvid Lindblad attacked despite instructions to hold position.",
+"Na de sterke race van Max Verstappen in Oostenrijk is de stemming rond Red Bull veranderd, maar richting Silverstone blijft de vraag of het team die stap ook op een ander circuit kan bevestigen. / After Verstappen’s strong Austrian Grand Prix, the mood around Red Bull has shifted, but Silverstone will show whether that progress carries over to a very different track.",
 kcsQuickShift:
-"Racing Bulls scored with both cars, but the radio traffic shows the result was not quite as smooth inside the garage.",
-url: "https://www.the-race.com/formula-1/the-unseen-ignored-team-order-that-caused-austrian-gp-angst/",
-imagePath: "/img/news/xpb/Visa/xpb-liamarvidaustria.jpg",
+"Austria gave Red Bull hope, but Silverstone will be the better test of whether the upgrade has real staying power. / Oostenrijk gaf Red Bull hoop, maar Silverstone wordt de betere test of de upgrade echt blijvende waarde heeft.",
+url: "https://racingnews365.nl/jubelstemming-verstappen-maakt-plaats-voor-nieuw-sentiment-op-weg-naar-gp-groot-brittanni%C3%AB",
+imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 28, 2026",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "5",
-sourceLabel: "Marca",
-title: "Carlos Sainz Jr., especial de Marca / Carlos Sainz Jr. Marca Special",
+sourceLabel: "PlanetF1",
+title: "Russell win comes under closer scrutiny",
 summary:
-"Marca publica un especial centrado en Carlos Sainz Jr. y su lugar dentro del panorama actual de la Fórmula 1. / Marca features Carlos Sainz Jr. in a special piece looking at his profile and place in the current Formula 1 picture.",
+"PlanetF1 argues that George Russell’s Austrian Grand Prix win should not be treated as a major turning point, questioning whether Mercedes and Russell have truly changed the competitive picture.",
 kcsQuickShift:
-"A great article about Carlos Sainz. I hope he remains a Williams but I hate to see him languishing in such a slow car. / Un gran artículo sobre Carlos Sainz. Espero que continúe en Williams, aunque es una lástima verlo sufrir con un coche tan poco competitivo.",
-url: "https://www.marca.com/motor/formula1/carlos-sainz-jr-especial.shtml",
-imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
+"Russell still earned the win, but the bigger question is whether Mercedes can back it up when the pressure changes again.",
+url: "https://www.planetf1.com/features/george-russell-austrian-grand-prix-2026-analysis",
+imagePath: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 29, 2026",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "6",
 sourceLabel: "Nextgen-Auto",
-title: "Ferrari upgrade pace questioned under budget cap",
+title: "Verstappen shrugs off fresh McLaren speculation",
 summary:
-"Ferrari’s aggressive development programme has drawn attention from rivals, with Toto Wolff questioning how much more upgrade spending the team can sustain under Formula 1’s budget cap.",
+"Max Verstappen dismissed the latest McLaren speculation, saying he has no use for the rumours while also brushing off AI-generated images showing him in McLaren colours.",
 kcsQuickShift:
-"Ferrari says it still needs more performance, but rival teams are clearly watching how much development is still coming from Maranello.",
-url: "https://motorsport.nextgen-auto.com/en/formula-1/ferrari-upgrade-raises-eyebrows-under-budget-cap,209469.html",
-imagePath: "/img/news/Ferrari/ferarriaustria.jpg",
-photoCredit: "Courtesy of Ferrari F1",
-dateLabel: "June 29, 2026",
+"The rumours are not going away, but Verstappen is doing exactly what you would expect — giving very little away in public.",
+url: "https://motorsport.nextgen-auto.com/en/formula-1/verstappen-shrugs-off-freshest-mclaren-speculation,209513.html",
+imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+photoCredit: "XPB IMAGES",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "7",
-sourceLabel: "Nextgen-Auto",
-title: "Fornaroli linked with possible Haas 2027 seat",
+sourceLabel: "The Race",
+title: "F1 2026 upgrade spending becomes a flashpoint",
 summary:
-"Leonardo Fornaroli has emerged as a name to watch for Haas in 2027, with the reigning Formula 2 champion reportedly being considered as speculation around Esteban Ocon’s future continues.",
+"The Race looks at why 2026 upgrade spending is becoming such a tense issue, with teams trying to balance development, the cost cap, and the pressure to keep up in a fast-moving season.",
 kcsQuickShift:
-"Estoban Ocon is a talented driver and a race winner but I do not think he is team player. Time to go.",
-url: "https://motorsport.nextgen-auto.com/en/formula-1/fornaroli-emerging-as-favourite-for-ocon-s-2027-seat,209470.html",
-imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "June 29, 2026",
+"The 2026 development race is not just about who brings parts — it is about who can afford to keep bringing the right ones.",
+url: "https://www.the-race.com/formula-1/f1-2026-upgrade-spending-cost-cap-development-war/",
+imagePath: "/img/news/xpb/Races/news-xpbracemonaco.jpg",
+photoCredit: "XPB IAMGES",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "8",
-sourceLabel: "RacingNews365 NL",
-title: "Verstappen met boude claim over zege in Oostenrijk / Verstappen makes bold Austria win claim",
+sourceLabel: "FormulaPassion",
+title: "Bortoleto guarda la zona punti: ciò che è stato fatto in Austria è incoraggiante / Bortoleto eyes the points after encouraging Austria progress",
 summary:
-"Max Verstappen denkt dat hij George Russell achter zich had kunnen houden als de strategie anders was uitgevallen tijdens de Grand Prix van Oostenrijk. / Max Verstappen believes he could have kept George Russell behind if the Austrian Grand Prix strategy had played out differently.",
+"Gabriel Bortoleto guarda alla zona punti dopo un weekend in Austria che ha dato segnali incoraggianti, con il team che sembra aver trovato una base più competitiva. / Gabriel Bortoleto is looking toward the points after an encouraging Austrian weekend, with the team showing signs of stronger race pace and better consistency.",
 kcsQuickShift:
-"Verstappen sounded encouraged rather than frustrated, and Red Bull’s Austria pace makes Silverstone more interesting. / Verstappen klonk eerder bemoedigd dan gefrustreerd, en Red Bulls tempo in Oostenrijk maakt Silverstone interessanter.",
-url: "https://racingnews365.nl/verstappen-met-boude-claim-over-zege-tijdens-gp-oostenrijk",
-imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
+"Bortoleto may not be headline news every week, but steady progress like this is exactly what a young driver needs. / Bortoleto forse non fa notizia ogni settimana, ma progressi costanti come questi sono esattamente ciò di cui ha bisogno un giovane pilota.",
+url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/bortoleto-guarda-zona-punti-cio-fatto-in-austria-stato-incoraggiante",
+imagePath: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 29, 2026",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "9",
-sourceLabel: "GrandPrix247",
-title: "Zak Brown jokes about Verstappen-to-McLaren rumours",
+sourceLabel: "Motorsport.com",
+title: "Williams plans almost entirely new car by Azerbaijan GP",
 summary:
-"Zak Brown played down the idea of Max Verstappen joining McLaren, joking that it would take something strange happening to one of the team’s current drivers for the door to open.",
+"Williams team principal James Vowles says the team expects to have an almost entirely new car by the Azerbaijan Grand Prix, as the Grove squad pushes to recover performance through the season.",
 kcsQuickShift:
-"Brown’s answer was funny, but the fact the question keeps coming up shows how big the Verstappen market story has become.",
-url: "https://www.grandprix247.com/formula-1-news/zak-brown-says-max-verstappen-may-join-mclaren-if-one-of-their-drivers-slipped-on-a-banana-peel-getting-out-of-tub",
-imagePath: "/img/news/kcai/mclarenban.jpg",
-photoCredit: "KC AI Generated Image",
-dateLabel: "June 29, 2026",
+"Williams is not talking about small tweaks here — this sounds like a major rebuild of the package before the late-season run.",
+url: "https://www.motorsport.com/f1/news/williams-plans-almost-entirely-new-car-by-azerbaijan-gp/10834950/",
+imagePath: "/img/news/xpb/Williams/news-xpbjames.jpg",
+photoCredit: "XPB IMAGES",
+dateLabel: "July 1, 2026",
 },
 
 {
 slotId: "10",
-sourceLabel: "The42",
-title: "Irish site covers Russell’s Austrian GP victory",
+sourceLabel: "Motorsport.com",
+title: "Bearman warns Haas risks being outdeveloped",
 summary:
-"The42’s Austrian Grand Prix report focuses on George Russell holding off Max Verstappen for a measured Mercedes victory in extreme heat, with Kimi Antonelli completing the podium.",
+"Oliver Bearman has warned that Haas risks being outdeveloped in the 2026 season, with the team needing to keep pace as rivals continue pushing new performance upgrades.",
 kcsQuickShift:
-"This one is for my Irsh visitors. I apprciate your support",
-url: "https://www.the42.ie/george-russell-holds-off-max-verstappen-to-secure-victory-at-austrian-grand-prix-7084189-Jun2026/",
-imagePath: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
+"Bearman is right to be worried — in this kind of development race, standing still usually means going backwards.",
+url: "https://www.motorsport.com/f1/news/oliver-bearman-warns-haas-risks-being-outdeveloped-in-f1-2026/10835276/",
+imagePath: "/img/news/xpb/Haas/news-xpbbearman.jpg",
 photoCredit: "XPB IMAGES",
-dateLabel: "June 28, 2026",
+dateLabel: "July 1, 2026",
 },
 
 ];

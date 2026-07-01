@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "FERRARI GET MERCEDES TRICK DIFFUSER BANNED! F1 News",
-    youtubeInput: "https://youtu.be/ByhtZJFn5lI",
-   
+    title: "Top 10 Onboards | 2026 Austrian Grand Prix | Qatar Airways",
+    youtubeInput: "https://youtu.be/C61r_lD0Hok",
+   forceExternal :"blue" 
   },
 
   {
     slotId: "slot3",
-    title: "ADUO EXPOSED — FERRARI STANDS ALONE ON THE GRID - f1 news",
-    youtubeInput: "https://youtu.be/ysQFh0IWc8Q",
+    title: "Verstappen future? Who shines at Silverstone? 💭 | The F1 Show Podcast",
+    youtubeInput: "https://youtu.be/FF783EjZR38",
     
   }
 ];

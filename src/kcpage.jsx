@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
+  enabled: false,
   label: "Austria Delivered: Full Race Weekend Recap",
   title: "Austria Delivered: Full Race Weekend Recap",
   body: "The Austrian Grand Prix is complete, but the Race Centre remains open with the full weekend recap, session results, weather, and race updates.",

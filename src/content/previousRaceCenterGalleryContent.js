@@ -20,17 +20,17 @@ export const previousRaceCenterGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-kimiaustria.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpblewisspain.jpg",
+          src: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -43,22 +43,22 @@ export const previousRaceCenterGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Races/xpbracespain.jpg",
+          src: "/img/news/xpb/Races/xpb-austria2.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
+          src: "/img/news/xpb/Audi/xpb-audiaustria.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -71,32 +71,32 @@ export const previousRaceCenterGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Visa/xpblawsonspain.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpblewiswin.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgepodiumaustria.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpblewisspain2.jpg",
+          src: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpbkimispain.jpg",
+          src: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
           alt: "Race day gallery image 4",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+          src: "/img/news/xpb/Races/xpb-austriarace.jpg",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Races/xpbracespain2.jpg",
+          src: "/img/news/xpb/Races/xpb-raceaustria2.jpg",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
