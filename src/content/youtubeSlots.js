@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Race Highlights | 2026 Austrian Grand Prix",
-  youtubeInput: "https://youtu.be/usP9O0zFVaA",
+  title: "Lando Norris: ‘Success Is Addictive’ | F1 Beyond The Grid Podcast",
+  youtubeInput: "https://youtu.be/zT_0buoHfSE",
   forceExternal :"blue" 
   },
 
   {
     slotId: "slot2",
-    title: "Top 10 Onboards | 2026 Austrian Grand Prix | Qatar Airways",
-    youtubeInput: "https://youtu.be/C61r_lD0Hok",
-   forceExternal :"blue" 
+    title: "Max Verstappen’s McLaren talks: What’s really going on",
+    youtubeInput: "https://youtu.be/Q5r50qMMbJo",
+   
   },
 
   {
     slotId: "slot3",
-    title: "Verstappen future? Who shines at Silverstone? 💭 | The F1 Show Podcast",
-    youtubeInput: "https://youtu.be/FF783EjZR38",
+    title: "Behind the Austrian Grand Prix: The Red Bull Upgrade That Could Decide Verstappen’s Future",
+    youtubeInput: "https://youtu.be/XqqHFysfCfM",
     
   }
 ];
