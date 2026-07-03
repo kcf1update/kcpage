@@ -9,7 +9,7 @@ export const NEXT_RACE_DRIVER_IDS = DRIVER_IDS;
 // Change this one line depending on the weekend format:
 // "normal" = Practice 1, Practice 2, Practice 3, Qualifying, Race
 // "sprint" = Practice 1, Sprint Qualifying, Sprint Race, Qualifying, Race
-const WEEKEND_FORMAT = "regular";
+const WEEKEND_FORMAT = "sprint";
 // =====================================================
 // 1) BLANK TEMPLATES
 // =====================================================
@@ -397,7 +397,7 @@ export const raceWeekendRecap = {
   enabled: true,
   title: "LENOVO AUSTRIAN GRAND PRIX",
   sections:
-    WEEKEND_FORMAT === "Sprint"
+    WEEKEND_FORMAT === "sprint"
       ? [
           {
             heading: "Practice",
@@ -553,7 +553,7 @@ export const nextRaceContent = {
 
 
  sessions:
-  WEEKEND_FORMAT === "regular"
+   WEEKEND_FORMAT !== "sprint"
     ? [
         {
           id: "p1",

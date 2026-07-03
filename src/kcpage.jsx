@@ -15,12 +15,13 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
-  label: "Austria Delivered: Full Race Weekend Recap",
-  title: "Austria Delivered: Full Race Weekend Recap",
-  body: "The Austrian Grand Prix is complete, but the Race Centre remains open with the full weekend recap, session results, weather, and race updates.",
+  enabled: true,
+  label: "Race Weekend Starts Tomorrow",
+  title: "British Grand Prix Race Centre",
+  body: "The British Grand Prix weekend starts tomorrow. Follow the full Race Centre for session times, results, weather, updates, and the weekend gallery.",
   buttonText: "Open Race Centre →",
   buttonLink: "/racecenter",
+  backgroundImage: "/img/news/raceposter/silverstone.jpg",
 };
 // Simple glassy card helper for the lower sections
 function GlassyCard({
@@ -137,7 +138,15 @@ function RaceWeekendPromo() {
   if (!raceWeekendPromo.enabled) return null;
 
   return (
-    <section className="mt-1 rounded-3xl border border-cyan-400/35 bg-black/70 px-4 py-4 text-center shadow-[0_0_24px_rgba(34,211,238,0.35)] backdrop-blur-2xl sm:px-6 sm:py-5">
+    <section
+  className="relative mt-1 overflow-hidden rounded-3xl border border-cyan-400/35 bg-black/70 px-4 py-4 text-center shadow-[0_0_24px_rgba(34,211,238,0.35)] backdrop-blur-2xl sm:px-6 sm:py-5"
+  style={{
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)), url(${safeLocalImagePath(raceWeekendPromo.backgroundImage)})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="relative z-10"></div>
       <div className="mx-auto max-w-3xl">
         <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-cyan-300 sm:text-xs">
           {raceWeekendPromo.label}
@@ -160,6 +169,7 @@ function RaceWeekendPromo() {
           </Link>
         </div>
       </div>
+      
     </section>
   );
 }
