@@ -20,7 +20,7 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpb-hamiltonsilver.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },

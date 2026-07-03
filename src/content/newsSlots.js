@@ -2,41 +2,41 @@ export const newsSlots = [
 {
   slotId: "1",
   sourceLabel: "Crash.net",
-  title: "Norris Says He Would Welcome Verstappen As McLaren Team-Mate",
+  title: "Hamilton Sets The Early Pace At Silverstone",
   summary:
-    "Lando Norris says he would love to have Max Verstappen as a McLaren team-mate, even as questions remain over how such a move could actually happen. Verstappen continues to be linked with a possible move away from Red Bull after reports of McLaren talks during the Austrian Grand Prix weekend.",
+    "Lewis Hamilton started the British Grand Prix weekend on top in the only practice session before Sprint Qualifying. With limited running on a Sprint weekend, every lap mattered as teams tried to lock in their direction quickly.",
   kcsQuickShift:
-    "This is the kind of rumour that will not go away quickly, but Norris’ response shows he is not afraid of sharing a garage with the toughest benchmark in F1.",
-  url: "https://www.crash.net/f1/news/1099968/1/i-would-love-max-verstappen-be-my-team-mate-lando-norris-reacts-mclaren-rumours",
-  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
-  photoCredit: "XPB IMAGE",
-  dateLabel: "July 2, 2026",
+    "KC’s Quick Shift: Hamilton topping practice at Silverstone is the perfect headline to open the British Grand Prix weekend.",
+  url: "https://www.crash.net/f1/news/1100047/1/lewis-hamilton-outpaces-mercedes-sole-silverstone-f1-practice-british-gp-mclaren",
+  imagePath: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 3, 2026"
 },
 {
   slotId: "2",
-  sourceLabel: "Crash.net",
-  title: "Honda Confirms Power Unit Upgrade For Dutch Grand Prix",
+  sourceLabel: "The Race",
+  title: "British GP Practice Result Sets Up Sprint Qualifying",
   summary:
-    "Honda has confirmed it will bring a Formula 1 power unit upgrade at the Dutch Grand Prix as Aston Martin continues trying to recover from a difficult start to 2026. The upgrade comes after Honda qualified for extra development help under the FIA’s ADUO system, with Aston Martin still searching for a major step forward.",
+    "The sole practice session gave teams their only real setup read before the competitive action begins at Silverstone. The result gives Hamilton and Mercedes an early boost, but Sprint Qualifying will show who really has the pace.",
   kcsQuickShift:
-    "This is a big one for Aston Martin, because chassis upgrades alone will not fix the AMR26 if Honda cannot close the power unit gap.",
-  url: "https://www.crash.net/f1/news/1099971/1/honda-confirm-f1-power-unit-upgrade-dutch-grand-prix-aid-aston-martin-recovery",
-  imagePath: "/img/news/xpb/Aston/news-astonlivery.jpg",
-  photoCredit: "XPB IMAGE",
-  dateLabel: "July 2, 2026",
+    "KC’s Quick Shift: Practice is only practice, but on a Sprint weekend it carries a lot more weight.",
+  url: "https://www.the-race.com/formula-1/f1-british-gp-2026-practice-result/",
+  imagePath: "/img/news/Ferrari/Lewis/news-lewisandcharlesmontreal.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "July 3, 2026"
 },
 {
   slotId: "3",
-  sourceLabel: "Read Motorsport",
-  title: "Antonelli Lead Turns British GP Into Silverstone Pressure Test",
+  sourceLabel: "RacingNews365",
+  title: "Hamilton Throws Down Early Mercedes Challenge",
   summary:
-    "Kimi Antonelli arrives at Silverstone with a 40-point championship lead, but the British Grand Prix puts that advantage under real pressure. George Russell heads into the weekend with Mercedes momentum after Austria, while Lewis Hamilton brings Ferrari attention to his home race.",
+    "Hamilton’s strong practice pace put Mercedes right in the middle of the Silverstone conversation. With George Russell arriving from an Austrian Grand Prix win, Mercedes now has real momentum heading into the rest of the weekend.",
   kcsQuickShift:
-    "Antonelli still has the points cushion, but Silverstone is exactly the kind of weekend where Russell, Hamilton, and the British crowd can change the tone fast.",
-  url: "https://readmotorsport.com/2026/07/02/antonelli-british-gp-timetable-silverstone-pressure/",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbkimiwinsmiami.jpg",
+    "KC’s Quick Shift: Mercedes already looked dangerous before the weekend, and Hamilton just added more fuel to that story.",
+  url: "https://www.crash.net/f1/news/1100047/1/lewis-hamilton-outpaces-mercedes-sole-silverstone-f1-practice-british-gp-mclaren",
+  imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 2, 2026",
+  dateLabel: "July 3, 2026"
 },
 {
   slotId: "4",

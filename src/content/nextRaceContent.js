@@ -352,6 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m29.260s	31
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m29.473s	28
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m29.859s	31
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m29.938s	30
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m30.147s	24
+6	Max Verstappen	NED	Oracle Red Bull Racing	1m30.240s	26
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m30.288s	27
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m30.338s	27
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m30.743s	28
+10	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m30.850s	27
+11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m30.966s	27
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m31.035s	28
+13	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m31.339s	31
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m31.373s	26
+15	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m31.684s	32
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m31.684s	27
+17	Alex Albon	THA	Atlassian Williams F1 Team	1m31.697s	30
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m32.150s	21
+19	Sergio Perez	MEX	Cadillac F1 Team	1m32.241s	23
+20	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m32.957s	24
+21	Pierre Gasly	FRA	BWT Alpine F1 Team	1m33.019s	24
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m33.130s	25
 
 `;
 
@@ -403,10 +425,10 @@ export const raceWeekendRecap = {
             heading: "Practice",
             items: [
               {
-                title: "",
+                title: "Hamilton Tops Silverstone Practice As Sprint Weekend Begins",
                 summary:
-                  "",
-                url: "",
+                  "Lewis Hamilton opened the British Grand Prix weekend fastest in the only practice session at Silverstone before Sprint Qualifying. With this being a Sprint weekend, teams had just one hour to gather data, check balance, and make decisions before the competitive sessions begin. Mercedes looks sharp early, but the real test comes quickly with Sprint Qualifying later today.",
+                url: "https://www.marca.com/motor/formula1/gp-gran-bretana/2026/07/03/hamilton-sonar-silverstone-viene.html",
               },
             ],
           },
