@@ -16,9 +16,9 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 const raceWeekendPromo = {
   enabled: true,
-  label: "Race Weekend Starts Tomorrow",
+  label: "Race Weekend Is Live",
   title: "British Grand Prix Race Centre",
-  body: "The British Grand Prix weekend starts tomorrow. Follow the full Race Centre for session times, results, weather, updates, and the weekend gallery.",
+  body: "The British Grand Prix weekend is underway. Follow the full Race Centre for session times, results, weather, updates, and the weekend gallery.",
   buttonText: "Open Race Centre →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/silverstone.jpg",
