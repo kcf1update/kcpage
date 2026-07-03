@@ -1,40 +1,41 @@
 export const newsSlots = [
 {
   slotId: "1",
-  sourceLabel: "Crash.net",
-  title: "Hamilton Sets The Early Pace At Silverstone",
+  sourceLabel: "PlanetF1",
+  title: "Hamilton Takes Sprint Pole For British Grand Prix",
   summary:
-    "Lewis Hamilton started the British Grand Prix weekend on top in the only practice session before Sprint Qualifying. With limited running on a Sprint weekend, every lap mattered as teams tried to lock in their direction quickly.",
+    "Lewis Hamilton will start Saturday’s British Grand Prix Sprint from pole after edging Kimi Antonelli by just 0.011s at Silverstone. Max Verstappen starts third, with Charles Leclerc fourth, George Russell fifth, and Lando Norris sixth.",
   kcsQuickShift:
-    "KC’s Quick Shift: Hamilton topping practice at Silverstone is the perfect headline to open the British Grand Prix weekend.",
-  url: "https://www.crash.net/f1/news/1100047/1/lewis-hamilton-outpaces-mercedes-sole-silverstone-f1-practice-british-gp-mclaren",
-  imagePath: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
+    "Hamilton on Sprint pole at home is a massive Silverstone headline, but with Antonelli, Verstappen, Ferrari, Mercedes, and McLaren all packed near the front, this Sprint could get messy fast.",
+  url: "https://www.planetf1.com/news/f1-starting-grid-2026-british-grand-prix-sprint",
+  imagePath: "/img/news/xpb/ferrari/xpb-hamiltonpolesilver.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 3, 2026"
 },
 {
   slotId: "2",
-  sourceLabel: "The Race",
-  title: "British GP Practice Result Sets Up Sprint Qualifying",
+  sourceLabel: "RacingNews365 NL",
+  title: "Verstappen Pushes Red Bull For Answers After Sprint Qualifying",
   summary:
-    "The sole practice session gave teams their only real setup read before the competitive action begins at Silverstone. The result gives Hamilton and Mercedes an early boost, but Sprint Qualifying will show who really has the pace.",
+    "Max Verstappen was left frustrated after Sprint Qualifying at Silverstone, saying his Red Bull could just as easily have ended up sixth or seventh. The Dutchman made clear that Red Bull still has work to do after struggling to match the front runners over one lap.",
   kcsQuickShift:
-    "KC’s Quick Shift: Practice is only practice, but on a Sprint weekend it carries a lot more weight.",
-  url: "https://www.the-race.com/formula-1/f1-british-gp-2026-practice-result/",
-  imagePath: "/img/news/Ferrari/Lewis/news-lewisandcharlesmontreal.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
+    "Verstappen starting near the sharp end still keeps him dangerous, but his message was blunt: Red Bull needs to find more speed before the Sprint turns into damage limitation.",
+  url: "https://racingnews365.nl/verstappen-zet-red-bull-aan-het-werk-had-net-zo-goed-p6-of-p7-kunnen-zijn",
+  imagePath: "/img/news/xpb/RedBull/xpb-maxsilver.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "July 3, 2026"
+
 },
 {
   slotId: "3",
-  sourceLabel: "RacingNews365",
-  title: "Hamilton Throws Down Early Mercedes Challenge",
+  sourceLabel: "PlanetF1",
+  title: "FIA Opens Two Sprint Qualifying Investigations",
   summary:
-    "Hamilton’s strong practice pace put Mercedes right in the middle of the Silverstone conversation. With George Russell arriving from an Austrian Grand Prix win, Mercedes now has real momentum heading into the rest of the weekend.",
+    "Alex Albon and Arvid Lindblad were called to the stewards after British Grand Prix Sprint Qualifying over alleged breaches of the race director’s instructions. The issue centred on driving unnecessarily slowly during the session, with Albon qualifying 16th and Lindblad 10th.",
   kcsQuickShift:
-    "KC’s Quick Shift: Mercedes already looked dangerous before the weekend, and Hamilton just added more fuel to that story.",
-  url: "https://www.crash.net/f1/news/1100047/1/lewis-hamilton-outpaces-mercedes-sole-silverstone-f1-practice-british-gp-mclaren",
-  imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
+    "Not the headline either driver wanted after Sprint Qualifying, especially with Lindblad starting inside the top 10 and Albon already needing a clean weekend at Silverstone.",
+  url: "https://www.planetf1.com/news/fia-british-grand-prix-2026-sprint-qualifying",
+  imagePath: "/img/news/xpb/Williams/xpbAlex.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 3, 2026"
 },

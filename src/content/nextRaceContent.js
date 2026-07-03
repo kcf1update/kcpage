@@ -385,6 +385,116 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
+1	44	
+
+Lewis Hamilton
+
+Ferrari	1:29.273	1:28.747	1:28.376	14
+2	12	
+
+Kimi Antonelli
+
+Mercedes	1:29.746	1:28.846	1:28.387	15
+3	3	
+
+Max Verstappen
+
+Red Bull Racing	1:29.689	1:29.242	1:28.697	12
+4	16	
+
+Charles Leclerc
+
+Ferrari	1:29.380	1:28.922	1:28.703	14
+5	63	
+
+George Russell
+
+Mercedes	1:29.675	1:29.246	1:28.733	15
+6	1	
+
+Lando Norris
+
+McLaren	1:30.142	1:29.401	1:28.740	15
+7	81	
+
+Oscar Piastri
+
+McLaren	1:29.583	1:29.120	1:28.772	12
+8	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:29.470	1:29.280	1:28.835	14
+9	30	
+
+Liam Lawson
+
+Racing Bulls	1:29.850	1:29.067	1:28.927	12
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:30.453	1:29.330	1:29.367	12
+11	10	
+
+Pierre Gasly
+
+Alpine	1:30.444	1:29.482		9
+12	5	
+
+Gabriel Bortoleto
+
+Audi	1:30.407	1:29.679		12
+13	27	
+
+Nico Hulkenberg
+
+Audi	1:30.107	1:29.707		12
+14	43	
+
+Franco Colapinto
+
+Alpine	1:30.894	1:29.983		9
+15	55	
+
+Carlos Sainz
+
+Williams	1:31.073	1:30.197		12
+16	23	
+
+Alex Albon
+
+Williams	1:30.779	1:30.650		13
+17	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:31.083			6
+18	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:31.714			6
+19	11	
+
+Sergio Perez
+
+Cadillac	1:31.776			6
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:32.020			6
+21	14	
+
+Fernando Alonso
+
+Aston Martin	1:32.910			5
+22	18	
+
+Lance Stroll
+
+Aston Martin	1:32.988			5
 
 	
 `;
@@ -436,10 +546,10 @@ export const raceWeekendRecap = {
             heading: "Sprint Qualifying",
             items: [
               {
-                title: "",
+                title: "Hamilton Grabs Sprint Pole As FIA Investigations Follow Silverstone Sprint Qualifying",
                 summary:
-                  "",
-                url: "",
+                  "Lewis Hamilton lit up Silverstone by taking pole for Saturday’s 17-lap British Grand Prix Sprint, edging Kimi Antonelli by just 0.011s. Max Verstappen starts third, with Charles Leclerc, George Russell, and Lando Norris close behind, setting up a strong front-end fight for the Sprint. Away from the headline lap, the FIA also summoned Alex Albon and Arvid Lindblad over alleged breaches tied to driving unnecessarily slowly during Sprint Qualifying, adding another layer of drama after the session.",
+                url: "https://www.planetf1.com/news/f1-starting-grid-2026-british-grand-prix-sprint",
               },
             ],
           },
@@ -581,7 +691,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 AM ADT",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -590,7 +700,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:30 AM ADT",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -599,10 +709,57 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "8:00 AM ADT",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
+        },
+        {
+          id: "q",
+          type: "qualifying",
+          label: "Qualifying",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_Q),
+        },
+        {
+          id: "race",
+          type: "race",
+          label: "Race",
+          time: "",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_RACE),
+        },
+      ]
+    : [
+        {
+          id: "p1",
+          type: "practice",
+          label: "Practice 1",
+          time: "Hamilton Tops Silverstone Practice As Sprint Weekend Begins, reults below",
+          trackNote: "",
+          extraNote: "",
+          results: parseLapPaste(PASTE_P1),
+        },
+        {
+          id: "sq",
+          type: "sprint_shootout",
+          label: "Sprint Qualifying",
+          time: "Hamilton on pole! Results below",
+          trackNote: "",
+          extraNote: "",
+          results: parseQualifyingPaste(PASTE_SQ),
+        },
+        {
+          id: "sprint",
+          type: "sprint_race",
+          label: "Sprint Race",
+          time: "8:00 AM ADT",
+          trackNote: "",
+          extraNote: "",
+          results: parseRacePaste(PASTE_SPRINT),
         },
         {
           id: "q",
@@ -616,55 +773,8 @@ export const nextRaceContent = {
         {
           id: "race",
           type: "race",
-          label: "Race",
-          time: "11:00 AM ADT",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_RACE),
-        },
-      ]
-    : [
-        {
-          id: "p1",
-          type: "practice",
-          label: "Practice 1",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseLapPaste(PASTE_P1),
-        },
-        {
-          id: "sq",
-          type: "sprint_shootout",
-          label: "Sprint Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_SQ),
-        },
-        {
-          id: "sprint",
-          type: "sprint_race",
-          label: "Sprint Race",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseRacePaste(PASTE_SPRINT),
-        },
-        {
-          id: "q",
-          type: "qualifying",
-          label: "Qualifying",
-          time: "",
-          trackNote: "",
-          extraNote: "",
-          results: parseQualifyingPaste(PASTE_Q),
-        },
-        {
-          id: "race",
-          type: "race",
           label: "Race Results",
-          time: "",
+          time: "11:00 AM ADT",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
