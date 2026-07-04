@@ -1,27 +1,27 @@
 export const newsSlots = [
 {
-  slotId: "1",
-  sourceLabel: "RacingNews365",
-  title: "Antonelli Wins British Sprint Duel with Hamilton",
+ slotId: "1",
+  sourceLabel: "PlanetF1",
+  title: "Antonelli Takes British Grand Prix Pole Ahead Of Ferrari Pair",
   summary:
-    "Kimi Antonelli strengthened his title hopes with victory in the British Grand Prix Sprint after coming out on top in a key fight with Lewis Hamilton. The result gives Antonelli a major boost on a busy Saturday at Silverstone.",
+    "Kimi Antonelli delivered when it mattered in British Grand Prix qualifying, taking pole at Silverstone with a 1:28.111. Charles Leclerc and Lewis Hamilton completed the top three for Ferrari, while George Russell recovered from a Q1 trip into the barrier to qualify fourth.",
   kcsQuickShift:
-    "That is a big statement from Antonelli — winning the sprint and beating Hamilton in that kind of fight will only add more pressure to the title picture.",
-  url: "https://racingnews365.com/kimi-antonelli-wins-lewis-hamilton-british-sprint-duel-to-boost-title-chances",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
-  photoCredit: "XPB IMAGE",
+    "KC's Quick Shift: Antonelli landing pole ahead of both Ferraris is a big statement, and McLaren being only sixth and eighth makes Sunday much more interesting.",
+  url: "https://www.planetf1.com/news/british-grand-prix-2026-qualifying-report",
+  imagePath: "/img/news/xpb/xpb-silverpole.jpg",
+  photoCredit: "XPB IMAGES",
   dateLabel: "July 4, 2026"
 },
 {
   slotId: "2",
-  sourceLabel: "Motorsport.com",
-  title: "Antonelli Beats Hamilton to Win British GP Sprint",
+  sourceLabel: "Crash.net",
+  title: "Antonelli Storms To Silverstone Pole As Ferrari Fall Short",
   summary:
-    "Kimi Antonelli won the British Grand Prix Sprint at Silverstone after beating Lewis Hamilton in a key fight for the lead. Lando Norris completed the top three, while the result gave Antonelli another valuable boost in the championship picture.",
+    "Kimi Antonelli took a convincing British Grand Prix pole at Silverstone, beating Charles Leclerc by 0.175 seconds as Ferrari’s qualifying threat faded in Q3. Lewis Hamilton qualified third, with George Russell recovering from a Q1 front-wing crash to take fourth.",
   kcsQuickShift:
-    "This gives the top of your news page a strong sprint-race lead — Antonelli took the win, Hamilton kept the home crowd involved, and Norris gave McLaren something to build on.",
-  url: "https://www.motorsport.com/f1/news/f1-british-gp-sprint-antonelli-beats-hamilton-to-win/10836132/",
-  imagePath: "/img/news/xpb/Races/xpb-silversprintpodium.jpg",
+    "KC's Quick Shift: Antonelli is starting to look seriously composed under pressure, and Ferrari missed a real chance to turn strong pace into pole.",
+  url: "https://www.crash.net/f1/news/1100234/1/kimi-antonelli-storms-silverstone-pole-ferrari-pace-falters-f1-british-gp",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 4, 2026"
 

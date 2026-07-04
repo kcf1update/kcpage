@@ -523,6 +523,116 @@ const PASTE_SPRINT = `
 22	Sergio Perez	MEX	Cadillac F1 Team	+1 Lap
 `;
 const PASTE_Q = `
+1	12	
+
+Kimi Antonelli
+
+Mercedes	1:29.719	1:28.493	1:28.111	19
+2	16	
+
+Charles Leclerc
+
+Ferrari	1:29.534	1:28.626	1:28.286	18
+3	44	
+
+Lewis Hamilton
+
+Ferrari	1:29.644	1:28.864	1:28.458	17
+4	63	
+
+George Russell
+
+Mercedes	1:29.985	1:28.920	1:28.481	17
+5	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:29.276	1:29.069	1:28.746	18
+6	1	
+
+Lando Norris
+
+McLaren	1:30.186	1:29.383	1:28.877	17
+7	3	
+
+Max Verstappen
+
+Red Bull Racing	1:29.549	1:29.113	1:28.893	18
+8	81	
+
+Oscar Piastri
+
+McLaren	1:29.971	1:29.218	1:29.032	18
+9	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:29.661	1:29.324	1:29.305	17
+10	30	
+
+Liam Lawson
+
+Racing Bulls	1:29.300	1:29.429	1:29.716	20
+11	5	
+
+Gabriel Bortoleto
+
+Audi	1:30.269	1:29.461		10
+12	10	
+
+Pierre Gasly
+
+Alpine	1:30.345	1:30.063		12
+13	27	
+
+Nico Hulkenberg
+
+Audi	1:29.539	1:30.076		15
+14	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:30.570	1:30.501		15
+15	55	
+
+Carlos Sainz
+
+Williams	1:30.562	1:30.623		15
+16	23	
+
+Alex Albon
+
+Williams	1:30.638	1:31.341		14
+17	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:30.680			9
+18	77	
+
+Valtteri Bottas
+
+Cadillac	1:31.227			8
+19	43	
+
+Franco Colapinto
+
+Alpine	1:31.321			5
+20	11	
+
+Sergio Perez
+
+Cadillac	1:31.451			9
+21	18	
+
+Lance Stroll
+
+Aston Martin	1:32.863			9
+22	14	
+
+Fernando Alonso
+
+Aston Martin	1:33.025			9
 
 
 `;
@@ -589,10 +699,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Antonelli Takes Silverstone Pole As Ferrari Lock Out The Chase",
                 summary:
-                  "",
-                url: "",
+                  "Kimi Antonelli delivered a major statement in British Grand Prix qualifying, taking pole at Silverstone with a 1:28.111 after Ferrari had looked dangerous through the weekend. Charles Leclerc qualified second, Lewis Hamilton third, and George Russell recovered from a Q1 front-wing crash to take fourth. McLaren were left with work to do, with Lando Norris sixth and Oscar Piastri eighth, setting up a very interesting race on Sunday.",
+                url: "https://www.crash.net/f1/news/1100234/1/kimi-antonelli-storms-silverstone-pole-ferrari-pace-falters-f1-british-gp",
               },
             ],
           },
@@ -786,7 +896,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "12:00 PM ADT",
+          time: "Antonelli on pole! Results belowS",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
