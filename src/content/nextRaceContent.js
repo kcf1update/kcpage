@@ -499,7 +499,28 @@ Aston Martin	1:32.988			5
 	
 `;
 const PASTE_SPRINT = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	17
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	+2.745s
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	+9.783s
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	+10.639s
+5	Charles Leclerc	MON	Scuderia Ferrari HP	+12.620s
+6	Max Verstappen	NED	Oracle Red Bull Racing	+16.550s
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+17.551s
+8	Liam Lawson	NZD	Racing Bulls	+30.233s
+9	Isack Hadjar	FRA	Oracle Red Bull Racing	+30.953s
+10	Arvid Lindblad	GBR	Racing Bulls	+35.110s
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	+40.273s
+12	Franco Colapinto	ARG	BWT Alpine F1 Team	+41.026s
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	+41.680s
+14	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+42.499s
+15	Ollie Bearman	GBR	TGR Haas F1 Team	+45.784s
+16	Esteban Ocon	FRA	TGR Haas F1 Team	+69.810s
+17	Carlos Sainz	ESP	Atlassian Williams F1 Team	+50.379s
+18	Alex Albon	THA	Atlassian Williams F1 Team	+50.757s
+19	Valtteri Bottas	FIN	Cadillac F1 Team	+75.117s
+20	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+91.872s
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+ 1 Lap
+22	Sergio Perez	MEX	Cadillac F1 Team	+1 Lap
 `;
 const PASTE_Q = `
 
@@ -557,10 +578,10 @@ export const raceWeekendRecap = {
             heading: "Sprint Race",
             items: [
               {
-                title: "",
+                title: "Antonelli Beats Hamilton to Win Silverstone Sprint",
                 summary:
-                  "",
-                url: "",
+                  "Kimi Antonelli delivered a major statement at Silverstone, winning the British Grand Prix Sprint after beating Lewis Hamilton in a key fight at the front. Hamilton kept the pressure on in front of the home crowd, but Antonelli had enough pace and control to take the sprint victory, while Lando Norris completed the top three for McLaren. The result gives Antonelli another important boost in the title fight before full qualifying later today.",
+                url: "https://racingnews365.com/kimi-antonelli-wins-lewis-hamilton-british-sprint-duel-to-boost-title-chances",
               },
             ],
           },
@@ -756,7 +777,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "8:00 AM ADT",
+          time: "Kimi wins, thrilling race! Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
