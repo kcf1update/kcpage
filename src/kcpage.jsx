@@ -16,10 +16,10 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // =======================================================
 const raceWeekendPromo = {
   enabled: true,
-  label: "Race Weekend Is Live",
+  label: "Race Weekend Results",
   title: "British Grand Prix Race Centre",
-  body: "The British Grand Prix weekend is underway. Follow the full Race Centre for session times, results, weather, updates, and the weekend gallery.",
-  buttonText: "Open Race Centre →",
+  body: "The British Grand Prix is complete. Full race results, session summaries, weekend updates, and the photo gallery are available now in the Race Centre.",
+  buttonText: "View Race Results →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/silverstone.jpg",
 };

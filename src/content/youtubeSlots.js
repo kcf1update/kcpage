@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lando Norris: ‘Success Is Addictive’ | F1 Beyond The Grid Podcast",
-  youtubeInput: "https://youtu.be/zT_0buoHfSE",
+  title: "Race Highlights | 2026 British Grand Prix",
+  youtubeInput: "https://youtu.be/rnjmSOUYVp8",
   forceExternal :"blue" 
   },
 
   {
     slotId: "slot2",
-    title: "Max Verstappen’s McLaren talks: What’s really going on",
-    youtubeInput: "https://youtu.be/Q5r50qMMbJo",
+    title: "VERSTAPPEN RAGES AT RED BULL FAILURE!",
+    youtubeInput: "https://youtu.be/-ZKKykDQwIo",
    
   },
 

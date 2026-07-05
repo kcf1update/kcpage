@@ -2,70 +2,70 @@ export const newsSlots = [
 {
  slotId: "1",
   sourceLabel: "PlanetF1",
-  title: "Antonelli Takes British Grand Prix Pole Ahead Of Ferrari Pair",
+  title: "Leclerc Wins British Grand Prix After Late Safety Car Drama",
   summary:
-    "Kimi Antonelli delivered when it mattered in British Grand Prix qualifying, taking pole at Silverstone with a 1:28.111. Charles Leclerc and Lewis Hamilton completed the top three for Ferrari, while George Russell recovered from a Q1 trip into the barrier to qualify fourth.",
+    "Charles Leclerc won the British Grand Prix after a dramatic late Safety Car ended the race behind the Safety Car. George Russell finished second, Lewis Hamilton completed the podium for Ferrari, and Max Verstappen’s late off at Stowe changed the closing laps.",
   kcsQuickShift:
-    "KC's Quick Shift: Antonelli landing pole ahead of both Ferraris is a big statement, and McLaren being only sixth and eighth makes Sunday much more interesting.",
-  url: "https://www.planetf1.com/news/british-grand-prix-2026-qualifying-report",
-  imagePath: "/img/news/xpb/xpb-silverpole.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 4, 2026"
+    "Ferrari had the pace, Mercedes had the heartbreak, and Silverstone delivered one of the strangest finishes of the season.",
+  url: "https://www.planetf1.com/news/british-grand-prix-2026-race-report",
+  imagePath: "/img/news/xpb/ferrari/xpb-charleswin.jpg",
+  photoCredit: "XPB IMAGEs",
+  dateLabel: "July 5, 2026",
 },
 {
-  slotId: "2",
-  sourceLabel: "Crash.net",
-  title: "Antonelli Storms To Silverstone Pole As Ferrari Fall Short",
+   slotId: "2",
+  sourceLabel: "RacingNews365",
+  title: "Leclerc Relieved After Ending Difficult Ferrari Run",
   summary:
-    "Kimi Antonelli took a convincing British Grand Prix pole at Silverstone, beating Charles Leclerc by 0.175 seconds as Ferrari’s qualifying threat faded in Q3. Lewis Hamilton qualified third, with George Russell recovering from a Q1 front-wing crash to take fourth.",
+    "Charles Leclerc admitted his recent run had been mentally difficult before finally putting everything together at Silverstone. He said Antonelli’s late pace would have made the finish close, but Antonelli’s issue and the late Safety Car helped Leclerc bring home his first win in almost two years.",
   kcsQuickShift:
-    "KC's Quick Shift: Antonelli is starting to look seriously composed under pressure, and Ferrari missed a real chance to turn strong pace into pole.",
-  url: "https://www.crash.net/f1/news/1100234/1/kimi-antonelli-storms-silverstone-pole-ferrari-pace-falters-f1-british-gp",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 4, 2026"
+    "This was more than just a race win for Leclerc — it looked like a reset after weeks of pressure, mistakes, and questions beside Hamilton at Ferrari.",
+  url: "https://racingnews365.com/charles-leclerc-voices-relief-after-overcoming-mentally-difficult-f1-period",
+  imagePath: "/img/news/Ferrari/Leclerc/charleswinsilver.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "July 5, 2026",
 
 },
 {
   slotId: "3",
-  sourceLabel: "ESPN",
-  title: "Russell Questions Ferrari Pace at Silverstone",
+  sourceLabel: "Motorsport.com",
+  title: "Five Takeaways From Leclerc’s British GP Win",
   summary:
-    "George Russell says Ferrari’s pace at the British Grand Prix has left him puzzled, with Mercedes trying to understand why the competitive picture has shifted so sharply at Silverstone.",
+    "Motorsport.com breaks down the bigger picture from Silverstone, with Charles Leclerc answering recent questions at Ferrari, George Russell closing the Mercedes points gap, and Red Bull, McLaren, and Racing Bulls all leaving with very different concerns.",
   kcsQuickShift:
-    "Russell’s comments tell the story of a strange weekend so far — Mercedes looked strong, but Ferrari’s pace has raised questions that still need answers.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49224445/british-grand-prix-formula-1-silverstone-george-russell-baffled-ferrari-pace-british-gp-some-things-quite-making-sense",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
+    "The result was big, but the story underneath is even bigger: Ferrari found life, Mercedes tightened up, Red Bull exposed a weakness, and Racing Bulls keeps proving it belongs in the fight.",
+  url: "https://www.motorsport.com/f1/news/five-quick-takeaways-from-british-gp/10836585/",
+  imagePath: "/img/news/xpb/Races/xpb-silverrace.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 4, 2026"
+  dateLabel: "July 5, 2026",
 },
 
 {
   slotId: "4",
-  sourceLabel: "The Race",
-  title: "Mercedes Finds Legal Workaround for Qualifying Trick",
+  sourceLabel: "FormulaPassion",
+  title: "Prima calmarsi con Vasseur, poi l’esplosione di Leclerc: “I momenti duri non durano per sempre”",
   summary:
-    "Mercedes has found a legal way to bring back part of a previously banned qualifying tactic, giving the team another detail to lean on during a tight British Grand Prix weekend.",
+    "Charles Leclerc ha celebrato via radio una vittoria molto emotiva a Silverstone dopo settimane difficili con la Ferrari. L’articolo racconta anche il momento in cui Vasseur gli ha chiesto di restare calmo durante la confusione finale con la Safety Car.",
   kcsQuickShift:
-    "This is the kind of small technical edge that matters at Silverstone, especially with Mercedes, Ferrari, McLaren and Red Bull all looking for any advantage they can find.",
-  url: "https://www.the-race.com/formula-1/mercedes-finds-legal-way-to-revive-banned-f1-qualifying-trick/",
-  imagePath: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 4, 2026"
+    "Leclerc did not just win the British Grand Prix — he finally got the release he needed after weeks of pressure at Ferrari.",
+  url: "https://www.formulapassion.it/f1/f1-news/prima-calmiamoci-vasseur-poi-leclerc-esplode-momenti-duri-non-durano-per-sempre-silverstone-ferrari",
+  imagePath: "/img/news/xpb/Races/charlessilver3.jpg",
+  photoCredit: "Courtesy of Ferrari F1",
+  dateLabel: "July 5, 2026",
 },
 
 {
   slotId: "5",
-  sourceLabel: "Marca",
-  title: "McLaren Reconoce Conversaciones con Verstappen EN: McLaren Acknowledges Talks with Verstappen",
+  sourceLabel: "Crash.net",
+  title: "Hamilton Keeps British GP Podium After Post-Race Review",
   summary:
-    "McLaren primero negó las conversaciones relacionadas con Max Verstappen, pero luego reconoció que hubo contactos que no llegaron a buen puerto. The story adds another layer to the ongoing Verstappen future rumours during the British Grand Prix weekend.",
+    "Lewis Hamilton avoided a post-race penalty after stewards reviewed a yellow flag incident from the British Grand Prix. That decision confirmed his third-place finish behind Charles Leclerc and George Russell, keeping Ferrari’s double-podium result intact.",
   kcsQuickShift:
-    "McLaren may be trying to quiet the noise, but Verstappen rumours are not going away easily. McLaren puede intentar apagar el ruido, pero los rumores sobre Verstappen siguen muy vivos.",
-  url: "https://www.marca.com/motor/formula1/gp-gran-bretana/2026/07/04/mclaren-niega-primero-luego-reconoce-conversaciones-verstappen-llegaron-buen-puerto.html",
-  imagePath: "/img/news/xpb/Mclaren/xpb-zacaustria.jpg",
-  photoCredit: "XPB IMAGEs",
-  dateLabel: "July 4, 2026"
+    "This mattered because a penalty could have changed the podium, but Hamilton keeps third and Ferrari leave Silverstone with a huge result.",
+  url: "https://www.crash.net/f1/news/1100357/1/lewis-hamilton-avoids-post-race-penalty-british-grand-prix",
+  imagePath: "/img/news/xpb/ferrari/news-xpblewis.jpg",
+  photoCredit: "XPB IMAGE",
+  dateLabel: "July 5, 2026",
 },
 
 {

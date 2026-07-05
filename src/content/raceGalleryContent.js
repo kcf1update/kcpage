@@ -71,17 +71,17 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpb-charleswin.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Races/xpb-silverrace.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Races/xpb-silverrace2.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },

@@ -638,8 +638,28 @@ Aston Martin	1:33.025			9
 `;
 
 const PASTE_RACE = `
-
-
+1	Charles Leclerc	MON	Scuderia Ferrari HP	52 Laps
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	+0.427s
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	+0.772s
+4	Lando Norris	GBR	McLaren Mastercard F1 Team	+1.149s
+5	Isack Hadjar	FRA	Oracle Red Bull Racing	+1.598s
+6	Liam Lawson	NZD	Racing Bulls	+2.023s
+7	Arvid Lindblad	GBR	Racing Bulls	+2.214s
+8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+2.413s
+9	Franco Colapinto	ARG	BWT Alpine F1 Team	+3.229s
+10	Pierre Gasly	FRA	BWT Alpine F1 Team	+3.445s
+11	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+4.014s
+12	Carlos Sainz	ESP	Atlassian Williams F1 Team	+4.391s
+13	Ollie Bearman	GBR	TGR Haas F1 Team	+5.245s
+14	Esteban Ocon	FRA	TGR Haas F1 Team	+5.512s
+15	Sergio Perez	MEX	Cadillac F1 Team	+7.403s
+16	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+8.005s
+17	Valtteri Bottas	FIN	Cadillac F1 Team	+8.162s
+18	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+1 Lap
+19	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+1 Lap
+20	Max Verstappen	NED	Oracle Red Bull Racing	+6 Laps
+DNF	Alex Albon	THA	Atlassian Williams F1 Team	+9 Laps
+DNF	Nico Hulkenberg	GER	Audi Revolut F1 Team	+16 Laps
 
 `;
 
@@ -710,10 +730,10 @@ export const raceWeekendRecap = {
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Leclerc Wins British Grand Prix After Late Safety Car Drama",
                 summary:
-                  "",
-                url: "",
+                  "Charles Leclerc won the British Grand Prix at Silverstone after a dramatic race that turned on Kimi Antonelli’s late Mercedes problem and Max Verstappen’s off at Stowe. Leclerc grabbed the lead at the start, controlled the race, and looked set for a comfortable Ferrari one-two before the late Safety Car changed the finish. George Russell stayed out under the Safety Car and took second, while Lewis Hamilton completed the podium in third for Ferrari. Lando Norris finished fourth, with Isack Hadjar, Liam Lawson, Arvid Lindblad, Gabriel Bortoleto, Franco Colapinto, and Pierre Gasly rounding out the points after Antonelli’s penalty dropped him out of the top ten. For Leclerc, it was more than just a win — after several difficult weekends, his emotional team radio said everything about the relief inside the Ferrari garage.",
+                url: "https://www.formulapassion.it/f1/f1-news/prima-calmiamoci-vasseur-poi-leclerc-esplode-momenti-duri-non-durano-per-sempre-silverstone-ferrari",
               },
             ],
           },
@@ -905,7 +925,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "11:00 AM ADT",
+          time: "Charles Leclerc wins the race! Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
