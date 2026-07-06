@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "VERSTAPPEN RAGES AT RED BULL FAILURE!",
-    youtubeInput: "https://youtu.be/-ZKKykDQwIo",
-   
+    title: "Leclerc 'Transforms The Narrative' | British GP Review | F1 Nation Podcast",
+    youtubeInput: "https://youtu.be/KshaI4jidq0",
+   forceExternal :"blue"
   },
 
   {
     slotId: "slot3",
-    title: "Behind the Austrian Grand Prix: The Red Bull Upgrade That Could Decide Verstappen’s Future",
-    youtubeInput: "https://youtu.be/XqqHFysfCfM",
+    title: "2026 F1 BRITISH GP race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/-Tt8vjcS49k",
     
   }
 ];
