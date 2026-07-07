@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Race Highlights | 2026 British Grand Prix",
-  youtubeInput: "https://youtu.be/rnjmSOUYVp8",
-  forceExternal :"blue" 
+  title: "Frustration Builds between Verstappen and Red bull: Behind the scenes at the British Grand Prix",
+  youtubeInput: "https://youtu.be/i6hMotu-tq0",
+  
   },
 
   {
