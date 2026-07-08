@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Frustration Builds between Verstappen and Red bull: Behind the scenes at the British Grand Prix",
-  youtubeInput: "https://youtu.be/i6hMotu-tq0",
+  title: "Ferrari & Russell close in on Kimi Antonelli | The F1 Show Podcast",
+  youtubeInput: "https://youtu.be/hHHnoL1QT80",
   
   },
 
   {
     slotId: "slot2",
-    title: "Leclerc 'Transforms The Narrative' | British GP Review | F1 Nation Podcast",
-    youtubeInput: "https://youtu.be/KshaI4jidq0",
+    title: "Top 10 Onboards | 2026 British Grand Prix | Qatar Airways",
+    youtubeInput: "https://youtu.be/Ec2SJgw5sK4",
    forceExternal :"blue"
   },
 
   {
     slotId: "slot3",
-    title: "2026 F1 BRITISH GP race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/-Tt8vjcS49k",
+    title: "VERSTAPPEN McLAREN TALKS! F1 News",
+    youtubeInput: "https://youtu.be/--1sP9X42_0",
     
   }
 ];
