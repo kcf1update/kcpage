@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "Russell Wins Austria Thriller! Verstappen Charges Late, Ferrari Fade | 2026 Austrian GP Recap",
-  youtubeInput: "https://youtu.be/iDsvhyAPZZ4",
+  title: "British Grand Prix Recap: Leclerc Wins, Ferrari Hits 250, Antonelli Heartbreak",
+  youtubeInput: "https://youtu.be/tJAXVPcSkK8",
 },
 
   {
