@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/ferrari/xpb-hamiltonsilver.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpb-hamiltonpolesilver.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/RedBull/xpb-maxsilver.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -43,22 +43,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Races/xpb-silversprintpodium.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/xpb-zacandgpl.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/xpb-silverpole.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -71,17 +71,17 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/ferrari/xpb-charleswin.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Races/xpb-silverrace.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Races/xpb-silverrace2.jpg",
+          src: "",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
