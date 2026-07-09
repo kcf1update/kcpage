@@ -2,133 +2,141 @@ export const newsSlots = [
 {
   slotId: "1",
   sourceLabel: "Crash.net",
-  title: "Vasseur Keeps Ferrari Title Talk In Check",
+  title: "Verstappen and Red Bull Drifting Apart as Trust Comes Under Pressure",
   summary:
-    "Fred Vasseur is refusing to get carried away after Ferrari’s strong Silverstone weekend. He says Ferrari are improving step by step, but Mercedes still hold a small performance advantage and every race weekend has to be treated from scratch.",
+    "Ralf Schumacher believes Max Verstappen and Red Bull are moving further apart as disagreements over the car and internal decisions put their relationship under strain. Verstappen can also trigger an exit clause, adding even more uncertainty about his future.",
   kcsQuickShift:
-    "Fair enough from Vasseur. Ferrari looked strong at Silverstone, but one good weekend does not suddenly make them the team to beat.",
-  url: "https://www.crash.net/f1/news/1100419/1/i-never-did-it-why-fred-vasseur-continues-dismiss-ferrari-f1-title-talk",
-  imagePath: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
+    "The rumours keep getting louder, and Red Bull now has a serious job ahead if it wants to convince Verstappen to stay.",
+  url: "https://www.crash.net/f1/news/1100443/1/max-verstappen-and-red-bull-drifting-apart-after-breakdown-trust-claim-former-f1",
+  imagePath: "/img/news/xpb/RedBull/Maxcar.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 8, 2026",
+  dateLabel: "July 9, 2026",
 },
+
 {
   slotId: "2",
-  sourceLabel: "RacingNews365",
-  title: "Brundle Calls For Track Limits Rethink After Antonelli Penalty",
+  sourceLabel: "Crash.net",
+  title: "McLaren Sets Timeline for Upgrades After Changing Development Direction",
   summary:
-    "Martin Brundle believes Formula 1 should look again at how track limits penalties are applied after Kimi Antonelli was punished at Silverstone. Antonelli picked up a five second penalty while fighting a damaged Mercedes, even though Brundle argued he gained no real advantage.",
+    "McLaren has changed its development approach after falling around half a second behind Mercedes and Ferrari. Andrea Stella expects the first results of the new direction to appear in Hungary, with further upgrades planned around the summer shutdown.",
   kcsQuickShift:
-    "This is where common sense has to matter. Antonelli was trying to survive a broken car, not cheat the track.",
-  url: "https://racingnews365.com/martin-brundle-calls-for-f1-rule-change-after-heartbreak-for-kimi-antonelli",
-  imagePath: "/img/news/shut/news-shutterstockbrundle.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "July 8, 2026",
+    "McLaren knows it chose the wrong development path early on, and now the real test is how quickly the team can recover.",
+  url: "https://www.crash.net/f1/news/1100438/1/mclaren-sets-out-timeline-catch-mercedes-after-f1-upgrade-redirection",
+  imagePath: "/img/news/xpb/Mclaren/news-landodnfcanadiangp.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 9, 2026",
 },
+
 {
   slotId: "3",
-  sourceLabel: "Motorsport.com",
-  title: "FIA Looks Into Red Bull And Ferrari Rotating Wings",
+  sourceLabel: "Read Motorsport",
+  title: "Verstappen Exit Clause Puts Red Bull Under Pressure as McLaren Rumours Grow",
   summary:
-    "The FIA is examining the rotating rear wing designs used by Red Bull and Ferrari after concerns around safety and compliance. Both teams have raced the concept this season, and the governing body wants to make sure the designs meet all required safety standards.",
+    "Max Verstappen is now in a position to trigger an exit clause after his British Grand Prix retirement left him unable to reach the top two in the championship before the summer break. McLaren continues to be mentioned as a possible destination if he decides to leave Red Bull.",
   kcsQuickShift:
-    "This is exactly the kind of technical story that can get very serious very quickly if the FIA sees anything it does not like.",
-  url: "https://www.motorsport.com/f1/news/fia-looking-into-red-bull-and-ferraris-rotating-f1-wings-after-max-verstappens-crashes/10837274/",
-  imagePath: "/img/news/kcai/rotatingwing.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "4",
-  sourceLabel: "Nextgen Auto",
-  title: "Verstappen Future Tension Report Adds More Pressure At Red Bull",
-  summary:
-    "Fresh reports from the Netherlands suggest tension is growing between Max Verstappen and Red Bull as uncertainty over his future continues. The report claims Red Bull shareholders want clarity, while Verstappen’s camp is said to be frustrated with recent team decisions.",
-  kcsQuickShift:
-    "This is still a report, so it needs careful wording, but the noise around Verstappen and Red Bull is not going away.",
-  url: "https://motorsport.nextgen-auto.com/en/formula-1/mateschitz-losing-patience-with-verstappen-report,209758.html#google_vignette",
+    "For the first time in years, Verstappen genuinely appears to have both the opportunity and a possible reason to leave Red Bull.",
+  url: "https://readmotorsport.com/2026/07/08/verstappen-exit-clause-red-bull-mclaren-watch/",
   imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 8, 2026",
 },
+
 {
-  slotId: "5",
+  slotId: "4",
   sourceLabel: "RacingNews365",
-  title: "Piastri Rumours Cooled As McLaren Future Looks Stable",
+  title: "Newey Hopes Aston Martin Upgrade Can Convince Alonso to Stay",
   summary:
-    "RacingNews365 reports that Oscar Piastri is not planning to leave McLaren despite recent paddock rumours. Sources close to the team and driver say nothing has changed, with Piastri expected to remain part of McLaren’s plans for the foreseeable future.",
+    "Adrian Newey says Aston Martin must show Fernando Alonso clear and tangible progress if it wants him to remain with the team. Alonso is looking forward to the upcoming upgrade, which could play an important role in his decision about another season.",
   kcsQuickShift:
-    "That sounds much more realistic. McLaren have no reason to let Piastri go while he is such a big part of their future.",
-  url: "https://racingnews365.com/oscar-piastri-set-to-stay-at-mclaren-for-the-foreseeable-future",
-  imagePath: "/img/news/xpb/Mclaren/xpboscar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "6",
-  sourceLabel: "Marca",
-  title: "Newey Mejorará Aston Martin, Pero El Fracaso Sigue Pesando | Newey Can Improve Aston Martin, But The Failure Still Weighs Heavy",
-  summary:
-    "Marca analiza el enorme reto que tiene Aston Martin después de una temporada decepcionante, incluso con Adrian Newey como gran esperanza técnica. La llegada de Newey puede cambiar el rumbo del equipo, pero las expectativas ya son muy altas. English: Marca looks at the pressure facing Aston Martin after a difficult season, even with Adrian Newey seen as the major technical hope. Newey can help move the team forward, but the expectations around him are already massive.",
-  kcsQuickShift:
-    "Newey can help Aston Martin, no question, but one person does not fix a whole team overnight. En español: Newey puede ayudar a Aston Martin, sin duda, pero una sola persona no arregla todo un equipo de la noche a la mañana.",
-  url: "https://www.marca.com/motor/formula1/2026/07/08/newey-mejorara-aston-martin-fracaso-mayusculo.html",
+    "Alonso does not need promises at this stage of his career, he needs to see real progress on the track.",
+  url: "https://racingnews365.com/adrian-newey-eyeing-important-factor-to-keep-fernando-alonso-at-aston-martin",
   imagePath: "/img/news/xpb/Aston/xpbadrian.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "7",
-  sourceLabel: "AutoHebdo",
-  title: "Carlos Sainz Veut Des Changements En Qualifications | Carlos Sainz Wants Qualifying Changes",
-  summary:
-    "Carlos Sainz veut que la Formule 1 revoie la manière dont les qualifications sont gérées lorsqu’un incident se produit en piste. Après la polémique autour de la pole de George Russell en Autriche, Sainz estime que les règles devraient être plus strictes pour éviter que certains pilotes puissent jouer avec les limites. English: Carlos Sainz wants Formula 1 to review how qualifying is handled when an incident happens on track. After the debate around George Russell’s Austrian pole, Sainz believes the rules should be stricter so drivers cannot work around the intent of the regulations.",
-  kcsQuickShift:
-    "Sainz has a fair point here. If a yellow flag situation is dangerous enough to affect one driver, it should not become a guessing game for everyone else. En français: Sainz marque un bon point ici. Si une situation de drapeau jaune est assez dangereuse pour gêner un pilote, elle ne devrait pas devenir un jeu de devinettes pour les autres.",
-  url: "https://www.autohebdo.fr/actualites/f1/carlos-sainz-veut-des-changements-en-qualifications.html",
-  imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "8",
-  sourceLabel: "GrandPrix247",
-  title: "Domenicali Signals More Sprint Weekends For 2027",
-  summary:
-    "Formula 1 CEO Stefano Domenicali says the Sprint format has helped increase fan interest and hinted that more Sprint weekends are planned for 2027. Silverstone marked five years since the format was first introduced, and F1 appears ready to expand it further.",
-  kcsQuickShift:
-    "Some fans love Sprints and some still hate them, but Formula 1 clearly sees them as part of the future.",
-  url: "https://www.grandprix247.com/formula-1-news/formula-1-ceo-stefano-domenicali-hails-the-sprint-concept-reveals-plans-to-have-more-in-2027",
-  imagePath: "/img/news/shut/news-shutterstockstefano.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "9",
-  sourceLabel: "ESPN",
-  title: "FIA Boss Backs Horner To Return To Formula 1",
-  summary:
-    "FIA president Mohammed Ben Sulayem says he believes Christian Horner can return to Formula 1, adding that everyone makes mistakes. The comments keep Horner’s future in the spotlight as speculation continues over where he could appear next in the paddock.",
-  kcsQuickShift:
-    "Horner being linked with a return was always going to create headlines. The bigger question is which team would actually take that step.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49224497/fia-boss-confident-christian-horner-get-back-formula-1-everybody-makes-mistakes",
-  imagePath: "/img/news/shut/news-shutterstocksalam.JPG",
-  photoCredit: "Shutterstock",
-  dateLabel: "July 8, 2026",
-},
-{
-  slotId: "10",
-  sourceLabel: "Irish Independent",
-  title: "Lando Norris Reacts To His Madame Tussauds Figure",
-  summary:
-    "Lando Norris was given a close look at his Madame Tussauds figure and reacted with surprise at the final result. It is a lighter feature, but a good one for Norris fans and especially useful for viewers in Ireland and the UK.",
-  kcsQuickShift:
-    "Not hard news, but it is a nice lighter Lando story to finish the list and give the page a bit of personality.",
-  url: "https://www.independent.ie/videos/this-is-crazy-says-lando-norris-as-f1-driver-views-madame-tussauds-figure/a/157704030.html",
-  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 8, 2026",
+  dateLabel: "July 9, 2026",
 },
 
+{
+  slotId: "5",
+  sourceLabel: "RacingNews365 NL",
+  title: "FIA president hint op spectaculaire F1 terugkeer van Horner | FIA President Hints at Spectacular Horner F1 Return",
+  summary:
+    "FIA president Mohammed Ben Sulayem verwacht dat Christian Horner terugkeert in de Formule 1, hoewel hij niet wil zeggen bij welk team. Horner verscheen onlangs voor het eerst in bijna een jaar weer in de paddock en wordt in verband gebracht met mogelijke kansen bij Alpine of een toekomstig project van BYD. | FIA president Mohammed Ben Sulayem expects Christian Horner to return to Formula 1, although he would not say with which team. Horner recently appeared in the paddock for the first time in almost a year and has been linked with possible opportunities at Alpine or a future BYD project.",
+  kcsQuickShift:
+    "Horner has the experience and record to attract attention, and it would not be surprising to see him back in Formula 1. | Horner heeft de ervaring en staat van dienst om aandacht te trekken, en het zou niet verrassend zijn om hem terug te zien in de Formule 1.",
+  url: "https://racingnews365.nl/fia-president-hint-op-spectaculaire-f1-terugkeer-horner",
+  imagePath: "/img/news/shut/news-christian.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "July 9, 2026",
+},
+
+{
+  slotId: "6",
+  sourceLabel: "Nextgen Auto",
+  title: "Bortoleto Disagrees With Alonso Over Criticism of 2026 F1 Cars",
+  summary:
+    "Gabriel Bortoleto has defended the 2026 Formula 1 regulations after Fernando Alonso argued that overtaking now depends too heavily on battery deployment instead of driver skill. Bortoleto believes the cars are still exciting to drive and says drivers simply need to adapt.",
+  kcsQuickShift:
+    "Bortoleto makes a fair point, but Alonso is also right to question whether overtaking should be decided so heavily by battery energy.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/bortoleto-disagrees-with-alonso-over-2026-f1-criticism,209772.html",
+  imagePath: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 9, 2026",
+},
+
+{
+  slotId: "7",
+  sourceLabel: "Marca",
+  title: "Toto Wolff arremete contra Ferrari y dice que están mintiendo | Toto Wolff Accuses Ferrari of Hiding Its True Potential",
+  summary:
+    "Toto Wolff ha acusado a Ferrari de minimizar su verdadero rendimiento después de que la Scuderia ganara dos de las últimas tres carreras. El jefe de Mercedes cree que Ferrari es ahora un rival serio por el campeonato y no acepta sus intentos de restar importancia a su velocidad. | Toto Wolff has accused Ferrari of downplaying its true performance after the Scuderia won two of the last three races. The Mercedes boss now sees Ferrari as a serious championship rival and does not accept its attempts to minimize its pace.",
+  kcsQuickShift:
+    "Ferrari is clearly back in the fight, and Toto Wolff knows the championship picture has changed quickly. | Ferrari está claramente de nuevo en la pelea, y Toto Wolff sabe que la situación del campeonato ha cambiado rápidamente.",
+  url: "https://www.marca.com/motor/formula1/2026/07/09/toto-wolff-arremete-ferrari-estan-mintiendo.html",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 9, 2026",
+},
+
+{
+  slotId: "8",
+  sourceLabel: "FormulaPassion",
+  title: "Alonso contro le F1 2026, non serve talento, basta premere un pulsante | Alonso Says 2026 Overtaking No Longer Requires Driver Talent",
+  summary:
+    "Fernando Alonso ha criticato duramente i sorpassi nella Formula 1 del 2026, sostenendo che il vantaggio della batteria permette ai piloti di superare senza dover frenare più tardi o correre rischi. Secondo Alonso, basta premere un pulsante e avere più energia disponibile. | Fernando Alonso has strongly criticized overtaking in 2026 Formula 1, arguing that a battery advantage allows drivers to pass without braking later or taking risks. According to Alonso, a driver simply needs to press a button and have more energy available.",
+  kcsQuickShift:
+    "Alonso has a point, because the best overtakes should still reward bravery, timing and driver skill. | Alonso ha ragione su un punto, perché i migliori sorpassi dovrebbero ancora premiare il coraggio, il tempismo e l'abilità del pilota.",
+  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/alonso-per-superare-non-serve-talento-del-pilota-basta-premere-un-pulsante-silverstone-yoyo-batteria-energia",
+  imagePath: "/img/news/xpb/Aston/news-xpbfernando.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 9, 2026",
+},
+
+{
+  slotId: "9",
+  sourceLabel: "Formula1.com",
+  title: "Cadillac Shows Signs of Closing the Gap to the F1 Midfield",
+  summary:
+    "Cadillac showed improved pace at Silverstone as Valtteri Bottas and Sergio Perez moved closer to the competitive midfield battle. The team is no longer firmly stuck at the back, although scoring its first points will still require another step forward.",
+  kcsQuickShift:
+    "Cadillac is making genuine progress, but the midfield is so competitive that finding the final few tenths will be the hardest part.",
+  url: "https://www.formula1.com/en/latest/article/how-cadillacs-improved-pace-at-silverstone-showed-the-team-are-gaining-on-the-midfield.9DiBODtRYffbvVjMcsRad",
+  imagePath: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 9, 2026",
+},
+
+{
+  slotId: "10",
+  sourceLabel: "Nextgen Auto",
+  title: "Belgian Grand Prix Heading Toward Another Sellout at Spa",
+  summary:
+    "The Belgian Grand Prix is on course for another sellout, with only around 4,000 to 5,000 tickets remaining ahead of the race weekend. Daily attendance at Spa is expected to reach the circuit capacity of 115,000 spectators.",
+  kcsQuickShift:
+    "Spa continues to prove that historic races still have enormous appeal when fans are given a reason to keep coming back.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/belgian-gp-heading-for-another-sell-out,209762.html",
+  imagePath: "/img/news/raceposter/belgiangranprix.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "July 8, 2026",
+},
 ];
 export default newsSlots;

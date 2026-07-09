@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
+  enabled: false,
   label: "Race Weekend Results",
   title: "British Grand Prix Race Centre",
   body: "The British Grand Prix is complete. Full race results, session summaries, weekend updates, and the photo gallery are available now in the Race Centre.",
