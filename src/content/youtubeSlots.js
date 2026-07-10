@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Ferrari & Russell close in on Kimi Antonelli | The F1 Show Podcast",
-  youtubeInput: "https://youtu.be/hHHnoL1QT80",
+  title: "Why Williams is worrying Carlos Sainz so much",
+  youtubeInput: "https://youtu.be/J4sheCb7mSM",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "VERSTAPPEN McLAREN TALKS! F1 News",
-    youtubeInput: "https://youtu.be/--1sP9X42_0",
+    title: "Peter Windsor: Verstappen Will Leave Red Bull For Mercedes!",
+    youtubeInput: "https://youtu.be/VbSzG8MGBOI",
     
   }
 ];
