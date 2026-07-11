@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why Williams is worrying Carlos Sainz so much",
-  youtubeInput: "https://youtu.be/J4sheCb7mSM",
+  title: "Lando Norris drives McLaren MCL60 at Goodwood!",
+  youtubeInput: "https://youtu.be/iLPfjITDS_c",
   
   },
 
   {
     slotId: "slot2",
-    title: "Top 10 Onboards | 2026 British Grand Prix | Qatar Airways",
-    youtubeInput: "https://youtu.be/Ec2SJgw5sK4",
+    title: "I feel like a kid/ Pierre Gasly visits the Goodwood Festival of speed",
+    youtubeInput: "https://youtu.be/NashyA_I87w",
    forceExternal :"blue"
   },
 
   {
     slotId: "slot3",
-    title: "Peter Windsor: Verstappen Will Leave Red Bull For Mercedes!",
-    youtubeInput: "https://youtu.be/VbSzG8MGBOI",
+    title: "McLaren's 2026 F1 car concept is wrong",
+    youtubeInput: "https://youtu.be/sqJqHzq2zvo",
     
   }
 ];
