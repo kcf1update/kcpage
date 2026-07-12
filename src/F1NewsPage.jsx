@@ -33,7 +33,32 @@ function safeLocalImagePath(imagePath) {
   if (!imagePath.startsWith("/")) return "";
   return imagePath;
 }
+function renderBilingualText(text, foreignFirst = true) {
+  if (!text || typeof text !== "string" || !text.includes("|")) {
+    return text;
+  }
 
+  const [firstPart, ...rest] = text.split("|");
+  const secondPart = rest.join("|");
+
+  if (foreignFirst) {
+    return (
+      <>
+        <span className="text-white/65">{firstPart.trim()}</span>
+        {" "}
+        <span className="text-white">{secondPart.trim()}</span>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <span className="text-white">{firstPart.trim()}</span>
+      {" "}
+      <span className="text-white/65">{secondPart.trim()}</span>
+    </>
+  );
+}
 export default function F1NewsPage() {
   // Home uses the first 3 slots
   // This page shows news4..news9 (6 cards)
@@ -110,19 +135,20 @@ export default function F1NewsPage() {
                       className="block"
                       title="Open article"
                     >
-                      <h3 className="text-lg font-semibold leading-snug text-white hover:text-cyan-200 transition">
-                        {item.title || "Headline"}
-                      </h3>
+                     <h3 className="text-lg font-semibold leading-snug text-white hover:text-cyan-200 transition">
+  {renderBilingualText(item.title || "Headline", true)}
+</h3>
+                      
                     </a>
                   ) : (
                     <h3 className="text-lg font-semibold leading-snug text-white">
-                      {item.title || "Headline"}
+                      {renderBilingualText(item.title || "Headline", true)}
                     </h3>
                   )}
 
                   {item.summary ? (
                     <p className="text-sm leading-relaxed text-white/75">
-                      {item.summary}
+                      {renderBilingualText(item.summary, true)}
                     </p>
                   ) : null}
 
@@ -132,7 +158,7 @@ export default function F1NewsPage() {
                         KC’s Quick Shift
                       </div>
                       <p className="mt-1 text-sm leading-relaxed text-white/90">
-                        {quickShift}
+                        {renderBilingualText(quickShift, false)}
                       </p>
                     </div>
                   ) : null}

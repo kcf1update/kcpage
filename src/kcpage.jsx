@@ -65,7 +65,7 @@ function GlassyCard({
     ${highlight === "blue" ? "text-cyan-300" : "text-white hover:text-cyan-300"}
   `}
 >
-  {title}
+  {renderBilingualText(title, true)}
 </h2>
               </a>
             ) : (
@@ -133,6 +133,32 @@ function safeLocalImagePath(imagePath) {
   if (!imagePath || typeof imagePath !== "string") return "";
   if (!imagePath.startsWith("/")) return "";
   return imagePath;
+}
+function renderBilingualText(text, foreignFirst = true) {
+  if (!text || typeof text !== "string" || !text.includes("|")) {
+    return text;
+  }
+
+  const [firstPart, ...rest] = text.split("|");
+  const secondPart = rest.join("|");
+
+  if (foreignFirst) {
+    return (
+      <>
+        <span className="text-white/65">{firstPart.trim()}</span>
+        {" "}
+        <span className="text-white">{secondPart.trim()}</span>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <span className="text-white">{firstPart.trim()}</span>
+      {" "}
+      <span className="text-white/65">{secondPart.trim()}</span>
+    </>
+  );
 }
 function RaceWeekendPromo() {
   if (!raceWeekendPromo.enabled) return null;
@@ -347,7 +373,9 @@ export default function KCpage() {
                       ) : null}
 
                       {item?.summary ? (
-                        <div className="text-sm text-slate-100/90">{item.summary}</div>
+                        <div className="text-sm text-slate-100/90">
+  {renderBilingualText(item.summary, true)}
+</div>
                       ) : (
                         <div className="text-sm text-slate-300">
                           Add a summary in <span className="font-mono">newsSlots.js</span>
@@ -359,7 +387,9 @@ export default function KCpage() {
                           <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                             KC’s Quick Shift
                           </div>
-                          <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                          <p className="mt-1 text-sm text-white/90 leading-relaxed">
+  {renderBilingualText(quickShift, false)}
+</p>
                         </div>
                       ) : null}
 
@@ -478,7 +508,9 @@ export default function KCpage() {
                         ) : null}
 
                         {item?.summary ? (
-                          <div className="text-sm text-slate-100/90">{item.summary}</div>
+                          <div className="text-sm text-slate-100/90">
+  {renderBilingualText(item.summary, true)}
+</div>
                         ) : (
                           <div className="text-sm text-slate-300">
                             Add a summary in <span className="font-mono">newsSlots.js</span>
@@ -490,7 +522,9 @@ export default function KCpage() {
                             <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                               KC’s Quick Shift
                             </div>
-                            <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                            <p className="mt-1 text-sm text-white/90 leading-relaxed">
+  {renderBilingualText(quickShift, false)}
+</p>
                           </div>
                         ) : null}
 
@@ -593,7 +627,9 @@ export default function KCpage() {
                     ) : null}
 
                     {item?.summary ? (
-                      <div className="text-sm text-slate-100/90">{item.summary}</div>
+                      <div className="text-sm text-slate-100/90">
+  {renderBilingualText(item.summary, true)}
+</div>
                     ) : (
                       <div className="text-sm text-slate-300">
                         Add a summary in <span className="font-mono">newsSlots.js</span>
@@ -606,7 +642,9 @@ export default function KCpage() {
                         <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                           KC’s Quick Shift
                         </div>
-                        <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                        <p className="mt-1 text-sm text-white/90 leading-relaxed">
+  {renderBilingualText(quickShift, false)}
+</p>
                       </div>
                     ) : null}
 
@@ -699,7 +737,9 @@ export default function KCpage() {
                           ) : null}
 
                           {item?.summary ? (
-                            <div className="text-sm text-slate-100/90">{item.summary}</div>
+                            <div className="text-sm text-slate-100/90">
+  {renderBilingualText(item.summary, true)}
+</div>
                           ) : (
                             <div className="text-sm text-slate-300">
                               Add a summary in <span className="font-mono">newsSlots.js</span>
@@ -711,7 +751,9 @@ export default function KCpage() {
                               <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
                                 KC’s Quick Shift
                               </div>
-                              <p className="mt-1 text-sm text-white/90 leading-relaxed">{quickShift}</p>
+                              <p className="mt-1 text-sm text-white/90 leading-relaxed">
+  {renderBilingualText(quickShift, false)}
+</p>
                             </div>
                           ) : null}
 

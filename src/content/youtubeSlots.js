@@ -18,7 +18,7 @@ export const youtubeSlots = [
     slotId: "slot2",
     title: "I feel like a kid/ Pierre Gasly visits the Goodwood Festival of speed",
     youtubeInput: "https://youtu.be/NashyA_I87w",
-   forceExternal :"blue"
+   
   },
 
   {
