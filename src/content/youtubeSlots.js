@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lando Norris drives McLaren MCL60 at Goodwood!",
-  youtubeInput: "https://youtu.be/iLPfjITDS_c",
+  title: "Why the Mercedes-AMG F1 W17 is so stable on high-speed corners with Mark Slade and Peter Windsor",
+  youtubeInput: "https://youtu.be/bmHa_U5v_1Q",
   
   },
 

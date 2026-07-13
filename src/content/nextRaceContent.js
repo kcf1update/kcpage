@@ -526,29 +526,28 @@ export const nextRaceContent = {
   },
 
  weather: [
-    {
+  {
     day: "Friday",
     date: "July 17th",
-    icon: "",
-    temp: "",
-    summary: "Long range says possible thunder showers",
+    icon: "🌦️",
+    temp: "24°C",
+    summary: "Warm with clouds and a chance of showers.",
   },
   {
     day: "Saturday",
-    date: "July 18t",
-    icon: "",
-    temp: "",
-    summary: "Long range says possible thunder showers",
+    date: "July 18th",
+    icon: "🌧️",
+    temp: "22°C",
+    summary: "Cloudy with a chance of rain during the day.",
   },
   {
     day: "Sunday",
     date: "July 19th",
-    icon: "",
-    temp: "",
-    summary: "Long range says possible thunder showers",
+    icon: "🌧️",
+    temp: "19°C",
+    summary: "Cooler and cloudy with a chance of rain.",
   },
-  ],
-
+],
 
 
  sessions:
