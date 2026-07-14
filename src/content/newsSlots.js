@@ -1,159 +1,155 @@
 
 export const newsSlots = [
  {
+    
     slotId: "1",
-    sourceLabel: "Formula1.com",
-    title: "Five Big Storylines Ahead of the 2026 Belgian Grand Prix",
+    sourceLabel: "PlanetF1.com",
+    title:
+      "Lando Norris Says He Can Beat Any Driver as Verstappen to McLaren Rumours Grow",
     summary:
-      "Formula 1 heads to Belgium with the championship battle tightening, Max Verstappen looking to reset after a difficult Silverstone weekend and major questions still surrounding the 2027 driver market. Spa could also deliver the first truly wet running of the 2026 season, adding another unknown for teams and drivers under the new regulations.",
+      "Lando Norris says he believes he can beat any driver in equal machinery as speculation continues over a possible Max Verstappen move to McLaren for 2027. Norris also praised Verstappen's remarkable consistency but said he would welcome the chance to test himself against the very best.",
     kcsQuickShift:
-      "Spa usually brings uncertainty, and this year there is plenty of it before the cars even hit the track. A tightening championship fight, Verstappen's future and the possibility of rain make this a weekend worth watching closely.",
-    url: "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-belgian-grand-prix.7MROwv6FGgwOA193ps2sRq",
-    imagePath: "/img/news/raceposter/belgiumspa.jpg",
-    photoCredit: "KC AI Generated Image",
-    dateLabel: "July 13, 2026",
+      "A Norris and Verstappen pairing at McLaren would be incredible to watch, but you have to wonder how McLaren would manage two drivers who both expect to win.",
+    url: "https://www.planetf1.com/news/lando-norris-max-verstappen-mclaren-f1-2027-rumours",
+    imagePath: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "Crash.net",
-    title: "Sergio Perez Reveals the Harsh Reality of Being Max Verstappen's Red Bull Teammate",
+    sourceLabel: "The Race",
+    title:
+      "The Deficit Behind George Russell's Major F1 Title Admission",
     summary:
-      "Sergio Perez says racing alongside Max Verstappen at Red Bull was the toughest challenge in Formula 1, claiming the team's most experienced engineers and resources were centred around Verstappen. Perez said he understood the situation before joining and chose to make the most of what he had rather than complain.",
+      "George Russell has admitted he cannot fight for the championship if his performances continue as they did at Silverstone. Analysis of his qualifying lap showed that extra braking and lost momentum through corners forced him to use more battery energy, leaving him with less electrical deployment on the straights compared with Kimi Antonelli.",
     kcsQuickShift:
-      "Perez knew Red Bull was built around Max before he arrived, but his comments still give a revealing look at just how difficult life could be on the other side of that garage.",
-    url: "https://www.crash.net/f1/news/1101007/1/everything-goes-max-sergio-perez-reveals-true-reality-being-max-verstappens-red",
-    imagePath: "/img/news/xpb/Cadillac/xpb-perezaustria.jpg",
+      "Russell may have finished second at Silverstone, but his frustration makes sense when the data shows just how much performance he was giving away to Antonelli.",
+    url: "https://www.the-race.com/formula-1/the-deficit-that-explains-george-russell-big-f1-title-admission/",
+    imagePath: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 13, 2026",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "Read Motorsport",
-    title: "Damon Hill Rejects Fernando Alonso's Claim That F1 Is Being Unfair to Verstappen",
+    sourceLabel: "Crash.net",
+    title:
+      "Aston Martin Fears Spa Could Be Its Worst Race of the Year",
     summary:
-      "Damon Hill has strongly dismissed Fernando Alonso's suggestion that Formula 1 is being unfair to Max Verstappen because Red Bull's struggles are preventing him from fighting at the front. Alonso called Verstappen the best driver on the grid, but Hill rejected the idea that the championship picture is somehow unfair to him.",
+      "Lance Stroll expects the Belgian Grand Prix to be an extremely difficult weekend for Aston Martin, with Spa likely to expose the weaknesses of the ARM26. The team is hoping for a major improvement when its first significant upgrade package of the season arrives in Hungary.",
     kcsQuickShift:
-      "Every great driver eventually faces seasons when the car is not good enough. Verstappen is experiencing that reality now, just as many champions have before him.",
-    url: "https://readmotorsport.com/2026/07/12/damon-hill-alonso-max-verstappen/",
-    imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
+      "How can it be worse than what it has been?",
+    url: "https://www.crash.net/f1/news/1101026/1/aston-martin-facing-worst-race-year-ahead-much-anticipated-f1-upgrade",
+    imagePath: "/img/news/xpb/Aston/news-astonlivery.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 13, 2026",
+    dateLabel: "July 14, 2026",
   },
 
   {
-     slotId: "4",
-  sourceLabel: "RacingNews365 Netherlands",
-  title:
-    "Mercedes gewaarschuwd voor Verstappen transfer: Het recept voor een ramp! | Mercedes Warned Verstappen Move Could Be a Recipe for Disaster",
-  summary:
-    "Jolyon Palmer denkt dat Mercedes voorzichtig moet zijn met het aantrekken van Max Verstappen als George Russell vertrekt. Volgens Palmer heeft Kimi Antonelli inmiddels bewezen dat hij geen tweede rijder wil zijn, waardoor een combinatie met Verstappen voor spanningen binnen het team zou kunnen zorgen. | Jolyon Palmer believes Mercedes should think carefully about signing Max Verstappen if George Russell leaves. Palmer argues that Kimi Antonelli has already shown he is not prepared to play a supporting role, potentially making a Verstappen and Antonelli partnership difficult to manage.",
-  kcsQuickShift:
-    "Antonelli's rise has changed the equation for Mercedes. Bringing in Verstappen sounds attractive on paper, but managing two drivers who both expect to lead the team could create more problems than it solves. | De opkomst van Antonelli heeft de situatie bij Mercedes veranderd. Verstappen aantrekken klinkt aantrekkelijk op papier, maar twee coureurs managen die allebei het team willen leiden, kan meer problemen veroorzaken dan oplossen.",
-  url: "https://racingnews365.nl/mercedes-gewaarschuwd-voor-verstappen-transfer-het-recept-voor-een-ramp",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 13, 2026",
+    slotId: "4",
+    sourceLabel: "Crash.net",
+    title:
+      "James Vowles Admits Williams Upgrade Fell Well Short of Expectations",
+    summary:
+      "James Vowles says the front wing upgrade Williams fast tracked for Silverstone did not deliver anywhere near the improvement the team needed. Williams is now studying the data and trying to understand what changes can be made before the upcoming races.",
+    kcsQuickShift:
+      "Williams has already been moving in the wrong direction, and an upgrade that fails to deliver is the last thing this team needs right now.",
+    url: "https://www.crash.net/f1/news/1101030/1/james-vowles-makes-alarming-admission-about-williams-latest-f1-upgrade",
+    imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "PlanetF1",
-    title: "Lando Norris Questions McLaren After Untelevised Team Radio Message",
+    sourceLabel: "Formula1.com",
+    title:
+      "Palmer and Hinchcliffe Identify the Biggest Threats to Antonelli's Title Challenge",
     summary:
-      "Lando Norris has admitted McLaren needs to do a better job in some areas after an untelevised radio message from the British Grand Prix sprint revealed his frustration. Norris said certain issues are limiting the team's performance and costing potential podiums and points, while also describing the MCL40 as one of the hardest cars he has driven in Formula 1.",
+      "Jolyon Palmer believes George Russell remains the biggest threat to championship leader Kimi Antonelli, while James Hinchcliffe sees Mercedes reliability as the greater concern. Antonelli's lead has fallen from 66 points to 25 after mechanical problems and a recent resurgence from Russell.",
     kcsQuickShift:
-      "Norris is clearly frustrated, and this sounds like more than just disappointment over one difficult weekend. McLaren has work to do if it wants to give him a car capable of defending his title.",
-    url: "https://www.planetf1.com/news/lando-norris-mclaren-team-radio-2026",
-    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+      "Antonelli still has the advantage, but a 25 point lead can disappear very quickly when reliability problems keep taking points off the table.",
+    url: "https://www.formula1.com/en/latest/article/its-hard-to-bet-against-him-palmer-and-hinchcliffe-identify-biggest-threats-to-antonelli.2A91UwZsexFLYIFvEaPrUA",
+    imagePath: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 13, 2026",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "PlanetF1",
-    title: "Toto Wolff Names Ferrari as Mercedes' Biggest Championship Threat",
+    sourceLabel: "F1news.se",
+    title:
+      "Analys: Därför gör Lindblad F1 succé, 7 punkter | Analysis: Seven Reasons Behind Lindblad's F1 Success",
     summary:
-      "Toto Wolff believes Ferrari has emerged as Mercedes' biggest threat for the remainder of the 2026 season after winning two of the last three Grands Prix. Ferrari's recent victories have brought Lewis Hamilton and Charles Leclerc closer in the drivers' championship, although Mercedes still holds a 78 point lead in the constructors' standings.",
+      "Arvid Lindblad har imponerat under sin debutsäsong genom att snabbt hitta farten, leverera starka kvalvarv och tävla utan överdriven respekt för mer etablerade förare. Hans snabba utveckling genom juniorserierna, mogna arbetssätt och förmåga att läsa ett race har hjälpt honom att regelbundet slåss om poäng.| Arvid Lindblad has impressed during his rookie season by quickly finding speed, delivering strong qualifying laps and racing without showing too much respect for more established drivers. His rapid progress through the junior categories, mature approach and ability to read a race have helped him regularly fight for points.",
     kcsQuickShift:
-      "Ferrari's recent form has changed the championship picture. Mercedes still has the advantage, but Wolff clearly expects this fight to get much tighter.",
-    url: "https://www.planetf1.com/news/toto-wolff-ferrari-mercedes-biggest-f1-2026-championship-threat",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+      "Lindblad is not just showing flashes of speed, he is already looking like a driver who genuinely belongs in Formula 1.| Lindblad visar inte bara glimtar av fart, han ser redan ut som en förare som verkligen hör hemma i Formel 1.",
+    url: "https://f1news.se/analys-darfor-gor-lindblad-f1-succe-7-punkter",
+    imagePath: "/img/news/xpb/Visa/news-xpblindblad.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 13, 2026",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "GrandPrix247",
-    title: "James Vowles Admits Williams Is Not Improving Fast Enough",
+    sourceLabel: "Nextgen-Auto.com",
+    title:
+      "Hamilton Warns About Compression at New Madrid F1 Circuit",
     summary:
-      "James Vowles has admitted Williams is not adding performance to its car quickly enough to move forward after another difficult weekend at Silverstone. The team is now carrying out an internal review to understand what has worked, what has failed and how it should approach the upcoming races and the rest of the season.",
+      "Lewis Hamilton raised concerns about compression after Ferrari became the first Formula 1 team to run at Madrid's new circuit. Charles Leclerc also expects qualifying to be a major challenge, with drivers running extremely close to the walls around the 22 corner layout.",
     kcsQuickShift:
-      "Williams has made progress as a team, but the results show the car is not improving fast enough. The next step is turning all that rebuilding work into real performance on the track.",
-    url: "https://www.grandprix247.com/formula-1-news/james-vowles-says-rate-of-bringing-performance-to-the-car-not-enough-to-move-williams-forward",
-    imagePath: "/img/news/xpb/Williams/news-xpbjames.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 13, 2026",
+      "The new Madrid circuit certainly sounds dramatic, and having the drivers so close to the walls should make qualifying interesting when F1 arrives there in September.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/hamilton-warns-of-compression-at-new-madrid-f1-circuit,209840.html",
+    imagePath: "/img/news/Ferrari/Lewis/news-ferrari6.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "July 14, 2026",
   },
 
   {
-     slotId: "8",
-  sourceLabel: "F1news.se Sweden",
-  title:
-    "Ferrari uppmanas ta obekvämt beslut | Ferrari Urged to Make Uncomfortable Decision in Championship Fight",
-  summary:
-    "Den tidigare Ferrari-ingenjören Rob Smedley anser att teamet bör prioritera Lewis Hamilton framför Charles Leclerc i kampen om förarmästerskapet. Hamilton ligger närmare mästerskapsledaren Kimi Antonelli, och Smedley menar att Ferrari kan minska sina titelchanser om de fortsätter låta båda förarna tävla helt fritt. | Former Ferrari engineer Rob Smedley believes the team should prioritize Lewis Hamilton over Charles Leclerc in the drivers' championship fight. With Hamilton closer to championship leader Kimi Antonelli, Smedley argues Ferrari could hurt its title chances by continuing to let both drivers race completely freely.",
-  kcsQuickShift:
-    "It would be a tough decision for Ferrari, but if Hamilton is clearly their best championship chance, there may come a point when the team has to back one driver. | Det skulle vara ett svårt beslut för Ferrari, men om Hamilton tydligt är teamets bästa chans i mästerskapet kan det komma en punkt då de måste prioritera en förare.",
-  url: "https://f1news.se/ferrari-uppmanas-ta-obekvamt-beslut",
-  imagePath: "/img/news/Ferrari/Lewis/monacolewis.jpg",
-  photoCredit: "Courtesy of Ferrari F1",
-  dateLabel: "July 13, 2026",
+    slotId: "8",
+    sourceLabel: "Nextgen-Auto.com",
+    title:
+      "Helmut Marko Plays Down Verstappen Meeting Speculation",
+    summary:
+      "Helmut Marko has dismissed suggestions that his recent meeting with Max Verstappen's father Jos and manager Raymond Vermeulen was connected to the driver's uncertain future. Marko says it was simply a private visit arranged some time ago, although speculation over Verstappen's plans continues.",
+    kcsQuickShift:
+      "Maybe it really was just a private visit, but with this much speculation around Verstappen right now, every meeting is going to attract attention.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/marko-plays-down-verstappen-meeting-speculation,209841.html",
+    imagePath: "/img/news/xpb/RedBull/xpbjv.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "The Race",
-    title: "How McLaren Fell Three Months Behind Mercedes in the 2026 Development Race",
+    sourceLabel: "FormulaPassion.it",
+    title:
+      "Antonelli a scuola da Schumacher per una materia secondo Szafnauer | Szafnauer Says Antonelli Can Learn an Important Lesson From Schumacher",
     summary:
-      "McLaren team principal Andrea Stella says the team is now around two to three months behind the leading development curve after early design choices for the 2026 car proved to be wrong. McLaren has also struggled with excessive drag, a lack of downforce, tyre temperature sensitivity and a knowledge gap compared with works team Mercedes in how the new power unit is being used.",
+      "Otmar Szafnauer ritiene che Kimi Antonelli possa imparare da Michael Schumacher quando si tratta di portare al traguardo una vettura danneggiata. Dopo i problemi tecnici di Silverstone, Szafnauer ha indicato la capacità di Schumacher di adattarsi a gravi problemi meccanici come una qualità importante per un pilota che punta al titolo.| Otmar Szafnauer believes Kimi Antonelli can learn from Michael Schumacher when it comes to getting a damaged car to the finish. After Antonelli's technical problems at Silverstone, Szafnauer pointed to Schumacher's ability to adapt to serious mechanical issues as an important quality for a driver chasing championships.",
     kcsQuickShift:
-      "McLaren's problem is no longer one weakness. The car is losing ground in several areas at once, and catching Mercedes will require more than one major upgrade.",
-    url: "https://www.the-race.com/formula-1/how-mclaren-2026-f1-car-has-ended-up-three-months-behind-mercedes/",
-    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "July 13, 2026",
+      "Antonelli is still only 19 and already leading the championship, so learning how to rescue every possible point from a damaged car could make him even more formidable.| Antonelli ha ancora solo 19 anni ed è già in testa al campionato, quindi imparare a conquistare ogni punto possibile con una vettura danneggiata potrebbe renderlo ancora più formidabile.",
+    url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/antonelli-a-scuola-da-schumacher-per-una-materia-secondo-szafnauer",
+    imagePath: "/img/news/xpb/xpbotmar.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 14, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Motorsport.com",
-    title: "Audi Targets Formula 1 Championship Fight by 2030",
+    sourceLabel: "Nextgen-Auto.com",
+    title:
+      "Barcelona Offers to Help F1 Calendar as Turkey Waits",
     summary:
-      "Audi F1 boss Mattia Binotto says the team's goal is to be capable of fighting for the world championship by 2030. He views 2026 and 2027 primarily as building years, with Audi targeting a significant step forward in 2028 as it continues developing its organization, chassis and power unit.",
+      "Barcelona says it is ready to step in if Formula 1 needs another replacement race as uncertainty continues around the 2026 calendar. Istanbul has also expressed interest, while Portimao, Imola and Barcelona are among the European options being discussed if another venue is required.",
     kcsQuickShift:
-      "Audi is clearly playing the long game. The results may not be spectacular yet, but Binotto's plan gives the team a clear timeline and a serious target to work toward.",
-    url: "https://www.motorsport.com/f1/news/audis-target-is-to-fight-for-f1-title-by-2030-says-mattia-binotto/10837757/",
-    imagePath: "/img/news/shut/Audi/news-shutterstocknico.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "July 13, 2026",
+      "Formula 1 has some difficult calendar decisions ahead, but having several established circuits ready to step in at least gives the championship some good options.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/barcelona-offers-f1-calendar-help-as-turkey-waits,209837.html#google_vignette",
+    imagePath: "/img/news/xpb/Races/news-xpb4.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 14, 2026",
   },
-
-  {
-    slotId: "11",
-    sourceLabel: "Motorsport.com",
-    title: "Mattia Binotto Says Efficiency Must Be Central to F1's Future Engine Rules",
-    summary:
-      "Audi F1 boss Mattia Binotto believes efficiency should remain a key priority when Formula 1 eventually decides on its next generation of power unit regulations. He argues that future engines should continue pushing technological development while also becoming simpler and more cost effective for manufacturers.",
-    kcsQuickShift:
-      "Formula 1 needs to keep pushing technology forward, but Binotto is right that complexity and cost cannot be allowed to spiral out of control. The best future engine rules will need to balance performance, efficiency and affordability.",
-    url: "https://www.motorsport.com/f1/news/mattia-binotto-efficiency-key-for-audi-in-f1s-future-engine-rules/10838509/",
-    imagePath: "/img/news/shut/Audi/news-audibinitto.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "July 13, 2026",
-  },
+ 
  ];
 

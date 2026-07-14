@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why the Mercedes-AMG F1 W17 is so stable on high-speed corners with Mark Slade and Peter Windsor",
-  youtubeInput: "https://youtu.be/bmHa_U5v_1Q",
-  
+  title: "Russell, Reliability Or Ferrari? What Is Kimi’s Biggest Threat? | Belgian GP Preview | F1 Nation",
+  youtubeInput: "https://youtu.be/CzkjhGr_I9o",
+  forceExternal : "blue" 
   },
 
   {
     slotId: "slot2",
-    title: "I feel like a kid/ Pierre Gasly visits the Goodwood Festival of speed",
-    youtubeInput: "https://youtu.be/NashyA_I87w",
+    title: "Huge Piastri Detail Leaked! | F1 News",
+    youtubeInput: "https://youtu.be/-UqePMIfYuc",
    
   },
 
   {
     slotId: "slot3",
-    title: "McLaren's 2026 F1 car concept is wrong",
-    youtubeInput: "https://youtu.be/sqJqHzq2zvo",
+    title: "Newey admits has revealed about the extent of Aston Martin's 2026 F1 disaster",
+    youtubeInput: "https://www.youtube.com/shorts/GCkhsX_eAxM?t=3&feature=share",
     
   }
 ];
