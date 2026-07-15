@@ -1,154 +1,144 @@
 
 export const newsSlots = [
  {
-    
     slotId: "1",
-    sourceLabel: "PlanetF1.com",
-    title:
-      "Lando Norris Says He Can Beat Any Driver as Verstappen to McLaren Rumours Grow",
+    sourceLabel: "Crash.net",
+    title: "McLaren Bringing New Rear Wing and Fresh Mercedes Power Units to Belgium",
     summary:
-      "Lando Norris says he believes he can beat any driver in equal machinery as speculation continues over a possible Max Verstappen move to McLaren for 2027. Norris also praised Verstappen's remarkable consistency but said he would welcome the chance to test himself against the very best.",
+      "McLaren will arrive at the Belgian Grand Prix with fresh Mercedes power units and a new rear wing assembly that will be tested during Friday practice. The team expects the update to add some performance, although it is not anticipating a dramatic change in competitiveness after a difficult British Grand Prix.",
     kcsQuickShift:
-      "A Norris and Verstappen pairing at McLaren would be incredible to watch, but you have to wonder how McLaren would manage two drivers who both expect to win.",
-    url: "https://www.planetf1.com/news/lando-norris-max-verstappen-mclaren-f1-2027-rumours",
-    imagePath: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+      "Spa is exactly the kind of circuit where fresh power units and a more efficient rear wing could make a difference, so this will be an important weekend to see whether McLaren can close the gap.",
+    url: "https://www.crash.net/f1/news/1101045/1/mclaren-receive-vital-f1-upgrade-belgian-grand-prix",
+    imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "The Race",
-    title:
-      "The Deficit Behind George Russell's Major F1 Title Admission",
+    sourceLabel: "F1 Oversteer",
+    title: "F1 Experts Back Mercedes and Ferrari as Belgian Grand Prix Favourites",
     summary:
-      "George Russell has admitted he cannot fight for the championship if his performances continue as they did at Silverstone. Analysis of his qualifying lap showed that extra braking and lost momentum through corners forced him to use more battery energy, leaving him with less electrical deployment on the straights compared with Kimi Antonelli.",
+      "F1 experts are tipping Mercedes and Ferrari as the leading contenders for victory at Spa, with both teams expected to be strong around the fast and demanding Belgian circuit. The predictions also raise the question of whether Ferrari can finally stop Mercedes from controlling the battle at the front.",
     kcsQuickShift:
-      "Russell may have finished second at Silverstone, but his frustration makes sense when the data shows just how much performance he was giving away to Antonelli.",
-    url: "https://www.the-race.com/formula-1/the-deficit-that-explains-george-russell-big-f1-title-admission/",
-    imagePath: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
+      "Spa should give us a good measure of the real pecking order, and Ferrari now has another chance to prove its Silverstone form was more than a one weekend breakthrough.",
+    url: "https://www.f1oversteer.com/races/belgian-grand-prix-predictions-as-f1-experts-decide-if-ferrari-can-beat-mercedes-to-the-win-at-spa/",
+    imagePath: "/img/news/xpb/Races/news-xpbmiami.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "Crash.net",
-    title:
-      "Aston Martin Fears Spa Could Be Its Worst Race of the Year",
+    sourceLabel: "PlanetF1",
+    title: "McLaren Warns Spa Could Expose Major F1 2026 Energy Deployment Problem",
     summary:
-      "Lance Stroll expects the Belgian Grand Prix to be an extremely difficult weekend for Aston Martin, with Spa likely to expose the weaknesses of the ARM26. The team is hoping for a major improvement when its first significant upgrade package of the season arrives in Hungary.",
+      "McLaren team principal Andrea Stella has warned that Spa's long straights could expose one of the biggest challenges with the 2026 regulations, with energy deployment and harvesting expected to have a major influence on overtaking. Drivers could face large and unpredictable speed differences as cars manage battery power around one of the most energy demanding circuits on the calendar.",
     kcsQuickShift:
-      "How can it be worse than what it has been?",
-    url: "https://www.crash.net/f1/news/1101026/1/aston-martin-facing-worst-race-year-ahead-much-anticipated-f1-upgrade",
-    imagePath: "/img/news/xpb/Aston/news-astonlivery.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+      "Spa should give us one of the clearest looks yet at whether the new energy deployment rules are creating better racing or simply making overtaking too easy and unpredictable.",
+    url: "https://www.planetf1.com/news/mclaren-belgian-gp-energy-deployment-warning",
+    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "Crash.net",
-    title:
-      "James Vowles Admits Williams Upgrade Fell Well Short of Expectations",
+    sourceLabel: "Read Motorsport",
+    title: "Antonelli’s Championship Lead Under Pressure Heading Into Belgian Grand Prix",
     summary:
-      "James Vowles says the front wing upgrade Williams fast tracked for Silverstone did not deliver anywhere near the improvement the team needed. Williams is now studying the data and trying to understand what changes can be made before the upcoming races.",
+      "Kimi Antonelli heads to Spa with his championship advantage reduced to just 25 points after a difficult run for Mercedes, while George Russell, Lewis Hamilton and Charles Leclerc continue to close in. Mercedes will hope Spa's power sensitive layout can help the team regain control, but Ferrari's recent momentum has turned the title fight into a much tighter contest.",
     kcsQuickShift:
-      "Williams has already been moving in the wrong direction, and an upgrade that fails to deliver is the last thing this team needs right now.",
-    url: "https://www.crash.net/f1/news/1101030/1/james-vowles-makes-alarming-admission-about-williams-latest-f1-upgrade",
-    imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+      "Antonelli still leads the championship, but the comfortable cushion is disappearing quickly and Spa could be a very important weekend for the entire title fight.",
+    url: "https://readmotorsport.com/2026/07/15/antonelli-lead-belgian-grand-prix/",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg ",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "Formula1.com",
-    title:
-      "Palmer and Hinchcliffe Identify the Biggest Threats to Antonelli's Title Challenge",
+    sourceLabel: "Read Motorsport",
+    title: "FIA Confirms Record Five Active Aero Zones for Belgian Grand Prix",
     summary:
-      "Jolyon Palmer believes George Russell remains the biggest threat to championship leader Kimi Antonelli, while James Hinchcliffe sees Mercedes reliability as the greater concern. Antonelli's lead has fallen from 66 points to 25 after mechanical problems and a recent resurgence from Russell.",
+      "The FIA has confirmed that Spa will feature five straight line mode zones for the Belgian Grand Prix, matching Australia for the most activation points at any circuit so far in 2026. Drivers will be able to use active aero twice in Sector 1 and three more times through Sector 3, while Pouhon has been excluded because of the corner's high speed and downforce demands.",
     kcsQuickShift:
-      "Antonelli still has the advantage, but a 25 point lead can disappear very quickly when reliability problems keep taking points off the table.",
-    url: "https://www.formula1.com/en/latest/article/its-hard-to-bet-against-him-palmer-and-hinchcliffe-identify-biggest-threats-to-antonelli.2A91UwZsexFLYIFvEaPrUA",
-    imagePath: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
+      "Five active aero zones could make Spa one of the best tests yet of how the 2026 cars balance straight line speed, energy management and overtaking.",
+    url: "https://readmotorsport.com/2026/07/14/fia-five-active-aero-zones-belgian-gp-spa/",
+    imagePath: "/img/news/xpb/RedBull/news-xpbisack.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "F1news.se",
+    sourceLabel: "RacingNews365.nl",
     title:
-      "Analys: Därför gör Lindblad F1 succé, 7 punkter | Analysis: Seven Reasons Behind Lindblad's F1 Success",
+      "Verstappen herpakt zich voor Spa na moeilijke Silverstone-race | Verstappen Recharged and Ready for Spa After Difficult Silverstone Weekend",
     summary:
-      "Arvid Lindblad har imponerat under sin debutsäsong genom att snabbt hitta farten, leverera starka kvalvarv och tävla utan överdriven respekt för mer etablerade förare. Hans snabba utveckling genom juniorserierna, mogna arbetssätt och förmåga att läsa ett race har hjälpt honom att regelbundet slåss om poäng.| Arvid Lindblad has impressed during his rookie season by quickly finding speed, delivering strong qualifying laps and racing without showing too much respect for more established drivers. His rapid progress through the junior categories, mature approach and ability to read a race have helped him regularly fight for points.",
+      "Max Verstappen reist met hernieuwde energie af naar de Belgische Grand Prix na een teleurstellend weekend op Silverstone. De Red Bull-coureur bracht vorige week tijd door in de simulator en waarschuwde dat energiebeheer op de lange rechte stukken van Spa een belangrijke uitdaging kan worden. | Max Verstappen heads to the Belgian Grand Prix with renewed energy after a disappointing weekend at Silverstone. The Red Bull driver spent time in the simulator last week and has warned that managing energy deployment on Spa's long straights could become a major challenge.",
     kcsQuickShift:
-      "Lindblad is not just showing flashes of speed, he is already looking like a driver who genuinely belongs in Formula 1.| Lindblad visar inte bara glimtar av fart, han ser redan ut som en förare som verkligen hör hemma i Formel 1.",
-    url: "https://f1news.se/analys-darfor-gor-lindblad-f1-succe-7-punkter",
-    imagePath: "/img/news/xpb/Visa/news-xpblindblad.jpg",
+      "Verstappen has always been strong at Spa, but with energy management becoming such a major talking point this weekend, Red Bull may need more than history on its side. | Verstappen is altijd sterk geweest op Spa, maar nu energiebeheer zo'n belangrijk onderwerp wordt, heeft Red Bull misschien meer nodig dan alleen een goede geschiedenis op dit circuit.",
+    url: "https://racingnews365.nl/verstappen-herpakt-zich-voor-spa-goed-om-er-even-uit-te-zijn-geweest",
+    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "Nextgen-Auto.com",
-    title:
-      "Hamilton Warns About Compression at New Madrid F1 Circuit",
+    sourceLabel: "Nextgen-Auto",
+    title: "Bearman Tipped as Red Bull’s First Choice if Verstappen Leaves",
     summary:
-      "Lewis Hamilton raised concerns about compression after Ferrari became the first Formula 1 team to run at Madrid's new circuit. Charles Leclerc also expects qualifying to be a major challenge, with drivers running extremely close to the walls around the 22 corner layout.",
+      "Ralf Schumacher believes Oliver Bearman should be Red Bull's first choice if Max Verstappen decides to leave the team. He also named Carlos Sainz as another possible option, while suggesting that a recent meeting involving Verstappen's father, manager and former Red Bull adviser Helmut Marko was more likely about the Dutchman's future than a possible Marko comeback.",
     kcsQuickShift:
-      "The new Madrid circuit certainly sounds dramatic, and having the drivers so close to the walls should make qualifying interesting when F1 arrives there in September.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/hamilton-warns-of-compression-at-new-madrid-f1-circuit,209840.html",
-    imagePath: "/img/news/Ferrari/Lewis/news-ferrari6.jpg",
-    photoCredit: "Courtesy of Ferrari F1",
-    dateLabel: "July 14, 2026",
+      "Bearman would certainly be a bold choice for Red Bull, but replacing Verstappen would be one of the toughest jobs in Formula 1 no matter who gets the seat.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/bearman-tipped-if-verstappen-leaves-red-bull,209859.html",
+    imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "8",
-    sourceLabel: "Nextgen-Auto.com",
-    title:
-      "Helmut Marko Plays Down Verstappen Meeting Speculation",
+    sourceLabel: "Nextgen-Auto",
+    title: "Bahrain Grand Prix Return Now Looks Unlikely as Time Runs Out",
     summary:
-      "Helmut Marko has dismissed suggestions that his recent meeting with Max Verstappen's father Jos and manager Raymond Vermeulen was connected to the driver's uncertain future. Marko says it was simply a private visit arranged some time ago, although speculation over Verstappen's plans continues.",
+      "Hopes of restoring the cancelled Bahrain Grand Prix to the 2026 calendar appear to be fading, with Pirelli warning that the necessary preparation and tyre transportation normally requires around four months. Continued uncertainty over the security situation and shipping routes in the Middle East has made planning a possible return increasingly difficult.",
     kcsQuickShift:
-      "Maybe it really was just a private visit, but with this much speculation around Verstappen right now, every meeting is going to attract attention.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/marko-plays-down-verstappen-meeting-speculation,209841.html",
-    imagePath: "/img/news/xpb/RedBull/xpbjv.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+      "With time running out and the security situation still uncertain, bringing Bahrain back onto the 2026 calendar now looks increasingly difficult.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/bahrain-gp-return-now-looks-unlikely-pirelli,209857.html",
+    imagePath: "/img/news/kcai/bahrain.jpg",
+    photoCredit: "KC AI Generated Images",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "FormulaPassion.it",
-    title:
-      "Antonelli a scuola da Schumacher per una materia secondo Szafnauer | Szafnauer Says Antonelli Can Learn an Important Lesson From Schumacher",
+    sourceLabel: "GrandPrix247",
+    title: "Haas Admits Car Is Not Fast Enough Ahead of Belgian Grand Prix",
     summary:
-      "Otmar Szafnauer ritiene che Kimi Antonelli possa imparare da Michael Schumacher quando si tratta di portare al traguardo una vettura danneggiata. Dopo i problemi tecnici di Silverstone, Szafnauer ha indicato la capacità di Schumacher di adattarsi a gravi problemi meccanici come una qualità importante per un pilota che punta al titolo.| Otmar Szafnauer believes Kimi Antonelli can learn from Michael Schumacher when it comes to getting a damaged car to the finish. After Antonelli's technical problems at Silverstone, Szafnauer pointed to Schumacher's ability to adapt to serious mechanical issues as an important quality for a driver chasing championships.",
+      "Haas team principal Ayao Komatsu has admitted the team's cars were simply not fast enough to fight for points during the last two race weekends. The team heads to Spa with a clear test programme aimed at improving performance and gathering useful data for the continued development of the VF-26.",
     kcsQuickShift:
-      "Antonelli is still only 19 and already leading the championship, so learning how to rescue every possible point from a damaged car could make him even more formidable.| Antonelli ha ancora solo 19 anni ed è già in testa al campionato, quindi imparare a conquistare ogni punto possibile con una vettura danneggiata potrebbe renderlo ancora più formidabile.",
-    url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/antonelli-a-scuola-da-schumacher-per-una-materia-secondo-szafnauer",
-    imagePath: "/img/news/xpb/xpbotmar.jpg",
+      "Haas knows it needs more outright pace, but Spa's unpredictable weather could still give the team a chance to grab points if it can take advantage of the right opportunity.",
+    url: "https://www.grandprix247.com/f1-teams-news/haas-f1-boss-ayao-komatsu-admits-haead-of-belgian-our-cars-ultimately-not-fast-enough",
+    imagePath: "/img/news/xpb/Haas/news-xpbbearman.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+    dateLabel: "July 15, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Nextgen-Auto.com",
-    title:
-      "Barcelona Offers to Help F1 Calendar as Turkey Waits",
+    sourceLabel: "Formula 1",
+    title: "The Stories Behind Every Corner Name at Spa-Francorchamps",
     summary:
-      "Barcelona says it is ready to step in if Formula 1 needs another replacement race as uncertainty continues around the 2026 calendar. Istanbul has also expressed interest, while Portimao, Imola and Barcelona are among the European options being discussed if another venue is required.",
+      "Formula 1 has explored the history behind the famous corner names at Spa-Francorchamps, from Eau Rouge and Raidillon to Pouhon, Blanchimont and the Bus Stop chicane. Many of the names come from local landmarks, nearby towns, mineral springs and figures from Belgian motorsport history.",
     kcsQuickShift:
-      "Formula 1 has some difficult calendar decisions ahead, but having several established circuits ready to step in at least gives the championship some good options.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/barcelona-offers-f1-calendar-help-as-turkey-waits,209837.html#google_vignette",
-    imagePath: "/img/news/xpb/Races/news-xpb4.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 14, 2026",
+      "Spa is one of those rare circuits where nearly every corner has its own identity and history, which is a big part of what makes the Belgian Grand Prix weekend so special.",
+    url: "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-its-name.1o6cyXf5F6q9VFFcgMqTqs",
+    imagePath: "/img/news/raceposter/belgiumspa.jpg",
+    photoCredit: "KC AI Generated Images",
+    dateLabel: "July 15, 2026",
   },
  
  ];

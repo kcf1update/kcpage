@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Huge Piastri Detail Leaked! | F1 News",
-    youtubeInput: "https://youtu.be/-UqePMIfYuc",
+    title: "The $215million war that will decide F1 2026",
+    youtubeInput: "https://youtu.be/ACZcnQgBYZg",
    
   },
 
