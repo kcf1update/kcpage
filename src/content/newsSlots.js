@@ -1,144 +1,153 @@
 
 export const newsSlots = [
- {
+  {
     slotId: "1",
     sourceLabel: "Crash.net",
-    title: "McLaren Bringing New Rear Wing and Fresh Mercedes Power Units to Belgium",
+    title:
+      "Red Bull Drops Rotating Rear Wing After Verstappen’s High Speed Crashes",
     summary:
-      "McLaren will arrive at the Belgian Grand Prix with fresh Mercedes power units and a new rear wing assembly that will be tested during Friday practice. The team expects the update to add some performance, although it is not anticipating a dramatic change in competitiveness after a difficult British Grand Prix.",
+      "Red Bull will return to a conventional rear wing for the Belgian Grand Prix after its rotating design was linked to Max Verstappen’s crashes in Austria and Britain. Tests following Silverstone uncovered a problem with the design, prompting the team to remove it while work continues on a permanent solution.",
     kcsQuickShift:
-      "Spa is exactly the kind of circuit where fresh power units and a more efficient rear wing could make a difference, so this will be an important weekend to see whether McLaren can close the gap.",
-    url: "https://www.crash.net/f1/news/1101045/1/mclaren-receive-vital-f1-upgrade-belgian-grand-prix",
-    imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
+      "Two failures in high speed corners were two too many, and returning to a conventional wing is the only sensible decision for Spa.",
+    url: "https://www.crash.net/f1/news/1101070/1/red-bull-makes-key-rear-wing-decision-after-high-speed-max-verstappen-crashes",
+    imagePath: "/img/news/xpb/RedBull/Maxcar.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "F1 Oversteer",
-    title: "F1 Experts Back Mercedes and Ferrari as Belgian Grand Prix Favourites",
+    sourceLabel: "Crash.net",
+    title:
+      "Lando Norris Handed 10 Place Grid Penalty for Belgian Grand Prix",
     summary:
-      "F1 experts are tipping Mercedes and Ferrari as the leading contenders for victory at Spa, with both teams expected to be strong around the fast and demanding Belgian circuit. The predictions also raise the question of whether Ferrari can finally stop Mercedes from controlling the battle at the front.",
+      "Lando Norris will receive a 10 place grid penalty at Spa after McLaren installed a fourth power electronics unit in his car. McLaren chose Belgium because passing should be more achievable there than at the following races in Hungary and the Netherlands.",
     kcsQuickShift:
-      "Spa should give us a good measure of the real pecking order, and Ferrari now has another chance to prove its Silverstone form was more than a one weekend breakthrough.",
-    url: "https://www.f1oversteer.com/races/belgian-grand-prix-predictions-as-f1-experts-decide-if-ferrari-can-beat-mercedes-to-the-win-at-spa/",
-    imagePath: "/img/news/xpb/Races/news-xpbmiami.jpg",
+      "Spa gives Norris a better chance to recover from the penalty, but starting further back adds another difficult challenge to McLaren’s season.",
+    url: "https://www.crash.net/f1/news/1101068/1/f1-world-champion-lando-norris-hit-major-penalty-belgian-grand-prix",
+    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "PlanetF1",
-    title: "McLaren Warns Spa Could Expose Major F1 2026 Energy Deployment Problem",
+    sourceLabel: "RacingNews365.nl",
+    title:
+      'Marko: "Daarom ga ik ervan uit dat Verstappen na 2028 nog in F1 rijdt"|Marko Expects Verstappen to Remain in Formula 1 Beyond 2028',
     summary:
-      "McLaren team principal Andrea Stella has warned that Spa's long straights could expose one of the biggest challenges with the 2026 regulations, with energy deployment and harvesting expected to have a major influence on overtaking. Drivers could face large and unpredictable speed differences as cars manage battery power around one of the most energy demanding circuits on the calendar.",
+      "Helmut Marko verwacht dat Max Verstappen ook na afloop van zijn huidige Red Bull contract in 2028 actief blijft in de Formule 1. Hij benadrukte wel dat Red Bull Verstappen opnieuw een competitieve en betrouwbare auto moet geven, vooral na de recente problemen in Oostenrijk en Groot Brittannië.|Helmut Marko expects Max Verstappen to remain in Formula 1 beyond the end of his current Red Bull contract in 2028. He stressed that Red Bull must give Verstappen a competitive and reliable car again, particularly after the recent problems in Austria and Britain.",
     kcsQuickShift:
-      "Spa should give us one of the clearest looks yet at whether the new energy deployment rules are creating better racing or simply making overtaking too easy and unpredictable.",
-    url: "https://www.planetf1.com/news/mclaren-belgian-gp-energy-deployment-warning",
-    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "July 15, 2026",
+      "Marko believes Verstappen will stay in Formula 1, but Red Bull still has to convince him that it can provide a car he can trust and fight for championships with.|Marko denkt dat Verstappen in de Formule 1 blijft, maar Red Bull moet hem nog steeds overtuigen dat het een betrouwbare auto kan leveren waarmee hij voor kampioenschappen kan vechten.",
+    url: "https://racingnews365.nl/marko-daarom-ga-ik-ervan-uit-dat-verstappen-na-2028-nog-in-f1-rijdt",
+    imagePath: "/img/news/xpb/Redbull/xpbjv.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "Read Motorsport",
-    title: "Antonelli’s Championship Lead Under Pressure Heading Into Belgian Grand Prix",
+    sourceLabel: "PlanetF1.com",
+    title:
+      "Max Verstappen Adds 15 Year Old McLaren Talent to Verstappen Racing",
     summary:
-      "Kimi Antonelli heads to Spa with his championship advantage reduced to just 25 points after a difficult run for Mercedes, while George Russell, Lewis Hamilton and Charles Leclerc continue to close in. Mercedes will hope Spa's power sensitive layout can help the team regain control, but Ferrari's recent momentum has turned the title fight into a much tighter contest.",
+      "Max Verstappen has added Belgian Formula 4 driver Dries van Langendonck to Verstappen Racing. The 15 year old will receive guidance, management support and simulator assistance from Verstappen’s organization while remaining part of McLaren’s Driver Development Programme.",
     kcsQuickShift:
-      "Antonelli still leads the championship, but the comfortable cushion is disappearing quickly and Spa could be a very important weekend for the entire title fight.",
-    url: "https://readmotorsport.com/2026/07/15/antonelli-lead-belgian-grand-prix/",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg ",
+      "Van Langendonck now has support from both Verstappen and McLaren, which gives one of Belgium’s brightest young drivers an impressive development opportunity.",
+    url: "https://www.planetf1.com/news/max-verstappen-racing-announcement-mclaren",
+    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "Read Motorsport",
-    title: "FIA Confirms Record Five Active Aero Zones for Belgian Grand Prix",
+    sourceLabel: "Nextgen-Auto.com",
+    title:
+      "Steiner Says Russell Is Safe at Mercedes but May Now Be Antonelli’s Number Two",
     summary:
-      "The FIA has confirmed that Spa will feature five straight line mode zones for the Belgian Grand Prix, matching Australia for the most activation points at any circuit so far in 2026. Drivers will be able to use active aero twice in Sector 1 and three more times through Sector 3, while Pouhon has been excluded because of the corner's high speed and downforce demands.",
+      "Guenther Steiner believes George Russell’s Mercedes future remains secure, but says Kimi Antonelli may be emerging as the team’s leading driver. Antonelli arrives in Belgium leading Russell by 25 points after surprising Steiner with how quickly he has applied pressure and won races.",
     kcsQuickShift:
-      "Five active aero zones could make Spa one of the best tests yet of how the 2026 cars balance straight line speed, energy management and overtaking.",
-    url: "https://readmotorsport.com/2026/07/14/fia-five-active-aero-zones-belgian-gp-spa/",
-    imagePath: "/img/news/xpb/RedBull/news-xpbisack.jpg",
+      "Russell may not be fighting to keep his seat, but he is fighting to prevent Mercedes from becoming Antonelli’s team.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/russell-safe-but-as-antonelli-number-two-steiner,209873.html",
+    imagePath: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "RacingNews365.nl",
+    sourceLabel: "GrandPrix247",
     title:
-      "Verstappen herpakt zich voor Spa na moeilijke Silverstone-race | Verstappen Recharged and Ready for Spa After Difficult Silverstone Weekend",
+      "Fred Vasseur Backs United Ferrari to Deliver in Demanding Belgian Grand Prix",
     summary:
-      "Max Verstappen reist met hernieuwde energie af naar de Belgische Grand Prix na een teleurstellend weekend op Silverstone. De Red Bull-coureur bracht vorige week tijd door in de simulator en waarschuwde dat energiebeheer op de lange rechte stukken van Spa een belangrijke uitdaging kan worden. | Max Verstappen heads to the Belgian Grand Prix with renewed energy after a disappointing weekend at Silverstone. The Red Bull driver spent time in the simulator last week and has warned that managing energy deployment on Spa's long straights could become a major challenge.",
+      "Ferrari team principal Fred Vasseur says preparation, adaptability and clean execution will be vital during an unpredictable weekend at Spa. He believes Ferrari can rely on a united team and a productive relationship between Charles Leclerc and Lewis Hamilton as it continues its fight with Mercedes.",
     kcsQuickShift:
-      "Verstappen has always been strong at Spa, but with energy management becoming such a major talking point this weekend, Red Bull may need more than history on its side. | Verstappen is altijd sterk geweest op Spa, maar nu energiebeheer zo'n belangrijk onderwerp wordt, heeft Red Bull misschien meer nodig dan alleen een goede geschiedenis op dit circuit.",
-    url: "https://racingnews365.nl/verstappen-herpakt-zich-voor-spa-goed-om-er-even-uit-te-zijn-geweest",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+      "Ferrari arrives with momentum, but Spa’s changing conditions will quickly expose any mistake in strategy, communication or execution.",
+    url: "https://www.grandprix247.com/formula-1-news/fred-vasseur-backs-united-ferrari-to-deliver-through-demanding-belgian-grand-prix",
+    imagePath: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "Nextgen-Auto",
-    title: "Bearman Tipped as Red Bull’s First Choice if Verstappen Leaves",
+    sourceLabel: "F1journaal.be",
+    title:
+      "FIA bevestigt vijf Straight Mode zones voor de GP van België|FIA Confirms Five Straight Mode Zones for the Belgian Grand Prix",
     summary:
-      "Ralf Schumacher believes Oliver Bearman should be Red Bull's first choice if Max Verstappen decides to leave the team. He also named Carlos Sainz as another possible option, while suggesting that a recent meeting involving Verstappen's father, manager and former Red Bull adviser Helmut Marko was more likely about the Dutchman's future than a possible Marko comeback.",
+      "De FIA heeft vijf Straight Mode zones bevestigd voor het raceweekend op Spa Francorchamps, het hoogste aantal dat dit seizoen op één circuit wordt gebruikt. Eén zone loopt van La Source richting Eau Rouge, maar Straight Mode moet voor Eau Rouge en Raidillon worden uitgeschakeld vanwege de veiligheid.|The FIA has confirmed five Straight Mode zones for the race weekend at Spa Francorchamps, matching the highest number used at any circuit this season. One zone runs from La Source toward Eau Rouge, but Straight Mode must be closed before Eau Rouge and Raidillon for safety.",
     kcsQuickShift:
-      "Bearman would certainly be a bold choice for Red Bull, but replacing Verstappen would be one of the toughest jobs in Formula 1 no matter who gets the seat.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/bearman-tipped-if-verstappen-leaves-red-bull,209859.html",
-    imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
+      "The five zones should create plenty of straight line speed, but drivers will need complete confidence that the wings close correctly before Spa’s fastest corners.|De vijf zones moeten veel snelheid op de rechte stukken opleveren, maar de coureurs moeten er volledig op kunnen vertrouwen dat de vleugels voor de snelste bochten van Spa correct sluiten.",
+    url: "https://f1journaal.be/fia-bevestigt-bijzondere-situatie-tijdens-gp-van-belgie-vijf-straight-mode-zones-op-spa-francorchamps-ook-richting-eau-rouge-raidillon/?utm_source=chatgpt.com#google_vignette",
+    imagePath: "",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "8",
-    sourceLabel: "Nextgen-Auto",
-    title: "Bahrain Grand Prix Return Now Looks Unlikely as Time Runs Out",
+    sourceLabel: "Infobae",
+    title:
+      "Checo Pérez en la F1: ¿Cuándo compite en el Gran Premio de Bélgica 2026?|Sergio Pérez Returns to Spa Searching for His First Points of 2026",
     summary:
-      "Hopes of restoring the cancelled Bahrain Grand Prix to the 2026 calendar appear to be fading, with Pirelli warning that the necessary preparation and tyre transportation normally requires around four months. Continued uncertainty over the security situation and shipping routes in the Middle East has made planning a possible return increasingly difficult.",
+      "Sergio Pérez regresará al Gran Premio de Bélgica con Cadillac después de no competir en la temporada 2025. El piloto mexicano todavía busca sus primeros puntos de 2026, pero Spa ha sido un circuito favorable para él, con segundos lugares consecutivos en 2022 y 2023.|Sergio Pérez will return to the Belgian Grand Prix with Cadillac after missing the 2025 Formula 1 season. The Mexican driver is still searching for his first points of 2026, but Spa has treated him well in the past, including consecutive second place finishes in 2022 and 2023.",
     kcsQuickShift:
-      "With time running out and the security situation still uncertain, bringing Bahrain back onto the 2026 calendar now looks increasingly difficult.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/bahrain-gp-return-now-looks-unlikely-pirelli,209857.html",
-    imagePath: "/img/news/kcai/bahrain.jpg",
-    photoCredit: "KC AI Generated Images",
-    dateLabel: "July 15, 2026",
+      "Pérez has endured a difficult return to Formula 1, but Spa offers him a circuit where his experience and past success could finally help Cadillac score.|Pérez ha tenido un regreso difícil a la Fórmula 1, pero Spa es un circuito donde su experiencia y sus buenos resultados anteriores podrían ayudar finalmente a Cadillac a sumar puntos.",
+    url: "https://www.infobae.com/mexico/deportes/2026/07/12/checo-perez-en-la-f1-cuando-compite-el-piloto-mexicano-en-el-gran-premio-de-belgica-2026/",
+    imagePath: "",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "GrandPrix247",
-    title: "Haas Admits Car Is Not Fast Enough Ahead of Belgian Grand Prix",
+    sourceLabel: "Infobae",
+    title:
+      "Qué dijo el director de Alpine tras ignorar a Franco Colapinto en Gran Bretaña|Alpine Director Praises Colapinto After Initially Overlooking His British Grand Prix Drive",
     summary:
-      "Haas team principal Ayao Komatsu has admitted the team's cars were simply not fast enough to fight for points during the last two race weekends. The team heads to Spa with a clear test programme aimed at improving performance and gathering useful data for the continued development of the VF-26.",
+      "Steve Nielsen destacó finalmente la actuación de Franco Colapinto en Silverstone después de no mencionarlo en el análisis inicial de Alpine. Nielsen elogió al argentino por avanzar diez posiciones, desde el puesto 19 hasta el noveno, y dijo que las próximas mejoras del equipo deberán ser efectivas en su ajustada lucha con Racing Bulls.|Steve Nielsen has now praised Franco Colapinto’s Silverstone performance after failing to mention him in Alpine’s initial review. Nielsen highlighted the Argentine driver’s recovery from 19th to ninth and said the team’s upcoming upgrades must be effective in its close battle with Racing Bulls.",
     kcsQuickShift:
-      "Haas knows it needs more outright pace, but Spa's unpredictable weather could still give the team a chance to grab points if it can take advantage of the right opportunity.",
-    url: "https://www.grandprix247.com/f1-teams-news/haas-f1-boss-ayao-komatsu-admits-haead-of-belgian-our-cars-ultimately-not-fast-enough",
-    imagePath: "/img/news/xpb/Haas/news-xpbbearman.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 15, 2026",
+      "Colapinto deserved recognition after gaining ten positions, and Alpine now needs to give both drivers a car capable of protecting fifth place in the championship.\n\nColapinto merecía reconocimiento después de avanzar diez posiciones, y Alpine ahora necesita darles a sus dos pilotos un auto capaz de defender el quinto puesto en el campeonato.",
+    url: "https://www.infobae.com/deportes/2026/07/14/que-dijo-el-director-del-equipo-alpine-tras-el-desplante-a-franco-colapinto-en-el-gp-de-gran-bretana-de-f1/",
+    imagePath: "/img/news/Alpine/colapinto/colapintosilver.jpg",
+    photoCredit: "Courtesy of Alping F1",
+    dateLabel: "July 16, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Formula 1",
-    title: "The Stories Behind Every Corner Name at Spa-Francorchamps",
+    sourceLabel: "The Race",
+    title:
+      "Aston Martin Facing Spare Parts Concern for B Spec Car Debut",
     summary:
-      "Formula 1 has explored the history behind the famous corner names at Spa-Francorchamps, from Eau Rouge and Raidillon to Pouhon, Blanchimont and the Bus Stop chicane. Many of the names come from local landmarks, nearby towns, mineral springs and figures from Belgian motorsport history.",
+      "Aston Martin is working against tight production deadlines to prepare enough parts for its heavily revised AMR26, which is scheduled to debut in Hungary. The package includes changes to the rear suspension, nose and aerodynamic surfaces, along with weight reduction, but the team may not have complete backup coverage for every component.",
     kcsQuickShift:
-      "Spa is one of those rare circuits where nearly every corner has its own identity and history, which is a big part of what makes the Belgian Grand Prix weekend so special.",
-    url: "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-the-circuit-de-spa-francorchamps-got-its-name.1o6cyXf5F6q9VFFcgMqTqs",
-    imagePath: "/img/news/raceposter/belgiumspa.jpg",
-    photoCredit: "KC AI Generated Images",
-    dateLabel: "July 15, 2026",
+      "The new car could be an important step forward, but an accident or damaged component in Hungary could create a serious problem if replacement parts are limited.",
+    url: "https://www.the-race.com/formula-1/aston-martin-b-spec-2026-f1-car-spare-parts-concern/",
+    imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 16, 2026",
   },
  
  ];

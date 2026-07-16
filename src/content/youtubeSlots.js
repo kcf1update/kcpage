@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Russell, Reliability Or Ferrari? What Is Kimi’s Biggest Threat? | Belgian GP Preview | F1 Nation",
-  youtubeInput: "https://youtu.be/CzkjhGr_I9o",
-  forceExternal : "blue" 
+  title: "Why drivers fear F1 2026 will be awful at Spa",
+  youtubeInput: "https://youtu.be/JfcvsRpdx-g",
+   
   },
 
   {
     slotId: "slot2",
-    title: "The $215million war that will decide F1 2026",
-    youtubeInput: "https://youtu.be/ACZcnQgBYZg",
+    title: "FERRARI THREAT — MERCEDES FORCED TO CHANGE - f1 news",
+    youtubeInput: "https://youtu.be/EDL9bkD3_Yw",
    
   },
 
   {
     slotId: "slot3",
-    title: "Newey admits has revealed about the extent of Aston Martin's 2026 F1 disaster",
-    youtubeInput: "https://www.youtube.com/shorts/GCkhsX_eAxM?t=3&feature=share",
+    title: "HUGE VERSTAPPEN NEGOTATION DETAIL LEAKED! F1 News",
+    youtubeInput: "https://youtu.be/bZTKGJ8qCLs",
     
   }
 ];
