@@ -45,17 +45,16 @@ export const newsSlots = [
 
   {
     slotId: "4",
-    sourceLabel: "RacingNews365.nl",
-    title:
-      'Verstappen praat zichzelf moed in: "Anders niet vol te houden"|Verstappen Tries to Stay Positive: "Otherwise It Is Impossible to Keep Going"',
-    summary:
-      "Max Verstappen verwacht een zwaar weekend op Spa, omdat Red Bull op de lange rechte stukken en door de snelle bochten veel energie moet beheren. Hij probeert positief te blijven, maar ziet weinig reden om te verwachten dat de werkelijkheid beter zal zijn dan de simulaties.|Max Verstappen expects a difficult weekend at Spa because Red Bull must carefully manage its energy through the fast corners and along the long straights. He is trying to remain positive, but sees little reason to believe the real conditions will be better than the simulations.",
-    kcsQuickShift:
-      "Verstappen usually finds something extra at Spa, but his comments suggest Red Bull may be facing one of its most difficult circuits of the season.|Verstappen vindt meestal iets extra's op Spa, maar zijn opmerkingen suggereren dat Red Bull mogelijk een van de moeilijkste circuits van het seizoen tegemoet gaat.",
-    url: "https://racingnews365.nl/verstappen-praat-zichzelf-moed-in-anders-niet-vol-te-houden",
-    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
+  sourceLabel: "ESPN",
+  title: "Piastri Dismisses McLaren Swap Rumours Involving Verstappen",
+  summary:
+    "Oscar Piastri has dismissed speculation that he could be replaced by Max Verstappen at McLaren. Piastri says he remains comfortable with his position in the team and believes any recent contact involving Verstappen may simply be the Red Bull driver exploring his options.",
+  kcsQuickShift:
+    "McLaren already has two proven race winners, so replacing Piastri with Verstappen would create far more disruption than the current rumours acknowledge.",
+  url: "https://www.espn.co.uk/f1/story/_/id/49377688/piastri-shuts-mclaren-swap-rumours-max-verstappen-just-exploring-options",
+  imagePath: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 17, 2026",
   },
 
   {
