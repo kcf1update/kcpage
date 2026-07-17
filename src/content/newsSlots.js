@@ -2,32 +2,31 @@
 export const newsSlots = [
   {
     slotId: "1",
-    sourceLabel: "Crash.net",
-    title:
-      "Red Bull Drops Rotating Rear Wing After Verstappen’s High Speed Crashes",
-    summary:
-      "Red Bull will return to a conventional rear wing for the Belgian Grand Prix after its rotating design was linked to Max Verstappen’s crashes in Austria and Britain. Tests following Silverstone uncovered a problem with the design, prompting the team to remove it while work continues on a permanent solution.",
-    kcsQuickShift:
-      "Two failures in high speed corners were two too many, and returning to a conventional wing is the only sensible decision for Spa.",
-    url: "https://www.crash.net/f1/news/1101070/1/red-bull-makes-key-rear-wing-decision-after-high-speed-max-verstappen-crashes",
-    imagePath: "/img/news/xpb/RedBull/Maxcar.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 16, 2026",
+  sourceLabel: "Autosport",
+  title: "Verstappen Leads Hamilton and Leclerc in Belgian Grand Prix FP1",
+  summary:
+    "Max Verstappen set the fastest time in opening practice at Spa, finishing 0.145 seconds ahead of Lewis Hamilton, with Charles Leclerc close behind in third. Red Bull looked particularly strong through the middle sector, while Oscar Piastri ended the session fifth after a late hydraulic pressure concern.",
+  kcsQuickShift:
+    "Red Bull arrived expecting Spa to expose some weaknesses, but Verstappen and Hadjar showed strong early pace while Ferrari remained close enough to keep the front battle wide open.",
+  url: "https://www.autosport.com/f1/news/f1-belgian-gp-verstappen-quickest-in-fp1-over-hamilton/10839409/",
+  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 17, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "Crash.net",
-    title:
-      "Lando Norris Handed 10 Place Grid Penalty for Belgian Grand Prix",
-    summary:
-      "Lando Norris will receive a 10 place grid penalty at Spa after McLaren installed a fourth power electronics unit in his car. McLaren chose Belgium because passing should be more achievable there than at the following races in Hungary and the Netherlands.",
-    kcsQuickShift:
-      "Spa gives Norris a better chance to recover from the penalty, but starting further back adds another difficult challenge to McLaren’s season.",
-    url: "https://www.crash.net/f1/news/1101068/1/f1-world-champion-lando-norris-hit-major-penalty-belgian-grand-prix",
-    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 16, 2026",
+  sourceLabel: "RacingNews365.nl",
+  title:
+    "Verstappen en Red Bull verrassen vriend, vijand én zichzelf in eerste training België|Verstappen and Red Bull Surprise Everyone, Including Themselves, in Belgian GP Practice",
+  summary:
+    "Red Bull zat er vanaf de eerste ronden verrassend goed bij tijdens de eerste vrije training in België. Max Verstappen noteerde de snelste tijd, 0,145 seconde voor Lewis Hamilton, terwijl Isack Hadjar met de vierde plaats liet zien dat ook de tweede Red Bull sterk voor de dag kwam.|Red Bull looked surprisingly competitive from the opening laps of first practice in Belgium. Max Verstappen set the fastest time, 0.145 seconds ahead of Lewis Hamilton, while Isack Hadjar’s fourth place showed that the second Red Bull also had strong pace.",
+  kcsQuickShift:
+    "Red Bull expected Spa to expose some of its weaknesses, but Verstappen and Hadjar immediately showed that the team may be much more competitive than anticipated.|Red Bull verwachtte dat Spa enkele zwakke punten zou blootleggen, maar Verstappen en Hadjar lieten meteen zien dat het team mogelijk veel sterker is dan verwacht.",
+  url: "https://racingnews365.nl/verstappen-en-red-bull-verrassen-vriend-vijand-%C3%A9n-zichzelf-in-eerste-training-belgi%C3%AB",
+  imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 17, 2026",
   },
 
  {

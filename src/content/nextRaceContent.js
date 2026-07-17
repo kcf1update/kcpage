@@ -352,7 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-
+1	Max Verstappen	NED	Oracle Red Bull Racing	1m47.070s	24
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m47.215s	22
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m47.277s	22
+4	Isack Hadjar	FRA	Oracle Red Bull Racing	1m47.322s	23
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m47.522s	21
+6	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m47.603s	23
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m47.931s	19
+8	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m47.959s	22
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m48.234s	24
+10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m48.406s	18
+11	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m48.432s	24
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m48.962s	23
+13	Ollie Bearman	GBR	TGR Haas F1 Team	1m49.010s	21
+14	Alex Albon	THA	Atlassian Williams F1 Team	1m49.337s	24
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m49.403s	23
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m49.449s	21
+17	Pierre Gasly	FRA	BWT Alpine F1 Team	1m49.712s	23
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m49.829s	21
+19	Sergio Perez	MEX	Cadillac F1 Team	1m50.226s	22
+20	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m50.862s	25
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m52.808s	19
+22	Jak Crawford	USA	Aston Martin Aramco F1 Team	1m53.199s	22
 `;
 
 const PASTE_P2 = `
@@ -456,13 +477,22 @@ export const raceWeekendRecap = {
         ]
       : [
           {
+ 
   heading: "Practice 1",
   items: [
     {
-      title: "",
-      summary:
-        "",
-      url: "",
+      title:
+        "Verstappen Leads Ferrari as Red Bull Sets the Pace in Belgian Grand Prix FP1",
+      summary: `Max Verstappen set the fastest time in the opening practice session for the Belgian Grand Prix, giving Red Bull an encouraging start to the weekend at Spa. Verstappen recorded a best lap of 1m47.070s and finished 0.145 seconds ahead of Lewis Hamilton, with Charles Leclerc close behind in third.
+
+Red Bull showed particularly strong pace through the middle sector, with Isack Hadjar also running near the front before finishing fourth. Ferrari remained firmly in contention as Hamilton and Leclerc split the two Red Bulls.
+
+Oscar Piastri finished fifth for McLaren but reported a hydraulic pressure issue late in the session. He was able to return the car to the garage. Kimi Antonelli placed sixth ahead of Lando Norris and George Russell.
+
+Aston Martin endured the most difficult opening session. Lance Stroll and rookie Jak Crawford finished at the bottom of the timesheets, both more than five seconds away from Verstappen's benchmark.
+
+FP1 suggested Red Bull and Ferrari could be closely matched at the front, while McLaren and Mercedes still have work to do before the competitive sessions begin.`,
+      url: "https://www.autosport.com/f1/news/f1-belgian-gp-verstappen-quickest-in-fp1-over-hamilton/10839409/",
     },
   ],
 },
@@ -557,7 +587,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 AM ADT",
+          time: "Verstappen fastest, results below. ",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
