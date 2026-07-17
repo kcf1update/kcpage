@@ -377,6 +377,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m45.944s	17
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	1m46.134s	17
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m46.416s	20
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m46.691s	15
+5	Isack Hadjar	FRA	Oracle Red Bull Racing	1m46.714s	19
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m46.926s	10
+7	Franco Colapinto	ARG	BWT Alpine F1 Team	1m47.147s	19
+8	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m47.229s	19
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m47.294s	19
+10	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m47.434s	15
+11	Charles Leclerc	MON	Scuderia Ferrari HP	1m47.468s	18
+12	Ollie Bearman	GBR	TGR Haas F1 Team	1m47.792s	16
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m47.952s	17
+14	Esteban Ocon	FRA	TGR Haas F1 Team	1m47.958s	19
+15	Alex Albon	THA	Atlassian Williams F1 Team	1m48.019s	18
+16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m48.256s	18
+17	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m48.333s	15
+18	Pierre Gasly	FRA	BWT Alpine F1 Team	1m48.955s	15
+19	Valtteri Bottas	FIN	Cadillac F1 Team	1m49.199s	18
+20	Sergio Perez	MEX	Cadillac F1 Team	1m49.596s	19
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m51.131s	16
+22	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m51.418s	19
 
 `;
 
@@ -496,15 +518,17 @@ FP1 suggested Red Bull and Ferrari could be closely matched at the front, while 
     },
   ],
 },
-{
+    {
   heading: "Practice 2",
   items: [
     {
-      title: "",
-      summary:
-        "",
+      title: "Antonelli Leads Disrupted Belgian Grand Prix Second Practice",
+      summary: `Kimi Antonelli put Mercedes on top in second practice for the Belgian Grand Prix, setting a fastest lap of 1:45.944. Lando Norris finished just 0.190 seconds behind in second, with Max Verstappen third and Lewis Hamilton fourth.
 
-      url: "",
+The session was interrupted twice. The first red flag was caused by gravel on the circuit, while the second followed a late crash for Pierre Gasly at Les Fagnes. Gasly lost control of the rear of his Alpine and struck the barrier, damaging the rear wing and right rear of the car. The session was not restarted, cutting short the teams’ planned long runs.
+
+Isack Hadjar finished fifth ahead of Oscar Piastri, who missed the opening 20 minutes while McLaren repaired a suspected hydraulic problem. Franco Colapinto placed seventh, while George Russell struggled to eighth and finished more than a second behind Mercedes teammate Antonelli. Arvid Lindblad and Liam Lawson completed the top ten.`,
+      url: "https://www.motorsport.com/f1/news/f1-belgian-gp-fp2-report-/10839494/",
     },
   ],
 },
@@ -596,7 +620,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:00 AM ADT",
+          time: "Antonelli Fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),

@@ -1,31 +1,31 @@
 
 export const newsSlots = [
   {
-    slotId: "1",
-  sourceLabel: "Autosport",
-  title: "Verstappen Leads Hamilton and Leclerc in Belgian Grand Prix FP1",
+     slotId: "1",
+  sourceLabel: "Crash.net",
+  title: "Antonelli Puts Mercedes on Top as Gasly Crash Disrupts Belgian GP Practice",
   summary:
-    "Max Verstappen set the fastest time in opening practice at Spa, finishing 0.145 seconds ahead of Lewis Hamilton, with Charles Leclerc close behind in third. Red Bull looked particularly strong through the middle sector, while Oscar Piastri ended the session fifth after a late hydraulic pressure concern.",
+    "Kimi Antonelli set the fastest time in a disrupted second practice session at the Belgian Grand Prix, finishing ahead of Lando Norris and Max Verstappen. The session ended early after Pierre Gasly crashed heavily at Stavelot, while George Russell struggled to eighth place for Mercedes.",
   kcsQuickShift:
-    "Red Bull arrived expecting Spa to expose some weaknesses, but Verstappen and Hadjar showed strong early pace while Ferrari remained close enough to keep the front battle wide open.",
-  url: "https://www.autosport.com/f1/news/f1-belgian-gp-verstappen-quickest-in-fp1-over-hamilton/10839409/",
-  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+    "Antonelli delivered when Mercedes needed it, but Russell’s lack of pace and Gasly’s costly crash added more questions heading into Saturday.",
+  url: "https://www.crash.net/f1/news/1101210/1/kimi-antonelli-puts-mercedes-back-top-red-flagged-f1-belgian-gp-practice-after",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimispa.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 17, 2026",
   },
 
   {
     slotId: "2",
-  sourceLabel: "RacingNews365.nl",
+  sourceLabel: "MARCA",
   title:
-    "Verstappen en Red Bull verrassen vriend, vijand én zichzelf in eerste training België|Verstappen and Red Bull Surprise Everyone, Including Themselves, in Belgian GP Practice",
+    "Pierre Gasly destroza su Alpine en los entrenamientos del GP de Bélgica|Pierre Gasly Wrecks His Alpine During Belgian GP Practice",
   summary:
-    "Red Bull zat er vanaf de eerste ronden verrassend goed bij tijdens de eerste vrije training in België. Max Verstappen noteerde de snelste tijd, 0,145 seconde voor Lewis Hamilton, terwijl Isack Hadjar met de vierde plaats liet zien dat ook de tweede Red Bull sterk voor de dag kwam.|Red Bull looked surprisingly competitive from the opening laps of first practice in Belgium. Max Verstappen set the fastest time, 0.145 seconds ahead of Lewis Hamilton, while Isack Hadjar’s fourth place showed that the second Red Bull also had strong pace.",
+    "Pierre Gasly sufrió un fuerte accidente en la parte final de la segunda sesión de entrenamientos del Gran Premio de Bélgica. El piloto francés perdió el control de su Alpine en Les Fagnes y golpeó con fuerza las barreras, provocando una bandera roja que puso fin anticipadamente a la sesión.|Pierre Gasly suffered a heavy crash late in the second Belgian Grand Prix practice session. The French driver lost control of his Alpine at Les Fagnes and struck the barriers hard, triggering a red flag that brought the session to an early end.",
   kcsQuickShift:
-    "Red Bull expected Spa to expose some of its weaknesses, but Verstappen and Hadjar immediately showed that the team may be much more competitive than anticipated.|Red Bull verwachtte dat Spa enkele zwakke punten zou blootleggen, maar Verstappen en Hadjar lieten meteen zien dat het team mogelijk veel sterker is dan verwacht.",
-  url: "https://racingnews365.nl/verstappen-en-red-bull-verrassen-vriend-vijand-%C3%A9n-zichzelf-in-eerste-training-belgi%C3%AB",
-  imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
-  photoCredit: "XPB IMAGES",
+    "Gasly’s accident caused substantial damage to the Alpine and cost the team valuable track time before Saturday.|El accidente de Gasly causó importantes daños al Alpine y le costó al equipo un valioso tiempo en pista antes del sábado.",
+  url: "https://www.marca.com/motor/formula1/gp-belgica/2026/07/17/pierre-gasly-destroza-alpine.html",
+  imagePath: "/img/news/Alpine/Gasly/monacogasly.jpg",
+  photoCredit: "Courtesy of Alpine F1",
   dateLabel: "July 17, 2026",
   },
 
