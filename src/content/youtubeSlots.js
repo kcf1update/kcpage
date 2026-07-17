@@ -9,16 +9,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Why drivers fear F1 2026 will be awful at Spa",
-  youtubeInput: "https://youtu.be/JfcvsRpdx-g",
+  title: "F1 Drivers Arriving in Private Jets | 2026 Belgian Grand Prix Spa Francorchamps",
+  youtubeInput: "https://youtu.be/8yrSCcK0CJ8",
    
   },
 
   {
     slotId: "slot2",
-    title: "FERRARI THREAT — MERCEDES FORCED TO CHANGE - f1 news",
-    youtubeInput: "https://youtu.be/EDL9bkD3_Yw",
-   
+    title: "Drivers Look Ahead To Race Weekend | 2026 Belgian Grand Prix",
+    youtubeInput: "https://youtu.be/rGB9d0nb8KU",
+   forceExternal :"blue"
   },
 
   {
