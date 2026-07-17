@@ -15,13 +15,13 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
+  enabled:true,
   label: "Race Weekend Results",
-  title: "British Grand Prix Race Centre",
-  body: "The British Grand Prix is complete. Full race results, session summaries, weekend updates, and the photo gallery are available now in the Race Centre.",
+  title: "BELGIAN GRAND PRIX RACE CENTER",
+  body: "The Belgian Grand Prix Race Weekend is now underway. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
   buttonText: "View Race Results →",
   buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/silverstone.jpg",
+  backgroundImage: "/img/news/raceposter/belgiumspa.jpg",
 };
 // Simple glassy card helper for the lower sections
 function GlassyCard({
@@ -42,7 +42,7 @@ function GlassyCard({
   return (
     <section
       className={
-        "relative rounded-3xl border bg-black/65 backdrop-blur-2xl text-slate-100 " +
+        "relative rounded-3xl border bg-black/45 backdrop-blur-2xl text-slate-100 " +
         "px-5 py-4 sm:px-7 sm:py-6 transition-transform duration-200 hover:-translate-y-0.5 " +
         highlightRing[highlight] +
         " " +
@@ -167,7 +167,7 @@ function RaceWeekendPromo() {
     <section
   className="relative mt-1 overflow-hidden rounded-3xl border border-cyan-400/35 bg-black/70 px-4 py-4 text-center shadow-[0_0_24px_rgba(34,211,238,0.35)] backdrop-blur-2xl sm:px-6 sm:py-5"
   style={{
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)), url(${safeLocalImagePath(raceWeekendPromo.backgroundImage)})`,
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url(${safeLocalImagePath(raceWeekendPromo.backgroundImage)})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
