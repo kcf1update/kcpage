@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "F1 Drivers Arriving in Private Jets | 2026 Belgian Grand Prix Spa Francorchamps",
-  youtubeInput: "https://youtu.be/8yrSCcK0CJ8",
+  title: "2026 F1 Belgian GP Friday analysis by Peter Windsor",
+  youtubeInput: "https://youtu.be/nZ86VYbVyaA",
    
   },
 

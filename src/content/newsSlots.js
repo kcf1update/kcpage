@@ -28,117 +28,113 @@ export const newsSlots = [
 },
 
  {
-    slotId: "3",
-    sourceLabel: "The Race",
-    title: "Formula 1 Teams Declare 21 Upgrades for the Belgian Grand Prix",
-    summary:
-      "Formula 1 teams have declared a combined 21 upgrades for Spa, with Haas and Racing Bulls each bringing four changes. Ferrari and Aston Martin are the only teams without new parts, while Mercedes, McLaren, Williams and several others have introduced aerodynamic updates or lower downforce components for Spa.",
-    kcsQuickShift:
-      "The unusual Haas front wing and Racing Bulls package will be worth watching closely during practice, but the decision by Ferrari to bring nothing new is also interesting.",
-    url: "https://www.the-race.com/formula-1/f1-teams-declare-21-upgrades-for-belgian-gp/",
-    imagePath: "/img/news/xpb/Visa/news-xpblindblad.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "4",
+  slotId: "3",
   sourceLabel: "ESPN",
-  title: "Piastri Dismisses McLaren Swap Rumours Involving Verstappen",
+  title: "Lando Norris Criticises Paparazzi Intrusion Into His Private Life",
   summary:
-    "Oscar Piastri has dismissed speculation that he could be replaced by Max Verstappen at McLaren. Piastri says he remains comfortable with his position in the team and believes any recent contact involving Verstappen may simply be the Red Bull driver exploring his options.",
+    "Lando Norris has spoken about the growing level of attention he receives from photographers away from Formula 1. Norris accepts that public interest comes with his success, but says the constant scrutiny has made it feel as though his private life is no longer private.",
   kcsQuickShift:
-    "McLaren already has two proven race winners, so replacing Piastri with Verstappen would create far more disruption than the current rumours acknowledge.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49377688/piastri-shuts-mclaren-swap-rumours-max-verstappen-just-exploring-options",
-  imagePath: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
+    "Norris understands the attention that comes with being a leading Formula 1 driver, but there still needs to be a reasonable boundary around his life away from the track.",
+  url: "https://www.espn.co.uk/f1/story/_/id/49385305/lando-norris-slams-paparazzi-trailing-every-move-feel-private-life-private",
+  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 17, 2026",
-  },
+  dateLabel: "July 18, 2026",
+},
 
   {
-    
-    slotId: "5",
-    sourceLabel: "Independent.ie",
-    title: "Leclerc Names Mercedes as Belgian Grand Prix Favourite",
-    summary:
-      "Charles Leclerc believes Mercedes remains the team to beat at Spa despite Ferrari winning two of the last three races. He expects the Belgian circuit's fast layout to suit Mercedes, although Ferrari's recent improvement could produce another close fight at the front.",
-    kcsQuickShift:
-      "Am Irish Article for our new viewers from Ireland -- Thank you.  Ferrari may be trying to lower expectations, but its recent form means Mercedes cannot assume that Spa will belong to them.",
-    url: "https://www.independent.ie/sport/other-sports/motor-sport/charles-leclerc-puts-mercedes-as-favourites-for-belgian-grand-prix-despite-ferraris-surge/a/158845278.html",
-    imagePath: "/img/news/xpb/ferrari/xpb-charlesspa.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "6",
-    sourceLabel: "Nextgen-Auto",
-    title: "Hülkenberg Laughs Off Sainz to Audi Rumours",
-    summary:
-      "Nico Hülkenberg has dismissed speculation that Carlos Sainz could take his Audi seat in 2027. Hülkenberg joked that Audi's reserve position remains available, while insisting that the team's two race seats are already settled.",
-    kcsQuickShift:
-      "Driver market rumours will continue through the summer, but Hülkenberg sounds completely confident that his place in Audi's Formula 1 project is secure.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/hulkenberg-laughs-off-sainz-to-audi-rumours,209913.html",
-    imagePath: "/img/news/xpb/Audi/xpb-hulkspa.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "7",
-    sourceLabel: "Nextgen-Auto",
-    title: "Marko Believes Big Money Will Keep Verstappen in Formula 1",
-    summary:
-      "Helmut Marko believes the enormous salaries available to Formula 1's leading drivers could persuade Max Verstappen to remain in the championship longer than he currently suggests. Verstappen has repeatedly said that he does not intend to continue racing simply to extend his career.",
-    kcsQuickShift:
-      "Money may be one reason to stay, but Verstappen has always made it clear that enjoying the racing and believing in the direction of Formula 1 matter just as much.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/big-money-will-keep-verstappen-in-f1-marko,209912.html",
-    imagePath: "/img/news/xpb/RedBull/xpbjv.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "8",
-    sourceLabel: "Motorsport.com",
-    title: "Russell Explains Why Matching Antonelli Feels Like Recreating the Mona Lisa",
-    summary:
-      "George Russell says he understands where he is losing performance to Mercedes teammate Kimi Antonelli, but reproducing Antonelli's technique is much harder than simply identifying it in the data. Russell has been forced to change a driving style that had worked throughout his career to suit Formula 1's new cars and power units.",
-    kcsQuickShift:
-      "Russell is not searching blindly for answers, but turning new techniques into natural reactions while driving at the limit is proving to be the difficult part.",
-    url: "https://www.motorsport.com/f1/news/how-george-russell-struggling-match-kimi-antonelli/10839274/",
-    imagePath: "/img/news/xpb/Mercedes/news-georgemontreal.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-     slotId: "9",
-    sourceLabel: "Motorsport.com",
-    title: "Stroll Says Hungary Upgrade Must Prove Aston Martin Can Recover",
-    summary:
-      "Lance Stroll says Aston Martin's major upgrade package for Hungary must show that the team can correct the AMR26's underlying weaknesses. He warned that an improved Honda power unit will not be enough to transform the team's results if the upgraded chassis remains uncompetitive.",
-    kcsQuickShift:
-      "Aston Martin needs the Hungary package to deliver real aerodynamic progress, because additional engine performance cannot fix a car that is still struggling for balance and downforce.",
-    url: "https://www.motorsport.com/f1/news/stroll-warns-if-the-hungary-package-goes-wrong-a-new-engine-wont-be-enough/10839328/",
-    imagePath: "/img/news/shut/Aston/news-shutterstocklance.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "10",
-    sourceLabel: "Formula1.com",
-    title: "Gasly Expects Tough Fight as Racing Bulls Close In on Alpine",
-    summary:
-      "Pierre Gasly admits Racing Bulls have looked particularly strong as they challenge Alpine in the midfield Constructors' Championship battle. He expects a difficult fight at Spa, but says Alpine will continue pushing to defend its position until more improvements arrive.",
-    kcsQuickShift:
-      "Racing Bulls has built real momentum and is bringing four upgrades to Spa, so Alpine may have a difficult job keeping its rival behind this weekend.",
-    url: "https://www.formula1.com/en/latest/article/its-going-to-be-tough-gasly-admits-racing-bulls-have-looked-really-strong-amid-midfield-fight-with-alpine.x2AXyKpfQhlTOzKcmPhaz",
-    imagePath: "/img/news/Alpine/Gasly/news-Gasly.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "July 17, 2026",
-  },
+  slotId: "4",
+  sourceLabel: "RacingNews365",
+  title: "Lance Stroll Explains Viral Silverstone Steering Video",
+  summary:
+    "Lance Stroll says the unusual steering inputs seen during the British Grand Prix weekend were a deliberate attempt to demonstrate the Aston Martin’s loss of front end grip. The aggressive movements initially alarmed the team, but helped engineers better understand the car’s aerodynamic problems.",
+  kcsQuickShift:
+    "Stroll’s demonstration may have looked dramatic, but it gave Aston Martin a clearer picture of a problem that was difficult to identify through data alone.",
+  url: "https://racingnews365.com/lance-stroll-explains-viral-silverstone-video-that-triggered-alarms-at-aston-martin",
+  imagePath: "",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "5",
+  sourceLabel: "PlanetF1",
+  title: "Kimi Antonelli Responds to George Russell’s Luck Claim",
+  summary:
+    "Kimi Antonelli has rejected George Russell’s suggestion that luck may have favoured him during their championship fight. Antonelli believes both Mercedes drivers have lost significant points through reliability problems and race changing incidents.",
+  kcsQuickShift:
+    "Antonelli is making it clear that consistency and reliability, not luck, could decide which Mercedes driver comes out ahead.",
+  url: "https://www.planetf1.com/news/kimi-antonelli-responds-george-russell-luck-claim-amidst-title-fight",
+  imagePath: "/img/news/xpb/Mercedes/newsxpbkimimonacowin.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "6",
+  sourceLabel: "PlanetF1",
+  title: "Max Verstappen Explains Angry Red Bull Radio Message",
+  summary:
+    "Max Verstappen says his angry radio message during Belgian Grand Prix practice was aimed at poor downshifts following a Red Bull software change. The shifting improved as the session continued, although Verstappen admitted the car was still losing time on the straights.",
+  kcsQuickShift:
+    "The software issue was corrected, but Red Bull may still need to find more straight line speed before qualifying and the race.",
+  url: "https://www.planetf1.com/news/max-verstappen-unacceptable-red-bull-radio-belgian-grand-prix",
+  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "7",
+  sourceLabel: "Nextgen Auto",
+  title: "Bearman’s Future Is Not Up to Haas, Admits Komatsu",
+  summary:
+    "Haas team principal Ayao Komatsu admits Oliver Bearman’s long term future is ultimately controlled by Ferrari. Bearman remains part of Ferrari’s driver programme, meaning Haas could lose him if Ferrari decides he is ready for promotion.",
+  kcsQuickShift:
+    "Bearman continues to impress at Haas, but Ferrari will have the final say on where his Formula 1 career goes next.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/bearman-s-future-not-up-to-us-admits-komatsu,209957.html",
+  imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "8",
+  sourceLabel: "FormulaPassion.it",
+  title:
+    "Spa, McLaren nuova ma non è Macarena|Spa, McLaren Brings Something New, but It Is Not the Macarena Wing",
+  summary:
+    "La McLaren ha introdotto a Spa una nuova ala posteriore a basso carico per migliorare la velocità della MCL40 sui rettilinei. Tuttavia, non si tratta ancora dell’ala Macarena, il progetto con movimento inverso che richiede ulteriore sviluppo.|McLaren has introduced a new low downforce rear wing at Spa to improve the MCL40’s straight line speed. However, it is not the delayed Macarena wing, the reverse moving design that still requires further development.",
+  kcsQuickShift:
+    "McLaren is targeting more straight line speed at Spa, but its more radical Macarena concept is still not ready to race.|La McLaren cerca maggiore velocità sui rettilinei di Spa, ma il più radicale progetto Macarena non è ancora pronto per essere utilizzato in gara.",
+  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-analisi-tecnica/spa-mclaren-nuova-ma-non-e-macarena",
+  imagePath: "/img/news/shut/mclaren/news-shutterstockmclarenpit.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "9",
+  sourceLabel: "F1News.se",
+  title:
+    "Sainz kräver ursäkt efter idiot kommentaren\nSainz Demands an Apology After Antonelli’s Idiot Comment",
+  summary:
+    "Carlos Sainz kräver en ursäkt från Kimi Antonelli efter att Mercedes föraren kallade honom för en idiot över teamradion under fredagens träning. Antonelli ansåg att Sainz hade saktat ner farligt, medan Sainz menade att han inte hade hindrat honom.\n\nCarlos Sainz has called for an apology from Kimi Antonelli after the Mercedes driver referred to him as an idiot over team radio during Friday practice. Antonelli believed Sainz had slowed dangerously, while Sainz argued that he had not impeded him.",
+  kcsQuickShift:
+    "Tempers are already rising at Spa, and this disagreement adds another layer of tension before qualifying.\n\nTemperaturen stiger redan på Spa, och den här konflikten skapar ännu mer spänning inför kvalet.",
+  url: "https://f1news.se/sainz-kraver-ursakt-efter-idiot-kommentaren",
+  imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "10",
+  sourceLabel: "AUTOhebdo",
+  title:
+    "Cadillac explique l’abandon de sa livrée asymétrique|Cadillac Explains Why It Abandoned Its Asymmetric Livery",
+  summary:
+    "Cadillac a expliqué pourquoi l’équipe avait abandonné la livrée asymétrique noire et blanche utilisée au début de la saison. Graeme Lowdon affirme que le nouveau design s’inspire davantage de la livrée populaire présentée à Miami après les réactions positives des supporters.|Cadillac has explained why it abandoned the asymmetric black and white livery used earlier in the season. Graeme Lowdon says the revised design is based more closely on the popular Miami livery following positive fan reaction.",
+  kcsQuickShift:
+    "Cadillac listened to its supporters and moved toward a cleaner design that proved far more popular.|Cadillac a écouté ses supporters et a adopté un design plus épuré qui s’est révélé beaucoup plus populaire.",
+  url: "https://www.autohebdo.fr/actualites/f1/cadillac-explique-labandon-de-sa-livree-asymetrique.html",
+  imagePath: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
  
  ];
 
