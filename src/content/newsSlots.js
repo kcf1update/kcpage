@@ -3,26 +3,26 @@ export const newsSlots = [
  {
   slotId: "1",
   sourceLabel: "The Race",
-  title: "Antonelli Sets the Pace as Hamilton Crashes in Final Belgian GP Practice",
+  title: "Antonelli Dominates Belgian GP Qualifying to Take Pole",
   summary:
-    "Kimi Antonelli completed a strong Belgian Grand Prix practice programme by setting the fastest time in FP3, narrowly beating Lando Norris and Max Verstappen. Lewis Hamilton brought the session to a dramatic end after crashing heavily at Turn 13 and damaging the rear of his Ferrari.",
+    "Kimi Antonelli delivered a commanding final lap to secure pole position for the Belgian Grand Prix by 0.317 seconds over Max Verstappen. Lando Norris qualified third but will drop ten places on the starting grid because of a battery-related penalty.",
   kcsQuickShift:
-    "Antonelli looks like a serious qualifying threat, although his grid penalty means Mercedes may need to focus on limiting the damage and preparing for a recovery drive.",
-  url: "https://www.the-race.com/formula-1/what-happened-in-final-f1-practice-at-belgian-gp/",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimispa2.jpg",
+    "Antonelli handled the pressure and produced the lap when it mattered, giving Mercedes a major opportunity heading into Sunday’s race.",
+  url: "https://www.the-race.com/formula-1/kimi-antonelli-pole-position-belgian-gp-f1-qualifying/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimipolespa.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 18, 2026",
 },
 {
   slotId: "2",
-  sourceLabel: "Formula1.com",
-  title: "Alonso Joins Norris, Hadjar and Stroll With Belgian GP Grid Penalty",
+  sourceLabel: "RacingNews365",
+  title: "Antonelli Beats Red Bull Tow Tactics to Claim Belgian GP Pole",
   summary:
-    "Fernando Alonso will start the Belgian Grand Prix from the back of the grid after Aston Martin installed additional power unit components before FP3. Alonso joins Lando Norris, Isack Hadjar and Lance Stroll among the drivers carrying penalties into Sunday’s race.",
+    "Kimi Antonelli overcame Red Bull’s attempt to give Max Verstappen a slipstream and claimed Belgian Grand Prix pole with a 1:44.361. Verstappen finished second, while Norris took third before his ten-place grid penalty is applied.",
   kcsQuickShift:
-    "With four drivers taking penalties, the starting order could look very different from the qualifying results and create several recovery drives through the field.",
-  url: "https://www.formula1.com/en/latest/article/alonso-to-join-norris-hadjar-and-stroll-with-belgian-gp-grid-penalty.MPclpUR9MWAKfo1DTnufQ",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    "Red Bull tried to manufacture an advantage for Verstappen, but Antonelli’s outright speed was simply too strong.",
+  url: "https://racingnews365.com/kimi-antonelli-overcomes-red-bull-tactics-to-claim-belgian-gp-pole",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimipitsspa.jpg ",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 18, 2026",
 },

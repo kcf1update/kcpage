@@ -53,12 +53,12 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimipitsspa.jpg",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimipolespa.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },

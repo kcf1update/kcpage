@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "2026 F1 Belgian GP Friday analysis by Peter Windsor",
-  youtubeInput: "https://youtu.be/nZ86VYbVyaA",
-   
+  title: "Qualifying Highlights | 2026 Belgian Grand Prix",
+  youtubeInput: "https://youtu.be/CmzXqYzymzg",
+   forceExternal :"blue"
   },
 
   {

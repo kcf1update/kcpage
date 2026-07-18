@@ -435,6 +435,116 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	12	
+
+Kimi Antonelli
+
+Mercedes	1:46.304	1:45.142	1:44.361	15
+2	3	
+
+Max Verstappen
+
+Red Bull Racing	1:45.930	1:45.589	1:44.678	12
+3	1	
+
+Lando Norris
+
+McLaren	1:45.865	1:45.454	1:44.801	11
+4	63	
+
+George Russell
+
+Mercedes	1:46.185	1:45.689	1:44.869	18
+5	16	
+
+Charles Leclerc
+
+Ferrari	1:46.278	1:45.397	1:44.893	18
+6	44	
+
+Lewis Hamilton
+
+Ferrari	1:46.124	1:45.543	1:44.895	15
+7	81	
+
+Oscar Piastri
+
+McLaren	1:46.433	1:45.671	1:45.016	17
+8	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:46.191	1:45.629	1:45.143	18
+9	5	
+
+Gabriel Bortoleto
+
+Audi	1:46.609	1:46.082	1:45.628	18
+10	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:46.062	1:45.823	DNF	13
+11	30	
+
+Liam Lawson
+
+Racing Bulls	1:46.501	1:46.120		12
+12	10	
+
+Pierre Gasly
+
+Alpine	1:46.679	1:46.331		12
+13	43	
+
+Franco Colapinto
+
+Alpine	1:46.795	1:46.392		12
+14	27	
+
+Nico Hulkenberg
+
+Audi	1:46.893	1:46.671		12
+15	55	
+
+Carlos Sainz
+
+Williams	1:47.080	1:46.777		12
+16	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:47.113	1:46.779		12
+17	23	
+
+Alex Albon
+
+Williams	1:47.120			6
+18	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:47.801			6
+19	77	
+
+Valtteri Bottas
+
+Cadillac	1:47.823			8
+20	11	
+
+Sergio Perez
+
+Cadillac	1:47.971			8
+21	14	
+
+Fernando Alonso
+
+Aston Martin	1:50.002			6
+22	18	
+
+Lance Stroll
+
+Aston Martin	1:50.177			8
 
 
 
@@ -570,9 +680,10 @@ summary:
             heading: "Qualifying",
             items: [
               {
-                title: "",
-summary: "",
-                url: "",
+                title: "Antonelli Storms to Belgian Grand Prix Pole",
+summary:
+  "Kimi Antonelli completed a dominant Saturday at Spa by taking pole position for the Belgian Grand Prix with a 1:44.361. Max Verstappen used a tow from Red Bull teammate Isack Hadjar but still finished 0.317 seconds behind the Mercedes driver. Lando Norris qualified third, although his ten-place grid penalty will move George Russell into the top three for Sunday’s start. Charles Leclerc narrowly beat Lewis Hamilton for fifth, while Oscar Piastri could manage only seventh.",
+                url: "https://racingnews365.com/kimi-antonelli-overcomes-red-bull-tactics-to-claim-belgian-gp-pole",
               },
             ],
           },
@@ -661,7 +772,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Antonelli on pole, results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
