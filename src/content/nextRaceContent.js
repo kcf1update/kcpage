@@ -403,7 +403,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m45.990s	13
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	1m46.129s	21
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m46.138s	14
+4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m46.357s	12
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m46.382s	17
+6	Charles Leclerc	MON	Scuderia Ferrari HP	1m46.750s	17
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m46.785s	20
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m46.924s	20
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m47.049s	18
+10	Isack Hadjar	FRA	Oracle Red Bull Racing	1m47.096s	19
+11	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m47.176s	23
+12	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m47.690s	23
+13	Franco Colapinto	ARG	BWT Alpine F1 Team	1m47.904s	20
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m47.920s	23
+15	Pierre Gasly	FRA	BWT Alpine F1 Team	1m47.949s	21
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m47.990s	19
+17	Valtteri Bottas	FIN	Cadillac F1 Team	1m48.644s	22
+18	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m48.692s	20
+19	Esteban Ocon	FRA	TGR Haas F1 Team	1m48.730s	22
+20	Sergio Perez	MEX	Cadillac F1 Team	1m48.990s	21
+21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m50.155s	17
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m50.631s	15
 `;
 const PASTE_SQ = `
 
@@ -536,9 +557,11 @@ Isack Hadjar finished fifth ahead of Oscar Piastri, who missed the opening 20 mi
   heading: "Practice 3",
   items: [
     {
-      title: "",
-summary: "",
-      url: "",
+ title: "Antonelli Leads Final Practice as Hamilton Crashes at Spa",
+
+summary:
+  "Kimi Antonelli completed a sweep of Friday afternoon and Saturday practice by setting the fastest time in FP3 at Spa. The Mercedes driver posted a 1:45.990 to finish 0.139 seconds ahead of Lando Norris, with Max Verstappen only 0.148 seconds off the pace in third. George Russell placed fourth ahead of Lewis Hamilton, but the session ended dramatically when Hamilton ran through the gravel at Turn 13 and struck the barriers, causing significant damage to the rear of his Ferrari. Charles Leclerc finished sixth, followed by Oscar Piastri, Nico Hulkenberg, Gabriel Bortoleto and Isack Hadjar.",
+      url: "https://www.planetf1.com/news/2026-belgian-grand-prix-fp3-results",
     },
   ],
 },
@@ -588,19 +611,19 @@ export const nextRaceContent = {
     summary: "Warm with clouds and a chance of showers.",
   },
   {
-    day: "Saturday",
-    date: "18th",
-    icon: "🌧️",
-    temp: "   22°C",
-    summary: "Cloudy with a chance of rain during the day.",
-  },
-  {
-    day: "Sunday",
-    date: "19th",
-    icon: "🌧️",
-    temp: "   19°C",
-    summary: "Cooler and cloudy with a chance of rain.",
-  },
+  day: "Saturday",
+  date: "18th",
+  icon: "⛈️",
+  temp: "22°C",
+  summary: "Mostly cloudy with a chance of thunderstorms during qualifying.",
+},
+{
+  day: "Sunday",
+  date: "19th",
+  icon: "🌦️",
+  temp: "20°C",
+  summary: "A possible morning shower, followed by partly sunny conditions.",
+},
 ],
 
 
@@ -629,7 +652,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Antonelli Fastest agian, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),

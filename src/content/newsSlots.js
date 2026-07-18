@@ -1,33 +1,31 @@
 
 export const newsSlots = [
-  {
-     slotId: "1",
-  sourceLabel: "Crash.net",
-  title: "Antonelli Puts Mercedes on Top as Gasly Crash Disrupts Belgian GP Practice",
+ {
+  slotId: "1",
+  sourceLabel: "The Race",
+  title: "Antonelli Sets the Pace as Hamilton Crashes in Final Belgian GP Practice",
   summary:
-    "Kimi Antonelli set the fastest time in a disrupted second practice session at the Belgian Grand Prix, finishing ahead of Lando Norris and Max Verstappen. The session ended early after Pierre Gasly crashed heavily at Stavelot, while George Russell struggled to eighth place for Mercedes.",
+    "Kimi Antonelli completed a strong Belgian Grand Prix practice programme by setting the fastest time in FP3, narrowly beating Lando Norris and Max Verstappen. Lewis Hamilton brought the session to a dramatic end after crashing heavily at Turn 13 and damaging the rear of his Ferrari.",
   kcsQuickShift:
-    "Antonelli delivered when Mercedes needed it, but Russell’s lack of pace and Gasly’s costly crash added more questions heading into Saturday.",
-  url: "https://www.crash.net/f1/news/1101210/1/kimi-antonelli-puts-mercedes-back-top-red-flagged-f1-belgian-gp-practice-after",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimispa.jpg",
+    "Antonelli looks like a serious qualifying threat, although his grid penalty means Mercedes may need to focus on limiting the damage and preparing for a recovery drive.",
+  url: "https://www.the-race.com/formula-1/what-happened-in-final-f1-practice-at-belgian-gp/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimispa2.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 17, 2026",
-  },
-
-  {
-    slotId: "2",
-  sourceLabel: "MARCA",
-  title:
-    "Pierre Gasly destroza su Alpine en los entrenamientos del GP de Bélgica|Pierre Gasly Wrecks His Alpine During Belgian GP Practice",
+  dateLabel: "July 18, 2026",
+},
+{
+  slotId: "2",
+  sourceLabel: "Formula1.com",
+  title: "Alonso Joins Norris, Hadjar and Stroll With Belgian GP Grid Penalty",
   summary:
-    "Pierre Gasly sufrió un fuerte accidente en la parte final de la segunda sesión de entrenamientos del Gran Premio de Bélgica. El piloto francés perdió el control de su Alpine en Les Fagnes y golpeó con fuerza las barreras, provocando una bandera roja que puso fin anticipadamente a la sesión.|Pierre Gasly suffered a heavy crash late in the second Belgian Grand Prix practice session. The French driver lost control of his Alpine at Les Fagnes and struck the barriers hard, triggering a red flag that brought the session to an early end.",
+    "Fernando Alonso will start the Belgian Grand Prix from the back of the grid after Aston Martin installed additional power unit components before FP3. Alonso joins Lando Norris, Isack Hadjar and Lance Stroll among the drivers carrying penalties into Sunday’s race.",
   kcsQuickShift:
-    "Gasly’s accident caused substantial damage to the Alpine and cost the team valuable track time before Saturday.|El accidente de Gasly causó importantes daños al Alpine y le costó al equipo un valioso tiempo en pista antes del sábado.",
-  url: "https://www.marca.com/motor/formula1/gp-belgica/2026/07/17/pierre-gasly-destroza-alpine.html",
-  imagePath: "/img/news/Alpine/Gasly/monacogasly.jpg",
-  photoCredit: "Courtesy of Alpine F1",
-  dateLabel: "July 17, 2026",
-  },
+    "With four drivers taking penalties, the starting order could look very different from the qualifying results and create several recovery drives through the field.",
+  url: "https://www.formula1.com/en/latest/article/alonso-to-join-norris-hadjar-and-stroll-with-belgian-gp-grid-penalty.MPclpUR9MWAKfo1DTnufQ",
+  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 18, 2026",
+},
 
  {
     slotId: "3",
