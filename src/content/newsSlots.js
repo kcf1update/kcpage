@@ -50,7 +50,7 @@ export const newsSlots = [
   kcsQuickShift:
     "Stroll’s demonstration may have looked dramatic, but it gave Aston Martin a clearer picture of a problem that was difficult to identify through data alone.",
   url: "https://racingnews365.com/lance-stroll-explains-viral-silverstone-video-that-triggered-alarms-at-aston-martin",
-  imagePath: "",
+  imagePath: "/img/news/shut/Aston/news-shutterstocklance.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 18, 2026",
 },
