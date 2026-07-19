@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Qualifying Highlights | 2026 Belgian Grand Prix",
-  youtubeInput: "https://youtu.be/CmzXqYzymzg",
+  title: "Race Highlights | 2026 Belgian Grand Prix",
+  youtubeInput: "https://youtu.be/I6RfOY_7leA",
    forceExternal :"blue"
   },
 

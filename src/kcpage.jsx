@@ -18,7 +18,7 @@ const raceWeekendPromo = {
   enabled:true,
   label: "Race Weekend Results",
   title: "BELGIAN GRAND PRIX RACE CENTER",
-  body: "The Belgian Grand Prix Race Weekend is now underway. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
+  body: "The Belgian Grand Prix Race Weekend is complete. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
   buttonText: "View Race Results →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/belgiumspa.jpg",

@@ -551,7 +551,28 @@ Aston Martin	1:50.177			8
 `;
 
 const PASTE_RACE = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	44 laps
+2	Charles Leclerc	MON	Scuderia Ferrari HP	+1.9s
+3	Max Verstappen	NED	Oracle Red Bull Racing	+11.5s
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	+17.2s
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+18.9s
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	+23.3s
+7	Lando Norris	GBR	McLaren Mastercard F1 Team	+24.0s
+8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+49.1s
+9	Arvid Lindblad	GBR	Racing Bulls	+50.4s
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	+76.0s
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	+76.9s
+12	Liam Lawson	NZD	Racing Bulls	+77.5s
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	+78.3s
+14	Ollie Bearman	GBR	TGR Haas F1 Team	+94.4s
+15	Alex Albon	THA	Atlassian Williams F1 Team	+102.6s
+16	Carlos Sainz	ESP	Atlassian Williams F1 Team	+103.6s
+17	Esteban Ocon	FRA	TGR Haas F1 Team	+108.9s
+18	Valtteri Bottas	FIN	Cadillac F1 Team	+1 lap
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+2 laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+19 laps
+DNF	Sergio Perez	MEX	Cadillac F1 Team	+31 laps
+DNF	George Russell	GBR	Mercedes AMG Petronas F1 Team
 `;
 
 // =====================================================
@@ -691,10 +712,11 @@ summary:
             heading: "Race",
             items: [
               {
-                title: "",
-                summary:
-                  "",
-                url: "",
+                title: "Antonelli Wins Dramatic Belgian Grand Prix as Russell’s Race Ends on Lap One",
+
+summary:
+  "Kimi Antonelli claimed victory in the Belgian Grand Prix after passing Charles Leclerc late in the race, with Max Verstappen completing the podium. George Russell retired on the opening lap following contact with Lewis Hamilton and later admitted that his weekend had not been good enough. Hamilton recovered to finish fourth after receiving a five-second penalty for the collision, but Ferrari was also summoned by the stewards over an unsafe pit-lane release that knocked a mechanic to the ground.",
+                url: "https://tg24.sky.it/sport/2026/07/19/f1-gp-belgio-2026-risultato-gara-spa",
               },
             ],
           },
@@ -781,7 +803,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "10:00 AM ADT",
+          time: "Antonelli Wins Again! results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

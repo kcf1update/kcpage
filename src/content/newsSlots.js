@@ -3,56 +3,57 @@ export const newsSlots = [
  {
   slotId: "1",
   sourceLabel: "The Race",
-  title: "Antonelli Dominates Belgian GP Qualifying to Take Pole",
+  title: "Antonelli Wins Belgian Grand Prix After Hamilton and Russell Collide",
   summary:
-    "Kimi Antonelli delivered a commanding final lap to secure pole position for the Belgian Grand Prix by 0.317 seconds over Max Verstappen. Lando Norris qualified third but will drop ten places on the starting grid because of a battery-related penalty.",
+    "Kimi Antonelli fought back past Charles Leclerc to win the Belgian Grand Prix and extend his championship lead. George Russell retired after first-lap contact with Lewis Hamilton, who received a five-second penalty for the collision.",
   kcsQuickShift:
-    "Antonelli handled the pressure and produced the lap when it mattered, giving Mercedes a major opportunity heading into Sunday’s race.",
-  url: "https://www.the-race.com/formula-1/kimi-antonelli-pole-position-belgian-gp-f1-qualifying/",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimipolespa.jpg",
+    "Antonelli stayed composed through the safety cars and changing strategies to secure his sixth victory of the season, while the Hamilton and Russell clash added another dramatic chapter to the race.",
+  url: "https://www.the-race.com/formula-1/antonelli-wins-as-hamilton-crash-takes-russell-out-at-spa-f1-belgian-grand-prix/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimiwinspa.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
+  dateLabel: "July 19, 2026",
 },
 {
-  slotId: "2",
-  sourceLabel: "RacingNews365",
-  title: "Antonelli Beats Red Bull Tow Tactics to Claim Belgian GP Pole",
+ slotId: "2",
+  sourceLabel: "Sky TG24",
+  title:
+    "Antonelli vince il GP del Belgio, Leclerc secondo e Verstappen terzo|Antonelli Wins Belgian Grand Prix, Leclerc Second and Verstappen Third",
   summary:
-    "Kimi Antonelli overcame Red Bull’s attempt to give Max Verstappen a slipstream and claimed Belgian Grand Prix pole with a 1:44.361. Verstappen finished second, while Norris took third before his ten-place grid penalty is applied.",
+    "Andrea Kimi Antonelli ha conquistato la vittoria a Spa davanti alla Ferrari di Charles Leclerc, dopo aver ripreso il comando della gara nel finale. Max Verstappen ha completato il podio, mentre Lewis Hamilton ha ricevuto una penalità di cinque secondi per il contatto che ha costretto George Russell al ritiro.|Andrea Kimi Antonelli claimed victory at Spa ahead of Ferrari’s Charles Leclerc after retaking the lead late in the race. Max Verstappen completed the podium, while Lewis Hamilton received a five-second penalty for the collision that forced George Russell to retire.",
   kcsQuickShift:
-    "Red Bull tried to manufacture an advantage for Verstappen, but Antonelli’s outright speed was simply too strong.",
-  url: "https://racingnews365.com/kimi-antonelli-overcomes-red-bull-tactics-to-claim-belgian-gp-pole",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimipitsspa.jpg ",
+    "Antonelli delivered when it mattered most, while Leclerc’s strong second place showed encouraging progress from Ferrari.|Antonelli ha fatto la differenza nel momento decisivo, mentre il secondo posto di Leclerc ha mostrato segnali incoraggianti per la Ferrari.",
+  url: "https://tg24.sky.it/sport/2026/07/19/f1-gp-belgio-2026-risultato-gara-spa",
+  imagePath: "/img/news/xpb/Races/xpb-spapodium.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
+  dateLabel: "July 19, 2026",
 },
 
  {
   slotId: "3",
-  sourceLabel: "ESPN",
-  title: "Lando Norris Criticises Paparazzi Intrusion Into His Private Life",
+  sourceLabel: "Motorsport.com",
+  title: "Ferrari Summoned Over Hamilton Unsafe Release After Mechanic Is Hit",
   summary:
-    "Lando Norris has spoken about the growing level of attention he receives from photographers away from Formula 1. Norris accepts that public interest comes with his success, but says the constant scrutiny has made it feel as though his private life is no longer private.",
+    "Ferrari was called before the stewards after Lewis Hamilton was released from his pit box while a mechanic was still adjusting the front wing. The mechanic was knocked to the ground but was not reported to be injured, while Hamilton faced the possibility of another penalty after finishing fourth.",
   kcsQuickShift:
-    "Norris understands the attention that comes with being a leading Formula 1 driver, but there still needs to be a reasonable boundary around his life away from the track.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49385305/lando-norris-slams-paparazzi-trailing-every-move-feel-private-life-private",
-  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
+    "Hamilton had already served a five-second penalty for his collision with George Russell, and this pit-lane incident could put his fourth-place result at further risk.",
+  url: "https://www.motorsport.com/f1/news/ferrari-summoned-for-hamiltons-belgian-gp-unsafe-release-after-hitting-mechanic/10840224/",
+  imagePath: "/img/news/xpb/Races/xpb-sparace.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
+  dateLabel: "July 19, 2026",
 },
 
   {
   slotId: "4",
-  sourceLabel: "RacingNews365",
-  title: "Lance Stroll Explains Viral Silverstone Steering Video",
+  sourceLabel: "Formula 1",
+  title: "Russell Says Belgian Grand Prix Weekend Was ‘Not Good Enough’",
   summary:
-    "Lance Stroll says the unusual steering inputs seen during the British Grand Prix weekend were a deliberate attempt to demonstrate the Aston Martin’s loss of front end grip. The aggressive movements initially alarmed the team, but helped engineers better understand the car’s aerodynamic problems.",
+    "George Russell admitted his Belgian Grand Prix weekend was not good enough after his race ended on the opening lap following contact with Lewis Hamilton. The Mercedes driver had started third but struggled throughout the weekend to match team mate and eventual winner Kimi Antonelli.",
   kcsQuickShift:
-    "Stroll’s demonstration may have looked dramatic, but it gave Aston Martin a clearer picture of a problem that was difficult to identify through data alone.",
-  url: "https://racingnews365.com/lance-stroll-explains-viral-silverstone-video-that-triggered-alarms-at-aston-martin",
-  imagePath: "/img/news/shut/Aston/news-shutterstocklance.jpg",
+    "Russell’s early retirement was a costly result on a weekend when Antonelli again showed the performance available from the Mercedes.",
+  url: "https://www.formula1.com/en/latest/article/not-good-enough-russell-reflects-on-belgian-gp-after-first-lap-retirement.eINim0Y495XbHqOWvE6Gw",
+  imagePath: "/img/news/xpb/Mercedes/xpb-georgecrashspa.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
+  dateLabel: "July 19, 2026",
 },
 {
   slotId: "5",
