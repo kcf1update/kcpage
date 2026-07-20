@@ -40,7 +40,7 @@ export default function CountdownBar() {
 
   return (
   <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base text-white font-semibold">
-    <img src="/flags/be.png" alt="Belgian Flag" className="h-4 w-auto" />
+    <img src="/flags/hu.png" alt="Belgian Flag" className="h-4 w-auto" />
     <span>AWS HUNGARIAN GRAND PRIX:</span>
     <span className="text-sky-300 text-sm sm:text-base md:text-lg">
       {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
