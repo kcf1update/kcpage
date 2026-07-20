@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Race Highlights | 2026 Belgian Grand Prix",
-  youtubeInput: "https://youtu.be/I6RfOY_7leA",
+  title: "Kimi Antonelli On Winning At Spa | Belgian GP Review | F1 Nation Podcast",
+  youtubeInput: "https://youtu.be/Y-LuUQUL7gE",
    forceExternal :"blue"
   },
 
   {
     slotId: "slot2",
-    title: "Drivers Look Ahead To Race Weekend | 2026 Belgian Grand Prix",
-    youtubeInput: "https://youtu.be/rGB9d0nb8KU",
-   forceExternal :"blue"
+    title: "2026 F1 Belgian GP RACE analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/W06FMXzTTyY",
+   
   },
 
   {
     slotId: "slot3",
-    title: "HUGE VERSTAPPEN NEGOTATION DETAIL LEAKED! F1 News",
-    youtubeInput: "https://youtu.be/bZTKGJ8qCLs",
+    title: "George Russell’s ‘infuriating’ Mercedes crisis",
+    youtubeInput: "https://youtu.be/vEwOUnHlOoY",
     
   }
 ];

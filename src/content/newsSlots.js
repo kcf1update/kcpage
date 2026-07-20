@@ -1,141 +1,154 @@
 
 export const newsSlots = [
- {
-  slotId: "1",
-  sourceLabel: "The Race",
-  title: "Antonelli Wins Belgian Grand Prix After Hamilton and Russell Collide",
-  summary:
-    "Kimi Antonelli fought back past Charles Leclerc to win the Belgian Grand Prix and extend his championship lead. George Russell retired after first-lap contact with Lewis Hamilton, who received a five-second penalty for the collision.",
-  kcsQuickShift:
-    "Antonelli stayed composed through the safety cars and changing strategies to secure his sixth victory of the season, while the Hamilton and Russell clash added another dramatic chapter to the race.",
-  url: "https://www.the-race.com/formula-1/antonelli-wins-as-hamilton-crash-takes-russell-out-at-spa-f1-belgian-grand-prix/",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimiwinspa.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 19, 2026",
-},
-{
- slotId: "2",
-  sourceLabel: "Sky TG24",
-  title:
-    "Antonelli vince il GP del Belgio, Leclerc secondo e Verstappen terzo|Antonelli Wins Belgian Grand Prix, Leclerc Second and Verstappen Third",
-  summary:
-    "Andrea Kimi Antonelli ha conquistato la vittoria a Spa davanti alla Ferrari di Charles Leclerc, dopo aver ripreso il comando della gara nel finale. Max Verstappen ha completato il podio, mentre Lewis Hamilton ha ricevuto una penalità di cinque secondi per il contatto che ha costretto George Russell al ritiro.|Andrea Kimi Antonelli claimed victory at Spa ahead of Ferrari’s Charles Leclerc after retaking the lead late in the race. Max Verstappen completed the podium, while Lewis Hamilton received a five-second penalty for the collision that forced George Russell to retire.",
-  kcsQuickShift:
-    "Antonelli delivered when it mattered most, while Leclerc’s strong second place showed encouraging progress from Ferrari.|Antonelli ha fatto la differenza nel momento decisivo, mentre il secondo posto di Leclerc ha mostrato segnali incoraggianti per la Ferrari.",
-  url: "https://tg24.sky.it/sport/2026/07/19/f1-gp-belgio-2026-risultato-gara-spa",
-  imagePath: "/img/news/xpb/Races/xpb-spapodium.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 19, 2026",
-},
-
- {
-  slotId: "3",
-  sourceLabel: "Motorsport.com",
-  title: "Ferrari Summoned Over Hamilton Unsafe Release After Mechanic Is Hit",
-  summary:
-    "Ferrari was called before the stewards after Lewis Hamilton was released from his pit box while a mechanic was still adjusting the front wing. The mechanic was knocked to the ground but was not reported to be injured, while Hamilton faced the possibility of another penalty after finishing fourth.",
-  kcsQuickShift:
-    "Hamilton had already served a five-second penalty for his collision with George Russell, and this pit-lane incident could put his fourth-place result at further risk.",
-  url: "https://www.motorsport.com/f1/news/ferrari-summoned-for-hamiltons-belgian-gp-unsafe-release-after-hitting-mechanic/10840224/",
-  imagePath: "/img/news/xpb/Races/xpb-sparace.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 19, 2026",
-},
+  {
+    slotId: "1",
+    sourceLabel: "The Race",
+    title:
+      "Mercedes Reveals Power Unit Problem Affected Every Customer Team at Spa",
+    summary:
+      "Every Mercedes-powered car experienced an energy deployment problem after Turn 1 during the Belgian Grand Prix. George Russell suffered the most severe consequences, while Mercedes later identified a new setting issue that released too much energy early in the lap and left too little available near the end.",
+    kcsQuickShift:
+      "Mercedes still won with Kimi Antonelli, but a problem affecting every one of its power units shows how quickly the new energy systems can change a driver’s race.",
+    url: "https://www.the-race.com/formula-1/every-mercedes-powered-car-had-issue-in-belgian-gp/",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
 
   {
-  slotId: "4",
-  sourceLabel: "Formula 1",
-  title: "Russell Says Belgian Grand Prix Weekend Was ‘Not Good Enough’",
-  summary:
-    "George Russell admitted his Belgian Grand Prix weekend was not good enough after his race ended on the opening lap following contact with Lewis Hamilton. The Mercedes driver had started third but struggled throughout the weekend to match team mate and eventual winner Kimi Antonelli.",
-  kcsQuickShift:
-    "Russell’s early retirement was a costly result on a weekend when Antonelli again showed the performance available from the Mercedes.",
-  url: "https://www.formula1.com/en/latest/article/not-good-enough-russell-reflects-on-belgian-gp-after-first-lap-retirement.eINim0Y495XbHqOWvE6Gw",
-  imagePath: "/img/news/xpb/Mercedes/xpb-georgecrashspa.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 19, 2026",
-},
-{
-  slotId: "5",
-  sourceLabel: "PlanetF1",
-  title: "Kimi Antonelli Responds to George Russell’s Luck Claim",
-  summary:
-    "Kimi Antonelli has rejected George Russell’s suggestion that luck may have favoured him during their championship fight. Antonelli believes both Mercedes drivers have lost significant points through reliability problems and race changing incidents.",
-  kcsQuickShift:
-    "Antonelli is making it clear that consistency and reliability, not luck, could decide which Mercedes driver comes out ahead.",
-  url: "https://www.planetf1.com/news/kimi-antonelli-responds-george-russell-luck-claim-amidst-title-fight",
-  imagePath: "/img/news/xpb/Mercedes/newsxpbkimimonacowin.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
-},
-{
-  slotId: "6",
-  sourceLabel: "PlanetF1",
-  title: "Max Verstappen Explains Angry Red Bull Radio Message",
-  summary:
-    "Max Verstappen says his angry radio message during Belgian Grand Prix practice was aimed at poor downshifts following a Red Bull software change. The shifting improved as the session continued, although Verstappen admitted the car was still losing time on the straights.",
-  kcsQuickShift:
-    "The software issue was corrected, but Red Bull may still need to find more straight line speed before qualifying and the race.",
-  url: "https://www.planetf1.com/news/max-verstappen-unacceptable-red-bull-radio-belgian-grand-prix",
-  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
-},
-{
-  slotId: "7",
-  sourceLabel: "Nextgen Auto",
-  title: "Bearman’s Future Is Not Up to Haas, Admits Komatsu",
-  summary:
-    "Haas team principal Ayao Komatsu admits Oliver Bearman’s long term future is ultimately controlled by Ferrari. Bearman remains part of Ferrari’s driver programme, meaning Haas could lose him if Ferrari decides he is ready for promotion.",
-  kcsQuickShift:
-    "Bearman continues to impress at Haas, but Ferrari will have the final say on where his Formula 1 career goes next.",
-  url: "https://motorsport.nextgen-auto.com/en/formula-1/bearman-s-future-not-up-to-us-admits-komatsu,209957.html",
-  imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
-},
-{
-  slotId: "8",
-  sourceLabel: "FormulaPassion.it",
-  title:
-    "Spa, McLaren nuova ma non è Macarena|Spa, McLaren Brings Something New, but It Is Not the Macarena Wing",
-  summary:
-    "La McLaren ha introdotto a Spa una nuova ala posteriore a basso carico per migliorare la velocità della MCL40 sui rettilinei. Tuttavia, non si tratta ancora dell’ala Macarena, il progetto con movimento inverso che richiede ulteriore sviluppo.|McLaren has introduced a new low downforce rear wing at Spa to improve the MCL40’s straight line speed. However, it is not the delayed Macarena wing, the reverse moving design that still requires further development.",
-  kcsQuickShift:
-    "McLaren is targeting more straight line speed at Spa, but its more radical Macarena concept is still not ready to race.|La McLaren cerca maggiore velocità sui rettilinei di Spa, ma il più radicale progetto Macarena non è ancora pronto per essere utilizzato in gara.",
-  url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-analisi-tecnica/spa-mclaren-nuova-ma-non-e-macarena",
-  imagePath: "/img/news/shut/mclaren/news-shutterstockmclarenpit.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "July 18, 2026",
-},
-{
-  slotId: "9",
-  sourceLabel: "F1News.se",
-  title:
-    "Sainz kräver ursäkt efter idiot kommentaren\nSainz Demands an Apology After Antonelli’s Idiot Comment",
-  summary:
-    "Carlos Sainz kräver en ursäkt från Kimi Antonelli efter att Mercedes föraren kallade honom för en idiot över teamradion under fredagens träning. Antonelli ansåg att Sainz hade saktat ner farligt, medan Sainz menade att han inte hade hindrat honom.\n\nCarlos Sainz has called for an apology from Kimi Antonelli after the Mercedes driver referred to him as an idiot over team radio during Friday practice. Antonelli believed Sainz had slowed dangerously, while Sainz argued that he had not impeded him.",
-  kcsQuickShift:
-    "Tempers are already rising at Spa, and this disagreement adds another layer of tension before qualifying.\n\nTemperaturen stiger redan på Spa, och den här konflikten skapar ännu mer spänning inför kvalet.",
-  url: "https://f1news.se/sainz-kraver-ursakt-efter-idiot-kommentaren",
-  imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
-},
-{
-  slotId: "10",
-  sourceLabel: "AUTOhebdo",
-  title:
-    "Cadillac explique l’abandon de sa livrée asymétrique|Cadillac Explains Why It Abandoned Its Asymmetric Livery",
-  summary:
-    "Cadillac a expliqué pourquoi l’équipe avait abandonné la livrée asymétrique noire et blanche utilisée au début de la saison. Graeme Lowdon affirme que le nouveau design s’inspire davantage de la livrée populaire présentée à Miami après les réactions positives des supporters.|Cadillac has explained why it abandoned the asymmetric black and white livery used earlier in the season. Graeme Lowdon says the revised design is based more closely on the popular Miami livery following positive fan reaction.",
-  kcsQuickShift:
-    "Cadillac listened to its supporters and moved toward a cleaner design that proved far more popular.|Cadillac a écouté ses supporters et a adopté un design plus épuré qui s’est révélé beaucoup plus populaire.",
-  url: "https://www.autohebdo.fr/actualites/f1/cadillac-explique-labandon-de-sa-livree-asymetrique.html",
-  imagePath: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "July 18, 2026",
-},
+    slotId: "2",
+    sourceLabel: "Nextgen-Auto",
+    title:
+      "Ben Sulayem Admits FIA Made Mistakes With Formula 1’s 2026 Rules",
+    summary:
+      "FIA president Mohammed Ben Sulayem has acknowledged that mistakes were made during the development of Formula 1’s controversial 2026 regulations. His comments come as criticism continues over energy management, active aerodynamics and the loss of the challenge traditionally associated with several famous circuits.",
+    kcsQuickShift:
+      "Admitting mistakes is significant, but the real test will be whether the FIA is prepared to make meaningful changes rather than simply defend the current concept.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/ben-sulayem-admits-fia-mistakes-over-2026-rules,210047.html",
+    imagePath: "/img/news/shut/news-shutterstocksalam.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "3",
+    sourceLabel: "Infobae",
+    title:
+      "Briatore elogió la espectacular maniobra de Colapinto en Bélgica | Briatore Praises Colapinto’s Spectacular Belgian Grand Prix Move",
+    summary:
+      "Flavio Briatore felicitó a Franco Colapinto después de que el argentino superara a Pierre Gasly y Liam Lawson en una misma maniobra para quedarse con el décimo puesto. Colapinto largó 11°, cayó al 16° lugar después de su parada y remontó para conseguir su sexto resultado con puntos en diez carreras. | Flavio Briatore praised Franco Colapinto after the Argentine passed Pierre Gasly and Liam Lawson in the same move to claim 10th place. Colapinto started 11th, dropped to 16th after his pit stop and recovered to score points for the sixth time in ten races.",
+    kcsQuickShift:
+      "Colapinto had to earn this point, and his decisive double overtake was one of the best moves of the Belgian Grand Prix. | Colapinto tuvo que luchar por este punto, y su decidido doble adelantamiento fue una de las mejores maniobras del Gran Premio de Bélgica.",
+    url: "https://www.infobae.com/deportes/2026/07/19/el-elogio-de-flavio-briatore-a-franco-colapinto-por-su-gran-maniobra-en-el-de-belgica-de-f1/",
+    imagePath: "/img/news/Alpine/colapinto/colapintospa.jpg",
+    photoCredit: "Courtesy Alpine F1",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "4",
+    sourceLabel: "Autosport",
+    title:
+      "Mercedes Admits It Has Formula 1’s Most Powerful Engine as Red Bull Agrees",
+    summary:
+      "Toto Wolff openly declared that Mercedes possesses Formula 1’s most powerful power unit, an assessment Red Bull team principal Laurent Mekies firmly supported. Their comments have renewed scrutiny of the FIA’s ADUO system, which currently identifies Red Bull Ford Powertrains as the benchmark.",
+    kcsQuickShift:
+      "The FIA’s ranking says Red Bull is the benchmark, but both Mercedes and Red Bull are publicly saying the opposite, making the next ADUO assessment especially important.",
+    url: "https://www.autosport.com/f1/news/toto-wolff-admits-mercedes-has-most-powerful-f1-engine-and-red-bull-agrees-as-aduo-returns-to-spotl/10840476/",
+    imagePath: "/img/news/xpb/Mercedes/news-kimigeorgemontreal.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "5",
+    sourceLabel: "Formula 1",
+    title:
+      "Stella Admits McLaren Should Have Taken Strategy Gamble With Norris",
+    summary:
+      "Andrea Stella believes McLaren could have been bolder by pitting Lando Norris during the Virtual Safety Car at Spa. Norris recovered from 13th on the grid to finish seventh, but McLaren kept him out to avoid a double-stack and waited for another neutralisation that never arrived.",
+    kcsQuickShift:
+      "Norris produced the pace to recover strongly, but McLaren’s cautious strategy may have prevented him from taking an even bigger result.",
+    url: "https://www.formula1.com/en/latest/article/we-should-have-given-it-a-go-stella-admits-mclaren-could-have-been-bolder-with-norris-in-belgium.29vhfUxyQKJBBTG7sbeRnJ",
+    imagePath: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "6",
+    sourceLabel: "PlanetF1",
+    title:
+      "Martin Brundle Calls for Formula 1 to Abandon Current 2026 Concept",
+    summary:
+      "Martin Brundle says Formula 1’s new regulations have removed much of the challenge from famous high-speed corners at Silverstone and Spa. He wants the current power-unit concept replaced as soon as possible and supports a return to sustainable-fuel V8 engines around 2030 or 2031.",
+    kcsQuickShift:
+      "When Pouhon and other legendary corners stop testing the drivers, Formula 1 must seriously question whether its new regulations have gone in the right direction.",
+    url: "https://www.planetf1.com/news/martin-brundle-f1-2026-rules-criticism",
+    imagePath: "/img/news/shut/news-shutterstockbrundle.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "7",
+    sourceLabel: "RacingNews365",
+    title:
+      "Norris Tells McLaren to Explain Surprising Belgian Grand Prix Turnaround",
+    summary:
+      "Lando Norris has instructed McLaren to determine why its car was competitive at Spa only two weeks after struggling badly at Silverstone. Norris recovered to seventh and recorded the race’s fastest lap, while admitting McLaren was closer to Mercedes than expected.",
+    kcsQuickShift:
+      "McLaren’s speed at Spa was encouraging, but Norris is right that the team cannot rely on performance gains it does not fully understand.",
+    url: "https://racingnews365.com/lando-norris-hands-mclaren-clear-instruction-after-mercedes-surprise",
+    imagePath: "/img/news/xpb/Mclaren/news-landodnfcanadiangp.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "8",
+    sourceLabel: "GrandPrix247",
+    title:
+      "Piastri Believes Leclerc Deserved Warning for Aggressive Spa Defence",
+    summary:
+      "Oscar Piastri believes Charles Leclerc should at least have received a black-and-white warning flag after squeezing the McLaren toward the edge of the circuit during their battle at Les Combes. The pair made wheel-to-wheel contact, but the stewards decided Leclerc’s defence did not require a penalty.",
+    kcsQuickShift:
+      "The stewards considered Leclerc’s defence legal, but Piastri’s concern about how little room drivers are expected to accept is reasonable.",
+    url: "https://www.grandprix247.com/formula-1-news/oscar-piastri-believes-charles-leclerc-shouldve-at-least-been-given-a-black-white-flag-in-spa",
+    imagePath: "/img/news/xpb/Mclaren/xpb-oscar.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "9",
+    sourceLabel: "FormulaPassion",
+    title:
+      "Bortoleto ancora a punti: Audi si avvicina alla Williams | Bortoleto Scores Again as Audi Closes on Williams",
+    summary:
+      "Gabriel Bortoleto ha concluso ottavo per il secondo Gran Premio consecutivo dopo essere partito dall’ottava posizione sia a Silverstone sia a Spa. I punti conquistati hanno portato Audi a una sola lunghezza dalla Williams nel Campionato Costruttori. | Gabriel Bortoleto finished eighth for the second consecutive Grand Prix after starting eighth at both Silverstone and Spa. His points have moved Audi to within one point of Williams in the Constructors’ Championship.",
+    kcsQuickShift:
+      "Two consecutive eighth-place finishes show that Bortoleto and Audi are beginning to turn consistent midfield pace into meaningful results. | Due ottavi posti consecutivi dimostrano che Bortoleto e Audi stanno iniziando a trasformare un ritmo competitivo in risultati importanti.",
+    url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/bortoleto-ancora-a-punti-dopo-spa-questi-piazzamenti-sono-una-spinta-per-tutti-noi",
+    imagePath: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
+
+  {
+    slotId: "10",
+    sourceLabel: "PlanetF1",
+    title:
+      "Unheard Russell Radio Reveals Furious Reaction to Mercedes Power Failure",
+    summary:
+      "Previously untelevised radio messages revealed George Russell’s furious response after losing electrical deployment on the opening lap at Spa. The power loss left Russell vulnerable to several cars before his contact with Lewis Hamilton sent the Mercedes into the gravel and ended his race.",
+    kcsQuickShift:
+      "Russell refused to blame Hamilton for the collision, but his radio messages made it clear that he believes Mercedes’ technical failure placed him in that position.",
+    url: "https://www.planetf1.com/news/untelevised-george-russell-radio-belgian-grand-prix",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 20, 2026",
+  },
  
  ];
 
