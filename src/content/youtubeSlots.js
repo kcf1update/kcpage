@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Kimi Antonelli On Winning At Spa | Belgian GP Review | F1 Nation Podcast",
-  youtubeInput: "https://youtu.be/Y-LuUQUL7gE",
+  title: "Radio Rewind | 2026 Belgian Grand Prix",
+  youtubeInput: "https://youtu.be/FVNVoW9UZkE",
    forceExternal :"blue"
   },
 
