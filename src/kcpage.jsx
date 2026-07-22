@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled:true,
+  enabled:false,
   label: "Race Weekend Results",
   title: "BELGIAN GRAND PRIX RACE CENTER",
   body: "The Belgian Grand Prix Race Weekend is complete. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",

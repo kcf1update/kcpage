@@ -10,7 +10,6 @@ import {
   NEXT_RACE_DRIVER_IDS,
   raceWeekendRecap,
 } from "./content/nextRaceContent";
-import { raceGalleryContent } from "./content/raceGalleryContent";
 import { getDriverById } from "./content/drivers";
 
 
@@ -825,8 +824,9 @@ function RaceCard({ session }) {
 export default function RaceCentreLayout({
   content = nextRaceContent,
   recap = raceWeekendRecap,
-  gallery = raceGalleryContent,
+  gallery = null,
   showCountdown = true,
+  showPreviousResultsButton = true,
 }) {
   const sessions = content.sessions || [];
 
@@ -973,19 +973,23 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
   Track
 </a>
 
-<a
-  href="#race-gallery"
-  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
-  title="Jump to race weekend photo gallery"
->
-  Photo Gallery
-</a>
-                  <Link
-                    to="/previous-results"
-                    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
-                  >
-                    Previous Results
-                  </Link>
+{gallery?.enabled ? (
+  <a
+    href="#race-gallery"
+    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+    title="Jump to race weekend photo gallery"
+  >
+    Photo Gallery
+  </a>
+) : null}
+                  {showPreviousResultsButton ? (
+  <Link
+    to="/previous-results"
+    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+  >
+    Previous Results
+  </Link>
+) : null}
 
                   <Link
                     to="/points"
@@ -1073,20 +1077,24 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
   Track
 </a>
 
-<a
-  href="#race-gallery"
-  className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
-  title="Jump to race weekend photo gallery"
->
-  Photo Gallery
-</a>
+{gallery?.enabled ? (
+  <a
+    href="#race-gallery"
+    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
+    title="Jump to race weekend photo gallery"
+  >
+    Photo Gallery
+  </a>
+) : null}
 
-      <Link
-        to="/previous-results"
-        className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
-      >
-        Previous Results
-      </Link>
+     {showPreviousResultsButton ? (
+  <Link
+    to="/previous-results"
+    className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600 sm:px-4 sm:text-xs"
+  >
+    Previous Results
+  </Link>
+) : null}
 
       <Link
         to="/points"

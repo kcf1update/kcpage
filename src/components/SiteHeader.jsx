@@ -51,6 +51,12 @@ export default function SiteHeader() {
 >
   Race Centre
 </Link>
+<Link
+  onClick={() => setMenuOpen(false)}
+  to="/photo-gallery"
+>
+  Photo Gallery
+</Link>
             <Link onClick={() => setMenuOpen(false)} to="/youtube">YouTube</Link>
           </div>
         </div>

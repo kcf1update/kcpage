@@ -6,7 +6,7 @@
 // Keep images inside: public/img/race-gallery/
 
 export const previousRaceCenterGalleryContent = {
-  enabled: true,
+  enabled: false,
 
   title: "Race Weekend Gallery",
 

@@ -5,15 +5,13 @@ import {
   raceWeekendRecap as previousRaceCenterRecap,
 } from "./content/previousRaceCenterContent";
 
-import { previousRaceCenterGalleryContent } from "./content/previousRaceCenterGalleryContent";
-
 export default function PreviousResultsPage() {
   return (
-    <RaceCentreLayout
-      content={previousRaceCenterContent}
-      recap={previousRaceCenterRecap}
-      gallery={previousRaceCenterGalleryContent}
-      showCountdown={false}
-    />
+   <RaceCentreLayout
+  content={previousRaceCenterContent}
+  recap={previousRaceCenterRecap}
+  showCountdown={false}
+  showPreviousResultsButton={false}
+/>
   );
 }

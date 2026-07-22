@@ -975,7 +975,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
                 <div className="mt-3 grid grid-cols-2 gap-2">
                  <a
-  href="/img/tracks/belgiumspa.jpg"
+  href="/img/tracks/hungaroring.jpg"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
@@ -989,8 +989,9 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
   title="Jump to race weekend photo gallery"
 >
-  Photo Gallery
+  Weekend Gallery
 </a>
+
                   <Link
                     to="/previous-results"
                     className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
@@ -1076,7 +1077,7 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
     </h2>
 
     <div className="mt-3 grid grid-cols-2 gap-2">
-    <a href="/img/tracks/belgiumspa.jpg"
+    <a href="/img/tracks/hungaroring.jpg"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
@@ -1090,8 +1091,9 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
   title="Jump to race weekend photo gallery"
 >
-  Photo Gallery
+ Weekend Gallery
 </a>
+
 
       <Link
         to="/previous-results"
