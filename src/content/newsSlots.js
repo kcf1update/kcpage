@@ -1,153 +1,154 @@
 
 export const newsSlots = [
+ 
   {
     slotId: "1",
-    sourceLabel: "ESPN",
+    sourceLabel: "Crash.net",
     title:
-      "Piastri Questions Leclerc’s Driving After Belgian GP Contact",
+      "Red Bull Confirms Fix for Verstappen’s ‘Super Dangerous’ Rear Wing",
     summary:
-      "Oscar Piastri has questioned whether Charles Leclerc left him enough room during their Belgian Grand Prix battle. Contact damaged the McLaren as Piastri attempted to pass around the outside at Les Combes, but the stewards decided not to penalize Leclerc.",
+      "Red Bull identified two separate mechanical problems with its newer rear-wing design after failures in Austria and Britain. The team reverted to an older wing at Spa and expects to have a corrected version ready for the Hungarian Grand Prix.",
     kcsQuickShift:
-      "The lack of a penalty will keep the debate going because Piastri was forced to choose between backing out or risking a much larger accident.",
-    url: "https://www.espn.co.uk/f1/story/_/id/49416173/oscar-piastri-raises-concerns-charles-leclerc-driving-belgian-grand-prix",
-    imagePath: "/img/news/xpb/mclaren/xpboscar.jpg",
+      "Red Bull believes it has solved the problem, but the revised wing must now prove it is safe and dependable.",
+    url: "https://www.crash.net/f1/news/1101537/1/red-bull-confirms-findings-super-dangerous-wing-max-verstappen-judges-old-design",
+    imagePath: "/img/news/xpb/RedBull/Maxcar.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "RacingNews365.nl",
+    sourceLabel: "MARCA",
     title:
-      "Hadjar hoopt vurig op terugkeer van speciaal Red Bull-foefje in Hongarije | Hadjar Hopes Special Red Bull Upgrade Returns in Hungary",
+      "McLaren quema sus naves en Hungría con un gran paquete de mejoras | McLaren Goes All-In for Hungary With Major Upgrade Package",
     summary:
-      "Isack Hadjar reed vanaf P21 naar de zesde plaats in België en denkt dat de bochtige Hungaroring beter bij Red Bull zou moeten passen. Hij hoopt ook dat het team zijn speciale achtervleugel opnieuw kan gebruiken nadat de laatste controles zijn afgerond. | Isack Hadjar climbed from P21 to sixth in Belgium and believes the tighter Hungaroring should suit Red Bull better. He also hopes the team can use its special rear wing again once the final checks are completed.",
+      "McLaren llevará a Hungría un importante paquete de mejoras para el MCL40, encabezado por el debut de un nuevo alerón delantero. El equipo espera corregir algunas de sus debilidades antes de la última carrera previa al descanso de verano. | McLaren will bring a substantial upgrade package for the MCL40 to Hungary, led by the debut of a new front wing. The team hopes to address some of its weaknesses before the final race ahead of the summer break.",
     kcsQuickShift:
-      "Hadjar already showed Red Bull’s potential at Spa, and the return of the revised rear wing could provide another useful performance gain in Hungary. | Hadjar liet op Spa al het potentieel van Red Bull zien, en de terugkeer van de aangepaste achtervleugel kan in Hongarije opnieuw extra performance opleveren.",
-    url: "https://racingnews365.nl/hadjar-hoopt-vurig-op-terugkeer-van-speciaal-red-bull-foefje-in-hongarije",
-    imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+      "Hungary will show whether McLaren’s latest development push can move it closer to the front. | Hungría mostrará si el último impulso de desarrollo de McLaren puede acercarlo a la parte delantera.",
+    url: "https://www.marca.com/motor/formula1/gp-hungria/2026/07/22/mclaren-quema-naves-hungria-gran-paquete-mejoras-debut-aleron-macarena.html",
+    imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "RacingNews365",
+    sourceLabel: "PlanetF1",
     title:
-      "Verstappen Explains His Demanding Red Bull Radio Messages",
+      "Untelevised Verstappen Radio Reveals Red Bull Frustration at Spa",
     summary:
-      "Max Verstappen says his pointed radio exchanges are intended to keep everyone at Red Bull sharp during races. The four-time champion said he demands the most and the best from the team because Red Bull expects the same standard from him.",
+      "Untelevised radio captured Max Verstappen repeatedly questioning Red Bull’s energy deployment, battery charging and tyre behaviour during the Belgian Grand Prix. After criticising the team’s race understanding, Verstappen quickly told race engineer Gianpiero Lambiase not to take the remark personally.",
     kcsQuickShift:
-      "Verstappen’s messages can sound harsh, but his explanation shows they are part of the demanding working relationship he maintains with Red Bull.",
-    url: "https://racingnews365.com/max-verstappen-keeping-people-on-their-toes-with-red-bull-demand",
-    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+      "Verstappen finished third, but the radio traffic revealed how difficult the Red Bull was to manage throughout the race.",
+    url: "https://www.planetf1.com/news/max-verstappen-gianpiero-lambiase-belgian-grand-prix-2026-team-radio",
+    imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "Nemzeti Sport",
+    sourceLabel: "F1news.se",
     title:
-      "Zajlik a munka, a csapatok kezdik belakni a Hungaroringet | Teams Begin Setting Up at the Hungaroring",
+      "Kommer det någonsin vända för Haas? | Will Haas Ever Turn Its Season Around?",
     summary:
-      "Nagy tempóban zajlik a munka a Hungaroringen, miközben az F1-es csapatok felépítik garázsaikat, irányítópultjaikat és többszintes motorhome-jaikat. A felújított főépület és médiaközpont is készen áll a 41. Magyar Nagydíjra. | Work is moving quickly at the Hungaroring as the F1 teams assemble their garages, control stations and multi-storey motorhomes. The renovated main building and media centre are also ready for the 41st Hungarian Grand Prix.",
+      "Haas har gått fyra lopp i rad utan poäng och fortsätter att kämpa med brist på användbar nedkraft baktill. Oliver Bearman säger att den nya framvingen har gjort VF-26 mer förutsägbar, men teamet saknar fortfarande den prestanda som krävs för att regelbundet nå poäng. | Haas has gone four consecutive races without scoring and continues to struggle with a lack of usable rear downforce. Oliver Bearman says the new front wing has made the VF-26 more predictable, but the team still lacks the performance needed to regularly score points.",
     kcsQuickShift:
-      "The rapid transformation from construction site to Formula 1 paddock shows how much work takes place before the cars even reach the circuit. | Az építési területből Formula–1-es paddockká történő gyors átalakulás megmutatja, mennyi munka zajlik már azelőtt, hogy az autók pályára gurulnának.",
-    url: "https://www.nemzetisport.hu/f1/2026/07/zajlik-a-munka-a-csapatok-kezdik-belakni-a-hungaroringet",
-    imagePath: "/img/news/raceposter/Hungariangrandprix.jpg",
+      "Haas has improved the car’s consistency, but the upgrade has not yet produced the step in performance it needs. | Haas har förbättrat bilens stabilitet, men uppgraderingen har ännu inte gett det prestandalyft som teamet behöver.",
+    url: "https://f1news.se/kommer-det-nagonsin-vanda-for-haas",
+    imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "PlanetF1",
+    sourceLabel: "Read Motorsport",
     title:
-      "Mercedes Finds Continuing Deployment Difference on Russell’s Car",
+      "Norris Raises Safety Concerns After Being Followed Through London",
     summary:
-      "Mercedes says its investigation continues to show energy deployment differences between George Russell and Kimi Antonelli. Russell adjusted his driving style after the team identified it as one contributing factor, but the problem remained during the Belgian Grand Prix.",
+      "Lando Norris described being followed by paparazzi through London for approximately 40 minutes. The McLaren driver said the incident invaded his privacy and left him concerned about his personal safety away from Formula 1.",
     kcsQuickShift:
-      "Russell made the changes Mercedes requested, so the team must now determine what else is causing his continuing deployment disadvantage.",
-    url: "https://www.planetf1.com/news/mercedes-george-russell-findings-belgian-gp-investigation",
-    imagePath: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+      "Norris accepts public attention as part of being an F1 champion, but says being followed crosses a serious line.",
+    url: "https://readmotorsport.com/2026/07/22/norris-paparazzi-london-safety/",
+    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "The Race",
+    sourceLabel: "Motorsport.com",
     title:
-      "What Triggered Russell’s Radio Rant and Why It Was Not Broadcast Live",
+      "Hamilton Takes Full Responsibility for Missing Ferrari’s Spa Potential",
     summary:
-      "George Russell delivered an angry radio message after his opening-lap Belgian Grand Prix retirement, but it was not heard on the international television broadcast. The message emerged later as questions continued over his energy deployment problem and collision with Lewis Hamilton.",
+      "Lewis Hamilton accepted responsibility for failing to convert Ferrari’s strong Belgian Grand Prix pace into a better result. He said his own mistakes prevented him from delivering what the car was capable of producing during the weekend.",
     kcsQuickShift:
-      "The unbroadcast message revealed just how frustrated Russell has become with a problem that Mercedes has still not completely explained.",
-    url: "https://www.the-race.com/formula-1/what-was-behind-russells-radio-rant-and-why-it-was-muted/",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbrussellmiami.jpg",
+      "Hamilton is not blaming Ferrari, admitting the car was considerably better than his final result suggested.",
+    url: "https://www.motorsport.com/f1/news/hamilton-takes-full-responsibility-for-not-delivering-on-ferrari-pace-at-belgian-gp/10840771/",
+    imagePath: "/img/news/xpb/ferrari/news-xpblewis.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "GrandPrix247",
+    sourceLabel: "The Race",
     title:
-      "Wolff Prepared to Prevent Mercedes Drivers From Costing Each Other Time",
+      "Why Formula 1’s AI Engines Are Tripping Teams Up",
     summary:
-      "Toto Wolff says Mercedes will intervene if Kimi Antonelli and George Russell begin fighting in a way that costs the team time against Ferrari or Red Bull. Wolff wants to prevent the drivers from yo-yoing positions and potentially losing another victory.",
+      "Formula 1 teams are still learning how to predict and control the complex energy deployment used by the 2026 power units. Small changes in grip, wind, braking and driver inputs can produce major differences in harvesting, acceleration and straight-line performance.",
     kcsQuickShift:
-      "Mercedes will still allow its drivers to race, but not when their battle begins helping the opposition close in.",
-    url: "https://www.grandprix247.com/formula-1-news/toto-wolff-says-team-order-will-apply-to-prevent-mercedes-drivers-yo-yoing-and-losing-out-to-rivals",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+      "The new power units are not only about horsepower. Understanding when and how to use electrical energy has become a major performance factor.",
+    url: "https://www.the-race.com/formula-1/why-f1-ai-engines-are-tripping-teams-up-so-much/",
+    imagePath: "/img/news/xpb/Races/xpb-sparace.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
-    slotId: "8",
-    sourceLabel: "Nextgen-Auto",
+     slotId: "4",
+    sourceLabel: "RacingNews365 NL",
     title:
-      "Aston Martin Might Have Reconsidered Honda Deal With Hindsight",
+      "Verstappen deelt duidelijk doel voor GP Hongarije | Verstappen Sets Clear Goal for Hungarian Grand Prix",
     summary:
-      "Mike Krack admits Aston Martin might have selected a different engine partner had it known Honda’s true 2026 performance level. Despite a difficult beginning, Krack says the pressure has brought the two organizations closer together as they work on major upgrades.",
+      "Max Verstappen wil dat Red Bull vanaf de eerste training in Hongarije de juiste afstelling vindt. Na zijn podiumplaats in België hoopt hij het laatste weekend voor de zomerstop sterk te beginnen en zo competitief mogelijk te zijn. | Max Verstappen wants Red Bull to find the correct setup from the opening practice session in Hungary. After finishing on the podium in Belgium, he hopes to begin the final weekend before the summer break strongly and be as competitive as possible.",
     kcsQuickShift:
-      "The admission is significant, but Aston Martin and Honda now have little choice except to solve the problems together and rebuild the project.",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/aston-may-have-rejected-honda-with-hindsight-krack,210060.html",
-    imagePath: "/img/news/xpb/Aston/news-xpbneweystroll.jpg",
+      "Verstappen says Red Bull cannot afford to spend another weekend chasing the correct setup. | Verstappen zegt dat Red Bull het zich niet kan veroorloven opnieuw een weekend naar de juiste afstelling te zoeken.",
+    url: "https://racingnews365.nl/verstappen-deelt-duidelijk-doel-voor-gp-hongarije",
+    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "Formula1.com",
+    sourceLabel: "PlanetF1",
     title:
-      "Haas Upgrades Deliver Downforce but Handling Problems Remain",
+      "Wolff Accuses Sky F1 Presenter of ‘Finger Pointing’ Over Russell",
     summary:
-      "Haas says its recent upgrades are producing the expected aerodynamic performance, including a new front wing that improved Oliver Bearman’s confidence. However, underlying handling characteristics are preventing the team from consistently using the additional downforce.",
+      "Toto Wolff pushed back when Sky F1 presenter Simon Lazenby questioned whether George Russell’s driving style was contributing to his recent problems. Mercedes found energy deployment differences between Russell’s car and Kimi Antonelli’s, although Wolff said responsibility was approximately divided between the team and driver.",
     kcsQuickShift:
-      "The upgrades appear to be working, but Haas still needs to solve the fundamental problem that is making the car difficult to extract performance from.",
-    url: "https://www.formula1.com/en/latest/article/haas-upgrades-are-working-but-the-search-for-performance-continues.4puEH07auVvirMhu1bEhxg",
-    imagePath: "/img/news/xpb/Haas/news-xpbbearman.jpg",
+      "Mercedes is firmly supporting Russell, but Wolff accepts that both the car and driver must improve.",
+    url: "https://www.planetf1.com/news/george-russell-toto-wolff-simon-lazenby-sky-f1-finger-pointing",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+    dateLabel: "July 22, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Motorsport.com",
+    sourceLabel: "Crash.net",
     title:
-      "Lawson and Lindblad Surprise Passengers on easyJet Flight",
+      "Gasly Admits Alpine Remains ‘Miles Off’ Its F1 Benchmark",
     summary:
-      "Racing Bulls teammates Liam Lawson and Arvid Lindblad surprised Formula 1 fans by taking a regular easyJet flight home after the Belgian Grand Prix. Lawson shared a photograph from the flight, and the unexpected travel choice quickly attracted attention online.",
+      "Pierre Gasly says Alpine remains far from the performance level it is targeting despite showing occasional flashes of speed. The team is still trying to understand why the car can perform at certain circuits but struggle badly at others.",
     kcsQuickShift:
-      "It is a lighter story, but seeing two F1 drivers travelling alongside ordinary passengers gave fans a rare and relatable paddock moment.",
-    url: "https://www.motorsport.com/f1/news/liam-lawson-and-arvid-lindblad-surprise-fans-on-easyjet-flight-after-belgian-gp/10840563/",
-    imagePath: "/img/news/xpb/Visa/xpb-liamarvidaustria.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 21, 2026",
+      "Gasly’s assessment is blunt. Alpine has shown some progress, but its overall performance remains well below expectations.",
+    url: "https://www.crash.net/f1/news/1101545/1/pierre-gasly-concedes-alpine-miles-f1-benchmark-target",
+    imagePath: "/img/news/Alpine/Gasly/gaslyMonacoFri.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "July 22, 2026",
   },
  
  ];

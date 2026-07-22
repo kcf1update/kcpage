@@ -44,8 +44,8 @@ function renderBilingualText(text, foreignFirst = true) {
   if (foreignFirst) {
     return (
       <>
-        <span className="text-white/65">{firstPart.trim()}</span>
-        {" "}
+        <span className="text-sky-300">{firstPart.trim()}</span>
+        <span className="text-cyan-300"> | </span>
         <span className="text-white">{secondPart.trim()}</span>
       </>
     );
@@ -54,8 +54,8 @@ function renderBilingualText(text, foreignFirst = true) {
   return (
     <>
       <span className="text-white">{firstPart.trim()}</span>
-      {" "}
-      <span className="text-white/65">{secondPart.trim()}</span>
+      <span className="text-cyan-300"> | </span>
+      <span className="text-sky-300">{secondPart.trim()}</span>
     </>
   );
 }

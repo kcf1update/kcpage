@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "2026 F1 Belgian GP RACE analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/W06FMXzTTyY",
+    title: "Is It the Car or George? Inside Mercedes' Spa Fallout",
+    youtubeInput: "https://youtu.be/hQEfxkqkYd8",
    
   },
 
