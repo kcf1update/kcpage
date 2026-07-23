@@ -130,9 +130,100 @@ export const photoGalleryContent = {
     alt: "British Grand Prix weekend photo 10",
     credit: "XPB Images",
   },
+    ],
   
-
-  ],
- },
-  ],
+     },
+ {
+      id: "Austria-2026",
+      raceName: "Austrian Grand Prix",
+      dates: "June 26th–28th, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Visa/xpb-liamarvidaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 1",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 2",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/RedBull/xpbtsolov.jpg",
+    alt: "Austrian Grand Prix weekend photo 3",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/Races/xpb-austriarace.jpg",
+    alt: "Austrian Grand Prix weekend photo 4",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/Races/xpb-raceaustria2.jpg",
+    alt: "Austrian Grand Prix weekend photo 5",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/Races/xpb-austria2.jpg",
+    alt: "Austrian Grand Prix weekend photo 6",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/Mercedes/xpb-kimiaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 7",
+    credit: "XPB Images",
+       },
+       {
+    src: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
+    alt: "Austrian Grand Prix weekend photo 8",
+    credit: "XPB Images",
+       },
+       {
+    src: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 9",
+    credit: "XPB Images",
+       },
+       {
+    src: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
+    alt: "Austrian Grand Prix weekend photo 10",
+    credit: "XPB Images",
+       },
+       {
+    src: "/img/news/xpb/Mercedes/xpb-georgepodiumaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+       },
+       {
+    src: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 12",
+    credit: "XPB Images",
+       },
+        {
+    src: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
+    alt: "Austrian Grand Prix weekend photo 13",
+    credit: "XPB Images",
+          },
+        {
+    src: "/img/news/xpb/Cadillac/xpb-perezaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 14",
+    credit: "XPB Images",
+       },  
+      {
+    src: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
+    alt: "Austrian Grand Prix weekend photo 15",
+    credit: "XPB Images",
+       }, 
+       {
+    src: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 16",
+    credit: "XPB Images",
+       }, 
+       {
+    src: "/img/news/xpb/Audi/xpb-audiaustria.jpg",
+    alt: "Austrian Grand Prix weekend photo 17",
+    credit: "XPB Images",
+       }, 
+    ],
+  },
+],
 };
