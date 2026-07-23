@@ -223,6 +223,92 @@ export const photoGalleryContent = {
     alt: "Austrian Grand Prix weekend photo 17",
     credit: "XPB Images",
        }, 
+        {
+    src: "/img/news/xpb/ferrari/xpb-fredaustria",
+    alt: "Austrian Grand Prix weekend photo 17",
+    credit: "XPB Images",
+       }, 
+    ],
+  },
+  {
+      id: "Spain-2026",
+      raceName: "Barcelona Catalunya Grand Prix",
+      dates: "Jun 12th - 14th 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Visa/xpblawsonspain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpbracespain2.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpbracespain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpbkimispain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 8",
+    credit: "XPB Images",
+    },
+     {
+    src: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 9",
+    credit: "XPB Images",
+    },
+        {
+    src: "/img/news/xpb/ferrari/xpblewiswin.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 10",
+    credit: "XPB Images",
+    },
+     {
+    src: "/img/news/xpb/ferrari/xpblewisspain2.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 11",
+    credit: "XPB Images",
+    },{
+    src: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 12",
+    credit: "XPB Images",
+    },
+    {
+    src: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 13",
+    credit: "XPB Images",
+    },
+   {
+    src: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 14",
+    credit: "XPB Images",
+    }, 
+    {
+    src: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+    alt: "Barcelona-Catalunya Prix weekend photo 15",
+    credit: "XPB Images",
+    },
     ],
   },
 ],
