@@ -1,154 +1,164 @@
 
 export const newsSlots = [
  
-  {
+   {
     slotId: "1",
-    sourceLabel: "Crash.net",
+    sourceLabel: "Autosport",
     title:
-      "Red Bull Confirms Fix for Verstappen’s ‘Super Dangerous’ Rear Wing",
+      "Alonso Weighs His F1 Future as Aston Martin Searches for Answers",
     summary:
-      "Red Bull identified two separate mechanical problems with its newer rear-wing design after failures in Austria and Britain. The team reverted to an older wing at Spa and expects to have a corrected version ready for the Hungarian Grand Prix.",
+      "Fernando Alonso says his decision about continuing in Formula 1 will depend more on the enjoyment of driving and the direction of the 2027 regulations than Aston Martin’s current form. The team hopes its Hungarian Grand Prix upgrades can begin moving it back toward the midfield.",
     kcsQuickShift:
-      "Red Bull believes it has solved the problem, but the revised wing must now prove it is safe and dependable.",
-    url: "https://www.crash.net/f1/news/1101537/1/red-bull-confirms-findings-super-dangerous-wing-max-verstappen-judges-old-design",
-    imagePath: "/img/news/xpb/RedBull/Maxcar.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+      "Alonso still believes Aston Martin has greater potential, but he needs the car and Formula 1’s regulations to give him a reason to continue.",
+    url:
+      "https://www.autosport.com/f1/news/what-alonso-needs-from-aston-martin-and-f1-as-career-decision-looms/10840948/",
+    imagePath: "/img/news/shut/Aston/news-shutfernando.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "MARCA",
+    sourceLabel: "Nemzeti Sport",
     title:
-      "McLaren quema sus naves en Hungría con un gran paquete de mejoras | McLaren Goes All-In for Hungary With Major Upgrade Package",
+      "Piastri, Bearman és Colapinto sem ül autóba a Magyar Nagydíj kezdetén | Piastri, Bearman and Colapinto to Sit Out the Start of the Hungarian Grand Prix Weekend",
     summary:
-      "McLaren llevará a Hungría un importante paquete de mejoras para el MCL40, encabezado por el debut de un nuevo alerón delantero. El equipo espera corregir algunas de sus debilidades antes de la última carrera previa al descanso de verano. | McLaren will bring a substantial upgrade package for the MCL40 to Hungary, led by the debut of a new front wing. The team hopes to address some of its weaknesses before the final race ahead of the summer break.",
+      "Oscar Piastri, Oliver Bearman és Franco Colapinto sem vesz részt a Magyar Nagydíj első szabadedzésén. Leonardo Fornaroli a McLarennél, Ryo Hirakawa a Haasnál, Paul Aron pedig az Alpine-nál kap lehetőséget. | Oscar Piastri, Oliver Bearman and Franco Colapinto will sit out the opening practice session in Hungary. Leonardo Fornaroli will drive for McLaren, Ryo Hirakawa for Haas and Paul Aron for Alpine.",
     kcsQuickShift:
-      "Hungary will show whether McLaren’s latest development push can move it closer to the front. | Hungría mostrará si el último impulso de desarrollo de McLaren puede acercarlo a la parte delantera.",
-    url: "https://www.marca.com/motor/formula1/gp-hungria/2026/07/22/mclaren-quema-naves-hungria-gran-paquete-mejoras-debut-aleron-macarena.html",
-    imagePath: "/img/news/xpb/Mclaren/xpblandospain2.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+      "Three regular drivers will miss FP1 as McLaren, Haas and Alpine complete mandatory rookie practice appearances. | Három állandó versenyző hagyja ki az első szabadedzést, miközben a McLaren, a Haas és az Alpine újonc versenyzőknek ad lehetőséget.",
+    url:
+      "https://www.nemzetisport.hu/f1/2026/07/piastri-bearman-es-colapinto-sem-ul-autoba-a-magyar-nagydij-kezdeten",
+    imagePath: "/img/news/Alpine/colapinto/news-colapintoas.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "PlanetF1",
+    sourceLabel: "The Race",
     title:
-      "Untelevised Verstappen Radio Reveals Red Bull Frustration at Spa",
+      "Hungary Will Put Audi’s Bold Chassis Claim to the Test",
     summary:
-      "Untelevised radio captured Max Verstappen repeatedly questioning Red Bull’s energy deployment, battery charging and tyre behaviour during the Belgian Grand Prix. After criticising the team’s race understanding, Verstappen quickly told race engineer Gianpiero Lambiase not to take the remark personally.",
+      "Audi believes its R26 has one of the strongest chassis in the midfield, despite continuing to lose performance through its power unit. The tight and technical Hungaroring should reveal whether Audi’s cornering strength can overcome its straight-line weakness.",
     kcsQuickShift:
-      "Verstappen finished third, but the radio traffic revealed how difficult the Red Bull was to manage throughout the race.",
-    url: "https://www.planetf1.com/news/max-verstappen-gianpiero-lambiase-belgian-grand-prix-2026-team-radio",
-    imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+      "After consecutive points finishes, Hungary could provide the clearest evidence yet of Audi’s true midfield potential.",
+    url:
+      "https://www.the-race.com/formula-1/a-big-test-of-audis-bold-f1-claim/",
+    imagePath: "/img/news/shut/Audi/news-audibinitto.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "F1news.se",
+    sourceLabel: "FormulaPassion.it",
     title:
-      "Kommer det någonsin vända för Haas? | Will Haas Ever Turn Its Season Around?",
+      "Futuro Verstappen, Ralf Schumacher alimenta le voci sulla McLaren | Verstappen’s Future Fuels Fresh McLaren Speculation",
     summary:
-      "Haas har gått fyra lopp i rad utan poäng och fortsätter att kämpa med brist på användbar nedkraft baktill. Oliver Bearman säger att den nya framvingen har gjort VF-26 mer förutsägbar, men teamet saknar fortfarande den prestanda som krävs för att regelbundet nå poäng. | Haas has gone four consecutive races without scoring and continues to struggle with a lack of usable rear downforce. Oliver Bearman says the new front wing has made the VF-26 more predictable, but the team still lacks the performance needed to regularly score points.",
+      "Ralf Schumacher ha riacceso le speculazioni sul futuro di Max Verstappen dopo che Jos Verstappen e il manager Raymond Vermeulen sono stati visti nell’hospitality McLaren. Schumacher ha messo in dubbio che si sia trattato soltanto di una visita informale. | Ralf Schumacher has renewed speculation about Max Verstappen’s future after Jos Verstappen and manager Raymond Vermeulen were seen in McLaren’s hospitality area. Schumacher questioned whether it was merely an informal visit.",
     kcsQuickShift:
-      "Haas has improved the car’s consistency, but the upgrade has not yet produced the step in performance it needs. | Haas har förbättrat bilens stabilitet, men uppgraderingen har ännu inte gett det prestandalyft som teamet behöver.",
-    url: "https://f1news.se/kommer-det-nagonsin-vanda-for-haas",
-    imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
+      "There is no confirmation of negotiations, but the sighting has added another layer to speculation surrounding Verstappen’s future. | Non vi è alcuna conferma di trattative, ma l’incontro ha alimentato ulteriormente le speculazioni sul futuro di Verstappen.",
+    url:
+      "https://www.formulapassion.it/f1/f1-news/futuro-verstappen-ralf-infiamma-il-mercato-jos-e-il-manager-in-hospitality-mclaren-non-avranno-preso-solo-un-caffe",
+    imagePath: "/img/news/xpb/xpb-zacandgpl.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "5",
     sourceLabel: "Read Motorsport",
     title:
-      "Norris Raises Safety Concerns After Being Followed Through London",
+      "McLaren Brings Its Unusual ‘Macarena’ Rear Wing to Hungary",
     summary:
-      "Lando Norris described being followed by paparazzi through London for approximately 40 minutes. The McLaren driver said the incident invaded his privacy and left him concerned about his personal safety away from Formula 1.",
+      "McLaren is expected to test its distinctive Hungary-specific rear wing during practice at the Hungaroring. The design is intended to provide the high downforce required around the circuit’s slow and medium-speed corners.",
     kcsQuickShift:
-      "Norris accepts public attention as part of being an F1 champion, but says being followed crosses a serious line.",
-    url: "https://readmotorsport.com/2026/07/22/norris-paparazzi-london-safety/",
-    imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+      "McLaren’s latest circuit-specific upgrade could strengthen an already competitive package on one of Formula 1’s highest-downforce tracks.",
+    url:
+      "https://readmotorsport.com/2026/07/22/mclaren-hungary-upgrade-macarena-rear-wing/",
+    imagePath: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "Motorsport.com",
+    sourceLabel: "GrandPrix247",
     title:
-      "Hamilton Takes Full Responsibility for Missing Ferrari’s Spa Potential",
+      "Hungaroring Layout Could Play to Ferrari’s Strengths",
     summary:
-      "Lewis Hamilton accepted responsibility for failing to convert Ferrari’s strong Belgian Grand Prix pace into a better result. He said his own mistakes prevented him from delivering what the car was capable of producing during the weekend.",
+      "The Hungaroring’s high-downforce layout could suit Ferrari’s SF-26 better than the faster circuits recently visited by Formula 1. Team principal Fred Vasseur remains cautious, warning that Ferrari cannot assume the circuit characteristics will automatically produce a strong result.",
     kcsQuickShift:
-      "Hamilton is not blaming Ferrari, admitting the car was considerably better than his final result suggested.",
-    url: "https://www.motorsport.com/f1/news/hamilton-takes-full-responsibility-for-not-delivering-on-ferrari-pace-at-belgian-gp/10840771/",
-    imagePath: "/img/news/xpb/ferrari/news-xpblewis.jpg",
+      "Hungary appears promising for Ferrari on paper, but Vasseur wants the team to prove its pace on the track.",
+    url:
+      "https://www.grandprix247.com/formula-1-news/hungaroring-could-suit-ferraris-sf-26-on-paper-but-fred-vasseur-not-taking-anything-for-granted",
+    imagePath: "/img/tracks/hungaroring.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "The Race",
+    sourceLabel: "PlanetF1",
     title:
-      "Why Formula 1’s AI Engines Are Tripping Teams Up",
+      "Colton Herta to Replace Valtteri Bottas in Hungarian GP Practice",
     summary:
-      "Formula 1 teams are still learning how to predict and control the complex energy deployment used by the 2026 power units. Small changes in grip, wind, braking and driver inputs can produce major differences in harvesting, acceleration and straight-line performance.",
+      "Cadillac reserve driver Colton Herta will take over Valtteri Bottas’ car during the opening practice session at the Hungarian Grand Prix. The appearance gives Herta more Formula 1 experience as Cadillac continues evaluating its driver programme.",
     kcsQuickShift:
-      "The new power units are not only about horsepower. Understanding when and how to use electrical energy has become a major performance factor.",
-    url: "https://www.the-race.com/formula-1/why-f1-ai-engines-are-tripping-teams-up-so-much/",
-    imagePath: "/img/news/xpb/Races/xpb-sparace.jpg",
+      "Herta gets another valuable F1 practice opportunity while Bottas watches the opening session from the garage.",
+    url:
+      "https://www.planetf1.com/news/valtteri-bottas-colton-herta-hungarian-grand-prix-2026-fp1",
+    imagePath: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+    dateLabel: "July 23, 2026",
   },
 
   {
-     slotId: "4",
-    sourceLabel: "RacingNews365 NL",
+    slotId: "8",
+    sourceLabel: "Marca",
     title:
-      "Verstappen deelt duidelijk doel voor GP Hongarije | Verstappen Sets Clear Goal for Hungarian Grand Prix",
+      "Mercedes admite el enigma eléctrico que desespera a Russell | Mercedes Admits Electrical Mystery Is Frustrating Russell",
     summary:
-      "Max Verstappen wil dat Red Bull vanaf de eerste training in Hongarije de juiste afstelling vindt. Na zijn podiumplaats in België hoopt hij het laatste weekend voor de zomerstop sterk te beginnen en zo competitief mogelijk te zijn. | Max Verstappen wants Red Bull to find the correct setup from the opening practice session in Hungary. After finishing on the podium in Belgium, he hopes to begin the final weekend before the summer break strongly and be as competitive as possible.",
+      "Mercedes reconoce que todavía intenta comprender los problemas eléctricos y de despliegue de energía que afectaron a George Russell en Bélgica. El equipo necesita encontrar una solución más consistente antes del Gran Premio de Hungría. | Mercedes admits it is still trying to understand the electrical and energy-deployment problems that affected George Russell in Belgium. The team needs a more consistent solution heading into the Hungarian Grand Prix.",
     kcsQuickShift:
-      "Verstappen says Red Bull cannot afford to spend another weekend chasing the correct setup. | Verstappen zegt dat Red Bull het zich niet kan veroorloven opnieuw een weekend naar de juiste afstelling te zoeken.",
-    url: "https://racingnews365.nl/verstappen-deelt-duidelijk-doel-voor-gp-hongarije",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+      "Mercedes has improved its car, but unresolved energy-management problems remain a serious concern for Russell. | Mercedes ha mejorado su monoplaza, pero los problemas de gestión de energía siguen siendo una preocupación importante para Russell.",
+    url:
+      "https://www.marca.com/motor/formula1/gp-hungria/2026/07/23/mercedes-admite-enigma-misterio-electrico-desespera-russell.html",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "PlanetF1",
+    sourceLabel: "Formula 1",
     title:
-      "Wolff Accuses Sky F1 Presenter of ‘Finger Pointing’ Over Russell",
+      "Key Facts, Statistics and Trivia for the Hungarian Grand Prix",
     summary:
-      "Toto Wolff pushed back when Sky F1 presenter Simon Lazenby questioned whether George Russell’s driving style was contributing to his recent problems. Mercedes found energy deployment differences between Russell’s car and Kimi Antonelli’s, although Wolff said responsibility was approximately divided between the team and driver.",
+      "Formula 1’s race-weekend guide covers the most important numbers, historical records and notable facts ahead of the Hungarian Grand Prix. It provides a quick overview of the circuit and the drivers and teams with strong records in Budapest.",
     kcsQuickShift:
-      "Mercedes is firmly supporting Russell, but Wolff accepts that both the car and driver must improve.",
-    url: "https://www.planetf1.com/news/george-russell-toto-wolff-simon-lazenby-sky-f1-finger-pointing",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "July 22, 2026",
+      "The essential numbers and historical details provide useful context before the cars take to the Hungaroring.",
+    url:
+      "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-hungarian-grand-prix.5Zhle8vMBDwzt2OSoCgk4d",
+    imagePath: "/img/news/raceposter/Hungariangrandprix.jpg",
+    photoCredit: "KC AI Generated Image ",
+    dateLabel: "July 23, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Crash.net",
+    sourceLabel: "Nextgen-Auto",
     title:
-      "Gasly Admits Alpine Remains ‘Miles Off’ Its F1 Benchmark",
+      "David Coulthard Joins Alex Albon’s Management Team",
     summary:
-      "Pierre Gasly says Alpine remains far from the performance level it is targeting despite showing occasional flashes of speed. The team is still trying to understand why the car can perform at certain circuits but struggle badly at others.",
+      "Former Formula 1 driver David Coulthard has joined Alex Albon’s management group as questions grow about the Williams driver’s long-term future. Albon’s improved reputation and performances have made him an increasingly interesting option in the driver market.",
     kcsQuickShift:
-      "Gasly’s assessment is blunt. Alpine has shown some progress, but its overall performance remains well below expectations.",
-    url: "https://www.crash.net/f1/news/1101545/1/pierre-gasly-concedes-alpine-miles-f1-benchmark-target",
-    imagePath: "/img/news/Alpine/Gasly/gaslyMonacoFri.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "July 22, 2026",
+      "Coulthard’s experience could help Albon navigate an important period as teams assess their future driver line-ups.",
+    url:
+      "https://motorsport.nextgen-auto.com/en/formula-1/coulthard-joins-albon-camp-as-future-questions-grow,210077.html",
+    imagePath: "/img/news/xpb/xpbcoulthard.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "July 23, 2026",
   },
  
  ];

@@ -9,9 +9,9 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Radio Rewind | 2026 Belgian Grand Prix",
-  youtubeInput: "https://youtu.be/FVNVoW9UZkE",
-   forceExternal :"blue"
+  title: "Farewell to the worst car of F1 2026",
+  youtubeInput: "https://youtu.be/eoBZMVBChiQ",
+   
   },
 
   {
