@@ -75,5 +75,64 @@ export const photoGalleryContent = {
   },
 ],
     },
+ {
+      id: "Britian-2026",
+      raceName: "British Grand Prix",
+      dates: "July 3rd–5th, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/RedBull/Maxcar.jpg",
+    alt: "British Grand Prix weekend photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpb-maxsilver.jpg",
+    alt: "British Grand Prix weekend photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/charlessilver3.jpg",
+    alt: "British Grand Prix weekend photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-silverrace.jpg",
+    alt: "British Grand Prix weekend photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-silversprintpodium.jpg",
+    alt: "British Grand Prix weekend photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-silverrace2.jpg",
+    alt: "British Grand Prix weekend photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
+    alt: "British Grand Prix weekend photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpboscar.jpg",
+    alt: "British Grand Prix weekend photo 8",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-charleswin.jpg",
+    alt: "British Grand Prix weekend photo 9",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-hamiltonsilver.jpg",
+    alt: "British Grand Prix weekend photo 10",
+    credit: "XPB Images",
+  },
+  
+
+  ],
+ },
   ],
 };
