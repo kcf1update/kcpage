@@ -10,7 +10,7 @@ export const photoGalleryContent = {
   title: "2026 Race Weekend Galleries",
 
   notice:
-    "XPB Images are displayed for editorial viewing only. Images may not be copied, downloaded, saved, reproduced, redistributed, or reused without permission from XPB Images.",
+    "All photographs in this gallery are licensed from XPB Images and used with permission for editorial purposes. Copyright remains with XPB Images and the respective photographers. Images may not be copied, downloaded, saved, reproduced, redistributed, modified, or reused without permission from XPB Images.",
 
   races: [
     {
