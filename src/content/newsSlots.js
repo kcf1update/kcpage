@@ -93,7 +93,7 @@ export const newsSlots = [
     url:
       "https://www.grandprix247.com/formula-1-news/hungaroring-could-suit-ferraris-sf-26-on-paper-but-fred-vasseur-not-taking-anything-for-granted",
     imagePath: "/img/tracks/hungaroring.jpg",
-    photoCredit: "XPB IMAGES",
+    photoCredit: "Courtesy of F1",
     dateLabel: "July 23, 2026",
   },
 
