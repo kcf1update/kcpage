@@ -352,7 +352,29 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-
+1	Charles Leclerc	MON	Scuderia Ferrari HP	1m19.075s	19
+2	Max Verstappen	NED	Oracle Red Bull Racing	1m19.559s	25
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m19.618s	23
+4	Isack Hadjar	FRA	Oracle Red Bull Racing	1m19.997s	25
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m20.066s	21
+6	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m20.360s	30
+7	Frederik Vesti	DEN	Mercedes AMG Petronas F1 Team	1m20.467s	24
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m20.623s	29
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m20.760s	28
+10	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m20.866s	28
+11	Lando Norris	GBR	McLaren Mastercard F1 Team	1m21.024s	26
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m21.051s	24
+13	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m21.550s	20
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m21.704s	29
+15	Alex Albon	THA	Atlassian Williams F1 Team	1m21.819s	28
+16	Leonardo Fornaroli	ITA	McLaren Mastercard F1 Team	1m21.890s	29
+17	Ryo Hirakawa	JAP	TGR Haas F1 Team	1m22.001s	25
+18	Sergio Perez	MEX	Cadillac F1 Team	1m22.089s	22
+19	Paul Aron	EST	BWT Alpine F1 Team	1m22.168s	28
+20	Colton Herta	USA 	Cadillac F1 Team	1m23.118s	28
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m23.471s	11
+22	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.734s	23
+ 
 `;
 
 const PASTE_P2 = `
@@ -463,9 +485,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "",
-      summary: "",
-      url: "",
+        "Leclerc Fastest as Trouble Hits Ferrari and Aston Martin",
+      summary: "Charles Leclerc topped FP1 with a 1:19.075, finishing 0.484s ahead of Max Verstappen, with Lewis Hamilton third. The session was interrupted when Lance Stroll suffered a left-rear suspension failure, while Leclerc later stopped with a mechanical issue. Five substitute drivers also took part in the opening session.",
+      url: "https://www.grandprix247.com/formula-1-news/hungarian-grand-prix-fp1-charles-leclerc-fastest-from-max-verstappen-aston-martin-updated-car-breaks-on-debut",
     },
   ],
 },
@@ -565,7 +587,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 AM ADT",
+          time: "Leclerc fsatest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
