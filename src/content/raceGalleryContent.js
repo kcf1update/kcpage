@@ -20,20 +20,20 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/",
+          src: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpb-charleshungary.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
           src: "",
           alt: "Friday race weekend gallery image 3",
-          credit: "XPB Images",
-        },
+          credit: "XPB Images",     
+           },
       ],
     },
 
