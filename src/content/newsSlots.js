@@ -3,26 +3,30 @@ export const newsSlots = [
  
    {
   slotId: "1",
-sourceLabel: "ESPN",
-title: "Leclerc Fastest in Hungarian GP FP1 Despite Late Ferrari Issue",
-summary: "Charles Leclerc set the fastest time in first practice for the Hungarian Grand Prix with a 1:19.075, finishing ahead of Max Verstappen and Lewis Hamilton. His session ended early after a late mechanical issue, while several substitute drivers also took part in FP1.",
-kcsQuickShift: "Ferrari showed strong early pace, but Leclerc's late problem gives the team something to investigate before FP2.",
-url: "https://www.espn.co.uk/f1/story/_/id/49431211/charles-leclerc-quickest-first-practice-issue-ferrari-closing-stages-hungarian-grand-prix-formula-1-hungaroring",
-imagePath: "/img/news/xpb/ferrari/xpb-charleshungary.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "July 24, 2026"
+  sourceLabel: "GrandPrix247",
+  title: "Hamilton Leads Ferrari 1-2 in Hungarian GP FP2 as Mercedes Struggle",
+  summary:
+    "Lewis Hamilton topped second practice in Hungary with a 1:18.729, finishing 0.148 seconds ahead of Ferrari teammate Charles Leclerc. Lando Norris was third, Max Verstappen fourth, while Mercedes struggled for balance with George Russell fifth and championship leader Kimi Antonelli only 13th.",
+  kcsQuickShift:
+    "Ferrari looked very comfortable on Friday, while Mercedes have plenty to sort out before qualifying.",
+  url: "https://www.grandprix247.com/formula-1-news/hungarian-grand-prix-fp2-lewis-hamilton-fastest-ferrari-own-friday-mercedes-struggle",
+  imagePath: "/img/news/xpb/ferrari/xpb-lewishungary.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 24, 2026"
 },
 
 {
   slotId: "2",
-sourceLabel: "FormulaPassion.it",
-title: "La nuova Aston Martin si rompe subito: cede la sospensione posteriore sinistra di Stroll | New Aston Martin breaks immediately as Stroll suffers left-rear suspension failure",
-summary: "La nuova Aston Martin ha avuto subito un problema nelle prime prove libere in Ungheria, con Lance Stroll costretto a fermarsi dopo il cedimento della sospensione posteriore sinistra. L'incidente arriva mentre il team prova un importante pacchetto di aggiornamenti. | Aston Martin's heavily updated car ran into immediate trouble in FP1 in Hungary, with Lance Stroll forced to stop after a left-rear suspension failure. The setback came as the team began evaluating a major new upgrade package.",
-kcsQuickShift: "Aston Martin's big upgrade weekend has started with an unexpected reliability problem that could limit valuable FP1 running. | Il weekend degli aggiornamenti Aston Martin è iniziato con un problema di affidabilità inatteso che potrebbe ridurre il prezioso tempo in pista nelle FP1.",
-url: "https://www.formulapassion.it/f1/f1-news/la-nuova-aston-martin-si-rompe-subito-cede-la-sospensione-posteriore-sinistra-di-stroll",
-imagePath: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
-photoCredit: "XPB IMAGES",
-dateLabel: "July 24, 2026"
+  sourceLabel: "Infobae",
+  title: "Colapinto afronta un fin de semana clave en Hungría | Colapinto Faces a Key Weekend in Hungary",
+  summary:
+    "Franco Colapinto llega al Gran Premio de Hungría con su futuro en Alpine todavía en juego, mientras busca seguir fortaleciendo su candidatura para conservar el asiento en 2027. Paul Aron ocupó su coche en la FP1 antes de que el argentino regresara para la segunda práctica. | Franco Colapinto arrives at the Hungarian Grand Prix with his Alpine future still undecided as he continues trying to strengthen his case for the 2027 seat. Paul Aron took over his car in FP1 before the Argentine returned for second practice.",
+  kcsQuickShift:
+    "Colapinto has another important weekend ahead as Alpine continues evaluating its 2027 driver line-up. | Colapinto afronta otro fin de semana importante mientras Alpine continúa evaluando su alineación de pilotos para 2027.",
+  url: "https://www.infobae.com/deportes/2026/07/24/franco-colapinto-afrontara-las-primeras-practicas-libres-del-gp-de-hungria-hora-tv-y-todo-lo-que-hay-que-saber/",
+  imagePath: "/img/news/xpb/Alpine/xpb-colapintohungary.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 24, 2026"
 },
 
 {

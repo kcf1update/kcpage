@@ -378,7 +378,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
-
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m18.729s	25
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m18.877s	29
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	1m19.228s	30
+4	Max Verstappen	NED	Oracle Red Bull Racing	1m19.421s	26
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m19.662s	29
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	1m19.800s	19
+7	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m20.041s	29
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m20.101s	28
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m20.125s	30
+10	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m20.253s	28
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m20.474s	26
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m20.557s	26
+13	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m20.693s	30
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m20.816s	24
+15	Ollie Bearman	GBR	TGR Haas F1 Team	1m20.950s	27
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m20.973s	33
+17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m21.426s	31
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m21.442s	30
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m21.719s	24
+20	Sergio Perez	MEX	Cadillac F1 Team	1m21.792s	27
+21	Franco Colapinto	ARG	BWT Alpine F1 Team	1m22.531s	11
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	No time set	 
 
 `;
 
@@ -495,11 +516,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "",
-      summary: "",
-
-
-      url: "",
+      title: "Hamilton Leads Ferrari 1-2 as Mercedes Struggle in FP2",
+      summary: "Lewis Hamilton topped FP2 in Hungary with a 1:18.729, leading Charles Leclerc by 0.148 seconds as Ferrari completed a strong Friday. Lando Norris finished third ahead of Max Verstappen, while Mercedes struggled for pace and balance. Franco Colapinto returned to the Alpine after sitting out FP1.",
+      url: "https://www.formula1.com/en/latest/article/fp2-hamilton-beats-leclerc-to-top-spot-in-tricky-second-practice-for-hungarian-grand-prix.7qr57bgnk0ba1rXSyrijLw",
     },
   ],
 },
@@ -587,7 +606,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Leclerc fsatest, results below",
+          time: "Leclerc fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -596,7 +615,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12 PM ADT",
+          time: "Hamilton fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
