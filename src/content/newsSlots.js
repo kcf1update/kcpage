@@ -4,28 +4,28 @@ export const newsSlots = [
   {
   slotId: "1",
   sourceLabel: "Motorsport.com",
-  title: "Lando Norris edges Lewis Hamilton in final Hungarian GP practice",
+  title: "Norris Beats Hamilton by 0.012s to Take Hungarian GP Pole",
   summary:
-    "Lando Norris topped FP3 in Hungary with a 1:17.939, beating Lewis Hamilton by 0.117 seconds and championship leader Kimi Antonelli by 0.129. Charles Leclerc finished fourth, Oscar Piastri fifth and Max Verstappen seventh as qualifying pace tightened up across the leading teams.",
+    "Lando Norris ended Mercedes’ perfect 2026 Grand Prix qualifying streak with a 1:17.207 lap, beating Lewis Hamilton by just 0.012 seconds. Charles Leclerc qualified third, Kimi Antonelli fourth and Oscar Piastri fifth.",
   kcsQuickShift:
-    "Norris, Hamilton and Antonelli were separated by just 0.129 seconds, setting up what could be an extremely close qualifying session.",
-  url: "https://www.motorsport.com/f1/news/f1-hungarian-gp-fp3-report-/10841679/",
-  imagePath: "/img/news/xpb/Mclaren/xpb-landohungary.jpg",
+    "Norris delivered when it mattered, taking his first pole of the season by the smallest of margins.",
+  url: "https://www.motorsport.com/f1/news/f1-hungarian-gp-qualifying-results/10841752/",
+  imagePath: "/img/news/xpb/Mclaren/xpb-landopolehungary.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 25, 2026",
 },
 
 {
-  slotId: "2",
-  sourceLabel: "Nemzeti Sport",
+   slotId: "2",
+  sourceLabel: "M4 Sport 🇭🇺",
   title:
-    "F1, Magyar Nagydíj, 3. szabadedzés | F1 Hungarian Grand Prix, third practice",
+    "Norrisé az idei első nem mercedeses pole, 0,012 másodperccel győzte le Hamiltont | Norris Takes First Non-Mercedes Pole of 2026, Beating Hamilton by 0.012s",
   summary:
-    "Lando Norris zárta az élen a Magyar Nagydíj harmadik szabadedzését 1:17.939-es idővel, Lewis Hamiltont és Kimi Antonellit megelőzve. Charles Leclerc negyedik, Oscar Piastri ötödik, Max Verstappen pedig hetedik lett. | Lando Norris finished fastest in third practice for the Hungarian Grand Prix with a 1:17.939, ahead of Lewis Hamilton and Kimi Antonelli. Charles Leclerc was fourth, Oscar Piastri fifth and Max Verstappen seventh.",
+    "Lando Norris 1:17,207-es körrel szerezte meg a pole pozíciót a Magyar Nagydíjon, mindössze 0,012 másodperccel megelőzve Lewis Hamiltont. Charles Leclerc harmadik, Andrea Kimi Antonelli negyedik lett. | Lando Norris claimed Hungarian Grand Prix pole with a 1:17.207 lap, beating Lewis Hamilton by only 0.012 seconds. Charles Leclerc finished third with Andrea Kimi Antonelli fourth.",
   kcsQuickShift:
-    "Norris has the edge heading into qualifying, but Hamilton and Antonelli are both within 0.13 seconds. | Norris előnnyel várhatja az időmérőt, de Hamilton és Antonelli is 0,13 másodpercen belül van.",
-  url: "https://www.nemzetisport.hu/f1/2026/07/f1-magyar-nagydij-3-szabadedzes-8",
-  imagePath: "/img/news/xpb/Mclaren/xpb-landohungary2.jpg",
+    "Norris broke Mercedes’ season-long Grand Prix pole streak in an incredibly tight qualifying finish. | Norris hihetetlenül szoros időmérőn szakította meg a Mercedes egész szezonon át tartó pole-sorozatát.",
+  url: "https://m4sport.hu/forma-1/cikk/2026/07/25/magyar-nagydij-norrise-az-idei-elso-nem-mercedeses-pole-0012-masodperccel-gyozte-le-hamiltont",
+  imagePath: "/img/news/xpb/xpb-hungarypole.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "July 25, 2026",
 },

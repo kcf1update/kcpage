@@ -63,7 +63,12 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mclaren/xpb-landopolehungary.jpg",
+          alt: "Saturday race weekend gallery image 4",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/xpb-hungarypole.jpg",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },

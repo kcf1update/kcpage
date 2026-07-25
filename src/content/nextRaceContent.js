@@ -437,8 +437,116 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	1	
 
+Lando Norris
 
+McLaren	1:18.277	1:17.456	1:17.207	16
+2	44	
+
+Lewis Hamilton
+
+Ferrari	1:18.730	1:17.803	1:17.219	15
+3	16	
+
+Charles Leclerc
+
+Ferrari	1:18.984	1:17.626	1:17.445	20
+4	12	
+
+Kimi Antonelli
+
+Mercedes	1:18.726	1:18.393	1:17.479	20
+5	81	
+
+Oscar Piastri
+
+McLaren	1:18.891	1:17.928	1:17.684	15
+6	3	
+
+Max Verstappen
+
+Red Bull Racing	1:18.656	1:18.249	1:17.725	18
+7	63	
+
+George Russell
+
+Mercedes	1:18.856	1:18.445	1:17.760	20
+8	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:18.754	1:17.872	1:17.856	14
+9	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:19.233	1:18.360	1:18.281	18
+10	27	
+
+Nico Hulkenberg
+
+Audi	1:18.796	1:18.639	1:18.686	18
+11	30	
+
+Liam Lawson
+
+Racing Bulls	1:19.161	1:18.765		12
+12	10	
+
+Pierre Gasly
+
+Alpine	1:19.741	1:18.844		12
+13	43	
+
+Franco Colapinto
+
+Alpine	1:19.771	1:19.027		12
+14	5	
+
+Gabriel Bortoleto
+
+Audi	1:19.069	1:19.105		11
+15	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:20.010	1:19.734		12
+16	14	
+
+Fernando Alonso
+
+Aston Martin	1:20.126	1:19.808		15
+17	87	
+
+Oliver Bearman
+
+Haas F1 Team	1:20.233			6
+18	55	
+
+Carlos Sainz
+
+Williams	1:20.621			9
+19	23	
+
+Alexander Albon
+
+Williams	1:20.658			9
+20	18	
+
+Lance Stroll
+
+Aston Martin	1:20.659			8
+21	77	
+
+Valtteri Bottas
+
+Cadillac	1:20.886			10
+22	11	
+
+Sergio Perez
+
+Cadillac	1:21.322			9
 
 
 `;
@@ -561,10 +669,10 @@ summary:
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Norris Ends Mercedes Pole Streak in Hungary",
 summary:
-  "",
-                url: "",
+  "Lando Norris produced a superb final qualifying lap to take pole position for the Hungarian Grand Prix, beating Lewis Hamilton by just 0.012 seconds with a 1:17.207. The result marked the first Grand Prix pole of the 2026 season for a non-Mercedes driver. Charles Leclerc qualified third, Kimi Antonelli fourth and Oscar Piastri fifth, setting up a tightly matched front of the grid for Sunday’s race.",
+                url: "https://www.the-race.com/formula-1/norris-snatches-pole-from-hamilton-in-f1-hungarian-gp-qualifying/",
               },
             ],
           },
@@ -655,7 +763,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11AM ADT",
+          time: "Norris on Pole, Results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
