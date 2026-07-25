@@ -404,6 +404,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	1m17.939s	20
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m18.056s	22
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m18.068s	15
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m18.291s	24
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m18.438s	21
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m18.541s	17
+7	Max Verstappen	NED	Oracle Red Bull Racing	1m18.656s	13
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m18.943s	17
+9	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m19.088s	22
+10	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m19.160s	23
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m19.338s	22
+12	Pierre Gasly	FRA	BWT Alpine F1 Team	1m19.723s	19
+13	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m19.895s	5
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	1m20.055s	29
+15	Esteban Ocon	FRA	TGR Haas F1 Team	1m20.295s	17
+16	Ollie Bearman	GBR	TGR Haas F1 Team	1m20.312s	14
+17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m20.393s	17
+18	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m20.933s	20
+19	Valtteri Bottas	FIN	Cadillac F1 Team	1m21.299s	15
+20	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m21.406s	16
+21	Alex Albon	THA	Atlassian Williams F1 Team	1m21.513s	12
+22	Sergio Perez	MEX	Cadillac F1 Team	No time set	1
 
 `;
 const PASTE_SQ = `
@@ -526,11 +548,11 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
     {
- title: "",
+ title: "Norris Leads Tight FP3 as Hamilton and Antonelli Close In",
 
 summary:
-  "",
-      url: "",
+  "Lando Norris topped final practice in Hungary with a 1:17.939, just 0.117 seconds ahead of Lewis Hamilton and 0.129 clear of Kimi Antonelli. Charles Leclerc placed fourth, Oscar Piastri fifth and Max Verstappen seventh, leaving the front of the field tightly packed before qualifying.",
+      url: "https://www.espn.co.uk/f1/story/_/id/49431226/mclarens-lando-norris-fastest-final-practice-ferrari-mercedes-mix-hungarian-grand-prix-formula-1-hungaroring",
     },
   ],
 },
@@ -624,7 +646,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Lando Fastest! Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
