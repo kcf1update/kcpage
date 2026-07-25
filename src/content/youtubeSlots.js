@@ -9,21 +9,21 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Farewell to the worst car of F1 2026",
-  youtubeInput: "https://youtu.be/eoBZMVBChiQ",
-   
+  title: "Qualifying Highlights | 2026 Hungarian Grand Prix",
+  youtubeInput: "https://youtu.be/rqTTczYv93A",
+  forceExternal: "blue",
   },
 
   {
     slotId: "slot2",
-    title: "Is It the Car or George? Inside Mercedes' Spa Fallout",
-    youtubeInput: "https://youtu.be/hQEfxkqkYd8",
+    title: "Which F1 tracks could REPLACE the Middle East races?",
+    youtubeInput: "https://youtu.be/KWwI2CN-5YQ",
    
   },
 
   {
     slotId: "slot3",
-    title: "George Russell’s ‘infuriating’ Mercedes crisis",
+    title: "George Russell's infuriating Mercedes crisis",
     youtubeInput: "https://youtu.be/vEwOUnHlOoY",
     
   }
