@@ -18,7 +18,7 @@ const raceWeekendPromo = {
   enabled:"True",
   label: "Race Weekend Results",
   title: "AWS HUNGARIAN GRAND PRIX",
-  body: "The Hungarian Grand Prix Race Weekend is now underway. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
+  body: "The Hungarian Grand Prix Race Weekend is complete. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
   buttonText: "View Race Results →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/hungariangrandprix.jpg",

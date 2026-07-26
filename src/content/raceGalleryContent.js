@@ -81,12 +81,12 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Mclaren/xpb-hungarypodium.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mclaren/xpb-norriswinhungary.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },

@@ -552,6 +552,28 @@ Cadillac	1:21.322			9
 `;
 
 const PASTE_RACE = `
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	70 Laps
+2	Max Verstappen	NED	Oracle Red Bull Racing	+15.0s
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+18.7s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	+23.8s
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	+24.5s
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	+55.4s
+7	George Russell	GBR	Mercedes AMG Petronas F1 Team	+57.5s
+8	Liam Lawson	NZD	Racing Bulls	+1 Lap
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
+10	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
+12	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+13	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+1 Lap
+14	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+1 Lap
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	+2 Laps
+16	Esteban Ocon	FRA	TGR Haas F1 Team	+2 Laps
+17	Alex Albon	THA	Atlassian Williams F1 Team	+2 Laps
+18	Carlos Sainz	ESP	Atlassian Williams F1 Team	+2 Laps
+19	Ollie Bearman	GBR	TGR Haas F1 Team	+2 Laps
+DNF	Oscar Piastri	AUS	McLaren Mastercard F1 Team	 
+DNF	Sergio Perez	MEX	Cadillac F1 Team	 
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	 
 
 `;
 
@@ -680,11 +702,11 @@ summary:
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Norris Claims First 2026 Win After Piastri Drama in Hungary",
 
-summary:
-  "",
-                url: "",
+ summary:
+        "Lando Norris claimed his first victory of the 2026 season after a tense Hungarian Grand Prix. Oscar Piastri led early, but Norris moved ahead during the second pit-stop sequence. Piastri later retired with a gearbox problem, promoting Max Verstappen to second and Kimi Antonelli to third.",
+                url: "https://www.planetf1.com/news/hungarian-grand-prix-2026-race-report",
               },
             ],
           },
@@ -772,7 +794,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "10AM ADT",
+          time: "Norris Wins! Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
