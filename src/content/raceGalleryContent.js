@@ -91,22 +91,33 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/xpb-hungaryrace.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
-        {
-          src: "",
-          alt: "Race day gallery image 4",
-          credit: "XPB Images",
-        },
+       
          {
-          src: "",
+          src: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimihungary4.jpg",
+          alt: "Race day gallery image 6",
+          credit: "XPB Images",
+        },
+         {
+          src: "/img/news/xpb/RedBull/xpb-maxhungary.jpg",
+          alt: "Race day gallery image 6",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/Aston/xpb-lancehungary.jpg",
+          alt: "Race day gallery image 6",
+          credit: "XPB Images",
+        },
+        {
+          src: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },

@@ -32,117 +32,116 @@ export const newsSlots = [
 
 {
   slotId: "3",
-  sourceLabel: "Crash.net",
-  title: "Adrian Newey addresses Christian Horner Aston Martin links",
+  sourceLabel: "Motorsport.com",
+  title: "Five Quick Takeaways From the Hungarian Grand Prix",
   summary:
-    "Adrian Newey has played down speculation linking Christian Horner with Aston Martin, saying he knows little about the rumours and that the team is happy with its current senior management. Horner says he would only consider an F1 return with a project that has a genuine opportunity to win.",
+    "Motorsport.com breaks down the major talking points from Hungary, including Norris's first win of 2026, Ferrari's missed opportunity, another setback for George Russell and Aston Martin's improved form.",
   kcsQuickShift:
-    "A Newey and Horner reunion would certainly grab attention, but Aston Martin is giving no indication that a major management change is coming.",
-  url: "https://www.crash.net/f1/news/1101677/1/adrian-newey-addresses-christian-horner-aston-martin-f1-links",
-  imagePath: "/img/news/xpb/Aston/xpbadrian.jpg",
+    "Hungary produced several bigger storylines beyond the winner, especially for Ferrari, Mercedes and Aston Martin.",
+  url: "https://www.motorsport.com/f1/news/five-quick-takeaways-from-hungarian-gp/10842073/",
+  imagePath: "/img/news/xpb/xpb-hungaryrace.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "4",
-  sourceLabel: "F1News.se",
+  sourceLabel: "MARCA | Spain",
   title:
-    "Hamiltons oväntade löfte: ”På en annan plats” | Hamilton's unexpected promise: “In a different place”",
+    "Clase de Antonelli a Hamilton, marca mundial | Antonelli Delivers a Lesson to Hamilton With the Championship in Mind",
   summary:
-    "Lewis Hamilton säger att han är stolt över hur långt han och Ferrari har kommit sedan hans svåra Ungerns Grand Prix 2025 och skämtade om att en framtida dokumentär kanske avslöjar hela historien bakom den helgen. | Lewis Hamilton says he is proud of how far he and Ferrari have come since his difficult 2025 Hungarian Grand Prix and joked that a future documentary may reveal the full story behind that weekend.",
+    "Andrea Kimi Antonelli volvió a salir reforzado de Hungría después de terminar en el podio y aumentar su ventaja en el campeonato. Lewis Hamilton peleó con el Mercedes en las últimas vueltas, pero una sanción terminó condicionando su resultado. | Andrea Kimi Antonelli came away from Hungary strengthened after another podium increased his championship advantage. Lewis Hamilton challenged the Mercedes late in the race, but a penalty ultimately affected his result.",
   kcsQuickShift:
-    "Hamilton says he and Ferrari arrive in Hungary in a completely different place than a year ago, with a car he believes they can fight with. | Hamilton säger att han och Ferrari anländer till Ungern på en helt annan plats än för ett år sedan, med en bil som han tror att de kan slåss med.",
-  url: "https://f1news.se/hamiltons-ovantade-lofte-pa-en-annan-plats",
-  imagePath: "/img/news/xpb/ferrari/xpb-hamiltonsilver.jpg",
+    "Antonelli continues to turn difficult weekends into valuable championship points. | Antonelli sigue convirtiendo fines de semana complicados en puntos muy importantes para el campeonato.",
+  url: "https://www.marca.com/motor/formula1/gp-hungria/2026/07/26/clase-antonelli-hamilton-marca-mundial.html",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbkimi3.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "5",
-  sourceLabel: "PlanetF1",
-  title: "Malaysia emerges as contender for surprise F1 return",
+  sourceLabel: "The Race",
+  title: "F1's Bahrain Grand Prix to Be Held in Malaysia",
   summary:
-    "Malaysia's Sepang International Circuit has emerged as a serious candidate for a return to the 2026 Formula 1 calendar as uncertainty continues over the Middle East schedule. The circuit last hosted Formula 1 in 2017.",
+    "Malaysia is set for a one-off Formula 1 return at Sepang on October 4, with the unusual event officially planned as the Gulf Air Bahrain Grand Prix in Malaysia. Bahrain is helping fund the replacement race after safety concerns prevented its own event from returning.",
   kcsQuickShift:
-    "A Sepang return would bring one of F1's most popular former circuits back onto the calendar, with Malaysia actively evaluating the possibility.",
-  url: "https://www.planetf1.com/news/malaysia-f1-return-sepang-2026-calendar",
+    "Sepang's unexpected return gives F1 a creative solution to a difficult calendar problem.",
+  url: "https://www.the-race.com/formula-1/f1s-bahrain-gp-to-be-held-in-malaysia/",
   imagePath: "/img/news/shut/shut-maylasi.jpg",
   photoCredit: "Shutterstock",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "6",
-  sourceLabel: "Nextgen-Auto",
-  title: "Red Bull reportedly rescued Nikola Tsolov from Alonso-linked debt",
+  sourceLabel: "RacingNews365",
+  title: "George Russell Suffers Latest Setback With Disastrous Hungarian GP Start",
   summary:
-    "Formula 2 championship leader Nikola Tsolov was reportedly facing serious financial pressure from an agreement connected to Fernando Alonso's former management structure before Helmut Marko helped move him into Red Bull's driver programme. Red Bull is now said to be supporting the Bulgarian as his Formula 1 prospects grow.",
+    "George Russell's Hungarian Grand Prix was compromised immediately when anti-stall triggered at the start and dropped him from sixth to the back of the field. He recovered through the race but could only finish seventh.",
   kcsQuickShift:
-    "With six F2 victories and the championship lead, Tsolov is emerging as one of Red Bull's strongest candidates for a future Racing Bulls seat.",
-  url: "https://motorsport.nextgen-auto.com/en/formula-1/red-bull-rescued-tsolov-from-alonso-linked-debt-report,210187.html",
-  imagePath: "/img/news/xpb/RedBull/xpbtsolov.jpg",
+    "Another difficult Sunday leaves Russell with even more work to do in the championship fight.",
+  url: "https://racingnews365.com/george-russell-suffers-latest-setback-with-disastrous-start-to-hungarian-gp",
+  imagePath: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "7",
-  sourceLabel: "Nextgen-Auto",
-  title: "Kimi Antonelli faces lawsuit from former manager Giovanni Minardi",
+  sourceLabel: "RacingNews365",
+  title: "Antonelli Relieved After Hungarian GP Damage Limitation",
   summary:
-    "Championship leader Kimi Antonelli is facing a civil lawsuit from former manager Giovanni Minardi over alleged unpaid compensation dating back to before his Formula 1 career. Antonelli's representatives are reportedly confident that their management agreement was terminated legally.",
+    "Kimi Antonelli described Hungary as a damage-limitation race after recovering from seventh on the grid to finish third. The result extended his championship lead to 50 points heading into the summer break.",
   kcsQuickShift:
-    "The dispute could involve Mercedes figures Toto Wolff and Gwen Lagrue as witnesses, while Antonelli says he remains focused entirely on racing.",
-  url: "https://motorsport.nextgen-auto.com/en/formula-1/antonelli-faces-lawsuit-from-former-manager-minardi,210183.html",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimispa2.jpg",
+    "Antonelli turned a difficult starting position into another podium and strengthened his championship position.",
+  url: "https://racingnews365.com/kimi-antonelli-relieved-at-damage-limitation-hungarian-gp-as-title-grip-strengthened",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimihungary4.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "8",
-  sourceLabel: "Formel1.de",
+  sourceLabel: "RacingNews365 | Netherlands",
   title:
-    "Schadensersatz nach Vegas-Debakel: F1 muss drei Millionen Dollar zahlen | Compensation after Vegas debacle: F1 to pay $3 million",
+    "Verstappen totaal verrast door sterke prestatie: Het is niet te geloven! | Verstappen Stunned by Strong Hungary Result: It's Unbelievable!",
   summary:
-    "Liberty Media und der Grand Prix von Las Vegas haben einem Vergleich von rund drei Millionen Dollar zugestimmt, um eine Sammelklage von Zuschauern nach dem problematischen Rennwochenende 2023 beizulegen. | Liberty Media and the Las Vegas Grand Prix have agreed to a settlement of around $3 million to resolve a class-action lawsuit involving spectators following the troubled 2023 race weekend.",
+    "Max Verstappen had niet verwacht op het podium te eindigen, maar een sterke race en de beslissing om tijdens de virtual safety car buiten te blijven brachten hem naar de tweede plaats. | Max Verstappen did not expect to finish on the podium, but a strong drive and the decision to stay out during the Virtual Safety Car promoted him to second place.",
   kcsQuickShift:
-    "The settlement closes another chapter from F1's difficult 2023 Las Vegas debut after opening practice lasted only nine minutes. | Der Vergleich beendet ein weiteres Kapitel des schwierigen Formel-1-Debüts 2023 in Las Vegas, nachdem das erste Training nur neun Minuten dauerte.",
-  url: "https://www.formel1.de/news/news/2026-07-25/schadensersatz-nach-vegas-debakel-f1-muss-drei-millionen-dollar-zahlen",
-  imagePath: "/img/news/shut/shut-vegas.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "July 25, 2026",
+    "Verstappen maakte optimaal gebruik van strategie en omstandigheden om een onverwachte tweede plaats te pakken. | Verstappen maximized the strategy and circumstances to claim an unexpected second place.",
+  url: "https://racingnews365.nl/verstappen-totaal-verrast-door-sterke-prestatie-het-is-niet-te-geloven",
+  imagePath: "/img/news/xpb/RedBull/xpb-maxhungary.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "9",
-  sourceLabel: "Formula1.com",
-  title: "Alonso encouraged by 'much better' upgraded Aston Martin",
+  sourceLabel: "Nextgen-Auto",
+  title: "Williams Must Copy Aston Martin's Big Leap, Says Sainz",
   summary:
-    "Fernando Alonso says Aston Martin's heavily upgraded AMR26 feels much better, more predictable and easier to drive after its first running in Hungary. The team introduced 16 changes and Alonso believes there is still more performance to unlock.",
+    "Carlos Sainz says Williams should use Aston Martin's dramatic improvement in Hungary as motivation. He believes Aston's revised car shows that a midfield team can make a major performance jump when development and correlation come together.",
   kcsQuickShift:
-    "The most encouraging sign for Aston Martin is that the upgrade is behaving on track as the team expected, giving Alonso confidence that development is moving in the right direction.",
-  url: "https://www.formula1.com/en/latest/article/alonso-describes-much-better-feeling-from-upgraded-aston-martin-with-more-potential-to-unlock.3ZmFForUhyqv0HGZLB4PNl",
-  imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
+    "Sainz sees Aston Martin's breakthrough as proof that Williams should be capable of making a similar leap.",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/williams-must-copy-aston-s-big-leap-sainz,210218.html",
+  imagePath: "/img/news/xpb/Aston/xpb-lancehungary.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
+  dateLabel: "July 26, 2026",
 },
 
 {
   slotId: "10",
-  sourceLabel: "Motorsport.com",
-  title: "Hungaroring repaired overnight after driver complaints",
+  sourceLabel: "RacingNews365",
+  title: "Sainz Reveals System Failure Behind Piastri Hungary Clash",
   summary:
-    "The Hungaroring's Turn 1 was partially resurfaced overnight after drivers complained about bumps and sections of track breaking up during Friday practice. Problems were also reported at Turns 12 and 13, with the FIA ordering repairs before FP3 and qualifying.",
+    "Carlos Sainz says a steering-wheel system failure prevented him from receiving the normal blue-flag warning before his Lap 39 incident with Oscar Piastri. The contact cost Piastri crucial time and Sainz was handed a five-second penalty.",
   kcsQuickShift:
-    "Turn 1 was the priority because the racing line was breaking up at one of the circuit's most important overtaking points.",
-  url: "https://www.motorsport.com/f1/news/f1-hungarian-grand-prix-hungaroring-track-repaired-overnight-after-driver-complaints/10841625/",
-  imagePath: "/img/news/xpb/Williams/xpb-alexhungary.jpg",
+    "A technical failure on Sainz's Williams played an unexpected role in the battle between the two McLarens.",
+  url: "https://racingnews365.com/carlos-sainz-reveals-system-failure-behind-furious-oscar-piastri-hungary-lead-clash",
+  imagePath: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "July 25, 2026",
-},
- 
+  dateLabel: "July 26, 2026",
+ },
  ];
 
