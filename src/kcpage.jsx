@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled:"True",
+  enabled:false,
   label: "Race Weekend Results",
   title: "AWS HUNGARIAN GRAND PRIX",
   body: "The Hungarian Grand Prix Race Weekend is complete. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",

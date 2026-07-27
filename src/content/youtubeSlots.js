@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Qualifying Highlights | 2026 Hungarian Grand Prix",
-  youtubeInput: "https://youtu.be/rqTTczYv93A",
-  forceExternal: "blue",
+  title: "2026 F1 Hungarian GP race analysis by Peter Windsor",
+  youtubeInput: "https://youtu.be/EntX4ZJFtNU",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Which F1 tracks could REPLACE the Middle East races?",
-    youtubeInput: "https://youtu.be/KWwI2CN-5YQ",
+    title: "Lando Norris’ car goes MISSING at the Hungarian Grand Prix?",
+    youtubeInput: "https://youtu.be/iWra86Q_GtM",
    
   },
 
   {
     slotId: "slot3",
-    title: "George Russell's infuriating Mercedes crisis",
-    youtubeInput: "https://youtu.be/vEwOUnHlOoY",
-    
+    title: "Drivers React After The Race | 2026 Hungarian Grand Prix",
+    youtubeInput: "https://youtu.be/nUYE_xadzSM",
+    forceExternal: "blue"
   }
 ];
