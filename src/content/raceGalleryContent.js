@@ -20,22 +20,22 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpb-charleshungary.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/ferrari/xpb-lewishungary.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
            {
-          src: "/img/news/xpb/Alpine/xpb-colapintohungary.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
@@ -48,27 +48,27 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mclaren/xpb-landohungary.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landohungary2.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Williams/xpb-alexhungary.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landopolehungary.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/xpb-hungarypole.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 4",
           credit: "XPB Images",
         },
@@ -81,43 +81,43 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Mclaren/xpb-hungarypodium.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-norriswinhungary.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/xpb-hungaryrace.jpg",
+          src: "",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
        
          {
-          src: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
+          src: "",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimihungary4.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/RedBull/xpb-maxhungary.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Aston/xpb-lancehungary.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },

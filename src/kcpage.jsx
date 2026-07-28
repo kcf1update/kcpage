@@ -15,14 +15,45 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled:false,
-  label: "Race Weekend Results",
-  title: "AWS HUNGARIAN GRAND PRIX",
-  body: "The Hungarian Grand Prix Race Weekend is complete. Full results, session summaries, weekend updates, and the photo gallery are available in the Race Centre.",
-  buttonText: "View Race Results →",
-  buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/hungariangrandprix.jpg",
+  enabled: false,
+  label: "",
+  title: "",
+  body: "",
+  buttonText: "Explore the Website →",
+  buttonLink: "/f1news",
+  backgroundImage: "",
 };
+// ===================================================
+// Full image announcement card
+// Shows the entire image without cropping
+// ===================================================
+const announcementCard = {
+  enabled: true,
+  image: "/img/news/kcai/vacation2.jpg",
+  imageAlt: "KC's Worldwide F1 Update summer vacation announcement",
+  link: "",
+};
+function AnnouncementCard({ image, imageAlt, link = "" }) {
+  const imageContent = (
+    <img
+      src={image}
+      alt={imageAlt}
+      className="block w-full h-auto"
+    />
+  );
+
+  return (
+    <section className="mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-cyan-400/40 bg-black shadow-[0_0_25px_rgba(56,189,248,0.35)]">
+      {link ? (
+        <a href={link} className="block">
+          {imageContent}
+        </a>
+      ) : (
+        imageContent
+      )}
+    </section>
+  );
+}
 // Simple glassy card helper for the lower sections
 function GlassyCard({
   title,
@@ -267,6 +298,15 @@ export default function KCpage() {
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
 <CountdownBar />
+{announcementCard.enabled && (
+  <div className="mb-6">
+    <AnnouncementCard
+      image={announcementCard.image}
+      imageAlt={announcementCard.imageAlt}
+      link={announcementCard.link}
+    />
+  </div>
+)}
 <RaceWeekendPromo />
 
 {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}

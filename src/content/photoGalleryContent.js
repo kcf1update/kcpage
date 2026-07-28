@@ -14,6 +14,99 @@ export const photoGalleryContent = {
 
   races: [
     {
+      id: "hungary-2026",
+      raceName: "Hungarian Grand Prix",
+      dates: "July 24th–26th, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
+    alt: "Hungarian Grand Prix weekend photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-charleshungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-lewishungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landohungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Alpine/xpb-colapintohungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landohungary2.jpg",
+    alt: "Hungarian Grand Prix weekend photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Williams/xpb-alexhungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landopolehungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 8",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/xpb-hungarypole.jpg",
+    alt: "Hungarian Grand Prix weekend photo 9",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-hungarypodium.jpg",
+    alt: "Hungarian Grand Prix weekend photo 10",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-norriswinhungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/xpb-hungaryrace.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimihungary4.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpb-maxhungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Aston/xpb-lancehungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
+    alt: "Hungarian Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+
+],
+    },
+    {
       id: "belgium-2026",
       raceName: "Belgian Grand Prix",
       dates: "July 17–19, 2026",

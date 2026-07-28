@@ -352,79 +352,79 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-1	Max Verstappen	NED	Oracle Red Bull Racing	1m47.070s	24
-2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m47.215s	22
-3	Charles Leclerc	MON	Scuderia Ferrari HP	1m47.277s	22
-4	Isack Hadjar	FRA	Oracle Red Bull Racing	1m47.322s	23
-5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m47.522s	21
-6	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m47.603s	23
-7	Lando Norris	GBR	McLaren Mastercard F1 Team	1m47.931s	19
-8	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m47.959s	22
-9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m48.234s	24
-10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m48.406s	18
-11	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m48.432s	24
-12	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m48.962s	23
-13	Ollie Bearman	GBR	TGR Haas F1 Team	1m49.010s	21
-14	Alex Albon	THA	Atlassian Williams F1 Team	1m49.337s	24
-15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m49.403s	23
-16	Esteban Ocon	FRA	TGR Haas F1 Team	1m49.449s	21
-17	Pierre Gasly	FRA	BWT Alpine F1 Team	1m49.712s	23
-18	Valtteri Bottas	FIN	Cadillac F1 Team	1m49.829s	21
-19	Sergio Perez	MEX	Cadillac F1 Team	1m50.226s	22
-20	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m50.862s	25
-21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m52.808s	19
-22	Jak Crawford	USA	Aston Martin Aramco F1 Team	1m53.199s	22
+1	Charles Leclerc	MON	Scuderia Ferrari HP	1m19.075s	19
+2	Max Verstappen	NED	Oracle Red Bull Racing	1m19.559s	25
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m19.618s	23
+4	Isack Hadjar	FRA	Oracle Red Bull Racing	1m19.997s	25
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m20.066s	21
+6	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m20.360s	30
+7	Frederik Vesti	DEN	Mercedes AMG Petronas F1 Team	1m20.467s	24
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m20.623s	29
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m20.760s	28
+10	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m20.866s	28
+11	Lando Norris	GBR	McLaren Mastercard F1 Team	1m21.024s	26
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m21.051s	24
+13	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m21.550s	20
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m21.704s	29
+15	Alex Albon	THA	Atlassian Williams F1 Team	1m21.819s	28
+16	Leonardo Fornaroli	ITA	McLaren Mastercard F1 Team	1m21.890s	29
+17	Ryo Hirakawa	JAP	TGR Haas F1 Team	1m22.001s	25
+18	Sergio Perez	MEX	Cadillac F1 Team	1m22.089s	22
+19	Paul Aron	EST	BWT Alpine F1 Team	1m22.168s	28
+20	Colton Herta	USA 	Cadillac F1 Team	1m23.118s	28
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m23.471s	11
+22	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.734s	23
 `;
 
 const PASTE_P2 = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m45.944s	17
-2	Lando Norris	GBR	McLaren Mastercard F1 Team	1m46.134s	17
-3	Max Verstappen	NED	Oracle Red Bull Racing	1m46.416s	20
-4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m46.691s	15
-5	Isack Hadjar	FRA	Oracle Red Bull Racing	1m46.714s	19
-6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m46.926s	10
-7	Franco Colapinto	ARG	BWT Alpine F1 Team	1m47.147s	19
-8	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m47.229s	19
-9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m47.294s	19
-10	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m47.434s	15
-11	Charles Leclerc	MON	Scuderia Ferrari HP	1m47.468s	18
-12	Ollie Bearman	GBR	TGR Haas F1 Team	1m47.792s	16
-13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m47.952s	17
-14	Esteban Ocon	FRA	TGR Haas F1 Team	1m47.958s	19
-15	Alex Albon	THA	Atlassian Williams F1 Team	1m48.019s	18
-16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m48.256s	18
-17	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m48.333s	15
-18	Pierre Gasly	FRA	BWT Alpine F1 Team	1m48.955s	15
-19	Valtteri Bottas	FIN	Cadillac F1 Team	1m49.199s	18
-20	Sergio Perez	MEX	Cadillac F1 Team	1m49.596s	19
-21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m51.131s	16
-22	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m51.418s	19
+1	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m18.729s	25
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m18.877s	29
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	1m19.228s	30
+4	Max Verstappen	NED	Oracle Red Bull Racing	1m19.421s	26
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m19.662s	29
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	1m19.800s	19
+7	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m20.041s	29
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m20.101s	28
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m20.125s	30
+10	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m20.253s	28
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m20.474s	26
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m20.557s	26
+13	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m20.693s	30
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m20.816s	24
+15	Ollie Bearman	GBR	TGR Haas F1 Team	1m20.950s	27
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m20.973s	33
+17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m21.426s	31
+18	Valtteri Bottas	FIN	Cadillac F1 Team	1m21.442s	30
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m21.719s	24
+20	Sergio Perez	MEX	Cadillac F1 Team	1m21.792s	27
+21	Franco Colapinto	ARG	BWT Alpine F1 Team	1m22.531s	11
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	No time set	 
 
 `;
 
 const PASTE_P3 = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m45.990s	13
-2	Lando Norris	GBR	McLaren Mastercard F1 Team	1m46.129s	21
-3	Max Verstappen	NED	Oracle Red Bull Racing	1m46.138s	14
-4	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m46.357s	12
-5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m46.382s	17
-6	Charles Leclerc	MON	Scuderia Ferrari HP	1m46.750s	17
-7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m46.785s	20
-8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m46.924s	20
-9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m47.049s	18
-10	Isack Hadjar	FRA	Oracle Red Bull Racing	1m47.096s	19
-11	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m47.176s	23
-12	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m47.690s	23
-13	Franco Colapinto	ARG	BWT Alpine F1 Team	1m47.904s	20
-14	Ollie Bearman	GBR	TGR Haas F1 Team	1m47.920s	23
-15	Pierre Gasly	FRA	BWT Alpine F1 Team	1m47.949s	21
-16	Alex Albon	THA	Atlassian Williams F1 Team	1m47.990s	19
-17	Valtteri Bottas	FIN	Cadillac F1 Team	1m48.644s	22
-18	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m48.692s	20
-19	Esteban Ocon	FRA	TGR Haas F1 Team	1m48.730s	22
-20	Sergio Perez	MEX	Cadillac F1 Team	1m48.990s	21
-21	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m50.155s	17
-22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m50.631s	15
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	1m17.939s	20
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m18.056s	22
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m18.068s	15
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m18.291s	24
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m18.438s	21
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m18.541s	17
+7	Max Verstappen	NED	Oracle Red Bull Racing	1m18.656s	13
+8	Isack Hadjar	FRA	Oracle Red Bull Racing	1m18.943s	17
+9	Liam Lawson	NWZ	Visa Cash App Racing Bulls F1 Team	1m19.088s	22
+10	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m19.160s	23
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m19.338s	22
+12	Pierre Gasly	FRA	BWT Alpine F1 Team	1m19.723s	19
+13	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m19.895s	5
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	1m20.055s	29
+15	Esteban Ocon	FRA	TGR Haas F1 Team	1m20.295s	17
+16	Ollie Bearman	GBR	TGR Haas F1 Team	1m20.312s	14
+17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m20.393s	17
+18	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m20.933s	20
+19	Valtteri Bottas	FIN	Cadillac F1 Team	1m21.299s	15
+20	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m21.406s	16
+21	Alex Albon	THA	Atlassian Williams F1 Team	1m21.513s	12
+22	Sergio Perez	MEX	Cadillac F1 Team	No time set	1
 `;
 const PASTE_SQ = `
 
@@ -435,142 +435,142 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
- 1	12	
-
-Kimi Antonelli
-
-Mercedes	1:46.304	1:45.142	1:44.361	15
-2	3	
-
-Max Verstappen
-
-Red Bull Racing	1:45.930	1:45.589	1:44.678	12
-3	1	
+ 1	1	
 
 Lando Norris
 
-McLaren	1:45.865	1:45.454	1:44.801	11
-4	63	
-
-George Russell
-
-Mercedes	1:46.185	1:45.689	1:44.869	18
-5	16	
-
-Charles Leclerc
-
-Ferrari	1:46.278	1:45.397	1:44.893	18
-6	44	
+McLaren	1:18.277	1:17.456	1:17.207	16
+2	44	
 
 Lewis Hamilton
 
-Ferrari	1:46.124	1:45.543	1:44.895	15
-7	81	
+Ferrari	1:18.730	1:17.803	1:17.219	15
+3	16	
+
+Charles Leclerc
+
+Ferrari	1:18.984	1:17.626	1:17.445	20
+4	12	
+
+Kimi Antonelli
+
+Mercedes	1:18.726	1:18.393	1:17.479	20
+5	81	
 
 Oscar Piastri
 
-McLaren	1:46.433	1:45.671	1:45.016	17
-8	41	
+McLaren	1:18.891	1:17.928	1:17.684	15
+6	3	
 
-Arvid Lindblad
+Max Verstappen
 
-Racing Bulls	1:46.191	1:45.629	1:45.143	18
-9	5	
+Red Bull Racing	1:18.656	1:18.249	1:17.725	18
+7	63	
 
-Gabriel Bortoleto
+George Russell
 
-Audi	1:46.609	1:46.082	1:45.628	18
-10	6	
+Mercedes	1:18.856	1:18.445	1:17.760	20
+8	6	
 
 Isack Hadjar
 
-Red Bull Racing	1:46.062	1:45.823	DNF	13
+Red Bull Racing	1:18.754	1:17.872	1:17.856	14
+9	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:19.233	1:18.360	1:18.281	18
+10	27	
+
+Nico Hulkenberg
+
+Audi	1:18.796	1:18.639	1:18.686	18
 11	30	
 
 Liam Lawson
 
-Racing Bulls	1:46.501	1:46.120		12
+Racing Bulls	1:19.161	1:18.765		12
 12	10	
 
 Pierre Gasly
 
-Alpine	1:46.679	1:46.331		12
+Alpine	1:19.741	1:18.844		12
 13	43	
 
 Franco Colapinto
 
-Alpine	1:46.795	1:46.392		12
-14	27	
+Alpine	1:19.771	1:19.027		12
+14	5	
 
-Nico Hulkenberg
+Gabriel Bortoleto
 
-Audi	1:46.893	1:46.671		12
-15	55	
-
-Carlos Sainz
-
-Williams	1:47.080	1:46.777		12
-16	87	
-
-Ollie Bearman
-
-Haas F1 Team	1:47.113	1:46.779		12
-17	23	
-
-Alex Albon
-
-Williams	1:47.120			6
-18	31	
+Audi	1:19.069	1:19.105		11
+15	31	
 
 Esteban Ocon
 
-Haas F1 Team	1:47.801			6
-19	77	
-
-Valtteri Bottas
-
-Cadillac	1:47.823			8
-20	11	
-
-Sergio Perez
-
-Cadillac	1:47.971			8
-21	14	
+Haas F1 Team	1:20.010	1:19.734		12
+16	14	
 
 Fernando Alonso
 
-Aston Martin	1:50.002			6
-22	18	
+Aston Martin	1:20.126	1:19.808		15
+17	87	
+
+Oliver Bearman
+
+Haas F1 Team	1:20.233			6
+18	55	
+
+Carlos Sainz
+
+Williams	1:20.621			9
+19	23	
+
+Alexander Albon
+
+Williams	1:20.658			9
+20	18	
 
 Lance Stroll
 
-Aston Martin	1:50.177			8
+Aston Martin	1:20.659			8
+21	77	
+
+Valtteri Bottas
+
+Cadillac	1:20.886			10
+22	11	
+
+Sergio Perez
+
+Cadillac	1:21.322			9
+
 `;
 
 const PASTE_RACE = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	44 laps
-2	Charles Leclerc	MON	Scuderia Ferrari HP	+1.9s
-3	Max Verstappen	NED	Oracle Red Bull Racing	+11.5s
-4	Lewis Hamilton	GBR	Scuderia Ferrari HP	+17.2s
-5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+18.9s
-6	Isack Hadjar	FRA	Oracle Red Bull Racing	+23.3s
-7	Lando Norris	GBR	McLaren Mastercard F1 Team	+24.0s
-8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+49.1s
-9	Arvid Lindblad	GBR	Racing Bulls	+50.4s
-10	Franco Colapinto	ARG	BWT Alpine F1 Team	+76.0s
-11	Pierre Gasly	FRA	BWT Alpine F1 Team	+76.9s
-12	Liam Lawson	NZD	Racing Bulls	+77.5s
-13	Nico Hulkenberg	GER	Audi Revolut F1 Team	+78.3s
-14	Ollie Bearman	GBR	TGR Haas F1 Team	+94.4s
-15	Alex Albon	THA	Atlassian Williams F1 Team	+102.6s
-16	Carlos Sainz	ESP	Atlassian Williams F1 Team	+103.6s
-17	Esteban Ocon	FRA	TGR Haas F1 Team	+108.9s
-18	Valtteri Bottas	FIN	Cadillac F1 Team	+1 lap
-DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+2 laps
-DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+19 laps
-DNF	Sergio Perez	MEX	Cadillac F1 Team	+31 laps
-DNF	George Russell	GBR	Mercedes AMG Petronas F1 Team
-
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	70 Laps
+2	Max Verstappen	NED	Oracle Red Bull Racing	+15.0s
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+18.7s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	+23.8s
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	+24.5s
+6	Isack Hadjar	FRA	Oracle Red Bull Racing	+55.4s
+7	George Russell	GBR	Mercedes AMG Petronas F1 Team	+57.5s
+8	Liam Lawson	NZD	Racing Bulls	+1 Lap
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
+10	Arvid Lindblad	GBR	Racing Bulls	+1 Lap
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
+12	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+13	Lance Stroll	CAN	Aston Martin Aramco F1 Team	+1 Lap
+14	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+1 Lap
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	+2 Laps
+16	Esteban Ocon	FRA	TGR Haas F1 Team	+2 Laps
+17	Alex Albon	THA	Atlassian Williams F1 Team	+2 Laps
+18	Carlos Sainz	ESP	Atlassian Williams F1 Team	+2 Laps
+19	Ollie Bearman	GBR	TGR Haas F1 Team	+2 Laps
+DNF	Oscar Piastri	AUS	McLaren Mastercard F1 Team	 
+DNF	Sergio Perez	MEX	Cadillac F1 Team	 
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	 
 
 `;
 
@@ -655,43 +655,31 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "Verstappen Leads Ferrari as Red Bull Sets the Pace in Belgian Grand Prix FP1",
-      summary: `Max Verstappen set the fastest time in the opening practice session for the Belgian Grand Prix, giving Red Bull an encouraging start to the weekend at Spa. Verstappen recorded a best lap of 1m47.070s and finished 0.145 seconds ahead of Lewis Hamilton, with Charles Leclerc close behind in third.
-
-Red Bull showed particularly strong pace through the middle sector, with Isack Hadjar also running near the front before finishing fourth. Ferrari remained firmly in contention as Hamilton and Leclerc split the two Red Bulls.
-
-Oscar Piastri finished fifth for McLaren but reported a hydraulic pressure issue late in the session. He was able to return the car to the garage. Kimi Antonelli placed sixth ahead of Lando Norris and George Russell.
-
-Aston Martin endured the most difficult opening session. Lance Stroll and rookie Jak Crawford finished at the bottom of the timesheets, both more than five seconds away from Verstappen's benchmark.
-
-FP1 suggested Red Bull and Ferrari could be closely matched at the front, while McLaren and Mercedes still have work to do before the competitive sessions begin.`,
-      url: "https://www.autosport.com/f1/news/f1-belgian-gp-verstappen-quickest-in-fp1-over-hamilton/10839409/",
+        "Leclerc Fastest as Trouble Hits Ferrari and Aston Martin",
+      summary: "Charles Leclerc topped FP1 with a 1:19.075, finishing 0.484s ahead of Max Verstappen, with Lewis Hamilton third. The session was interrupted when Lance Stroll suffered a left-rear suspension failure, while Leclerc later stopped with a mechanical issue. Five substitute drivers also took part in the opening session.",
+      url: "https://www.grandprix247.com/formula-1-news/hungarian-grand-prix-fp1-charles-leclerc-fastest-from-max-verstappen-aston-martin-updated-car-breaks-on-debut",
     },
   ],
 },
 {
   heading: "Practice 2",
   items: [
-    {
-      title: "Antonelli Leads Disrupted Belgian Grand Prix Second Practice",
-      summary: `Kimi Antonelli put Mercedes on top in second practice for the Belgian Grand Prix, setting a fastest lap of 1:45.944. Lando Norris finished just 0.190 seconds behind in second, with Max Verstappen third and Lewis Hamilton fourth.
-
-The session was interrupted twice. The first red flag was caused by gravel on the circuit, while the second followed a late crash for Pierre Gasly at Les Fagnes. Gasly lost control of the rear of his Alpine and struck the barrier, damaging the rear wing and right rear of the car. The session was not restarted, cutting short the teams’ planned long runs.
-
-Isack Hadjar finished fifth ahead of Oscar Piastri, who missed the opening 20 minutes while McLaren repaired a suspected hydraulic problem. Franco Colapinto placed seventh, while George Russell struggled to eighth and finished more than a second behind Mercedes teammate Antonelli. Arvid Lindblad and Liam Lawson completed the top ten.`,
-      url: "https://www.motorsport.com/f1/news/f1-belgian-gp-fp2-report-/10839494/",
+   {
+      title: "Hamilton Leads Ferrari 1-2 as Mercedes Struggle in FP2",
+      summary: "Lewis Hamilton topped FP2 in Hungary with a 1:18.729, leading Charles Leclerc by 0.148 seconds as Ferrari completed a strong Friday. Lando Norris finished third ahead of Max Verstappen, while Mercedes struggled for pace and balance. Franco Colapinto returned to the Alpine after sitting out FP1.",
+      url: "https://www.formula1.com/en/latest/article/fp2-hamilton-beats-leclerc-to-top-spot-in-tricky-second-practice-for-hungarian-grand-prix.7qr57bgnk0ba1rXSyrijLw",
     },
   ],
 },
 {
   heading: "Practice 3",
   items: [
-    {
- title: "Antonelli Leads Final Practice as Hamilton Crashes at Spa",
+   {
+ title: "Norris Leads Tight FP3 as Hamilton and Antonelli Close In",
 
 summary:
-  "Kimi Antonelli completed a sweep of Friday afternoon and Saturday practice by setting the fastest time in FP3 at Spa. The Mercedes driver posted a 1:45.990 to finish 0.139 seconds ahead of Lando Norris, with Max Verstappen only 0.148 seconds off the pace in third. George Russell placed fourth ahead of Lewis Hamilton, but the session ended dramatically when Hamilton ran through the gravel at Turn 13 and struck the barriers, causing significant damage to the rear of his Ferrari. Charles Leclerc finished sixth, followed by Oscar Piastri, Nico Hulkenberg, Gabriel Bortoleto and Isack Hadjar.",
-      url: "https://www.planetf1.com/news/2026-belgian-grand-prix-fp3-results",
+  "Lando Norris topped final practice in Hungary with a 1:17.939, just 0.117 seconds ahead of Lewis Hamilton and 0.129 clear of Kimi Antonelli. Charles Leclerc placed fourth, Oscar Piastri fifth and Max Verstappen seventh, leaving the front of the field tightly packed before qualifying.",
+      url: "https://www.espn.co.uk/f1/story/_/id/49431226/mclarens-lando-norris-fastest-final-practice-ferrari-mercedes-mix-hungarian-grand-prix-formula-1-hungaroring",
     },
   ],
 },
@@ -700,10 +688,10 @@ summary:
             heading: "Qualifying",
             items: [
               {
-                title: "Antonelli Storms to Belgian Grand Prix Pole",
+                title: "Norris Ends Mercedes Pole Streak in Hungary",
 summary:
-  "Kimi Antonelli completed a dominant Saturday at Spa by taking pole position for the Belgian Grand Prix with a 1:44.361. Max Verstappen used a tow from Red Bull teammate Isack Hadjar but still finished 0.317 seconds behind the Mercedes driver. Lando Norris qualified third, although his ten-place grid penalty will move George Russell into the top three for Sunday’s start. Charles Leclerc narrowly beat Lewis Hamilton for fifth, while Oscar Piastri could manage only seventh.",
-                url: "https://racingnews365.com/kimi-antonelli-overcomes-red-bull-tactics-to-claim-belgian-gp-pole",
+  "Lando Norris produced a superb final qualifying lap to take pole position for the Hungarian Grand Prix, beating Lewis Hamilton by just 0.012 seconds with a 1:17.207. The result marked the first Grand Prix pole of the 2026 season for a non-Mercedes driver. Charles Leclerc qualified third, Kimi Antonelli fourth and Oscar Piastri fifth, setting up a tightly matched front of the grid for Sunday’s race.",
+                url: "https://www.the-race.com/formula-1/norris-snatches-pole-from-hamilton-in-f1-hungarian-gp-qualifying/",
               },
             ],
           },
@@ -711,50 +699,50 @@ summary:
             heading: "Race",
             items: [
                {
-                title: "Antonelli Wins Dramatic Belgian Grand Prix as Russell’s Race Ends on Lap One",
+                title: "Norris Claims First 2026 Win After Piastri Drama in Hungary",
 
-summary:
-  "Kimi Antonelli claimed victory in the Belgian Grand Prix after passing Charles Leclerc late in the race, with Max Verstappen completing the podium. George Russell retired on the opening lap following contact with Lewis Hamilton and later admitted that his weekend had not been good enough. Hamilton recovered to finish fourth after receiving a five-second penalty for the collision, but Ferrari was also summoned by the stewards over an unsafe pit-lane release that knocked a mechanic to the ground.",
-                url: "https://tg24.sky.it/sport/2026/07/19/f1-gp-belgio-2026-risultato-gara-spa",
+ summary:
+        "Lando Norris claimed his first victory of the 2026 season after a tense Hungarian Grand Prix. Oscar Piastri led early, but Norris moved ahead during the second pit-stop sequence. Piastri later retired with a gearbox problem, promoting Max Verstappen to second and Kimi Antonelli to third.",
+                url: "https://www.planetf1.com/news/hungarian-grand-prix-2026-race-report",
               },
             ],
           },
         ],
 };
 export const nextRaceContent = {
-  raceName: "MOET & CHANDRON BELGIAN GRAND PRIX",
-  raceDates: "July 17th - 19th, 2026",
-  location: "Belgium, Spa-Francorchamps",
-  trackInfoUrl: "/img/tracks/belgiumspa.jpg",
+  raceName: "AWS HUNGARIAN GRAND PRIX",
+  raceDates: "July 24th - 26th, 2026",
+  location: "Hungaroring circuit",
+  trackInfoUrl: "/img/tracks/hungaroring.jpg",
+
   racePoster: {
     enabled: true,
-    backgroundImage: "/img/news/raceposter/belgiumspa.jpg",
-    downloadImage: "/img/news/raceposter/belgiumspa.jpg",
+    backgroundImage: "/img/news/raceposter/Hungariangrandprix.jpg",
+    downloadImage: "/img/news/raceposter/Hungariangrandprix.jpg",
     buttonText: "Race Poster",
   },
-
  weather: [
     {
     day: "Friday",
-    date: "17th",
-    icon: "🌦️",
-    temp: "   24°C",
-    summary: "Warm with clouds and a chance of showers.",
+    date: "24th",
+    icon: "🌤️",
+    temp: "24°C",
+    summary: "Partly sunny and mild, with no rain currently forecast.",
   },
   {
-  day: "Saturday",
-  date: "18th",
-  icon: "⛈️",
-  temp: "22°C",
-  summary: "Mostly cloudy with a chance of thunderstorms during qualifying.",
-},
-{
-  day: "Sunday",
-  date: "19th",
-  icon: "🌦️",
-  temp: "20°C",
-  summary: "A possible morning shower, followed by partly sunny conditions.",
-},
+    day: "Saturday",
+    date: "25th",
+    icon: "🌤️",
+    temp: "28°C",
+    summary: "Warm and mostly sunny, with light winds and dry conditions expected.",
+  },
+  {
+    day: "Sunday",
+    date: "26th",
+    icon: "⛈️",
+    temp: "31°C",
+    summary: "Hot with a risk of thunderstorms and showers during race day but may come only after the race is complete.",
+  },
   ],
 
 
@@ -762,11 +750,11 @@ export const nextRaceContent = {
  sessions:
   WEEKEND_FORMAT !== "regular"
     ? [
-        {
+         {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Verstappen fastest, results below.",
+          time: "Leclerc fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -775,7 +763,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "Antonelli Fastest, results below",
+          time: "Hamilton fastest, results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -784,7 +772,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "Antonelli Fastest agian, results below",
+          time: "Lando Fastest! Results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
@@ -793,7 +781,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "Antonelli on pole, results below",
+          time: "Norris on Pole, Results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -802,7 +790,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "Antonelli Wins Again! results below",
+          time: "Norris Wins! Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
@@ -813,7 +801,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Hamilton Tops Silverstone Practice As Sprint Weekend Begins, reults below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -822,7 +810,7 @@ export const nextRaceContent = {
           id: "sq",
           type: "sprint_shootout",
           label: "Sprint Qualifying",
-          time: "Hamilton on pole! Results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_SQ),
@@ -831,7 +819,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "Kimi wins, thrilling race! Results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
@@ -840,7 +828,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "Antonelli on pole! Results belowS",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -849,7 +837,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "Charles Leclerc wins the race! Results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
