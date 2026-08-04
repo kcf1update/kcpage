@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "2026 F1 Hungarian GP race analysis by Peter Windsor",
-  youtubeInput: "https://youtu.be/EntX4ZJFtNU",
+  title: "Mercedes Is Throwing Away Its 2026 Title Hopes",
+  youtubeInput: "https://youtu.be/xsTpq9La0bk",
   
   },
 
   {
     slotId: "slot2",
-    title: "Lando Norris’ car goes MISSING at the Hungarian Grand Prix?",
-    youtubeInput: "https://youtu.be/iWra86Q_GtM",
-   
+    title: "Every Opening Lap Of The 2026 F1 Season So Far!",
+    youtubeInput: "https://youtu.be/UcUyoILtgC8",
+   forceExternal: "blue"
   },
 
   {
     slotId: "slot3",
-    title: "Drivers React After The Race | 2026 Hungarian Grand Prix",
-    youtubeInput: "https://youtu.be/nUYE_xadzSM",
+    title: "The only man Michael Schumacher FEARED: DC & Mika Hakkinen REUNITED | Up To Speed",
+    youtubeInput: "https://youtu.be/zT1E32W-AQw",
     forceExternal: "blue"
   }
 ];

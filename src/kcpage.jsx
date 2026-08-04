@@ -28,7 +28,7 @@ const raceWeekendPromo = {
 // Shows the entire image without cropping
 // ===================================================
 const announcementCard = {
-  enabled: true,
+  enabled: false,
   image: "/img/news/kcai/vacation2.jpg",
   imageAlt: "KC's Worldwide F1 Update summer vacation announcement",
   link: "",
@@ -326,7 +326,7 @@ export default function KCpage() {
                 <section className="mt-1">
                 <div className="mt-2 mb-2 text-center">
   <span className="text-sm font-semibold text-cyan-300">
-    F1 news summarized for quick reading
+    Worldwide F1 news summarized for quick reading
   </span>
 
   <div className="mt-1 text-xs font-medium text-gray-300 opacity-85">
