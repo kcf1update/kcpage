@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Mercedes Is Throwing Away Its 2026 Title Hopes",
-  youtubeInput: "https://youtu.be/xsTpq9La0bk",
+  title: "Every F1 Team Ranked: The Biggest Winners and Failures of 2026",
+  youtubeInput: "https://youtu.be/2KeZS7Hh-AI",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The only man Michael Schumacher FEARED: DC & Mika Hakkinen REUNITED | Up To Speed",
-    youtubeInput: "https://youtu.be/zT1E32W-AQw",
+    title: "Flavio Briatore tells us how F1 is really changing",
+    youtubeInput: "https://youtu.be/tDY2ynsucsw",
     forceExternal: "blue"
   }
 ];
