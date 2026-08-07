@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Every F1 Team Ranked: The Biggest Winners and Failures of 2026",
-  youtubeInput: "https://youtu.be/2KeZS7Hh-AI",
+  title: "The hated 2026 F1 problem teams are refusing to fix",
+  youtubeInput: "https://youtu.be/sIilDE2T3OY",
   
   },
 
   {
     slotId: "slot2",
-    title: "Every Opening Lap Of The 2026 F1 Season So Far!",
-    youtubeInput: "https://youtu.be/UcUyoILtgC8",
-   forceExternal: "blue"
+    title: "How did Randy Singh become a Senior Racing Director at McLaren? | Sky Sports F1 podcast",
+    youtubeInput: "https://youtu.be/jQvrc8uRzic",
+   
   },
 
   {
     slotId: "slot3",
-    title: "Flavio Briatore tells us how F1 is really changing",
-    youtubeInput: "https://youtu.be/tDY2ynsucsw",
-    forceExternal: "blue"
+    title: "The Mid F1 Season Report! Winners, Losers & Biggest Disappointments",
+    youtubeInput: "https://youtu.be/2KeZS7Hh-AI",
+    
   }
 ];
