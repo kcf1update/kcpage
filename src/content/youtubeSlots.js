@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "The hated 2026 F1 problem teams are refusing to fix",
-  youtubeInput: "https://youtu.be/sIilDE2T3OY",
+  title: "Lando Norris: Life Away From F1 | McLaren Racing",
+  youtubeInput: "https://youtu.be/MixUS5RFIb4",
   
   },
 
   {
     slotId: "slot2",
-    title: "How did Randy Singh become a Senior Racing Director at McLaren? | Sky Sports F1 podcast",
-    youtubeInput: "https://youtu.be/jQvrc8uRzic",
+    title: "Villeneuve: The Rise of a Legend | Official Trailer",
+    youtubeInput: "https://youtu.be/JJ2S8nIQFKA",
    
   },
 
   {
     slotId: "slot3",
-    title: "The Mid F1 Season Report! Winners, Losers & Biggest Disappointments",
-    youtubeInput: "https://youtu.be/2KeZS7Hh-AI",
+    title: "How Formula 1 Moves Its Cars Around the World - At A Billion Dollar Cost",
+    youtubeInput: "https://youtu.be/Zux0J0uc8Qc",
     
   }
 ];
