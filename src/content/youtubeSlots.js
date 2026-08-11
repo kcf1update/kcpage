@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lando Norris: Life Away From F1 | McLaren Racing",
-  youtubeInput: "https://youtu.be/MixUS5RFIb4",
+  title: "Inside Rob Smedley’s F1 Dark Web: Aston Martin’s Real Numbers",
+  youtubeInput: "https://youtu.be/CsTjr_1ay8o",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "How Formula 1 Moves Its Cars Around the World - At A Billion Dollar Cost",
-    youtubeInput: "https://youtu.be/Zux0J0uc8Qc",
+    title: "The real reasons for Michael Schumacher’s F1 comeback failure",
+    youtubeInput: "https://youtu.be/MVLlpE5VKGA",
     
   }
 ];

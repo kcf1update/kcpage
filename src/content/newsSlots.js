@@ -1,147 +1,147 @@
 
 export const newsSlots = [
   // SLOT 1
- {
+  {
     slotId: "1",
-    sourceLabel: "RacingNews365",
-    title: "McLaren Paid a Heavy Price for 2025 Title Push",
+    sourceLabel: "Crash.net",
+    title: "Mercedes Prepares for More Intense F1 Title Fight",
     summary:
-      "Andrea Stella says McLaren paid a heavy price for continuing to develop its 2025 car deep into last season while fighting for both championships. The decision contributed to a difficult start under the new 2026 regulations, but a major upgrade helped McLaren return to victory in Hungary.",
+      "Mercedes expects the championship battle to become more difficult when racing resumes at Zandvoort. Deputy technical director Simone Resta says reliability, continued development and consistently maximizing each weekend will be critical.",
     kcsQuickShift:
-      "I think those rules are stupid. why are we penalizing a team for winning?",
-    url: "https://racingnews365.com/mclaren-concede-to-heavy-price-paid-for-crucial-f1-decision",
-    imagePath: "/img/news/xpb/mclaren/xpb-landochampion.jpg",
+      "I think Mercedes still has the advantage but look out for McLaren and RedBull. I think Ferrari still make too many mistakes for some reason.",
+    url: "https://www.crash.net/f1/news/1102408/1/mercedes-cautious-more-intense-title-threat-ahead-f1-resumption",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorgemonaco.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "M4 Sport",
+    sourceLabel: "Marca",
     title:
-      "Jos Verstappen: Max tíz év múlva is versenyezni fog, de nem az F1-ben | Jos Verstappen: Max Will Still Be Racing in Ten Years, But Not in F1",
+      "Verstappen inspira el último sueño de Fernando Alonso | Verstappen Inspires Fernando Alonso’s Final Dream",
     summary:
-      "Jos Verstappen szerint fia tíz év múlva is versenyezni fog, de valószínűleg már nem a Forma–1-ben. Azt reméli, hogy addigra Max a Le Mans-i 24 órást is megnyeri, miközben az F1-ben további világbajnoki címekre is lehet esélye a megfelelő autóval. | Jos Verstappen believes Max will still be racing ten years from now, but probably no longer in Formula 1. He hopes Max will have won the 24 Hours of Le Mans by then and says more F1 championships are still possible if he has the right car.",
+      "Fernando Alonso mantiene viva la esperanza de volver a ganar en la Fórmula 1 mientras Aston Martin comienza a mostrar señales de progreso. La capacidad de Max Verstappen para superar las limitaciones de su coche sirve como inspiración para el veterano español. | Fernando Alonso continues to hope for another Formula 1 victory as Aston Martin begins showing signs of progress. Max Verstappen’s ability to outperform the limitations of his car is presented as inspiration for the Spanish veteran.",
     kcsQuickShift:
-      "Honestly I do note see Max leaving F1 anytime soon. I think he will go where he can fight for at least one more championship. | Eerlijk gezegd zie ik Max niet snel uit de F1 vertrekken. Ik denk dat hij naar het team zal gaan waar hij de kans heeft om voor minstens één wereldtitel meer te vechten.",
-    url: "https://m4sport.hu/forma-1/cikk/2026/08/10/verstappen-apja-max-biztosan-versenyezni-fog-tiz-ev-mulva-is-de-nem-az-f1-ben",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+      "Best part of this article is reading that Verstappen would like to create a museum like Alonso has. That is something I would visit!. | Lo mejor de este artículo es leer que a Verstappen le gustaría crear un museo como el que tiene Alonso. ¡Ese es un lugar que yo visitaría!",
+    url: "https://www.marca.com/motor/formula1/gp-paises-bajos/2026/08/11/verstappen-inspira-fernando-alonso-ultimo-sueno.html",
+    imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "RacingNews365",
-    title: "Antonelli Admits F1 Fame Comes With a Downside",
+    sourceLabel: "Motorsport.com",
+    title: "Honda’s Long Awaited Engine Upgrade Set for Zandvoort",
     summary:
-      "Kimi Antonelli says his growing success has brought a level of fame that can sometimes make him wish he could go unnoticed. The Mercedes driver entered the summer break with a 50-point championship lead after winning six races in the opening half of the season.",
+      "Honda will introduce its first power unit upgrade of the season at Zandvoort, with the changes focused entirely on improving the internal combustion engine. Honda expects a performance gain but acknowledges that the new specification will require further work on drivability.",
     kcsQuickShift:
-      "The sudden fame must be hard to deal with. I hope the Mercedes team can help him manage the pressure.",
-    url: "https://racingnews365.com/kimi-antonelli-makes-f1-fame-confession-amid-popularity-boost",
-    imagePath: "/img/news/xpb/Mercedes/news-kimimiami.jpg",
+      "Watch out for Aston Martin for the rest of the season. I think between Honda and Newey they will become a real threat to the midfield.",
+    url: "https://www.motorsport.com/f1/news/what-to-expect-from-hondas-long-awaited-f1-power-unit-upgrade-at-zandvoort/10845642/",
+    imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "RacingNews365.nl",
+    sourceLabel: "Infobae",
     title:
-      "Verstappen en Red Bull krijgen belangrijk ontwikkelingsvoordeel | Verstappen and Red Bull Gain Important Development Advantage",
+      "Por qué Buenos Aires es favorita en la puja por recibir a la F1 | Why Buenos Aires Is a Leading Candidate to Host F1",
     summary:
-      "Red Bull krijgt in de tweede helft van 2026 meer aerodynamische ontwikkelingsmogelijkheden door de positie van het team in het constructeurskampioenschap. De regels voor aerodynamische tests geven teams die lager in het klassement staan meer tijd in de windtunnel en meer CFD-mogelijkheden. | Red Bull will receive more aerodynamic development time in the second half of 2026 because of its position in the Constructors' Championship. F1's aerodynamic testing rules give teams lower in the standings additional wind-tunnel and CFD development capacity.",
+      "Buenos Aires busca recuperar la Fórmula 1 mientras avanzan las grandes reformas en el Autódromo Oscar y Juan Gálvez. Una fecha del Campeonato Argentino de Velocidad en marzo de 2027 servirá como prueba antes del regreso de MotoGP al circuito. | Buenos Aires is working to bring Formula 1 back as major renovations continue at the Oscar and Juan Gálvez circuit. An Argentine motorcycle championship event in March 2027 will test the upgraded venue before MotoGP returns.",
     kcsQuickShift:
-       "The article was a bit confusing, but basically both Red Bull and McLaren will get extra wind tunnel development time because of their championship standings. Something I'm sure they are both happy with. | Het artikel was een beetje verwarrend, maar in feite krijgen zowel Red Bull als McLaren extra ontwikkelingstijd in de windtunnel vanwege hun positie in het kampioenschap. Iets waar ze allebei ongetwijfeld blij mee zijn.",
-    url: "https://racingnews365.nl/verstappen-en-red-bull-ontvangen-belangrijk-f1-voordeel-na-matige-eerste-seizoenshelft",
-    imagePath: "/img/news/xpb/RedBull/news-xpbisackmonaco.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+      "1998 is a long time, lets get back to Argentina. Imagine the crowds if Colapinto is still on the grid. I hope he is. | 1998 fue hace mucho tiempo. Volvamos a Argentina. Imaginen las multitudes si Colapinto todavía está en la parrilla. Espero que así sea.",
+    url: "https://www.infobae.com/deportes/2026/08/10/exclusivo-por-que-buenos-aires-es-favorita-en-la-puja-por-recibir-a-la-f1-y-cual-sera-la-carrera-clave-antes-del-motogp/",
+    imagePath: "/img/news/Alpine/colapinto/news-colapintoas.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "ESPN",
-    title: "Kimi Antonelli's Rapid Rise From Karting to F1 Title Contender",
+    sourceLabel: "AutoRacing1",
+    title: "Could Ferrari’s Monza Upgrade Strengthen Leclerc’s Title Bid?",
     summary:
-      "ESPN looks back at Kimi Antonelli's rapid climb through karting and the junior categories to Mercedes and Formula 1. His breakthrough 2026 season has now turned the young Italian into a championship leader and one of the biggest names in the sport.",
+      "Ferrari is reportedly preparing a larger power unit upgrade for its home race at Monza as it tries to close the gap to Mercedes. The anticipated improvement could strengthen Charles Leclerc’s attempt to challenge championship leader Kimi Antonelli.",
     kcsQuickShift:
-      "Kimi's rise in the sport has been incredibly fast. It is easy to forget how young he still is. I hope he has the people to help him deal with the fame and pressure.",
-    url: "https://www.espn.co.uk/f1/story/_/id/49535255/who-kimi-antonelli-mercedes-age-career-salary-f1-records",
-    imagePath: "/img/news/xpb/Mercedes/newsxpbkimimonacowin.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+      "ok, If Ferrari can reduce the amount of mistakes they seem to be making during the race, then they have a chance to catch Antonelli. Will it be Leclerc that is the one to do that? I'm not sure I think Lewis is seeing red he wants the championship and knows this may be his best chance. Will Ferrari make the call and back a driver? will they back Charles over Lewis? I'm not sure they would do that and I do not think that Lewis would have anything to do with those rules",
+    url: "https://www.autoracing1.com/pl/500927/formula-1-news-will-ferraris-monza-upgrades-allow-leclerc-to-catch-antonelli-for-title/",
+    imagePath: "/img/news/Ferrari/Leclerc/charleshungary.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "GrandPrix247",
-    title: "Bortoleto Says F1 Drivers Need to Adapt to the 2026 Cars",
+    sourceLabel: "RacingNews365",
+    title: "Coulthard Sees Verstappen Similarity in Antonelli’s Support System",
     summary:
-      "Gabriel Bortoleto says adapting to different machinery is part of being a Formula 1 driver despite criticism of the characteristics of the new 2026 cars. He points to several of the sport's leading drivers as evidence that the fastest competitors are still able to find performance.",
+      "David Coulthard believes Kimi Antonelli’s close relationship with his father, Marco, could support a long and successful Formula 1 career. He compared that family connection with the continuing role Jos Verstappen plays alongside Max.",
     kcsQuickShift:
-      "I disagree with Bortoleto or maybe I don't understand what he is saying. I think the driver have to adapt their driving style when the car demands it. Norris talks about it all the time and I think that it's probably why Riccardo is out of the sport ",
-    url: "https://www.grandprix247.com/formula-1-news/gabriel-bortoleto-claims-drivers-should-adapt-amid-complaints-about-2026-formula-1-cars",
-    imagePath: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+      "Everything that I have read points to a strong circle of support found around Kimi, including Toto.",
+    url: "https://racingnews365.com/unique-max-verstappen-comparison-made-in-kimi-antonelli-career-prediction",
+    imagePath: "/img/news/xpb/xpbcoulthard.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "7",
     sourceLabel: "PlanetF1",
-    title: "Jos Verstappen's Albon Praise Gets Coulthard's Attention",
+    title: "Hamilton’s Ferrari Revival May Not Deliver an Eighth Title",
     summary:
-      "David Coulthard says a conversation with Jos Verstappen changed the way he looks at Alex Albon's potential. Jos described Albon as the 'karting GOAT', leaving Coulthard wondering what the Williams driver could achieve if given a genuinely competitive F1 car.",
+      "Lewis Hamilton has revived his career during his second season with Ferrari and remains involved in the championship conversation. Despite that improvement, questions remain over whether he can overcome Kimi Antonelli’s advantage and win a record eighth title this year.",
     kcsQuickShift:
-      "One has to wonder what would have happened if Albon had been given more time at RedBUll. I say this as a Willaims fan but he needs to try and get a better car to drive before Willaims use him up.    ",
-    url: "https://www.planetf1.com/news/jos-verstappen-dinner-alex-albon-williams-david-coulthard",
-    imagePath: "/img/news/xpb/xpbcoulthard.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+      "If, and I say if things go his way I would not count him out .",
+    url: "https://www.planetf1.com/news/lewis-hamilton-wont-win-eighth-f1-title-ferrari-revival",
+    imagePath: "/img/news/Ferrari/Lewis/newscanadiangp4.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "8",
-    sourceLabel: "Motorsport.com Brasil",
+    sourceLabel: "F1News.se",
     title:
-      "Newey comenta rumores sobre Horner e mudanças na Aston Martin | Newey Addresses Horner Rumours and Aston Martin Changes",
+      "Pressen på Lawson, Lindblad hotar hans F1-framtid | Pressure Builds on Lawson as Lindblad Threatens His F1 Future",
     summary:
-      "Adrian Newey afirmou que continua ouvindo rumores sobre uma possível chegada de Christian Horner à Aston Martin, mas disse não saber de nenhum plano nesse sentido. Newey também explicou que a equipe vem trabalhando em mudanças internas, ferramentas e processos enquanto tenta construir uma base mais forte para o futuro. | Adrian Newey says he continues to hear rumours about Christian Horner potentially joining Aston Martin but is unaware of any such plan. Newey also explained that the team has been working on its internal structure, tools and processes as it tries to build a stronger foundation for the future.",
+      "Liam Lawson ligger nia i förar-VM och leder kvalduellen mot Arvid Lindblad med 6–5, men Lindblad har i genomsnitt varit 0,017 sekunder snabbare. Deras jämna kamp under resten av säsongen kan påverka Racing Bulls beslut inför 2027. | Liam Lawson sits ninth in the Drivers’ Championship and leads Arvid Lindblad 6–5 in qualifying, but Lindblad has been faster by an average of 0.017 seconds. Their close battle during the rest of the season could influence Racing Bulls’ decision for 2027.",
     kcsQuickShift:
-      "No way Newey want Christian Horner at Aston Martin. He want to fix and do thing his way. So far Stroll seems happy to let him do that. | De jeito nenhum Newey quer Christian Horner na Aston Martin. Ele quer consertar as coisas e fazer tudo do jeito dele. Até agora, Stroll parece estar satisfeito em deixá-lo fazer isso.",
-    url: "https://motorsport.uol.com.br/f1/news/f1-newey-comenta-rumores-sobre-horner-e-avisa-sobre-mudancas-na-aston-martin/10845336/",
-    imagePath: "/img/news/xpb/Aston/news-xpbneweystroll.jpg",
+      "Lawson needs to keep his head down and drive. I hope he has the support to keep all the other RacingBulls/RedBull news out of his head. | Lawson måste hålla huvudet kallt och fokusera på körningen. Jag hoppas att han har det stöd han behöver för att inte låta alla andra nyheter om Racing Bulls och Red Bull påverka honom.",
+    url: "https://f1news.se/pressen-pa-lawson-lindblad-hotar-hans-f1-framtid",
+    imagePath: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "Athlon Sports",
-    title: "George Russell and Carmen Montero Mundt's Story From Blind Date to Engagement",
+    sourceLabel: "RacingNews365",
+    title: "George Russell Backed to Recover From Difficult F1 Period",
     summary:
-      "George Russell and Carmen Montero Mundt's relationship began with a blind date in London in 2020 and has developed alongside Russell's rise to the top of Formula 1. The couple are now engaged, giving fans a lighter personal story during the F1 summer break.",
+      "Former F1 driver Thierry Boutsen believes George Russell will recover from his recent run of difficult results. Boutsen says fluctuations in confidence are normal and expects Russell to rediscover his form when another opportunity arrives.",
     kcsQuickShift:
-      "Congratulations",
-    url: "https://athlonsports.com/racing/f1/george-russell-and-fiancee-carmen-montero-mundt-engagement-blind-date-committed-love-story",
-    imagePath: "/img/news/xpb/Mercedes/xpbgeorgeandGF.jpg",
+      "I don't think so. He will probably win a couple more races just because he is a good driver and the Mercedes is fast. But his confidence is shot and I dont think he will make a 100 recovery this year",
+    url: "https://racingnews365.com/george-russell-backed-to-overcome-doubts-and-psychological-difficulties",
+    imagePath: "/img/news/xpb/Mercedes/news-georgemontreal.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 10, 2026",
+    dateLabel: "August 11, 2026",
   },
 
   {
     slotId: "10",
     sourceLabel: "Motorsport.com",
-    title: "Coulthard Reveals Unusual Jeremy Clarkson Pub Offer",
+    title: "Alpine’s Strong Start Fades Before the Summer Break",
     summary:
-      "David Coulthard has revealed that he once offered Jeremy Clarkson the chance to take over his struggling London pub in an unusual deal. Clarkson ultimately turned the offer down because the location was too far from where he lived.",
+      "Alpine started 2026 as the leading midfield team and scored during each of the first seven race weekends. Racing Bulls has since moved five points ahead, leaving Alpine sixth in the Constructors’ Championship and needing its planned Zandvoort upgrade to restore momentum.",
     kcsQuickShift:
-      "Not exactly breaking F1 news, but during summer break it's an fun one to hear about.",
-    url: "https://www.motorsport.com/f1/news/former-f1-driver-reveals-he-offered-london-pub-to-jeremy-clarkson-in-unusual-deal/10845369/",
-    imagePath: "/img/news/shut/shutjeremey.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "August 10, 2026",
+      "Alpine has made real progress this year, but the midfield moves quickly and the next upgrade needs to work.",
+    url: "https://www.motorsport.com/f1/news/f1-2026-mid-season-grades-alpine-makes-great-strides-but-struggles-to-maintain-momentum/10845239/",
+    imagePath: "/img/news/Alpine/news-alpinejapan.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "August 11, 2026",
   },
 ];
 
