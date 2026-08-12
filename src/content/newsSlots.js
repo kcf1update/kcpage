@@ -1,147 +1,150 @@
 
 export const newsSlots = [
   // SLOT 1
-  {
+ {
     slotId: "1",
-    sourceLabel: "Crash.net",
-    title: "Mercedes Prepares for More Intense F1 Title Fight",
+    sourceLabel: "GPFans",
+    title: "McLaren draws on Verstappen lesson as 2026 title hopes remain alive",
     summary:
-      "Mercedes expects the championship battle to become more difficult when racing resumes at Zandvoort. Deputy technical director Simone Resta says reliability, continued development and consistently maximizing each weekend will be critical.",
+      "Andrea Stella says McLaren can still achieve a great deal this season if it maintains the performance shown in Hungary and outdevelops its rivals. McLaren is 159 points behind Mercedes with 12 rounds remaining.",
     kcsQuickShift:
-      "I think Mercedes still has the advantage but look out for McLaren and RedBull. I think Ferrari still make too many mistakes for some reason.",
-    url: "https://www.crash.net/f1/news/1102408/1/mercedes-cautious-more-intense-title-threat-ahead-f1-resumption",
-    imagePath: "/img/news/xpb/Mercedes/news-xpbgeorgemonaco.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+      "The championships remain a long shot, but as a long time and diehard Mclaren fan I hope they make it exciting. Am I supposed to say that? probably not.🤷‍♂️",
+    url: "https://www.gpfans.com/en/f1-news/1088959/mclaren-chief-f1-title-2026-warning-andrea-stella-max-verstappen-lesson/",
+    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "2",
-    sourceLabel: "Marca",
+    sourceLabel: "Clarín",
     title:
-      "Verstappen inspira el último sueño de Fernando Alonso | Verstappen Inspires Fernando Alonso’s Final Dream",
+      "Franco Colapinto denunció que fue víctima de un robo en Italia | Franco Colapinto reveals his belongings were stolen in Italy",
     summary:
-      "Fernando Alonso mantiene viva la esperanza de volver a ganar en la Fórmula 1 mientras Aston Martin comienza a mostrar señales de progreso. La capacidad de Max Verstappen para superar las limitaciones de su coche sirve como inspiración para el veterano español. | Fernando Alonso continues to hope for another Formula 1 victory as Aston Martin begins showing signs of progress. Max Verstappen’s ability to outperform the limitations of his car is presented as inspiration for the Spanish veteran.",
+      "Durante sus vacaciones cerca del lago de Como, Colapinto dijo que le robaron ropa, bolsos y su equipo de mate. El piloto de Alpine contó lo ocurrido en las redes sociales y reaccionó con ironía. | While vacationing near Lake Como, Colapinto said clothing, bags and his mate kit were stolen. The Alpine driver shared what happened on social media and reacted with irony.",
     kcsQuickShift:
-      "Best part of this article is reading that Verstappen would like to create a museum like Alonso has. That is something I would visit!. | Lo mejor de este artículo es leer que a Verstappen le gustaría crear un museo como el que tiene Alonso. ¡Ese es un lugar que yo visitaría!",
-    url: "https://www.marca.com/motor/formula1/gp-paises-bajos/2026/08/11/verstappen-inspira-fernando-alonso-ultimo-sueno.html",
-    imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
+      "That is a rotten way to spend part of the summer break, but thankfully Colapinto was not hurt. | Es una manera horrible de pasar parte del receso de verano, pero por suerte Colapinto no resultó herido.",
+    url: "https://www.clarin.com/deportes/franco-colapinto-denuncio-victima-robo-italia-dicho-europeos-iban-robar-latino_0_SNUwl3JtW0.html",
+    imagePath: "/img/news/xpb/xpb-colapinto.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "3",
-    sourceLabel: "Motorsport.com",
-    title: "Honda’s Long Awaited Engine Upgrade Set for Zandvoort",
+    sourceLabel: "RacingNews365",
+    title:
+      "Could Arvid Lindblad become Verstappen’s eventual Red Bull replacement?",
     summary:
-      "Honda will introduce its first power unit upgrade of the season at Zandvoort, with the changes focused entirely on improving the internal combustion engine. Honda expects a performance gain but acknowledges that the new specification will require further work on drivability.",
+      "Arvid Lindblad has scored 23 points with seven top ten finishes and no retirements through his first 11 Grands Prix. His strong rookie season has raised the possibility that he could eventually become a Red Bull driver, although no succession plan has been confirmed.",
     kcsQuickShift:
-      "Watch out for Aston Martin for the rest of the season. I think between Honda and Newey they will become a real threat to the midfield.",
-    url: "https://www.motorsport.com/f1/news/what-to-expect-from-hondas-long-awaited-f1-power-unit-upgrade-at-zandvoort/10845642/",
-    imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
+      "Lawson has 43 points and Lindblad has 23 points. Absolutely nothing against Lindblad bust just saying.",
+    url: "https://racingnews365.com/does-red-bull-already-have-the-perfect-max-verstappen-replacement",
+    imagePath: "/img/news/xpb/visa/news-xpblindblad.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "4",
-    sourceLabel: "Infobae",
+    sourceLabel: "Motorsport.com Brazil",
     title:
-      "Por qué Buenos Aires es favorita en la puja por recibir a la F1 | Why Buenos Aires Is a Leading Candidate to Host F1",
+      "ANÁLISE F1: Haas fica para trás após um início promissor | F1 ANALYSIS: Haas falls behind after a promising start",
     summary:
-      "Buenos Aires busca recuperar la Fórmula 1 mientras avanzan las grandes reformas en el Autódromo Oscar y Juan Gálvez. Una fecha del Campeonato Argentino de Velocidad en marzo de 2027 servirá como prueba antes del regreso de MotoGP al circuito. | Buenos Aires is working to bring Formula 1 back as major renovations continue at the Oscar and Juan Gálvez circuit. An Argentine motorcycle championship event in March 2027 will test the upgraded venue before MotoGP returns.",
+      "A Haas marcou 18 de seus 21 pontos nos três primeiros fins de semana, mas perdeu terreno na corrida de desenvolvimento. Oliver Bearman marcou todos os pontos da equipe, e o melhor resultado da Haas nas últimas cinco etapas foi um 12º lugar. | Haas scored 18 of its 21 points during the opening three weekends but has since fallen behind in the development race. Oliver Bearman has scored every point for the team, while Haas’s best result across the last five rounds was 12th.",
     kcsQuickShift:
-      "1998 is a long time, lets get back to Argentina. Imagine the crowds if Colapinto is still on the grid. I hope he is. | 1998 fue hace mucho tiempo. Volvamos a Argentina. Imaginen las multitudes si Colapinto todavía está en la parrilla. Espero que así sea.",
-    url: "https://www.infobae.com/deportes/2026/08/10/exclusivo-por-que-buenos-aires-es-favorita-en-la-puja-por-recibir-a-la-f1-y-cual-sera-la-carrera-clave-antes-del-motogp/",
-    imagePath: "/img/news/Alpine/colapinto/news-colapintoas.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "August 11, 2026",
+      "Where is all the American money? Crazy that they are not operating at the budget cap.   | Cadê todo o dinheiro americano? É loucura pensar que eles nem sequer estão operando no limite do teto orçamentário.",
+    url: "https://motorsport.uol.com.br/f1/news/analise-f1-haas-fica-para-tras-apos-um-inicio-promissor/10845797/",
+    imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "5",
-    sourceLabel: "AutoRacing1",
-    title: "Could Ferrari’s Monza Upgrade Strengthen Leclerc’s Title Bid?",
+    sourceLabel: "Crash.net",
+    title: "Carlos Sainz hints that Williams future decision is approaching",
     summary:
-      "Ferrari is reportedly preparing a larger power unit upgrade for its home race at Monza as it tries to close the gap to Mercedes. The anticipated improvement could strengthen Charles Leclerc’s attempt to challenge championship leader Kimi Antonelli.",
+      "Carlos Sainz plans to use the summer break to consider whether he will remain with Williams beyond 2026. The team’s difficult season has delayed his expected return to fighting for victories, but no decision has been announced.",
     kcsQuickShift:
-      "ok, If Ferrari can reduce the amount of mistakes they seem to be making during the race, then they have a chance to catch Antonelli. Will it be Leclerc that is the one to do that? I'm not sure I think Lewis is seeing red he wants the championship and knows this may be his best chance. Will Ferrari make the call and back a driver? will they back Charles over Lewis? I'm not sure they would do that and I do not think that Lewis would have anything to do with those rules",
-    url: "https://www.autoracing1.com/pl/500927/formula-1-news-will-ferraris-monza-upgrades-allow-leclerc-to-catch-antonelli-for-title/",
-    imagePath: "/img/news/Ferrari/Leclerc/charleshungary.jpg",
-    photoCredit: "Courtesy of Ferrari F1",
-    dateLabel: "August 11, 2026",
+      "Come on Carlos, stay at Williams. Your breaking my heart",
+    url: "https://www.crash.net/f1/news/1102427/1/carlos-sainz-hints-imminent-williams-future-decision",
+    imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "6",
-    sourceLabel: "RacingNews365",
-    title: "Coulthard Sees Verstappen Similarity in Antonelli’s Support System",
+    sourceLabel: "Motorsport.com",
+    title: "FIA admits F1’s ADUO engine system has weaknesses",
     summary:
-      "David Coulthard believes Kimi Antonelli’s close relationship with his father, Marco, could support a long and successful Formula 1 career. He compared that family connection with the continuing role Jos Verstappen plays alongside Max.",
+      "FIA single seater director Nikolas Tombazis says the ADUO system is producing accurate measurements but remains time consuming and controversial. The system focuses on internal combustion engine performance rather than the complete power unit and may be revised in future seasons.",
     kcsQuickShift:
-      "Everything that I have read points to a strong circle of support found around Kimi, including Toto.",
-    url: "https://racingnews365.com/unique-max-verstappen-comparison-made-in-kimi-antonelli-career-prediction",
-    imagePath: "/img/news/xpb/xpbcoulthard.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+      "Probably why Sulayem is talking about one engine. Nobody will ever trust the ADUO system. Confusing, intrusive and dumb if you ask me.",
+    url: "https://www.motorsport.com/f1/news/fia-admits-f1s-aduo-system-has-weaknesses-but-defends-its-measurements/10845808/",
+    imagePath: "/img/news/kcai/newsaduo.jpg",
+    photoCredit: "KC AI Generated image",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "7",
-    sourceLabel: "PlanetF1",
-    title: "Hamilton’s Ferrari Revival May Not Deliver an Eighth Title",
+    sourceLabel: "Daily Express",
+    title: "Hockenheim begins talks over a possible German Grand Prix return",
     summary:
-      "Lewis Hamilton has revived his career during his second season with Ferrari and remains involved in the championship conversation. Despite that improvement, questions remain over whether he can overcome Kimi Antonelli’s advantage and win a record eighth title this year.",
+      "Hockenheim’s owners have held initial discussions with Formula 1 about bringing the German Grand Prix back to the calendar. No agreement has been reached, and any return would require substantial investment and is considered a medium or long term possibility.",
     kcsQuickShift:
-      "If, and I say if things go his way I would not count him out .",
-    url: "https://www.planetf1.com/news/lewis-hamilton-wont-win-eighth-f1-title-ferrari-revival",
-    imagePath: "/img/news/Ferrari/Lewis/newscanadiangp4.jpg",
-    photoCredit: "Courtesy of Ferrari F1",
-    dateLabel: "August 11, 2026",
+      "Germany deserves a race. Domenicali says it will happen but not right away. I like how they are looking at new and returning markets",
+    url: "https://www.express.co.uk/sport/f1-autosport/2238445/f1-german-grand-prix-hockenheimring",
+    imagePath: "/img/news/shut/news-shutterstockstefano.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "8",
-    sourceLabel: "F1News.se",
+    sourceLabel: "RacingNews365.nl",
     title:
-      "Pressen på Lawson, Lindblad hotar hans F1-framtid | Pressure Builds on Lawson as Lindblad Threatens His F1 Future",
+      "Is Red Bull nog wel het juiste team voor Max Verstappen? | Is Red Bull still the right team for Max Verstappen?",
     summary:
-      "Liam Lawson ligger nia i förar-VM och leder kvalduellen mot Arvid Lindblad med 6–5, men Lindblad har i genomsnitt varit 0,017 sekunder snabbare. Deras jämna kamp under resten av säsongen kan påverka Racing Bulls beslut inför 2027. | Liam Lawson sits ninth in the Drivers’ Championship and leads Arvid Lindblad 6–5 in qualifying, but Lindblad has been faster by an average of 0.017 seconds. Their close battle during the rest of the season could influence Racing Bulls’ decision for 2027.",
+      "Red Bull heeft dit seizoen met de RB22 geworsteld, maar Verstappen blijft positief over Laurent Mekies en de veranderingen binnen het team. Ondanks de interesse van rivalen lijkt hij nog steeds van plan om zijn contract tot eind 2028 uit te dienen. | Red Bull has struggled with the RB22 this season, but Verstappen remains positive about Laurent Mekies and the changes within the team. Despite interest from rival teams, he still appears prepared to complete his contract through the end of 2028.",
     kcsQuickShift:
-      "Lawson needs to keep his head down and drive. I hope he has the support to keep all the other RacingBulls/RedBull news out of his head. | Lawson måste hålla huvudet kallt och fokusera på körningen. Jag hoppas att han har det stöd han behöver för att inte låta alla andra nyheter om Racing Bulls och Red Bull påverka honom.",
-    url: "https://f1news.se/pressen-pa-lawson-lindblad-hotar-hans-f1-framtid",
-    imagePath: "/img/news/xpb/Visa/xpb-lindbladhungary.jpg",
+      "I truly think RedBull wants him to move on. They want to start a new era of RedBull. |Ik denk echt dat Red Bull wil dat hij vertrekt. Ze willen een nieuw tijdperk bij Red Bull beginnen.",
+    url: "https://racingnews365.nl/is-red-bull-nog-wel-het-juiste-team-voor-max-verstappen",
+    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "9",
-    sourceLabel: "RacingNews365",
-    title: "George Russell Backed to Recover From Difficult F1 Period",
+    sourceLabel: "PlanetF1",
+    title:
+      "Norris and Verstappen praise Antonelli’s championship leading form",
     summary:
-      "Former F1 driver Thierry Boutsen believes George Russell will recover from his recent run of difficult results. Boutsen says fluctuations in confidence are normal and expects Russell to rediscover his form when another opportunity arrives.",
+      "Lando Norris says Kimi Antonelli has done an incredible job and has convincingly outperformed George Russell during the first half of the season. Max Verstappen also praised the 19 year old championship leader for being strong and consistent.",
     kcsQuickShift:
-      "I don't think so. He will probably win a couple more races just because he is a good driver and the Mercedes is fast. But his confidence is shot and I dont think he will make a 100 recovery this year",
-    url: "https://racingnews365.com/george-russell-backed-to-overcome-doubts-and-psychological-difficulties",
-    imagePath: "/img/news/xpb/Mercedes/news-georgemontreal.jpg",
+      "Kimi Antonelli is a future multi Champion in my oppinion. Period",
+    url: "https://www.planetf1.com/news/kimi-antonelli-george-russell-rivalry-lando-norris-max-verstappen",
+    imagePath: "/img/news/xpb/Mercedes/news-xpbkimipole.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "August 11, 2026",
+    dateLabel: "August 12, 2026",
   },
 
   {
     slotId: "10",
-    sourceLabel: "Motorsport.com",
-    title: "Alpine’s Strong Start Fades Before the Summer Break",
+    sourceLabel: "GrandPrix247",
+    title: "Steiner sees few better options than Red Bull for Verstappen",
     summary:
-      "Alpine started 2026 as the leading midfield team and scored during each of the first seven race weekends. Racing Bulls has since moved five points ahead, leaving Alpine sixth in the Constructors’ Championship and needing its planned Zandvoort upgrade to restore momentum.",
+      "Guenther Steiner believes only a small number of teams could offer Max Verstappen a stronger situation than Red Bull. He expects performance to determine Verstappen’s eventual decision rather than a simple desire to change teams.",
     kcsQuickShift:
-      "Alpine has made real progress this year, but the midfield moves quickly and the next upgrade needs to work.",
-    url: "https://www.motorsport.com/f1/news/f1-2026-mid-season-grades-alpine-makes-great-strides-but-struggles-to-maintain-momentum/10845239/",
-    imagePath: "/img/news/Alpine/news-alpinejapan.jpg",
-    photoCredit: "Courtesy of Alpine F1",
-    dateLabel: "August 11, 2026",
+      "Max will go or stay wherever he can win. ",
+    url: "https://www.grandprix247.com/f1-driver-news/guenther-steiner-max-verstappen-has-few-better-options-than-to-stay-at-red-bull",
+    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 12, 2026",
   },
+
 ];
 

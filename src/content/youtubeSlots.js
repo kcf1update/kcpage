@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Inside Rob Smedley’s F1 Dark Web: Aston Martin’s Real Numbers",
-  youtubeInput: "https://youtu.be/CsTjr_1ay8o",
+  title: "Otmar Reveals the F1 Secrets Drive to Survive Couldn’t Show",
+  youtubeInput: "https://youtu.be/XdnDql1yJ5w",
   
   },
 
