@@ -3,15 +3,15 @@ export const newsSlots = [
   // SLOT 1
  {
     slotId: "1",
-    sourceLabel: "GPFans",
-    title: "McLaren draws on Verstappen lesson as 2026 title hopes remain alive",
-    summary:
-      "Andrea Stella says McLaren can still achieve a great deal this season if it maintains the performance shown in Hungary and outdevelops its rivals. McLaren is 159 points behind Mercedes with 12 rounds remaining.",
-    kcsQuickShift:
-      "The championships remain a long shot, but as a long time and diehard Mclaren fan I hope they make it exciting. Am I supposed to say that? probably not.🤷‍♂️",
-    url: "https://www.gpfans.com/en/f1-news/1088959/mclaren-chief-f1-title-2026-warning-andrea-stella-max-verstappen-lesson/",
-    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
-    photoCredit: "Shutterstock",
+  sourceLabel: "Formula 1",
+  title: "Why Cadillac Replaced Graeme Lowdon With Marcin Budkowski",
+  summary:
+    "Cadillac has appointed former Alpine executive director Marcin Budkowski as Team Principal, replacing Graeme Lowdon. The team says the change is part of its move from building its Formula 1 operation to focusing more heavily on car development and on-track performance.",
+  kcsQuickShift:
+    "With experience from working with Ferrari, McLaren and Alpine, Budkowski may be what Cadillac needs to at least get their first Championship point. Tough for Lowdon though, he has been the face of the program from the beginning ",
+  url: "https://www.formula1.com/en/latest/article/analysis-why-have-cadillac-decided-to-replace-lowdon-with-budkowski.7Lv7lPfpp4UgBuhcoRDFh3",
+    imagePath: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
+    photoCredit: "XPB IMAGES",
     dateLabel: "August 12, 2026",
   },
 
