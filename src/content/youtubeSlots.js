@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The real reasons for Michael Schumacher’s F1 comeback failure",
-    youtubeInput: "https://youtu.be/MVLlpE5VKGA",
+    title: "Why Cadillac has fired its first F1 team boss",
+    youtubeInput: "https://youtu.be/TcNazUVALVg",
     
   }
 ];
