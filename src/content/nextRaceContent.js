@@ -532,26 +532,26 @@ export const nextRaceContent = {
 
  weather: [
   {
-    day: "Friday",
-    date: "Aug 21st",
-    icon: "",
-    temp: "",
-    summary: "",
-  },
-  {
-    day: "Saturday",
-    date: "Aug 22nd",
-    icon: "",
-    temp: "",
-    summary: "",
-  },
-  {
-    day: "Sunday",
-    date: "Aug 23rd",
-    icon: "",
-    temp: "",
-    summary: "",
-  },
+  day: "Friday",
+  date: "Aug 21st",
+  icon: "⛅",
+  temp: "22°C / 15°C",
+  summary: "Long-range Partly cloudy",
+},
+{
+  day: "Saturday",
+  date: "Aug 22nd",
+  icon: "🌤️",
+  temp: "21°C / 15°C",
+  summary: "Long-range outlook: Mostly sunny",
+},
+{
+  day: "Sunday",
+  date: "Aug 23rd",
+  icon: "🌦️",
+  temp: "22°C / 16°C",
+  summary: "Long-range outlook: Partly cloudy with showers",
+},
 
 ],
 

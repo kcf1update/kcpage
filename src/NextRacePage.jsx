@@ -948,20 +948,34 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
                 <div className="mt-3 rounded-2xl border border-black/20 bg-gray-50 px-3 py-2 text-xs text-gray-900">
                   {Array.isArray(nextRaceContent.weather) ? (
-                    <div className="weather-grid">
-                      {nextRaceContent.weather.map((day) => (
-                        <div className="weather-card" key={day.date}>
-                          <div className="weather-icon">{day.icon}</div>
-                          <div className="weather-info">
-                            <strong>
-                              {day.day} {day.date}
-                            </strong>
-                            <span>{day.temp}</span>
-                            <p>{day.summary}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                   <div className="divide-y divide-gray-200">
+  {nextRaceContent.weather.map((day) => (
+    <div
+      key={day.date}
+      className="flex items-start gap-3 py-3 first:pt-1 last:pb-1"
+    >
+      <div className="shrink-0 pt-0.5 text-lg leading-none">
+        {day.icon}
+      </div>
+
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <strong className="leading-tight">
+            {day.day} {day.date}
+          </strong>
+
+          <span className="whitespace-nowrap text-gray-700">
+            {day.temp}
+          </span>
+        </div>
+
+        <p className="mt-1 leading-snug">
+          {day.summary}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
                   ) : (
                     <p>{nextRaceContent.weather}</p>
                   )}
@@ -1051,20 +1065,34 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
 
     <div className="mt-3 rounded-2xl border border-black/20 bg-gray-50 px-3 py-2 text-xs text-gray-900 sm:text-sm">
      {Array.isArray(nextRaceContent.weather) ? (
-  <div className="weather-grid">
-    {nextRaceContent.weather.map((day) => (
-      <div className="weather-card" key={day.date}>
-        <div className="weather-icon">{day.icon}</div>
-        <div className="weather-info">
-          <strong>
+  <div className="divide-y divide-gray-200">
+  {nextRaceContent.weather.map((day) => (
+    <div
+      key={day.date}
+      className="flex items-start gap-3 py-3 first:pt-1 last:pb-1"
+    >
+      <div className="shrink-0 pt-0.5 text-lg leading-none">
+        {day.icon}
+      </div>
+
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <strong className="leading-tight">
             {day.day} {day.date}
           </strong>
-          <span>{day.temp}</span>
-          <p>{day.summary}</p>
+
+          <span className="whitespace-nowrap text-gray-700">
+            {day.temp}
+          </span>
         </div>
+
+        <p className="mt-1 leading-snug">
+          {day.summary}
+        </p>
       </div>
-    ))}
-  </div>
+    </div>
+  ))}
+</div>
 ) : (
   <p>{nextRaceContent.weather}</p>
 )}
