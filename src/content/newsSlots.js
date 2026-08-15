@@ -2,122 +2,132 @@
 export const newsSlots = [
   // SLOT 1
  {
-  slotId: "1",
-  sourceLabel: "RacingNews365",
-  title: "FIA removes restrictions on Russian and Belarusian competitors",
-  summary: "The FIA has lifted restrictions that required Russian and Belarusian competitors to participate under neutral status. Drivers, teams and officials can once again compete under their national identities, although Russia and Belarus remain banned from hosting international motorsport events.",
-  kcsQuickShift: "Stupid move in my opinion.",
-  url: "https://racingnews365.com/fia-removes-restrictions-on-russian-and-belarusian-competitors",
-  imagePath: "/img/news/kcai/news-FIA.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "2",
-  sourceLabel: "RacingNews365.nl",
-  title: "Mercedes verrast met 'ondankbaar' oordeel: \"Zekere mate van frustratie\" | Mercedes surprised by 'ungrateful' assessment: \"A certain degree of frustration\"",
-  summary: "Mercedes heeft een sterke eerste seizoenshelft achter de rug, maar James Allison vindt dat het team gezien de snelheid van de auto meer punten had moeten scoren. Betrouwbaarheidsproblemen en gemiste kansen zorgen volgens hem voor frustratie binnen het team. | Mercedes has enjoyed a strong first half of the season, but James Allison believes the team should have scored more points considering the car's competitiveness. Reliability problems and missed opportunities have created some frustration within the team.",
-  kcsQuickShift: "I'm not surprised by this comment the best strive for perfection. | Ik ben niet verbaasd door deze opmerking. De besten streven altijd naar perfectie.",
-  url: "https://racingnews365.nl/mercedes-verrast-met-ondankbaar-oordeel-zekere-mate-van-frustratie",
-  imagePath: "/img/news/xpb/Mercedes/xpbimages1.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "3",
-  sourceLabel: "Motorsport.com",
-  title: "Max Verstappen unveils special helmet for final F1 Dutch Grand Prix",
-  summary: "Max Verstappen has revealed a special white and blue helmet inspired by traditional Dutch Delftware for the final Dutch Grand Prix at Zandvoort. The design is a tribute to the Netherlands as Formula 1 prepares for the circuit's final race weekend on August 21 to 23.",
-  kcsQuickShift: "I'm looking forward to seeing the Helmet racing around the track",
-  url: "https://www.motorsport.com/f1/news/max-verstappen-unveils-special-helmet-for-final-f1-dutch-grand-prix/10846299/",
-  imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "4",
-  sourceLabel: "Motorsport UOL",
-  title: "F1: McNish abre coração sobre aprendizados com Senna e mudanças na carreira até diretoria da Audi | F1: McNish opens up about lessons from Senna and his career journey to Audi management",
-  summary: "Allan McNish relembrou as experiências que moldaram sua carreira, incluindo trabalhar ao lado de Ayrton Senna como jovem piloto de testes da McLaren. O atual diretor de corridas da Audi também falou sobre como levou as lições aprendidas como piloto para sua função de liderança na Fórmula 1. | Allan McNish reflected on the experiences that shaped his career, including working alongside Ayrton Senna as a young McLaren test driver. Audi's current Racing Director also discussed how lessons from his driving career have carried into his Formula 1 leadership role.",
-  kcsQuickShift: "What an experience it must have been for a 19 year old McNish to test a McLaren alongside Ayrton Senna. Those are lessons you do not forget. | Que experiência deve ter sido para McNish, aos 19 anos, testar uma McLaren ao lado de Ayrton Senna. São lições que você nunca esquece.",
-  url: "https://motorsport.uol.com.br/f1/news/f1-mcnish-abre-coracao-sobre-aprendizados-com-senna-e-mudancas-na-carreira-ate-diretoria-da-audi/10846216/",
-  imagePath: "/img/news/shut/Audi/shut-mcnish.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "5",
-  sourceLabel: "RacingNews365",
-  title: "Lando Norris makes bold claim and explains why it 'hurts'",
-  summary: "Lando Norris believes he is driving better in 2026 than he did during his championship winning 2025 season, even though the results have not reflected it. Norris says his dominant Hungarian Grand Prix victory showed what he can do when McLaren gives him a car capable of fighting at the front.",
-  kcsQuickShift: "He is the Champion for a reason. ",
-  url: "https://racingnews365.com/lando-norris-makes-bold-claim-and-explains-why-it-hurts",
-  imagePath: "/img/news/xpb/Mclaren/xpb-landopolehungary.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "6",
-  sourceLabel: "Motorsport.com",
-  title: "What exactly was behind Franco Colapinto's Miami breakthrough at Alpine?",
-  summary: "Franco Colapinto says his early season pace problems were difficult to explain, but his form improved considerably from Miami onward. A lighter chassis, car upgrades, improved energy management and detailed work during the April break all contributed to his stronger performances.",
-  kcsQuickShift: "I don't know why but this guy does not get the attention or praise that he deserves, 12th in points and a best finish of 6th.",
-  url: "https://www.motorsport.com/f1/news/what-exactly-was-behind-franco-colapintos-miami-breakthrough-at-alpine/10846004/",
-  imagePath: "/img/news/xpb/Alpine/xpb-colapintohungary.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "7",
-  sourceLabel: "GrandPrix247",
-  title: "Why Isack Hadjar is the standout youngster in Formula 1 this year",
-  summary: "Johnny Herbert has praised Isack Hadjar for the way he has handled one of the toughest jobs in Formula 1, racing alongside Max Verstappen at Red Bull. Herbert highlighted Hadjar's qualifying speed, race pace and ability to stay close to Verstappen while making relatively few mistakes.",
-  kcsQuickShift: "I agree with Herbert, not really mush else to say on this one.",
-  url: "https://www.grandprix247.com/f1-opinion/why-isack-hadjar-is-the-standout-youngster-in-formula-1-this-year",
-  imagePath: "/img/news/xpb/RedBull/news-xpbisack.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "8",
-  sourceLabel: "The Hollywood Reporter Japan",
-  title: "シャルル・ルクレールの妻が妊娠を報告！モナコでの電撃婚から半年、フェラーリのエースに待望の第1子 | Charles Leclerc's wife announces pregnancy six months after their Monaco wedding",
-  summary: "シャルル・ルクレールと妻のアレクサンドラが第1子を迎える予定であることが明らかになった。アレクサンドラはSNSで妊娠を発表し、2人は2026年2月にモナコで結婚している。 | Charles Leclerc and his wife Alexandra are expecting their first child. Alexandra revealed the pregnancy on social media, six months after the couple married in Monaco in February 2026.",
-  kcsQuickShift: "A nice story during the F1 summer break. Congratulations to Charles and Alexandra.| F1の夏休み中に届いた素敵なニュースです。新しい人生の冒険を迎えるシャルルとアレクサンドラにお祝いを申し上げます。",
-  url: "https://news.yahoo.co.jp/articles/69c05e9c804bb86c4b0038b0168ffc4e45292f31",
-  imagePath: "/img/news/xpb/ferrari/news-xpbcharles.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "9",
-  sourceLabel: "PlanetF1",
-  title: "Carlos Sainz interest proves Audi's Formula 1 project is heading in the right direction",
-  summary: "Mattia Binotto believes interest in Audi from drivers such as Carlos Sainz adds credibility to the team's Formula 1 project. Sainz considered Audi before joining Williams, while Binotto says interest from drivers and partners shows that Audi's ambitions are being taken seriously.",
-  kcsQuickShift: "Audi is 14th and 18th in points, Sainz is 15th in a Williams. Please stay at Williams.",
-  url: "https://www.planetf1.com/news/carlos-sainz-interest-validates-audi-f1-project-mattia-binotto",
-  imagePath: "/img/news/shut/Audi/news-audibinitto.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "August 14, 2026"
-},
-
-{
-  slotId: "10",
-  sourceLabel: "Daily Express",
-  title: "Cadillac changes continue following Graeme Lowdon's departure",
-  summary: "Cadillac's leadership shakeup continues following the dismissal of team principal Graeme Lowdon. Team CEO Dan Towriss has confirmed the decision was not mutual and that the process of planning Cadillac's next leadership phase had been underway for several months.",
-  kcsQuickShift: "Cadillac is obviously not happy with thier first year in F1 so far. Better to make changes before it gets worse. Drivers next?",
-  url: "https://www.express.co.uk/sport/f1-autosport/2238777/graeme-lowdon-cadillac-dan-towriss",
-  imagePath: "/img/news/xpb/Cadillac/xpb-cadillacboth.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 14, 2026"
-},];
+    slotId: "1",
+    sourceLabel: "PlanetF1",
+    title: "The case for Max Verstappen to leave Red Bull for McLaren",
+    summary:
+      "PlanetF1 examines why McLaren could appeal to Max Verstappen for 2027. The Mercedes power unit, McLaren’s improving chassis and the arrival of Gianpiero Lambiase are presented as the main reasons a move could make sense.",
+    kcsQuickShift: "The GP Lambiase is a very interesting part of this puzzle. Is it a part of Max's calculations?",
+    url: "https://www.planetf1.com/features/max-verstappen-to-mclaren-reasons",
+    imagePath: "/img/news/xpb/xpb-zacandgpl.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "2",
+    sourceLabel: "RacingNews365 NL",
+    title:
+      'Verstappen oogst lof van NASCAR-legende: "Op een ander niveau!" | NASCAR legend praises Verstappen: "On another level!"',
+    summary:
+      "NASCAR-kampioen Kevin Harvick prees Verstappen omdat hij in Hongarije meer uit de moeilijke Red Bull haalde met zijn starts, inhaalacties en verdediging. Harvick vindt dat Verstappen op een ander niveau rijdt. | NASCAR champion Kevin Harvick praised Verstappen for getting more from a difficult Red Bull in Hungary through his starts, overtaking and defending. Harvick believes Verstappen is operating on another level.",
+    kcsQuickShift: "Cool to hear Harvivk talking about F1. He brought his son, Keelan, over to Europe for a while to try carting but he has back in the US to focus on Nascar. | Leuk om Harvick over de Formule 1 te horen praten. Hij nam zijn zoon Keelan een tijdje mee naar Europa om te karten, maar Keelan is inmiddels terug in de Verenigde Staten om zich op NASCAR te richten.",
+    url: "https://racingnews365.nl/verstappen-oogst-lof-van-nascar-legende-op-een-ander-niveau",
+    imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "3",
+    sourceLabel: "RacingNews365",
+    title:
+      "Why Isack Hadjar is so valuable to Max Verstappen and Red Bull",
+    summary:
+      "Jamie Chadwick believes Hadjar’s strong one-lap pace is giving Red Bull more representative data from both cars. His closeness to Verstappen could help the team make better setup and development decisions.",
+    kcsQuickShift: "I agree Isack Hadjar seems to be the real deal. Two other points I found interesting. Max is benefiting from Hadjar's data and that Chadwisk said that most Drivers say Max is incredibly kind, something that has been said by several other people.",
+    url: "https://racingnews365.com/critical-reason-identified-as-to-why-isack-hadjar-is-so-valuable-to-max-verstappen-and-red-bull",
+    imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "4",
+    sourceLabel: "RacingNews365 NL",
+    title:
+      "GP Zandvoort als blauwdruk voor andere Grands Prix | Zandvoort GP became a blueprint for other Grands Prix",
+    summary:
+      "De Grand Prix van Nederland groeide uit tot een voorbeeld voor andere races door de volle tribunes, fanbeleving, entertainment en het mobiliteitsplan. De editie van 2026 wordt voorlopig de laatste Formule 1-race op Zandvoort. | The Dutch Grand Prix became a model for other races through its packed grandstands, fan experience, entertainment and transportation plan. The 2026 event will be Formula 1’s final visit to Zandvoort for the foreseeable future.",
+    kcsQuickShift: "Sounds like it was a great event! It also sounds like some other venues in europe could learn from the example Zandvoort set. Should we name a few? | Klinkt alsof het een geweldig evenement was! Het klinkt er ook naar dat sommige andere circuits in Europa iets kunnen leren van het voorbeeld dat Zandvoort heeft gegeven. Zullen we er een paar noemen?",
+    url: "https://racingnews365.nl/gp-zandvoort-als-blauwdruk-voor-andere-grands-prix",
+    imagePath: "/img/news/shut/shutzandvoort2025.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "5",
+    sourceLabel: "Crash.net",
+    title:
+      "Why Toto Wolff will not call Kimi Antonelli the F1 title favourite",
+    summary:
+      "Antonelli leads the championship by 50 points, but Toto Wolff says it is still too early to call him the favourite. Wolff remains concerned about Mercedes reliability and the possibility of future engine penalties.",
+    kcsQuickShift: "I really like Toto. I think he really believes in the Duty of Care that he has for his Drivers. I'm not saying he does't do what's best for the team but I think he tries to take care of his Drivers. ",
+    url: "https://www.crash.net/f1/news/1102470/1/why-toto-wolff-refusing-call-kimi-antonelli-f1-title-favourite",
+    imagePath: "/img/news/xpb/Mercedes/xpb-kimispa2.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "6",
+    sourceLabel: "Crash.net",
+    title:
+      "Mercedes reveals astonishing rate of F1 development in the new era",
+    summary:
+      "Mercedes says aerodynamic gains are arriving six to seven times faster than they did under the previous regulations. The team estimates that roughly half a second of performance can now be found every two months.",
+    kcsQuickShift: "I think this expected though right? Once that cars are actually on the track and in race conditions is when the teams get the best data.",
+    url: "https://www.crash.net/f1/news/1102467/1/mercedes-reveal-astonishing-rate-f1-development-new-era",
+    imagePath: "/img/news/xpb/Races/xpb-sparace.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "7",
+    sourceLabel: "RacingNews365",
+    title:
+      "McLaren relieved by Lando Norris and Oscar Piastri relationship",
+    summary:
+      "Andrea Stella says Norris and Piastri are working together better than ever despite their tense 2025 championship fight. Stella is particularly encouraged by how Piastri has leaned on the team while continuing his development.",
+    kcsQuickShift: "You hear a lot of talk about the relationship between these two drivers. I think it's Media just trying to create a story line of a heated rivalry, which they did that all late year.",
+    url: "https://racingnews365.com/mclaren-outline-relief-after-lando-norris-oscar-piastri-concern",
+    imagePath: "/img/news/shut/shut-landoandoscar.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "8",
+    sourceLabel: "Motorsport.com Brasil",
+    title:
+      'F1: Binotto fica "lisonjeado" com interesse na Audi, mas esfria rumores sobre Sainz | Binotto flattered by interest in Audi but cools Sainz rumours',
+    summary:
+      "Mattia Binotto afirmou que o interesse de Sainz e de outros nomes dá credibilidade ao projeto da Audi. No entanto, ele elogiou Bortoleto e Hülkenberg e indicou que a equipe não pretende mudar sua dupla para 2027. | Mattia Binotto says interest from Sainz and others gives Audi’s project credibility. However, he praised Bortoleto and Hülkenberg and indicated that the team is not planning to change its driver pairing for 2027.",
+    kcsQuickShift: "It would be hard for Binotto not to take Sainz and let Hulkenburg go if the oppurtunity came up. Sainz is a proven winner. | Seria difícil para Binotto não aproveitar a oportunidade de contratar Sainz e dispensar Hülkenberg. Sainz é um vencedor comprovado.",
+    url: "https://motorsport.uol.com.br/f1/news/f1-binotto-fica-lisonjeado-com-interesse-na-audi-mas-esfria-rumores-sobre-sainz/10846403/",
+    imagePath: "/img/news/shut/Audi/news-audibinitto.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "9",
+    sourceLabel: "Motorsport.com",
+    title: "Gabriel Bortoleto expects a long-term future with Audi",
+    summary:
+      "Bortoleto says his future with Audi is already settled for many years, although he has not revealed the exact length of his contract. The Brazilian hopes to help turn Audi’s long-term project into a winning team.",
+    kcsQuickShift: "Binotto seems to be on his side, praising Bortoleto's talent and his ability to keep improving",
+    url: "https://www.motorsport.com/f1/news/bortoleto-expects-long-term-stay-at-audis-f1-team/10846331/",
+    imagePath: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+  {
+    slotId: "10",
+    sourceLabel: "Daily Express",
+    title:
+      "F1 cost-cap increase gives Ferrari additional development opportunity",
+    summary:
+      "A 2026 cost-cap adjustment could give Ferrari roughly £3 million in additional spending room as it continues its title challenge. The higher allowance applies across the grid and is not exclusive to Ferrari.",
+    kcsQuickShift: "Why would Ferrari spend the $1.5 million this year when the cars have to change again next year. I would keep the $3 million for next year, unless you are a backbencher like Williams or Cadillac then I can see the need for 2027. Or am I missing something?",
+    url: "https://www.express.co.uk/sport/f1-autosport/2239273/f1-cost-cap-increase-2026",
+    imagePath: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 15, 2026",
+  },
+];
 
