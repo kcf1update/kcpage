@@ -525,8 +525,8 @@ export const nextRaceContent = {
 
   racePoster: {
     enabled: true,
-    backgroundImage: "/img/news/raceposter/dutchGPposter.jpg",
-    downloadImage: "/img/news/raceposter/dutchGPposter.jpg",
+    backgroundImage: "/img/news/raceposter/dutchgp.jpg",
+    downloadImage: "/img/news/raceposter/dutchgp.jpg",
     buttonText: "Race Poster",
   },
 
