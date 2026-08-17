@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Otmar Reveals the F1 Secrets Drive to Survive Couldn’t Show",
-  youtubeInput: "https://youtu.be/XdnDql1yJ5w",
+  title: "Alex Brundle on Verstappen Genius, Hamilton Winning 2026 Championship, The Best Driver in F1 History",
+  youtubeInput: "https://youtu.be/Ib6Kt5cbKj4",
   
   },
 
@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "Why Cadillac has fired its first F1 team boss",
-    youtubeInput: "https://youtu.be/TcNazUVALVg",
-    
+    title: "Driver Puzzle Challenge! | Grill The Grid 2026 | Episode 3",
+    youtubeInput: "https://youtu.be/rHj5SWxb75s",
+    forceExternal: "blue"
   }
 ];
