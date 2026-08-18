@@ -16,8 +16,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Villeneuve: The Rise of a Legend | Official Trailer",
-    youtubeInput: "https://youtu.be/JJ2S8nIQFKA",
+    title: "Red Bull turmoil, struggling drivers & 2027 silly season - F1 Q&A",
+    youtubeInput: "https://youtu.be/j0_Rb84XKgA",
    
   },
 
