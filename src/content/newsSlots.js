@@ -1,17 +1,16 @@
 export const newsSlots = [
   {
-    slotId: "1",
-    sourceLabel: "Crash.net",
-    title:
-      "\"My spot is filled\": Gabriel Bortoleto dismisses Carlos Sainz replacement rumours",
-    summary:
-      "Gabriel Bortoleto says his long-term Audi contract has no clause that would allow him to be replaced by Carlos Sainz in 2027. He declined to discuss Nico Hulkenberg’s contract but made it clear that he enjoys working with his teammate.",
-    kcsQuickShift: "Any seat can be bought out I guess. Difficult to work and give your best under those conditions ",
-    url: "https://www.crash.net/f1/news/1102522/1/my-spot-filled-audi-driver-rubbishes-carlos-sainz-replacement-rumours",
-    imagePath: "/img/news/xpb/Audi/news-xpbaudigabby.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 18, 2026",
-  },
+  slotId: "1",
+  sourceLabel: "Sky Sports",
+  title: "Alex Albon signs one-year Williams contract extension for 2027",
+  summary:
+    "Alex Albon has signed a one-year contract extension that will keep him with Williams until the end of the 2027 Formula 1 season. The new deal will make 2027 his sixth season with the team.",
+  kcsQuickShift: "Good news for Williams",
+  url: "https://www.skysports.com/f1/news/12433/13574380/alex-albon-williams-driver-signs-one-year-contract-extension-to-remain-with-team-for-2027-f1-season",
+  imagePath: "/img/news/shut/williams/shutterstock_2809188127.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Aug 18, 2026",
+},
 
   {
     slotId: "2",
