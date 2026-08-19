@@ -1,15 +1,15 @@
 export const newsSlots = [
   {
   slotId: "1",
-  sourceLabel: "Sky Sports",
-  title: "Alex Albon signs one-year Williams contract extension for 2027",
+  sourceLabel: "Motorsport.com",
+  title: "Isack Hadjar to Miss Dutch Grand Prix as Red Bull Confirms Replacement",
   summary:
-    "Alex Albon has signed a one-year contract extension that will keep him with Williams until the end of the 2027 Formula 1 season. The new deal will make 2027 his sixth season with the team.",
-  kcsQuickShift: "Good news for Williams",
-  url: "https://www.skysports.com/f1/news/12433/13574380/alex-albon-williams-driver-signs-one-year-contract-extension-to-remain-with-team-for-2027-f1-season",
-  imagePath: "/img/news/shut/williams/shutterstock_2809188127.jpg",
+    "Isack Hadjar will miss the Dutch Grand Prix after suffering a wrist injury during the summer break. Liam Lawson will replace him at Red Bull, while Yuki Tsunoda returns to Racing Bulls.",
+  kcsQuickShift: "I hope the wrist injury is not to serious. Double edged sword for Lawson though. ",
+  url: "https://www.motorsport.com/f1/news/isack-hadjar-to-miss-f1-dutch-gp-red-bulls-replacement-confirmed/10847292/",
+  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug 18, 2026",
+  dateLabel: "Aug 19, 2026",
 },
 
   {
@@ -27,17 +27,16 @@ export const newsSlots = [
   },
 
   {
-    slotId: "3",
-    sourceLabel: "PlanetF1",
-    title:
-      "Toto Wolff refuses to call Kimi Antonelli the F1 title favourite",
-    summary:
-      "Toto Wolff says it is too early to call Kimi Antonelli the title favourite despite his 50-point championship lead. He warned that two retirements could quickly change the standings and pointed to Mercedes’ reliability concerns.",
-    kcsQuickShift: "Wolff is working hard to keep the pressure off Kimi Antonelli. But regardless of what he says Antonelli is the favorite....as long as the reliability is there",
-    url: "https://www.planetf1.com/news/toto-wolff-kimi-antonelli-title-assessment-mercedes",
-    imagePath: "/img/news/xpb/Mercedes/newsxpbkimimonacowin.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "August 18, 2026",
+   slotId: "3",
+  sourceLabel: "Sky Sports",
+  title: "Alex Albon signs one-year Williams contract extension for 2027",
+  summary:
+    "Alex Albon has signed a one-year contract extension that will keep him with Williams until the end of the 2027 Formula 1 season. The new deal will make 2027 his sixth season with the team.",
+  kcsQuickShift: "Good news for Williams",
+  url: "https://www.skysports.com/f1/news/12433/13574380/alex-albon-williams-driver-signs-one-year-contract-extension-to-remain-with-team-for-2027-f1-season",
+  imagePath: "/img/news/shut/williams/shutterstock_2809188127.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "Aug 18, 2026",
   },
 
   {
