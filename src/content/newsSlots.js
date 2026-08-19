@@ -1,15 +1,16 @@
 export const newsSlots = [
   {
   slotId: "1",
-  sourceLabel: "Motorsport.com",
-  title: "Isack Hadjar to Miss Dutch Grand Prix as Red Bull Confirms Replacement",
+  sourceLabel: "MSN Sports",
+  title: "Carlos Sainz extends Williams stay with new contract",
   summary:
-    "Isack Hadjar will miss the Dutch Grand Prix after suffering a wrist injury during the summer break. Liam Lawson will replace him at Red Bull, while Yuki Tsunoda returns to Racing Bulls.",
-  kcsQuickShift: "I hope the wrist injury is not to serious. Double edged sword for Lawson though. ",
-  url: "https://www.motorsport.com/f1/news/isack-hadjar-to-miss-f1-dutch-gp-red-bulls-replacement-confirmed/10847292/",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    "Carlos Sainz has signed a new multi-year contract extension with Williams despite the team's difficult 2026 season. The agreement confirms that Sainz and Alex Albon will remain Williams' driver lineup for 2027.",
+  kcsQuickShift: "Yes! Good news for Williams and I truly believe for Carlos Sainz also. Lets hope they can get things turned around now that there is some driver stability",
+  url:
+    "https://www.msn.com/en-us/sports/motorsports/carlos-sainz-extends-williams-stay-with-new-contract/ar-AA2at9Lg?ocid=BingNewsSerp",
+  imagePath: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug 19, 2026",
+  dateLabel: "Aug. 19, 2026",
 },
 
  {
@@ -27,19 +28,19 @@ export const newsSlots = [
   dateLabel: "Aug. 19, 2026",
 },
 {
+  
   slotId: "3",
-  sourceLabel: "The Race",
-  title:
-    "What is really at stake for Liam Lawson in his shock Red Bull return",
+  sourceLabel: "Motorsport.com",
+  title: "Isack Hadjar to Miss Dutch Grand Prix as Red Bull Confirms Replacement",
   summary:
-    "Liam Lawson will return to Red Bull at Zandvoort in place of the injured Isack Hadjar, with Yuki Tsunoda taking Lawson's Racing Bulls seat. The temporary call-up gives Lawson a chance to repair the reputation damaged by his brief Red Bull stint in 2025.",
-  kcsQuickShift: "I think he deserves his Racing Bulls seat this year. But if this weekend is a big fail I fear his career is over at RedBull ",
-  url:
-    "https://www.the-race.com/formula-1/what-really-at-stake-for-liam-lawson-shock-red-bull-f1-return/",
-  imagePath: "/img/news/xpb/Visa/news-xpbliam.jpg",
+    "Isack Hadjar will miss the Dutch Grand Prix after suffering a wrist injury during the summer break. Liam Lawson will replace him at Red Bull, while Yuki Tsunoda returns to Racing Bulls.",
+  kcsQuickShift: "I hope the wrist injury is not to serious. Double edged sword for Lawson though. ",
+  url: "https://www.motorsport.com/f1/news/isack-hadjar-to-miss-f1-dutch-gp-red-bulls-replacement-confirmed/10847292/",
+  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "Aug 19, 2026",
 },
+
 {
   slotId: "4",
   sourceLabel: "Motorsport.com Brazil",
