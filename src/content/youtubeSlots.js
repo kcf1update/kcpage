@@ -3,8 +3,8 @@
 export const youtubeSlots = [
   {
   slotId: "slotKC",
-  title: "British Grand Prix Recap: Leclerc Wins, Ferrari Hits 250, Antonelli Heartbreak",
-  youtubeInput: "https://youtu.be/tJAXVPcSkK8",
+  title: "2026 F1 Midseason Driver Update | Every Driver’s Best Finish, Points & Highlight",
+  youtubeInput: "https://www.youtube.com/shorts/znP2sseb6kw?feature=share",
 },
 
   {
