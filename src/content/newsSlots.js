@@ -1,31 +1,32 @@
 export const newsSlots = [
   {
-  slotId: "1",
-  sourceLabel: "MSN Sports",
-  title: "Carlos Sainz extends Williams stay with new contract",
+ slotId: 1,
+  sourceLabel: "Crash.net",
+  title:
+    "Max Verstappen Signs Long-Term Red Bull Contract to End F1 Future Rumours",
   summary:
-    "Carlos Sainz has signed a new multi-year contract extension with Williams despite the team's difficult 2026 season. The agreement confirms that Sainz and Alex Albon will remain Williams' driver lineup for 2027.",
-  kcsQuickShift: "Yes! Good news for Williams and I truly believe for Carlos Sainz also. Lets hope they can get things turned around now that there is some driver stability",
+    "Max Verstappen has signed a new contract that will keep him with Red Bull through the end of 2030. The deal ends months of speculation about his future and possible moves to rival teams.",
+  kcsQuickShift: "Congratulations to RedBull and Max. Now lets move on.",
   url:
-    "https://www.msn.com/en-us/sports/motorsports/carlos-sainz-extends-williams-stay-with-new-contract/ar-AA2at9Lg?ocid=BingNewsSerp",
-  imagePath: "/img/news/xpb/Williams/xpb-carloshungary.jpg",
+    "https://www.crash.net/f1/news/1102549/1/max-verstappen-signs-long-term-red-bull-contract-end-rumours-over-f1-future",
+  imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 
  {
   slotId: "2",
   sourceLabel: "RacingNews365 NL",
   title:
-    "Schumacher houdt rekening met Verstappen ondanks Red Bull-probleem | Schumacher still considers Verstappen a contender despite Red Bull problem",
+    'Verstappen stellig: "Neigde eerder naar pensioen dan naar een overstap!" | Verstappen Firm: "I Was More Likely to Retire Than Switch Teams!"',
   summary:
-    "Ralf Schumacher verwacht dat Red Bull op Zandvoort moeite kan hebben met bandenslijtage en aerodynamica. Toch sluit hij Verstappen niet uit als kanshebber, vooral als regen een rol speelt. | Ralf Schumacher expects Red Bull could struggle with tyre wear and aerodynamics at Zandvoort. He still refuses to rule Verstappen out as a contender, especially if rain plays a part.",
-  kcsQuickShift: "Max Verstappen is going to do everything to win this race. I expect him to be at his very best | Max Verstappen gaat er alles aan doen om deze race te winnen. Ik verwacht dat hij op zijn allerbest zal zijn.",
+    "Max Verstappen zegt dat hij eerder overwoog om met de Formule 1 te stoppen dan Red Bull te verlaten voor een ander team. De viervoudig wereldkampioen heeft zijn toekomst bij Red Bull vastgelegd met een nieuw contract tot eind 2030. | Max Verstappen says he was more likely to retire from Formula 1 than leave Red Bull for another team. The four-time world champion has now committed his future to Red Bull with a new contract through the end of 2030.",
+  kcsQuickShift: "I don't think anyone really ever saw him in another team | Ik denk niet dat iemand hem ooit echt bij een ander team zag rijden.",
   url:
-    "https://racingnews365.nl/schumacher-houdt-rekening-met-verstappen-ondanks-red-bull-probleem",
-  imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+    "https://racingnews365.nl/verstappen-stellig-neigde-eerder-naar-pensioen-dan-naar-een-overstap",
+  imagePath: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 {
   
