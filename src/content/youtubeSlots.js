@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Alex Brundle on Verstappen Genius, Hamilton Winning 2026 Championship, The Best Driver in F1 History",
-  youtubeInput: "https://youtu.be/Ib6Kt5cbKj4",
+  title: "What the Carlos Sainz deal could tell us about the F1 driver market",
+  youtubeInput: "https://youtu.be/ojfrRv6DHKw",
   
   },
 
   {
     slotId: "slot2",
-    title: "Red Bull turmoil, struggling drivers & 2027 silly season - F1 Q&A",
-    youtubeInput: "https://youtu.be/j0_Rb84XKgA",
-   
+    title: "Why Max Verstappen is Staying with Red Bull Racing until 2030",
+    youtubeInput: "https://youtu.be/zl4wxIEJImk",
+   forceExternal: "blue"
   },
 
   {
     slotId: "slot3",
-    title: "Driver Puzzle Challenge! | Grill The Grid 2026 | Episode 3",
-    youtubeInput: "https://youtu.be/rHj5SWxb75s",
-    forceExternal: "blue"
+    title: "What's really at stake as Lawson replaces Hadjar",
+    youtubeInput: "https://youtu.be/V1qBTE4G4jI",
+    
   }
 ];

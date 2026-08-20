@@ -31,113 +31,115 @@ export const newsSlots = [
 {
   
   slotId: "3",
-  sourceLabel: "Motorsport.com",
-  title: "Isack Hadjar to Miss Dutch Grand Prix as Red Bull Confirms Replacement",
+  sourceLabel: "AutoRacing1",
+  title:
+    "Wolff Open to Abandoning F1’s ‘Frankenstein’ Cars",
   summary:
-    "Isack Hadjar will miss the Dutch Grand Prix after suffering a wrist injury during the summer break. Liam Lawson will replace him at Red Bull, while Yuki Tsunoda returns to Racing Bulls.",
-  kcsQuickShift: "I hope the wrist injury is not to serious. Double edged sword for Lawson though. ",
-  url: "https://www.motorsport.com/f1/news/isack-hadjar-to-miss-f1-dutch-gp-red-bulls-replacement-confirmed/10847292/",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    "Toto Wolff says Mercedes is open to Formula 1 moving away from the current power unit regulations, despite the team’s success under the new rules. The Mercedes boss supports discussions about returning to V8 hybrid engines and producing lighter, less complicated cars.",
+  kcsQuickShift: "Seems like almost everyone is on the same page regarding moving towards at least the V8 engine",
+  url:
+    "https://www.autoracing1.com/pl/501413/formula-1-news-wolff-open-to-abandoning-f1-frankenstein-cars/",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 
 {
   slotId: "4",
-  sourceLabel: "Motorsport.com Brazil",
+  sourceLabel: "F1i Auto Journal FR",
   title:
-    "Quais são as maiores contratações de pilotos da história da F1? | What are the biggest driver signings in F1 history?",
+    "Isack Hadjar s’est fracturé la main en pratiquant la boxe : indisponible pour plusieurs semaines ? | Isack Hadjar Fractures His Hand While Boxing: Could He Miss Several Weeks?",
   summary:
-    "A lista relembra dez transferências que abalaram a Fórmula 1, incluindo Lewis Hamilton para a Ferrari, Michael Schumacher para a Ferrari e Hamilton para a Mercedes. Algumas viraram parcerias históricas, enquanto outras não entregaram o resultado esperado. | The list looks back at ten driver moves that shook Formula 1, including Lewis Hamilton to Ferrari, Michael Schumacher to Ferrari and Hamilton to Mercedes. Some became historic partnerships, while others failed to deliver the expected results.",
-  kcsQuickShift: "Daniel Ricciardo moving to Renault was a shock move but Hamilton to Ferrari beats it. I thought he would retire as a Mercedes driver |A ida de Daniel Ricciardo para a Renault foi uma transferência surpreendente, mas a mudança de Hamilton para a Ferrari superou essa. Eu achava que ele encerraria a carreira como piloto da Mercedes. ",
+    "Isack Hadjar s’est fracturé la main lors d’une séance de boxe pendant la pause estivale et manquera le Grand Prix des Pays-Bas. Red Bull n’a pas précisé la durée de son absence, mais sa participation au Grand Prix d’Italie pourrait également être menacée. | Isack Hadjar fractured his hand during a boxing session over the summer break and will miss the Dutch Grand Prix. Red Bull has not confirmed how long he will be out, but his participation in the Italian Grand Prix could also be in doubt.",
+  kcsQuickShift: "I wonder if his trainer is hanging on by a thread? | Je me demande si son entraîneur ne tient pas à un fil ?",
   url:
-    "https://motorsport.uol.com.br/f1/news/quais-sao-as-maiores-contratacoes-de-pilotos-da-historia-da-f1/10847169/",
-  imagePath: "/img/news/xpb/ferrari/news-xpblewis.jpg",
+    "https://f1i.autojournal.fr/infos/coup-dur/isack-hadjar-sest-fracture-la-main-en-pratiquant-boxe-indisponible-pour-plusieurs-grands-prix/?utm_source=feedly_feed&utm_medium=link&utm_campaign=unknown",
+  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "5",
   sourceLabel: "Motorsport.com",
   title:
-    "FIA sets date for McLaren and Red Bull's Monaco Grand Prix appeal",
+    "Liam Lawson’s Unexpected Red Bull Call-Up Rewards His Perseverance",
   summary:
-    "The FIA's International Court of Appeal will hear McLaren and Red Bull on August 25 over Pierre Gasly's reinstated Monaco podium. The teams argue the decision was unfair to drivers who served penalties based on the same incorrect pit-lane speed data.",
-  kcsQuickShift: "Let the guy have his 3rd place. Work behind the scenes to make sure it does not happen again. To me, it feels like  McLaren are just trying to keep Piasti happy",
+    "Liam Lawson will return to Red Bull as a temporary replacement for the injured Isack Hadjar at the Dutch Grand Prix. The opportunity rewards Lawson’s persistence after he was dropped by the senior team following only two races in 2025.",
+  kcsQuickShift: "I'm happy for Lawson. But this weekend is such a double edged sword. He needs to qualify top 10 and finish top 10, no mistakes",
   url:
-    "https://www.motorsport.com/f1/news/fia-sets-date-for-mclaren-and-red-bulls-monaco-gp-appeal/10847318/",
-  imagePath: "/img/news/Alpine/Gasly/monacogasly.jpg",
+    "https://www.motorsport.com/f1/news/liam-lawsons-unexpected-red-bull-call-up-rewards-his-perseverance/10847406/",
+  imagePath: "/img/news/xpb/Visa/news-xpbliam.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "6",
-  sourceLabel: "F1i.com",
+  sourceLabel: "Formula 1",
   title:
-    "Honda facing important milestone as new power unit debuts at Dutch Grand Prix",
+    "Need to Know: The Most Important Facts, Stats and Trivia Ahead of the 2026 Dutch Grand Prix",
   summary:
-    "Honda will introduce an updated Aston Martin power unit at Zandvoort after the team's chassis improvement in Hungary. The sprint format leaves only one practice session to evaluate the new package.",
-  kcsQuickShift: "They have to get it right soon",
+    "Formula 1’s Dutch Grand Prix guide covers the key statistics, strategy information and circuit details for this weekend’s Sprint event at Zandvoort. Max Verstappen can equal Jim Clark’s record of four Dutch Grand Prix victories as the circuit prepares to host its final scheduled F1 race.",
+  kcsQuickShift: "I am a believer in shaking up the tracks for F1. It helps keep it new and interesting. but I hope they find their way back to this one. Turn 3 is classic.  ",
   url:
-    "https://f1i.com/news/570910-honda-facing-important-milestone-as-new-pu-debuts-at-dutch-gp.html",
-  imagePath: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+    "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-dutch-grand-prix.7rXg1scAXG5IMsHc9k74g4",
+  imagePath: "/img/news/shut/shutzandvoort2025.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "7",
-  sourceLabel: "F1i.com",
+  sourceLabel: "Motorsport.com",
   title:
-    "Albon explains why he still backs Williams after a tough season",
+    "Honda Showing ‘Level of Certainty’ Over Aston Martin F1 Engine Upgrade, Says Former F1 TV Host",
   summary:
-    "Alex Albon says one difficult season does not outweigh the progress he has seen at Williams since joining the team in 2022. His belief in the rebuilding project helped convince him to extend his contract through 2027.",
-  kcsQuickShift: "I'm glad he is staying at Williams for another year to help them. But really where else was he going to go. ",
+    "Former F1 commentator James Allen believes Honda’s confidence in its upgraded power unit suggests it expects a clear step forward for Aston Martin. The revised engine was tested during a filming day in Hungary and will make its race-weekend debut at Zandvoort.",
+  kcsQuickShift: "If Honda gets the engine right we could see Aston Martin take a huge leap forward",
   url:
-    "https://f1i.com/news/570906-albon-explains-why-he-backs-williams-we-needed-this-tough-year.html",
-  imagePath: "/img/news/xpb/Williams/xpbAlex.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+    "https://www.motorsport.com/f1/news/honda-showing-level-of-certainty-over-aston-martin-f1-engine-upgrade-says-former-f1-tv-host/10847572/",
+  imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "8",
-  sourceLabel: "Marca",
+  sourceLabel: "Motorsport-Total DE",
   title:
-    "Alonso espera probar el nuevo motor Honda antes de renovar | Alonso waits to test Honda's new engine before renewing",
+    "Pierre Gasly: Steve Nielsen hat eine positive Auswirkung auf Alpine | Pierre Gasly: Steve Nielsen Is Having a Positive Impact on Alpine",
   summary:
-    "Fernando Alonso quiere comprobar el rendimiento de la nueva unidad de potencia de Honda en Zandvoort antes de decidir su futuro con Aston Martin. Una mejora clara podría acercarlo a una renovación para 2027. | Fernando Alonso wants to assess Honda's new power unit at Zandvoort before deciding his future with Aston Martin. A clear improvement could bring him closer to renewing for 2027.",
-  kcsQuickShift: "Alonso is like the energizer bunny he will just keep going and going. I'm sure he wants another chance in a fast car |  Alonso es como el conejito de Energizer, sigue y sigue. Estoy seguro de que quiere otra oportunidad en un coche rápido.",
+    "Pierre Gasly lobt den positiven Einfluss von Steve Nielsen auf Alpine und sagt, dass der Managing Director mehr Stabilität und klare Führung gebracht hat. Gasly glaubt, dass Nielsens Erfahrung dem Team helfen kann, sich im engen Mittelfeld wieder nach vorne zu arbeiten. | Pierre Gasly has praised Steve Nielsen’s positive influence at Alpine, saying the managing director has brought greater stability and clear leadership. Gasly believes Nielsen’s experience can help the team move forward again in the tightly contested midfield.",
+  kcsQuickShift: "To me Alpine seems to be a team on the verge. They seem to make a few forward steps and then fall back again. Perhaps Nielsen can solve that problem | Für mich wirkt Alpine wie ein Team, das kurz vor dem Durchbruch steht. Sie machen ein paar Schritte nach vorne und fallen dann wieder zurück. Vielleicht kann Nielsen dieses Problem lösen.",
   url:
-    "https://www.marca.com/motor/formula1/gp-paises-bajos/2026/08/19/esperando-alonso-probar-nuevo-motor-honda-renovar.html",
-  imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+    "https://www.motorsport-total.com/formel-1/news/pierre-gasly-steve-nielsen-hat-eine-positive-auswirkung-auf-alpine-26082004#google_vignette",
+  imagePath: "/img/news/Alpine/news-alpinejapan.jpg",
+  photoCredit: "Courtesy of Alpine F1",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "9",
-  sourceLabel: "PlanetF1",
+  sourceLabel: "Motorsport.com",
   title:
-    "The 11 drivers potentially out of contract at the end of F1 2026",
+    "Lewis Hamilton and Ferrari Called Out by Former F1 Driver for ‘Pretty Sloppy’ Errors",
   summary:
-    "PlanetF1 reviews 11 drivers whose 2027 status is not fully confirmed, including Isack Hadjar, Carlos Sainz, Fernando Alonso and both Racing Bulls drivers. Some need new contracts, while others have options or unclear public terms.",
-  kcsQuickShift: "All hinging on what on driver does, guess who?",
+    "Former F1 driver Jolyon Palmer believes mistakes from Lewis Hamilton and Ferrari have cost them opportunities to take advantage when Mercedes has struggled. Palmer says both the driver and team need cleaner weekends if they want to remain a serious threat during the second half of the season.",
+  kcsQuickShift: "We all know they have made mistakes...so has McLaren, so has RedBull, so has Mercedes and so has every team on the track.",
   url:
-    "https://www.planetf1.com/news/f1-driver-contracts-2026-expiry",
-  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
+    "https://www.motorsport.com/f1/news/lewis-hamilton-and-ferrari-called-out-by-former-f1-driver-for-pretty-sloppy-errors/10847517/",
+  imagePath: "/img/news/xpb/Races/xpbracespain.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "Aug. 19, 2026",
+  dateLabel: "August 20, 2026",
 },
 {
   slotId: "10",
-  sourceLabel: "Read Motorsport",
+  sourceLabel: "F1 Oversteer",
   title:
-    "Ukraine asks the FIA to reverse decision on Russian and Belarusian competitors",
+    "Haas Set to Offer Jack Doohan an ‘Audition’ for 2027 F1 Seat Amid Esteban Ocon Uncertainty",
   summary:
-    "Ukraine has asked the FIA to reconsider lifting restrictions on Russian and Belarusian competitors following a World Motor Sport Council vote. The ban on holding FIA events in Russia and Belarus remains in place.",
-  kcsQuickShift: "FIA needs to reconsider. Period.",
+    "Haas is reportedly planning to give reserve driver Jack Doohan a test in a previous Formula 1 car at Jerez. The session could serve as an audition for a 2027 race seat as uncertainty continues over Esteban Ocon’s future with the team.",
+  kcsQuickShift: "He deserves a better chance than he got at Alpine with Briatore. But not a lot of second chances in F1 so he needs to make the best of it.",
   url:
-    "https://readmotorsport.com/2026/08/19/fia-russia-ban-ukraine-appeal/",
-  imagePath: "/img/news/kcai/news-FIA.jpg",
-  photoCredit: "KC AI generated image",
-  dateLabel: "Aug. 19, 2026",
+    "https://www.f1oversteer.com/news/haas-now-set-to-offer-jack-doohan-audition-for-2027-f1-seat-amid-esteban-ocon-uncertainty/",
+  imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "August 20, 2026",
 },
 ];
