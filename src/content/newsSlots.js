@@ -93,7 +93,8 @@ url: "https://www.formula1.com/en/latest/article/its-not-my-biggest-priority-alo
   imagePath: "/img/news/shut/Aston/news-shutfernando.jpg",
   photoCredit: "Shutterstock",
   dateLabel: "August 21, 2026",
-
+},
+{
   slotId: 8,
   sourceLabel: "RacingNews365.nl",
   title:
