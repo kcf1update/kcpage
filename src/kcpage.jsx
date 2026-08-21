@@ -15,13 +15,13 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
-  label: "",
-  title: "",
-  body: "",
-  buttonText: "Explore the Website →",
-  buttonLink: "/f1news",
-  backgroundImage: "",
+  enabled: true,
+  label: "RACE WEEKEND",
+  title: "DUTCH GRAND PRIX",
+  body: "The Dutch Grand Prix race weekend is here. Follow the latest news, session times, results, weather and updates throughout the weekend.",
+  buttonText: "Visit the Race Centre →",
+  buttonLink: "/racecenter",
+  backgroundImage: "/img/news/raceposter/dutchgp.jpg",
 };
 // ===================================================
 // Full image announcement card

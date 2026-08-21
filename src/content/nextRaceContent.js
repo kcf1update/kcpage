@@ -352,6 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m12.949s	35
+2	Lando Norris	GBR	McLaren Mastercard F1 Team	1m13.070s	30
+3	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m13.074s	36
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m13.139s	34
+5	Charles Leclerc	MON	Scuderia Ferrari HP	1m13.238s	38
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m13.608s	35
+7	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m13.784s	34
+8	Pierre Gasly	FRA	BWT Alpine F1 Team	1m13.911s	28
+9	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m13.992s	29
+10	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m14.285s	36
+11	Max Verstappen	NED	Oracle Red Bull Racing	1m14.325s	25
+12	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m14.511s	25
+13	Franco Colapinto	ARG	BWT Alpine F1 Team	1m14.826s	31
+14	Liam Lawson	NZL	Oracle Red Bull Racing	1m14.861s	29
+15	Ollie Bearman	GBR	TGR Haas F1 Team	1m14.874s	32
+16	Esteban Ocon	FRA	TGR Haas F1 Team	1m14.897s	31
+17	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m15.110s	34
+18	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m15.199s	24
+19	Alex Albon	THA	Atlassian Williams F1 Team	1m15.357s	33
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m15.580s	27
+21	Sergio Perez	MEX	Cadillac F1 Team	1m15.700s	27
+22	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m16.345s	32
 
  
 `;
@@ -405,10 +427,10 @@ export const raceWeekendRecap = {
             heading: "Practice",
             items: [
               {
-                title: "",
+                title: "Antonelli Leads Sole Practice as Verstappen Struggles",
                 summary:
-                  "",
-                url: "",
+                  "Kimi Antonelli topped the only practice session at Zandvoort, finishing 0.121 seconds ahead of Lando Norris, with George Russell third. Lewis Hamilton and Charles Leclerc completed the top five, while downshift problems left Max Verstappen in 11th.",
+                url: "https://www.crash.net/f1/news/1102635/1/kimi-antonelli-edges-lando-norris-crucial-zandvoort-practice",
               },
             ],
           },
@@ -610,7 +632,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "7:30 AM ADT",
+          time: "Antonelli Fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),

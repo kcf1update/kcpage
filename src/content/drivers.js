@@ -13,7 +13,7 @@ const rawDrivers = [
 
   // Red Bull
   { id: "VER", name: "Max Verstappen", number: 3, countryCode: "nl", team: "Red Bull" },
-  { id: "HAD", name: "Isack Hadjar", number: 6, countryCode: "fr", team: "Red Bull" },
+   { id: "LAW", name: "Liam Lawson", number: 30, countryCode: "nz", team: "Red Bull" },
 
   // Ferrari
   { id: "LEC", name: "Charles Leclerc", number: 16, countryCode: "mc", team: "Ferrari" },
@@ -24,7 +24,7 @@ const rawDrivers = [
   { id: "SAI", name: "Carlos Sainz", number: 55, countryCode: "es", team: "Williams" },
 
   // Racing Bulls
-  { id: "LAW", name: "Liam Lawson", number: 30, countryCode: "nz", team: "Racing Bulls" },
+  {id: "TSU", name: "Yuki Tsunoda", number: 22, countryCode: "jp", team: "Racing Bulls" },
   { id: "LIN", name: "Arvid Lindblad", number: 41, countryCode: "gb", team: "Racing Bulls" },
 
   // Aston Martin
