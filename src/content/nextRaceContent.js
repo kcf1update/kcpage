@@ -387,6 +387,116 @@ const PASTE_P3 = `
 
 `;
 const PASTE_SQ = `
+1	63	
+
+George Russell
+
+Mercedes	1:13.278	1:12.235	1:11.567	17
+2	1	
+
+Lando Norris
+
+McLaren	1:13.071	1:12.189	1:11.608	15
+3	16	
+
+Charles Leclerc
+
+Ferrari	1:13.011	1:12.190	1:11.622	16
+4	81	
+
+Oscar Piastri
+
+McLaren	1:13.126	1:12.026	1:11.666	15
+5	12	
+
+Kimi Antonelli
+
+Mercedes	1:13.668	1:12.511	1:11.794	15
+6	3	
+
+Max Verstappen
+
+Red Bull Racing	1:13.585	1:12.771	1:12.094	15
+7	44	
+
+Lewis Hamilton
+
+Ferrari	1:13.151	1:12.445	1:12.191	15
+8	10	
+
+Pierre Gasly
+
+Alpine	1:13.977	1:12.720	1:12.578	12
+9	5	
+
+Gabriel Bortoleto
+
+Audi	1:13.730	1:12.786	1:12.583	12
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:14.057	1:12.785	1:12.737	15
+11	30	
+
+Liam Lawson
+
+Red Bull Racing	1:13.420	1:13.136		13
+12	22	
+
+Yuki Tsunoda
+
+Racing Bulls	1:14.490	1:13.145		11
+13	43	
+
+Franco Colapinto
+
+Alpine	1:14.618	1:13.439		9
+14	27	
+
+Nico Hulkenberg
+
+Audi	1:14.284	1:13.616		13
+15	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:14.503	1:13.893		12
+16	23	
+
+Alex Albon
+
+Williams	1:14.596	1:14.294		12
+17	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:14.728			6
+18	55	
+
+Carlos Sainz
+
+Williams	1:14.738			7
+19	18	
+
+Lance Stroll
+
+Aston Martin	1:15.391			5
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:15.472			7
+21	11	
+
+Sergio Perez
+
+Cadillac	1:15.545			7
+22	14	
+
+Fernando Alonso
+
+Aston Martin	1:16.014			5
 
 
 	
@@ -437,10 +547,10 @@ export const raceWeekendRecap = {
           {
             heading: "Sprint Qualifying",            items: [
               {
-                title: "",
+                title: "Russell Takes Sprint Pole at Zandvoort",
                 summary:
-                  "",
-                url: "",
+                  "George Russell claimed pole position for the Dutch Grand Prix Sprint with a lap of 1:11.567, beating Lando Norris by just 0.041 seconds. Charles Leclerc qualified third ahead of Oscar Piastri, while championship leader Kimi Antonelli finished fifth and Max Verstappen took sixth in front of his home crowd. Source: Reuters",
+                url: "https://www.the-race.com/formula-1/dutch-gp-f1-sprint-qualifying-2026-russell-pole/",
               },
             ],
           },
@@ -641,7 +751,7 @@ export const nextRaceContent = {
           id: "sq",
           type: "sprint_shootout",
           label: "Sprint Qualifying",
-          time: "11:30 AM ADT",
+          time: "Russell on the pole! Full results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_SQ),

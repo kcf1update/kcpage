@@ -1,14 +1,14 @@
 export const newsSlots = [
   {
   slotId: 1,
-  sourceLabel: "Crash.net",
+  sourceLabel: "The Race",
   title:
-    "Kimi Antonelli Edges Lando Norris in Sole Dutch Grand Prix Practice",
+    "Russell Upstages Antonelli to Take Dutch GP Sprint Pole",
   summary:
-    "Kimi Antonelli topped the only practice session at Zandvoort, finishing 0.121 seconds ahead of Lando Norris. George Russell placed third ahead of Lewis Hamilton and Charles Leclerc, while Max Verstappen struggled to 11th.",
-  kcsQuickShift: "Right back where we ended",
-  url: "https://www.crash.net/f1/news/1102635/1/kimi-antonelli-edges-lando-norris-crucial-zandvoort-practice",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimizandvoort.jpg",
+    "George Russell claimed pole position for the Dutch Grand Prix sprint at Zandvoort. The Mercedes driver secured his third sprint pole of the season in an extremely close session, with less than a tenth of a second separating the top four.",
+  kcsQuickShift: "Should be a good sprint race. Lets see how the start goes",
+  url: "https://www.the-race.com/formula-1/dutch-gp-f1-sprint-qualifying-2026-russell-pole/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "August 21, 2026",
 },

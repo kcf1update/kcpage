@@ -30,7 +30,7 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
