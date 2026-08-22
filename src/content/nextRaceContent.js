@@ -782,7 +782,7 @@ export const nextRaceContent = {
           id: "sprint",
           type: "sprint_race",
           label: "Sprint Race",
-          time: "7:00 AM ADT",
+          time: "Russell wins Sprint! Results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_SPRINT),
