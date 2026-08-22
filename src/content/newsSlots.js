@@ -1,58 +1,57 @@
 export const newsSlots = [
   {
   slotId: 1,
-  sourceLabel: "The Race",
-  title:
-    "Russell Upstages Antonelli to Take Dutch GP Sprint Pole",
+  sourceLabel: "ESPN",
+  title: "George Russell Wins Dutch Grand Prix Sprint at Zandvoort",
   summary:
-    "George Russell claimed pole position for the Dutch Grand Prix sprint at Zandvoort. The Mercedes driver secured his third sprint pole of the season in an extremely close session, with less than a tenth of a second separating the top four.",
-  kcsQuickShift: "Should be a good sprint race. Lets see how the start goes",
-  url: "https://www.the-race.com/formula-1/dutch-gp-f1-sprint-qualifying-2026-russell-pole/",
-  imagePath: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
+    "George Russell led every lap from pole position to claim his third Sprint victory of the season at Zandvoort. Charles Leclerc passed Lando Norris late in the race to finish second, with Norris completing the top three.",
+  kcsQuickShift: "Good win for Russell. Leclerc looks fast qualifying and the race tomorrow should be a good one. ",
+  url: "https://www.espn.co.uk/f1/story/_/id/49610261/george-russell-takes-third-sprint-race-victory-season-dutch-grand-prix-formula-1-zandvoort",
+  imagePath: "/img/news/xpb/Races/xpb-zandsprintpodium.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "August 21, 2026",
+  dateLabel: "August 22, 2026",
 },
 
 {
   slotId: 2,
   sourceLabel: "RacingNews365.nl",
   title:
-    "Werk aan de winkel voor Verstappen en Red Bull in Zandvoort | Verstappen and Red Bull Have Work to Do at Zandvoort",
+    'Wolff: "Om zo terug te komen en dan ook nog te winnen!" | Wolff: “To Come Back Like This and Then Win as Well!”',
   summary:
-    "Max Verstappen kwam tijdens de enige vrije training voor de Grand Prix van Nederland niet verder dan de elfde plaats. De Nederlander klaagde opnieuw over problemen bij het terugschakelen, die voor onbalans in de Red Bull zorgden. | Max Verstappen finished only 11th in the sole practice session for the Dutch Grand Prix. He again complained about downshift problems that were causing instability in the Red Bull.",
-  kcsQuickShift: "GP and Max are the best team at finding what they need between practices to go fast when they are back on the track. | GP en Max vormen het beste team als het erop aankomt om tussen de sessies uit te zoeken wat ze nodig hebben om snel te zijn zodra ze weer de baan op gaan. ",
-  url: "https://racingnews365.nl/werk-aan-de-winkel-voor-verstappen-en-red-bull-in-zandvoort",
-  imagePath: "/img/news/xpb/RedBull/xpb-maxzandvoort.jpg",
+    "Toto Wolff prees George Russell voor de manier waarop hij zich na een moeilijke periode herstelde en de sprintrace op Zandvoort won. De Mercedes-teambaas ziet de overwinning als een belangrijke opsteker voor Russell. | Toto Wolff praised George Russell for recovering from a difficult stretch and winning the Sprint at Zandvoort. The Mercedes team principal sees the victory as an important boost for Russell.",
+  kcsQuickShift: "This most definitely is the start that Russell needed but lets wait to see how the weekend goes before we say he is back in the fight. |  Dit is absoluut de start die Russell nodig had, maar laten we eerst afwachten hoe de rest van het weekend verloopt voordat we zeggen dat hij weer meedoet in de strijd.",
+  url: "https://racingnews365.nl/wolff-om-zo-terug-te-komen-en-dan-ook-nog-te-winnen-...",
+  imagePath: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "August 21, 2026",
+  dateLabel: "August 22, 2026",
 },
+
 {
   slotId: 3,
-  sourceLabel: "RacingNews365",
-  title: "Red Bull Provides Isack Hadjar Health Update After Wrist Injury",
+  sourceLabel: "Formula 1",
+  title: "Norris Admits McLaren Lacked Pace in Zandvoort Sprint",
   summary:
-    "Red Bull says Isack Hadjar’s wrist injury is minor, but the team will not risk putting him back in the car too soon. Liam Lawson replaces him at Red Bull for the Dutch Grand Prix, while Yuki Tsunoda returns with Racing Bulls.",
-  kcsQuickShift: "Doesn't sound too serious; hopefully he is not out too long",
-  url: "https://racingnews365.com/red-bull-provide-isack-hadjar-health-update-after-wrist-injury",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    "Lando Norris admitted McLaren was not quick enough after slipping from second to third in the Zandvoort Sprint. Charles Leclerc passed Norris during the closing stages, while teammate Oscar Piastri finished fifth.",
+  kcsQuickShift: "He has been talking big this weekend. It's time to find the extra speed ",
+  url: "https://www.formula1.com/en/latest/article/norris-concedes-mclaren-are-not-quick-enough-after-settling-for-p3-in-zandvoort-sprint.1wWZadtCH0YIldOmE8jTwA",
+  imagePath: "/img/news/xpb/Mclaren/xpb-norrisZandsprint.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "August 21, 2026",
+  dateLabel: "August 22, 2026",
 },
 
 {
   slotId: 4,
-  sourceLabel: "FormulaPassion.it",
+  sourceLabel: "RacingNews365.nl",
   title:
-    "Olanda, Ferrari: ecco gli aggiornamenti per irrobustire la SF-26 | Dutch GP: Ferrari Reveals Updates Designed to Strengthen the SF-26",
+    "Verstappen vestigt hoop op 'enige positieve punt' na sprintrace | Verstappen Takes Hope From the ‘Only Positive’ After Sprint",
   summary:
-    "La Ferrari ha introdotto a Zandvoort modifiche al fondo, al diffusore e alla beam wing della SF-26. Gli aggiornamenti puntano ad aumentare il carico aerodinamico e a rendere più stabile il flusso d’aria verso il retrotreno. | Ferrari has introduced changes to the SF-26 floor, diffuser and beam wing at Zandvoort. The updates are intended to increase aerodynamic load and improve airflow stability toward the rear of the car.",
-  kcsQuickShift: "Sounds like some big changes to some cars this weekend, it'll be interesting to see who benefits the most. | Sembra che questo fine settimana ci siano grandi novità su diverse monoposto. Sarà interessante vedere chi ne trarrà il maggior beneficio. ",
-  url: "https://www.formulapassion.it/f1/f1-analisi-tecnica/olanda-ferrari-ecco-aggiornamenti-per-irrobustire-sf-26-foto",
-  imagePath: "/img/news/xpb/ferrari/xpb-charleshungary.jpg",
+    "Max Verstappen kon na zijn zesde plaats weinig positiefs uit de sprintrace halen, maar was tevreden over het racetempo en de bandendegradatie van zijn Red Bull. Hij hoopt vóór de kwalificatie meer snelheid over één ronde te vinden. | Max Verstappen found little to celebrate after finishing sixth in the Sprint, but he was encouraged by Red Bull’s race pace and tyre management. He hopes the team can find more single-lap performance before qualifying.",
+  kcsQuickShift: "Lets see what he does in Qualifying. But there is something about Saturday night they always seems to pull out more pace for the race. | Laten we eerst eens kijken wat hij in de kwalificatie doet. Maar er gebeurt blijkbaar altijd iets op zaterdagavond, want voor de race weten ze telkens weer meer snelheid te vinden.",
+  url: "https://racingnews365.nl/verstappen-vestigt-hoop-op-enige-positieve-punt-na-sprintrace",
+  imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "August 21, 2026",
+  dateLabel: "August 22, 2026",
 },
-
 {
   slotId: 5,
   sourceLabel: "RacingNews365",
