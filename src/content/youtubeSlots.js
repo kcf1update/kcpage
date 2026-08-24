@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "What the Carlos Sainz deal could tell us about the F1 driver market",
-  youtubeInput: "https://youtu.be/ojfrRv6DHKw",
+  title: "Drivers React After the Race | 2026 Dutch Grand Prix",
+  youtubeInput: "https://youtu.be/No8O1zMhGuk",
   
   },
 
   {
     slotId: "slot2",
-    title: "Why Max Verstappen is Staying with Red Bull Racing until 2030",
-    youtubeInput: "https://youtu.be/zl4wxIEJImk",
+    title: "Why Mercedes appears to be in big trouble",
+    youtubeInput: "https://youtu.be/d8pE2HawAwU",
    forceExternal: "blue"
   },
 
   {
     slotId: "slot3",
-    title: "What's really at stake as Lawson replaces Hadjar",
-    youtubeInput: "https://youtu.be/V1qBTE4G4jI",
+    title: "2026 F1 DUTCH GP Race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/Vpk9mzzpS3M",
     
   }
 ];

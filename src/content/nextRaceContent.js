@@ -527,12 +527,143 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	1	
+
+Lando Norris
+
+McLaren	1:12.695	1:11.628	1:11.163	21
+2	63	
+
+George Russell
+
+Mercedes	1:12.924	1:11.959	1:11.265	20
+3	12	
+
+Kimi Antonelli
+
+Mercedes	1:13.022	1:11.915	1:11.296	21
+4	81	
+
+Oscar Piastri
+
+McLaren	1:12.610	1:11.641	1:11.305	21
+5	44	
+
+Lewis Hamilton
+
+Ferrari	1:12.673	1:11.970	1:11.494	25
+6	16	
+
+Charles Leclerc
+
+Ferrari	1:13.064	1:11.910	1:11.558	23
+7	3	
+
+Max Verstappen
+
+Red Bull Racing	1:13.290	1:11.874	1:11.618	22
+8	30	
+
+Liam Lawson
+
+Red Bull Racing	1:13.392	1:12.301	1:11.733	25
+9	5	
+
+Gabriel Bortoleto
+
+Audi	1:13.142	1:12.433	1:12.079	22
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:13.074	1:12.525	1:12.185	22
+11	10	
+
+Pierre Gasly
+
+Alpine	1:13.115	1:12.616		14
+12	22	
+
+Yuki Tsunoda
+
+Racing Bulls	1:13.085	1:12.627		15
+13	27	
+
+Nico Hulkenberg
+
+Audi	1:13.188	1:12.797		19
+14	43	
+
+Franco Colapinto
+
+Alpine	1:13.322	1:12.800		13
+15	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:13.544	1:13.137		17
+16	23	
+
+Alex Albon
+
+Williams	1:13.552	1:13.182		16
+17	55	
+
+Carlos Sainz
+
+Williams	1:13.574			10
+18	14	
+
+Fernando Alonso
+
+Aston Martin	1:13.650			10
+19	18	
+
+Lance Stroll
+
+Aston Martin	1:13.818			10
+20	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:13.826			11
+21	77	
+
+Valtteri Bottas
+
+Cadillac	1:14.371			10
+22	11	
+
+Sergio Perez
+
+Cadillac	1:14.600			10
 
 
 `;
 
 const PASTE_RACE = `
-
+1	Lando Norris	GBR	McLaren Mastercard F1 Team	72
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	+11.5s
+3	George Russell	GBR	Mercedes AMG Petronas F1 Team	+15.9s
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	+16.7s
+5	Charles Leclerc	MON	Scuderia Ferrari HP	+17.2s
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+32.3s
+7	Liam Lawson	NZL	Oracle Red Bull Racing	+79.9s
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
+9	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+1 Lap
+10	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+11	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	+1 Lap
+12	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	+1 Lap
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
+14	Franco Colapinto	ARG	BWT Alpine F1 Team	+2 Laps
+15	Sergio Perez	MEX	Cadillac F1 Team	+2 Laps
+16	Carlos Sainz	ESP	Atlassian Williams F1 Team	+2 Laps
+17	Alex Albon	THA	Atlassian Williams F1 Team	+6 Laps
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	DNF
+DNF	Esteban Ocon	FRA	TGR Haas F1 Team	DNF
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	DNF
+DNF	Ollie Bearman	GBR	TGR Haas F1 Team	DNF
+DNF	Max Verstappen	NED	Oracle Red Bull Racing	DNF
 
 `;
 
@@ -591,10 +722,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Norris Snatches Dutch Grand Prix Pole From Russell",
                 summary:
-                  "",
-                url: "",
+                  "Lando Norris produced a 1:11.163 on his final lap to take pole from George Russell as rain began falling at Zandvoort. Kimi Antonelli qualified third, with Oscar Piastri fourth and Max Verstappen seventh. Formula 1",
+                url: "https://www.formula1.com/en/latest/article/norris-denies-russell-pole-position-in-gripping-conclusion-to-qualifying-for-dutch-grand-prix.2DoHZDC14R5tY7ygGaHCz",
               },
             ],
           },
@@ -602,10 +733,10 @@ export const raceWeekendRecap = {
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Norris Wins as Mercedes Team Orders Shape Dutch Grand Prix Podium",
                 summary:
-                  "",
-                url: "",
+                  "Lando Norris fought past Kimi Antonelli to win the Dutch Grand Prix after Max Verstappen’s opening-lap crash brought out a red flag. Mercedes later ordered George Russell to let Antonelli through for second, leaving Russell third ahead of Lewis Hamilton. The Race",
+                url: "https://www.the-race.com/formula-1/our-verdict-on-norris-win-and-mercedes-team-orders/",
               },
             ],
           },
@@ -791,7 +922,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Lando on Pole, Full results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -800,7 +931,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race Results",
-          time: "10:00 AM ADT",
+          time: "Norris wins, Full results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
