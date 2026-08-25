@@ -16,15 +16,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot2",
-    title: "Why Mercedes appears to be in big trouble",
-    youtubeInput: "https://youtu.be/d8pE2HawAwU",
-   
+    title: "Top 10 Onboards | 2026 Dutch Grand Prix | Qatar Airways",
+    youtubeInput: "https://youtu.be/HDL5mYmV3hM",
+   forceExternal: "blue"
   },
 
   {
     slotId: "slot3",
-    title: "2026 F1 DUTCH GP Race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/Vpk9mzzpS3M",
-    
+    title: "Radio Rewind | 2026 Dutch Grand Prix | Lenovo",
+    youtubeInput: "https://youtu.be/VU48smwP_q0",
+    forceExternal: "blue"
   }
 ];
