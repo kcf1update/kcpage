@@ -9,8 +9,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React After the Race | 2026 Dutch Grand Prix",
-  youtubeInput: "https://youtu.be/No8O1zMhGuk",
+  title: "Ferrari Need to Put Lewis Hamilton FIRST: Otmar Explains Why",
+  youtubeInput: "https://youtu.be/KO6SgDAd4No",
   forceExternal: "blue"
   },
 
