@@ -15,7 +15,7 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-   enabled: true,
+   enabled: false,
   label: "RACE COMPLETE",
   title: "DUTCH GRAND PRIX",
   body: "The Dutch Grand Prix is complete. Visit the Race Centre for the full results, session summaries and weekend recap.",

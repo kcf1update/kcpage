@@ -13,6 +13,74 @@ export const photoGalleryContent = {
     "All photographs in this gallery are licensed from XPB Images and used with permission for editorial purposes. Copyright remains with XPB Images and the respective photographers. Images may not be copied, downloaded, saved, reproduced, redistributed, modified, or reused without permission from XPB Images.",
 
   races: [
+     {
+      id: "Dutch-2026",
+      raceName: "Dutch Grand Prix",
+      dates: "Aug 21st–23rd, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimizandvoort.jpg",
+    alt: "Dutch Grand Prix weekend photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpb-maxzandvoort.jpg",
+    alt: "Dutch Grand Prix weekend photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
+    alt: "Dutch Grand Prix weekend photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-zandsprintpodium.jpg",
+    alt: "Dutch Grand Prix weekend photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-norrisZandsprint.jpg",
+    alt: "Dutch Grand Prix weekend photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landopolezand.jpg",
+    alt: "Dutch Grand Prix weekend photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landowinzand.jpg",
+    alt: "Dutch Grand Prix weekend photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpb-maxzandvort.jpg",
+    alt: "Dutch Grand Prix weekend photo 8",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landozandpass.jpg",
+    alt: "Dutch Grand Prix weekend photo 9",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/racingzandvoort.jpg",
+    alt: "Dutch Grand Prix weekend photo 10",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Williams/xpb-carlosandalexzandvoort.jpg",
+    alt: "Dutch Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-racezandvoort3.jpg",
+    alt: "Dutch Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+ 
+],
+    },
     {
       id: "hungary-2026",
       raceName: "Hungarian Grand Prix",

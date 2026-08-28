@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimizandvoort.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/RedBull/xpb-maxzandvoort.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
@@ -44,17 +44,17 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Races/xpb-zandsprintpodium.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-norrisZandsprint.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landopolezand.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
@@ -68,33 +68,33 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Mclaren/xpb-landowinzand.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/RedBull/xpb-maxzandvort.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landozandpass.jpg",
+          src: "",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
        
          {
-          src: "/img/news/xpb/Races/racingzandvoort.jpg",
+          src: "",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Williams/xpb-carlosandalexzandvoort.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Races/xpb-racezandvoort3.jpg",
+          src: "",
           alt: "Race day gallery image 6",
           credit: "XPB Images",
         },
