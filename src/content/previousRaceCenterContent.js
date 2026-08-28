@@ -736,17 +736,7 @@ export const raceWeekendRecap = {
               },
             ],
           },
-          {
-            heading: "Race",
-            items: [
-              {
-                title: "",
-                summary:
-                  "",
-                url: "",
-              },
-            ],
-          },
+          
         ]
       : [
           {
