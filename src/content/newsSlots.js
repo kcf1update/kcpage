@@ -1,131 +1,135 @@
 export const newsSlots = [
-  // SLOT 1
-{
-  slotId: 1,
-  sourceLabel: "Formula 1",
-  title: "F2 leader Tsolov completes first Formula 1 test with Racing Bulls",
-  summary: "Formula 2 championship leader Nikola Tsolov completed 690 kilometres in a 2025 Racing Bulls car at Imola. The 19-year-old described his first Formula 1 test as a major milestone after progressing through the Red Bull Junior Programme.",
-  kcsQuickShift: "It certainly feels like RB are setting up Tslov to replace Lawson next year. I hope not, I think it would be a mistake. If they do I hope Lawson can find another seat. Maybe replace Ocon at Haas. ",
-  url: "https://www.formula1.com/en/latest/article/f2-title-leader-tsolov-completes-first-f1-test-with-racing-bulls.5SUvLrKpgvPLIN5mzqK7gr",
-  imagePath: "/img/news/xpb/RedBull/xpbtsolov.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 1,
+    sourceLabel: "Formula 1",
+    title: "Norris Explains Why He Sees His Future at McLaren",
+    summary:
+      "Lando Norris says happiness, trust and stability were central to his decision to remain with McLaren until at least the end of 2030. He believes the team has the people and leadership needed to keep fighting for championships.",
+    kcsQuickShift: "McLaren and Zac Brown knew that they had a future star when they signed him. He helped bring them two constructors championships in a row. They gave him a car that took him to a driver's championship. It is only fitting that they stay together. Great news for Norris fans. It would be hard to imagine him in a different color other than papaya",
+    url: "https://www.formula1.com/en/latest/article/exclusive-why-lando-norris-sees-his-future-at-mclaren.5tvRpnSOqBGKmfuSAvYxlX",
+    imagePath: "/img/news/xpb/Mclaren/xpb-norriswinhungary.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 2 - BRAZILIAN PORTUGUESE
-{
-  slotId: 2,
-  sourceLabel: "Motorsport.com Brasil",
-  title: "Mercedes defende ordem de equipe no GP da Holanda | Mercedes defends Dutch GP team order",
-  summary: "A Mercedes afirmou que a troca de posições entre Kimi Antonelli e George Russell foi necessária para proteger o resultado da equipe contra as Ferraris. A equipe garante que teria tomado a mesma decisão se as posições dos pilotos estivessem invertidas. | Mercedes said swapping Kimi Antonelli and George Russell was necessary to protect the team's result against the Ferraris. The team insists it would have made the same decision if the drivers' positions had been reversed.",
-  kcsQuickShift: "Toto Wolff will do whatever he needs to do when it comes to team orders to make sure Antonelli stays in the lead in the championship. Russell better get prepared. |Toto Wolff fará tudo o que for necessário nas ordens de equipe para garantir que Antonelli continue na liderança do campeonato. É melhor Russell se preparar. ",
-  url: "https://motorsport.uol.com.br/f1/news/f1-mercedes-defende-ordem-de-equipe-no-gp-da-holanda-teriamos-feito-o-mesmo-se-fosse-ao-contrario/10849977/",
-  imagePath: "/img/news/xpb/Mercedes/xpbimages1.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 2,
+    sourceLabel: "RacingNews365.nl",
+    title:
+      "Coulthard wijst op risico in Verstappen-contract: Waarom zou je dat doen? | Coulthard Highlights Risk in Verstappen Contract: Why Would You Do That?",
+    summary:
+      "Max Verstappen heeft zijn contract bij Red Bull verlengd tot eind 2030, maar David Coulthard vraagt zich af hoeveel zulke lange deals werkelijk betekenen. Hij wijst erop dat prestatieclausules coureurs een uitweg kunnen bieden als het team zijn doelen niet haalt. | Max Verstappen has extended his Red Bull contract through 2030, but David Coulthard questions how much such long deals truly mean. He notes that performance clauses can give drivers a way out if the team misses its targets.",
+    kcsQuickShift: "That is the first time I have heard of this -Drivers who have a contract with a team but also a provisional agreement with a competitor, should you leave your current team - Bizarre really. I think it was either Liam Lawson or Sergio Perez who said there is no loyalty in F1. I prefer to think there is. I think Verstappen and Norris are an example of that. | Dit is de eerste keer dat ik hoor over coureurs die een contract hebben bij een team, maar ook een voorlopige overeenkomst met een concurrent voor het geval ze hun huidige team verlaten. Bizar eigenlijk. Volgens mij was het Liam Lawson of Sergio Pérez die zei dat er geen loyaliteit bestaat in de Formule 1. Ik geloof liever dat die er wel is. Verstappen en Norris zijn daar volgens mij goede voorbeelden van.",
+    url: "https://racingnews365.nl/coulthard-wijst-op-risico-met-verstappen-waarom-zou-je-dat-doen",
+    imagePath: "/img/news/xpb/Redbull/xpbmaxspain2.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 3
-{
-  slotId: 3,
-  sourceLabel: "RacingNews365",
-  title: "George Russell handed blunt Valtteri Bottas comparison",
-  summary: "Guenther Steiner believes George Russell may now be following a similar path to Valtteri Bottas at Mercedes as Kimi Antonelli leads him by 59 points. Steiner says Russell may eventually need to look elsewhere if he does not want to remain in a supporting role.",
-  kcsQuickShift: "This is not Russell's year for the championship. He can and probably will win a couple more races. But for the rest of the year he is Kimi Antonelli's teammate",
-  url: "https://racingnews365.com/george-russell-dealt-brutal-valtteri-bottas-comparison-it-looks-like-it",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbgeorge.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 3,
+    sourceLabel: "GPblog",
+    title:
+      "Red Bull Ford Tops FIA Engine Ranking, but Mercedes Leads 81 Percent of F1 Laps",
+    summary:
+      "The FIA ranked the Red Bull Ford combustion engine as the benchmark while placing Mercedes between two and four percent behind. However, Mercedes powered cars have led 605 of the first 745 racing laps this season, showing that engine performance alone does not determine results.",
+    kcsQuickShift: "I'm not surprised with the power of the Ford engine a lot of money behind that program. If we get back to V8's they will be a force to be reckoned with ",
+    url: "https://www.gpblog.com/en/analysis/red-bull-ford-engine-sets-the-benchmark-but-stats-tell-a-different-story",
+    imagePath: "/img/news/xpb/RedBull/xpb-redbullengine.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 4 - BRAZILIAN PORTUGUESE
-{
-  slotId: 4,
-  sourceLabel: "Motorsport.com Brasil",
-  title: "Por que a McLaren precisa passar no teste de Monza antes de pensar no título | Why McLaren must pass the Monza test before thinking about the title",
-  summary: "As vitórias da McLaren na Hungria e na Holanda aconteceram em pistas que favoreceram os pontos fortes do MCL40. Monza será um teste muito diferente para verificar o progresso da equipe nas retas, nas curvas lentas e no gerenciamento de energia. | McLaren's wins in Hungary and the Netherlands came at tracks that suited the MCL40's strengths. Monza will provide a very different test of the team's progress on the straights, through slow corners and with energy management.",
-  kcsQuickShift: "If McLaren can master the slow corners and chicanes of Monza they will be hard to beat the rest of the year. | Se a McLaren conseguir dominar as curvas lentas e as chicanes de Monza, será difícil vencê-la no restante do ano.",
-  url: "https://motorsport.uol.com.br/f1/news/f1-por-que-mclaren-precisa-passar-no-teste-de-monza-antes-de-pensar-em-disputa-pelo-titulo-/10849966/",
-  imagePath: "/img/news/xpb/Mclaren/news-xpboscar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 27, 2026",
-},
+  {
+    slotId: 4,
+    sourceLabel: "Formel1.de",
+    title:
+      "Williams-Krise: Selbst Aston Martin jetzt in einer ganz anderen Liga | Williams Crisis: Even Aston Martin Is Now in a Completely Different League",
+    summary:
+      "Williams blieb in Zandvoort zum sechsten Mal in Folge ohne Punkte. Carlos Sainz sagt, dass das aktuelle Auto nur schneller als Cadillac sei, während das große Update erst in Baku erwartet wird. | Williams went without points for a sixth consecutive race at Zandvoort. Carlos Sainz says the current car is only faster than Cadillac, while the major update is not expected until Baku.",
+    kcsQuickShift: "Almost three month without a point for either driver. I keep saying it, it is time for a change of management. | Seit fast drei Monaten hat keiner der beiden Fahrer einen Punkt geholt. Ich sage es immer wieder: Es ist Zeit für einen Wechsel in der Teamführung.",
+    url: "https://www.formel1.de/news/news/2026-08-29/williams-krise-selbst-aston-martin-jetzt-in-einer-ganz-anderen-liga",
+    imagePath: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 5
-{
-  slotId: 5,
-  sourceLabel: "Crash.net",
-  title: "Ferrari urged to back Hamilton in 2026 title fight",
-  summary: "Former Ferrari engineer Rob Smedley and former F1 team principal Otmar Szafnauer believe Ferrari should prioritise Lewis Hamilton in the championship fight. Hamilton is tied with George Russell, 59 points behind leader Kimi Antonelli, while Charles Leclerc is another 28 points back.",
-  kcsQuickShift: "I agree with both of them. It will be hard for Ferrari to favour Hamilton over Leclerc but if they want a chnace at the title that is what they will have to do.",
-  url: "https://www.crash.net/f1/news/1103065/1/ferrari-urged-make-decisive-lewis-hamilton-call-f1-title-hopes",
-  imagePath: "/img/news/Ferrari/lewissilver.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 5,
+    sourceLabel: "Crash.net",
+    title: "Verstappen Deal Eases Pressure on Formula 1 Leadership",
+    summary:
+      "Max Verstappen’s decision to remain with Red Bull and Formula 1 until 2030 has removed a major concern for F1 CEO Stefano Domenicali. Verstappen remains critical of the current regulations but is prepared to give the sport time to improve them.",
+    kcsQuickShift: "He is out spoken which is good for the sport.",
+    url: "https://www.crash.net/f1/news/1103045/1/how-max-verstappens-new-deal-has-shielded-f1-boss-uncomfortable-questions",
+    imagePath: "/img/news/xpb/RedBull/newsxpbmaxmonaco.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 6
-{
-  slotId: 6,
-  sourceLabel: "Read Motorsport",
-  title: "Pérez disappointed as Cadillac development stalls",
-  summary: "Sergio Pérez says Cadillac's lack of recent development has made the last few races disappointing. He believes the new team has found roughly one second of performance this season but had expected to find closer to two seconds.",
-  kcsQuickShift: "They will find there way, give them a chance. ",
-  url: "https://readmotorsport.com/2026/08/28/sergio-perez-cadillac-f1-2026-development-stall/",
-  imagePath: "/img/news/shut/cadillac/shut-sergio.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 6,
+    sourceLabel: "GrandPrix247",
+    title: "Pérez Finds Motivation Even at the Back With Cadillac",
+    summary:
+      "Sergio Pérez says competing in Formula 1 provides enough motivation despite Cadillac’s struggles near the back. He remains driven by working with leading engineers and measuring himself against teammate Valtteri Bottas.",
+    kcsQuickShift: "I like Sergio Perez. He understands the privledge of being able to compete in the sport. I hope he stays long enough to find some success with Cadillac.",
+    url: "https://www.grandprix247.com/formula-1-news/simply-being-in-formula-1-gives-sergio-perez-sufficient-motivation",
+    imagePath: "/img/news/xpb/Cadillac/news-xpbperez.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 7
-{
-  slotId: 7,
-  sourceLabel: "PlanetF1",
-  title: "Williams faces spare parts pressure before Monza and Madrid",
-  summary: "James Vowles admits Williams expects to be in a difficult position with spare parts during the next two race weekends. The team is also preparing a major upgrade for Baku while working to fix the production problems that have affected it since the winter.",
-  kcsQuickShift: "I am sorry to say this but I think Williams needs new leadership. There is no excuse for having an issue with spare parts. This is The highest form of Motorsports. They just offered Carlos Sainz a big raise, so they have the money to make sure that parts ar there when they need them. ",
-  url: "https://www.planetf1.com/news/williams-spare-parts",
-  imagePath: "/img/news/xpb/Williams/news-xpbjames.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 7,
+    sourceLabel: "RacingNews365",
+    title: "Haas Tests Three Formula 1 Prospects at Portimão",
+    summary:
+      "Haas evaluated Ryo Hirakawa, Leonardo Fornaroli and Rafael Câmara during a three day test using its 2025 car at Portimão. The running comes as Oliver Bearman and Esteban Ocon negotiate possible extensions for 2027.",
+    kcsQuickShift: "Ollie Bearman is a lock for the seat but I think Ocon is in trouble. My only hope is that if Lawson loses his ride to Tsolov, Haas give him a chance.",
+    url: "https://racingnews365.com/haas-test-f1-prospects-as-driver-appraisal-continues",
+    imagePath: "/img/news/xpb/Haas/xpb-ayao.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 8 - FRENCH
-{
-  slotId: 8,
-  sourceLabel: "L'Équipe",
-  title: "Marc Márquez revient sur ses conseils à Isack Hadjar après son forfait | Marc Márquez reflects on his advice to Isack Hadjar after his withdrawal",
-  summary: "Marc Márquez a conseillé à Isack Hadjar de ne pas précipiter son retour après sa blessure à la main gauche. Fort de sa propre expérience, Márquez estime que Hadjar a pris la bonne décision en manquant Zandvoort pour éviter d'aggraver sa blessure. | Marc Márquez advised Isack Hadjar not to rush his return after injuring his left hand. Drawing on his own experience, Márquez believes Hadjar made the right decision by missing Zandvoort rather than risking a worse injury.",
-  kcsQuickShift: "Good choice by Isack. Shows maturity and good people around him.",
-  url: "https://www.lequipe.fr/Formule-1/Actualites/Marc-marquez-revient-sur-ses-conseils-a-isack-hadjar-apres-son-forfait-sur-blessure-il-a-pris-une-bonne-decision/1713983",
-  imagePath: "/img/news/xpb/RedBull/xpbhadjar.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 27, 2026",
-},
+  {
+    slotId: 8,
+    sourceLabel: "F1i Auto Journal",
+    title:
+      "Red Bull reconnaît son erreur avec Liam Lawson : Ce n’était pas la fin qu’il méritait | Red Bull Admits Its Mistake With Liam Lawson: It Was Not the Ending He Deserved",
+    summary:
+      "Laurent Mekies reconnaît que Liam Lawson méritait mieux que d’être rétrogradé après seulement deux courses avec Red Bull en 2025. De retour dans l’équipe à Zandvoort, le Néo-Zélandais a saisi sa chance avec une septième place et six points. | Laurent Mekies admits Liam Lawson deserved better than being demoted after only two races with Red Bull in 2025. Back with the team at Zandvoort, the New Zealander took his opportunity by finishing seventh and scoring six points.",
+    kcsQuickShift: "It was tough to watch. Looking back, though, I wonder if he thinks it was the best thing that could have happened to him. Tsunoda does not have a seat this year, but Lawson still does, and he is showing his worth as a driver. | C’était difficile à regarder. Mais avec le recul, je me demande s’il pense que c’était la meilleure chose qui pouvait lui arriver. Tsunoda n’a pas de baquet cette année, mais Lawson en a toujours un et il montre toute sa valeur en tant que pilote.",
+    url: "https://f1i.autojournal.fr/infos/mea-culpa/red-bull-reconnait-son-erreur-avec-liam-lawson-ce-netait-pas-la-fin-quil-meritait/",
+    imagePath: "/img/news/xpb/Visa/xpblawson.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 9
-{
-  slotId: 9,
-  sourceLabel: "AutoRacing1",
-  title: "Billion dollar talk grows around Verstappen's new Red Bull deal",
-  summary: "Robert Doornbos believes Max Verstappen's total earnings could approach one billion dollars by 2030 when salary, bonuses and personal sponsorships are included. Reported estimates place his annual Red Bull salary between €70 million and €90 million, although team principal Laurent Mekies says those figures are incorrect.",
-  kcsQuickShift: "Max Verstappen is Red Bull, they will pay him whatever they need to. If you doubt that watch Sergio Perez on the High Performance Podcast. Christian Horner also found out the hard way.",
-  url: "https://www.autoracing1.com/pl/502501/formula-1-news-billion-dollar-verstappen-deal-talk-grows/",
-  imagePath: "/img/news/xpb/RedBull/xpbmax.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 28, 2026",
-},
+  {
+    slotId: 9,
+    sourceLabel: "Motorsport.com",
+    title: "Russell Treats Mercedes Staff to Silverstone Karting Day",
+    summary:
+      "George Russell invited 170 Mercedes employees from Brackley and Brixworth to a private karting event at Silverstone. Russell raced alongside the team members before presenting medals at the end of the day.",
+    kcsQuickShift: "Good on Russell. He will need the team and staff on his side if he has any chance at the championship this year. I'm not saying that is the only reason he did this, but it sure doesn't hurt.",
+    url: "https://www.motorsport.com/f1/news/george-russell-treats-mercedes-team-members-to-special-silverstone-karting-event/10850266/",
+    imagePath: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 
-// SLOT 10
-{
-  slotId: 10,
-  sourceLabel: "Motorsport.com",
-  title: "Alex Albon opens up about burnout amid growing F1 demands",
-  summary: "Alex Albon says Formula 1's growing commercial demands left him badly burnt out during the 2025 season, particularly around the American races. He now makes more time to get away from the F1 environment and recover between events.",
-  kcsQuickShift: "I can't even imagine the schedule these driver and teams have to handle, I get stressed when I have more than two chores for the day.",
-  url: "https://www.motorsport.com/f1/news/alex-albon-opens-up-about-burnout-amid-growing-f1-demands/10849812/",
-  imagePath: "/img/news/xpb/Williams/xpbAlex.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "August 27, 2026",
-},
+  {
+    slotId: 10,
+    sourceLabel: "Read Motorsport",
+    title: "Ukraine Takes FIA Russia Dispute to Ethics Committee",
+    summary:
+      "The Ukrainian Automobile Federation has filed a formal ethics complaint alleging that its Russian counterpart operates motorsport offices inside internationally recognized Ukrainian territory. The complaint follows the FIA’s decision to lift restrictions on Russian and Belarusian competitors.",
+    kcsQuickShift: "In my oppinion this is a huge mistake by the FIA. Russia and Belarussian competitors should be banned. Period",
+    url: "https://readmotorsport.com/2026/08/28/ukraine-fia-complaint-ethics-committee-russia-ban/",
+    imagePath: "/img/news/kcai/news-FIA.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "August 29, 2026",
+  },
 ];

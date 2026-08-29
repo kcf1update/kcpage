@@ -9,16 +9,16 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Ferrari Need to Put Lewis Hamilton FIRST: Otmar Explains Why",
-  youtubeInput: "https://youtu.be/KO6SgDAd4No",
-  forceExternal: "blue"
+  title: "Lando Norris explains McLaren new contract decision ",
+  youtubeInput: "https://youtu.be/usvnix1nYBc",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Top 10 Onboards | 2026 Dutch Grand Prix | Qatar Airways",
-    youtubeInput: "https://youtu.be/HDL5mYmV3hM",
-   forceExternal: "blue"
+    title: "FERRARI CAN'T KEEP DOING THIS! F1 News",
+    youtubeInput: "https://youtu.be/V4g_38sjNsg",
+   
   },
 
   {
