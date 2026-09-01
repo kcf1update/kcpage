@@ -58,6 +58,7 @@ export default function SiteHeader() {
   Photo Gallery
 </Link>
             <Link onClick={() => setMenuOpen(false)} to="/youtube">YouTube</Link>
+            <Link onClick={() => setMenuOpen(false)} to="/comments">Comments</Link>
           </div>
         </div>
       )}

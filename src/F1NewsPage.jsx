@@ -1,6 +1,6 @@
 // src/F1NewsPage.jsx
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 
 import AdBar from "./AdBar.jsx";
@@ -162,6 +162,14 @@ export default function F1NewsPage() {
                       </p>
                     </div>
                   ) : null}
+                </div>
+                                <div className="mt-auto px-4 pb-4">
+                  <Link
+                    to="/comments"
+                    className="inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white"
+                  >
+                    💬 Comment
+                  </Link>
                 </div>
               </article>
             );
