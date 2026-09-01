@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 
 import AdBar from "./AdBar.jsx";
-import TopCard from "./components/TopCard";
+
+import SiteHeader from "./components/SiteHeader";
 
 
 const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
@@ -266,19 +267,7 @@ export default function CommentsPage() {
   return (
     <div className="relative min-h-screen bg-[#545454]">
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
-        <TopCard>
-          <TopCard.Header
-            title="Comments"
-            subtitle="Have your say — quick, friendly, and spam-resistant."
-            logoSrc="/img/kcs-f1-car.png"
-          />
-        </TopCard>
-
-        <div className="flex items-center">
-          
-          <div className="shrink-0" />
-        </div>
-
+  <SiteHeader />
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 items-start">
           <main className="md:col-span-9 lg:col-span-10">
             <section className="rounded-3xl border border-blue-200 bg-white p-4 backdrop-blur text-blue-900">
