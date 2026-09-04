@@ -15,13 +15,13 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-   enabled: false,
-  label: "RACE COMPLETE",
-  title: "DUTCH GRAND PRIX",
-  body: "The Dutch Grand Prix is complete. Visit the Race Centre for the full results, session summaries and weekend recap.",
+   enabled: true,
+  label: "RACE WEEKEND",
+  title: "ITALIAN GRAND PRIX",
+  body: "The Italian Grand Prix weekend is underway at Monza. Visit the Race Centre for the full schedule, practice results, session summaries and weekend updates.",
   buttonText: "View the Race Centre →",
   buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/dutchgp.jpg",
+  backgroundImage: "/img/news/raceposter/monza.jpg",
 };
 // ===================================================
 // Full image announcement card

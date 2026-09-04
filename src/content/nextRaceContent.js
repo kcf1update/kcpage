@@ -352,6 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	Charles Leclerc	MON	Scuderia Ferrari HP	1m23.008s	28
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m23.181s	25
+3	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m23.312s	25
+4	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.433s	25
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m23.644s	26
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m23.719s	25
+7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m23.802s	28
+8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m24.006s	20
+9	Franco Colapinto	ARG	BWT Alpine F1 Team	1m24.028s	26
+10	Paul Aron	EST	BWT Alpine F1 Team	1m24.177s	22
+11	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m24.184s	25
+12	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m24.571s	26
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m24.626s	26
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m24.646s	27
+15	Luke Browning	GBR	Atlassian Williams F1 Team	1m24.740s	25
+16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m24.827s	24
+17	Ayumu Iwasa	JAP	Oracle Red Bull Racing	1m24.873s	24
+18	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m26.072s	20
+19	Esteban Ocon	FRA	TGR Haas F1 Team	1m25.852s	25
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m25.984s	26
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m26.066s	22
+22	Colton Herta	USA	Cadillac F1 Team	1m29.922s	5
 
 
  
@@ -465,9 +487,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "",
-      summary: "",
-      url: "",
+        "Ferrari Starts Monza Weekend With an FP1 One-Two",
+      summary: "Charles Leclerc set the fastest time in first practice at Monza, leading Ferrari teammate Lewis Hamilton. George Russell finished third for Mercedes, with Liam Lawson fourth for Red Bull. Four substitute drivers also took part in the session.",
+      url: "https://www.formula1.com/en/latest/article/fp1-leclerc-leads-hamilton-and-russell-during-first-practice-at-the-italian-grand-prix.7DUTqVtZlb4zvqNfBsyl1t",
     },
   ],
 },
@@ -565,7 +587,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "7:30 AM ADT",
+          time: "Leclerc fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
