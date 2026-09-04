@@ -380,6 +380,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m22.559s	30
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m22.679s	29
+3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m22.700s	32
+4	Lando Norris	GBR	McLaren Mastercard F1 Team	1m22.943s	25
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m23.016s	27
+6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m23.028s	25
+7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m23.349s	26
+8	Ollie Bearman	GBR	TGR Haas F1 Team	1m23.370s	29
+9	Max Verstappen	NED	Oracle Red Bull Racing	1m23.377s	30
+10	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m23.455s	28
+11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m23.619s	28
+12	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.660s	36
+13	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m23.732s	28
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m23.773s	27
+15	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m23.776s	22
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m23.853s	30
+17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.900s	30
+18	Esteban Ocon	FRA	TGR Haas F1 Team	1m24.407s	30
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m25.027s	18
+20	Sergio Perez	MEX	Cadillac F1 Team	1m25.082s	27
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m25.149s	28
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m25.253s	27
 
 
 `;
@@ -497,9 +519,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "",
-      summary: "",
-      url: "",
+      title: "Russell Puts Mercedes on Top in FP2",
+      summary: "George Russell led FP2 at Monza with a 1:22.559, finishing 0.120 seconds ahead of Charles Leclerc, while Kimi Antonelli took third. Lando Norris finished fourth after a dangerous near miss with Lance Stroll forced him onto the grass under braking at the first chicane. Leclerc later spun at the second chicane but continued without damage.",
+      url: "https://www.the-race.com/formula-1/mercedes-leads-ferrari-f1-2026-italian-gp-what-you-need-to-know/",
     },
   ],
 },

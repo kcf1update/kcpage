@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "img/news/xpb/Mercedes/xpb-georgemonza.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgemonza.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mclaren/xpb-landomonza.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-georgemonza2.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },

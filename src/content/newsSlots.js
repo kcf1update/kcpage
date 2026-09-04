@@ -1,43 +1,45 @@
 export const newsSlots = [
    {
+  
   slotId: 1,
-  sourceLabel: "RacingNews365",
-  title: "Ferrari Leads the Way With Monza FP1 One-Two",
+  sourceLabel: "The Race",
+  title: "Russell Puts Mercedes on Top in Monza FP2",
   summary:
-    "Charles Leclerc led Lewis Hamilton as Ferrari opened its home weekend with a one-two in first practice. George Russell finished third for Mercedes, with Liam Lawson fourth for Red Bull.",
-  kcsQuickShift: "Ferrari is usually strong at the start of the weekend. Now let's see if they can keep it up for the rest of the weekend.",
-  url: "https://racingnews365.com/ferrari-send-ominous-monza-warning-with-fp1-domination",
-  imagePath: "/img/news/shut/ferrari/news-shutferrari.jpg",
+    "George Russell set the fastest time in second practice for the Italian Grand Prix, narrowly beating Ferrari’s Charles Leclerc. Kimi Antonelli finished third for Mercedes, although the championship leader will start Sunday’s race from the back because of his power-unit penalty.",
+  kcsQuickShift: "I don't know i still think it will be a Ferrari weekend, but Mercedes is looking strong.",
+  url: "https://www.the-race.com/formula-1/mercedes-leads-ferrari-f1-2026-italian-gp-what-you-need-to-know/",
+  imagePath: "/img/news/xpb/Mclaren/xpb-landomonza.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "September 4, 2026",
 },
 
   {
   slotId: 2,
-  sourceLabel: "FormulaPassion",
+  sourceLabel: "FormulaPassion.it",
   title:
-    "Ufficiale: Antonelli partirà dall’ultima fila a Monza | Official: Antonelli Will Start from the Back Row at Monza",
+    "Scintille tra Stella e Briatore in conferenza stampa a Monza | Sparks Fly Between Stella and Briatore at Monza Press Conference",
   summary:
-    "La Mercedes ha montato nuovi componenti della power unit sulla vettura di Kimi Antonelli, facendo scattare una penalità che lo costringerà a partire dall’ultima fila nel suo Gran Premio di casa. Il leader del campionato dovrà quindi rimontare durante la gara. | Mercedes has installed new power-unit components in Kimi Antonelli’s car, triggering a penalty that will force him to start his home Grand Prix from the back row. The championship leader will now have to fight his way through the field.",
-  kcsQuickShift: "I say top 5 finish, am I wrong? let me know in the comments. | Dico top 5, sbaglio? Fatemi sapere nei commenti.",
-  url: "https://www.formulapassion.it/f1/f1-news/ufficiale-monza-penalita-antonelli-parte-dallultima-fila-motore-mercedes",
-  imagePath: "/img/news/xpb/Mercedes/news-kimipole2.jpg",
-  photoCredit: "XPB IMAGES",
+    "Flavio Briatore ha messo in dubbio l’imparzialità di un giudice coinvolto nella decisione di ripristinare le penalità di Pierre Gasly a Monaco, sostenendo che avesse legami con McLaren. Andrea Stella ha definito le accuse offensive e ha avvertito che Briatore dovrà assumersi la responsabilità delle sue dichiarazioni. | Flavio Briatore questioned the impartiality of a judge involved in the decision to reinstate Pierre Gasly’s Monaco penalties, claiming he had links to McLaren. Andrea Stella called the accusations insulting and warned that Briatore would have to take responsibility for his comments.",
+  kcsQuickShift: "Holy crap, accusations of favoritism and legal action. Must have been awesome to be there and witness it. By all accounts, Stella doesn't back down to anyone. | Accidenti, accuse di favoritismo e azioni legali. Dev'essere stato fantastico essere lì e assistere. A quanto pare, Stella non accetta nulla passivamente.",
+  url: "https://www.formulapassion.it/f1/f1-news/scintille-tra-stella-e-briatore-in-conferenza-stampa-a-monza-gasly-monaco-hadjar",
+  imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
+  photoCredit: "Shutterstock",
   dateLabel: "September 4, 2026",
 },
 
   {
-  slotId: 3,
-  sourceLabel: "RacingNews365",
-  title: "Gasly Loses Monaco Podium After FIA Court Ruling",
+   slotId: 3,
+     sourceLabel: "Motorsport.com",
+  title: "Briatore Questions the Integrity of the Monaco GP Appeal",
   summary:
-    "The FIA International Court of Appeal has overturned the decision that restored Pierre Gasly to third place in Monaco. His two five-second penalties return, dropping him to seventh and moving Isack Hadjar back onto the podium.",
-  kcsQuickShift: "Sounds like a lot of legal wrangling. I think the FIA should have just left it as it was",
-  url: "https://racingnews365.com/pierre-gasly-stripped-of-monaco-gp-podium-after-fia-court-ruling",
-  imagePath: "/img/news/Alpine/Gasly/monacogasly.jpg",
-  photoCredit: "Courtesy of Alpine F1",
+    "Flavio Briatore questioned the fairness of the appeal process that reinstated Pierre Gasly’s Monaco penalties. The Alpine executive claimed that one of the judges had links to McLaren, while Andrea Stella firmly rejected the allegations and defended the integrity of the FIA’s International Court of Appeal.",
+  kcsQuickShift: "Briatore's claims raise questions about the appeal process and we know he like to be a disrupter. t's the FIA's fault. I mean what did they think was going to happen? What does everybody else think?",
+  url: "https://www.motorsport.com/f1/news/flavio-briatore-questions-monaco-gp-appeal-integrity-in-extraordinary-monza-press-conference/10852228/",
+  imagePath: "/img/news/shut/news-shutflavio.jpg",
+  photoCredit: "Shutterstock",
   dateLabel: "September 4, 2026",
 },
+
 
 // SLOT 4 — ITALIAN
 {

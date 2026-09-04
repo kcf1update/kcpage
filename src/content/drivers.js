@@ -14,7 +14,7 @@ const rawDrivers = [
   // Red Bull
   { id: "VER", name: "Max Verstappen", number: 3, countryCode: "nl", team: "Red Bull" },
    { id: "LAW", name: "Liam Lawson", number: 30, countryCode: "nz", team: "Red Bull" },
-{ id: "IWA", name: "Ayumu Iwasa", number: 40, countryCode: "jp", team: "Red Bull" },
+
   // Ferrari
   { id: "LEC", name: "Charles Leclerc", number: 16, countryCode: "mc", team: "Ferrari" },
   { id: "HAM", name: "Lewis Hamilton", number: 44, countryCode: "gb", team: "Ferrari" },
@@ -22,7 +22,7 @@ const rawDrivers = [
   // Williams
   { id: "ALB", name: "Alex Albon", number: 23, countryCode: "th", team: "Williams" },
   { id: "SAI", name: "Carlos Sainz", number: 55, countryCode: "es", team: "Williams" },
-{ id: "BRO", name: "Luke Browning", number: 46, countryCode: "gb", team: "Williams" },
+
   // Racing Bulls
   {id: "TSU", name: "Yuki Tsunoda", number: 22, countryCode: "jp", team: "Racing Bulls" },
   { id: "LIN", name: "Arvid Lindblad", number: 41, countryCode: "gb", team: "Racing Bulls" },
@@ -42,11 +42,11 @@ const rawDrivers = [
   // Alpine
   { id: "GAS", name: "Pierre Gasly", number: 10, countryCode: "fr", team: "Alpine" },
   { id: "COL", name: "Franco Colapinto", number: 43, countryCode: "ar", team: "Alpine" },
- { id: "ARO", name: "Paul Aron", number: 97, countryCode: "ee", team: "Alpine" },
+ 
   // Cadillac
   { id: "PER", name: "Sergio Perez", number: 11, countryCode: "mx", team: "Cadillac" },
   { id: "BOT", name: "Valtteri Bottas", number: 77, countryCode: "fi", team: "Cadillac" },
-  { id: "HER", name: "Colton Herta", number: 25, countryCode: "us", team: "Cadillac" },
+  
 ];
 
 export const DRIVERS = rawDrivers.map((driver) => ({
