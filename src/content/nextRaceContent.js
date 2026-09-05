@@ -440,6 +440,116 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	10	
+
+Pierre Gasly
+
+Alpine	1:22.612	1:22.077	1:21.786	18
+2	63	
+
+George Russell
+
+Mercedes	1:22.779	1:22.161	1:21.846	17
+3	81	
+
+Oscar Piastri
+
+McLaren	1:22.924	1:22.017	1:21.966	18
+4	16	
+
+Charles Leclerc
+
+Ferrari	1:22.902	1:22.509	1:22.004	18
+5	44	
+
+Lewis Hamilton
+
+Ferrari	1:22.847	1:22.516	1:22.011	15
+6	3	
+
+Max Verstappen
+
+Red Bull Racing	1:22.631	1:22.188	1:22.070	17
+7	12	
+
+Kimi Antonelli
+
+Mercedes	1:22.758	1:21.882	1:22.093	18
+8	43	
+
+Franco Colapinto
+
+Alpine	1:22.662	1:22.400	1:22.220	18
+9	1	
+
+Lando Norris
+
+McLaren	1:22.659	1:22.067	1:22.256	19
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:22.727	1:22.345	1:22.286	18
+11	5	
+
+Gabriel Bortoleto
+
+Audi	1:22.946	1:22.517		12
+12	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:22.906	1:22.756		15
+13	27	
+
+Nico Hulkenberg
+
+Audi	1:23.440	1:22.779		12
+14	30	
+
+Liam Lawson
+
+Red Bull Racing	1:22.989	1:22.821		17
+15	55	
+
+Carlos Sainz
+
+Williams	1:23.616	1:23.453		15
+16	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:23.466	1:23.454		15
+17	22	
+
+Yuki Tsunoda
+
+Racing Bulls	1:23.755			6
+18	23	
+
+Alex Albon
+
+Williams	1:24.356			6
+19	77	
+
+Valtteri Bottas
+
+Cadillac	1:24.364			9
+20	11	
+
+Sergio Perez
+
+Cadillac	1:24.595			9
+21	14	
+
+Fernando Alonso
+
+Aston Martin	1:25.150			6
+22	18	
+
+Lance Stroll
+
+Aston Martin	1:25.222			9
 
 
 `;
@@ -564,10 +674,10 @@ summary:
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Gasly Stuns Monza With His First F1 Pole",
 summary:
-  "",
-                url: "",
+  "Pierre Gasly produced a remarkable final lap of 1:21.786 to claim the first pole position of his Formula 1 career at the circuit where he won his first race in 2020. The Alpine driver beat George Russell by only 0.060 seconds, with Oscar Piastri taking third. Ferrari recovered from nearly losing both cars in Q2 to place Charles Leclerc fourth and Lewis Hamilton fifth, with Hamilton surviving Q2 by just 0.001 seconds. Max Verstappen qualified sixth, while Kimi Antonelli finished seventh before his engine penalty. Franco Colapinto took an impressive eighth, ahead of Lando Norris, who struggled with brake problems, and Arvid Lindblad. Formula 1, FormulaPassion",
+                url: "https://www.formula1.com/en/latest/article/gasly-charges-to-sensational-maiden-f1-pole-at-monza-over-russell-and-piastri.4CKkkbvgmqL04ijMNBfuXF",
               },
             ],
           },
@@ -658,7 +768,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT",
+          time: "Gasly on Pole!, results below",
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
