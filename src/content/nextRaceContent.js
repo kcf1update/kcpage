@@ -407,7 +407,29 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m22.219s	14
+2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m22.445s	21
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m22.569s	24
+4	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m22.580s	18
+5	Lando Norris	GBR	McLaren Mastercard F1 Team	1m22.625s	18
+6	Charles Leclerc	MON	Scuderia Ferrari HP	1m22.708s	21
+7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m22.724s	21
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m22.773s	21
+9	Pierre Gasly	FRA	BWT Alpine F1 Team	1m22.898s	24
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	1m23.101s	23
+11	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m23.126s	22
+12	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.203s	23
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m23.203s	21
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m23.298s	23
+15	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m23.585s	16
+16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.817s	28
+17	Esteban Ocon	FRA	TGR Haas F1 Team	1m23.875s	25
+18	Alex Albon	THA	Atlassian Williams F1 Team	1m24.020s	29
+19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m24.437s	20
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m24.919s	20
+21	Sergio Perez	MEX	Cadillac F1 Team	1m25.031s	20
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m25.555s	20
+ 
 `;
 const PASTE_SQ = `
 
@@ -529,11 +551,11 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
     {
- title: "",
+ title: "Russell Leads Hamilton and Verstappen in Monza FP3",
 
 summary:
-  "",
-      url: "",
+  "George Russell topped final practice with a 1:22.219, finishing 0.226 seconds ahead of Lewis Hamilton, with Max Verstappen third. A busy session also featured a tense on-track moment between Hamilton and Verstappen and a spin for Liam Lawson. Kimi Antonelli finished fourth, followed by Lando Norris and Charles Leclerc.",
+      url: "https://www.formula1.com/en/latest/article/fp3-russell-goes-fastest-from-hamilton-and-verstappen-in-final-italy-practice.6i9o4gazCqUo3UtLVRgoe8",
     },
   ],
 },
@@ -618,7 +640,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "11:00 AM ADT",
+          time: "Russell Fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -627,7 +649,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Russell Fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),

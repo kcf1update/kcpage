@@ -2,29 +2,29 @@ export const newsSlots = [
    {
   
   slotId: 1,
-  sourceLabel: "The Race",
-  title: "Russell Puts Mercedes on Top in Monza FP2",
+  sourceLabel: "Formula 1",
+  title: "Russell Leads Hamilton and Verstappen in Final Monza Practice",
   summary:
-    "George Russell set the fastest time in second practice for the Italian Grand Prix, narrowly beating Ferrari’s Charles Leclerc. Kimi Antonelli finished third for Mercedes, although the championship leader will start Sunday’s race from the back because of his power-unit penalty.",
-  kcsQuickShift: "I don't know i still think it will be a Ferrari weekend, but Mercedes is looking strong.",
-  url: "https://www.the-race.com/formula-1/mercedes-leads-ferrari-f1-2026-italian-gp-what-you-need-to-know/",
-  imagePath: "/img/news/xpb/Mclaren/xpb-landomonza.jpg",
+    "George Russell set the pace in a busy final practice at Monza with a lap of 1:22.219. Lewis Hamilton finished second for Ferrari, with Max Verstappen third and Kimi Antonelli fourth.",
+  kcsQuickShift: "Russell look strong, a big move up to third for max from 9th yesterday. Surprised by Norris only at p5. I thought he would be faster. Whats everybody guess for Qualifying?",
+  url: "https://www.formula1.com/en/latest/article/fp3-russell-goes-fastest-from-hamilton-and-verstappen-in-final-italy-practice.6i9o4gazCqUo3UtLVRgoe8",
+  imagePath: "/img/news/xpb/Mercedes/xpb-russellmonza4.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 4, 2026",
+  dateLabel: "September 5, 2026",
 },
 
   {
   slotId: 2,
-  sourceLabel: "FormulaPassion.it",
+  sourceLabel: "FormulaPassion",
   title:
-    "Scintille tra Stella e Briatore in conferenza stampa a Monza | Sparks Fly Between Stella and Briatore at Monza Press Conference",
+    "Accuse di Briatore sul caso Gasly, la FIA difende i propri giudici | Briatore Accuses FIA Over Gasly Case as Governing Body Defends Its Judges",
   summary:
-    "Flavio Briatore ha messo in dubbio l’imparzialità di un giudice coinvolto nella decisione di ripristinare le penalità di Pierre Gasly a Monaco, sostenendo che avesse legami con McLaren. Andrea Stella ha definito le accuse offensive e ha avvertito che Briatore dovrà assumersi la responsabilità delle sue dichiarazioni. | Flavio Briatore questioned the impartiality of a judge involved in the decision to reinstate Pierre Gasly’s Monaco penalties, claiming he had links to McLaren. Andrea Stella called the accusations insulting and warned that Briatore would have to take responsibility for his comments.",
-  kcsQuickShift: "Holy crap, accusations of favoritism and legal action. Must have been awesome to be there and witness it. By all accounts, Stella doesn't back down to anyone. | Accidenti, accuse di favoritismo e azioni legali. Dev'essere stato fantastico essere lì e assistere. A quanto pare, Stella non accetta nulla passivamente.",
-  url: "https://www.formulapassion.it/f1/f1-news/scintille-tra-stella-e-briatore-in-conferenza-stampa-a-monza-gasly-monaco-hadjar",
-  imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 4, 2026",
+    "Flavio Briatore ha sollevato dubbi sull’imparzialità di uno dei giudici coinvolti nella decisione di togliere a Pierre Gasly il podio di Monaco. La FIA ha respinto le accuse, affermando che la selezione dei giudici e l’intero procedimento hanno rispettato i più elevati standard di indipendenza. | Flavio Briatore questioned the impartiality of a judge involved in the decision to strip Pierre Gasly of his Monaco podium. The FIA rejected the accusations, insisting that the selection of the judges and the entire process met the highest standards of independence.",
+  kcsQuickShift: "The FIA responds, and this story is going to continue for a while. Even Gasly is not happy, and he doesn't sound like he is giving up either. | La FIA risponde, e questa storia continuerà per un po'. Anche Gasly non è contento, e non sembra che si arrenderà.",
+  url: "https://www.formulapassion.it/f1/f1-news/gp-monaco-podio-gasly-accuse-briatore-la-fia-risponde-nostre-procedure-rispettano-i-piu-elevati-standard",
+  imagePath: "/img/news/kcai/news-FIA.jpg",
+  photoCredit: "KC AI Generated Images",
+  dateLabel: "September 5, 2026",
 },
 
   {
@@ -33,7 +33,7 @@ export const newsSlots = [
   title: "Briatore Questions the Integrity of the Monaco GP Appeal",
   summary:
     "Flavio Briatore questioned the fairness of the appeal process that reinstated Pierre Gasly’s Monaco penalties. The Alpine executive claimed that one of the judges had links to McLaren, while Andrea Stella firmly rejected the allegations and defended the integrity of the FIA’s International Court of Appeal.",
-  kcsQuickShift: "Briatore's claims raise questions about the appeal process and we know he like to be a disrupter. t's the FIA's fault. I mean what did they think was going to happen? What does everybody else think?",
+  kcsQuickShift: "Briatore's claims raise questions about the appeal process and we know he like to be a disrupter. It's the FIA's fault. I mean what did they think was going to happen? What does everybody else think?",
   url: "https://www.motorsport.com/f1/news/flavio-briatore-questions-monaco-gp-appeal-integrity-in-extraordinary-monza-press-conference/10852228/",
   imagePath: "/img/news/shut/news-shutflavio.jpg",
   photoCredit: "Shutterstock",
