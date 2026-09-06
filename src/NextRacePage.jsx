@@ -629,6 +629,30 @@ function RaceGalleryCard() {
 function RaceWeekendRecapCard() {
   if (!raceWeekendRecap.enabled) return null;
 
+
+  const orderedRecapSections = (raceWeekendRecap.sections || [])
+  .map((section, index) => ({
+    section,
+    index,
+    hasContent: (section.items || []).some(
+      (item) =>
+        String(item.title || "").trim() !== "" ||
+        String(item.summary || "").trim() !== "" ||
+        String(item.url || "").trim() !== ""
+    ),
+  }))
+  .sort((a, b) => {
+    if (a.hasContent !== b.hasContent) {
+      return a.hasContent ? -1 : 1;
+    }
+
+    if (a.hasContent) {
+      return b.index - a.index;
+    }
+
+    return a.index - b.index;
+  })
+  .map(({ section }) => section);
   return (
     <article className="min-w-0 rounded-3xl border border-white/10 bg-black/30 p-4 backdrop-blur">
       <h2 className="text-sm font-semibold text-sky-200 sm:text-base">
@@ -636,7 +660,7 @@ function RaceWeekendRecapCard() {
       </h2>
 
       <div className="mt-3 space-y-4">
-        {raceWeekendRecap.sections.map((section) => (
+        {orderedRecapSections.map((section) => (
           <div
             key={section.heading}
             className="rounded-2xl border border-white/10 bg-black/35 px-3 py-3"
@@ -826,21 +850,18 @@ export default function NextRacePage() {
   const sessions = nextRaceContent.sessions || [];
 
   const orderedSessions = [...sessions].sort((a, b) => {
-    const aFilled = hasSessionResults(a) ? 1 : 0;
-    const bFilled = hasSessionResults(b) ? 1 : 0;
+  const aFilled = hasSessionResults(a) ? 1 : 0;
+  const bFilled = hasSessionResults(b) ? 1 : 0;
 
-    
-    if (aFilled !== bFilled) return bFilled - aFilled;
+  if (aFilled !== bFilled) return bFilled - aFilled;
 
-    return getSessionWeekendRank(a) - getSessionWeekendRank(b);
-  });
+  const aRank = getSessionWeekendRank(a);
+  const bRank = getSessionWeekendRank(b);
 
+  if (aFilled && bFilled) return bRank - aRank;
 
-
-
- const raceSession = orderedSessions.find((s) => s.type === "race") || null;
-
-const sessionResults = orderedSessions.filter((s) => s.type !== "race");
+  return aRank - bRank;
+});
 
 
 
@@ -1036,20 +1057,18 @@ const sessionResults = orderedSessions.filter((s) => s.type !== "race");
     </div>
   </div>
 
-  <div className="space-y-4">
-  {sessionResults.map((s) => (
+ <div className="space-y-4">
+  {orderedSessions.map((s) => (
     <React.Fragment key={s.id || s.label}>
-      <SessionCard session={s} />
+      {s.type === "race" ? (
+        <RaceCard session={s} />
+      ) : (
+        <SessionCard session={s} />
+      )}
+
       <MobileSessionRecapCard session={s} />
     </React.Fragment>
   ))}
-
-  {raceSession ? (
-    <React.Fragment key={raceSession.id || raceSession.label || "race"}>
-      <RaceCard session={raceSession} />
-      <MobileSessionRecapCard session={raceSession} />
-    </React.Fragment>
-  ) : null}
 </div>
 </div>
 </div>

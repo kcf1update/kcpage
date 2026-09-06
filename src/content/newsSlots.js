@@ -1,128 +1,120 @@
 export const newsSlots = [
    {
-  
   slotId: 1,
-  sourceLabel: "Express",
-  title: "Gasly Claims Stunning First F1 Pole at Monza",
+  sourceLabel: "Formula 1",
+  title: "Antonelli Wins at Monza With Stunning Comeback Drive",
   summary:
-    "Pierre Gasly claimed the first pole position of his Formula 1 career with a sensational final lap at Monza, beating George Russell by just 0.060 seconds. Oscar Piastri qualified third, while Ferrari recovered from a difficult Q2 to place Charles Leclerc fourth and Lewis Hamilton fifth.",
-  kcsQuickShift: "Wait, what? No way what a stunning pole form Gasly. F1 never stops surprising. Congratulations to Gasly, Wow!",
-  url: "https://www.express.co.uk/sport/f1-autosport/2245827/italian-gp-qualifying-gasly-ferrari",
-  imagePath: "/img/news/xpb/Alpine/xpb-gaslymonzapole.jpg",
+    "Kimi Antonelli produced a remarkable recovery from 19th on the grid to win the Italian Grand Prix. A well-timed pit stop during the Virtual Safety Car gave him fresher tyres, allowing him to catch and pass teammate George Russell with three laps remaining. Max Verstappen completed the podium, while Charles Leclerc’s heavy early crash caused a red flag.",
+  kcsQuickShift: "Incredible win for Antonelli, no other words. On a weekend where Russell needed to win he was overtaken from 19th place. Can Russell recover, sure he still has a chance but his chances are getting slimmer ",
+  url: "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimimonzawin.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
+
 
   {
   slotId: 2,
-  sourceLabel: "FormulaPassion",
+  sourceLabel: "FormulaPassion.it",
   title:
-    "Gasly sorprende tutti e conquista la pole a Monza | Gasly Stuns the Field With Pole at Monza",
+    "Antonelli, sei leggendario! Impresa storica a Monza e record sbriciolati | Antonelli Makes History With Record-Breaking Monza Victory",
   summary:
-    "Pierre Gasly ha conquistato una sorprendente pole position per il Gran Premio d’Italia, precedendo George Russell al termine di una Q3 combattutissima. Oscar Piastri ha chiuso terzo in pista, davanti alle Ferrari di Charles Leclerc e Lewis Hamilton, ma resta sotto esame per una possibile penalità. | Pierre Gasly claimed a surprise pole position for the Italian Grand Prix after a fiercely contested Q3, finishing ahead of George Russell. Oscar Piastri was third on track ahead of the Ferraris of Charles Leclerc and Lewis Hamilton, but remains under investigation for a possible penalty.",
-  kcsQuickShift: "Nine years waiting for a pole, what a place to do it and what a weekend to do it with the Monaco story swirling around. And wow what a disappointment for Ferrari! | Nove anni di attesa per una pole. Quale posto e quale weekend migliore per conquistarla finalmente, con tutta la vicenda di Monaco che aleggiava intorno. E wow, che delusione per la Ferrari!",
-  url: "https://www.formulapassion.it/f1/f1-live/diretta-f1-gp-italia-2026-live-qualifiche-monza-cronaca-pole-position-ferrari-leclerc-hamilton-q1-q2-q3",
-  imagePath: "/img/news/xpb/Alpine/xpb-gaslypole3.jpg",
+    "Kimi Antonelli ha compiuto un’impresa straordinaria vincendo il Gran Premio d’Italia dopo essere partito dalla 19ª posizione. A soli 20 anni è diventato il più giovane vincitore della gara di Monza e il primo pilota italiano a trionfare nel Gran Premio di casa dopo Ludovico Scarfiotti nel 1966. | Kimi Antonelli completed an extraordinary comeback to win the Italian Grand Prix after starting 19th. At only 20 years old, he became the youngest winner at Monza and the first Italian driver to win his home Grand Prix since Ludovico Scarfiotti in 1966.",
+  kcsQuickShift: "When was the last time we had a F1 driver that has won this much in his second year and was in contention to be the world champion? has it been done before? let me know? | Quando è stata l’ultima volta che abbiamo visto un pilota di F1 vincere così tanto al suo secondo anno ed essere in lotta per il titolo mondiale? È mai successo prima? ",
+  url: "https://www.formulapassion.it/f1/f1-news/f1-antonelli-leggendario-a-monza-ecco-tutti-i-record-che-ha-sbriciolato",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimimonza2.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
 
  {
   slotId: 3,
-  sourceLabel: "Motorsport Week",
-  title: "FIA Court Responds to Briatore’s Bias Allegations",
+  sourceLabel: "Motorsport.com",
+  title: "Five Quick Takeaways From the Italian Grand Prix",
   summary:
-    "Flavio Briatore questioned the impartiality of a judge involved in restoring Pierre Gasly’s Monaco penalties. The FIA defended the independence of its judges and said the case followed its established judicial procedures.",
-  kcsQuickShift: "this whole story is a black eye for the FIA",
-  url: "https://www.motorsportweek.com/2026/09/05/fia-court-releases-statement-after-shocking-briatore-claims/",
-  imagePath: "/img/news/kcai/news-FIA.jpg",
-  photoCredit: "KC AI Generated Images",
-  dateLabel: "September 5, 2026",
-},
-{
-  slotId: 4,
-  sourceLabel: "FormulaPassion",
-  title:
-    "La Corte FIA risponde alle accuse di parzialità di Briatore | FIA Court Responds to Briatore’s Bias Allegations",
-  summary:
-    "Flavio Briatore ha messo in dubbio l’imparzialità di un giudice coinvolto nella decisione di ripristinare le penalità di Pierre Gasly a Monaco. La FIA ha difeso l’indipendenza dei propri giudici, affermando che il caso è stato gestito nel rispetto delle procedure previste. | Flavio Briatore questioned the impartiality of a judge involved in restoring Pierre Gasly’s Monaco penalties. The FIA defended the independence of its judges and said the case was handled according to its established procedures.",
-  kcsQuickShift: "This story will rumble along for a while but the stunning pole for gasly will help soften the blow. ",
-  url: "https://www.formulapassion.it/f1/f1-news/gp-monaco-podio-gasly-accuse-briatore-la-fia-risponde-nostre-procedure-rispettano-i-piu-elevati-standard",
-  imagePath: "/img/news/shut/news-shutflavio.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 5, 2026",
+    "Motorsport.com examines the biggest talking points from a dramatic Italian Grand Prix. Antonelli’s charge from 19th to victory leads the analysis, alongside Mercedes’ strategic decisions, Russell’s late defeat, Leclerc’s heavy crash and the consequences for the championship.",
+  kcsQuickShift: "In my opinion other than Antonelli's win and Russel's loss the biggest story is the complete collapse of Ferrari. They need a tough talk session",
+  url: "https://www.motorsport.com/f1/news/five-quick-takeaways-from-italian-gp/10852982/",
+  imagePath: "/img/news/xpb/ferrari/xpb-charlesmonzacrash.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 6, 2026"
 },
 {
   slotId: 5,
-  sourceLabel: "Motorsport.com",
-  title: "Domenicali Open to Slightly Shorter Formula 1 Races",
+  sourceLabel: "F1i",
+  title: "Vettel Overcome With Emotion During Schumacher Tribute",
   summary:
-    "Stefano Domenicali says he would not oppose shortening Grands Prix by two or three laps as Formula 1 tries to hold the attention of younger viewers. He also confirmed that sprint races will continue but will remain on fewer than half of the season’s weekends.",
-  kcsQuickShift: "I don't think we need shorter races",
-  url: "https://www.motorsport.com/f1/news/stefano-domenicali-floats-the-idea-of-shortening-f1-race-distances/10852080/",
-  imagePath: "/img/news/shut/news-shutterstockstefano.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 5, 2026",
+    "Sebastian Vettel became emotional after driving Michael Schumacher’s championship-winning Ferrari F2002 during a special demonstration at Monza. Vettel said he could feel Michael’s presence during the laps and admitted how much he misses his friend and childhood hero.",
+  kcsQuickShift: "Must have been an emotional experience for Vettle. He has never hid his admiration of Schumacher. He certainly wrapped his arms around Mick Schumacher during his brief F1 stint. ",
+  url: "https://f1i.com/news/572274-vettel-mixed-up-in-feelings-after-emotional-schumacher-tribute.html",
+  imagePath: "/img/news/xpb/Races/xpb-seb.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 6, 2026"
 },
+
 {
   slotId: 6,
-  sourceLabel: "AutoRacing1",
-  title: "Haas Gives Bearman Its Only New Ferrari Power Unit",
+  sourceLabel: "The Race",
+  title: "Hamilton Calls on Ferrari to Prioritize His Title Challenge",
   summary:
-    "Haas received only one example of Ferrari’s latest power-unit upgrade and chose to install it in Oliver Bearman’s car. Esteban Ocon admitted he was disappointed, but Ayao Komatsu said the decision balanced earlier upgrades that Ocon had received first.",
-  kcsQuickShift: "Ocon is on his way out. I'll be very surprised if he is not replaced.",
-  url: "https://www.autoracing1.com/pl/503267/formula-1-news-haas-puts-the-screws-to-ocon/",
-  imagePath: "/img/news/shut/Haas/oconshut.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 5, 2026",
+    "Lewis Hamilton believes Ferrari must begin prioritizing his championship campaign as his 59-point deficit to Kimi Antonelli becomes increasingly difficult to recover. Hamilton was frustrated after Ferrari’s qualifying execution left him without the planned slipstream and nearly eliminated him in Q2.",
+  kcsQuickShift: "I sometimes feel that Hamilton feels entitled, what does everybody else think? ",
+  url: "https://www.the-race.com/formula-1/hamilton-sends-ferrari-a-clear-team-orders-plea/",
+  imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 6, 2026"
 },
+
 {
   slotId: 7,
-  sourceLabel: "AutoRacing1",
-  title: "Hadjar Now Unlikely to Return for the Madrid Grand Prix",
+  sourceLabel: "Motorsport.com",
+  title: "Antonelli Expects Russell to Return the Teamwork Favour",
   summary:
-    "Laurent Mekies says Isack Hadjar is unlikely to return for next weekend’s Madrid Grand Prix because his injured wrist may need more time to recover. Red Bull will assess him again but has made it clear that it will take no risks with his recovery.",
-  kcsQuickShift: "Duty of Care, They are taking it seriously and giving him time to heal.",
-  url: "https://www.autoracing1.com/pl/503252/formula-1-news-hadjar-now-unlikely-to-race-in-madrid-mekies/",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+    "Kimi Antonelli sacrificed his own qualifying program to provide George Russell with slipstreams at Monza, helping Russell secure second on the grid. Antonelli expects Russell to return the favour when the opportunity arises, particularly if Russell takes an engine penalty later in the season.",
+  kcsQuickShift: "",
+  url: "https://www.motorsport.com/f1/news/i-did-what-the-team-asked-kimi-antonelli-expects-george-russell-to-return-favour-later-in-season/10852769/",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
+
 {
   slotId: 8,
-  sourceLabel: "RacingNews365",
+  sourceLabel: "F1i Auto-Journal",
   title:
-    "Liam Lawson krijgt gridstraf voor GP van Italië | Liam Lawson Receives Italian Grand Prix Grid Penalty",
+    "Gasly savoure sa première pole après neuf ans d’attente | Gasly Savours His First Pole After Nine Years of Waiting",
   summary:
-    "Red Bull heeft voor de derde vrije training de krachtbron in de auto van Liam Lawson gewisseld, waardoor hij achteraan moet starten. De gebruikte onderdelen komen officieel uit de pool van de geblesseerde Isack Hadjar. | Red Bull changed the power unit in Liam Lawson’s car before FP3, meaning he must start from the back of the grid. The replacement components officially came from the allocation of the injured Isack Hadjar.",
-  kcsQuickShift: "I don't get or agree with drivers having to take a penalty for an engine change. They must have a better way of handling that. Seems unfair, same for Antonelli also. | Ik begrijp het niet en ben het er ook niet mee eens dat coureurs een straf krijgen voor een motorwissel. Er moet een betere manier zijn om hiermee om te gaan. Het lijkt oneerlijk, en hetzelfde geldt voor Antonelli.",
-  url: "https://racingnews365.nl/lawson-ontvangt-gridstraf-voor-gp-italie",
-  imagePath: "/img/news/xpb/Visa/news-xpblawson.jpg",
+    "Pierre Gasly a décroché à Monza la première pole position de sa carrière après neuf ans et 191 tentatives en Formule 1. Ce résultat est particulièrement spécial pour le Français, qui avait également remporté sa première course sur ce circuit en 2020. | Pierre Gasly claimed the first pole position of his career at Monza after nine years and 191 attempts in Formula 1. The achievement is particularly special for the Frenchman because he also earned his first race victory at the circuit in 2020.",
+  kcsQuickShift: "Great story for Gasly.",
+  url: "https://f1i.autojournal.fr/infos/alpine/pierre-gasly-savoure-enfin-sa-premiere-pole-en-f1-cela-fait-neuf-ans-que-je-la-poursuis/?utm_source=feedly_feed&utm_medium=link&utm_campaign=unknown",
+  imagePath: "/img/news/xpb/Alpine/xpb-gaslymonzapole.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
+
 {
   slotId: 9,
   sourceLabel: "Motorsport.com",
-  title: "Norris’s New Racing Team Attracts Hundreds of Applicants",
+  title: "Clarkson Promises Alpine Beer if Gasly Wins at Monza",
   summary:
-    "Lando Norris says his new LN4 Fusion team received several hundred job applications within about an hour of being announced. The team plans to compete in F2, F3 and British F4, while the separate LN4 Legacy programme will initially fully fund one promising young driver.",
-  kcsQuickShift: "Good for him, nice to see him paying it forward ",
-  url: "https://www.motorsport.com/f1/news/lando-norris-new-race-team-received-a-few-hundred-job-requests/10852113/",
-  imagePath: "/img/news/xpb/Mclaren/news-xpblando.jpg",
+    "Jeremy Clarkson promised every member of Alpine’s Formula 1 team a Hawkstone beer if Pierre Gasly converted his surprise Monza pole position into victory. Clarkson previously delivered 1,000 bottles to Alpine after Esteban Ocon earned a podium at Monaco in 2023.",
+  kcsQuickShift: "I always love a story about Jeremey Clarkson. I know, I know he has love or hate him type of personality and he nevers misses a chance to promote his Beer!",
+  url: "https://www.motorsport.com/f1/news/jeremy-clarkson-makes-alpine-f1-promise-after-pierre-gasly-italian-gp-pole/10852731/",
+  imagePath: "/img/news/shut/shutjeremey.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
+
 {
   slotId: 10,
-  sourceLabel: "The Race",
-  title: "Formula 1 Plans Expanded 2027 Season Launch in Milan",
+  sourceLabel: "RacingNews365",
+  title: "Red Bull Reportedly Set to Sign Kimi Räikkönen’s Son",
   summary:
-    "Formula 1 will hold its 2027 season launch in Milan on February 18, featuring the drivers and team principals from all 11 teams. The televised event will be joined by a three-day fan festival running from February 18 to 20.",
-  kcsQuickShift: "I'm sure it will be a big flashy event. I don't think many of the driver care for it that much though",
-  url: "https://www.the-race.com/formula-1/f1-to-hold-2027-season-launch-in-milan/",
-  imagePath: "/img/news/xpb/Races/news-xpbracejapan.jpg",
+    "Red Bull is reportedly preparing to add Kimi Räikkönen’s 11-year-old son Robin to its respected junior driver programme. The promising young karter has attracted attention with his performances in Europe, although the reported move has not yet been officially confirmed.",
+  kcsQuickShift: "Cool story. I hope they take care of him and give him what he needs to succeed. he will be an instant favourite if he ever make it to F1 ",
+  url: "https://racingnews365.com/red-bull-set-to-sign-kimi-raikkonens-son-to-famed-junior-programme",
+  imagePath: "/img/news/xpb/Races/xpb-raikonen.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 5, 2026",
+  dateLabel: "September 6, 2026"
 },
 ];

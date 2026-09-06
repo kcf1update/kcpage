@@ -73,23 +73,23 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimimonzawin.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/xpb-kimimonza2.jpg",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpb-charlesmonzacrash.jpg",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
        
          {
-          src: "",
+          src: "/img/news/xpb/Races/xpb-monzarace.jpg",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },

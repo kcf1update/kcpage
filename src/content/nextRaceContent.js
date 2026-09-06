@@ -555,7 +555,28 @@ Aston Martin	1:25.222			9
 `;
 
 const PASTE_RACE = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	53
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	+3.8s
+3	Max Verstappen	NED	Oracle Red Bull Racing	+14.7s
+4	Lando Norris	GBR	McLaren Mastercard F1 Team	+19.0s
+5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+19.2s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	+24.6s
+7	Pierre Gasly	FRA	BWT Alpine F1 Team	+27.3s
+8	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	+45.1s
+9	Franco Colapinto	ARG	BWT Alpine F1 Team	+47.3s
+10	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	+58.1s
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+65.1s
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	+66.1s
+13	Carlos Sainz	ESP	Atlassian Williams F1 Team	+74.1s
+14	Liam Lawson	NZL	Oracle Red Bull Racing	+75.6s
+15	Ollie Bearman	GBR	TGR Haas F1 Team	+78.9s
+16	Esteban Ocon	FRA	TGR Haas F1 Team	+1 Lap
+17	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
+18	Sergio Perez	MEX	Cadillac F1 Team	+1 Lap
+19	Valtteri Bottas	FIN	Cadillac F1 Team	+2 Laps
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	DNF
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	DNF
+DNF	Charles Leclerc	MON	Scuderia Ferrari HP	DNF
 
 `;
 
@@ -685,11 +706,11 @@ summary:
             heading: "Race",
             items: [
               {
-                title: "",
+                title: "Antonelli Storms From 19th to Historic Monza Victory",
 
  summary:
-        "",
-                url: "",
+        "Kimi Antonelli produced a sensational comeback at Monza, charging from 19th on the grid after his power-unit penalties to win his home Grand Prix. The race was stopped early after Charles Leclerc suffered a heavy crash at the Parabolica, bringing out the red flag after a tense opening-lap battle with Ferrari teammate Lewis Hamilton. George Russell controlled much of the restarted race, but a late Virtual Safety Car allowed Antonelli to pit for fresh medium tyres while Russell remained on ageing hards. Antonelli quickly closed the gap and passed his Mercedes teammate with three laps remaining, becoming the first Italian driver to win at Monza since Ludovico Scarfiotti in 1966. Russell completed a Mercedes one-two, with Max Verstappen taking third ahead of Lando Norris and Oscar Piastri. Hamilton recovered to sixth, while pole-sitter Pierre Gasly slipped to seventh. Arvid Lindblad, Franco Colapinto and Yuki Tsunoda completed the top 10. Antonelli’s victory increased his championship advantage over Russell to 66 points. Formula 1 race report",
+                url: "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
               },
             ],
           },
@@ -777,7 +798,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "10:00 AM ADT",
+          time: "Anotonelli wins again! results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
