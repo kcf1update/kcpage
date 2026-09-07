@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Lando Norris explains McLaren new contract decision ",
-  youtubeInput: "https://youtu.be/usvnix1nYBc",
-  
+  title: "Drivers React After The Race | 2026 Italian Grand Prix ",
+  youtubeInput: "https://youtu.be/zBACnjRTFU0",
+  forceExternal: "blue"
   },
 
   {
     slotId: "slot2",
-    title: "FERRARI CAN'T KEEP DOING THIS! F1 News",
-    youtubeInput: "https://youtu.be/V4g_38sjNsg",
-   
+    title: "Race Highlights | 2026 Italian Grand Prix",
+    youtubeInput: "https://youtu.be/uptj3to1l7o",
+   forceExternal: "blue"
   },
 
   {
     slotId: "slot3",
-    title: "Radio Rewind | 2026 Dutch Grand Prix | Lenovo",
-    youtubeInput: "https://youtu.be/VU48smwP_q0",
-    forceExternal: "blue"
+    title: "2026 F1 Italian GP race analysis by Peter Windsor",
+    youtubeInput: "https://youtu.be/027AdUrSlgg",
+    
   }
 ];

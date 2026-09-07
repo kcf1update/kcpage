@@ -15,11 +15,11 @@ import { youtubeSlots } from "./content/youtubeSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-   enabled: true,
-  label: "RACE WEEKEND",
+  enabled: true,
+  label: "RACE COMPLETE",
   title: "ITALIAN GRAND PRIX",
-  body: "The Italian Grand Prix weekend is underway at Monza. Visit the Race Centre for the full schedule, practice results, session summaries and weekend updates.",
-  buttonText: "View the Race Centre →",
+  body: "The Italian Grand Prix is complete. Visit the Race Centre for the full results, session summaries, weekend recap and Photo Gallery.",
+  buttonText: "View the Race Results →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/monza.jpg",
 };

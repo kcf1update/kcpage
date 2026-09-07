@@ -1,120 +1,121 @@
 export const newsSlots = [
-   {
-  slotId: 1,
-  sourceLabel: "Formula 1",
-  title: "Antonelli Wins at Monza With Stunning Comeback Drive",
-  summary:
-    "Kimi Antonelli produced a remarkable recovery from 19th on the grid to win the Italian Grand Prix. A well-timed pit stop during the Virtual Safety Car gave him fresher tyres, allowing him to catch and pass teammate George Russell with three laps remaining. Max Verstappen completed the podium, while Charles Leclerc’s heavy early crash caused a red flag.",
-  kcsQuickShift: "Incredible win for Antonelli, no other words. On a weekend where Russell needed to win he was overtaken from 19th place. Can Russell recover, sure he still has a chance but his chances are getting slimmer ",
-  url: "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimimonzawin.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
-
+  {
+    slotId: 1,
+    sourceLabel: "Motorsport.com",
+    title: "Leclerc Faces Further Medical Checks After Monza Crash",
+    summary: "Charles Leclerc will undergo additional medical checks after briefly experiencing blurred vision in his right eye following his high-speed crash at Parabolica. No injuries were detected at Monza’s medical centre, but Ferrari wants to ensure he is fit to race in Madrid.",
+    kcsQuickShift: "That was a brutal crash, not to often you see a driver having to sit and rest as long as Charles did. Sure some of it was probably disappointment as some suggested but either way it sounds like it may be more serious. Lets Hope they do not take any chnaces with concusion issues. ",
+    url: "https://www.motorsport.com/f1/news/charles-leclerc-needs-further-health-checks-after-monza-f1-crash-/10853008/",
+    imagePath: "/img/news/Ferrari/Leclerc/ferraricharlesmonaco.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "September 7, 2026"
+  },
 
   {
-  slotId: 2,
-  sourceLabel: "FormulaPassion.it",
-  title:
-    "Antonelli, sei leggendario! Impresa storica a Monza e record sbriciolati | Antonelli Makes History With Record-Breaking Monza Victory",
-  summary:
-    "Kimi Antonelli ha compiuto un’impresa straordinaria vincendo il Gran Premio d’Italia dopo essere partito dalla 19ª posizione. A soli 20 anni è diventato il più giovane vincitore della gara di Monza e il primo pilota italiano a trionfare nel Gran Premio di casa dopo Ludovico Scarfiotti nel 1966. | Kimi Antonelli completed an extraordinary comeback to win the Italian Grand Prix after starting 19th. At only 20 years old, he became the youngest winner at Monza and the first Italian driver to win his home Grand Prix since Ludovico Scarfiotti in 1966.",
-  kcsQuickShift: "When was the last time we had a F1 driver that has won this much in his second year and was in contention to be the world champion? has it been done before? let me know? | Quando è stata l’ultima volta che abbiamo visto un pilota di F1 vincere così tanto al suo secondo anno ed essere in lotta per il titolo mondiale? È mai successo prima? ",
-  url: "https://www.formulapassion.it/f1/f1-news/f1-antonelli-leggendario-a-monza-ecco-tutti-i-record-che-ha-sbriciolato",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimimonza2.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+    slotId: 2,
+    sourceLabel: "Motorsport.com Brasil",
+    title: "Audi recorre da decisão sobre Tsunoda e tenta garantir o P10 para Bortoleto | Audi Appeals Tsunoda Decision and Targets P10 for Bortoleto",
+    summary: "A Audi notificou a FIA sobre sua intenção de recorrer da decisão de não punir Yuki Tsunoda por sua participação na volta de formação adicional em Monza. Tsunoda terminou em décimo, uma posição à frente de Gabriel Bortoleto, que poderá herdar o último ponto se o recurso for bem-sucedido. | Audi has notified the FIA of its intention to appeal the decision not to penalize Yuki Tsunoda for his part in the additional formation lap at Monza. Tsunoda finished 10th, one place ahead of Gabriel Bortoleto, who could inherit the final point if the appeal succeeds.",
+    kcsQuickShift: "More often than not, it seems lately that the race results are being questioned after the race is completed. What can they change to stop this from happening? | Na maioria das vezes, ultimamente parece que os resultados das corridas são questionados depois que a prova termina. O que eles podem mudar para evitar que isso continue acontecendo?",
+    url: "https://motorsport.uol.com.br/f1/news/f1-audi-recorre-contra-decisao-que-livrou-tsunoda-de-punicao-no-gp-da-italia-e-tenta-herdar-p10-par/10853214/",
+    imagePath: "/img/news/xpb/Audi/news-xpbaudigabby.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
 
- {
-  slotId: 3,
-  sourceLabel: "Motorsport.com",
-  title: "Five Quick Takeaways From the Italian Grand Prix",
-  summary:
-    "Motorsport.com examines the biggest talking points from a dramatic Italian Grand Prix. Antonelli’s charge from 19th to victory leads the analysis, alongside Mercedes’ strategic decisions, Russell’s late defeat, Leclerc’s heavy crash and the consequences for the championship.",
-  kcsQuickShift: "In my opinion other than Antonelli's win and Russel's loss the biggest story is the complete collapse of Ferrari. They need a tough talk session",
-  url: "https://www.motorsport.com/f1/news/five-quick-takeaways-from-italian-gp/10852982/",
-  imagePath: "/img/news/xpb/ferrari/xpb-charlesmonzacrash.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
-{
-  slotId: 5,
-  sourceLabel: "F1i",
-  title: "Vettel Overcome With Emotion During Schumacher Tribute",
-  summary:
-    "Sebastian Vettel became emotional after driving Michael Schumacher’s championship-winning Ferrari F2002 during a special demonstration at Monza. Vettel said he could feel Michael’s presence during the laps and admitted how much he misses his friend and childhood hero.",
-  kcsQuickShift: "Must have been an emotional experience for Vettle. He has never hid his admiration of Schumacher. He certainly wrapped his arms around Mick Schumacher during his brief F1 stint. ",
-  url: "https://f1i.com/news/572274-vettel-mixed-up-in-feelings-after-emotional-schumacher-tribute.html",
-  imagePath: "/img/news/xpb/Races/xpb-seb.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 3,
+    sourceLabel: "ESPN",
+    title: "Wolff Compares Antonelli’s Rapid Development to an AI Agent",
+    summary: "Toto Wolff compared Kimi Antonelli to a self-improving AI agent after the Italian won at Monza from 19th on the grid. Antonelli now has seven victories this season and leads George Russell by 66 points with 10 race weekends remaining.",
+    kcsQuickShift: "Antonelli is a once in a life time talent period. But lets keep the praise at a sustainable level. Antonelli is only 20 years old. I do like the AI agent reference though. lol. ",
+    url: "https://www.espn.co.uk/f1/story/_/id/49813303/kimi-antonelli-ai-agent-toto-wolffs-new-comparison-f1-star-italian-gp-win-italian-grand-prix-formula-1-monza",
+    imagePath: "/img/news/xpb/Mercedes/xpb-kimipolesilver.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
 
-{
-  slotId: 6,
-  sourceLabel: "The Race",
-  title: "Hamilton Calls on Ferrari to Prioritize His Title Challenge",
-  summary:
-    "Lewis Hamilton believes Ferrari must begin prioritizing his championship campaign as his 59-point deficit to Kimi Antonelli becomes increasingly difficult to recover. Hamilton was frustrated after Ferrari’s qualifying execution left him without the planned slipstream and nearly eliminated him in Q2.",
-  kcsQuickShift: "I sometimes feel that Hamilton feels entitled, what does everybody else think? ",
-  url: "https://www.the-race.com/formula-1/hamilton-sends-ferrari-a-clear-team-orders-plea/",
-  imagePath: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 4,
+    sourceLabel: "Infobae",
+    title: "Las lágrimas de Colapinto reflejan una oportunidad perdida y una gran remontada | Colapinto’s Tears Reflect a Missed Opportunity and a Strong Comeback",
+    summary: "Franco Colapinto largó séptimo y llegó hasta el tercer puesto, pero una salida de pista lo hizo caer al decimosexto lugar y dañó el suelo de su Alpine. Se recuperó para terminar noveno y sumar dos puntos, aunque se emocionó después de la carrera porque sentía que había desperdiciado una oportunidad aún mayor. | Franco Colapinto started seventh and climbed as high as third, but an off-track moment dropped him to 16th and damaged the floor of his Alpine. He recovered to finish ninth and score two points, although he became emotional afterward because he believed he had missed an even greater opportunity.",
+    kcsQuickShift: "Something about Colapinto that make me hope for his success. Maybe it's because he is the underdog, maybe becayse of Briatore's brutal style that probaly both drivers have to deal with. In any case good on Colapinto from 16th to 9th, he is proving his value to to Alpine. | Hay algo en Colapinto que me hace desear que le vaya bien. Tal vez sea porque parte con desventaja, o quizá por el estilo brutal de Briatore, con el que probablemente tengan que lidiar ambos pilotos. En cualquier caso, bien por Colapinto. Remontar del puesto 16 al noveno demuestra lo que vale para Alpine.",
+    url: "https://www.infobae.com/deportes/2026/09/07/corazon-de-campeon-las-razones-detras-de-las-lagrimas-de-colapinto-tras-el-gran-premio-de-italia-de-f1/",
+    imagePath: "/img/news/Alpine/colapinto/colapintomonza.jpg",
+    photoCredit: "Courtesy of Apline F1",
+    dateLabel: "September 7, 2026"
+  },
 
-{
-  slotId: 7,
-  sourceLabel: "Motorsport.com",
-  title: "Antonelli Expects Russell to Return the Teamwork Favour",
-  summary:
-    "Kimi Antonelli sacrificed his own qualifying program to provide George Russell with slipstreams at Monza, helping Russell secure second on the grid. Antonelli expects Russell to return the favour when the opportunity arises, particularly if Russell takes an engine penalty later in the season.",
-  kcsQuickShift: "",
-  url: "https://www.motorsport.com/f1/news/i-did-what-the-team-asked-kimi-antonelli-expects-george-russell-to-return-favour-later-in-season/10852769/",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 5,
+    sourceLabel: "Crash.net",
+    title: "Alonso Says Monza Is No Longer the Temple of Speed",
+    summary: "Fernando Alonso says the electrical energy limitations of the 2026 cars have taken away part of what made Monza special. He noted that F1 cars reached approximately 350 to 360 km/h in Barcelona and Hungary but managed only around 312 km/h at Monza.",
+    kcsQuickShift: "All true but it seem that the drivers or teams that are stuggling with the new regulations are the ones that are still talking about it publicly. Even Peter Windsor said it was a good race.",
+    url: "https://www.crash.net/f1/news/1104009/1/no-longer-temple-speed-fernando-alonso-slams-monza-f1-spectacle",
+    imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
 
-{
-  slotId: 8,
-  sourceLabel: "F1i Auto-Journal",
-  title:
-    "Gasly savoure sa première pole après neuf ans d’attente | Gasly Savours His First Pole After Nine Years of Waiting",
-  summary:
-    "Pierre Gasly a décroché à Monza la première pole position de sa carrière après neuf ans et 191 tentatives en Formule 1. Ce résultat est particulièrement spécial pour le Français, qui avait également remporté sa première course sur ce circuit en 2020. | Pierre Gasly claimed the first pole position of his career at Monza after nine years and 191 attempts in Formula 1. The achievement is particularly special for the Frenchman because he also earned his first race victory at the circuit in 2020.",
-  kcsQuickShift: "Great story for Gasly.",
-  url: "https://f1i.autojournal.fr/infos/alpine/pierre-gasly-savoure-enfin-sa-premiere-pole-en-f1-cela-fait-neuf-ans-que-je-la-poursuis/?utm_source=feedly_feed&utm_medium=link&utm_campaign=unknown",
-  imagePath: "/img/news/xpb/Alpine/xpb-gaslymonzapole.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 6,
+    sourceLabel: "GPblog",
+    title: "Rosberg and Brundle Disagree Over Hamilton and Leclerc Clash",
+    summary: "Martin Brundle believed Charles Leclerc was sufficiently ahead on the inside and probably would not have been penalized for forcing Lewis Hamilton wide. Nico Rosberg strongly disagreed, arguing that Hamilton was ahead approaching the apex and calling the incident entirely Leclerc’s fault.",
+    kcsQuickShift: "Nico Rosberg should be on every Race weekend",
+    url: "https://www.gpblog.com/en/news/nico-rosberg-lewis-hamilton-charles-leclerc-clash-brundle",
+    imagePath: "/img/news/xpb/news-xpbnicomartin.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
 
-{
-  slotId: 9,
-  sourceLabel: "Motorsport.com",
-  title: "Clarkson Promises Alpine Beer if Gasly Wins at Monza",
-  summary:
-    "Jeremy Clarkson promised every member of Alpine’s Formula 1 team a Hawkstone beer if Pierre Gasly converted his surprise Monza pole position into victory. Clarkson previously delivered 1,000 bottles to Alpine after Esteban Ocon earned a podium at Monaco in 2023.",
-  kcsQuickShift: "I always love a story about Jeremey Clarkson. I know, I know he has love or hate him type of personality and he nevers misses a chance to promote his Beer!",
-  url: "https://www.motorsport.com/f1/news/jeremy-clarkson-makes-alpine-f1-promise-after-pierre-gasly-italian-gp-pole/10852731/",
-  imagePath: "/img/news/shut/shutjeremey.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 7,
+    sourceLabel: "The Race",
+    title: "The Winners and Losers From the Italian Grand Prix",
+    summary: "The Race names Kimi Antonelli, Max Verstappen, Lando Norris and Racing Bulls among its winners from an eventful Italian Grand Prix. Ferrari, George Russell, Aston Martin and Liam Lawson are listed as the main losers after a difficult afternoon at Monza.",
+    kcsQuickShift: "Winner - Kimi Antonelli, Loser - George Russell but winner for his attitude after the race.",
+    url: "https://www.the-race.com/formula-1/f1-2026-italian-grand-prix-winners-losers/",
+    imagePath: "/img/news/xpb/Races/xpb-monzarace.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
 
-{
-  slotId: 10,
-  sourceLabel: "RacingNews365",
-  title: "Red Bull Reportedly Set to Sign Kimi Räikkönen’s Son",
-  summary:
-    "Red Bull is reportedly preparing to add Kimi Räikkönen’s 11-year-old son Robin to its respected junior driver programme. The promising young karter has attracted attention with his performances in Europe, although the reported move has not yet been officially confirmed.",
-  kcsQuickShift: "Cool story. I hope they take care of him and give him what he needs to succeed. he will be an instant favourite if he ever make it to F1 ",
-  url: "https://racingnews365.com/red-bull-set-to-sign-kimi-raikkonens-son-to-famed-junior-programme",
-  imagePath: "/img/news/xpb/Races/xpb-raikonen.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 6, 2026"
-},
+  {
+    slotId: 8,
+    sourceLabel: "L’Équipe",
+    title: "Gasly reste encouragé malgré sa chute de la pole à la septième place | Gasly Encouraged Despite Falling From Pole to Seventh",
+    summary: "Pierre Gasly reconnaît une certaine déception après avoir terminé septième en partant de la pole, mais il estime que la performance globale d’Alpine est très encourageante. Il a mené les deux départs, est resté compétitif pendant les dix premiers tours et a décrit l’A526 comme la meilleure voiture qu’il ait pilotée cette saison. | Pierre Gasly admitted to some disappointment after finishing seventh from pole, but he believes Alpine’s overall performance was very encouraging. He led both starts, remained competitive for the opening 10 laps and described the A526 as the best car he has driven this season.",
+    kcsQuickShift: "Still a great weekend for Gasly and Alpine. One to remember | Ça reste un excellent week-end pour Gasly et Alpine. Un week-end à retenir.",
+    url: "https://www.lequipe.fr/Formule-1/Actualites/Pierre-gasly-7e-du-gp-d-italie-apres-un-depart-de-la-pole-position-vu-d-ou-l-on-vient-c-est-tres-encourageant/1716707",
+    imagePath: "/img/news/Alpine/Gasly/Gaslymonza.jpg",
+    photoCredit: "Courtesy of Alpine F1",
+    dateLabel: "September 7, 2026"
+  },
+
+  {
+    slotId: 9,
+    sourceLabel: "RacingNews365",
+    title: "McLaren to Review Late Norris and Piastri Near Miss",
+    summary: "Lando Norris and Oscar Piastri narrowly avoided contact while fighting for fourth late in the Italian Grand Prix. Norris initially called Piastri’s move dangerous but withdrew that criticism afterward, while Andrea Stella confirmed that McLaren will review its approach to allowing the drivers to race.",
+    kcsQuickShift: "Piastri backs down to no one on the track. Norris should know that and drive accordingly",
+    url: "https://racingnews365.com/mclaren-confirm-review-after-lando-norris-and-oscar-piastri-almost-come-to-blows",
+    imagePath: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  },
+
+  {
+    slotId: 10,
+    sourceLabel: "RacingNews365",
+    title: "Vasseur Hints Ferrari Could Change Its Team Orders Policy",
+    summary: "Fred Vasseur admitted that the opening-lap battle between Lewis Hamilton and Charles Leclerc was not good for Ferrari. The team previously believed it was too early to favour one driver, but Vasseur acknowledged that a decision will eventually be necessary and plans to discuss the situation internally.",
+    kcsQuickShift: "I agree with Hamilton it is to late for team orders. I don't blame Leclerc though, he is the Ferrari Driver. Hamilton s just borrowing the suit for two or three years.",
+    url: "https://racingnews365.com/ferrari-hints-at-potential-team-orders-change-despite-lewis-hamilton-criticism",
+    imagePath: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 7, 2026"
+  }
 ];
