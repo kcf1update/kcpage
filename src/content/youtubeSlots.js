@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "2026 F1 Italian GP race analysis by Peter Windsor",
-    youtubeInput: "https://youtu.be/027AdUrSlgg",
-    
+    title: "Radio Rewind | 2026 Italian Grand Prix | Lenovo",
+    youtubeInput: "https://youtu.be/Jr4rpfKSLro",
+    forceExternal: "blue"
   }
 ];
