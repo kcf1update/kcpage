@@ -7,10 +7,10 @@ import CountdownBar from "./components/CountdownBar";
 
 // ✅ Stage A content sources (edit file + redeploy)
 import { newsSlots } from "./content/newsSlots";
-import { youtubeSlots } from "./content/youtubeSlots";
 
 
-// =======================================================
+
+// =======================================================change for the kcpage
 // Race weekend homepage promo
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
@@ -123,31 +123,7 @@ function GlassyCard({
   );
 }
 
-// helper functions — TOP of file
-function getYouTubeId(input = "") {
-  try {
-    const s = String(input).trim();
-    if (!s) return "";
 
-    const shortMatch = s.match(/youtu\.be\/([a-zA-Z0-9_-]{6,})/);
-    if (shortMatch?.[1]) return shortMatch[1];
-     // ✅ ADD THIS (supports YouTube Shorts URLs)
-    const shortsMatch = s.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]{6,})/);
-    if (shortsMatch?.[1]) return shortsMatch[1];
-
-    const vMatch = s.match(/[?&]v=([a-zA-Z0-9_-]{6,})/);
-    if (vMatch?.[1]) return vMatch[1];
-
-    const embedMatch = s.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]{6,})/);
-    if (embedMatch?.[1]) return embedMatch[1];
-
-    if (/^[a-zA-Z0-9_-]{6,}$/.test(s)) return s;
-
-    return "";
-  } catch {
-    return "";
-  }
-}
 
 // Allow only safe http(s) URLs for outbound links
 function safeUrl(url) {
@@ -260,41 +236,11 @@ export default function KCpage() {
       : featuredNewsAll.length
         ? featuredNewsAll[featuredNewsAll.length - 1]
         : null;
-
-  // ✅ Feature KC’s YouTube slot on the main page (without changing youtubeSlots.js order)
-  const featuredVideo =
-    Array.isArray(youtubeSlots) && youtubeSlots.length
-      ? youtubeSlots.find((v) => v?.slotId === "slot5") ||
-        youtubeSlots.find((v) => String(v?.title || "").toLowerCase().includes("kc")) ||
-        youtubeSlots[0]
-      : null;
-
-  const YouTubeCard = () => (
-    <GlassyCard
-  highlight="red"
-  title="KC’s QUICK SHIFT"
-  subtitle="Quick hits, race recaps, and F1 insight"
->
-      <>
-        {getYouTubeId(featuredVideo?.youtubeInput) ? (
-          <div className="aspect-video rounded-xl overflow-hidden border border-red-400/40">
-            <iframe
-              className="w-full h-full"
-              src={`https://www.youtube.com/embed/${getYouTubeId(featuredVideo.youtubeInput)}`}
-              allowFullScreen
-              title={featuredVideo?.title || "Race highlights"}
-            />
-          </div>
-        ) : (
-          <p className="text-sm text-slate-300">No video selected yet.</p>
-        )}
-
-        
-
-        
-      </>
-    </GlassyCard>
-  );
+// Articles 5–10 appear farther down the main page
+const additionalNews = Array.isArray(newsSlots)
+  ? newsSlots.slice(4, 10)
+  : [];
+ 
 
   return (
     <div className="relative min-h-screen text-white">
@@ -473,17 +419,14 @@ export default function KCpage() {
 
         {/* CONTENT GRID */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
-          {/* ✅ MOBILE: YouTube card should be FIRST after the Ad spot */}
-          <div className="lg:hidden">
-            <YouTubeCard />
-          </div>
+          
 
-          {/* ✅ DESKTOP LEFT: YouTube + under-video news + small ad */}
+        {/* DESKTOP LEFT NEWS COLUMN */}
           <div className="hidden lg:block space-y-5 sm:space-y-6">
-            <YouTubeCard />
+          
 
-            {/* Featured news under YouTube */}
-            {featuredNewsUnderVideo
+           {/* Fourth featured news article */}
+           {featuredNewsUnderVideo
               ? (() => {
                   const item = featuredNewsUnderVideo;
                   const href = safeUrl(item?.url);
@@ -837,7 +780,140 @@ export default function KCpage() {
             </div>
           </div>
         </section>
+{/* ADDITIONAL NEWS — SLOTS 5 TO 10 */}
+{additionalNews.length > 0 ? (
+  <section className="mt-2">
+    <div className="mb-4 text-center">
+      <h2 className="text-xl font-bold text-cyan-300 sm:text-2xl">
+        More Formula 1 News
+      </h2>
 
+      <p className="mt-1 text-sm text-slate-300">
+        More of today’s F1 stories, summarized for a quick read
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2">
+      {additionalNews.map((item, idx) => {
+        const href = safeUrl(item?.url);
+        const imgPath = safeLocalImagePath(item?.imagePath);
+        const quickShift = (item?.kcsQuickShift || "").trim();
+        const photoCredit = (
+          item?.photoCredit ||
+          item?.imageSource ||
+          ""
+        ).trim();
+        const photoCreditUrl = (item?.photoCreditUrl || "").trim();
+        const altText = (
+          item?.imageAlt ||
+          item?.title ||
+          "F1 news image"
+        ).trim();
+
+        return (
+          <GlassyCard
+            key={item?.slotId || `additional-news-${idx}`}
+            highlight="none"
+            title={item?.title || `News ${idx + 5}`}
+            titleUrl={href || undefined}
+            subtitle={item?.sourceLabel || "Source"}
+          >
+            <div className="space-y-3">
+              {imgPath ? (
+                href ? (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block"
+                    title="Open article"
+                    onClick={() =>
+                      trackArticleClick(
+                        item?.title,
+                        href,
+                        "additional_news_image"
+                      )
+                    }
+                  >
+                    <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl bg-black/40">
+                      <img
+                        src={imgPath}
+                        alt={altText}
+                        className="h-full w-full object-contain"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                        }}
+                      />
+                    </div>
+                  </a>
+                ) : (
+                  <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl bg-black/40">
+                    <img
+                      src={imgPath}
+                      alt={altText}
+                      className="h-full w-full object-contain"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = "none";
+                      }}
+                    />
+                  </div>
+                )
+              ) : null}
+
+              {photoCredit ? (
+                <div className="text-[11px] text-white/55">
+                  Photo:{" "}
+                  {photoCreditUrl ? (
+                    <a
+                      href={safeUrl(photoCreditUrl)}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-cyan-200"
+                    >
+                      {photoCredit}
+                    </a>
+                  ) : (
+                    <span>{photoCredit}</span>
+                  )}
+                </div>
+              ) : null}
+
+              {item?.summary ? (
+                <div className="text-sm leading-relaxed text-slate-100/90">
+                  {renderBilingualText(item.summary, true)}
+                </div>
+              ) : null}
+
+              {quickShift ? (
+                <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 shadow-[0_0_18px_rgba(34,211,238,0.25)]">
+                  <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
+                    KC’s Quick Shift
+                  </div>
+
+                  <p className="mt-1 text-sm leading-relaxed text-white/90">
+                    {renderBilingualText(quickShift, false)}
+                  </p>
+                </div>
+              ) : null}
+
+              {item?.dateLabel ? (
+                <div className="flex items-center pt-1">
+                  <span className="ml-auto text-xs text-white/45">
+                    {item.dateLabel}
+                  </span>
+                </div>
+              ) : null}
+            </div>
+          </GlassyCard>
+        );
+      })}
+    </div>
+  </section>
+) : null}
+
+{/* BOTTOM AD / PARTNER SLOT */}
 {/* BOTTOM AD / PARTNER SLOT */}
 <GlassyCard
   highlight="yellow"

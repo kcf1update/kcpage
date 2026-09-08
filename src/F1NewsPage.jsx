@@ -1,179 +1,157 @@
 // src/F1NewsPage.jsx
 import React from "react";
-import { Link } from "react-router-dom";
-
 
 import AdBar from "./AdBar.jsx";
 import SiteHeader from "./components/SiteHeader";
-import { newsSlots } from "./content/newsSlots";
+import { newsArchive } from "./content/newsArchive";
 
-/**
- * SAFETY RULES (Stage A beta):
- * - External article links are allowed (https://...)
- * - Images are LOCAL ONLY (imagePath must start with "/")
- *   Example: "/img/news/stock-01.jpg"
- * - No "imageUrl" anywhere.
- */
-
-// Allow only safe http(s) URLs for outbound links
+// Allow only safe external article links
 function safeUrl(url) {
   if (!url || typeof url !== "string") return "";
+
   try {
-    const u = new URL(url);
-    if (u.protocol === "http:" || u.protocol === "https:") return u.toString();
+    const parsedUrl = new URL(url);
+
+    if (
+      parsedUrl.protocol === "http:" ||
+      parsedUrl.protocol === "https:"
+    ) {
+      return parsedUrl.toString();
+    }
+
     return "";
   } catch {
     return "";
   }
 }
 
-// Only allow local image paths that start with "/"
-function safeLocalImagePath(imagePath) {
-  if (!imagePath || typeof imagePath !== "string") return "";
-  if (!imagePath.startsWith("/")) return "";
-  return imagePath;
-}
-function renderBilingualText(text, foreignFirst = true) {
-  if (!text || typeof text !== "string" || !text.includes("|")) {
-    return text;
+function renderBilingualTitle(title) {
+  if (
+    !title ||
+    typeof title !== "string" ||
+    !title.includes("|")
+  ) {
+    return title;
   }
 
-  const [firstPart, ...rest] = text.split("|");
-  const secondPart = rest.join("|");
-
-  if (foreignFirst) {
-    return (
-      <>
-        <span className="text-sky-300">{firstPart.trim()}</span>
-        <span className="text-cyan-300"> | </span>
-        <span className="text-white">{secondPart.trim()}</span>
-      </>
-    );
-  }
+  const [foreignTitle, ...rest] = title.split("|");
+  const englishTitle = rest.join("|");
 
   return (
     <>
-      <span className="text-white">{firstPart.trim()}</span>
+      <span className="text-sky-300">
+        {foreignTitle.trim()}
+      </span>
+
       <span className="text-cyan-300"> | </span>
-      <span className="text-sky-300">{secondPart.trim()}</span>
+
+      <span className="text-white">
+        {englishTitle.trim()}
+      </span>
     </>
   );
 }
+
 export default function F1NewsPage() {
-  // Home uses the first 3 slots
-  // This page shows news4..news9 (6 cards)
-  const newsPageCards = newsSlots.slice(4, 10);
+  const archiveGroups = Array.isArray(newsArchive)
+    ? newsArchive
+    : [];
 
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">
-      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 px-4 pt-3 pb-8 sm:gap-4 sm:pt-4 sm:pb-10">
-        
-             <SiteHeader />
-          
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-4 px-4 pb-8 pt-3 sm:pb-10 sm:pt-4">
+        <SiteHeader />
 
-        <div className="flex items-center">
-         
-          <div className="shrink-0">{/* language selector hidden for launch */}</div>
-        </div>
+        <header className="rounded-3xl border border-cyan-400/30 bg-black/60 px-5 py-6 text-center shadow-lg sm:px-8">
+          <h1 className="text-2xl font-extrabold text-cyan-300 sm:text-3xl">
+            In Case You Missed It
+          </h1>
 
-        <main className="grid gap-4 lg:grid-cols-2">
-          {newsPageCards.map((item) => {
-            const href = safeUrl(item.url);
-            const imgPath = safeLocalImagePath(item.imagePath);
-            const quickShift = (item.kcsQuickShift || "").trim();
-            const altText = (item.imageAlt || item.title || "F1 news").trim();
+          <p className="mx-auto mt-2 max-w-3xl text-sm leading-relaxed text-slate-200 sm:text-base">
+            Catch up on recent Formula 1 stories featured on
+            KC’s Worldwide F1 Update. Select a headline to read
+            the original article.
+          </p>
+          <p className="mx-auto mt-3 max-w-3xl border-t border-white/10 pt-3 text-xs leading-relaxed text-slate-400">
+  Each headline links to the original publisher. KC’s Worldwide F1 Update
+  provides brief summaries and commentary and does not reproduce the
+  original articles or their images.
+</p>
+        </header>
 
-            return (
-              <article
-                key={item.slotId}
-                className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-lg"
-              >
-                {imgPath ? (
-                  href ? (
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block"
-                      title="Open article"
-                    >
-                      <div className="h-[210px] sm:h-[230px] lg:h-[240px] w-full overflow-hidden bg-black/40">
-                        <img
-                          src={imgPath}
-                          alt={altText}
-                          className="h-full w-full object-contain"
-                          loading="lazy"
-                        />
-                      </div>
-                    </a>
-                  ) : (
-                    <div className="h-[210px] sm:h-[230px] lg:h-[240px] w-full overflow-hidden bg-black/40">
-                      <img
-                        src={imgPath}
-                        alt={altText}
-                        className="h-full w-full object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                  )
-                ) : null}
-{(item.photoCredit || item.imageSource) ? (
-                  <div className="px-4 pt-2 text-[11px] uppercase tracking-wide text-white/60">
-                    Photo: {item.photoCredit || item.imageSource}
-                  </div>
-                ) : null}
-                <div className="p-4 space-y-3">
-                  <div className="text-[11px] uppercase tracking-wide text-cyan-200/80">
-                    {item.sourceLabel || "Source"}
+        <main className="space-y-5">
+          {archiveGroups.length > 0 ? (
+            archiveGroups.map((group, groupIndex) => {
+              const articles = Array.isArray(group?.articles)
+                ? group.articles
+                : [];
+
+              return (
+                <section
+                  key={`${group?.dateLabel || "archive"}-${groupIndex}`}
+                  className="overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-lg"
+                >
+                  <div className="border-b border-cyan-400/20 bg-cyan-400/10 px-5 py-3">
+                    <h2 className="text-lg font-bold text-cyan-300">
+                      {group?.dateLabel || "Past F1 News"}
+                    </h2>
                   </div>
 
-                  {href ? (
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block"
-                      title="Open article"
-                    >
-                     <h3 className="text-lg font-semibold leading-snug text-white hover:text-cyan-200 transition">
-  {renderBilingualText(item.title || "Headline", true)}
-</h3>
-                      
-                    </a>
-                  ) : (
-                    <h3 className="text-lg font-semibold leading-snug text-white">
-                      {renderBilingualText(item.title || "Headline", true)}
-                    </h3>
-                  )}
+                  <div className="divide-y divide-white/10">
+                    {articles.map((article, articleIndex) => {
+                      const href = safeUrl(article?.url);
 
-                  {item.summary ? (
-                    <p className="text-sm leading-relaxed text-white/75">
-                      {renderBilingualText(item.summary, true)}
-                    </p>
-                  ) : null}
+                      return (
+                        <article
+                          key={`${groupIndex}-${articleIndex}-${article?.title || "article"}`}
+                          className="px-5 py-4 transition hover:bg-white/5"
+                        >
+                          <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-200/75">
+                            {article?.sourceLabel || "Source"}
+                          </div>
 
-                  {quickShift ? (
-                    <div className="rounded-2xl border border-cyan-400/25 bg-cyan-400/10 px-4 py-3">
-                      <div className="text-[11px] font-semibold uppercase tracking-wide text-cyan-300">
-                        KC’s Quick Shift
-                      </div>
-                      <p className="mt-1 text-sm leading-relaxed text-white/90">
-                        {renderBilingualText(quickShift, false)}
-                      </p>
-                    </div>
-                  ) : null}
-                </div>
-                                <div className="mt-auto px-4 pb-4">
-                  <Link
-                    to="/comments"
-                    className="inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white"
-                  >
-                    💬 Comment
-                  </Link>
-                </div>
-              </article>
-            );
-          })}
+                          {href ? (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="mt-1 block text-base font-semibold leading-snug text-white transition hover:text-cyan-300 sm:text-lg"
+                            >
+                              {renderBilingualTitle(
+                                article?.title || "F1 article"
+                              )}
+                            </a>
+                          ) : (
+                            <div className="mt-1 text-base font-semibold leading-snug text-white sm:text-lg">
+                              {renderBilingualTitle(
+                                article?.title || "F1 article"
+                              )}
+                            </div>
+                          )}
+                          {article?.summary && (
+  <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base">
+    {article.summary}
+  </p>
+)}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              );
+            })
+          ) : (
+            <section className="rounded-3xl border border-white/10 bg-black/60 px-5 py-8 text-center shadow-lg">
+              <h2 className="text-lg font-bold text-cyan-300">
+                Past stories will appear here
+              </h2>
+
+              <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                Previous Formula 1 headlines and links will be
+                added as the daily news is updated.
+              </p>
+            </section>
+          )}
         </main>
 
         <AdBar />

@@ -43,7 +43,9 @@ export default function SiteHeader() {
         <div className="absolute right-0 top-full z-50 mt-2 w-48 rounded-xl border-2 border-cyan-400 bg-black/95 p-4 shadow-[0_0_20px_rgba(34,211,238,0.45)]">
           <div className="flex flex-col gap-3 text-base font-semibold text-cyan-300">
             <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/news">More News</Link>
+            <Link onClick={() => setMenuOpen(false)} to="/news">
+  In Case You Missed It
+</Link>
             <Link
   onClick={() => setMenuOpen(false)}
   to="/next-race"
