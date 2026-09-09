@@ -15,13 +15,13 @@ import { newsSlots } from "./content/newsSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
-  label: "RACE COMPLETE",
-  title: "ITALIAN GRAND PRIX",
-  body: "The Italian Grand Prix is complete. Visit the Race Centre for the full results, session summaries, weekend recap and Photo Gallery.",
-  buttonText: "View the Race Results →",
+   enabled: true,
+  label: "THE COUNTDOWN IS ON",
+  title: "SPANISH GRAND PRIX",
+  body: "A brand-new circuit and a completely fresh challenge await the drivers and teams in Madrid. Visit the Race Centre for the full schedule, latest weather and everything you need before the action begins.",
+  buttonText: "Explore the Race Centre →",
   buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/monza.jpg",
+  backgroundImage: "/img/news/raceposter/spainposter.jpg",
 };
 // ===================================================
 // Full image announcement card
@@ -200,7 +200,7 @@ function RaceWeekendPromo() {
           {raceWeekendPromo.title}
         </h1>
 
-        <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-slate-200/90 sm:text-base">
+        <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-yellow-100 font-semibold sm:text-base">
           {raceWeekendPromo.body}
         </p>
 

@@ -352,83 +352,19 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-1	Charles Leclerc	MON	Scuderia Ferrari HP	1m23.008s	28
-2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m23.181s	25
-3	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m23.312s	25
-4	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.433s	25
-5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m23.644s	26
-6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m23.719s	25
-7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m23.802s	28
-8	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m24.006s	20
-9	Franco Colapinto	ARG	BWT Alpine F1 Team	1m24.028s	26
-10	Paul Aron	EST	BWT Alpine F1 Team	1m24.177s	22
-11	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m24.184s	25
-12	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m24.571s	26
-13	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m24.626s	26
-14	Ollie Bearman	GBR	TGR Haas F1 Team	1m24.646s	27
-15	Luke Browning	GBR	Atlassian Williams F1 Team	1m24.740s	25
-16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m24.827s	24
-17	Ayumu Iwasa	JAP	Oracle Red Bull Racing	1m24.873s	24
-18	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m26.072s	20
-19	Esteban Ocon	FRA	TGR Haas F1 Team	1m25.852s	25
-20	Valtteri Bottas	FIN	Cadillac F1 Team	1m25.984s	26
-21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m26.066s	22
-22	Colton Herta	USA	Cadillac F1 Team	1m29.922s	5
+
 
 
  
 `;
 
 const PASTE_P2 = `
-1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m22.559s	30
-2	Charles Leclerc	MON	Scuderia Ferrari HP	1m22.679s	29
-3	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m22.700s	32
-4	Lando Norris	GBR	McLaren Mastercard F1 Team	1m22.943s	25
-5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m23.016s	27
-6	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m23.028s	25
-7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m23.349s	26
-8	Ollie Bearman	GBR	TGR Haas F1 Team	1m23.370s	29
-9	Max Verstappen	NED	Oracle Red Bull Racing	1m23.377s	30
-10	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m23.455s	28
-11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m23.619s	28
-12	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.660s	36
-13	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m23.732s	28
-14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m23.773s	27
-15	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m23.776s	22
-16	Alex Albon	THA	Atlassian Williams F1 Team	1m23.853s	30
-17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.900s	30
-18	Esteban Ocon	FRA	TGR Haas F1 Team	1m24.407s	30
-19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m25.027s	18
-20	Sergio Perez	MEX	Cadillac F1 Team	1m25.082s	27
-21	Valtteri Bottas	FIN	Cadillac F1 Team	1m25.149s	28
-22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m25.253s	27
 
 
 `;
 
 const PASTE_P3 = `
-1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m22.219s	14
-2	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m22.445s	21
-3	Max Verstappen	NED	Oracle Red Bull Racing	1m22.569s	24
-4	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m22.580s	18
-5	Lando Norris	GBR	McLaren Mastercard F1 Team	1m22.625s	18
-6	Charles Leclerc	MON	Scuderia Ferrari HP	1m22.708s	21
-7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m22.724s	21
-8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m22.773s	21
-9	Pierre Gasly	FRA	BWT Alpine F1 Team	1m22.898s	24
-10	Franco Colapinto	ARG	BWT Alpine F1 Team	1m23.101s	23
-11	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m23.126s	22
-12	Liam Lawson	NWZ	Oracle Red Bull Racing	1m23.203s	23
-13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m23.203s	21
-14	Ollie Bearman	GBR	TGR Haas F1 Team	1m23.298s	23
-15	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m23.585s	16
-16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m23.817s	28
-17	Esteban Ocon	FRA	TGR Haas F1 Team	1m23.875s	25
-18	Alex Albon	THA	Atlassian Williams F1 Team	1m24.020s	29
-19	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m24.437s	20
-20	Valtteri Bottas	FIN	Cadillac F1 Team	1m24.919s	20
-21	Sergio Perez	MEX	Cadillac F1 Team	1m25.031s	20
-22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m25.555s	20
+
  
 `;
 const PASTE_SQ = `
@@ -440,143 +376,12 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
-1	10	
-
-Pierre Gasly
-
-Alpine	1:22.612	1:22.077	1:21.786	18
-2	63	
-
-George Russell
-
-Mercedes	1:22.779	1:22.161	1:21.846	17
-3	81	
-
-Oscar Piastri
-
-McLaren	1:22.924	1:22.017	1:21.966	18
-4	16	
-
-Charles Leclerc
-
-Ferrari	1:22.902	1:22.509	1:22.004	18
-5	44	
-
-Lewis Hamilton
-
-Ferrari	1:22.847	1:22.516	1:22.011	15
-6	3	
-
-Max Verstappen
-
-Red Bull Racing	1:22.631	1:22.188	1:22.070	17
-7	12	
-
-Kimi Antonelli
-
-Mercedes	1:22.758	1:21.882	1:22.093	18
-8	43	
-
-Franco Colapinto
-
-Alpine	1:22.662	1:22.400	1:22.220	18
-9	1	
-
-Lando Norris
-
-McLaren	1:22.659	1:22.067	1:22.256	19
-10	41	
-
-Arvid Lindblad
-
-Racing Bulls	1:22.727	1:22.345	1:22.286	18
-11	5	
-
-Gabriel Bortoleto
-
-Audi	1:22.946	1:22.517		12
-12	87	
-
-Ollie Bearman
-
-Haas F1 Team	1:22.906	1:22.756		15
-13	27	
-
-Nico Hulkenberg
-
-Audi	1:23.440	1:22.779		12
-14	30	
-
-Liam Lawson
-
-Red Bull Racing	1:22.989	1:22.821		17
-15	55	
-
-Carlos Sainz
-
-Williams	1:23.616	1:23.453		15
-16	31	
-
-Esteban Ocon
-
-Haas F1 Team	1:23.466	1:23.454		15
-17	22	
-
-Yuki Tsunoda
-
-Racing Bulls	1:23.755			6
-18	23	
-
-Alex Albon
-
-Williams	1:24.356			6
-19	77	
-
-Valtteri Bottas
-
-Cadillac	1:24.364			9
-20	11	
-
-Sergio Perez
-
-Cadillac	1:24.595			9
-21	14	
-
-Fernando Alonso
-
-Aston Martin	1:25.150			6
-22	18	
-
-Lance Stroll
-
-Aston Martin	1:25.222			9
 
 
 `;
 
 const PASTE_RACE = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	53
-2	George Russell	GBR	Mercedes AMG Petronas F1 Team	+3.8s
-3	Max Verstappen	NED	Oracle Red Bull Racing	+14.7s
-4	Lando Norris	GBR	McLaren Mastercard F1 Team	+19.0s
-5	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+19.2s
-6	Lewis Hamilton	GBR	Scuderia Ferrari HP	+24.6s
-7	Pierre Gasly	FRA	BWT Alpine F1 Team	+27.3s
-8	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	+45.1s
-9	Franco Colapinto	ARG	BWT Alpine F1 Team	+47.3s
-10	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	+58.1s
-11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+65.1s
-12	Nico Hulkenberg	GER	Audi Revolut F1 Team	+66.1s
-13	Carlos Sainz	ESP	Atlassian Williams F1 Team	+74.1s
-14	Liam Lawson	NZL	Oracle Red Bull Racing	+75.6s
-15	Ollie Bearman	GBR	TGR Haas F1 Team	+78.9s
-16	Esteban Ocon	FRA	TGR Haas F1 Team	+1 Lap
-17	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
-18	Sergio Perez	MEX	Cadillac F1 Team	+1 Lap
-19	Valtteri Bottas	FIN	Cadillac F1 Team	+2 Laps
-DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	DNF
-DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	DNF
-DNF	Charles Leclerc	MON	Scuderia Ferrari HP	DNF
+
 
 `;
 
@@ -662,9 +467,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "Ferrari Starts Monza Weekend With an FP1 One-Two",
-      summary: "Charles Leclerc set the fastest time in first practice at Monza, leading Ferrari teammate Lewis Hamilton. George Russell finished third for Mercedes, with Liam Lawson fourth for Red Bull. Four substitute drivers also took part in the session.",
-      url: "https://www.formula1.com/en/latest/article/fp1-leclerc-leads-hamilton-and-russell-during-first-practice-at-the-italian-grand-prix.7DUTqVtZlb4zvqNfBsyl1t",
+        "",
+      summary: "",
+      url: "",
     },
   ],
 },
@@ -672,9 +477,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "Russell Puts Mercedes on Top in FP2",
-      summary: "George Russell led FP2 at Monza with a 1:22.559, finishing 0.120 seconds ahead of Charles Leclerc, while Kimi Antonelli took third. Lando Norris finished fourth after a dangerous near miss with Lance Stroll forced him onto the grass under braking at the first chicane. Leclerc later spun at the second chicane but continued without damage.",
-      url: "https://www.the-race.com/formula-1/mercedes-leads-ferrari-f1-2026-italian-gp-what-you-need-to-know/",
+      title: "",
+      summary: "",
+      url: "",
     },
   ],
 },
@@ -682,11 +487,11 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
     {
- title: "Russell Leads Hamilton and Verstappen in Monza FP3",
+ title: "",
 
 summary:
-  "George Russell topped final practice with a 1:22.219, finishing 0.226 seconds ahead of Lewis Hamilton, with Max Verstappen third. A busy session also featured a tense on-track moment between Hamilton and Verstappen and a spin for Liam Lawson. Kimi Antonelli finished fourth, followed by Lando Norris and Charles Leclerc.",
-      url: "https://www.formula1.com/en/latest/article/fp3-russell-goes-fastest-from-hamilton-and-verstappen-in-final-italy-practice.6i9o4gazCqUo3UtLVRgoe8",
+  "",
+      url: "",
     },
   ],
 },
@@ -695,10 +500,10 @@ summary:
             heading: "Qualifying",
             items: [
               {
-                title: "Gasly Stuns Monza With His First F1 Pole",
+                title: "",
 summary:
-  "Pierre Gasly produced a remarkable final lap of 1:21.786 to claim the first pole position of his Formula 1 career at the circuit where he won his first race in 2020. The Alpine driver beat George Russell by only 0.060 seconds, with Oscar Piastri taking third. Ferrari recovered from nearly losing both cars in Q2 to place Charles Leclerc fourth and Lewis Hamilton fifth, with Hamilton surviving Q2 by just 0.001 seconds. Max Verstappen qualified sixth, while Kimi Antonelli finished seventh before his engine penalty. Franco Colapinto took an impressive eighth, ahead of Lando Norris, who struggled with brake problems, and Arvid Lindblad. Formula 1, FormulaPassion",
-                url: "https://www.formula1.com/en/latest/article/gasly-charges-to-sensational-maiden-f1-pole-at-monza-over-russell-and-piastri.4CKkkbvgmqL04ijMNBfuXF",
+  "",
+                url: "",
               },
             ],
           },
@@ -706,52 +511,51 @@ summary:
             heading: "Race",
             items: [
               {
-                title: "Antonelli Storms From 19th to Historic Monza Victory",
+                title: "",
 
  summary:
-        "Kimi Antonelli produced a sensational comeback at Monza, charging from 19th on the grid after his power-unit penalties to win his home Grand Prix. The race was stopped early after Charles Leclerc suffered a heavy crash at the Parabolica, bringing out the red flag after a tense opening-lap battle with Ferrari teammate Lewis Hamilton. George Russell controlled much of the restarted race, but a late Virtual Safety Car allowed Antonelli to pit for fresh medium tyres while Russell remained on ageing hards. Antonelli quickly closed the gap and passed his Mercedes teammate with three laps remaining, becoming the first Italian driver to win at Monza since Ludovico Scarfiotti in 1966. Russell completed a Mercedes one-two, with Max Verstappen taking third ahead of Lando Norris and Oscar Piastri. Hamilton recovered to sixth, while pole-sitter Pierre Gasly slipped to seventh. Arvid Lindblad, Franco Colapinto and Yuki Tsunoda completed the top 10. Antonelli’s victory increased his championship advantage over Russell to 66 points. Formula 1 race report",
-                url: "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2",
+        "",
+                url: "",
               },
             ],
           },
         ],
 };
 export const nextRaceContent = {
-  raceName: "GRAN PREMIO D'ITALIA",
-  raceDates: "Sep 04th  - Sep 06th, 2026",
-  location: "Monza, Italia",
-  trackInfoUrl: "/img/tracks/zandvoort.jpg",
+  raceName: "TAG HEUER GRAN PREMIO DE ESPANA",
+  raceDates: "Sep 11th  - Sep 13th, 2026",
+  location: "Madrid, Spain",
+  trackInfoUrl: "/img/tracks/spaintrack.jpg",
 
   racePoster: {
     enabled: true,
-    backgroundImage: "/img/news/raceposter/monza.jpg",
-    downloadImage: "/img/news/raceposter/monza.jpg",
+    backgroundImage: "/img/news/raceposter/spainposter.jpg",
+    downloadImage: "/img/news/raceposter/spainposter.jpg",
     buttonText: "Race Poster",
   },
 
  weather: [
- {
+  {
     day: "Friday",
-    date: "Sep 4th",
-    icon: "⛅",
-    temp: "27°C / 16°C",
-    summary: "Long-range outlook: Broken clouds",
+    date: "Sep 11th",
+    icon: "☀️",
+    temp: "30°C / 13°C",
+    summary: "Current outlook: Sunny",
   },
   {
     day: "Saturday",
-    date: "Sep 5th",
+    date: "Sep 12th",
     icon: "☀️",
-    temp: "30°C / 19°C",
-    summary: "Long-range outlook: Sunny",
+    temp: "31°C / 16°C",
+    summary: "Current outlook: Sunny",
   },
   {
     day: "Sunday",
-    date: "Sep 6th",
+    date: "Sep 13th",
     icon: "☀️",
-    temp: "31°C / 20°C",
-    summary: "Long-range outlook: Sunny",
+    temp: "32°C / 16°C",
+    summary: "Current outlook: Sunny",
   },
-
 ],
 
 
@@ -762,7 +566,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "Leclerc fastest, full results below",
+          time: "8:30 AM ADT",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -771,7 +575,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "Russell Fastest, full results below",
+          time: "12:00 PM ADT",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -780,7 +584,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "Russell Fastest, full results below",
+          time: "7:30 AM ADT",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
@@ -789,7 +593,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "Gasly on Pole!, results below",
+          time: "11:00 AM ADT"  ,
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -798,7 +602,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "Anotonelli wins again! results below",
+          time: "10:00 AM ADT",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

@@ -13,6 +13,69 @@ export const photoGalleryContent = {
     "All photographs in this gallery are licensed from XPB Images and used with permission for editorial purposes. Copyright remains with XPB Images and the respective photographers. Images may not be copied, downloaded, saved, reproduced, redistributed, modified, or reused without permission from XPB Images.",
 
   races: [
+    {
+      id: "Italian-2026",
+      raceName: "Italian Grand Prix",
+      dates: "Sep 4th to 6th, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Mercedes/xpb-georgemonza.jpg",
+    alt: "Dutch Grand Prix weekend photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landomonza.jpg",
+    alt: "Dutch Grand Prix weekend photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-georgemonza2.jpg",
+    alt: "Dutch Grand Prix weekend photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Aston/xpb-alonsomonza.jpg",
+    alt: "Dutch Grand Prix weekend photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-russellmonza4.jpg",
+    alt: "Dutch Grand Prix weekend photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Alpine/xpb-gaslymonzapole.jpg",
+    alt: "Dutch Grand Prix weekend photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Alpine/xpb-gaslypole3.jpg",
+    alt: "Dutch Grand Prix weekend photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimimonzawin.jpg",
+    alt: "Dutch Grand Prix weekend photo 8",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimimonza2.jpg",
+    alt: "Dutch Grand Prix weekend photo 9",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-charlesmonzacrash.jpg",
+    alt: "Dutch Grand Prix weekend photo 10",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Races/xpb-monzarace.jpg",
+    alt: "Dutch Grand Prix weekend photo 11",
+    credit: "XPB Images",
+  },
+  
+  ],
+     },
      {
       id: "Dutch-2026",
       raceName: "Dutch Grand Prix",

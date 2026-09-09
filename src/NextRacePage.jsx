@@ -1010,7 +1010,7 @@ export default function NextRacePage() {
 
                 <div className="mt-3 grid grid-cols-2 gap-2">
                  <a
-  href="/img/tracks/monza.jpg"
+  href="/img/tracks/spaintrack.jpg"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
@@ -1124,7 +1124,7 @@ export default function NextRacePage() {
     </h2>
 
     <div className="mt-3 grid grid-cols-2 gap-2">
-    <a href="/img/tracks/monza.jpg"
+    <a href="/img/tracks/spaintrack.jpg"
   target="_blank"
   rel="noreferrer"
   className="inline-flex items-center justify-center rounded-full border border-sky-200/30 bg-sky-700 px-3 py-2 text-[11px] font-semibold text-white transition hover:bg-sky-600"
