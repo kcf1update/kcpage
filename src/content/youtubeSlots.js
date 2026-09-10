@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React After The Race | 2026 Italian Grand Prix ",
-  youtubeInput: "https://youtu.be/zBACnjRTFU0",
-  forceExternal: "blue"
+  title: "Antonelli's Greatest Drive? Ferrari's Home Race Implodes ",
+  youtubeInput: "https://youtu.be/KbzeLK3VN-o",
+  
   },
 
   {
     slotId: "slot2",
-    title: "Race Highlights | 2026 Italian Grand Prix",
-    youtubeInput: "https://youtu.be/uptj3to1l7o",
-   forceExternal: "blue"
+    title: "Will the Madrid F1 track be READY in time?",
+    youtubeInput: "https://youtu.be/A3LGdl3DuZw",
+   
   },
 
   {
     slotId: "slot3",
-    title: "Radio Rewind | 2026 Italian Grand Prix | Lenovo",
-    youtubeInput: "https://youtu.be/Jr4rpfKSLro",
+    title: "The Ultimate Track Guide To MADRING!",
+    youtubeInput: "https://youtu.be/Gfu48zoFbi0",
     forceExternal: "blue"
   }
 ];

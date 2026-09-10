@@ -1,122 +1,139 @@
 export const newsSlots = [
   {
     slotId: 1,
-    sourceLabel: "ESPN",
-    title: "Verstappen Confirms Serious Talks With McLaren and Mercedes",
+    sourceLabel: "The Race",
+    title: "Why F1’s New Madrid Track Is a ‘Car Killer’",
     summary:
-      "Max Verstappen has confirmed that he held serious discussions with McLaren and Mercedes before signing a new Red Bull contract through 2030. He said staying was the right choice for him and believes patience could allow Red Bull to become a championship contender again.",
-    kcsQuickShift: "I don't believe that they were that serious. Max says respectful. I do not believe he had any intention of leaving RedBull. does anybody disagree? ",
-    url: "https://www.espn.co.uk/f1/story/_/id/49878411/max-verstappen-admits-mclaren-mercedes-talks-following-heart-red-bull-stay",
-    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
-    photoCredit: "XPB IMAGES",
-    dateLabel: "September 9, 2026",
+      "Madring produced 19 red flags and three broken chassis during a two-day Formula 3 test. Its unforgiving walls, high-speed chicanes and heavily banked La Monumental corner could create a dramatic qualifying session, although overtaking may be difficult during the race.",
+    kcsQuickShift: "Any track that has concrete walls is a car killer. These guys are paid millions of dollars to figure it out. Lets not judge the track until we see a race.",
+    url: "https://www.the-race.com/formula-1/why-f1s-new-madrid-track-is-a-car-killer/",
+    imagePath: "/img/news/raceposter/spainposter.jpg",
+    photoCredit: "KC AI Generated Image ",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 2,
-    sourceLabel: "MARCA",
+    sourceLabel: "FormulaPassion.it",
     title:
-      "Madring afronta la cuenta atrás para su estreno en la F1 | Madring Begins Final Countdown to Its F1 Debut",
+      "Montoya: “Antonelli vincerà il titolo, ma a parità di gomme Russell lo avrebbe battuto a Monza” | Montoya: “Antonelli Will Win the Title, but Russell Would Have Beaten Him at Monza on Equal Tyres”",
     summary:
-      "El nuevo circuito de Madring se prepara para recibir su primer Gran Premio de España del 11 al 13 de septiembre, marcando el regreso de la Fórmula 1 a Madrid después de 45 años. El trazado de 5,4 kilómetros combina secciones urbanas y permanentes, con la espectacular curva peraltada La Monumental como su principal desafío. | The new Madring circuit is preparing to host its first Spanish Grand Prix from September 11 to 13, bringing Formula 1 back to Madrid after 45 years. The 5.4-kilometre circuit combines street and permanent sections, with the banked La Monumental corner expected to be its biggest challenge.",
-    kcsQuickShift: "Great video in the article. People are saying that the track may chew up tires and cars. I'm sure the engineers will figure it out and the drivers will learn the track quickly. I should be a great race. |Gran video en el artículo. La gente dice que el circuito podría castigar mucho los neumáticos y los coches. Estoy seguro de que los ingenieros encontrarán soluciones y los pilotos aprenderán rápidamente el trazado. Debería ser una gran carrera.  ",
-    url: "https://www.marca.com/motor/formula1/2026/09/09/madring-afronta-cuenta-atras-estreno-f1-video.html",
-    imagePath: "/img/news/raceposter/spainposter.jpg",
-    photoCredit: "KC AI Generated image",
-    dateLabel: "September 9, 2026",
+      "Juan Pablo Montoya crede che Kimi Antonelli diventerà campione del mondo, ma sostiene che George Russell sia stato più veloce durante il weekend di Monza. Secondo Montoya, Russell avrebbe vinto la gara se entrambi i piloti Mercedes avessero utilizzato gomme medie nelle fasi finali. | Juan Pablo Montoya believes Kimi Antonelli will become world champion, but says George Russell was faster throughout the Monza weekend. Montoya believes Russell would have won if both Mercedes drivers had been on medium tyres during the closing stages.",
+    kcsQuickShift: "I agree with Montoya. I think Antonelli will win the Championship. But if George Russell just forgets about the championship and focuses on winning races he could make it difficult. | Sono d’accordo con Montoya. Penso che Antonelli vincerà il campionato. Ma se George Russell smette di pensare al campionato e si concentra sul vincere le gare, potrebbe rendergli la vita difficile. ",
+    url: "https://www.formulapassion.it/f1/f1-news/montoya-antonelli-monza-vittoria-trucco-russell-lo-batteva-parita-gomme-gp-italia-mercedes",
+    imagePath: "/img/news/shut/shutmontoya.jpg",
+    photoCredit: "Shutterstock",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 3,
-    sourceLabel: "Read Motorsport",
-    title: "Madring's La Monumental Corner Poses F1's Toughest Tyre Test",
+    sourceLabel: "RacingNews365",
+    title:
+      "Aston Martin Warn Against ‘Arrogant’ Expectations at Madrid F1 Debut",
     summary:
-      "Pirelli expects Madring's 550-metre La Monumental corner to place the highest vertical loads of the season on the tyres. The banked and grip-limited Turn 12 could generate around 20 percent more energy than Zandvoort, making tyre wear and setup work major concerns for the teams.",
-    kcsQuickShift: "I'm not worried about the extra stress on the tires, as I said previously, the engineers and drivers will figure it out. Let's hope for some exciting side-by-side racing. There are supposed to be a couple of good racing lines.",
-    url: "https://readmotorsport.com/2026/09/09/grand-prix/",
-    imagePath: "/img/news/kcai//news-tiresmiami.jpg",
-    photoCredit: "KC AI Generated images",
-    dateLabel: "September 9, 2026",
+      "Aston Martin’s Mike Krack says it would be arrogant to expect the new Madring circuit to suddenly lift the struggling team into Q3. With every team starting without historical data, Aston Martin plans to build its knowledge gradually and be ready to capitalize if the weekend becomes chaotic.",
+    kcsQuickShift: "Krack saying we are where we are says it all. I don't see any forward movement for Aston...unless they can take advantage of some wrecks up front. Which is maybe the point of what he is saying, I guess.  ",
+    url: "https://racingnews365.com/aston-martin-warn-against-arrogant-expectations-at-madrid-f1-debut",
+    imagePath: "/img/news/xpb/Aston/astonbrokehungarian.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 4,
-    sourceLabel: "RacingNews365 NL",
+    sourceLabel: "Infobae",
     title:
-      "Vettel verwelkomt mogelijk verlies van zijn titelrecord | Vettel Welcomes the Possible Loss of His Title Record",
+      "Lewis Hamilton vs. Charles Leclerc y Fred Vasseur: la inesperada crisis en Ferrari tras la tensa carrera en Monza | Lewis Hamilton vs. Charles Leclerc and Fred Vasseur: Ferrari’s Unexpected Crisis After a Tense Monza Race",
     summary:
-      "Sebastian Vettel zegt dat hij blij zou zijn als Kimi Antonelli zijn record als jongste Formule 1-wereldkampioen verbreekt. De twintigjarige Italiaan leidt het kampioenschap met 66 punten en Vettel vindt dat records er zijn om verbroken te worden. | Sebastian Vettel says he would be happy if Kimi Antonelli breaks his record as Formula 1's youngest World Champion. The 20-year-old Italian leads the championship by 66 points, and Vettel believes records are meant to be broken.",
-    kcsQuickShift: "Always a class act, in his later years, Vettle knows he is watching a generational talent that may break several records. We all just have to sit back and enjoy it | Sempre un uomo di classe. A questo punto della sua vita, Vettel sa di essere davanti a un talento generazionale che potrebbe battere diversi record. A noi non resta che metterci comodi e goderci lo spettacolo.",
-    url: "https://racingnews365.nl/vettel-reageert-op-vrijwel-onvermijdelijk-verlies-titelrecord",
-    imagePath: "/img/news/shut/shutvettel.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "September 9, 2026",
+      "La tensión aumentó en Ferrari después del contacto entre Lewis Hamilton y Charles Leclerc en Monza y las quejas de Hamilton por la falta de cooperación. El informe también cuestiona si Fred Vasseur debe establecer reglas internas más claras y ejercer una autoridad más firme. | Tension has increased at Ferrari following contact between Lewis Hamilton and Charles Leclerc at Monza and Hamilton’s complaints about a lack of cooperation. The report also questions whether Fred Vasseur must establish clearer internal rules and exercise firmer authority.",
+    kcsQuickShift: "Ferrari not just Fred Vasseur has a huge problem on their hands. Lewis Hamilton expects to be treated as the number one driver like he was at Mercedes. Charles Leclerc will never let that happen. | Ferrari, no solo Fred Vasseur, tiene un enorme problema entre manos. Lewis Hamilton espera ser tratado como el piloto número uno, como lo fue en Mercedes. Charles Leclerc nunca permitirá que eso suceda.",
+    url: "https://www.infobae.com/deportes/2026/09/09/lewis-hamilton-vs-charles-leclerc-y-fred-vasseur-la-inesperada-crisis-en-ferrari-que-sacude-a-la-f1-tras-la-tensa-carrera-en-monza/",
+    imagePath: "/img/news/Ferrari/news-ferrarilc.jpg",
+    photoCredit: "Courtesy of Ferrari F1",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 5,
-    sourceLabel: "RacingNews365",
-    title: "Verstappen Predicts Big Shunts at the New Madrid Circuit",
+    sourceLabel: "Motorsport.com",
+    title:
+      "Max Verstappen’s Scathing Verdict: F1 2026 Isn’t Just Unnatural, It’s Too Easy to Drive",
     summary:
-      "Max Verstappen expects Madring to be a difficult circuit where drivers will struggle to put together a perfect lap. He compared its fast corners and nearby walls to Jeddah and warned that mistakes could lead to some major crashes during the weekend.",
-    kcsQuickShift: "Everybody managed to figure out Jeddah's fast and tight corners. If there are some wrecks we'll hope that no one gets hurt. ",
-    url: "https://racingnews365.com/max-verstappen-predicts-big-shunts-at-madrid-f1-weekend",
-    imagePath: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+      "Max Verstappen says energy management has reduced the value of traditional skills such as late braking, early acceleration and commitment through fast corners. He pointed to Liam Lawson and Yuki Tsunoda becoming immediately competitive in unfamiliar cars as evidence that the new generation of cars limits how much difference a driver can make.",
+    kcsQuickShift: "Come on Max, taking a swipe at your teammates is below you. Sounds like sour grapes to me because you are not winning yet.",
+    url: "https://www.motorsport.com/f1/news/max-verstappen-scathing-verdict-f1-2026-unnatural-easy/10854022/",
+    imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "September 9, 2026",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 6,
     sourceLabel: "PlanetF1",
-    title: "McLaren Calls for FIA Changes After Gasly's Monaco Podium Saga",
+    title:
+      "Alpine’s Ownership Picture Could Be About to Change After Key Date Passes",
     summary:
-      "McLaren team principal Andrea Stella wants the FIA to review its Right of Review process after Pierre Gasly's Monaco penalties were reinstated three months after the race. Stella also called for better working conditions for stewards and more consistent methods when official measurements are used.",
-    kcsQuickShift: "Stella is right. First of all the fact that three months out and there is still arguments about Monaco's results is nuts. Even NASCAR wouldn't let is last that lone. And Second he is right the Stewards need to have the conditions that they can make descision early and before the race is over.   ",
-    url: "https://www.planetf1.com/news/andrea-stella-mclaren-fia-changes-pierre-gasly-podium",
-    imagePath: "/img/news/shut/mclaren/news-shutterstockstella.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "September 9, 2026",
+      "Otro Capital can now sell its 24 percent stake in Alpine after a three-year restriction expired on September 8. A group led by Christian Horner could be a possible buyer, although Renault retains the ability to reject offers under certain conditions.",
+    kcsQuickShift: "3.2 billion??. is this Horners way back in? ",
+    url: "https://www.planetf1.com/news/otro-capital-alpine-24-percent-stake-key-date",
+    imagePath: "/img/news/shut/news-shutflavio.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 10, 2026",
   },
 
   {
     slotId: 7,
     sourceLabel: "Nextgen-Auto",
-    title: "Bottas' Cadillac Future Remains Uncertain Despite His Contract",
+    title: "Sainz Sees Hope for Controversial 2026 Rules",
     summary:
-      "Valtteri Bottas is reportedly contracted to Cadillac through at least 2027, but new team principal Marcin Budkowski has stopped short of guaranteeing that he will remain. Esteban Ocon and Yuki Tsunoda have been mentioned as possible replacements, although Budkowski says he is currently happy with Cadillac's drivers.",
-    kcsQuickShift: "I don't know, I think Bottas left Mercedes his star has lost it's shine. He is obviously a brilliant chanacter and an accopmplished winner. But his years in F1 may be numbered. On the other hand he is a better choice than Tsunoda or Ocon.  ",
-    url: "https://motorsport.nextgen-auto.com/en/formula-1/bottas-future-still-uncertain-despite-cadillac-contract,211280.html",
-    imagePath: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
+      "Carlos Sainz says the new regulations have produced entertaining recent races, even though drivers remain unconvinced by push-button overtaking and the reduced importance of traditional driving skills. He believes a few changes in 2027 and 2028 could make this version of Formula 1 much more exciting.",
+    kcsQuickShift: "Exactly! I understand that hardcore enthusiasts want a return to V8s, and I would like that too. But let’s work with what we have now and make it better. The racing has been exciting most of the time this year.",
+    url: "https://motorsport.nextgen-auto.com/en/formula-1/sainz-sees-hope-for-controversial-2026-rules,211303.html#google_vignette",
+    imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
     photoCredit: "XPB IMAGES",
-    dateLabel: "September 9, 2026",
+    dateLabel: "September 10, 2026",
   },
 
   {
-     slotId: 8,
-  sourceLabel: "Yahoo! Japan",
-  title: "95歳のバーニー・エクレストン、ポルトガルで猟銃の不法所持により逮捕か | Bernie Ecclestone, 95, Reportedly Arrested in Portugal Over Shotgun Possession",
-  summary: "元F1最高経営責任者のバーニー・エクレストンが、ポルトガルのティレス空港に到着した際、猟銃を不法に所持していた疑いで拘束されたと報じられた。現地警察はまだ公式コメントを出しておらず、エクレストンは2022年にもブラジルで同様の理由により逮捕されている。 | Former Formula 1 chief executive Bernie Ecclestone was reportedly detained after arriving at Tires Airport in Portugal over the alleged unlawful possession of a shotgun. Local police have not issued an official statement, and Ecclestone was arrested in Brazil under similar circumstances in 2022.",
-  kcsQuickShift: "I don't know what to say about this article. Ecclestone is a bizzare character. If it is a true story and he didn't declare it, in Canada he'd be in jail.  ",
-  url: "https://news.yahoo.co.jp/articles/2b69c8846a2bb8599473eb1728b2e6dcec1ace5a",
-  imagePath: "/img/news/shut/shutbernie.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 9, 2026"
-},
- 
+    slotId: 8,
+    sourceLabel: "Motorsport-Total",
+    title:
+      "„Kleiner Fehler kann viel kosten“: Warum der neue Madring so anspruchsvoll ist | “A Small Mistake Can Be Costly”: Why the New Madring Is So Demanding",
+    summary:
+      "Formel-3-Piloten warnen, dass die Mauern, engen Kurven und schnellen Schikanen des Madring kaum Raum für Fehler lassen. Die jüngsten Testfahrten zeigten, wie schnell ein kleiner Fehler zu großen Schäden führen kann. | Formula 3 drivers have warned that Madring’s walls, tight corners and fast chicanes leave little room for error. Recent testing showed how quickly a small mistake can cause major damage.",
+    kcsQuickShift: "As long as everybody stays safe, I can't wait to see the race |Solange alle sicher bleiben, kann ich es kaum erwarten, das Rennen zu sehen.  ",
+    url: "https://www.motorsport-total.com/formel-1/news/kleiner-fehler-kann-viel-kosten-warum-der-neue-madring-so-anspruchsvoll-ist-26091008",
+    imagePath: "/img/news/xpb/Races/xpbracespain.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 10, 2026",
+  },
 
   {
     slotId: 9,
-    sourceLabel: "GrandPrix247",
-    title: "Williams Revives Its Championship Heritage With Special Madrid Livery",
+    sourceLabel: "RacingNews365",
+    title:
+      "Charles Leclerc ‘Flaw’ Pinned After Latest Monza Crash Disaster",
     summary:
-      "Williams has unveiled a white, green and navy-blue livery for the Spanish Grand Prix, inspired by the championship-winning FW07C that raced at Jarama in 1981. The design celebrates Formula 1's return to Madrid and gives hometown driver Carlos Sainz a special car for his home race.",
-    kcsQuickShift: "Great look for the Williams FW48. I love when the teams pull liverys from thier past and combine them with the present. This one goes all the way back to early 80's. It will sell a lot of diecasts. Which doesn't hurt either.  ",
-    url: "https://www.grandprix247.com/grand-prix-f1-weekend-news/williams-f1-team-unveil-special-madrid-race-livery-inspired-by-title-winning-fw07c",
-    imagePath: "/img/news/williamsspain.jpg",
-    photoCredit: "Courtesy of Williams F1",
-    dateLabel: "September 9, 2026",
+      "David Coulthard believes Charles Leclerc’s occasional costly mistakes are the flaw in his otherwise brilliant driving. He made the comments after Leclerc crashed at Parabolica on lap two at Monza in an accident similar to his crash there in 2020.",
+    kcsQuickShift: "I watched the podcast where David Coulthard talked about this. The way he described it seemed a bit off, to be honest. That being said, does Charles Leclerc have some sort of issue that is causing these crashes?",
+    url: "https://racingnews365.com/charles-leclerc-flaw-pinned-after-latest-monza-crash-disaster",
+    imagePath: "/img/news/xpb/xpbcoulthard.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 10, 2026",
   },
 
-  // Slot 10 will be added when the final English article is selected.
+  {
+    slotId: 10,
+    sourceLabel: "GrandPrix247",
+    title:
+      "Verstappen Hopes to Hit the Ground Running at Madring as Lawson Remains at Red Bull",
+    summary:
+      "Max Verstappen says the new street circuit looks challenging in the simulator, but teams will not understand its grip level until Friday. Liam Lawson will continue alongside him for a third race while Isack Hadjar recovers, with Lawson encouraged by the pace he found as the Monza weekend progressed.",
+    kcsQuickShift: "It will be new for everyone.",
+    url: "https://www.grandprix247.com/formula-1-news/max-verstappen-hopes-to-hit-the-ground-running-at-madring-as-liam-lawson-remains-at-red-bull-for-third-race",
+    imagePath: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 10, 2026",
+  },
 ];

@@ -52,6 +52,31 @@ function renderBilingualTitle(title) {
   );
 }
 
+function renderQuickShift(quickShift) {
+  if (
+    !quickShift ||
+    typeof quickShift !== "string" ||
+    !quickShift.includes("|")
+  ) {
+    return quickShift;
+  }
+
+  const [englishQuickShift, ...rest] = quickShift.split("|");
+  const foreignQuickShift = rest.join("|");
+
+  return (
+    <>
+      <span className="block">
+        {englishQuickShift.trim()}
+      </span>
+
+      <span className="mt-2 block text-sky-200">
+        {foreignQuickShift.trim()}
+      </span>
+    </>
+  );
+}
+
 export default function F1NewsPage() {
   const archiveGroups = Array.isArray(newsArchive)
     ? newsArchive
@@ -72,11 +97,13 @@ export default function F1NewsPage() {
             KC’s Worldwide F1 Update. Select a headline to read
             the original article.
           </p>
+
           <p className="mx-auto mt-3 max-w-3xl border-t border-white/10 pt-3 text-xs leading-relaxed text-slate-400">
-  Each headline links to the original publisher. KC’s Worldwide F1 Update
-  provides brief summaries and commentary and does not reproduce the
-  original articles or their images.
-</p>
+            Each headline links to the original publisher. KC’s
+            Worldwide F1 Update provides brief summaries and
+            commentary and does not reproduce the original
+            articles or their images.
+          </p>
         </header>
 
         <main className="space-y-5">
@@ -128,11 +155,26 @@ export default function F1NewsPage() {
                               )}
                             </div>
                           )}
+
                           {article?.summary && (
-  <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base">
-    {article.summary}
-  </p>
-)}
+                            <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base">
+                              {article.summary}
+                            </p>
+                          )}
+
+                          {article?.kcsQuickShift && (
+                            <div className="mt-3 border-l-4 border-cyan-400 bg-cyan-400/10 px-4 py-3">
+                              <div className="text-xs font-bold uppercase tracking-wide text-cyan-300">
+                                KC’s QuickShift
+                              </div>
+
+                              <p className="mt-1 text-sm leading-relaxed text-white sm:text-base">
+                                {renderQuickShift(
+                                  article.kcsQuickShift
+                                )}
+                              </p>
+                            </div>
+                          )}
                         </article>
                       );
                     })}
