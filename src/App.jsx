@@ -127,10 +127,34 @@ function SeoManager() {
   return null;
 }
 
+
+function IdentityCallbackRedirect() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const identityCallback =
+      /^#(?:confirmation_token|recovery_token|invite_token|email_change_token|access_token)=/.test(
+        window.location.hash
+      );
+
+    if (
+      identityCallback &&
+      location.pathname !== "/kc-daily-news-editor"
+    ) {
+      window.location.replace(
+        `/kc-daily-news-editor${window.location.hash}`
+      );
+    }
+  }, [location.pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <SeoManager />
+      <IdentityCallbackRedirect />
 
       <div className="min-h-screen flex flex-col">
         <div className="flex-1">
