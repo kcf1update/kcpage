@@ -7,3 +7,9 @@
   targetPort = 3000
   port = 8888
   framework = "create-react-app"
+
+[[headers]]
+  for = "/kc-daily-news-editor"
+  [headers.values]
+    Cache-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow, noarchive"
