@@ -2,6 +2,10 @@
   publish = "build"
   functions = "netlify/functions"
 
+[functions]
+  external_node_modules = ["json5"]
+  included_files = ["node_modules/json5/**"]
+
 [dev]
   command = "npm start"
   targetPort = 3000
