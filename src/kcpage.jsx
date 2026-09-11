@@ -15,10 +15,10 @@ import { newsSlots } from "./content/newsSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-   enabled: true,
-  label: "THE COUNTDOWN IS ON",
+ enabled: true,
+  label: "RACE WEEKEND IS UNDERWAY",
   title: "SPANISH GRAND PRIX",
-  body: "A brand-new circuit and a completely fresh challenge await the drivers and teams in Madrid. Visit the Race Centre for the full schedule, latest weather and everything you need before the action begins.",
+  body: "The action has begun at Madrid’s brand-new Madring circuit. Visit the Race Centre for the full schedule, latest weather, session results and weekend updates.",
   buttonText: "Explore the Race Centre →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/spainposter.jpg",
