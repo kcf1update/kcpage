@@ -352,6 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m34.077s	28
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m34.363s	27
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m34.536s	27
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m34.620s	27
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m34.703s	25
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m34.947s	27
+7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m35.033s	28
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m35.148s	22
+9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m35.529s	26
+10	Liam Lawson	NWZ	Oracle Red Bull Racing	1m35.539s	26
+11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m35.652s	27
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m35.757s	25
+13	Franco Colapinto	ARG	BWT Alpine F1 Team	1m35.834s	24
+14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m35.933s	23
+15	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m36.473s	27
+16	Ollie Bearman	GBR	TGR Haas F1 Team	1m36.757s	24
+17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m36.870s	30
+18	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m36.939s	16
+19	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m37.254s	26
+20	Alex Albon	THA	Atlassian Williams F1 Team	1m37.591s	25
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m38.150s	26
+22	Sergio Perez	MEX	Cadillac F1 Team	1m38.818s	25
 
 
 
@@ -467,9 +489,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "",
-      summary: "",
-      url: "",
+        "Russell Leads Mercedes 1-2 as Madring Makes Dramatic F1 Debut",
+      summary: "George Russell set the early standard at Madrid’s new Madring circuit, leading teammate Kimi Antonelli in a commanding Mercedes 1-2 during the venue’s first-ever Formula 1 practice session. Russell’s 1:34.077 put him 0.286 seconds clear of the championship leader, with Charles Leclerc third for Ferrari. Lewis Hamilton claimed fourth despite setting his quickest lap on medium tyres and repeatedly encountering traffic, suggesting Ferrari may have more speed to come. Max Verstappen completed the top five, followed by Lando Norris, Arvid Lindblad, Oscar Piastri, Nico Hülkenberg and Liam Lawson. Drivers pushed the limits while learning the fast and unforgiving circuit, producing several lock-ups and tense near-misses—including Hamilton narrowly avoiding Carlos Sainz through the banked La Monumental corner. Despite fears that the Madring could be a “car killer,” the session ran without a crash or red flag, although Fernando Alonso stopped on track moments before the chequered flag. Madrid’s opening hour delivered speed, traffic chaos and plenty of uncertainty heading into FP2. (Crash.net, RacingNews365)",
+      url: "https://www.planetf1.com/news/spanish-grand-prix-2026-fp1-report",
     },
   ],
 },
@@ -566,7 +588,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "8:30 AM ADT",
+          time: "George Russell fastest, Full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),

@@ -1,29 +1,26 @@
 export const newsSlots = [
   {
-    slotId: 1,
-    sourceLabel: "The Race",
-    title: "Why F1’s New Madrid Track Is a ‘Car Killer’",
-    summary:
-      "Madring produced 19 red flags and three broken chassis during a two-day Formula 3 test. Its unforgiving walls, high-speed chicanes and heavily banked La Monumental corner could create a dramatic qualifying session, although overtaking may be difficult during the race.",
-    kcsQuickShift: "Any track that has concrete walls is a car killer. These guys are paid millions of dollars to figure it out. Lets not judge the track until we see a race.",
-    url: "https://www.the-race.com/formula-1/why-f1s-new-madrid-track-is-a-car-killer/",
-    imagePath: "/img/news/raceposter/spainposter.jpg",
-    photoCredit: "KC AI Generated Image ",
-    dateLabel: "September 10, 2026",
+    slotId: "news-01",
+  sourceLabel: "PlanetF1",
+  title: "Lewis Hamilton Frustrates Rivals as First Madring Practice Gets Heated",
+  summary: "Lewis Hamilton showed strong early pace as Ferrari controlled much of FP1 on the medium tyres, but traffic and mistakes prevented both Hamilton and Charles Leclerc from completing clean laps on the softs. Hamilton frustrated several rivals during the busy session, with Arvid Lindblad and Nico Hülkenberg complaining about being blocked before Carlos Sainz had a close call with the Ferrari through the high-speed La Monumental corner. George Russell took advantage to lead a Mercedes 1-2, finishing 0.286 seconds ahead of Kimi Antonelli, while Leclerc and Hamilton settled for third and fourth.",
+  kcsQuickShift: "Track looks awesome! I think the drivers have to give each other time to figure it all out. In the meantime stay out of Sains's way he is the home boy! Lol | ¡La pista se ve increíble! Creo que los pilotos tienen que darse tiempo entre ellos para entenderla bien. Mientras tanto, ¡que no se metan en el camino de Sainz, que corre en casa! Jajaja.",
+  url: "https://www.planetf1.com/news/spanish-grand-prix-2026-fp1-report",
+  imagePath: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 11, 2026"
   },
 
   {
-    slotId: 2,
-    sourceLabel: "FormulaPassion.it",
-    title:
-      "Montoya: “Antonelli vincerà il titolo, ma a parità di gomme Russell lo avrebbe battuto a Monza” | Montoya: “Antonelli Will Win the Title, but Russell Would Have Beaten Him at Monza on Equal Tyres”",
-    summary:
-      "Juan Pablo Montoya crede che Kimi Antonelli diventerà campione del mondo, ma sostiene che George Russell sia stato più veloce durante il weekend di Monza. Secondo Montoya, Russell avrebbe vinto la gara se entrambi i piloti Mercedes avessero utilizzato gomme medie nelle fasi finali. | Juan Pablo Montoya believes Kimi Antonelli will become world champion, but says George Russell was faster throughout the Monza weekend. Montoya believes Russell would have won if both Mercedes drivers had been on medium tyres during the closing stages.",
-    kcsQuickShift: "I agree with Montoya. I think Antonelli will win the Championship. But if George Russell just forgets about the championship and focuses on winning races he could make it difficult. | Sono d’accordo con Montoya. Penso che Antonelli vincerà il campionato. Ma se George Russell smette di pensare al campionato e si concentra sul vincere le gare, potrebbe rendergli la vita difficile. ",
-    url: "https://www.formulapassion.it/f1/f1-news/montoya-antonelli-monza-vittoria-trucco-russell-lo-batteva-parita-gomme-gp-italia-mercedes",
-    imagePath: "/img/news/shut/shutmontoya.jpg",
-    photoCredit: "Shutterstock",
-    dateLabel: "September 10, 2026",
+    slotId: "news-02",
+  sourceLabel: "MARCA",
+  title: "Russell lidera y los españoles se alejan en el primer libre de Madring | Russell leads as the Spanish drivers struggle in first Madring practice",
+  summary: "George Russell marcó un tiempo de 1:34.077 y lideró un doblete de Mercedes por delante de Kimi Antonelli en la primera sesión de Fórmula 1 disputada en el Madring. Charles Leclerc y Lewis Hamilton fueron tercero y cuarto, mientras que Max Verstappen terminó quinto. Los pilotos españoles tuvieron un comienzo más complicado en casa: Fernando Alonso fue 15º y Carlos Sainz 17º tras sufrir tráfico y problemas de graining. | George Russell set a 1:34.077 to lead a Mercedes 1-2 ahead of Kimi Antonelli in the first Formula 1 session held at the Madring. Charles Leclerc and Lewis Hamilton finished third and fourth, with Max Verstappen fifth. The Spanish drivers endured a more difficult start on home soil, as Fernando Alonso finished 15th and Carlos Sainz 17th after encountering traffic and graining problems.",
+  kcsQuickShift: "I'm a bit surprised to see Russell fastest. Maybe he is just going to take it race by race and not change what he is doing. If he does that...he'll win a few more this year. | Me sorprende un poco ver a Russell como el más rápido. Quizás simplemente afronte cada carrera por separado y no cambie lo que está haciendo. Si mantiene ese enfoque, ganará algunas carreras más este año. ",
+  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/11/russell-lidera-espanoles-alejan-primer-libre-madring.html",
+  imagePath: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 11, 2026"
   },
 
   {
