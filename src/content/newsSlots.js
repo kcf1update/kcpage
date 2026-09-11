@@ -1,26 +1,26 @@
 export const newsSlots = [
   {
     slotId: "news-01",
-  sourceLabel: "PlanetF1",
-  title: "Lewis Hamilton Frustrates Rivals as First Madring Practice Gets Heated",
-  summary: "Lewis Hamilton showed strong early pace as Ferrari controlled much of FP1 on the medium tyres, but traffic and mistakes prevented both Hamilton and Charles Leclerc from completing clean laps on the softs. Hamilton frustrated several rivals during the busy session, with Arvid Lindblad and Nico Hülkenberg complaining about being blocked before Carlos Sainz had a close call with the Ferrari through the high-speed La Monumental corner. George Russell took advantage to lead a Mercedes 1-2, finishing 0.286 seconds ahead of Kimi Antonelli, while Leclerc and Hamilton settled for third and fourth.",
-  kcsQuickShift: "Track looks awesome! I think the drivers have to give each other time to figure it all out. In the meantime stay out of Sains's way he is the home boy! Lol | ¡La pista se ve increíble! Creo que los pilotos tienen que darse tiempo entre ellos para entenderla bien. Mientras tanto, ¡que no se metan en el camino de Sainz, que corre en casa! Jajaja.",
-  url: "https://www.planetf1.com/news/spanish-grand-prix-2026-fp1-report",
-  imagePath: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
+    sourceLabel: "The Race",
+    title: "Antonelli Tops FP2 as Lindblad Crash Brings Madring’s First Red Flag",
+    summary: "Championship leader Kimi Antonelli set the pace in the second practice session at the Madring, beating Charles Leclerc by just 0.113 seconds, with Lewis Hamilton third. Arvid Lindblad produced one of the session’s biggest surprises by running fourth before losing the rear of his Racing Bulls at Turn 13 and crashing, triggering the first red flag of the weekend. George Russell finished fifth ahead of Max Verstappen and Oscar Piastri. Lando Norris completed only two slow laps after a gearbox problem caused a false neutral, costing McLaren valuable track time at the unfamiliar circuit.",
+    kcsQuickShift: "",
+    url: "https://www.the-race.com/formula-1/all-that-happened-in-second-madring-f1-practice/",
+    imagePath: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 11, 2026"
   },
 
   {
     slotId: "news-02",
-  sourceLabel: "MARCA",
-  title: "Russell lidera y los españoles se alejan en el primer libre de Madring | Russell leads as the Spanish drivers struggle in first Madring practice",
-  summary: "George Russell marcó un tiempo de 1:34.077 y lideró un doblete de Mercedes por delante de Kimi Antonelli en la primera sesión de Fórmula 1 disputada en el Madring. Charles Leclerc y Lewis Hamilton fueron tercero y cuarto, mientras que Max Verstappen terminó quinto. Los pilotos españoles tuvieron un comienzo más complicado en casa: Fernando Alonso fue 15º y Carlos Sainz 17º tras sufrir tráfico y problemas de graining. | George Russell set a 1:34.077 to lead a Mercedes 1-2 ahead of Kimi Antonelli in the first Formula 1 session held at the Madring. Charles Leclerc and Lewis Hamilton finished third and fourth, with Max Verstappen fifth. The Spanish drivers endured a more difficult start on home soil, as Fernando Alonso finished 15th and Carlos Sainz 17th after encountering traffic and graining problems.",
-  kcsQuickShift: "I'm a bit surprised to see Russell fastest. Maybe he is just going to take it race by race and not change what he is doing. If he does that...he'll win a few more this year. | Me sorprende un poco ver a Russell como el más rápido. Quizás simplemente afronte cada carrera por separado y no cambie lo que está haciendo. Si mantiene ese enfoque, ganará algunas carreras más este año. ",
-  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/11/russell-lidera-espanoles-alejan-primer-libre-madring.html",
-  imagePath: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
+    sourceLabel: "MARCA",
+    title: "Así lucieron los F1 en el flamante estreno del Madring | How the F1 Cars Looked During the Madring’s Spectacular Debut",
+    summary: "El nuevo circuito semiurbano de Madrid celebró su estreno oficial con los pilotos de Fórmula 1 saliendo por primera vez al Madring. Los aficionados pudieron disfrutar de una jornada completa de acción, con los Libres 1 por la mañana y los Libres 2 por la tarde. Esta galería recoge las mejores imágenes de los coches y pilotos descubriendo el nuevo hogar del Gran Premio de España. | Madrid’s new semi-street circuit made its official debut as the Formula 1 drivers took to the Madring for the first time. Fans enjoyed a full day of action, with FP1 in the morning and FP2 in the afternoon. This gallery captures some of the best images of the cars and drivers discovering the new home of the Spanish Grand Prix.",
+    kcsQuickShift: "A great look at all the cars. | Un gran vistazo a todos los coches.",
+    url: "https://www.marca.com/motor/formula1/gp-espana/album/2026/09/11/asi-lucieron-f1-flamante-estreno-madring_8.html",
+    imagePath: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
+    photoCredit: "XPB IMAGES",
+    dateLabel: "September 11, 2026"
   },
 
   {
