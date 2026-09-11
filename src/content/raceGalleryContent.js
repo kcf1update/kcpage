@@ -20,17 +20,17 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgemonza.jpg",
+          src: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landomonza.jpg",
+          src: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Mercedes/xpb-georgemonza2.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
@@ -44,22 +44,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Aston/xpb-alonsomonza.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-russellmonza4.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Alpine/xpb-gaslymonzapole.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Alpine/xpb-gaslypole3.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
@@ -73,23 +73,23 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimimonzawin.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimimonza2.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpb-charlesmonzacrash.jpg",
+          src: "",
           alt: "Race day gallery image 3",
           credit: "XPB Images",
         },
        
          {
-          src: "/img/news/xpb/Races/xpb-monzarace.jpg",
+          src: "",
           alt: "Race day gallery image 5",
           credit: "XPB Images",
         },
