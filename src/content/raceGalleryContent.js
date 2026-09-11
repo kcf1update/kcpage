@@ -30,11 +30,15 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Visa/xpb-lindbladmadring.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
-        
+        {
+          src: "/img/news/xpb/RedBull/xpb-maxmadring.jpg",
+          alt: "Friday race weekend gallery image 3",
+          credit: "XPB Images",     
+           },
       ],
     },
 

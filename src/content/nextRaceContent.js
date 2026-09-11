@@ -381,6 +381,28 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m33.662s	23
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m33.775s	25
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m33.811s	22
+4	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m33.890s	15
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m33.999s	24
+6	Max Verstappen	NED	Oracle Red Bull Racing	1m34.063s	21
+7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m34.200s	23
+8	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m34.758s	25
+9	Esteban Ocon	FRA	TGR Haas F1 Team	1m34.867s	25
+10	Liam Lawson	NWZ	Oracle Red Bull Racing	1m34.938s	20
+11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m34.959s	20
+12	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m35.060s	21
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m35.170s	24
+14	Ollie Bearman	GBR	TGR Haas F1 Team	1m35.203s	25
+15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m35.886s	21
+16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m36.291s	24
+17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m36.780s	16
+18	Alex Albon	THA	Atlassian Williams F1 Team	1m36.936s	22
+19	Sergio Perez	MEX	Cadillac F1 Team	1m37.195s	23
+20	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m37.273s	20
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m37.727s	23
+22	Lando Norris	GBR	McLaren Mastercard F1 Team	No time set	2
 
 
 `;
@@ -499,9 +521,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "",
-      summary: "",
-      url: "",
+      title: "Antonelli Takes Charge as Lindblad Crash Brings Madring’s First Red Flag",
+      summary: "Kimi Antonelli put Mercedes back on top in FP2 at the Madring, edging Charles Leclerc by just 0.113 seconds as Ferrari closed the gap to the early pacesetters. Lewis Hamilton finished only 0.149 seconds behind Antonelli in third, setting up what could be a close fight between Mercedes and Ferrari. Arvid Lindblad was the surprise of the session, running an impressive fourth before losing the rear of his Racing Bulls at Turn 13 and hitting the barriers. Lindblad was unharmed, but the crash triggered Madrid’s first Formula 1 red flag and cost the drivers nearly 15 minutes of running. George Russell finished fifth after the interruption prevented him from completing a representative soft-tyre lap, followed by Max Verstappen, Oscar Piastri, Yuki Tsunoda, Esteban Ocon and Liam Lawson. Lando Norris suffered the biggest setback of the session, completing only two slow laps after a gearbox problem left his McLaren stuck in false neutral. With the red flag disrupting the qualifying simulations, the true competitive order remains uncertain heading into Saturday.",
+      url: "https://www.formula1.com/en/latest/article/fp2-antonelli-sets-the-pace-ahead-of-leclerc-during-fp2-at-the-spanish-grand-prix.4QbCYEtf6FjwrEiUIGrWmf",
     },
   ],
 },
@@ -597,7 +619,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "12:00 PM ADT",
+          time: "Antonelli Fastest, Full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
