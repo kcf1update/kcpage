@@ -48,12 +48,12 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/Haas/xpb-bearmanmadring.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },

@@ -1,120 +1,121 @@
 export const newsSlots = [
   {
-  slotId: "1",
-  sourceLabel: "The Race",
-  title: "Antonelli Tops FP2 as Lindblad Crash Brings Madring’s First Red Flag",
-  summary: "Championship leader Kimi Antonelli set the pace in the second practice session at the Madring, beating Charles Leclerc by just 0.113 seconds, with Lewis Hamilton third. Arvid Lindblad produced one of the session’s biggest surprises by running fourth before losing the rear of his Racing Bulls at Turn 13 and crashing, triggering the first red flag of the weekend. George Russell finished fifth ahead of Max Verstappen and Oscar Piastri. Lando Norris completed only two slow laps after a gearbox problem caused a false neutral, costing McLaren valuable track time at the unfamiliar circuit.",
-  kcsQuickShift: "Tough practice for Norris, with a busted gearbox, and a tough one for Lindblad, ending up in the wall near the end of practice. He was ok and apologized right away",
-  url: "https://www.the-race.com/formula-1/all-that-happened-in-second-madring-f1-practice/",
+  slotId: "news-01",
+  sourceLabel: "Formula1.com",
+  title: "Antonelli Fastest as Hamilton and Bearman Crash in FP3",
+  summary: "Kimi Antonelli topped final practice at Madring, finishing just 0.103 seconds ahead of Charles Leclerc. The session was stopped twice following crashes for Lewis Hamilton and Ollie Bearman, leaving teams with limited running before qualifying.",
+  kcsQuickShift: "wow this track is fun to watch on TV. You can really see the elevation change on the track and some of the views comming out the corners are really well done. Cant wait for qualifying ",
+  url: "https://www.formula1.com/en/latest/article/fp3-antonelli-fastest-as-hamilton-and-bearman-crash-during-final-practice-at-madring.3F8J82RxBaF6g6fbQQu5M",
+  imagePath: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 12, 2026"
+},
+
+ {
+   slotId: "news-02",
+  sourceLabel: "MARCA",
+  title: "Bearman destroza su Haas antes de luchar con Alonso y Sainz por la Q2 | Bearman Wrecks Haas Before Q2 Battle with Alonso and Sainz",
+  summary: "Oliver Bearman perdió el control de su Haas entre las curvas 10 y 11 y golpeó con fuerza el muro, causando graves daños en la parte trasera. Haas tenía poco más de dos horas para reparar el coche antes de la clasificación, donde Bearman esperaba luchar con Fernando Alonso y Carlos Sainz por un puesto en la Q2. Oliver Bearman lost control of his Haas between Turns 10 and 11 and hit the wall heavily, causing major rear-end damage. Haas had just over two hours to repair the car before qualifying, where Bearman was expected to battle Fernando Alonso and Carlos Sainz for a place in Q2.",
+  kcsQuickShift: "Rough crash for Bearman. So I was wrong, it is turning out to be a Car killer. I thought the drivers would get a grip of the track a bit quicker",
+  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/12/bearman-rival-alonso-sainz-q2-destroza-haas-muro.html",
+  imagePath: "/img/news/xpb/Haas/xpb-bearmanmadring.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 12, 2026"
+},
+
+ {
+  slotId: "news-03",
+  sourceLabel: "ESPN",
+  title: "FIA Boss Pushing for Engine Rule Changes to Keep Fernando Alonso in F1",
+  summary: "FIA president Mohammed Ben Sulayem says Fernando Alonso should not be forced out of Formula 1 because Aston Martin and Honda are struggling. Alonso has scored only three points this season and is out of contract at the end of 2026. Ben Sulayem is exploring whether further rule changes could help Honda close its performance gap, giving Alonso a better reason to continue racing in 2027.",
+  kcsQuickShift: "I get why almost everyone appreciates why keeping Fernando in the series. But why is the FIA president apparently holding meetings with Stroll? I'm pretty sure I read that. You can let me know if I am wrong.",
+  url: "https://www.espn.co.uk/f1/story/_/id/49867163/fia-boss-pushing-engine-rule-changes-keep-fernando-alonso-f1-needs-leave-wants-spanish-grand-prix-madring-formula-1",
+  imagePath: "/img/news/shut/Aston/shut-fernando.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "September 12, 2026"
+},
+
+{
+  slotId: "news-04",
+  sourceLabel: "RacingNews365.nl",
+  title: "Verstappen verklaart F1-onvrede: “Hoe kan je dat denken?!” | Verstappen Explains His F1 Frustration: “How Can You Think That?!”",
+  summary: "De nieuwe krachtbronnen dwingen coureurs soms om in snelle bochten gas terug te nemen, zodat ze op het volgende rechte stuk meer elektrische energie beschikbaar hebben. Max Verstappen vindt dat dit indruist tegen het instinct van een coureur. Hij wijst ook op turbogat en ingewikkeld energiemanagement, waardoor de huidige auto’s volgens hem onnatuurlijk aanvoelen. Verstappen gelooft dat een terugkeer naar V8-motoren de bestuurbaarheid en het echte racegevoel zou verbeteren. The new power units sometimes force drivers to ease off through fast corners so they have more electrical energy available on the following straight. Max Verstappen believes this goes against a driver’s natural instinct. He also points to turbo lag and complicated energy management, which make the current cars feel unnatural to him. Verstappen believes returning to V8 engines would improve drivability and restore a more genuine style of racing.",
+  kcsQuickShift: "Is he not talking about what everybody has been talking about since the begginig of the series? Max has not won a race this year so as long as that continues he will continue to be morw and more critical. my oppinion he just needs to ficus on a win. Sorry Max fans but this is starting to sound like sour grapes to me. | Heeft hij het niet over iets waar iedereen het al sinds het begin van het seizoen over heeft? Max heeft dit jaar nog geen race gewonnen, en zolang dat zo blijft, zal hij steeds kritischer worden. Naar mijn mening moet hij zich gewoon concentreren op het behalen van een overwinning. Sorry, Max-fans, maar dit begint voor mij toch een beetje als zure druiven te klinken. ",
+  url: "https://racingnews365.nl/verstappen-verklaart-f1-onvrede-hoe-kan-je-dat-denken",
+  imagePath: "/img/news/xpb/RedBull/xpbmax.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 12, 2026"
+},
+
+{
+  slotId: "news-05",
+  sourceLabel: "Read Motorsport",
+  title: "F1 Teams Face High-Speed Trap at Madrid’s La Monumental",
+  summary: "Teams face a difficult setup compromise at Madring, where drivers need confidence and rear grip to attack the high-banked La Monumental section. Arvid Lindblad demonstrated the danger when he lost the rear of his Racing Bulls and crashed at Turn 13 during Friday practice. Charles Leclerc also warned that overtaking appears extremely difficult, making qualifying crucial, while high temperatures and tyre degradation could further complicate the race.",
+  kcsQuickShift: "Sounds like that is going to be a problem area. The view comming out of the Monumental corner is amazing on the TV coverage.  ",
+  url: "https://readmotorsport.com/2026/09/12/f1-teams-face-high-speed-trap-at-madrid-s-la-monumental/",
   imagePath: "/img/news/xpb/Visa/xpb-lindbladmadring.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
+  dateLabel: "September 12, 2026"
 },
 
- {
-  slotId: "2",
-  sourceLabel: "MARCA",
-  title: "Así lucieron los F1 en el flamante estreno del Madring | How the F1 Cars Looked During the Madring’s Spectacular Debut",
-  summary: "El nuevo circuito semiurbano de Madrid celebró su estreno oficial con los pilotos de Fórmula 1 saliendo por primera vez al Madring. Los aficionados pudieron disfrutar de una jornada completa de acción, con los Libres 1 por la mañana y los Libres 2 por la tarde. Esta galería recoge las mejores imágenes de los coches y pilotos descubriendo el nuevo hogar del Gran Premio de España. | Madrid’s new semi-street circuit made its official debut as the Formula 1 drivers took to the Madring for the first time. Fans enjoyed a full day of action, with FP1 in the morning and FP2 in the afternoon. This gallery captures some of the best images of the cars and drivers discovering the new home of the Spanish Grand Prix.",
-  kcsQuickShift: "A great look at all the cars | Un gran vistazo a todos los coches.",
-  url: "https://www.marca.com/motor/formula1/gp-espana/album/2026/09/11/asi-lucieron-f1-flamante-estreno-madring_8.html",
-  imagePath: "/img/news/xpb/RedBull/xpb-maxmadring.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
- {
-  slotId: "3",
-  sourceLabel: "Read Motorsport",
-  title: "Alonso Says 2027 Rules Will Decide His Formula 1 Future",
-  summary: "Fernando Alonso says his decision about racing in Formula 1 beyond 2026 will depend more on next year’s rules than Aston Martin’s competitiveness. Alonso believes the current cars are not enjoyable to drive because energy management can be more important than attacking the corners. He sees the planned 2027 changes as a step in the right direction but says an announcement about his future is not coming soon. Alonso will also discuss whether he can help Aston Martin most behind the wheel or in another role.",
-  kcsQuickShift: "He seems pretty tired about answering the same question over and over again.",
-  url: "https://readmotorsport.com/2026/09/11/fernando-alonso-f1-future-2027-rules/",
-  imagePath: "/img/news/xpb/Aston/xpb-fernando.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
-  {
-  slotId: "4",
-  sourceLabel: "Formel1.de",
-  title: "Ocon kämpft um Haas-Zukunft: „Die Fahrer sind nicht das Problem“ | Ocon Fights for Haas Future: “The Drivers Are Not the Problem”",
-  summary: "Esteban Ocons Zukunft bei Haas bleibt ungewiss, während das Team weiterhin mit inkonstanter Fahrzeugleistung kämpft. Ocon sagt, dass weder er noch Oliver Bearman das Problem seien und beide gute Leistungen zeigen, wenn ihre Autos richtig funktionieren. Haas hat mögliche Nachfolger wie Ryo Hirakawa, Leonardo Fornaroli und Rafael Câmara getestet, doch Ocon bestätigt, dass Gespräche über seine Zukunft laufen. | Esteban Ocon’s future at Haas remains uncertain as the team continues struggling with inconsistent car performance. Ocon says neither he nor Oliver Bearman is the problem and believes both drivers deliver when their cars are working properly. Haas has tested possible replacements, including Ryo Hirakawa, Leonardo Fornaroli and Rafael Câmara, but Ocon confirmed that discussions about his future are continuing.",
-  kcsQuickShift: "Ocon is finished at Haas. Nothing against Ocon but time to move on. | Für Ocon ist bei Haas Schluss. Ich habe nichts gegen ihn, aber es ist Zeit, weiterzuziehen.",
-  url: "https://www.formel1.de/news/news/2026-09-11/ocon-kaempft-um-haas-zukunft-die-fahrer-sind-nicht-das-problem",
-  imagePath: "/img/news/xpb/Haas/news-xpbestoban.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
 {
-  slotId: "5",
-  sourceLabel: "PlanetF1",
-  title: "Brundle Checks With FIA Stewards and Stands Firm After Rosberg Disagreement",
-  summary: "Martin Brundle has stood by his opinion that neither Charles Leclerc nor Lewis Hamilton was entirely responsible for their opening-lap clash at Monza. Nico Rosberg believed Leclerc was completely at fault for forcing Hamilton into the gravel, but Brundle contacted the FIA stewards and noted that they took no further action because first-lap incidents are judged differently. Brundle believes Hamilton compromised Leclerc at the first corner before Leclerc could have left more room at the second. Leclerc later accepted responsibility, while both Ferrari drivers confirmed that their relationship remains good.",
-  kcsQuickShift: "I diagreed with Nico Rosberg I think Hamilton was at fault. I'm not sure why Charles so readily accepted resonsibility. Rosberg knows how to stir the pot for sure. He should be on every broadcast",
-  url: "https://www.planetf1.com/news/martin-brundle-held-fia-stewards-talks-after-rosberg-disagreement",
-  imagePath: "/img/news/xpb/news-xpbnicomartin.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
-  {
-  slotId: "6",
-  sourceLabel: "Crash.net",
-  title: "Leclerc Forced Onto Older Ferrari Engine After Monza Crash",
-  summary: "Charles Leclerc is using an older-specification Ferrari power unit at the Spanish Grand Prix because his upgraded engine may have been damaged in his heavy Monza crash. The decision is expected to leave Leclerc down on power compared with Lewis Hamilton, whose Ferrari is fitted with the newer ADUO2 engine. The size of the disadvantage remains unclear, although the Madring is less dependent on engine power than Monza. Leclerc still finished third in FP1 ahead of Hamilton, suggesting the older engine may not seriously damage his chances this weekend.",
-  kcsQuickShift: "Good reason not to crash again.",
-  url: "https://www.crash.net/f1/news/1104203/1/charles-leclerc-forced-use-old-ferrari-f1-engine-after-monza-crash",
-  imagePath: "/img/news/Ferrari/Leclerc/ferrarimiami.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
-  {
-  slotId: "7",
+  slotId: "news-06",
   sourceLabel: "RacingNews365",
-  title: "Red Bull Targets Baku Return for Isack Hadjar",
-  summary: "Red Bull team principal Laurent Mekies hopes Isack Hadjar can return for the Azerbaijan Grand Prix on September 26 as he continues recovering from a fractured wrist. Hadjar has now missed three consecutive race weekends after suffering the injury during boxing training before the Dutch Grand Prix. Red Bull kept him out of Madrid because he was not yet fully fit and the team did not want to delay his recovery. Hadjar’s progress remains on schedule, with simulator work planned before a final decision is made.",
-  kcsQuickShift: "It will be good to see Hadjar back in action. It's been a great oppurtunity for Lawson. I'm glad he got the chance again to drive the RedBull",
-  url: "https://racingnews365.com/red-bull-eyeing-baku-return-for-isack-hadjar",
-  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+  title: "Lewis Hamilton Facing Double Punishment After Blatantly Ignoring Ferrari Instructions",
+  summary: "Lewis Hamilton crashed into the barrier at Madring’s final corner during FP3, damaging his front wing and triggering a red flag. Hamilton attempted to return to the pits despite Ferrari repeatedly instructing him to stop, but the damaged wing became trapped underneath the car and caused a puncture. He lost valuable qualifying preparation and could face further action for driving a damaged car.",
+  kcsQuickShift: "Hamilton is starting to look desperate",
+  url: "https://racingnews365.com/lewis-hamilton-facing-double-punishment-after-blatantly-ignoring-ferrari-instructions",
+  imagePath: "/img/news/xpb/ferrari/xpblewisspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 12, 2026"
+},
+
+{
+   slotId: "news-07",
+  sourceLabel: "GPblog",
+  title: "Bearman’s Madrid Qualifying Hopes Hang in Balance After Big FP3 Crash",
+  summary: "Oliver Bearman’s participation in qualifying was left in serious doubt after a heavy crash near La Monumental during the closing moments of FP3. The Haas driver clipped the barrier with his right-front tyre, spun and struck the opposite barrier heavily with the left side of the car. The VF-26 suffered significant front and rear damage, leaving Haas with less than two hours to complete a major repair before qualifying.",
+  kcsQuickShift: "That was a hard hit. I think they said that may not even be fixed for qualifying so he may be starting from the pit lane. He sounded a little rough after he hit the wall. Glad he is ok.",
+  url: "https://www.gpblog.com/en/news/bearmans-madrid-qualifying-hopes-hang-in-balance-after-big-fp3-crash",
+  imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 12, 2026"
+},
+
+{
+  slotId: "news-08",
+  sourceLabel: "M4 Sport",
+  title: "„Nehezebb a legtöbb pályánál” – az F1-es versenyzők dicsérik az új Madringet | “More Difficult Than Most Circuits” – F1 Drivers Praise the New Madring",
+  summary: "A versenyzők gyorsnak, nehéznek és veszélyesnek nevezték az új madridi pályát az első két szabadedzés után. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell és Pierre Gasly élvezte a kihívást, bár a közeli falak és a gyors kanyarok kevés lehetőséget hagynak a hibázásra. A gumik túlmelegedése, az energiakezelés és az előzés nehézsége is komoly gondot jelenthet. Több versenyző szerint az időmérő döntő fontosságú lesz, mert vasárnap kevés hagyományos előzésre számítanak. Drivers described Madrid’s new circuit as fast, difficult and dangerous after the opening two practice sessions. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell and Pierre Gasly enjoyed the challenge, although the nearby walls and high-speed corners leave little room for mistakes. Tyre overheating, energy management and limited overtaking opportunities could all become major concerns. Several drivers believe qualifying will be crucial because traditional overtaking may be extremely difficult on Sunday.",
+  kcsQuickShift: "This is going to be a great race. With some of the drivers, if not all of the driver driving on a knifes edge it's goiung to be wild. Let's just all hope no one get hurt | Ez egy nagyszerű verseny lesz. Mivel néhány, ha nem az összes pilóta pengeélen fog autózni, biztosan őrült futam vár ránk. Reméljük, hogy senki sem sérül meg.",
+  url: "https://m4sport.hu/forma-1/cikk/2026/09/11/nehezebb-a-legtobb-palyanal-az-f1-es-versenyzok-dicserik-az-uj-madringet",
+  imagePath: "/img/news/xpb/Races/xpbracespain.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "September 11, 2026"
 },
 
-  {
-  slotId: 8,
-  sourceLabel: "FORMULA PASSION",
-  title: "Vasseur: “Dopo Monza non cambierò nulla, Hamilton conosceva la filosofia Ferrari” | Vasseur: “Nothing Changes After Monza, Hamilton Knew Ferrari’s Philosophy”",
-  summary: "Frédéric Vasseur ha ribadito che Ferrari continuerà a trattare Lewis Hamilton e Charles Leclerc come due numeri uno. Il team principal ha spiegato che Hamilton conosceva questa filosofia quando ha firmato e che un pilota riceverà la priorità soltanto se la situazione di campionato lo renderà necessario. | Frédéric Vasseur insists Ferrari will continue treating Lewis Hamilton and Charles Leclerc as equal number-one drivers. The team principal says Hamilton knew that philosophy when he signed and priority will only be given if the championship situation demands it.",
-  kcsQuickShift: "Vasseur makes it pretty clear but that will not change how Lewis Hamilton will feel. He expects to be treated as #1 regardless of what Ferrari philosophy is. | Vasseur lo dice piuttosto chiaramente, ma questo non cambierà ciò che pensa Lewis Hamilton. Si aspetta di essere trattato come il pilota numero uno, indipendentemente dalla filosofia della Ferrari.",
-  url: "https://www.formulapassion.it/f1/f1-news/vasseur-dopo-monza-cambiero-nulla-hamilton-quando-firmato-due-piloti-pari-ferrari",
-  imagePath: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
+{
+  slotId: "news-09",
+  sourceLabel: "PlanetF1",
+  title: "The Mindblowing Hypocrisy of Lewis Hamilton",
+  summary: "PlanetF1 argues that Lewis Hamilton’s criticism of Charles Leclerc and Ferrari following their clash at Monza is hypocritical because Hamilton frequently used similarly aggressive tactics against Nico Rosberg at Mercedes. The opinion piece acknowledges that Hamilton has legitimate concerns about Ferrari’s execution and communication, but warns that repeatedly criticizing the team in public and comparing it unfavourably with Mercedes could alienate the people around him.",
+  kcsQuickShift: "hmmm...there some races on youtube. Have a look and let me know if they are right. The article has a ring of truth to it, if you ask me.",
+  url: "https://www.planetf1.com/features/lewis-hamilton-hypocrisy",
+  imagePath: "/img/news/Ferrari/Lewis/lewishungary.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
+  dateLabel: "September 12, 2026"
 },
 
-  {
-  slotId: 9,
-  sourceLabel: "RACINGNEWS365",
-  title: "Gearbox Gremlin Costs Lando Norris Crucial Madring Track Time",
-  summary: "Lando Norris completed only two installation laps in Spanish Grand Prix FP2 before a false-neutral problem forced his McLaren back into the garage. The team identified a gearbox issue and began changing the unit, costing Norris valuable running while the drivers continued learning Formula 1’s demanding new Madring circuit.",
-  kcsQuickShift: "Tough to have that happen on a new track. SkySports broadcast said that the Gearbox looked pretty busted up when they were taking it apart.",
-  url: "https://racingnews365.com/lando-norris-loses-crucial-running-as-gearbox-gremlin-strikes",
-  imagePath: "/img/news/xpb/Mclaren/news-landodnfcanadiangp.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
-  {
-  slotId: 10,
-  sourceLabel: "MOTORSPORT.COM",
-  title: "Montoya Fired Up by Madring: First 2026 F1 Track He Wants to Drive",
-  summary: "Juan Pablo Montoya says the Madring is the first new Formula 1 circuit in years that has made him want to climb back behind the wheel. After touring the track in a road car, Montoya praised its elevation changes, blind corners and unforgiving layout, describing it as a thrilling combination of Jeddah and old-school Monaco.",
-  kcsQuickShift: "I enjoy Montoya's commentary. I agree he is sometimes looking for clicks on his comments but he always show enthusiasm. Something their F1 broadcast lacks",
-  url: "https://www.motorsport.com/f1/news/juan-pablo-montoya-says-madring-is-first-2026-f1-track-he-wants-to-drive/10854613/",
-  imagePath: "/img/news/shut/shutmontoya.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 11, 2026"
+{
+  slotId: "news-10",
+  sourceLabel: "F1i.com",
+  title: "Russell Highlights Worrying Prospect for Race Day at Madring",
+  summary: "George Russell believes severe tyre degradation could become one of the Spanish Grand Prix’s biggest challenges. He joked that the degradation seen during FP1 suggested a six-stop strategy would have been fastest. La Monumental puts the tyres under sustained lateral load, while the circuit’s repeated corners give them little time to cool. Mercedes believes thermal degradation could force teams into more pit stops than originally expected, especially after Friday’s interrupted running left them with limited long-run data.",
+  kcsQuickShift: "I have not heard much about that during practice session?.",
+  url: "https://f1i.com/news/572842-russell-highlights-worrying-prospect-for-race-day-at-madring.html",
+  imagePath: "/img/news/kcai/news-tiresmiami.jpg",
+  photoCredit: "KC AI Generated Image",
+  dateLabel: "September 12, 2026"
 },
 ];
