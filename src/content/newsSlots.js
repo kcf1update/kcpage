@@ -1,25 +1,25 @@
 export const newsSlots = [
-  {
+ {
   slotId: "news-01",
-  sourceLabel: "Formula1.com",
-  title: "Antonelli Fastest as Hamilton and Bearman Crash in FP3",
-  summary: "Kimi Antonelli topped final practice at Madring, finishing just 0.103 seconds ahead of Charles Leclerc. The session was stopped twice following crashes for Lewis Hamilton and Ollie Bearman, leaving teams with limited running before qualifying.",
-  kcsQuickShift: "wow this track is fun to watch on TV. You can really see the elevation change on the track and some of the views comming out the corners are really well done. Cant wait for qualifying ",
-  url: "https://www.formula1.com/en/latest/article/fp3-antonelli-fastest-as-hamilton-and-bearman-crash-during-final-practice-at-madring.3F8J82RxBaF6g6fbQQu5M",
-  imagePath: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
+  sourceLabel: "PlanetF1",
+  title: "Lando Norris Stuns Rivals to Take First Madring Pole",
+  summary: "Lando Norris produced a superb final lap to claim pole position for the Spanish Grand Prix, beating Kimi Antonelli by just 0.011 seconds. Max Verstappen qualified third, followed by Lewis Hamilton and Charles Leclerc. It was a difficult session for the home drivers, with Carlos Sainz qualifying 17th and Fernando Alonso 18th.",
+  kcsQuickShift: "Awesome run for Norris. Even he was surprised by where that lap came from. Antonelli looked disappointed standing next to him. Goes to show you why he is, the reigning champion.",
+  url: "https://www.planetf1.com/news/spanish-grand-prix-2026-qualifying-report",
+  imagePath: "/img/news/xpb/Mclaren/xpb-landopolemadring.jpg",
   photoCredit: "XPB IMAGES",
   dateLabel: "September 12, 2026"
 },
 
  {
-   slotId: "news-02",
-  sourceLabel: "MARCA",
-  title: "Bearman destroza su Haas antes de luchar con Alonso y Sainz por la Q2 | Bearman Wrecks Haas Before Q2 Battle with Alonso and Sainz",
-  summary: "Oliver Bearman perdió el control de su Haas entre las curvas 10 y 11 y golpeó con fuerza el muro, causando graves daños en la parte trasera. Haas tenía poco más de dos horas para reparar el coche antes de la clasificación, donde Bearman esperaba luchar con Fernando Alonso y Carlos Sainz por un puesto en la Q2. Oliver Bearman lost control of his Haas between Turns 10 and 11 and hit the wall heavily, causing major rear-end damage. Haas had just over two hours to repair the car before qualifying, where Bearman was expected to battle Fernando Alonso and Carlos Sainz for a place in Q2.",
-  kcsQuickShift: "Rough crash for Bearman. So I was wrong, it is turning out to be a Car killer. I thought the drivers would get a grip of the track a bit quicker",
-  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/12/bearman-rival-alonso-sainz-q2-destroza-haas-muro.html",
-  imagePath: "/img/news/xpb/Haas/xpb-bearmanmadring.jpg",
-  photoCredit: "XPB IMAGES",
+  slotId: "news-02",
+  sourceLabel: "FormulaPassion.it",
+  title: "GP di Spagna, capolavoro di Norris e degli organizzatori | Spanish GP, a Masterpiece from Norris and the Organizers",
+  summary: "Lando Norris ha conquistato la prima pole position al Madring davanti a Kimi Antonelli e Max Verstappen, mentre Lewis Hamilton e Charles Leclerc hanno ottenuto il quarto e quinto posto. L'editoriale elogia anche gli organizzatori per aver realizzato un circuito cittadino accessibile, impegnativo e caratterizzato dalla spettacolare curva La Monumental. |  Lando Norris claimed the first pole position at Madring ahead of Kimi Antonelli and Max Verstappen, with Lewis Hamilton and Charles Leclerc taking fourth and fifth. The editorial also praises the organizers for creating an accessible and challenging city circuit highlighted by the spectacular La Monumental corner.",
+  kcsQuickShift: "Great run for Lawson and Colapinto 8th and 9th respectively. Great to see LindBlad in 10th after the earlier wreck. | Ottime prestazioni di Lawson e Colapinto, che si sono qualificati rispettivamente ottavo e nono. È stato bello vedere anche Lindblad conquistare il decimo posto dopo l’incidente di ieri. ",
+  url: "https://www.formulapassion.it/editoriale/gp-di-spagna-pole-capolavoro-di-norris-e-capolavoro-degli-organizzatori",
+  imagePath: "/img/news/xpb/Races/xpb-madringtop3pole.jpg",
+  photoCredit: "",
   dateLabel: "September 12, 2026"
 },
 
@@ -39,7 +39,7 @@ export const newsSlots = [
   slotId: "news-04",
   sourceLabel: "RacingNews365.nl",
   title: "Verstappen verklaart F1-onvrede: “Hoe kan je dat denken?!” | Verstappen Explains His F1 Frustration: “How Can You Think That?!”",
-  summary: "De nieuwe krachtbronnen dwingen coureurs soms om in snelle bochten gas terug te nemen, zodat ze op het volgende rechte stuk meer elektrische energie beschikbaar hebben. Max Verstappen vindt dat dit indruist tegen het instinct van een coureur. Hij wijst ook op turbogat en ingewikkeld energiemanagement, waardoor de huidige auto’s volgens hem onnatuurlijk aanvoelen. Verstappen gelooft dat een terugkeer naar V8-motoren de bestuurbaarheid en het echte racegevoel zou verbeteren. The new power units sometimes force drivers to ease off through fast corners so they have more electrical energy available on the following straight. Max Verstappen believes this goes against a driver’s natural instinct. He also points to turbo lag and complicated energy management, which make the current cars feel unnatural to him. Verstappen believes returning to V8 engines would improve drivability and restore a more genuine style of racing.",
+  summary: "De nieuwe krachtbronnen dwingen coureurs soms om in snelle bochten gas terug te nemen, zodat ze op het volgende rechte stuk meer elektrische energie beschikbaar hebben. Max Verstappen vindt dat dit indruist tegen het instinct van een coureur. Hij wijst ook op turbogat en ingewikkeld energiemanagement, waardoor de huidige auto’s volgens hem onnatuurlijk aanvoelen. Verstappen gelooft dat een terugkeer naar V8-motoren de bestuurbaarheid en het echte racegevoel zou verbeteren. | The new power units sometimes force drivers to ease off through fast corners so they have more electrical energy available on the following straight. Max Verstappen believes this goes against a driver’s natural instinct. He also points to turbo lag and complicated energy management, which make the current cars feel unnatural to him. Verstappen believes returning to V8 engines would improve drivability and restore a more genuine style of racing.",
   kcsQuickShift: "Is he not talking about what everybody has been talking about since the begginig of the series? Max has not won a race this year so as long as that continues he will continue to be morw and more critical. my oppinion he just needs to ficus on a win. Sorry Max fans but this is starting to sound like sour grapes to me. | Heeft hij het niet over iets waar iedereen het al sinds het begin van het seizoen over heeft? Max heeft dit jaar nog geen race gewonnen, en zolang dat zo blijft, zal hij steeds kritischer worden. Naar mijn mening moet hij zich gewoon concentreren op het behalen van een overwinning. Sorry, Max-fans, maar dit begint voor mij toch een beetje als zure druiven te klinken. ",
   url: "https://racingnews365.nl/verstappen-verklaart-f1-onvrede-hoe-kan-je-dat-denken",
   imagePath: "/img/news/xpb/RedBull/xpbmax.jpg",
@@ -87,7 +87,7 @@ export const newsSlots = [
   slotId: "news-08",
   sourceLabel: "M4 Sport",
   title: "„Nehezebb a legtöbb pályánál” – az F1-es versenyzők dicsérik az új Madringet | “More Difficult Than Most Circuits” – F1 Drivers Praise the New Madring",
-  summary: "A versenyzők gyorsnak, nehéznek és veszélyesnek nevezték az új madridi pályát az első két szabadedzés után. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell és Pierre Gasly élvezte a kihívást, bár a közeli falak és a gyors kanyarok kevés lehetőséget hagynak a hibázásra. A gumik túlmelegedése, az energiakezelés és az előzés nehézsége is komoly gondot jelenthet. Több versenyző szerint az időmérő döntő fontosságú lesz, mert vasárnap kevés hagyományos előzésre számítanak. Drivers described Madrid’s new circuit as fast, difficult and dangerous after the opening two practice sessions. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell and Pierre Gasly enjoyed the challenge, although the nearby walls and high-speed corners leave little room for mistakes. Tyre overheating, energy management and limited overtaking opportunities could all become major concerns. Several drivers believe qualifying will be crucial because traditional overtaking may be extremely difficult on Sunday.",
+  summary: "A versenyzők gyorsnak, nehéznek és veszélyesnek nevezték az új madridi pályát az első két szabadedzés után. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell és Pierre Gasly élvezte a kihívást, bár a közeli falak és a gyors kanyarok kevés lehetőséget hagynak a hibázásra. A gumik túlmelegedése, az energiakezelés és az előzés nehézsége is komoly gondot jelenthet. Több versenyző szerint az időmérő döntő fontosságú lesz, mert vasárnap kevés hagyományos előzésre számítanak. | Drivers described Madrid’s new circuit as fast, difficult and dangerous after the opening two practice sessions. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell and Pierre Gasly enjoyed the challenge, although the nearby walls and high-speed corners leave little room for mistakes. Tyre overheating, energy management and limited overtaking opportunities could all become major concerns. Several drivers believe qualifying will be crucial because traditional overtaking may be extremely difficult on Sunday.",
   kcsQuickShift: "This is going to be a great race. With some of the drivers, if not all of the driver driving on a knifes edge it's goiung to be wild. Let's just all hope no one get hurt | Ez egy nagyszerű verseny lesz. Mivel néhány, ha nem az összes pilóta pengeélen fog autózni, biztosan őrült futam vár ránk. Reméljük, hogy senki sem sérül meg.",
   url: "https://m4sport.hu/forma-1/cikk/2026/09/11/nehezebb-a-legtobb-palyanal-az-f1-es-versenyzok-dicserik-az-uj-madringet",
   imagePath: "/img/news/xpb/Races/xpbracespain.jpg",

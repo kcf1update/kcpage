@@ -441,6 +441,106 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	1	
+
+Lando Norris
+
+McLaren	1:33.469	1:32.873	1:31.824	19
+2	12	
+
+Kimi Antonelli
+
+Mercedes	1:33.267	1:32.591	1:31.835	20
+3	3	
+
+Max Verstappen
+
+Red Bull Racing	1:33.381	1:32.431	1:31.964	18
+4	44	
+
+Lewis Hamilton
+
+Ferrari	1:33.531	1:32.710	1:32.013	21
+5	16	
+
+Charles Leclerc
+
+Ferrari	1:33.532	1:32.755	1:32.019	21
+6	63	
+
+George Russell
+
+Mercedes	1:33.211	1:32.850	1:32.149	22
+7	81	
+
+Oscar Piastri
+
+McLaren	1:33.829	1:33.204	1:32.294	22
+8	30	
+
+Liam Lawson
+
+Red Bull Racing	1:33.310	1:32.780	1:32.316	18
+9	43	
+
+Franco Colapinto
+
+Alpine	1:33.963	1:33.038	1:32.903	17
+10	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:34.340	1:33.204	1:33.041	21
+11	27	
+
+Nico Hulkenberg
+
+Audi	1:34.417	1:33.223		13
+12	5	
+
+Gabriel Bortoleto
+
+Audi	1:33.986	1:33.388		12
+13	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:34.667	1:33.667		11
+14	10	
+
+Pierre Gasly
+
+Alpine	1:34.246	1:33.753		11
+15	22	
+
+Yuki Tsunoda
+
+Racing Bulls	1:34.311	1:34.084		15
+16	23	
+
+Alex Albon
+
+Williams	1:35.307	1:35.532		14
+17	55	
+
+Carlos Sainz
+
+Williams	1:35.312			9
+18	14	
+
+Fernando Alonso
+
+Aston Martin	1:35.388			9
+19	11	
+
+Sergio Perez
+
+Cadillac	1:35.913			9
+20	77	
+
+Valtteri Bottas
+
+Cadillac	1:38.011			8
 
 
 `;
@@ -557,7 +657,7 @@ export const raceWeekendRecap = {
     "Kimi Antonelli completed a strong practice programme at Madring by setting the fastest time in a heavily disrupted final session. The Mercedes driver moved to the top in the closing minutes, beating Charles Leclerc by 0.166 seconds and Oscar Piastri by 0.189 seconds. Lando Norris finished fourth, followed by Max Verstappen, George Russell, Liam Lawson and Nico Hulkenberg. Lewis Hamilton was ninth, with Gabriel Bortoleto completing the top 10. " +
     "Hamilton caused the session's biggest interruption when he locked up and crashed into the barriers at the final corner while running fourth. His front wing broke and became trapped beneath the car, causing a puncture as he attempted to return to the pits. Barrier repairs left several drivers with limited time to complete their qualifying simulations. " +
     "Alex Albon also clipped the barriers at Turn 21 and did not return while Williams worked on his damaged car. FP3 ended under another red flag after Oliver Bearman crashed at Turn 11. The interrupted running leaves the teams with plenty of uncertainty ahead of qualifying.",
-  url: "https://www.planetf1.com/spanish-grand-prix/spanish-grand-prix-2026-fp3-report",
+  url: "https://www.skysports.com/f1/news/12433/13584715/spanish-gp-lewis-hamilton-crashes-as-kimi-antonelli-tops-final-practice-from-charles-leclerc-in-madrid",
 },
   ],
 },
@@ -566,10 +666,18 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "",
+                title: "Norris Claims First Madring Pole by 0.011 Seconds as Antonelli Shines",
 summary:
-  "",
-                url: "",
+   "Lando Norris produced a brilliant final lap to claim the first Formula 1 pole position at Madring. His time of 1:31.824 put him just 0.011 seconds ahead of Kimi Antonelli, with Max Verstappen qualifying third. Lewis Hamilton secured fourth ahead of Charles Leclerc and George Russell." +
+
+  "\n\nOnly 21 drivers took part after Haas was unable to repair Oliver Bearman’s car following his heavy FP3 crash. Track-limit violations affected several drivers in Q1, while Russell brushed the wall at Turn 21. Both home favourites were eliminated, with Carlos Sainz qualifying 17th and Fernando Alonso 18th." +
+
+  "\n\nVerstappen set the pace during Q2 as the track temperature reached 53°C. Nico Hulkenberg, Gabriel Bortoleto, Esteban Ocon, Pierre Gasly, Yuki Tsunoda and Alex Albon were eliminated. Oscar Piastri narrowly advanced to Q3 in ninth place." +
+
+  "\n\nHamilton held provisional pole after the first Q3 runs before Antonelli moved ahead. Norris then delivered his best lap when it mattered. Piastri qualified seventh, followed by strong performances from Liam Lawson in eighth, Franco Colapinto in ninth and Arvid Lindblad in 10th." +
+
+  "\n\nFormulaPassion also praised the organizers for completing the new 5.4-kilometre, 22-corner circuit and making the event easily accessible from central Madrid. With close walls, fast corners and the steeply banked La Monumental section, Madring has already established itself as one of the season’s most demanding circuits.",
+                url: "https://www.the-race.com/formula-1/f1-spanish-grand-prix-qualifying-norris-beats-antonelli-pole/",
               },
             ],
           },
@@ -659,7 +767,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "11:00 AM ADT"  ,
+          time: "Norris on Pole!, Results below"  ,
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
