@@ -408,7 +408,28 @@ const PASTE_P2 = `
 `;
 
 const PASTE_P3 = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m32.797s	13
+2	Charles Leclerc	MON	Scuderia Ferrari HP	1m32.963s	13
+3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m32.986s	12
+4	Lando Norris	GBR	McLaren Mastercard F1 Team	1m33.033s	13
+5	Max Verstappen	NED	Oracle Red Bull Racing	1m33.172s	9
+6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m33.499s	11
+7	Liam Lawson	NWZ	Oracle Red Bull Racing	1m33.902s	14
+8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m33.933s	14
+9	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m34.284s	5
+10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m34.288s	15
+11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m34.346s	14
+12	Esteban Ocon	FRA	TGR Haas F1 Team	1m34.430s	12
+13	Ollie Bearman	GBR	TGR Haas F1 Team	1m34.481s	12
+14	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m34.505s	7
+15	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m34.565s	12
+16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m34.971s	13
+17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m35.020s	17
+18	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m35.464s	15
+19	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m35.570s	12
+20	Valtteri Bottas	FIN	Cadillac F1 Team	1m36.441s	13
+21	Sergio Perez	MEX	Cadillac F1 Team	1m36.670s	13
+22	Alex Albon	THA	Atlassian Williams F1 Team	No time set	2
  
 `;
 const PASTE_SQ = `
@@ -530,13 +551,14 @@ export const raceWeekendRecap = {
 {
   heading: "Practice 3",
   items: [
-    {
- title: "",
-
-summary:
-  "",
-      url: "",
-    },
+ {
+  title: "Antonelli Leads Dramatic Final Practice as Hamilton and Bearman Crash at Madring",
+  summary:
+    "Kimi Antonelli completed a strong practice programme at Madring by setting the fastest time in a heavily disrupted final session. The Mercedes driver moved to the top in the closing minutes, beating Charles Leclerc by 0.166 seconds and Oscar Piastri by 0.189 seconds. Lando Norris finished fourth, followed by Max Verstappen, George Russell, Liam Lawson and Nico Hulkenberg. Lewis Hamilton was ninth, with Gabriel Bortoleto completing the top 10. " +
+    "Hamilton caused the session's biggest interruption when he locked up and crashed into the barriers at the final corner while running fourth. His front wing broke and became trapped beneath the car, causing a puncture as he attempted to return to the pits. Barrier repairs left several drivers with limited time to complete their qualifying simulations. " +
+    "Alex Albon also clipped the barriers at Turn 21 and did not return while Williams worked on his damaged car. FP3 ended under another red flag after Oliver Bearman crashed at Turn 11. The interrupted running leaves the teams with plenty of uncertainty ahead of qualifying.",
+  url: "https://www.planetf1.com/spanish-grand-prix/spanish-grand-prix-2026-fp3-report",
+},
   ],
 },
 
@@ -628,7 +650,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "7:30 AM ADT",
+          time: "Antonelli fastest again, Full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
