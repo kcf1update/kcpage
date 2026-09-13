@@ -32,7 +32,7 @@ export default function CountdownBar() {
       title="Go to Race Centre"
     >
       <img src="/flags/az.png" alt="Azerbaijan flag" className="h-4 w-auto" />
-      <span>Quatar Airways Azerbaijan Grand Prix</span>
+      <span>Qatar Airways Azerbaijan Grand Prix</span>
       
     </Link>
   );
@@ -41,7 +41,7 @@ export default function CountdownBar() {
   return (
   <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base text-white font-semibold">
     <img src="/flags/az.png" alt="Azerbaijan flag" className="h-4 w-auto" />
-    <span>Quatar Airways Azerbaijan Grand Prix:</span>
+    <span>Qatar Airways Azerbaijan Grand Prix:</span>
     <span className="text-sky-300 text-sm sm:text-base md:text-lg">
       {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     </span>
