@@ -546,7 +546,28 @@ Cadillac	1:38.011			8
 `;
 
 const PASTE_RACE = `
-
+1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	57
+2	Max Verstappen	NED	Oracle Red Bull Racing	+4.3s
+3	Lando Norris	GBR	McLaren Mastercard F1 Team	+5.0s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	+29.1s
+5	George Russell	GBR	Mercedes AMG Petronas F1 Team	+29.8s
+6	Liam Lawson	NZL	Oracle Red Bull Racing	+86.7s
+7	Franco Colapinto	ARG	BWT Alpine F1 Team	+94.2s
+8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+95.8s
+9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	+1 Lap
+10	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
+11	Esteban Ocon	FRA	TGR Haas F1 Team	+1 Lap
+12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
+13	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
+14	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	+1 Lap
+15	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
+16	Ollie Bearman	GBR	TGR Haas F1 Team	+1 Lap
+17	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+2 Laps
+18	Valtteri Bottas	FIN	Cadillac F1 Team	+3 Laps
+DNF	Carlos Sainz	ESP	Atlassian Williams F1 Team	 
+DNF	Sergio Perez	MEX	Cadillac F1 Team	 
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	 
+DNF	Lewis Hamilton	GBR	Scuderia Ferrari HP	 
 
 `;
 
@@ -684,16 +705,20 @@ summary:
           {
             heading: "Race",
             items: [
-              {
-                title: "",
-
- summary:
-        "",
-                url: "",
-              },
-            ],
-          },
-        ],
+{
+  title: "Antonelli Makes History as Strategy Decides Dramatic Madring Debut",
+  summary:
+    "Kimi Antonelli became the first Formula 1 winner at the new Madring circuit, claiming his eighth victory of the 2026 season after a dramatic Spanish Grand Prix shaped by early contact, tyre strategy and a decisive Virtual Safety Car. Lando Norris initially protected his lead from pole position while Antonelli endured a difficult opening lap, cutting Turns 1 and 5 during the battle and losing a position to Max Verstappen. Verstappen also became involved in an opening-lap fight with Lewis Hamilton, but Hamilton’s race soon unravelled when a brake problem forced him to retire." +
+    "\n\nThe race turned when Lance Stroll’s problem triggered a Virtual Safety Car. Mercedes immediately brought Antonelli into the pits, while McLaren was unable to stop Norris during the same window. Norris pitted shortly afterward, but a slow tyre change dropped him behind both Antonelli and Verstappen. What had looked like a race Norris was capable of winning suddenly swung firmly in Antonelli’s favour." +
+    "\n\nCharles Leclerc remained on track and temporarily inherited the lead as Ferrari gambled on another Safety Car. When that opportunity failed to arrive, Leclerc finally stopped on Lap 49 and returned to the race in fourth place. Antonelli moved back into the lead and carefully managed his hard tyres through the closing laps. Despite reporting a steering concern and brushing the wall at Turn 7, the Mercedes driver stayed composed and brought the car home ahead of Verstappen and a frustrated Norris." +
+    "\n\nThe first Madring race was disastrous for Spain’s two home drivers. Carlos Sainz had already made contact with Yuki Tsunoda before becoming involved in a heated battle with Fernando Alonso near the entrance to the tunnel at Turn 5. Alonso attacked with greater speed, but Sainz defended aggressively and squeezed the Aston Martin toward the wall. The contact damaged Alonso’s front wing and earned Sainz a penalty. Sainz later retired after 46 laps, while Aston Martin’s lack of pace left Alonso struggling to a disappointing 17th-place finish." +
+    "\n\nLeclerc finished fourth ahead of George Russell, with Liam Lawson taking sixth for Red Bull. Franco Colapinto delivered valuable points for Alpine in seventh, followed by Oscar Piastri, Arvid Lindblad and Nico Hulkenberg. Esteban Ocon narrowly missed the points in 11th. Four drivers failed to finish: Hamilton and Stroll suffered brake-related problems, Sergio Perez encountered a suspected water-system issue, and Sainz retired after his difficult home race." +
+    "\n\nAntonelli’s victory added Madrid to an impressive list of 2026 wins that already includes Monaco, Spa and Monza. The result increased his Drivers’ Championship advantage over Russell to 81 points, while Hamilton now trails by 101. Norris may have possessed the fastest race pace, but Antonelli and Mercedes took full advantage when the strategic opportunity appeared, giving the championship leader a historic victory at Formula 1’s newest circuit.",
+  url: "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
+        },
+      ],
+    },
+  ],
 };
 export const nextRaceContent = {
   raceName: "TAG HEUER GRAN PREMIO DE ESPANA",
@@ -776,7 +801,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "10:00 AM ADT",
+          time: "Antonelli Wins again!, full results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

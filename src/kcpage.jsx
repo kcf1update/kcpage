@@ -15,11 +15,11 @@ import { newsSlots } from "./content/newsSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
- enabled: true,
-  label: "RACE WEEKEND IS UNDERWAY",
-  title: "SPANISH GRAND PRIX",
-  body: "The action has begun at Madrid’s brand-new Madring circuit. Visit the Race Centre for the full schedule, latest weather, session results and weekend updates.",
-  buttonText: "Explore the Race Centre →",
+  enabled: true,
+  label: "RACE RESULTS ARE IN",
+  title: "ANTONELLI WINS IN MADRID",
+  body: "Kimi Antonelli has made history by winning the first Spanish Grand Prix at Madring. Visit the Race Centre for the full results, detailed race summary and complete weekend coverage.",
+  buttonText: "See the Race Results →",
   buttonLink: "/racecenter",
   backgroundImage: "/img/news/raceposter/spainposter.jpg",
 };

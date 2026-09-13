@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export default function CountdownBar() {
   const getTimeRemaining = () => {
-    const targetTime = new Date("2026-09-11T11:30:00Z").getTime();
+    const targetTime = new Date("2026-09-24T05:30:00-03:00").getTime();
     const now = Date.now();
     const total = targetTime - now;
 
@@ -31,8 +31,8 @@ export default function CountdownBar() {
       className="inline-flex items-center justify-center gap-2 rounded-full border border-red-400/70 bg-red-500/10 px-3 py-1.5 text-xs sm:text-sm font-bold text-red-300 shadow-[0_0_10px_rgba(248,113,113,0.35)] transition hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
       title="Go to Race Centre"
     >
-      <img src="/flags/es.png" alt="Italian flag" className="h-4 w-auto" />
-      <span>TAG HEUER GRAN PREMIO DE ESPANA</span>
+      <img src="/flags/az.png" alt="Azerbaijan flag" className="h-4 w-auto" />
+      <span>Quatar Airways Azerbaijan Grand Prix</span>
       
     </Link>
   );
@@ -40,8 +40,8 @@ export default function CountdownBar() {
 
   return (
   <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base text-white font-semibold">
-    <img src="/flags/es.png" alt="Italian flag" className="h-4 w-auto" />
-    <span>TAG HEUER GRAN PREMIO DE ESPANA:</span>
+    <img src="/flags/az.png" alt="Azerbaijan flag" className="h-4 w-auto" />
+    <span>Quatar Airways Azerbaijan Grand Prix:</span>
     <span className="text-sky-300 text-sm sm:text-base md:text-lg">
       {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     </span>

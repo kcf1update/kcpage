@@ -1,26 +1,26 @@
 export const newsSlots = [
  {
   slotId: "news-01",
-  sourceLabel: "PlanetF1",
-  title: "Lando Norris Stuns Rivals to Take First Madring Pole",
-  summary: "Lando Norris produced a superb final lap to claim pole position for the Spanish Grand Prix, beating Kimi Antonelli by just 0.011 seconds. Max Verstappen qualified third, followed by Lewis Hamilton and Charles Leclerc. It was a difficult session for the home drivers, with Carlos Sainz qualifying 17th and Fernando Alonso 18th.",
-  kcsQuickShift: "Awesome run for Norris. Even he was surprised by where that lap came from. Antonelli looked disappointed standing next to him. Goes to show you why he is, the reigning champion.",
-  url: "https://www.planetf1.com/news/spanish-grand-prix-2026-qualifying-report",
-  imagePath: "/img/news/xpb/Mclaren/xpb-landopolemadring.jpg",
+  sourceLabel: "Formula1.com",
+  title: "Antonelli Clinches Victory Over Verstappen and Norris in Spanish GP",
+  summary: "Kimi Antonelli secured his eighth victory of the season after strategy and a Virtual Safety Car turned the Spanish Grand Prix in Mercedes’ favour. A slow McLaren pit stop dropped early leader Lando Norris behind Antonelli and Max Verstappen. Antonelli controlled the closing stages to win ahead of Verstappen and Norris, extending his Drivers’ Championship lead to 81 points.",
+  kcsQuickShift: "The Virtual Safety Car certainly helped Antonelli. You have to feel bad for Norris. His disappointment was palpable. Eight wins in only his second F1 season and now an 81-point championship lead is huge. Great to see Lawson and Colapinto with another good race and Hulkenberg gathering up the last point is awesome also.",
+  url: "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimiwinmadring.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
+  dateLabel: "September 13, 2026"
 },
 
  {
   slotId: "news-02",
-  sourceLabel: "FormulaPassion.it",
-  title: "GP di Spagna, capolavoro di Norris e degli organizzatori | Spanish GP, a Masterpiece from Norris and the Organizers",
-  summary: "Lando Norris ha conquistato la prima pole position al Madring davanti a Kimi Antonelli e Max Verstappen, mentre Lewis Hamilton e Charles Leclerc hanno ottenuto il quarto e quinto posto. L'editoriale elogia anche gli organizzatori per aver realizzato un circuito cittadino accessibile, impegnativo e caratterizzato dalla spettacolare curva La Monumental. |  Lando Norris claimed the first pole position at Madring ahead of Kimi Antonelli and Max Verstappen, with Lewis Hamilton and Charles Leclerc taking fourth and fifth. The editorial also praises the organizers for creating an accessible and challenging city circuit highlighted by the spectacular La Monumental corner.",
-  kcsQuickShift: "Great run for Lawson and Colapinto 8th and 9th respectively. Great to see LindBlad in 10th after the earlier wreck. | Ottime prestazioni di Lawson e Colapinto, che si sono qualificati rispettivamente ottavo e nono. È stato bello vedere anche Lindblad conquistare il decimo posto dopo l’incidente di ieri. ",
-  url: "https://www.formulapassion.it/editoriale/gp-di-spagna-pole-capolavoro-di-norris-e-capolavoro-degli-organizzatori",
-  imagePath: "/img/news/xpb/Races/xpb-madringtop3pole.jpg",
-  photoCredit: "",
-  dateLabel: "September 12, 2026"
+  sourceLabel: "MARCA",
+  title: "Monumental Antonelli: historia en Madring y KO nacional | Monumental Antonelli Makes History at Madring as Spanish Drivers Suffer",
+  summary: "Kimi Antonelli hizo historia al ganar el primer Gran Premio de España celebrado en Madring, superando a Max Verstappen y Lando Norris después de que la estrategia y un Virtual Safety Car transformaran la carrera. Charles Leclerc terminó cuarto y George Russell quinto. La jornada fue desastrosa para los pilotos españoles: Fernando Alonso acabó 17.º y Carlos Sainz abandonó su carrera de casa. | Kimi Antonelli made history by winning the first Spanish Grand Prix held at Madring, beating Max Verstappen and Lando Norris after strategy and a Virtual Safety Car transformed the race. Charles Leclerc finished fourth and George Russell fifth. It was a disastrous day for the Spanish drivers, with Fernando Alonso finishing 17th and Carlos Sainz retiring from his home race.",
+  kcsQuickShift: "The last thing the Spanish fans wanted was to see Alonso and Sainz make contact with each other. Neither driver had the car to fight near the front, but that still should not have happened. Despite their disappointing results, I thought the first race at Madring was a success. | Lo último que querían los aficionados españoles era ver a Alonso y Sainz chocar entre ellos. Ninguno de los dos tenía un coche para luchar en la parte delantera, pero aun así eso no debería haber ocurrido. A pesar de sus decepcionantes resultados, creo que la primera carrera en Madring fue un éxito.",
+  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/13/monumental-antonelli-historia-madring-ko-nacional.html",
+  imagePath: "/img/news/xpb/Mercedes/xpb-kimiracemadring.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 13, 2026"
 },
 
  {
