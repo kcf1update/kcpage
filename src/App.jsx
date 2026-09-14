@@ -28,9 +28,9 @@ const pageMetadata = {
       "Worldwide Formula 1 news, quick summaries, KC commentary, standings, race results and complete race weekend coverage.",
   },
   "/news": {
-    title: "Latest Formula 1 News & Quick Summaries | KC's F1 Update",
+    title: "F1 News Archive & KCQuickShifts | KC's F1 Update",
     description:
-      "Catch up on the latest Formula 1 news with accurate quick-read summaries, international sources and original commentary from KC.",
+      "Browse recent Formula 1 headlines with KC’s original quick-read summaries, KCQuickShift commentary and links to publishers around the world.",
   },
   "/racecenter": {
     title: "F1 Race Centre: Schedule, Results & Recaps | KC's F1 Update",

@@ -77,10 +77,69 @@ function renderQuickShift(quickShift) {
   );
 }
 
+function buildArchiveGroups(groups) {
+  const articlesByDate = new Map();
+
+  groups.forEach((group) => {
+    const articles = Array.isArray(group?.articles)
+      ? group.articles
+      : [];
+
+    articles.forEach((article) => {
+      const dateLabel =
+        article?.dateLabel ||
+        group?.dateLabel ||
+        "Past F1 News";
+
+      if (!articlesByDate.has(dateLabel)) {
+        articlesByDate.set(dateLabel, []);
+      }
+
+      articlesByDate.get(dateLabel).push(article);
+    });
+  });
+
+  return Array.from(articlesByDate, ([dateLabel, articles]) => ({
+    dateLabel,
+    articles,
+  })).sort((a, b) => {
+    const aTime = Date.parse(a.dateLabel);
+    const bTime = Date.parse(b.dateLabel);
+
+    if (Number.isNaN(aTime) && Number.isNaN(bTime)) return 0;
+    if (Number.isNaN(aTime)) return 1;
+    if (Number.isNaN(bTime)) return -1;
+
+    return bTime - aTime;
+  });
+}
+
+function archiveSectionId(dateLabel) {
+  return `archive-${String(dateLabel || "past-f1-news")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")}`;
+}
+
+function trackArchiveClick(article) {
+  if (!window.gtag) return;
+
+  window.gtag("event", "article_click", {
+    article_title: article?.title || "",
+    article_url: article?.url || "",
+    article_location: "news_archive",
+    transport_type: "beacon",
+  });
+}
+
 export default function F1NewsPage() {
-  const archiveGroups = Array.isArray(newsArchive)
-    ? newsArchive
-    : [];
+  const archiveGroups = buildArchiveGroups(
+    Array.isArray(newsArchive) ? newsArchive : []
+  );
+  const archivedArticleCount = archiveGroups.reduce(
+    (total, group) => total + group.articles.length,
+    0
+  );
 
   return (
     <div className="relative min-h-screen bg-[#454545] text-white">
@@ -93,18 +152,42 @@ export default function F1NewsPage() {
           </h1>
 
           <p className="mx-auto mt-2 max-w-3xl text-sm leading-relaxed text-slate-200 sm:text-base">
-            Catch up on recent Formula 1 stories featured on
-            KC’s Worldwide F1 Update. Select a headline to read
-            the original article.
+            Catch up on Formula 1 stories previously featured on
+            KC’s Worldwide F1 Update. Every entry preserves KC’s
+            quick-read summary, commentary and a link to the
+            original publisher.
           </p>
 
           <p className="mx-auto mt-3 max-w-3xl border-t border-white/10 pt-3 text-xs leading-relaxed text-slate-400">
-            Each headline links to the original publisher. KC’s
-            Worldwide F1 Update provides brief summaries and
-            commentary and does not reproduce the original
-            articles or their images.
+            Showing {archivedArticleCount} archived{" "}
+            {archivedArticleCount === 1 ? "story" : "stories"}.
+            KC’s Worldwide F1 Update does not reproduce the
+            publishers’ original articles or images.
           </p>
         </header>
+
+        {archiveGroups.length > 1 && (
+          <nav
+            aria-label="Recent archive dates"
+            className="rounded-2xl border border-white/10 bg-black/50 px-4 py-3"
+          >
+            <div className="mb-2 text-xs font-bold uppercase tracking-wide text-cyan-300">
+              Browse recent dates
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {archiveGroups.slice(0, 8).map((group) => (
+                <a
+                  key={group.dateLabel}
+                  href={`#${archiveSectionId(group.dateLabel)}`}
+                  className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1.5 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white"
+                >
+                  {group.dateLabel}
+                </a>
+              ))}
+            </div>
+          </nav>
+        )}
 
         <main className="space-y-5">
           {archiveGroups.length > 0 ? (
@@ -116,12 +199,20 @@ export default function F1NewsPage() {
               return (
                 <section
                   key={`${group?.dateLabel || "archive"}-${groupIndex}`}
-                  className="overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-lg"
+                  id={archiveSectionId(group?.dateLabel)}
+                  className="scroll-mt-4 overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-lg"
                 >
                   <div className="border-b border-cyan-400/20 bg-cyan-400/10 px-5 py-3">
-                    <h2 className="text-lg font-bold text-cyan-300">
-                      {group?.dateLabel || "Past F1 News"}
-                    </h2>
+                    <div className="flex items-center justify-between gap-4">
+                      <h2 className="text-lg font-bold text-cyan-300">
+                        {group?.dateLabel || "Past F1 News"}
+                      </h2>
+
+                      <span className="shrink-0 text-xs text-slate-300">
+                        {articles.length}{" "}
+                        {articles.length === 1 ? "story" : "stories"}
+                      </span>
+                    </div>
                   </div>
 
                   <div className="divide-y divide-white/10">
@@ -143,6 +234,7 @@ export default function F1NewsPage() {
                               target="_blank"
                               rel="noreferrer"
                               className="mt-1 block text-base font-semibold leading-snug text-white transition hover:text-cyan-300 sm:text-lg"
+                              onClick={() => trackArchiveClick(article)}
                             >
                               {renderBilingualTitle(
                                 article?.title || "F1 article"
@@ -174,6 +266,18 @@ export default function F1NewsPage() {
                                 )}
                               </p>
                             </div>
+                          )}
+
+                          {href && (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="mt-3 inline-flex text-sm font-semibold text-cyan-200 transition hover:text-white"
+                              onClick={() => trackArchiveClick(article)}
+                            >
+                              Read the original article →
+                            </a>
                           )}
                         </article>
                       );
