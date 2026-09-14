@@ -1,121 +1,112 @@
 export const newsSlots = [
  {
-  slotId: "news-01",
-  sourceLabel: "Formula1.com",
-  title: "Antonelli Clinches Victory Over Verstappen and Norris in Spanish GP",
-  summary: "Kimi Antonelli secured his eighth victory of the season after strategy and a Virtual Safety Car turned the Spanish Grand Prix in Mercedes’ favour. A slow McLaren pit stop dropped early leader Lando Norris behind Antonelli and Max Verstappen. Antonelli controlled the closing stages to win ahead of Verstappen and Norris, extending his Drivers’ Championship lead to 81 points.",
-  kcsQuickShift: "The Virtual Safety Car certainly helped Antonelli. You have to feel bad for Norris. His disappointment was palpable. Eight wins in only his second F1 season and now an 81-point championship lead is huge. Great to see Lawson and Colapinto with another good race and Hulkenberg gathering up the last point is awesome also.",
-  url: "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimiwinmadring.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 13, 2026"
-},
-
- {
-  slotId: "news-02",
-  sourceLabel: "MARCA",
-  title: "Monumental Antonelli: historia en Madring y KO nacional | Monumental Antonelli Makes History at Madring as Spanish Drivers Suffer",
-  summary: "Kimi Antonelli hizo historia al ganar el primer Gran Premio de España celebrado en Madring, superando a Max Verstappen y Lando Norris después de que la estrategia y un Virtual Safety Car transformaran la carrera. Charles Leclerc terminó cuarto y George Russell quinto. La jornada fue desastrosa para los pilotos españoles: Fernando Alonso acabó 17.º y Carlos Sainz abandonó su carrera de casa. | Kimi Antonelli made history by winning the first Spanish Grand Prix held at Madring, beating Max Verstappen and Lando Norris after strategy and a Virtual Safety Car transformed the race. Charles Leclerc finished fourth and George Russell fifth. It was a disastrous day for the Spanish drivers, with Fernando Alonso finishing 17th and Carlos Sainz retiring from his home race.",
-  kcsQuickShift: "The last thing the Spanish fans wanted was to see Alonso and Sainz make contact with each other. Neither driver had the car to fight near the front, but that still should not have happened. Despite their disappointing results, I thought the first race at Madring was a success. | Lo último que querían los aficionados españoles era ver a Alonso y Sainz chocar entre ellos. Ninguno de los dos tenía un coche para luchar en la parte delantera, pero aun así eso no debería haber ocurrido. A pesar de sus decepcionantes resultados, creo que la primera carrera en Madring fue un éxito.",
-  url: "https://www.marca.com/motor/formula1/gp-espana/2026/09/13/monumental-antonelli-historia-madring-ko-nacional.html",
+  slotId: 1,
+  sourceLabel: "ESPN",
+  title: "Spanish Grand Prix takeaways: Kimi Antonelli wins, Lando Norris suffers, Madring falls flat",
+  summary: "Kimi Antonelli claimed his eighth victory of the season after the timing of a Virtual Safety Car disrupted Lando Norris' race from pole position. Norris recovered to third behind Max Verstappen, but the lack of overtaking left Formula 1 facing difficult questions about Madrid's new circuit.",
+  kcsQuickShift: "Antonelli showed a lot of class and humility, saying it should have been Norris's win. But Antonelli won, and who's to say he would not have caught Lando. F1 needs to fix the VSC issue, though. They need to keep the VSC in place long enough for everyone on the track to take advantage of the free pit stop.",
+  url: "https://www.espn.co.uk/f1/story/_/id/49929224/spanish-grand-prix-takeaways-kimi-antonelli-lando-norris-suffers-madring-falls-flat",
   imagePath: "/img/news/xpb/Mercedes/xpb-kimiracemadring.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 13, 2026"
+  dateLabel: "September 14, 2026"
 },
-
- {
-  slotId: "news-03",
-  sourceLabel: "ESPN",
-  title: "FIA Boss Pushing for Engine Rule Changes to Keep Fernando Alonso in F1",
-  summary: "FIA president Mohammed Ben Sulayem says Fernando Alonso should not be forced out of Formula 1 because Aston Martin and Honda are struggling. Alonso has scored only three points this season and is out of contract at the end of 2026. Ben Sulayem is exploring whether further rule changes could help Honda close its performance gap, giving Alonso a better reason to continue racing in 2027.",
-  kcsQuickShift: "I get why almost everyone appreciates why keeping Fernando in the series. But why is the FIA president apparently holding meetings with Stroll? I'm pretty sure I read that. You can let me know if I am wrong.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49867163/fia-boss-pushing-engine-rule-changes-keep-fernando-alonso-f1-needs-leave-wants-spanish-grand-prix-madring-formula-1",
-  imagePath: "/img/news/shut/Aston/shut-fernando.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 12, 2026"
-},
-
 {
-  slotId: "news-04",
-  sourceLabel: "RacingNews365.nl",
-  title: "Verstappen verklaart F1-onvrede: “Hoe kan je dat denken?!” | Verstappen Explains His F1 Frustration: “How Can You Think That?!”",
-  summary: "De nieuwe krachtbronnen dwingen coureurs soms om in snelle bochten gas terug te nemen, zodat ze op het volgende rechte stuk meer elektrische energie beschikbaar hebben. Max Verstappen vindt dat dit indruist tegen het instinct van een coureur. Hij wijst ook op turbogat en ingewikkeld energiemanagement, waardoor de huidige auto’s volgens hem onnatuurlijk aanvoelen. Verstappen gelooft dat een terugkeer naar V8-motoren de bestuurbaarheid en het echte racegevoel zou verbeteren. | The new power units sometimes force drivers to ease off through fast corners so they have more electrical energy available on the following straight. Max Verstappen believes this goes against a driver’s natural instinct. He also points to turbo lag and complicated energy management, which make the current cars feel unnatural to him. Verstappen believes returning to V8 engines would improve drivability and restore a more genuine style of racing.",
-  kcsQuickShift: "Is he not talking about what everybody has been talking about since the begginig of the series? Max has not won a race this year so as long as that continues he will continue to be morw and more critical. my oppinion he just needs to ficus on a win. Sorry Max fans but this is starting to sound like sour grapes to me. | Heeft hij het niet over iets waar iedereen het al sinds het begin van het seizoen over heeft? Max heeft dit jaar nog geen race gewonnen, en zolang dat zo blijft, zal hij steeds kritischer worden. Naar mijn mening moet hij zich gewoon concentreren op het behalen van een overwinning. Sorry, Max-fans, maar dit begint voor mij toch een beetje als zure druiven te klinken. ",
-  url: "https://racingnews365.nl/verstappen-verklaart-f1-onvrede-hoe-kan-je-dat-denken",
+  slotId: 2,
+  sourceLabel: "RacingNews365 NL",
+  title: "Jos Verstappen openhartig over 'lastige keuze' Max | Jos Verstappen opens up about Max's 'difficult decision'",
+  summary: "Jos Verstappen zegt dat het voor Max geen eenvoudige beslissing was om bij Red Bull te blijven, vooral omdat het team momenteel niet op zijn beste niveau presteert. Toch voelt Max zich er thuis en zou het herstellen van Red Bull meer voldoening geven dan overstappen naar een team dat al wint. | Jos Verstappen says it was not an easy decision for Max to remain with Red Bull, especially while the team is struggling to perform at its best. However, Max feels at home there, and rebuilding Red Bull could be more rewarding than joining a team that is already winning.",
+  kcsQuickShift: "I'm sorry but as just a fan looking at the spring Verstappen saga none of it felt real. I never felt he was going anywhere else than RedBull, he was never going to quit. He is making way to much money and gets to do the GT3 racing that he wants to do. | Het spijt me, maar als fan die de Verstappen-saga in het voorjaar volgde, voelde niets ervan echt aan. Ik heb nooit geloofd dat hij Red Bull zou verlaten, en hij zou ook nooit stoppen. Hij verdient veel te veel geld en krijgt de vrijheid om de GT3-races te rijden die hij wil.",
+  url: "https://racingnews365.nl/jos-verstappen-openhartig-over-lastige-keuze-max",
+  imagePath: "/img/news/xpb/RedBull/xpbjv.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 3,
+  sourceLabel: "Motorsport.com",
+  title: "“I almost fell asleep” - F1 drivers push for Madrid track changes after “very poor” Spanish GP",
+  summary: "Formula 1 drivers have called for significant changes to the Madring after an inaugural Spanish Grand Prix that produced almost no overtaking. Suggestions include reworking the chicane, creating stronger braking zones and shortening the unusually long pitlane to encourage more strategic variety.",
+  kcsQuickShift: "Wow the reviews are rough for this race. The only one i heard so far give it a postive review is Peter Windsor. I have to admit I was working around and listening to a lot of it on headphones but I though it looked awesome and it definitely sounded tense at times. ",
+  url: "https://www.motorsport.com/f1/news/i-almost-fell-asleep-f1-drivers-push-for-madrid-track-changes-after-very-poor-spanish-gp/10855576/",
+  imagePath: "/img/news/xpb/Races/xpb-madringrace.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 4,
+  sourceLabel: "Infobae",
+  title: "Franco Colapinto expuso a Pierre Gasly y logró un récord que deja atrás al resto de los actuales pilotos de F1 | Franco Colapinto outshines Pierre Gasly and sets a record unmatched by every other current F1 driver",
+  summary: "Franco Colapinto terminó séptimo en Madrid después de superar a Pierre Gasly durante prácticamente todo el fin de semana. El argentino también se convirtió en el único piloto que ha completado las 14 carreras de la temporada, tras el abandono de Lewis Hamilton. | Franco Colapinto finished seventh in Madrid after outperforming Pierre Gasly throughout nearly the entire weekend. The Argentine also became the only driver to finish all 14 races this season following Lewis Hamilton's retirement.",
+  kcsQuickShift: "Colapinto continues to show why it was a good choice for Alpine to resign in him for next year. Period! | Colapinto sigue demostrando por qué Alpine tomó la decisión correcta al renovarlo para el próximo año. ¡Y punto!",
+  url: "https://www.infobae.com/deportes/2026/09/14/franco-colapinto-expuso-a-pierre-gasly-y-logro-un-record-que-deja-atras-al-resto-de-los-actuales-pilotos-de-f1/",
+  imagePath: "/img/news/Alpine/xpb-alpinemadring.jpg",
+  photoCredit: "Courtesy of Alpine F1",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 5,
+  sourceLabel: "Formula1.com",
+  title: "‘Clearly it’s in him’ - Wolff on the challenge of unlocking Russell’s potential",
+  summary: "Toto Wolff remains convinced that George Russell and Mercedes possess the pace needed to challenge at the front despite another difficult weekend in Madrid. Russell finished fifth and now trails teammate Kimi Antonelli by 81 points, but Wolff insists Mercedes will continue searching for the performance currently missing from his car.",
+  kcsQuickShift: "I might be wrong but Russell has lost his edge for now. I think the challenge of keeping up with Antonelli has undone his spirit. Last week I thought he might be able to turn it around and still be a threat. But his 5th to Antonelle's 1st this week may break him. I'm not saying he will not win another race but his cahmpionship hopes for this year are done. Hopefully for Russell fans he can bounce back in 2027.",
+  url: "https://www.formula1.com/en/latest/article/clearly-its-in-him-wolff-on-the-challenge-of-unlocking-russells-potential.3u7nYJxfoM246qlpQiQyiV",
+  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 6,
+  sourceLabel: "Nextgen-Auto",
+  title: "Madrid GP slammed as ‘deadly sleep machine’",
+  summary: "Madrid's first Formula 1 race has drawn a sharp international backlash after the new circuit failed to deliver meaningful overtaking. Spanish transport minister Óscar Puente described the event as a complete disaster, while international media compared the layout to a faster version of Monaco.",
+  kcsQuickShift: "It is a brand-new track, and they can still reconfigure it for next year. I am sure they will try to come up with some ideas. I love the old tracks, but as long as F1 continues to grow, it will want to expand its footprint. My only caution is not to do what NASCAR did: leave the old behind for the new, lose viewers and fans, and then slowly have to bring back the older tracks that built the sport",
+  url: "https://motorsport.nextgen-auto.com/en/formula-1/madrid-gp-slammed-as-deadly-sleep-machine,211469.html",
+  imagePath: "/img/news/raceposter/madring2.jpg",
+  photoCredit: "KC AI Generated image",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 7,
+  sourceLabel: "1News New Zealand",
+  title: "Formula 1: Liam Lawson sixth for Red Bull in Spain",
+  summary: "Liam Lawson finished sixth in Madrid after starting eighth, matching his best result of the season and leading Red Bull's challenge. The New Zealander collected eight points despite struggling to make progress on a circuit where overtaking proved extremely difficult.",
+  kcsQuickShift: "",
+  url: "https://www.1news.co.nz/2026/09/14/formula-1-liam-lawson-sixth-for-red-bull-in-spain/",
+  imagePath: "/img/news/xpb/Visa/xpblawsonspain.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 14, 2026"
+},
+{
+  slotId: 8,
+  sourceLabel: "F1i",
+  title: "Max Verstappen se moque du Madring après avoir résisté à Norris : « Il suffit de rester au milieu » | Max Verstappen mocks the Madring after resisting Norris: “You just stay in the middle”",
+  summary: "Max Verstappen a critiqué le manque de possibilités de dépassement au Madring après avoir résisté à une McLaren plus rapide pilotée par Lando Norris. Selon lui, il suffisait de rester au milieu de la piste et de préserver ses pneus pour empêcher toute attaque sérieuse. | Max Verstappen criticized the lack of overtaking opportunities at the Madring after holding off Lando Norris in a faster McLaren. He said defending simply required staying in the middle of the track and preserving enough tyre grip to prevent a serious attack.",
+  kcsQuickShift: "And the hits keep coming | Et les critiques continuent de pleuvoir.",
+  url: "https://f1i.autojournal.fr/infos/reaction/max-verstappen-se-moque-du-madring-apres-avoir-resiste-a-norris-il-suffit-de-rester-au-milieu/",
   imagePath: "/img/news/xpb/RedBull/xpbmax.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
+  dateLabel: "September 14, 2026"
 },
-
 {
-  slotId: "news-05",
-  sourceLabel: "Read Motorsport",
-  title: "F1 Teams Face High-Speed Trap at Madrid’s La Monumental",
-  summary: "Teams face a difficult setup compromise at Madring, where drivers need confidence and rear grip to attack the high-banked La Monumental section. Arvid Lindblad demonstrated the danger when he lost the rear of his Racing Bulls and crashed at Turn 13 during Friday practice. Charles Leclerc also warned that overtaking appears extremely difficult, making qualifying crucial, while high temperatures and tyre degradation could further complicate the race.",
-  kcsQuickShift: "Sounds like that is going to be a problem area. The view comming out of the Monumental corner is amazing on the TV coverage.  ",
-  url: "https://readmotorsport.com/2026/09/12/f1-teams-face-high-speed-trap-at-madrid-s-la-monumental/",
-  imagePath: "/img/news/xpb/Visa/xpb-lindbladmadring.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
+  slotId: 9,
+  sourceLabel: "ESPN",
+  title: "Honda replacing F1 engine chief after poor start to return with Aston Martin",
+  summary: "Honda will appoint Yoichiro Fukao as its Formula 1 project leader on October 1 following a difficult opening season with Aston Martin. The manufacturer describes the move as a planned transition, but it comes as the team continues to struggle with power, reliability and results.",
+  kcsQuickShift: "They have to do something, Aston Martin is flaying around like a beached whale. Lawrence Stroll is going to bail if it does not turn around, guarnteed.",
+  url: "https://www.espn.co.uk/f1/story/_/id/49938723/honda-replacing-f1-engine-chief-poor-start-return-aston-martin",
+  imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "September 14, 2026"
 },
-
 {
-  slotId: "news-06",
-  sourceLabel: "RacingNews365",
-  title: "Lewis Hamilton Facing Double Punishment After Blatantly Ignoring Ferrari Instructions",
-  summary: "Lewis Hamilton crashed into the barrier at Madring’s final corner during FP3, damaging his front wing and triggering a red flag. Hamilton attempted to return to the pits despite Ferrari repeatedly instructing him to stop, but the damaged wing became trapped underneath the car and caused a puncture. He lost valuable qualifying preparation and could face further action for driving a damaged car.",
-  kcsQuickShift: "Hamilton is starting to look desperate",
-  url: "https://racingnews365.com/lewis-hamilton-facing-double-punishment-after-blatantly-ignoring-ferrari-instructions",
-  imagePath: "/img/news/xpb/ferrari/xpblewisspain.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
-},
-
-{
-   slotId: "news-07",
-  sourceLabel: "GPblog",
-  title: "Bearman’s Madrid Qualifying Hopes Hang in Balance After Big FP3 Crash",
-  summary: "Oliver Bearman’s participation in qualifying was left in serious doubt after a heavy crash near La Monumental during the closing moments of FP3. The Haas driver clipped the barrier with his right-front tyre, spun and struck the opposite barrier heavily with the left side of the car. The VF-26 suffered significant front and rear damage, leaving Haas with less than two hours to complete a major repair before qualifying.",
-  kcsQuickShift: "That was a hard hit. I think they said that may not even be fixed for qualifying so he may be starting from the pit lane. He sounded a little rough after he hit the wall. Glad he is ok.",
-  url: "https://www.gpblog.com/en/news/bearmans-madrid-qualifying-hopes-hang-in-balance-after-big-fp3-crash",
-  imagePath: "/img/news/xpb/Haas/xpbollie.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
-},
-
-{
-  slotId: "news-08",
-  sourceLabel: "M4 Sport",
-  title: "„Nehezebb a legtöbb pályánál” – az F1-es versenyzők dicsérik az új Madringet | “More Difficult Than Most Circuits” – F1 Drivers Praise the New Madring",
-  summary: "A versenyzők gyorsnak, nehéznek és veszélyesnek nevezték az új madridi pályát az első két szabadedzés után. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell és Pierre Gasly élvezte a kihívást, bár a közeli falak és a gyors kanyarok kevés lehetőséget hagynak a hibázásra. A gumik túlmelegedése, az energiakezelés és az előzés nehézsége is komoly gondot jelenthet. Több versenyző szerint az időmérő döntő fontosságú lesz, mert vasárnap kevés hagyományos előzésre számítanak. | Drivers described Madrid’s new circuit as fast, difficult and dangerous after the opening two practice sessions. Charles Leclerc, Oscar Piastri, Lewis Hamilton, George Russell and Pierre Gasly enjoyed the challenge, although the nearby walls and high-speed corners leave little room for mistakes. Tyre overheating, energy management and limited overtaking opportunities could all become major concerns. Several drivers believe qualifying will be crucial because traditional overtaking may be extremely difficult on Sunday.",
-  kcsQuickShift: "This is going to be a great race. With some of the drivers, if not all of the driver driving on a knifes edge it's goiung to be wild. Let's just all hope no one get hurt | Ez egy nagyszerű verseny lesz. Mivel néhány, ha nem az összes pilóta pengeélen fog autózni, biztosan őrült futam vár ránk. Reméljük, hogy senki sem sérül meg.",
-  url: "https://m4sport.hu/forma-1/cikk/2026/09/11/nehezebb-a-legtobb-palyanal-az-f1-es-versenyzok-dicserik-az-uj-madringet",
-  imagePath: "/img/news/xpb/Races/xpbracespain.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 11, 2026"
-},
-
-{
-  slotId: "news-09",
-  sourceLabel: "PlanetF1",
-  title: "The Mindblowing Hypocrisy of Lewis Hamilton",
-  summary: "PlanetF1 argues that Lewis Hamilton’s criticism of Charles Leclerc and Ferrari following their clash at Monza is hypocritical because Hamilton frequently used similarly aggressive tactics against Nico Rosberg at Mercedes. The opinion piece acknowledges that Hamilton has legitimate concerns about Ferrari’s execution and communication, but warns that repeatedly criticizing the team in public and comparing it unfavourably with Mercedes could alienate the people around him.",
-  kcsQuickShift: "hmmm...there some races on youtube. Have a look and let me know if they are right. The article has a ring of truth to it, if you ask me.",
-  url: "https://www.planetf1.com/features/lewis-hamilton-hypocrisy",
-  imagePath: "/img/news/Ferrari/Lewis/lewishungary.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 12, 2026"
-},
-
-{
-  slotId: "news-10",
-  sourceLabel: "F1i.com",
-  title: "Russell Highlights Worrying Prospect for Race Day at Madring",
-  summary: "George Russell believes severe tyre degradation could become one of the Spanish Grand Prix’s biggest challenges. He joked that the degradation seen during FP1 suggested a six-stop strategy would have been fastest. La Monumental puts the tyres under sustained lateral load, while the circuit’s repeated corners give them little time to cool. Mercedes believes thermal degradation could force teams into more pit stops than originally expected, especially after Friday’s interrupted running left them with limited long-run data.",
-  kcsQuickShift: "I have not heard much about that during practice session?.",
-  url: "https://f1i.com/news/572842-russell-highlights-worrying-prospect-for-race-day-at-madring.html",
-  imagePath: "/img/news/kcai/news-tiresmiami.jpg",
-  photoCredit: "KC AI Generated Image",
-  dateLabel: "September 12, 2026"
-},
+  slotId: 10,
+  sourceLabel: "Crash.net",
+  title: "Carlos Sainz claims Fernando Alonso radio complaints provoked F1 Spanish GP penalty “like always”",
+  summary: "Carlos Sainz believes Fernando Alonso's radio complaints influenced the stewards after the Williams driver received a five-second penalty for their Turn 5 collision. Sainz argued that the corner only allowed room for one car, but the stewards ruled that he moved under braking and failed to leave Alonso enough space.",
+  kcsQuickShift: "I am not expert but to me it looked like Sainz was as fault. Also is it just me or has Carlos been involved in a lot of these racing incidents this year?",
+  url: "https://www.crash.net/f1/news/1104702/1/carlos-sainz-claims-fernando-alonso-radio-complaints-provoked-f1-spanish-gp",
+  imagePath: "/img/news/shut/williams/shutterstock_2618722403.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "September 14, 2026"
+}
 ];

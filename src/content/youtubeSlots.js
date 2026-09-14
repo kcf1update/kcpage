@@ -9,15 +9,15 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Antonelli's Greatest Drive? Ferrari's Home Race Implodes ",
-  youtubeInput: "https://youtu.be/KbzeLK3VN-o",
-  
+  title: "Drivers React After The Race | 2026 Spanish Grand Prix ",
+  youtubeInput: "https://youtu.be/ptkSrUliEh0",
+  forceExternal: "blue"
   },
 
   {
     slotId: "slot2",
-    title: "Will the Madrid F1 track be READY in time?",
-    youtubeInput: "https://youtu.be/A3LGdl3DuZw",
+    title: "F1 Race Press Conference - Spanish GP | Kimi Antonelli, Max Verstappen, Lando Norris",
+    youtubeInput: "https://youtu.be/TEIdtuYFHT0",
    
   },
 
