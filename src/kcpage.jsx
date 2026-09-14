@@ -913,6 +913,24 @@ const additionalNews = Array.isArray(newsSlots)
   </section>
 ) : null}
 
+<section className="rounded-3xl border border-cyan-400/25 bg-black/55 px-5 py-5 text-center shadow-lg sm:px-7">
+  <h2 className="text-lg font-bold text-cyan-300 sm:text-xl">
+    Missed an earlier F1 update?
+  </h2>
+
+  <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
+    Browse previous headlines, KC’s quick-read summaries and
+    KCQuickShift commentary in the news archive.
+  </p>
+
+  <Link
+    to="/news"
+    className="mt-4 inline-flex items-center justify-center rounded-full border border-cyan-300/50 bg-cyan-400/15 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:bg-cyan-400/25 hover:text-white"
+  >
+    Visit In Case You Missed It →
+  </Link>
+</section>
+
 {/* BOTTOM AD / PARTNER SLOT */}
 {/* BOTTOM AD / PARTNER SLOT */}
 <GlassyCard
