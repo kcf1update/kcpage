@@ -1,9 +1,14 @@
 // src/F1NewsPage.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 import AdBar from "./AdBar.jsx";
 import SiteHeader from "./components/SiteHeader";
 import { newsArchive } from "./content/newsArchive";
+import {
+  buildArchiveGroups,
+  dateLabelToSlug,
+} from "./archiveUtils";
 
 // Allow only safe external article links
 function safeUrl(url) {
@@ -77,43 +82,6 @@ function renderQuickShift(quickShift) {
   );
 }
 
-function buildArchiveGroups(groups) {
-  const articlesByDate = new Map();
-
-  groups.forEach((group) => {
-    const articles = Array.isArray(group?.articles)
-      ? group.articles
-      : [];
-
-    articles.forEach((article) => {
-      const dateLabel =
-        article?.dateLabel ||
-        group?.dateLabel ||
-        "Past F1 News";
-
-      if (!articlesByDate.has(dateLabel)) {
-        articlesByDate.set(dateLabel, []);
-      }
-
-      articlesByDate.get(dateLabel).push(article);
-    });
-  });
-
-  return Array.from(articlesByDate, ([dateLabel, articles]) => ({
-    dateLabel,
-    articles,
-  })).sort((a, b) => {
-    const aTime = Date.parse(a.dateLabel);
-    const bTime = Date.parse(b.dateLabel);
-
-    if (Number.isNaN(aTime) && Number.isNaN(bTime)) return 0;
-    if (Number.isNaN(aTime)) return 1;
-    if (Number.isNaN(bTime)) return -1;
-
-    return bTime - aTime;
-  });
-}
-
 function archiveSectionId(dateLabel) {
   return `archive-${String(dateLabel || "past-f1-news")
     .toLowerCase()
@@ -177,13 +145,13 @@ export default function F1NewsPage() {
 
             <div className="flex flex-wrap gap-2">
               {archiveGroups.slice(0, 8).map((group) => (
-                <a
+                <Link
                   key={group.dateLabel}
-                  href={`#${archiveSectionId(group.dateLabel)}`}
+                  to={`/news/${dateLabelToSlug(group.dateLabel)}`}
                   className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1.5 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white"
                 >
                   {group.dateLabel}
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
@@ -208,10 +176,21 @@ export default function F1NewsPage() {
                         {group?.dateLabel || "Past F1 News"}
                       </h2>
 
-                      <span className="shrink-0 text-xs text-slate-300">
-                        {articles.length}{" "}
-                        {articles.length === 1 ? "story" : "stories"}
-                      </span>
+                      <div className="flex shrink-0 items-center gap-3">
+                        <span className="text-xs text-slate-300">
+                          {articles.length}{" "}
+                          {articles.length === 1 ? "story" : "stories"}
+                        </span>
+
+                        {dateLabelToSlug(group?.dateLabel) && (
+                          <Link
+                            to={`/news/${dateLabelToSlug(group.dateLabel)}`}
+                            className="text-xs font-bold text-cyan-200 transition hover:text-white"
+                          >
+                            Open day →
+                          </Link>
+                        )}
+                      </div>
                     </div>
                   </div>
 

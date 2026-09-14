@@ -12,6 +12,7 @@ import MainPage from "./kcpage";
 import PointsPage from "./PointsPage";
 import NextRacePage from "./NextRacePage";
 import F1NewsPage from "./F1NewsPage";
+import DailyNewsArchivePage from "./DailyNewsArchivePage";
 import YouTubeNewsPage from "./YouTubeNewsPage";
 import CommentsPage from "./CommentsPage";
 import SiteFooter from "./components/SiteFooter";
@@ -20,6 +21,7 @@ import PressPage from "./PressPage";
 import PreviousResultsPage from "./PreviousResultsPage";
 import PhotoGalleryPage from "./PhotoGalleryPage";
 import DailyNewsEditorPage from "./DailyNewsEditorPage";
+import { slugToDateLabel } from "./archiveUtils";
 
 const pageMetadata = {
   "/": {
@@ -80,12 +82,32 @@ const pageMetadata = {
   },
 };
 
+function getPageMetadata(pathname) {
+  const dailyArchiveMatch = pathname.match(
+    /^\/news\/(\d{4}-\d{2}-\d{2})$/
+  );
+
+  if (dailyArchiveMatch) {
+    const dateLabel = slugToDateLabel(dailyArchiveMatch[1]);
+
+    if (dateLabel) {
+      return {
+        title: `${dateLabel} F1 News & KCQuickShifts | KC's F1 Update`,
+        description:
+          `Review the Formula 1 headlines featured on ${dateLabel}, with KC’s quick-read summaries, KCQuickShift commentary and original publisher links.`,
+      };
+    }
+  }
+
+  return pageMetadata[pathname] || pageMetadata["/"];
+}
+
 function SeoManager() {
   const location = useLocation();
 
   useEffect(() => {
     const pathname = location.pathname;
-    const metadata = pageMetadata[pathname] || pageMetadata["/"];
+    const metadata = getPageMetadata(pathname);
 
     document.title = metadata.title;
 
@@ -161,6 +183,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/news" element={<F1NewsPage />} />
+            <Route
+              path="/news/:dateSlug"
+              element={<DailyNewsArchivePage />}
+            />
             <Route path="/racecenter" element={<NextRacePage />} />
             <Route
               path="/next-race"
