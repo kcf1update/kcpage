@@ -23,8 +23,8 @@ export const youtubeSlots = [
 
   {
     slotId: "slot3",
-    title: "The Ultimate Track Guide To MADRING!",
-    youtubeInput: "https://youtu.be/Gfu48zoFbi0",
+    title: "Radio Rewind | 2026 Spanish Grand Prix | Lenovo",
+    youtubeInput: "https://youtu.be/-pVhaRZrgnc",
     forceExternal: "blue"
   }
 ];

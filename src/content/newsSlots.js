@@ -1,112 +1,121 @@
 export const newsSlots = [
  {
-  slotId: 1,
-  sourceLabel: "ESPN",
-  title: "Spanish Grand Prix takeaways: Kimi Antonelli wins, Lando Norris suffers, Madring falls flat",
-  summary: "Kimi Antonelli claimed his eighth victory of the season after the timing of a Virtual Safety Car disrupted Lando Norris' race from pole position. Norris recovered to third behind Max Verstappen, but the lack of overtaking left Formula 1 facing difficult questions about Madrid's new circuit.",
-  kcsQuickShift: "Antonelli showed a lot of class and humility, saying it should have been Norris's win. But Antonelli won, and who's to say he would not have caught Lando. F1 needs to fix the VSC issue, though. They need to keep the VSC in place long enough for everyone on the track to take advantage of the free pit stop.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49929224/spanish-grand-prix-takeaways-kimi-antonelli-lando-norris-suffers-madring-falls-flat",
-  imagePath: "/img/news/xpb/Mercedes/xpb-kimiracemadring.jpg",
+  slotId: "news-01",
+  sourceLabel: "RacingNews365",
+  title: "How Lewis Hamilton’s Title Chances Went Completely Up in Smoke",
+  summary: "Lewis Hamilton’s championship challenge has collapsed over the past six races. After sitting only 32 points behind Kimi Antonelli following Silverstone, Hamilton now trails the Mercedes driver by 101 points. Reliability problems, including the brake failure that ended his Spanish Grand Prix after seven laps, have contributed to the slide, but Antonelli’s speed and consistency have made the biggest difference.",
+  kcsQuickShift: "The brake failure at this weekend's race was surprising. It was definitely a blow to his championship chances. But Ferrari has other problems that would have kept him from winning the championship.",
+  url: "https://racingnews365.com/how-lewis-hamilton-title-chances-went-completely-up-in-smoke",
+  imagePath: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 },
+
 {
-  slotId: 2,
-  sourceLabel: "RacingNews365 NL",
-  title: "Jos Verstappen openhartig over 'lastige keuze' Max | Jos Verstappen opens up about Max's 'difficult decision'",
-  summary: "Jos Verstappen zegt dat het voor Max geen eenvoudige beslissing was om bij Red Bull te blijven, vooral omdat het team momenteel niet op zijn beste niveau presteert. Toch voelt Max zich er thuis en zou het herstellen van Red Bull meer voldoening geven dan overstappen naar een team dat al wint. | Jos Verstappen says it was not an easy decision for Max to remain with Red Bull, especially while the team is struggling to perform at its best. However, Max feels at home there, and rebuilding Red Bull could be more rewarding than joining a team that is already winning.",
-  kcsQuickShift: "I'm sorry but as just a fan looking at the spring Verstappen saga none of it felt real. I never felt he was going anywhere else than RedBull, he was never going to quit. He is making way to much money and gets to do the GT3 racing that he wants to do. | Het spijt me, maar als fan die de Verstappen-saga in het voorjaar volgde, voelde niets ervan echt aan. Ik heb nooit geloofd dat hij Red Bull zou verlaten, en hij zou ook nooit stoppen. Hij verdient veel te veel geld en krijgt de vrijheid om de GT3-races te rijden die hij wil.",
-  url: "https://racingnews365.nl/jos-verstappen-openhartig-over-lastige-keuze-max",
-  imagePath: "/img/news/xpb/RedBull/xpbjv.jpg",
+  slotId: "news-02",
+  sourceLabel: "FormulaPassion.it",
+  title: "La Ferrari stavolta non molla la SF-26 per pensare all’anno prossimo | Ferrari Will Not Abandon the SF-26 to Focus on Next Year",
+  summary: "La Ferrari continuerà a sviluppare la SF-26 nonostante quattro Gran Premi consecutivi senza podi. Fred Vasseur ha spiegato che circa l’80% del lavoro svolto sulla vettura attuale potrà essere trasferito al progetto del 2027, rendendo utile continuare lo sviluppo fino alla fine della stagione. | Ferrari will continue developing the SF-26 despite going four consecutive Grands Prix without a podium. Fred Vasseur says approximately 80% of the work completed on the current car can transfer to the 2027 project, making continued development worthwhile.",
+  kcsQuickShift: "I'm guessing Hamilton is pushing Ferrari hard to keep improving. | Hamilton sta probabilmente facendo molta pressione sulla Ferrari affinché continui a migliorare. ",
+  url: "https://www.formulapassion.it/f1/f1-news/ferrari-stavolta-non-molla-sviluppo-sf26-diverso-rispetto-12-mesi-fa",
+  imagePath: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 },
+
 {
-  slotId: 3,
+  slotId: "news-03",
+  sourceLabel: "RacingNews365",
+  title: "Lando Norris Opens Up on VSC Rules After Brutal Spanish GP Loss",
+  summary: "Lando Norris believes Formula 1 should discuss making the Virtual Safety Car rules fairer after the timing of the VSC cost him a likely victory in Madrid. Norris had already passed the pit entrance when the neutralisation began, allowing Kimi Antonelli and Max Verstappen to make cheaper pit stops. Possible solutions include closing the pit lane temporarily or guaranteeing every driver an equal opportunity to stop.",
+  kcsQuickShift: "Lando is right. I think his first win in Miami came from the timing of a Safety Car. But the issue is that a win or loss should not come down to the timing of a VSC. In my opinion, the rule should change.",
+  url: "https://racingnews365.com/lando-norris-opens-up-on-complicated-subject-after-brutal-loss",
+  imagePath: "/img/news/xpb/Mclaren/news-xpb6lando.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 15, 2026"
+},
+
+{
+ slotId: "news-04",
+  sourceLabel: "F1News.se",
+  title: "Steiner sågar Norris Coca-Cola-drama | Steiner Criticizes Norris Over Coca-Cola Drama",
+  summary: "Guenther Steiner har kritiserat Lando Norris efter att McLaren-föraren drack Coca-Cola i nedkylningsrummet efter Spaniens Grand Prix. Eftersom Pepsi är en officiell sponsor till Formel 1 ansåg Steiner att Norris agerande var oprofessionellt och att förarna måste respektera sportens kommersiella partners. Norris försvarade sig med att han precis hade avslutat ett lopp och borde få dricka vad han ville. | Guenther Steiner has criticized Lando Norris for drinking Coca-Cola in the cooldown room following the Spanish Grand Prix. With Pepsi serving as an official Formula 1 sponsor, Steiner considered Norris’s actions unprofessional and said drivers must respect the sport’s commercial partners. Norris defended himself by saying he had just completed a race and should be allowed to drink what he wanted.",
+  kcsQuickShift: "Coke-Cola is better than Pepsi....So maybe F1 should switch. Lol  ",
+  url: "https://f1news.se/steiner-sagar-norris-coca-cola-drama",
+  imagePath: "/img/news/shut/shut-gunther.jpg",
+  photoCredit: "Shutterstock",
+  dateLabel: "September 15, 2026"
+},
+
+{
+  slotId: "news-05",
+  sourceLabel: "RacingNews365",
+  title: "George Russell Says Verstappen’s Teammates Are Closer Than Before",
+  summary: "George Russell believes the 2026 cars have changed several established teammate battles. He pointed to Kimi Antonelli’s advantage over him, Lewis Hamilton’s struggles against Charles Leclerc and Red Bull’s Isack Hadjar and Liam Lawson getting closer to Max Verstappen than Verstappen’s previous teammates managed during the last regulation era.",
+  kcsQuickShift: "I think this is a brilliant point. This car definitely seems to have leveled the RedBull/Visa team. Verstappen has not been able to make the huge gains and leave the other 3 driver behind. He is obviously the best but the others are putting respectable times on the timing sheet. ",
+  url: "https://racingnews365.com/george-russell-makes-major-max-verstappen-claim",
+  imagePath: "/img/news/xpb/Mercedes/xpb-russellpolezandvoort.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 15, 2026"
+},
+
+{
+  slotId: "news-06",
   sourceLabel: "Motorsport.com",
-  title: "“I almost fell asleep” - F1 drivers push for Madrid track changes after “very poor” Spanish GP",
-  summary: "Formula 1 drivers have called for significant changes to the Madring after an inaugural Spanish Grand Prix that produced almost no overtaking. Suggestions include reworking the chicane, creating stronger braking zones and shortening the unusually long pitlane to encourage more strategic variety.",
-  kcsQuickShift: "Wow the reviews are rough for this race. The only one i heard so far give it a postive review is Peter Windsor. I have to admit I was working around and listening to a lot of it on headphones but I though it looked awesome and it definitely sounded tense at times. ",
-  url: "https://www.motorsport.com/f1/news/i-almost-fell-asleep-f1-drivers-push-for-madrid-track-changes-after-very-poor-spanish-gp/10855576/",
+  title: "Red Bull Insists Isack Hadjar’s Recovery Remains on Schedule",
+  summary: "Red Bull says there is no cause for concern over Isack Hadjar’s recovery despite the French driver missing three Grands Prix. Hadjar has been sidelined since suffering a wrist injury while boxing during the summer break, with Liam Lawson returning to Red Bull in his absence. The team maintains that Hadjar’s rehabilitation is progressing as expected.",
+  kcsQuickShift: "I read he was coming back and then another article said he wasn't because Baku may be too much stress on his wrist. They have a duty of care to make sure he doesn't race too soon.",
+  url: "https://www.motorsport.com/f1/news/red-bull-on-hadjars-injury-there-is-nothing-wrong-with-isacks-recovery/10856017/",
+  imagePath: "/img/news/xpb/RedBull/xpb-isackspa.jpg",
+  photoCredit: "XPB IMAGES",
+  dateLabel: "September 15, 2026"
+},
+
+{
+  slotId: "news-07",
+  sourceLabel: "RacingNews365",
+  title: "Madring Set for Major 2027 Changes After Overtaking Criticism",
+  summary: "Spanish Grand Prix organisers are preparing changes to three areas of the Madring circuit following a race that produced very little meaningful overtaking. Drivers criticised braking zones that require them to turn while slowing down, making side-by-side racing extremely difficult. The proposed work is intended to preserve the circuit’s qualifying challenge while creating better passing opportunities.",
+  kcsQuickShift: "The race and race track still had some good points. It looked awesome on TV and produced an exciting qualifying session. They have 12 months before F1 is back. That gives them lots of times to teak the track.",
+  url: "https://racingnews365.com/madring-set-for-2027-overhaul-after-drivers-savage-overtaking-woes",
   imagePath: "/img/news/xpb/Races/xpb-madringrace.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 },
+
 {
-  slotId: 4,
-  sourceLabel: "Infobae",
-  title: "Franco Colapinto expuso a Pierre Gasly y logró un récord que deja atrás al resto de los actuales pilotos de F1 | Franco Colapinto outshines Pierre Gasly and sets a record unmatched by every other current F1 driver",
-  summary: "Franco Colapinto terminó séptimo en Madrid después de superar a Pierre Gasly durante prácticamente todo el fin de semana. El argentino también se convirtió en el único piloto que ha completado las 14 carreras de la temporada, tras el abandono de Lewis Hamilton. | Franco Colapinto finished seventh in Madrid after outperforming Pierre Gasly throughout nearly the entire weekend. The Argentine also became the only driver to finish all 14 races this season following Lewis Hamilton's retirement.",
-  kcsQuickShift: "Colapinto continues to show why it was a good choice for Alpine to resign in him for next year. Period! | Colapinto sigue demostrando por qué Alpine tomó la decisión correcta al renovarlo para el próximo año. ¡Y punto!",
-  url: "https://www.infobae.com/deportes/2026/09/14/franco-colapinto-expuso-a-pierre-gasly-y-logro-un-record-que-deja-atras-al-resto-de-los-actuales-pilotos-de-f1/",
-  imagePath: "/img/news/Alpine/xpb-alpinemadring.jpg",
-  photoCredit: "Courtesy of Alpine F1",
-  dateLabel: "September 14, 2026"
-},
-{
-  slotId: 5,
-  sourceLabel: "Formula1.com",
-  title: "‘Clearly it’s in him’ - Wolff on the challenge of unlocking Russell’s potential",
-  summary: "Toto Wolff remains convinced that George Russell and Mercedes possess the pace needed to challenge at the front despite another difficult weekend in Madrid. Russell finished fifth and now trails teammate Kimi Antonelli by 81 points, but Wolff insists Mercedes will continue searching for the performance currently missing from his car.",
-  kcsQuickShift: "I might be wrong but Russell has lost his edge for now. I think the challenge of keeping up with Antonelli has undone his spirit. Last week I thought he might be able to turn it around and still be a threat. But his 5th to Antonelle's 1st this week may break him. I'm not saying he will not win another race but his cahmpionship hopes for this year are done. Hopefully for Russell fans he can bounce back in 2027.",
-  url: "https://www.formula1.com/en/latest/article/clearly-its-in-him-wolff-on-the-challenge-of-unlocking-russells-potential.3u7nYJxfoM246qlpQiQyiV",
-  imagePath: "/img/news/xpb/Mercedes/news-xpbtoto.jpg",
+  slotId: "news-08",
+  sourceLabel: "FormulaPassion.it",
+  title: "Sainz-Alonso, lo scontro continua: “Si è lamentato e mi ha fatto penalizzare” | Sainz-Alonso Dispute Continues: “He Complained and Got Me Penalized”",
+  summary: "Carlos Sainz ha criticato Fernando Alonso dopo il loro contatto durante il Gran Premio di Spagna. Sainz ritiene che Alonso si sia lamentato via radio per ottenere una penalità, mentre Alonso ha definito corretta la decisione dei commissari. Sainz ha comunque escluso conseguenze a lungo termine nel loro rapporto. | Carlos Sainz criticised Fernando Alonso following their contact during the Spanish Grand Prix. Sainz believes Alonso complained over the radio to secure a penalty, while Alonso said the stewards made the correct decision. Sainz does not expect the incident to damage their relationship long-term.",
+  kcsQuickShift: "It must be weird to criticize your childhood hero. | Deve essere strano criticare il proprio idolo d’infanzia.",
+  url: "https://www.formulapassion.it/f1/f1-news/sainz-alonso-lo-scontro-continua-si-e-lamentato-e-mi-ha-fatto-penalizzare-immagino-fosse-quello-che-voleva",
+  imagePath: "/img/news/xpb/Williams/news-xpbcarlos.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 },
+
 {
-  slotId: 6,
-  sourceLabel: "Nextgen-Auto",
-  title: "Madrid GP slammed as ‘deadly sleep machine’",
-  summary: "Madrid's first Formula 1 race has drawn a sharp international backlash after the new circuit failed to deliver meaningful overtaking. Spanish transport minister Óscar Puente described the event as a complete disaster, while international media compared the layout to a faster version of Monaco.",
-  kcsQuickShift: "It is a brand-new track, and they can still reconfigure it for next year. I am sure they will try to come up with some ideas. I love the old tracks, but as long as F1 continues to grow, it will want to expand its footprint. My only caution is not to do what NASCAR did: leave the old behind for the new, lose viewers and fans, and then slowly have to bring back the older tracks that built the sport",
-  url: "https://motorsport.nextgen-auto.com/en/formula-1/madrid-gp-slammed-as-deadly-sleep-machine,211469.html",
-  imagePath: "/img/news/raceposter/madring2.jpg",
-  photoCredit: "KC AI Generated image",
-  dateLabel: "September 14, 2026"
-},
-{
-  slotId: 7,
-  sourceLabel: "1News New Zealand",
-  title: "Formula 1: Liam Lawson sixth for Red Bull in Spain",
-  summary: "Liam Lawson finished sixth in Madrid after starting eighth, matching his best result of the season and leading Red Bull's challenge. The New Zealander collected eight points despite struggling to make progress on a circuit where overtaking proved extremely difficult.",
-  kcsQuickShift: "",
-  url: "https://www.1news.co.nz/2026/09/14/formula-1-liam-lawson-sixth-for-red-bull-in-spain/",
-  imagePath: "/img/news/xpb/Visa/xpblawsonspain.jpg",
+  slotId: "news-09",
+  sourceLabel: "RacingNews365",
+  title: "Why Max Verstappen Chose to Extend His Red Bull Contract",
+  summary: "Jos Verstappen says his son’s decision to remain with Red Bull through 2030 was not straightforward after months of speculation about a possible move or retirement. Max ultimately stayed because of his long relationship with the team, his knowledge of Red Bull’s future engine programme and the limited alternatives available elsewhere on the grid.",
+  kcsQuickShift: "I've said it before, I'll say it again. He was not going to retire or leave RedBull.",
+  url: "https://racingnews365.com/max-verstappen-red-bull-contract-extension-details-explained",
+  imagePath: "/img/news/xpb/RedBull/xpbverstappen.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 },
+
 {
-  slotId: 8,
-  sourceLabel: "F1i",
-  title: "Max Verstappen se moque du Madring après avoir résisté à Norris : « Il suffit de rester au milieu » | Max Verstappen mocks the Madring after resisting Norris: “You just stay in the middle”",
-  summary: "Max Verstappen a critiqué le manque de possibilités de dépassement au Madring après avoir résisté à une McLaren plus rapide pilotée par Lando Norris. Selon lui, il suffisait de rester au milieu de la piste et de préserver ses pneus pour empêcher toute attaque sérieuse. | Max Verstappen criticized the lack of overtaking opportunities at the Madring after holding off Lando Norris in a faster McLaren. He said defending simply required staying in the middle of the track and preserving enough tyre grip to prevent a serious attack.",
-  kcsQuickShift: "And the hits keep coming | Et les critiques continuent de pleuvoir.",
-  url: "https://f1i.autojournal.fr/infos/reaction/max-verstappen-se-moque-du-madring-apres-avoir-resiste-a-norris-il-suffit-de-rester-au-milieu/",
-  imagePath: "/img/news/xpb/RedBull/xpbmax.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 14, 2026"
-},
-{
-  slotId: 9,
-  sourceLabel: "ESPN",
-  title: "Honda replacing F1 engine chief after poor start to return with Aston Martin",
-  summary: "Honda will appoint Yoichiro Fukao as its Formula 1 project leader on October 1 following a difficult opening season with Aston Martin. The manufacturer describes the move as a planned transition, but it comes as the team continues to struggle with power, reliability and results.",
-  kcsQuickShift: "They have to do something, Aston Martin is flaying around like a beached whale. Lawrence Stroll is going to bail if it does not turn around, guarnteed.",
-  url: "https://www.espn.co.uk/f1/story/_/id/49938723/honda-replacing-f1-engine-chief-poor-start-return-aston-martin",
-  imagePath: "/img/news/shut/Aston/news-shutaston.jpg",
+  slotId: "news-10",
+  sourceLabel: "Autosport",
+  title: "F2 Adds an Extra Baku Race as Questions Remain Over F1’s Final Rounds",
+  summary: "Formula 2 has announced an expanded Baku weekend featuring two qualifying sessions, one Sprint and two Feature Races. The unusual late change comes while uncertainty remains around the Qatar and Abu Dhabi Formula 1 rounds. F2 says the decision was possible because it is the only support category appearing in Azerbaijan, although the timing has naturally raised questions about the wider calendar.",
+  kcsQuickShift: "Whats F1 going to do? It's obviouslt to dangerous to be in the middle east right now. I imagine it has a lot to do with the money that is tied up in those tracks and races thats keeping them from announcing anything.",
+  url: "https://www.autosport.com/formula2/news/f2-bulks-up-baku-schedule-with-extra-feature-race-is-this-a-clue-for-f1s-future/10855898/",
+  imagePath: "/img/news/shut/Races/shut-bakurace.jpg",
   photoCredit: "Shutterstock",
-  dateLabel: "September 14, 2026"
-},
-{
-  slotId: 10,
-  sourceLabel: "Crash.net",
-  title: "Carlos Sainz claims Fernando Alonso radio complaints provoked F1 Spanish GP penalty “like always”",
-  summary: "Carlos Sainz believes Fernando Alonso's radio complaints influenced the stewards after the Williams driver received a five-second penalty for their Turn 5 collision. Sainz argued that the corner only allowed room for one car, but the stewards ruled that he moved under braking and failed to leave Alonso enough space.",
-  kcsQuickShift: "I am not expert but to me it looked like Sainz was as fault. Also is it just me or has Carlos been involved in a lot of these racing incidents this year?",
-  url: "https://www.crash.net/f1/news/1104702/1/carlos-sainz-claims-fernando-alonso-radio-complaints-provoked-f1-spanish-gp",
-  imagePath: "/img/news/shut/williams/shutterstock_2618722403.jpg",
-  photoCredit: "Shutterstock",
-  dateLabel: "September 14, 2026"
+  dateLabel: "September 15, 2026"
 }
 ];
