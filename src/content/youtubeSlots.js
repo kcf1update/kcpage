@@ -9,7 +9,7 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "Drivers React After The Race | 2026 Spanish Grand Prix ",
+  title: "The Madring Verdict! How Does a Track THAT BAD Get Approved? ",
   youtubeInput: "https://youtu.be/ptkSrUliEh0",
   forceExternal: "blue"
   },
@@ -17,7 +17,7 @@ export const youtubeSlots = [
   {
     slotId: "slot2",
     title: "F1 Race Press Conference - Spanish GP | Kimi Antonelli, Max Verstappen, Lando Norris",
-    youtubeInput: "https://youtu.be/TEIdtuYFHT0",
+    youtubeInput: "https://youtu.be/FpAIYKWl_2c",
    
   },
 
