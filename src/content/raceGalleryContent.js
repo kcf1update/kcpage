@@ -20,22 +20,22 @@ export const raceGalleryContent = {
       description: "Practice day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 2",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Visa/xpb-lindbladmadring.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
         {
-          src: "/img/news/xpb/RedBull/xpb-maxmadring.jpg",
+          src: "",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
@@ -48,22 +48,22 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "/img/news/xpb/Haas/xpb-bearmanmadring.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mclaren/xpb-landopolemadring.jpg",
+          src: "",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
          {
-          src: "/img/news/xpb/Races/xpb-madringtop3pole.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
@@ -77,12 +77,12 @@ export const raceGalleryContent = {
       description: "Race day photos from the Grand Prix.",
       images: [
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimiracemadring.jpg",
+          src: "",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "/img/news/xpb/Mercedes/xpb-kimiwinmadring.jpg",
+          src: "",
           alt: "Race day gallery image 2",
           credit: "XPB Images",
         },

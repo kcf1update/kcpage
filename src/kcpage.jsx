@@ -15,7 +15,7 @@ import { newsSlots } from "./content/newsSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: true,
+  enabled: false,
   label: "RACE RESULTS ARE IN",
   title: "ANTONELLI WINS IN MADRID",
   body: "Kimi Antonelli has made history by winning the first Spanish Grand Prix at Madring. Visit the Race Centre for the full results, detailed race summary and complete weekend coverage.",

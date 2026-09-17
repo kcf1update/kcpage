@@ -352,28 +352,6 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
-1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m34.077s	28
-2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m34.363s	27
-3	Charles Leclerc	MON	Scuderia Ferrari HP	1m34.536s	27
-4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m34.620s	27
-5	Max Verstappen	NED	Oracle Red Bull Racing	1m34.703s	25
-6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m34.947s	27
-7	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m35.033s	28
-8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m35.148s	22
-9	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m35.529s	26
-10	Liam Lawson	NWZ	Oracle Red Bull Racing	1m35.539s	26
-11	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m35.652s	27
-12	Esteban Ocon	FRA	TGR Haas F1 Team	1m35.757s	25
-13	Franco Colapinto	ARG	BWT Alpine F1 Team	1m35.834s	24
-14	Pierre Gasly	FRA	BWT Alpine F1 Team	1m35.933s	23
-15	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m36.473s	27
-16	Ollie Bearman	GBR	TGR Haas F1 Team	1m36.757s	24
-17	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m36.870s	30
-18	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m36.939s	16
-19	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m37.254s	26
-20	Alex Albon	THA	Atlassian Williams F1 Team	1m37.591s	25
-21	Valtteri Bottas	FIN	Cadillac F1 Team	1m38.150s	26
-22	Sergio Perez	MEX	Cadillac F1 Team	1m38.818s	25
 
 
 
@@ -381,56 +359,13 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m33.662s	23
-2	Charles Leclerc	MON	Scuderia Ferrari HP	1m33.775s	25
-3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m33.811s	22
-4	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m33.890s	15
-5	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m33.999s	24
-6	Max Verstappen	NED	Oracle Red Bull Racing	1m34.063s	21
-7	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m34.200s	23
-8	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m34.758s	25
-9	Esteban Ocon	FRA	TGR Haas F1 Team	1m34.867s	25
-10	Liam Lawson	NWZ	Oracle Red Bull Racing	1m34.938s	20
-11	Pierre Gasly	FRA	BWT Alpine F1 Team	1m34.959s	20
-12	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m35.060s	21
-13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m35.170s	24
-14	Ollie Bearman	GBR	TGR Haas F1 Team	1m35.203s	25
-15	Franco Colapinto	ARG	BWT Alpine F1 Team	1m35.886s	21
-16	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m36.291s	24
-17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m36.780s	16
-18	Alex Albon	THA	Atlassian Williams F1 Team	1m36.936s	22
-19	Sergio Perez	MEX	Cadillac F1 Team	1m37.195s	23
-20	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m37.273s	20
-21	Valtteri Bottas	FIN	Cadillac F1 Team	1m37.727s	23
-22	Lando Norris	GBR	McLaren Mastercard F1 Team	No time set	2
+
 
 
 `;
 
 const PASTE_P3 = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m32.797s	13
-2	Charles Leclerc	MON	Scuderia Ferrari HP	1m32.963s	13
-3	Oscar Piastri	AUS	McLaren Mastercard F1 Team	1m32.986s	12
-4	Lando Norris	GBR	McLaren Mastercard F1 Team	1m33.033s	13
-5	Max Verstappen	NED	Oracle Red Bull Racing	1m33.172s	9
-6	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m33.499s	11
-7	Liam Lawson	NWZ	Oracle Red Bull Racing	1m33.902s	14
-8	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m33.933s	14
-9	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m34.284s	5
-10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m34.288s	15
-11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m34.346s	14
-12	Esteban Ocon	FRA	TGR Haas F1 Team	1m34.430s	12
-13	Ollie Bearman	GBR	TGR Haas F1 Team	1m34.481s	12
-14	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m34.505s	7
-15	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	1m34.565s	12
-16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m34.971s	13
-17	Fernando Alonso	SPA	Aston Martin Aramco F1 Team	1m35.020s	17
-18	Carlos Sainz	SPA	Atlassian Williams F1 Team	1m35.464s	15
-19	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m35.570s	12
-20	Valtteri Bottas	FIN	Cadillac F1 Team	1m36.441s	13
-21	Sergio Perez	MEX	Cadillac F1 Team	1m36.670s	13
-22	Alex Albon	THA	Atlassian Williams F1 Team	No time set	2
- 
+
 `;
 const PASTE_SQ = `
 
@@ -441,133 +376,11 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
-1	1	
-
-Lando Norris
-
-McLaren	1:33.469	1:32.873	1:31.824	19
-2	12	
-
-Kimi Antonelli
-
-Mercedes	1:33.267	1:32.591	1:31.835	20
-3	3	
-
-Max Verstappen
-
-Red Bull Racing	1:33.381	1:32.431	1:31.964	18
-4	44	
-
-Lewis Hamilton
-
-Ferrari	1:33.531	1:32.710	1:32.013	21
-5	16	
-
-Charles Leclerc
-
-Ferrari	1:33.532	1:32.755	1:32.019	21
-6	63	
-
-George Russell
-
-Mercedes	1:33.211	1:32.850	1:32.149	22
-7	81	
-
-Oscar Piastri
-
-McLaren	1:33.829	1:33.204	1:32.294	22
-8	30	
-
-Liam Lawson
-
-Red Bull Racing	1:33.310	1:32.780	1:32.316	18
-9	43	
-
-Franco Colapinto
-
-Alpine	1:33.963	1:33.038	1:32.903	17
-10	41	
-
-Arvid Lindblad
-
-Racing Bulls	1:34.340	1:33.204	1:33.041	21
-11	27	
-
-Nico Hulkenberg
-
-Audi	1:34.417	1:33.223		13
-12	5	
-
-Gabriel Bortoleto
-
-Audi	1:33.986	1:33.388		12
-13	31	
-
-Esteban Ocon
-
-Haas F1 Team	1:34.667	1:33.667		11
-14	10	
-
-Pierre Gasly
-
-Alpine	1:34.246	1:33.753		11
-15	22	
-
-Yuki Tsunoda
-
-Racing Bulls	1:34.311	1:34.084		15
-16	23	
-
-Alex Albon
-
-Williams	1:35.307	1:35.532		14
-17	55	
-
-Carlos Sainz
-
-Williams	1:35.312			9
-18	14	
-
-Fernando Alonso
-
-Aston Martin	1:35.388			9
-19	11	
-
-Sergio Perez
-
-Cadillac	1:35.913			9
-20	77	
-
-Valtteri Bottas
-
-Cadillac	1:38.011			8
-
 
 `;
 
 const PASTE_RACE = `
-1	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	57
-2	Max Verstappen	NED	Oracle Red Bull Racing	+4.3s
-3	Lando Norris	GBR	McLaren Mastercard F1 Team	+5.0s
-4	Charles Leclerc	MON	Scuderia Ferrari HP	+29.1s
-5	George Russell	GBR	Mercedes AMG Petronas F1 Team	+29.8s
-6	Liam Lawson	NZL	Oracle Red Bull Racing	+86.7s
-7	Franco Colapinto	ARG	BWT Alpine F1 Team	+94.2s
-8	Oscar Piastri	AUS	McLaren Mastercard F1 Team	+95.8s
-9	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	+1 Lap
-10	Nico Hulkenberg	GER	Audi Revolut F1 Team	+1 Lap
-11	Esteban Ocon	FRA	TGR Haas F1 Team	+1 Lap
-12	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	+1 Lap
-13	Pierre Gasly	FRA	BWT Alpine F1 Team	+1 Lap
-14	Yuki Tsunoda	JAP	Visa Cash App Racing Bulls F1 Team	+1 Lap
-15	Alex Albon	THA	Atlassian Williams F1 Team	+1 Lap
-16	Ollie Bearman	GBR	TGR Haas F1 Team	+1 Lap
-17	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	+2 Laps
-18	Valtteri Bottas	FIN	Cadillac F1 Team	+3 Laps
-DNF	Carlos Sainz	ESP	Atlassian Williams F1 Team	 
-DNF	Sergio Perez	MEX	Cadillac F1 Team	 
-DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	 
-DNF	Lewis Hamilton	GBR	Scuderia Ferrari HP	 
+
 
 `;
 
@@ -653,9 +466,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "Russell Leads Mercedes 1-2 as Madring Makes Dramatic F1 Debut",
-      summary: "George Russell set the early standard at Madrid’s new Madring circuit, leading teammate Kimi Antonelli in a commanding Mercedes 1-2 during the venue’s first-ever Formula 1 practice session. Russell’s 1:34.077 put him 0.286 seconds clear of the championship leader, with Charles Leclerc third for Ferrari. Lewis Hamilton claimed fourth despite setting his quickest lap on medium tyres and repeatedly encountering traffic, suggesting Ferrari may have more speed to come. Max Verstappen completed the top five, followed by Lando Norris, Arvid Lindblad, Oscar Piastri, Nico Hülkenberg and Liam Lawson. Drivers pushed the limits while learning the fast and unforgiving circuit, producing several lock-ups and tense near-misses—including Hamilton narrowly avoiding Carlos Sainz through the banked La Monumental corner. Despite fears that the Madring could be a “car killer,” the session ran without a crash or red flag, although Fernando Alonso stopped on track moments before the chequered flag. Madrid’s opening hour delivered speed, traffic chaos and plenty of uncertainty heading into FP2. (Crash.net, RacingNews365)",
-      url: "https://www.planetf1.com/news/spanish-grand-prix-2026-fp1-report",
+        "",
+      summary: "",
+      url: "",
     },
   ],
 },
@@ -663,9 +476,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "Antonelli Takes Charge as Lindblad Crash Brings Madring’s First Red Flag",
-      summary: "Kimi Antonelli put Mercedes back on top in FP2 at the Madring, edging Charles Leclerc by just 0.113 seconds as Ferrari closed the gap to the early pacesetters. Lewis Hamilton finished only 0.149 seconds behind Antonelli in third, setting up what could be a close fight between Mercedes and Ferrari. Arvid Lindblad was the surprise of the session, running an impressive fourth before losing the rear of his Racing Bulls at Turn 13 and hitting the barriers. Lindblad was unharmed, but the crash triggered Madrid’s first Formula 1 red flag and cost the drivers nearly 15 minutes of running. George Russell finished fifth after the interruption prevented him from completing a representative soft-tyre lap, followed by Max Verstappen, Oscar Piastri, Yuki Tsunoda, Esteban Ocon and Liam Lawson. Lando Norris suffered the biggest setback of the session, completing only two slow laps after a gearbox problem left his McLaren stuck in false neutral. With the red flag disrupting the qualifying simulations, the true competitive order remains uncertain heading into Saturday.",
-      url: "https://www.formula1.com/en/latest/article/fp2-antonelli-sets-the-pace-ahead-of-leclerc-during-fp2-at-the-spanish-grand-prix.4QbCYEtf6FjwrEiUIGrWmf",
+      title: "",
+      summary: "",
+      url: "",
     },
   ],
 },
@@ -673,12 +486,10 @@ export const raceWeekendRecap = {
   heading: "Practice 3",
   items: [
  {
-  title: "Antonelli Leads Dramatic Final Practice as Hamilton and Bearman Crash at Madring",
+  title: "",
   summary:
-    "Kimi Antonelli completed a strong practice programme at Madring by setting the fastest time in a heavily disrupted final session. The Mercedes driver moved to the top in the closing minutes, beating Charles Leclerc by 0.166 seconds and Oscar Piastri by 0.189 seconds. Lando Norris finished fourth, followed by Max Verstappen, George Russell, Liam Lawson and Nico Hulkenberg. Lewis Hamilton was ninth, with Gabriel Bortoleto completing the top 10. " +
-    "Hamilton caused the session's biggest interruption when he locked up and crashed into the barriers at the final corner while running fourth. His front wing broke and became trapped beneath the car, causing a puncture as he attempted to return to the pits. Barrier repairs left several drivers with limited time to complete their qualifying simulations. " +
-    "Alex Albon also clipped the barriers at Turn 21 and did not return while Williams worked on his damaged car. FP3 ended under another red flag after Oliver Bearman crashed at Turn 11. The interrupted running leaves the teams with plenty of uncertainty ahead of qualifying.",
-  url: "https://www.skysports.com/f1/news/12433/13584715/spanish-gp-lewis-hamilton-crashes-as-kimi-antonelli-tops-final-practice-from-charles-leclerc-in-madrid",
+    "",
+  url: "",
 },
   ],
 },
@@ -687,18 +498,10 @@ export const raceWeekendRecap = {
             heading: "Qualifying",
             items: [
               {
-                title: "Norris Claims First Madring Pole by 0.011 Seconds as Antonelli Shines",
+                title: "",
 summary:
-   "Lando Norris produced a brilliant final lap to claim the first Formula 1 pole position at Madring. His time of 1:31.824 put him just 0.011 seconds ahead of Kimi Antonelli, with Max Verstappen qualifying third. Lewis Hamilton secured fourth ahead of Charles Leclerc and George Russell." +
-
-  "\n\nOnly 21 drivers took part after Haas was unable to repair Oliver Bearman’s car following his heavy FP3 crash. Track-limit violations affected several drivers in Q1, while Russell brushed the wall at Turn 21. Both home favourites were eliminated, with Carlos Sainz qualifying 17th and Fernando Alonso 18th." +
-
-  "\n\nVerstappen set the pace during Q2 as the track temperature reached 53°C. Nico Hulkenberg, Gabriel Bortoleto, Esteban Ocon, Pierre Gasly, Yuki Tsunoda and Alex Albon were eliminated. Oscar Piastri narrowly advanced to Q3 in ninth place." +
-
-  "\n\nHamilton held provisional pole after the first Q3 runs before Antonelli moved ahead. Norris then delivered his best lap when it mattered. Piastri qualified seventh, followed by strong performances from Liam Lawson in eighth, Franco Colapinto in ninth and Arvid Lindblad in 10th." +
-
-  "\n\nFormulaPassion also praised the organizers for completing the new 5.4-kilometre, 22-corner circuit and making the event easily accessible from central Madrid. With close walls, fast corners and the steeply banked La Monumental section, Madring has already established itself as one of the season’s most demanding circuits.",
-                url: "https://www.the-race.com/formula-1/f1-spanish-grand-prix-qualifying-norris-beats-antonelli-pole/",
+   "",
+                url: "",
               },
             ],
           },
@@ -706,53 +509,48 @@ summary:
             heading: "Race",
             items: [
 {
-  title: "Antonelli Makes History as Strategy Decides Dramatic Madring Debut",
+  title: "",
   summary:
-    "Kimi Antonelli became the first Formula 1 winner at the new Madring circuit, claiming his eighth victory of the 2026 season after a dramatic Spanish Grand Prix shaped by early contact, tyre strategy and a decisive Virtual Safety Car. Lando Norris initially protected his lead from pole position while Antonelli endured a difficult opening lap, cutting Turns 1 and 5 during the battle and losing a position to Max Verstappen. Verstappen also became involved in an opening-lap fight with Lewis Hamilton, but Hamilton’s race soon unravelled when a brake problem forced him to retire." +
-    "\n\nThe race turned when Lance Stroll’s problem triggered a Virtual Safety Car. Mercedes immediately brought Antonelli into the pits, while McLaren was unable to stop Norris during the same window. Norris pitted shortly afterward, but a slow tyre change dropped him behind both Antonelli and Verstappen. What had looked like a race Norris was capable of winning suddenly swung firmly in Antonelli’s favour." +
-    "\n\nCharles Leclerc remained on track and temporarily inherited the lead as Ferrari gambled on another Safety Car. When that opportunity failed to arrive, Leclerc finally stopped on Lap 49 and returned to the race in fourth place. Antonelli moved back into the lead and carefully managed his hard tyres through the closing laps. Despite reporting a steering concern and brushing the wall at Turn 7, the Mercedes driver stayed composed and brought the car home ahead of Verstappen and a frustrated Norris." +
-    "\n\nThe first Madring race was disastrous for Spain’s two home drivers. Carlos Sainz had already made contact with Yuki Tsunoda before becoming involved in a heated battle with Fernando Alonso near the entrance to the tunnel at Turn 5. Alonso attacked with greater speed, but Sainz defended aggressively and squeezed the Aston Martin toward the wall. The contact damaged Alonso’s front wing and earned Sainz a penalty. Sainz later retired after 46 laps, while Aston Martin’s lack of pace left Alonso struggling to a disappointing 17th-place finish." +
-    "\n\nLeclerc finished fourth ahead of George Russell, with Liam Lawson taking sixth for Red Bull. Franco Colapinto delivered valuable points for Alpine in seventh, followed by Oscar Piastri, Arvid Lindblad and Nico Hulkenberg. Esteban Ocon narrowly missed the points in 11th. Four drivers failed to finish: Hamilton and Stroll suffered brake-related problems, Sergio Perez encountered a suspected water-system issue, and Sainz retired after his difficult home race." +
-    "\n\nAntonelli’s victory added Madrid to an impressive list of 2026 wins that already includes Monaco, Spa and Monza. The result increased his Drivers’ Championship advantage over Russell to 81 points, while Hamilton now trails by 101. Norris may have possessed the fastest race pace, but Antonelli and Mercedes took full advantage when the strategic opportunity appeared, giving the championship leader a historic victory at Formula 1’s newest circuit.",
-  url: "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
+    "",
+  url: "",
         },
       ],
     },
   ],
 };
 export const nextRaceContent = {
-  raceName: "TAG HEUER GRAN PREMIO DE ESPANA",
-  raceDates: "Sep 11th  - Sep 13th, 2026",
-  location: "Madrid, Spain",
-  trackInfoUrl: "/img/tracks/spaintrack.jpg",
+  raceName: "Qatar Airways Azerbaijan Grand Prix",
+  raceDates: "Sep 24th  - Sep 26th, 2026",
+  location: "Baku City, Azerbaijan",
+  trackInfoUrl: "/img/tracks/bakucity.jpg",
 
   racePoster: {
     enabled: true,
-    backgroundImage: "/img/news/raceposter/spainposter.jpg",
-    downloadImage: "/img/news/raceposter/spainposter.jpg",
+    backgroundImage: "/img/news/raceposter/azerbaijan.jpg",
+    downloadImage: "/img/news/raceposter/azerbaijan.jpg",
     buttonText: "Race Poster",
   },
 
  weather: [
   {
-    day: "Friday",
-    date: "Sep 11th",
+    day: "Thursday",
+    date: "Sep 24th",
     icon: "☀️",
-    temp: "30°C / 13°C",
+    temp: "28°C / 20°C",
     summary: "Current outlook: Sunny",
+  },
+  {
+    day: "Friday",
+    date: "Sep 25th",
+    icon: "🌤️",
+    temp: "27°C / 20°C",
+    summary: "Current outlook: Mostly sunny",
   },
   {
     day: "Saturday",
-    date: "Sep 12th",
+    date: "Sep 26th",
     icon: "☀️",
-    temp: "31°C / 16°C",
-    summary: "Current outlook: Sunny",
-  },
-  {
-    day: "Sunday",
-    date: "Sep 13th",
-    icon: "☀️",
-    temp: "32°C / 16°C",
+    temp: "26°C / 18°C",
     summary: "Current outlook: Sunny",
   },
 ],
@@ -765,7 +563,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "George Russell fastest, Full results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
@@ -774,7 +572,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "Antonelli Fastest, Full results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -783,7 +581,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "Antonelli fastest again, Full results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),
@@ -792,7 +590,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "Norris on Pole!, Results below"  ,
+          time: ""  ,
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
@@ -801,7 +599,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "Antonelli Wins again!, full results below",
+          time: "",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),

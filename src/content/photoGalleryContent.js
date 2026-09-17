@@ -15,6 +15,59 @@ export const photoGalleryContent = {
   races: [
     {
       id: "Italian-2026",
+      raceName: "TAG HEUER GRAN PREMIO DE ESPANA",
+      dates: "Sep 11th  - Sep 13th, 2026",
+      images: [
+  {
+    src: "/img/news/xpb/Mercedes/xpb-georgemadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 1",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Williams/xpb-carlosmadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 2",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Visa/xpb-lindbladmadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 3",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/RedBull/xpb-maxmadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 4",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Haas/xpb-bearmanmadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 5",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/ferrari/xpb-lewismadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 6",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mclaren/xpb-landopolemadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 7",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimiracemadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 8",
+    credit: "XPB Images",
+  },
+  {
+    src: "/img/news/xpb/Mercedes/xpb-kimiwinmadring.jpg",
+    alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 9",
+    credit: "XPB Images",
+  },
+     
+  ],
+  },
+    {
+      id: "Italian-2026",
       raceName: "Italian Grand Prix",
       dates: "Sep 4th to 6th, 2026",
       images: [
