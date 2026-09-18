@@ -7,7 +7,7 @@ export const newsSlots = [
   kcsQuickShift: "Where there is smoke there is fire. His tenure at Ferrari so far has been a constant back and forth of good news and bad news. There has not been much positive in the media regarding his time there other than his win. Is it as bad as it sounds sometimes. Let me know in the comments what you think",
   url: "https://www.espn.co.uk/f1/story/_/id/49867154/lewis-hamilton-shuts-asking-ferrari-make-changes-never-asked-anyone-replaced-formula-1",
   imagePath: "/img/news/Ferrari/Lewis/lewishungary.jpg",
-  photoCredit: "XPB IMAGES",
+  photoCredit: "Courtesy of Ferrari F1",
   dateLabel: "SEPTEMBER 18, 2026"
   },
   {
