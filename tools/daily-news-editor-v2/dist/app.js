@@ -34,6 +34,7 @@ const elements = {
   previewTitle: document.querySelector("#preview-title"),
   previewSummary: document.querySelector("#preview-summary"),
   previewQuickShift: document.querySelector("#preview-quickshift"),
+  quickShiftCount: document.querySelector("#quickshift-count"),
 };
 
 function articleReady(article) {
@@ -104,6 +105,9 @@ function renderPreview() {
   elements.previewTitle.textContent = article.title || "Headline preview";
   elements.previewSummary.textContent = article.summary || "The story summary will appear here.";
   elements.previewQuickShift.textContent = article.kcsQuickShift || "KC’s view will appear here.";
+  const quickShift = String(article.kcsQuickShift || "").trim();
+  const wordCount = quickShift ? quickShift.split(/\s+/).length : 0;
+  elements.quickShiftCount.textContent = `${wordCount} ${wordCount === 1 ? "word" : "words"} · ${quickShift.length} ${quickShift.length === 1 ? "character" : "characters"}`;
 }
 
 function renderValidation() {

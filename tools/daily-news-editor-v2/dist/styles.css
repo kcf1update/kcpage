@@ -209,3 +209,17 @@ button:disabled { cursor: not-allowed; opacity: 0.42; }
   .two-column { grid-template-columns: 1fr; }
   .story-heading-row { align-items: flex-start; flex-direction: column; }
 }
+
+.writing-assist {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.writing-assist strong { flex: 0 0 auto; color: #baffd9; font-weight: 750; }
+#quickshift-field { min-height: 132px; border-left: 4px solid var(--red); }
+@media (max-width: 760px) { .writing-assist { flex-direction: column; gap: 5px; } }

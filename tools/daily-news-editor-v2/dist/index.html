@@ -58,7 +58,7 @@
             <span id="language-badge" class="language-badge" hidden>Foreign language + English</span>
           </div>
 
-          <form id="article-form" autocomplete="off">
+          <form id="article-form" autocomplete="on">
             <div class="two-column">
               <label>Source
                 <input name="sourceLabel" type="text" spellcheck="true" placeholder="Formula1.com" />
@@ -77,7 +77,11 @@
               <small class="language-help" hidden>Enter the foreign-language summary first, then |, then English.</small>
             </label>
             <label>KC’s QuickShift <span class="optional">Optional</span>
-              <textarea name="kcsQuickShift" rows="4" spellcheck="true" placeholder="KC’s view of the story"></textarea>
+              <textarea id="quickshift-field" name="kcsQuickShift" rows="5" lang="en-CA" spellcheck="true" autocapitalize="sentences" autocomplete="on" aria-describedby="quickshift-writing-help" placeholder="KC’s view of the story"></textarea>
+              <div id="quickshift-writing-help" class="writing-assist">
+                <span>Browser spelling and grammar checking is on. Right-click an underlined word to review it.</span>
+                <strong id="quickshift-count" aria-live="polite">0 words · 0 characters</strong>
+              </div>
               <small class="language-help" hidden>Enter English first, then |, then the foreign-language version.</small>
             </label>
             <label>Article link
