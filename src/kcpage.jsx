@@ -422,7 +422,8 @@ const additionalNews = Array.isArray(newsSlots)
           
 
         {/* DESKTOP LEFT NEWS COLUMN */}
-          <div className="hidden lg:block space-y-5 sm:space-y-6">
+       {/* DESKTOP LEFT NEWS COLUMN */}
+<div className="hidden lg:contents">
           
 
            {/* Fourth featured news article */}
@@ -440,12 +441,13 @@ const additionalNews = Array.isArray(newsSlots)
 
                   return (
                     <GlassyCard
-                      key={item?.slotId || "featured-under-video"}
-                      highlight="none"
-                      title={item?.title || "News"}
-                      titleUrl={href || undefined}
-                      subtitle={item?.sourceLabel || "Source"}
-                    >
+  key={item?.slotId || "featured-under-video"}
+  highlight="none"
+  title={item?.title || "News"}
+  titleUrl={href || undefined}
+  subtitle={item?.sourceLabel || "Source"}
+  className="lg:order-3"
+>
                       <div className="space-y-3">
                         {showImage ? (
                           href ? (
@@ -543,7 +545,7 @@ const additionalNews = Array.isArray(newsSlots)
           </div>
 
           {/* ✅ NEWS COLUMN (desktop right, mobile after YouTube) */}
-          <div className="space-y-5 sm:space-y-6">
+          <div className="space-y-5 sm:space-y-6 lg:contents">
             {featuredNews.map((item, idx) => {
               const href = safeUrl(item?.url);
               const imgPath = safeLocalImagePath(item?.imagePath);
@@ -557,14 +559,14 @@ const additionalNews = Array.isArray(newsSlots)
               const altText = (item?.imageAlt || item?.title || "News image").trim();
 
               return (
-                <GlassyCard
-
-                  key={item?.slotId || `featured-${idx}`}
-                  highlight="none"
-                  title={item?.title || `News ${idx + 1}`}
-                  titleUrl={href || undefined}
-                  subtitle={item?.sourceLabel || "Source"}
-                >
+              <GlassyCard
+  key={item?.slotId || `featured-${idx}`}
+  highlight="none"
+  title={item?.title || `News ${idx + 1}`}
+  titleUrl={href || undefined}
+  subtitle={item?.sourceLabel || "Source"}
+  className={idx === 0 ? "lg:order-1" : "lg:order-2"}
+>
                   <div className="space-y-3">
                     {showImage ? (
                       href ? (
