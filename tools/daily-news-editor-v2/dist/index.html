@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="color-scheme" content="dark" />
+    <title>KC Daily News Editor v2 — Offline</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">KC’S WORLDWIDE F1 UPDATE</p>
+        <h1>Daily News Editor</h1>
+      </div>
+      <div class="safety-badge" role="status"><span></span>Offline safety stage — cannot publish</div>
+    </header>
+
+    <main class="workspace">
+      <section class="setup-panel" aria-labelledby="setup-title">
+        <div>
+          <h2 id="setup-title">Load today’s files</h2>
+          <p>Choose the two files from your website folder. Nothing is uploaded.</p>
+        </div>
+        <label class="file-button">
+          <input id="news-file" type="file" accept=".js,text/javascript" />
+          <span>Import newsSlots.js</span>
+          <strong id="news-file-status">Not loaded</strong>
+        </label>
+        <label class="file-button">
+          <input id="archive-file" type="file" accept=".js,text/javascript" />
+          <span>Import newsArchive.js</span>
+          <strong id="archive-file-status">Not loaded</strong>
+        </label>
+      </section>
+
+      <section id="notice" class="notice" aria-live="polite" hidden></section>
+
+      <div class="editor-grid">
+        <aside class="slot-panel" aria-label="News stories">
+          <div class="panel-heading">
+            <div>
+              <span class="section-label">TODAY’S LIST</span>
+              <strong id="progress-text">0 of 10 ready</strong>
+            </div>
+            <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
+          </div>
+          <div id="slot-list" class="slot-list"></div>
+        </aside>
+
+        <section class="form-panel" aria-labelledby="story-heading">
+          <div class="story-heading-row">
+            <div>
+              <span class="section-label">EDITING</span>
+              <h2 id="story-heading">Story 1</h2>
+            </div>
+            <span id="language-badge" class="language-badge" hidden>Foreign language + English</span>
+          </div>
+
+          <form id="article-form" autocomplete="off">
+            <div class="two-column">
+              <label>Source
+                <input name="sourceLabel" type="text" spellcheck="true" placeholder="Formula1.com" />
+              </label>
+              <label>Date
+                <input name="dateLabel" type="text" spellcheck="true" placeholder="September 12, 2026" />
+                <button id="copy-date" class="text-button" type="button">Use this date for all 10</button>
+              </label>
+            </div>
+            <label>Title
+              <input name="title" type="text" spellcheck="true" placeholder="Article headline" />
+              <small class="language-help" hidden>Enter the foreign-language title first, then |, then English.</small>
+            </label>
+            <label>Summary
+              <textarea name="summary" rows="6" spellcheck="true" placeholder="Clear, accurate article summary"></textarea>
+              <small class="language-help" hidden>Enter the foreign-language summary first, then |, then English.</small>
+            </label>
+            <label>KC’s QuickShift <span class="optional">Optional</span>
+              <textarea name="kcsQuickShift" rows="4" spellcheck="true" placeholder="KC’s view of the story"></textarea>
+              <small class="language-help" hidden>Enter English first, then |, then the foreign-language version.</small>
+            </label>
+            <label>Article link
+              <input name="url" type="url" inputmode="url" spellcheck="false" placeholder="https://…" />
+            </label>
+            <div class="two-column">
+              <label>Local image path
+                <input name="imagePath" type="text" spellcheck="false" placeholder="/img/news/…" />
+              </label>
+              <label>Photo credit
+                <input name="photoCredit" type="text" spellcheck="true" placeholder="XPB IMAGES" />
+              </label>
+            </div>
+          </form>
+
+          <div class="form-actions">
+            <button id="previous-story" class="secondary-button" type="button">Previous</button>
+            <button id="next-story" class="primary-button" type="button">Next story</button>
+          </div>
+        </section>
+
+        <aside class="review-panel">
+          <section class="preview-card">
+            <span class="section-label">CARD PREVIEW</span>
+            <p id="preview-source" class="preview-source">Source</p>
+            <h2 id="preview-title">Headline preview</h2>
+            <p id="preview-summary">The story summary will appear here.</p>
+            <div class="quickshift-preview">
+              <strong>KC’S QUICKSHIFT</strong>
+              <p id="preview-quickshift">KC’s view will appear here.</p>
+            </div>
+          </section>
+
+          <section class="checks-card">
+            <div class="checks-heading">
+              <h2>Final checks</h2>
+              <span id="check-count">Not ready</span>
+            </div>
+            <ul id="validation-list"></ul>
+            <button id="prepare-files" class="prepare-button" type="button">Prepare checked files</button>
+            <div id="download-actions" hidden>
+              <button id="download-news" class="download-button" type="button">Download newsSlots.js</button>
+              <button id="download-archive" class="download-button" type="button">Download newsArchive.js</button>
+            </div>
+            <p class="safety-copy">This version only prepares files for review. It cannot change the website.</p>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
