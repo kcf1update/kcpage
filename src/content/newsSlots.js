@@ -7,7 +7,7 @@ export const newsSlots = [
   kcsQuickShift: "It is time for the FIA to face reality, look at what is happening in the Middle East, and come up with a new schedule. I realize there is a ton of money involved and that a lot of F1 revenue comes from countries in the region, but come on, be realistic. Pick other tracks and let those countries hold their races there instead, as they are doing with the Bahrain Grand Prix next month.",
   url: "https://readmotorsport.com/2026/09/18/f1-2027-calendar-headache-australian-gp-date-locked/",
   imagePath: "/img/news/shut/Races/shut-australianrace.jpg",
-  photoCredit: "XPB IMAGES",
+  photoCredit: "Shutterstock",
   dateLabel: "September 19, 2026",
 },
 
@@ -40,7 +40,7 @@ export const newsSlots = [
   sourceLabel: "RacingNews365.nl",
   title: "Red Bull in lastig parket met belangrijke keuze voor 2027 | Red Bull Faces Difficult 2027 Driver Decision",
   summary: "Red Bull is facing a difficult driver decision for 2027 as Liam Lawson, Arvid Lindblad and Formula 2 leader Nikola Tsolov all make strong cases for a place within the Red Bull family. Lawson’s recent performances while filling in at Red Bull have strengthened his position, while Lindblad continues to be viewed as one of the team’s most promising young drivers. Tsolov is also pushing for promotion, creating a difficult situation for Red Bull as it tries to balance immediate performance with its long-term driver development plans.",
-  KCQuickShift: "It’s a difficult decision for Red Bull. Lawson has done a good job, and I think he deserves the seat. The problem is that Racing Bulls is supposed to be a training ground for Red Bull. If they stick to that philosophy, Tsolov seems like the more likely choice. |Het is een moeilijke beslissing voor Red Bull. Lawson heeft het goed gedaan en ik vind dat hij het stoeltje verdient. Het probleem is dat Racing Bulls bedoeld is als opleidingsteam voor Red Bull. Als ze aan die filosofie vasthouden, lijkt Tsolov de meest waarschijnlijke keuze. ",
+  kcsQuickShift: "It’s a difficult decision for Red Bull. Lawson has done a good job, and I think he deserves the seat. The problem is that Racing Bulls is supposed to be a training ground for Red Bull. If they stick to that philosophy, Tsolov seems like the more likely choice. |Het is een moeilijke beslissing voor Red Bull. Lawson heeft het goed gedaan en ik vind dat hij het stoeltje verdient. Het probleem is dat Racing Bulls bedoeld is als opleidingsteam voor Red Bull. Als ze aan die filosofie vasthouden, lijkt Tsolov de meest waarschijnlijke keuze. ",
   url: "https://racingnews365.nl/red-bull-in-lastig-parket-met-belangrijke-keuze-voor-2027",
   imagePath: "/img/news/xpb/RedBull/xpbtsolov.jpg",
   photoCredit: "XPB IMAGES",
