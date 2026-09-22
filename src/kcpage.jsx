@@ -255,6 +255,19 @@ const additionalNews = Array.isArray(newsSlots)
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
 <CountdownBar />
+
+<section
+  role="status"
+  aria-label="Maintenance notice"
+  className="rounded-2xl border border-amber-300/60 bg-amber-400/15 px-4 py-4 text-center shadow-[0_0_20px_rgba(251,191,36,0.25)] backdrop-blur sm:px-6"
+>
+  <div className="text-xs font-extrabold uppercase tracking-[0.18em] text-amber-300">
+    Maintenance Notice
+  </div>
+  <p className="mt-1 text-sm font-semibold leading-relaxed text-white sm:text-base">
+    KC’s Worldwide F1 Update will not be updated on Monday, September 21, while site maintenance is completed. Regular updates will return afterward.
+  </p>
+</section>
 {announcementCard.enabled && (
   <div className="mb-6">
     <AnnouncementCard
@@ -422,7 +435,8 @@ const additionalNews = Array.isArray(newsSlots)
           
 
         {/* DESKTOP LEFT NEWS COLUMN */}
-          <div className="hidden lg:block space-y-5 sm:space-y-6">
+       {/* DESKTOP LEFT NEWS COLUMN */}
+<div className="hidden lg:contents">
           
 
            {/* Fourth featured news article */}
@@ -440,12 +454,13 @@ const additionalNews = Array.isArray(newsSlots)
 
                   return (
                     <GlassyCard
-                      key={item?.slotId || "featured-under-video"}
-                      highlight="none"
-                      title={item?.title || "News"}
-                      titleUrl={href || undefined}
-                      subtitle={item?.sourceLabel || "Source"}
-                    >
+  key={item?.slotId || "featured-under-video"}
+  highlight="none"
+  title={item?.title || "News"}
+  titleUrl={href || undefined}
+  subtitle={item?.sourceLabel || "Source"}
+  className="lg:order-3"
+>
                       <div className="space-y-3">
                         {showImage ? (
                           href ? (
@@ -543,7 +558,7 @@ const additionalNews = Array.isArray(newsSlots)
           </div>
 
           {/* ✅ NEWS COLUMN (desktop right, mobile after YouTube) */}
-          <div className="space-y-5 sm:space-y-6">
+          <div className="space-y-5 sm:space-y-6 lg:contents">
             {featuredNews.map((item, idx) => {
               const href = safeUrl(item?.url);
               const imgPath = safeLocalImagePath(item?.imagePath);
@@ -557,14 +572,14 @@ const additionalNews = Array.isArray(newsSlots)
               const altText = (item?.imageAlt || item?.title || "News image").trim();
 
               return (
-                <GlassyCard
-
-                  key={item?.slotId || `featured-${idx}`}
-                  highlight="none"
-                  title={item?.title || `News ${idx + 1}`}
-                  titleUrl={href || undefined}
-                  subtitle={item?.sourceLabel || "Source"}
-                >
+              <GlassyCard
+  key={item?.slotId || `featured-${idx}`}
+  highlight="none"
+  title={item?.title || `News ${idx + 1}`}
+  titleUrl={href || undefined}
+  subtitle={item?.sourceLabel || "Source"}
+  className={idx === 0 ? "lg:order-1" : "lg:order-2"}
+>
                   <div className="space-y-3">
                     {showImage ? (
                       href ? (

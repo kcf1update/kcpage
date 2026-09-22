@@ -2,6 +2,175 @@
 
 export const newsArchive = [
   {
+  dateLabel: "September 19, 2026",
+  articles: [
+    {
+      slotId: 1,
+      sourceLabel: "Read Motorsport",
+      title: "F1 2027 Calendar Headache as Australian GP Date Is Locked",
+      summary: "Formula 1’s contingency planning for the start of the 2027 season has become more complicated after Australian Grand Prix organisers confirmed that Melbourne cannot move from its April 1–4 date. With uncertainty surrounding the scheduled Bahrain and Saudi Arabian rounds, Australia, China and Japan had reportedly been considered as possible alternatives to open the season earlier. However, Melbourne organisers say the infrastructure and construction schedule around Albert Park makes moving the event impractical. The 2027 calendar features 24 Grands Prix and a record 10 Sprint weekends, leaving F1 with limited flexibility if early-season changes are required.",
+      kcsQuickShift: "It is time for the FIA to face reality, look at what is happening in the Middle East, and come up with a new schedule. I realize there is a ton of money involved and that a lot of F1 revenue comes from countries in the region, but come on, be realistic. Pick other tracks and let those countries hold their races there instead, as they are doing with the Bahrain Grand Prix next month.",
+      url: "https://readmotorsport.com/2026/09/18/f1-2027-calendar-headache-australian-gp-date-locked/"
+    },
+
+    {
+      slotId: 2,
+      sourceLabel: "AUTOhebdo",
+      title: "Yuki Tsunoda explique son échec chez Red Bull : « Ma plus grosse erreur a été d’essayer de reproduire les réglages qu’utilisait Max » | Yuki Tsunoda Explains His Red Bull Failure: ‘My Biggest Mistake Was Trying to Copy Max’s Setup’",
+      summary: "Yuki Tsunoda says one of the biggest mistakes of his difficult spell with Red Bull was attempting to copy Max Verstappen’s car setup instead of finding a direction that suited his own driving style. After losing his full-time seat, Tsunoda has returned to Racing Bulls as a substitute and has shown improved form, including a points finish at Monza. The Japanese driver says his experience at Red Bull taught him important lessons about trusting his own preferences rather than trying to reproduce what works for Verstappen.",
+      kcsQuickShift: "The Verstappen trap. Other than Pérez in his first season, Isack Hadjar is the only driver who has really managed to perform alongside Max at Red Bull. | Le piège Verstappen. À part Pérez lors de sa première saison, Isack Hadjar est le seul pilote à avoir vraiment réussi à performer aux côtés de Max chez Red Bull.",
+      url: "https://www.autohebdo.fr/actualites/f1/yuki-tsunoda-explique-son-echec-chez-red-bull-ma-plus-grosse-erreur-a-ete-dessayer-de-reproduire-les-reglages-quutilisait-max.html#google_vignette"
+    },
+
+    {
+      slotId: 3,
+      sourceLabel: "Formula1.com",
+      title: "Why Williams’ Crucial FW48 Upgrade Arrives at Baku",
+      summary: "Williams will introduce its long-awaited major FW48 upgrade package at the Azerbaijan Grand Prix as the team tries to reverse a difficult run of results. The car began the season overweight and Williams chose early on to concentrate much of its development effort on one substantial second-half package. Alex Albon says the development race has moved quickly, meaning improvements that once looked capable of restoring Williams to the midfield battle may now only close part of the gap. Baku will therefore provide an important indication of whether the team’s development work is producing the gains expected.",
+      kcsQuickShift: "We can only hope this upgrade finally makes a difference. But once again, I keep coming back to the same conclusion: James Vowles has to go.",
+      url: "https://www.formula1.com/en/latest/article/why-the-fw48-upgrade-package-in-baku-is-so-crucial-for-williams.2vxRlXS2yDBqT7O5VMCn3s"
+    },
+
+    {
+      slotId: 4,
+      sourceLabel: "RacingNews365.nl",
+      title: "Red Bull in lastig parket met belangrijke keuze voor 2027 | Red Bull Faces Difficult 2027 Driver Decision",
+      summary: "Red Bull is facing a difficult driver decision for 2027 as Liam Lawson, Arvid Lindblad and Formula 2 leader Nikola Tsolov all make strong cases for a place within the Red Bull family. Lawson’s recent performances while filling in at Red Bull have strengthened his position, while Lindblad continues to be viewed as one of the team’s most promising young drivers. Tsolov is also pushing for promotion, creating a difficult situation for Red Bull as it tries to balance immediate performance with its long-term driver development plans.",
+      kcsQuickShift: "It’s a difficult decision for Red Bull. Lawson has done a good job, and I think he deserves the seat. The problem is that Racing Bulls is supposed to be a training ground for Red Bull. If they stick to that philosophy, Tsolov seems like the more likely choice. | Het is een moeilijke beslissing voor Red Bull. Lawson heeft het goed gedaan en ik vind dat hij het stoeltje verdient. Het probleem is dat Racing Bulls bedoeld is als opleidingsteam voor Red Bull. Als ze aan die filosofie vasthouden, lijkt Tsolov de meest waarschijnlijke keuze.",
+      url: "https://racingnews365.nl/red-bull-in-lastig-parket-met-belangrijke-keuze-voor-2027"
+    },
+
+    {
+      slotId: 5,
+      sourceLabel: "RacingNews365",
+      title: "Red Bull Responds to FIA President’s Plan to Aid Honda",
+      summary: "Red Bull team principal Laurent Mekies says the team is prepared to discuss possible changes to Formula 1’s Additional Development and Upgrade Opportunities regulations after FIA president Mohammed Ben Sulayem suggested further assistance could be considered for Honda. The ADUO system allows power-unit manufacturers that fall behind the performance benchmark additional development opportunities. Honda is already entitled to upgrades under the current rules, but Mekies says teams have previously supported changes when they believed adjustments were beneficial for the championship and expects further discussions about how the system should operate.",
+      kcsQuickShift: "My question is simple: why is Mohammed Ben Sulayem getting involved in trying to keep Fernando Alonso in F1? That should be Alonso’s decision, not something the FIA president needs to be meddling in.",
+      url: "https://racingnews365.com/red-bull-provide-response-to-fia-presidents-plan-to-aid-honda"
+    },
+
+    {
+      slotId: 6,
+      sourceLabel: "GrandPrix247",
+      title: "Laurent Mekies Praises ‘Calm’ Liam Lawson as Growth Continues",
+      summary: "Red Bull team principal Laurent Mekies has praised Liam Lawson for the progress he has shown while replacing the injured Isack Hadjar. Lawson has scored points in two of his three races during his latest Red Bull opportunity, including seventh at Zandvoort and sixth in Madrid. Mekies says Lawson appears much calmer and more focused than during his brief and difficult stint with the team at the beginning of 2025. He also praised the New Zealander for keeping his approach simple while adapting quickly to a different car and working environment.",
+      kcsQuickShift: "I’m glad Mekies is recognizing Lawson’s performance this year, but I have to wonder if they’re building him up before tearing him down by replacing him. I really hope not.",
+      url: "https://www.grandprix247.com/formula-1-news/laurent-mekies-hails-calm-liam-lawson-who-continued-to-grow"
+    },
+
+    {
+      slotId: 7,
+      sourceLabel: "PlanetF1",
+      title: "The Uncomfortable Truth About Carlos Sainz",
+      summary: "A PlanetF1 opinion feature examines Carlos Sainz’s difficult recent run and argues that frustration with Williams’ lack of competitiveness is beginning to show in his performances. The article points to incidents in Hungary and Madrid after Sainz had rebuilt a reputation for consistency during his years with Ferrari. Williams has struggled badly during 2026, and the piece questions whether returning to the midfield has brought back some of the inconsistency Sainz had worked hard to eliminate. The argument comes as Williams prepares a major upgrade in an effort to improve its position.",
+      kcsQuickShift: "The decline of Sainz this year has been depressing to watch. James Vowles has to take responsibility. He promised Sainz a competitive car, and Williams has not come close to delivering one. Sainz showed his loyalty by staying with the team, and he deserved better.",
+      url: "https://www.planetf1.com/features/carlos-sainz-martin-brundle-williams-decline"
+    },
+
+    {
+      slotId: 8,
+      sourceLabel: "GrandPrix247",
+      title: "How the Current Formula 1 Cars Differ From the Previous Generation",
+      summary: "The new-generation Formula 1 cars introduced for 2026 feel noticeably different from the ground-effect machines used through 2025. Mercedes reserve driver Frederik Vesti says the current chassis feels more intuitive and gives him greater confidence, while the previous cars were stiffer and more difficult to adapt to. The trade-off comes from the new power units, which he describes as significantly more complicated for drivers to manage. The comparison helps explain why some drivers have adapted quickly to the new cars even as teams continue learning how to extract the best performance from the new regulations.",
+      kcsQuickShift: "Saying the current cars are easier to drive is laughable. I really don’t have anything else to say about that one.",
+      url: "https://www.grandprix247.com/formula-1-news/how-the-current-formula-1-cars-differ-from-the-previous-generation"
+    },
+
+    {
+      slotId: 9,
+      sourceLabel: "Motorsport.com",
+      title: "Mercedes Targets Return to Pole Fight With Malaysia Upgrade",
+      summary: "Mercedes has confirmed that its next major W17 upgrade package will arrive for the Malaysian Grand Prix, with the team hoping it can restore its regular challenge for pole position. Mercedes took pole at each of the opening 10 rounds of 2026 but has missed out in the last four as McLaren and Ferrari have closed the gap. Trackside engineering director Andrew Shovlin says Mercedes does not expect to suddenly pull clear of its rivals, but hopes the new package will provide enough improvement to put the team firmly back into the qualifying fight. Only minor circuit-specific changes are planned for Baku before the larger package arrives in Malaysia.",
+      kcsQuickShift: "McLaren seems to have nailed the upgrade game this year, so it’ll be interesting to see if Mercedes can come up with something in Malaysia that really moves them forward.",
+      url: "https://www.motorsport.com/f1/news/mercedes-aims-to-end-pole-draught-with-upcoming-malaysia-f1-upgrades/10856860/"
+    },
+
+    {
+      slotId: 10,
+      sourceLabel: "GPFans",
+      title: "Why a Monaco Sprint Weekend Could Actually Work",
+      summary: "GPFans argues that Monaco could be particularly well suited to Formula 1’s Sprint format when it joins the expanded 2027 Sprint schedule. Overtaking remains extremely difficult around Monte Carlo, making qualifying one of the most dramatic parts of the traditional weekend. A Sprint event would give fans two separate qualifying sessions — Sprint Qualifying and Grand Prix Qualifying — while replacing some practice running with competitive sessions. Monaco will be part of a record 10 Sprint weekends on the 24-race 2027 calendar.",
+      kcsQuickShift: "Monaco with two qualifying sessions and two races — now that’s a weekend! What more could we ask for?",
+      url: "https://www.gpfans.com/en/f1-news/1090458/f1-monaco-grand-prix-sprint-race-2027-qualifying-sessions-practice/"
+    }
+  ]
+},
+  {
+  dateLabel: "September 18, 2026",
+  articles: [
+    {
+      sourceLabel: "ESPN",
+      title: "Hamilton denies demanding Ferrari changes: ‘I never asked for anyone to be replaced’",
+      summary: "Lewis Hamilton has rejected suggestions that he has been pushing Ferrari to replace personnel as the team continues to struggle for the results it expected in 2026. Hamilton said he has never asked for anyone to be removed, explaining that his discussions with Ferrari have instead focused on improving the team and finding areas where changes can make it stronger. With his hopes of an eighth world championship effectively over for another season, Hamilton remains focused on helping Ferrari understand where it needs to improve rather than blaming individual members of the organization.",
+      kcsQuickShift: "Where there is smoke there is fire. His tenure at Ferrari so far has been a constant back and forth of good news and bad news. There has not been much positive in the media regarding his time there other than his win. Is it as bad as it sounds sometimes? Let me know in the comments what you think.",
+      url: "https://www.espn.co.uk/f1/story/_/id/49867154/lewis-hamilton-shuts-asking-ferrari-make-changes-never-asked-anyone-replaced-formula-1"
+    },
+    {
+      sourceLabel: "AZERTAC",
+      title: "“Eurosport”: Formula 1-də Bakı yeniliyi – Azərbaycan Qran-Prisi niyə ilk dəfə şənbə günü keçiriləcək? | Why the Azerbaijan Grand Prix Will Be Held on Saturday for the First Time",
+      summary: "The 2026 Azerbaijan Grand Prix will break with Formula 1 tradition in Baku by holding the race on Saturday, September 26. The weekend was originally scheduled for September 25–27, but September 27 is Azerbaijan’s national Remembrance Day, honouring those who died during the 44-day war that began on that date in 2020. Following a request from local organizers and government authorities, the FIA moved the entire Formula 1 weekend forward by one day. Practice will begin Thursday, qualifying takes place Friday and the 51-lap Grand Prix will be held Saturday on the Baku City Circuit.",
+      kcsQuickShift: "Nico Rosberg speaks with some authority. It’s great to see the FIA respecting the customs and traditions of other countries, especially in this case with Sunday falling on Azerbaijan’s Remembrance Day. I’m pretty sure most F1 fans will have no problem watching the race on Saturday. | FIA-nın digər ölkələrin adət-ənənələrinə hörmət göstərməsi çox yaxşıdır, xüsusilə də bu halda bazar gününün Azərbaycanda Anım Gününə təsadüf etməsi nəzərə alınanda. Əminəm ki, F1 azarkeşlərinin əksəriyyəti yarışı şənbə günü izləməkdə heç bir problem görməyəcək.",
+      url: "https://azertag.az/xeber/eurosport_formula_1_de_baki_yeniliyi___azerbaycan_qran_prisi_niye_ilk_defe_senbe_gunu_kechirilecek-4416267"
+    },
+    {
+      sourceLabel: "RacingNews365",
+      title: "Rosberg warns Russell could begin doubting himself amid Antonelli surge",
+      summary: "Nico Rosberg believes George Russell faces a difficult mental challenge as Kimi Antonelli continues to dominate Mercedes’ 2026 season. Antonelli has won eight of the opening 14 races and holds an 81-point advantage over Russell, whose early championship hopes have faded significantly. Rosberg praised Russell’s determination and the work he puts into every aspect of his performance, but warned that repeatedly being beaten by a team-mate can eventually create doubts about a driver’s own ability. For Russell, who has traditionally performed strongly against his team-mates, finding an answer to Antonelli’s current advantage has become one of the biggest challenges of his career.",
+      kcsQuickShift: "Nico Rosberg speaks with some authority on this one. I think Russell is already starting to doubt his talent. How could he not? Everybody in the know agrees he is championship material, and for a long time he looked like Mercedes’ next real chance at another Drivers’ Championship. But wow, how times have changed since Antonelli arrived.",
+      url: "https://racingnews365.com/george-russell-self-doubt-danger-highlighted-am-i-not-good-enough"
+    },
+    {
+      sourceLabel: "Motorsport-Total",
+      title: "Audi: Sollten in der WM eigentlich weiter oben stehen | Audi Believe They Should Be Higher in the Championship",
+      summary: "Audi believes its current eighth place in the Constructors’ Championship does not accurately reflect the performance of its Formula 1 car. Racing director Allan McNish says early-season reliability problems cost the team valuable opportunities, but Audi has since become a regular contender for points. Nico Hülkenberg’s 10th-place finish in Madrid gave the team points for the fifth time in six races and moved Audi to within four points of Haas in the battle for seventh. McNish says the improvement has also raised expectations inside the team, with narrowly missing Q3 now viewed as a disappointment rather than an achievement.",
+      kcsQuickShift: "Audi has been fairly consistent. It's good for them to be in the sport. Now we need a race in Germany. | Audi ist ziemlich konstant unterwegs, und es ist gut, sie wieder in der Formel 1 zu haben. Jetzt brauchen wir nur noch ein Rennen zurück in Deutschland.",
+      url: "https://www.motorsport-total.com/formel-1/news/audi-sollten-in-der-wm-eigentlich-weiter-oben-stehen-26091706"
+    },
+    {
+      sourceLabel: "Nextgen-Auto",
+      title: "Imola emerges as increasingly likely replacement for 2026 F1 season finale",
+      summary: "Imola is increasingly being discussed as Formula 1’s likely contingency plan for the final race of the 2026 season as uncertainty continues around the scheduled Middle Eastern rounds. Reports suggest teams have already made preliminary hotel arrangements around Imola, while circuit and local officials have been holding discussions with Formula 1. Qatar and Abu Dhabi remain officially on the calendar, but continuing regional security concerns have affected several other international motorsport events. If a replacement becomes necessary, reports indicate Imola could host a December 6 race with an unusually early start because of limited winter daylight.",
+      kcsQuickShift: "They have been talking about this for a while. I think it is what you call an open secret.",
+      url: "https://motorsport.nextgen-auto.com/en/formula-1/imola-finale-now-an-open-secret,211560.html"
+    },
+    {
+      sourceLabel: "Motorsport.com",
+      title: "Antonelli’s relentless speed is giving Mercedes a ‘luxury problem’",
+      summary: "Kimi Antonelli’s aggressive approach continues to produce victories for Mercedes, but it is also keeping Toto Wolff and the team on edge. Antonelli won the Spanish Grand Prix in Madrid despite repeatedly flirting with track limits and brushing the wall late in the race when he was already comfortably positioned for victory. Wolff joked that the young Italian is giving Mercedes ‘grey hairs’, while acknowledging that Antonelli’s constant desire to push may also be part of what makes him so fast. Despite leading the championship by 81 points, Antonelli says he is not changing his approach and remains focused simply on driving as fast as possible each weekend.",
+      kcsQuickShift: "I think that if they slow him down he wrecks and/or will make mistakes. He is like all the great champions that have to drive on the edge all the time to be fast. Toto and maybe more so Bono will keep him in check if he gets too far out of control.",
+      url: "https://www.motorsport.com/f1/news/how-kimi-antonellis-luxury-problem-is-causing-toto-wolff-and-mercedes-grey-hairs/10856780/"
+    },
+    {
+      sourceLabel: "Formula1.com",
+      title: "Red Bull refuses to rush Hadjar as decision on Baku return approaches",
+      summary: "Red Bull says Isack Hadjar’s recovery from his wrist injury is progressing normally, but the team will not bring him back until he is fully ready to race. Hadjar has missed the Dutch, Italian and Spanish Grands Prix since suffering the injury during the summer break, with Liam Lawson stepping into the Red Bull seat and Yuki Tsunoda replacing Lawson at Racing Bulls. Team principal Laurent Mekies insists there is nothing concerning about the recovery process and says Red Bull will assess Hadjar again before deciding whether he can return for the Azerbaijan Grand Prix.",
+      kcsQuickShift: "I think I heard Rosberg say on a podcast that Baku may not be a good race for his first one back. The walls are pretty close and the turns are pretty tight. He could cause more damage if he hits a wall. I hope they continue to honour the duty of care they have for his well-being.",
+      url: "https://www.formula1.com/en/latest/article/nothing-wrong-with-isacks-recovery-mekies-on-when-hadjar-will-return.5VYeVNlvMTpwjhT0zPCwX8"
+    },
+    {
+      sourceLabel: "Yahoo Japan / TopNews",
+      title: "【アストンマーティンF1】技術責任者、ホンダとの提携に後悔なし「正しいパートナー」と擁護　2027年は全パーツ刷新へ | Aston Martin Defends Honda Partnership as ‘Right Choice’ With All-New 2027 Car Planned",
+      summary: "Aston Martin chief technical officer Enrico Cardile says the team has no regrets about its works partnership with Honda despite continued performance concerns with the current power unit. Cardile argued that a team aiming to win the World Championship needs an exclusive engine partnership and said Honda remains the right long-term choice. Aston Martin’s major aerodynamic development for the 2026 car is now effectively complete, with further parts expected only if they help validate technology for the 2027 project. Weight-reduction work should be completed around the Azerbaijan Grand Prix, after which the current car will largely remain in its final specification. Cardile says the 2027 machine will be completely new, with every major part redesigned.",
+      kcsQuickShift: "McLaren made the switch and went with Mercedes. Wolff is reportedly good friends with Stroll, so I do wonder why Aston Martin didn’t do the same. I’m guessing money probably played a part. | マクラーレンは変更を決断してメルセデスを選びました。ウルフとストロールは親しい関係だとも言われていますし、なぜアストンマーティンも同じ道を選ばなかったのか少し不思議です。おそらく資金面も関係しているのでしょう。",
+      url: "https://news.yahoo.co.jp/articles/164d29a5094e5e8172bfc5f33f6d0fe4321bb1a3"
+    },
+    {
+      sourceLabel: "The Race",
+      title: "Why Russell and Piastri are struggling with Formula 1’s 2026 cars",
+      summary: "The characteristics of Formula 1’s new-generation cars are having a significant influence on how different driving styles perform, but the explanation goes deeper than simply identifying which drivers are aggressive or smooth. The Race examines why drivers including George Russell and Oscar Piastri have found aspects of the 2026 machinery difficult while others have adapted more naturally. Lower downforce, increased sensitivity to small slides, tyre preparation and the way drivers load the tyres through corner entry all play a part. The analysis suggests the regulation change has not suddenly made certain drivers better or worse, but it has changed which techniques are rewarded most strongly by the cars.",
+      kcsQuickShift: "It makes sense what Russell is saying. Some cars will naturally suit certain drivers better than others. What separates the best from the good is how quickly they can adjust their driving style to get the most out of the car.",
+      url: "https://www.the-race.com/formula-1/true-impact-of-driving-styles-on-f1-2026-top-drivers/"
+    },
+    {
+      sourceLabel: "Express",
+      title: "Norris reveals back problem ahead of Azerbaijan Grand Prix",
+      summary: "Lando Norris has revealed he is dealing with a sore back after withdrawing from the BMW PGA Championship Pro-Am at Wentworth. Norris attended the event but chose not to play, telling golfers Brooks Koepka and Eugenio Chacarra that his back was bothering him. The issue emerged only days after Norris finished third in the Spanish Grand Prix, where he had started from pole and appeared on course for victory before losing out through the timing of a Virtual Safety Car. Formula 1’s next race is the Azerbaijan Grand Prix on Saturday, September 26, giving Norris more than a week to recover before returning to the cockpit.",
+      kcsQuickShift: "Let’s hope it’s nothing serious. I imagine most drivers deal with a sore back or some kind of back injury at some point, especially because of the low, reclined position they sit in inside the car.",
+      url: "https://www.express.co.uk/sport/f1-autosport/2249479/lando-norris-back-injury-baku"
+    }
+  ]
+},
+  {
   dateLabel: "September 17, 2026",
   articles: [
     {
