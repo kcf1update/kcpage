@@ -2,6 +2,111 @@
 
 export const newsArchive = [
   {
+  dateLabel: "September 20, 2026",
+  articles: [
+    {
+      slotId: "news-01",
+      sourceLabel: "Read Motorsport",
+      title: "Nico Rosberg Brands Williams’ 2026 F1 Campaign a ‘Shocker’",
+      summary: "Nico Rosberg has delivered a harsh assessment of Williams’ 2026 season, calling the team’s performance a ‘shocker.’ The 2016 World Champion pointed to the overweight FW48 as one of the major problems and believes Williams faces an uphill battle after losing ground under the new regulations. Rosberg noted that the team already has the highly competitive Mercedes power unit, leaving chassis weight and aerodynamics as areas where significant improvement is still required.",
+      kcsQuickShift: "It is more than just a tough situation for James Vowles. He has failed the team and the drivers. By all accounts, he is a smart and genuine person, but he has not done the job. It is time to move on, change his position, or make a major change somewhere. Something has to change.",
+      url: "https://readmotorsport.com/2026/09/20/nico-rosberg-brands-williams-2026-f1-season-shocker/",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-02",
+      sourceLabel: "MARCA",
+      title: "Nueva guerra en Ferrari: bautizan a su jefe como ‘Napoleón’ y Hamilton, señalado | New War at Ferrari: Boss Nicknamed ‘Napoleon’ and Hamilton Under Scrutiny",
+      summary: "Los informes sobre tensiones internas en Ferrari siguen aumentando, con el jefe del equipo Frédéric Vasseur nuevamente bajo escrutinio por su estilo de liderazgo. Informes italianos han descrito a Vasseur como un ‘jefe absoluto’, lo que ha llevado al apodo de ‘Napoleón’, mientras que también se cuestiona su relación con el CEO de Ferrari, Benedetto Vigna. Lewis Hamilton también ha sido involucrado en la polémica, en medio de sugerencias de que su posición dentro del equipo se ha vuelto cada vez más independiente. Hamilton negó recientemente haber pedido a Ferrari que reemplazara a miembros del equipo e insistió en que apoya a las personas que trabajan a su alrededor. | Reports of internal tension at Ferrari continue to grow, with team principal Frédéric Vasseur coming under renewed scrutiny over his leadership style. Italian reports have described Vasseur as acting like an ‘absolute boss,’ leading to the nickname ‘Napoleon,’ while his relationship with Ferrari CEO Benedetto Vigna is also being questioned. Lewis Hamilton has been drawn into the controversy as well, amid suggestions that his position inside the team has become increasingly separate. Hamilton recently denied reports that he had asked Ferrari to replace members of the team, insisting that he supports the people working around him.",
+      kcsQuickShift: "Holy smokes, this is an explosive story. Fred Vasseur being called “Napoleon”? That says a lot about just how tense things may be inside Ferrari right now. | Vaya, esta historia es explosiva. ¿A Fred Vasseur lo están llamando “Napoleón”? Eso dice muchísimo sobre el nivel de tensión que parece haber ahora mismo dentro de Ferrari.",
+      url: "https://www.marca.com/motor/formula1/2026/09/20/nueva-guerra-ferrari-bautizan-jefe-napoleon-hamilton-senalado.html",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-03",
+      sourceLabel: "RacingNews365",
+      title: "F1 Teams Facing Major Headache Over Significant Baku Decision",
+      summary: "Formula 1 teams face a complicated energy-management challenge when they arrive in Baku, where the circuit’s main straight stretches for more than 2.2 kilometres. Teams must decide how to deploy and recover electrical energy while limiting the effects of super-clipping before Turn 1. Different power-unit manufacturers could adopt different strategies, while engine mileage may also become a factor, with fresher power units potentially offering an advantage. Friday practice is expected to play an important role as teams determine the best compromise for outright speed, attacking and defending.",
+      kcsQuickShift: "Let’s just enjoy the race and not get too caught up in all this other stuff.",
+      url: "https://racingnews365.com/f1-teams-facing-major-headache-ahead-significant-baku-decision",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-04",
+      sourceLabel: "Motorsport UOL",
+      title: "F1: Ex-Ferrari explica papel fundamental de Bonnington no sucesso de Antonelli | F1: Former Ferrari Engineer Explains Bonnington’s Fundamental Role in Antonelli’s Success",
+      summary: "O ex-engenheiro da Ferrari Rob Smedley acredita que Peter Bonnington teve um papel fundamental no desempenho de Kimi Antonelli na luta pelo campeonato com a Mercedes em 2026. Bonnington, mais conhecido por sua longa parceria com Lewis Hamilton, deu a Antonelli uma voz experiente no rádio enquanto o jovem italiano se desenvolvia como um dos principais pilotos da Fórmula 1. Smedley acredita que essa relação foi uma parte importante da rápida evolução de Antonelli e de sua capacidade de lidar com a pressão de lutar na frente. | Former Ferrari engineer Rob Smedley believes Peter Bonnington has played a fundamental role in Kimi Antonelli’s championship-winning form with Mercedes in 2026. Bonnington, best known for his long partnership with Lewis Hamilton, has provided Antonelli with an experienced voice on the radio as the young Italian has developed into a leading Formula 1 driver. Smedley believes that relationship has been an important part of Antonelli’s rapid progression and his ability to handle the pressure of fighting at the front.",
+      kcsQuickShift: "I agree with Smedley — Bonnington is brilliant. All you have to do is listen to him on the radio with Antonelli to hear the difference he makes. It does make you wonder how Hamilton might be doing if Bonnington were still working with him. | Concordo com Smedley — Bonnington é brilhante. Basta ouvi-lo no rádio com Antonelli para perceber a diferença que ele faz. Isso também faz a gente se perguntar como Hamilton estaria se Bonnington ainda estivesse trabalhando com ele.",
+      url: "https://motorsport.uol.com.br/f1/news/f1-ex-ferrari-explica-papel-fundamental-de-bonnington-no-sucesso-de-antonelli-/10857227/",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-05",
+      sourceLabel: "RacingNews365",
+      title: "Max Verstappen Cracks Joke After Red Bull Make Headline Signing",
+      summary: "Max Verstappen joked that he may eventually have to ‘move aside’ after Red Bull signed Robin Räikkönen, son of 2007 Formula 1 World Champion Kimi Räikkönen, to its junior programme from 2027. Robin is currently competing in karting and will receive Red Bull support as he continues his development. Verstappen revealed that he had already met the young driver and spoken with Kimi Räikkönen before the announcement, welcoming another famous racing name into Red Bull’s development system.",
+      kcsQuickShift: "Funny!",
+      url: "https://racingnews365.com/max-verstappen-cracks-joke-after-red-bull-make-headline-signing",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-06",
+      sourceLabel: "PlanetF1",
+      title: "Toto Wolff Responds to FIA Plan to Help Fernando Alonso and Honda",
+      summary: "Mercedes team principal Toto Wolff says it would be fair for Honda to receive additional development opportunities under Formula 1’s ADUO system as the manufacturer continues to struggle with its 2026 power unit. FIA president Mohammed Ben Sulayem has spoken openly about wanting to help Honda and Aston Martin, particularly as Fernando Alonso considers his Formula 1 future. Honda’s internal combustion engine has ranked among the weakest under the FIA’s performance measurements, and Wolff believes the existing regulations should be used as intended to allow struggling manufacturers an opportunity to close the gap.",
+      kcsQuickShift: "It is great that Wolff is offering his support, and I suppose that is good for the sport. The problem I have is with Ben Sulayem saying there is “no way” they can allow Alonso to leave because of the circumstances. Why is the FIA president getting involved in a decision that belongs to Alonso? And why should the FIA be doing more to help a team keep a particular driver? I just do not get that.",
+      url: "https://www.planetf1.com/news/toto-wolff-fia-help-fernando-alonso-honda-struggles",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-07",
+      sourceLabel: "Nextgen-Auto",
+      title: "Hülkenberg Open to Racing Beyond 40",
+      summary: "Nico Hülkenberg says he has no predetermined retirement age and remains open to continuing in Formula 1 beyond his 40th birthday. The Audi driver, who turns 40 in 2027, says performance, motivation and enjoyment will ultimately determine how long he continues racing. Hülkenberg pointed to Fernando Alonso as an impressive example of a driver remaining competitive later in his career, saying that in racing ‘the stopwatch never lies.’ As long as his performance remains strong and he still enjoys the demands of Formula 1, Hülkenberg sees no reason to set an artificial deadline.",
+      kcsQuickShift: "It is great to see Hülkenberg on the grid. He should stay as long as he is still performing and not keeping a younger, potentially more capable driver from getting a seat.",
+      url: "https://motorsport.nextgen-auto.com/en/formula-1/hulkenberg-open-to-racing-beyond-40,211562.html",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-08",
+      sourceLabel: "RacingNews365.nl",
+      title: "Verstappen-cijfers leggen opvallend verschil met RB22 bloot | Verstappen Numbers Reveal Striking Difference With RB22",
+      summary: "Een analyse van het seizoen 2026 van Max Verstappen en Red Bull laat een opvallend verschil zien tussen de kwalificatiesnelheid van de RB22 en de resultaten in de races. Red Bull heeft zich sterk verbeterd na een moeilijke start van het seizoen, maar de auto verliest nog steeds aanzienlijke snelheid ten opzichte van de leidende teams. Verstappen heeft desondanks sterkere raceresultaten weten te behalen dan de kwalificatieprestaties van de auto doen vermoeden, met meerdere podiumplaatsen ondanks dat hij dit seizoen nog geen overwinning heeft behaald. De cijfers benadrukken zowel de vooruitgang van Red Bull als het gat dat het team nog moet dichten. | An analysis of Max Verstappen and Red Bull’s 2026 season shows a noticeable difference between the RB22’s qualifying pace and its race results. Red Bull has improved substantially since a difficult start to the season, but the car continues to give away significant pace to the leading teams. Verstappen has nevertheless been able to produce stronger race results than the car’s qualifying performance might suggest, collecting multiple podium finishes despite remaining without a victory so far this season. The figures underline both Red Bull’s progress and the performance gap it still needs to close.",
+      kcsQuickShift: "The numbers really show how much Verstappen is getting out of this car. Red Bull has improved, but the RB22 still does not look like the fastest package. Max continues to find results that seem better than the car should be capable of. | De cijfers laten echt zien hoeveel Verstappen uit deze auto weet te halen. Red Bull is verbeterd, maar de RB22 lijkt nog steeds niet het snelste pakket. Max blijft resultaten behalen die beter lijken dan wat de auto eigenlijk aankan.",
+      url: "https://racingnews365.nl/verstappen-cijfers-leggen-opvallend-verschil-met-rb22-bloot",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-09",
+      sourceLabel: "Motorsport.com",
+      title: "David Coulthard Urges FIA to Speed Up Safety Car Decisions",
+      summary: "Former Formula 1 driver David Coulthard has called on the FIA to make faster decisions when races need to be neutralised. His comments follow the Spanish Grand Prix, where the timing of race-control decisions again came under scrutiny. Coulthard believes there is room for improvement in how quickly officials react when an incident requires a Safety Car, Virtual Safety Car or other intervention. With driver safety depending on clear and timely decisions, he believes unnecessary delays should be reduced wherever possible.",
+      kcsQuickShift: "Yes, I agree. They need to make these decisions quicker. Even NASCAR manages to do that, so there is no reason Formula 1 cannot be faster and more decisive when safety is involved.",
+      url: "https://www.motorsport.com/f1/news/david-coulthard-urges-fia-to-speed-up-safety-car-decisions/10857133/",
+      dateLabel: "September 20, 2026"
+    },
+
+    {
+      slotId: "news-10",
+      sourceLabel: "The Race",
+      title: "Who Actually Owns Each F1 Team?",
+      summary: "Formula 1’s rapidly increasing team valuations have brought renewed attention to who actually owns the championship’s 11 teams. The ownership landscape now ranges from manufacturers and private investment groups to billionaires, sovereign wealth funds and traditional individual owners. Ferrari remains publicly traded with significant influence from Exor and Piero Ferrari, Red Bull controls both Red Bull Racing and Racing Bulls, while Mercedes is divided between Mercedes-Benz, INEOS and Toto Wolff. Williams remains under Dorilton Capital, while Gene Haas continues to stand out as Formula 1’s only sole team owner. The increasingly complex structures show how valuable an ownership stake in a modern Formula 1 team has become.",
+      kcsQuickShift: "Interesting article. The one common theme running through all of it is pretty simple: money equals control.",
+      url: "https://www.the-race.com/business/who-actually-owns-each-f1-team/",
+      dateLabel: "September 20, 2026"
+    }
+  ]
+},
+  
+  {
   dateLabel: "September 19, 2026",
   articles: [
     {
