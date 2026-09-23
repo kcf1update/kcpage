@@ -2,6 +2,110 @@
 
 export const newsArchive = [
   {
+  dateLabel: "September 22, 2026",
+  articles: [
+    {
+      slotId: "news-01",
+      sourceLabel: "ESPN",
+      title: "Isack Hadjar Returns to Red Bull for Azerbaijan GP After Injury Layoff",
+      summary: "Isack Hadjar will return to Red Bull for the Azerbaijan Grand Prix after missing three races with a wrist injury. Liam Lawson will return to Racing Bulls after scoring 14 points during his three-race stint alongside Max Verstappen.",
+      kcsQuickShift: "I am glad to see he is back for the race. I'm sure RacingBulls are happy to have Lawson back also.",
+      url: "https://www.espn.co.uk/f1/story/_/id/50003845/isack-hadjar-returns-red-bull-azerbaijan-gp-injury-layoff",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-02",
+      sourceLabel: "Oxu.Az",
+      title: "\"Formula-1\" üzrə Azərbaycan Qran-prisi: Rəsmi yarış cədvəli açıqlandı | Azerbaijan Grand Prix: Official Race Schedule Announced",
+      summary: "Bakıda keçiriləcək Azərbaycan Qran-prisinin rəsmi yarış cədvəli açıqlanıb. FP1 və FP2 sentyabrın 24-də, FP3 və sıralanma turu sentyabrın 25-də, əsas yarış isə sentyabrın 26-da keçiriləcək. | The official schedule for the Azerbaijan Grand Prix in Baku has been announced. FP1 and FP2 will take place on September 24, FP3 and qualifying on September 25, with the Grand Prix on Saturday, September 26.",
+      kcsQuickShift: "It will be different having the race on Saturday, but the good thing is that it leaves Sunday free for chores. | Yarışın şənbə günü keçirilməsi fərqli olacaq, amma yaxşı tərəfi odur ki, bazar günü ev işləri üçün boş qalır.",
+      url: "https://oxu.az/idman/formula-1-uzre-azerbaycan-qran-prisi-resmi-yaris-cedveli-aciqlandi",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-03",
+      sourceLabel: "PlanetF1",
+      title: "Stefano Domenicali F1 Earnings Revealed in Annual Statement",
+      summary: "Formula One Management's annual report shows its highest-paid director earned nearly £8 million in 2025, a figure believed to refer to F1 president and CEO Stefano Domenicali. The total includes almost £2 million in long-term incentives and should not be considered his base salary.",
+      kcsQuickShift: "Honestly I thought it would be more",
+      url: "https://www.planetf1.com/news/stefano-domenicali-f1-salary",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-04",
+      sourceLabel: "FormulaPassion",
+      title: "Rosberg avverte Antonelli: “Potrebbe provare più ansia nella lotta al titolo” | Rosberg Warns Antonelli: “He Could Feel More Anxiety in the Title Fight”",
+      summary: "Nico Rosberg ritiene che la pressione su Kimi Antonelli potrebbe aumentare se il suo vantaggio in campionato iniziasse a ridursi. Il campione del mondo 2016 ha ricordato la propria esperienza nella lotta per il titolo, spiegando come perdere terreno nelle ultime gare possa aumentare rapidamente la tensione. | Nico Rosberg believes the pressure on Kimi Antonelli could increase if his championship advantage begins to shrink. The 2016 World Champion drew on his own title fight, explaining how losing ground late in the season can quickly increase the tension.",
+      kcsQuickShift: "Nico Rosberg obviously speaks from experience. But I wonder if Toto Wolff also learned from 2016 and has a plan to help Antonelli deal with any issues that may arise. | Nico Rosberg parla ovviamente per esperienza. Ma mi chiedo se anche Toto Wolff abbia imparato qualcosa dal 2016 e se abbia un piano per aiutare Antonelli ad affrontare eventuali problemi che potrebbero sorgere.",
+      url: "https://formulapassion-pro.ey.r.appspot.com/f1/f1-news/rosberg-avverte-antonelli-potrebbe-provare-piu-ansia-nella-lotta-al-titolo",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-05",
+      sourceLabel: "GrandPrix247",
+      title: "Fred Vasseur Needs More Time at Ferrari and Lewis Hamilton Should Talk More on the Inside",
+      summary: "Former F1 driver Riccardo Patrese believes Ferrari's problems cannot simply be blamed on Fred Vasseur and says changing team principal would not provide an instant solution. He also believes Lewis Hamilton's experience is valuable to Ferrari but says internal concerns are better handled inside the team.",
+      kcsQuickShift: "Charles Leclerc has been Ferrari’s number-one driver and their future for at least five years. Even when Carlos Sainz was there, Leclerc was clearly the long-term focus, and that was already true during Sebastian Vettel’s time with the team. Hamilton will not accept being treated as the number-two driver, and I think that will remain a problem for as long as he is there.",
+      url: "https://www.grandprix247.com/formula-1-news/fred-vasseur-needs-more-time-at-ferrari-and-lewis-hamilton-should-talk-more-on-the-inside",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-06",
+      sourceLabel: "Motorsport.com",
+      title: "Guenther Steiner Predicts Max Verstappen Will Go Winless in 2026 F1 Season",
+      summary: "Guenther Steiner believes Max Verstappen could finish the 2026 season without a Grand Prix victory because Red Bull cannot currently match Mercedes and McLaren. Verstappen sits sixth in the championship and has three second-place finishes as his best results of the season.",
+      kcsQuickShift: "As long as Verstappen’s car starts, he has a chance to win the race.",
+      url: "https://www.motorsport.com/f1/news/guenther-steiner-predicts-max-verstappen-will-go-winless-in-2026-f1-season/10857570/",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-07",
+      sourceLabel: "Formula1.com",
+      title: "What Is the Weather Forecast for the 2026 Azerbaijan Grand Prix?",
+      summary: "Warm and dry conditions are forecast throughout the Azerbaijan Grand Prix weekend, with no rain currently expected for any of the three days. Strong winds and gusts could still affect the cars around the Baku City Circuit, particularly during Thursday and Friday's sessions.",
+      kcsQuickShift: "It's good they have te cools suits",
+      url: "https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-azerbaijan-grand-prix.1rvimkTAAUb7ERzOziY9F5",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-08",
+      sourceLabel: "MARCA",
+      title: "¿Por qué la carrera del Gran Premio de Azerbaiyán será el sábado? | Why Will the Azerbaijan Grand Prix Be Raced on Saturday?",
+      summary: "El Gran Premio de Azerbaiyán de 2026 se disputará el sábado 26 de septiembre en lugar del domingo habitual. Todo el fin de semana se ha adelantado un día debido al Día de la Memoria de Azerbaiyán, que se conmemora el domingo 27 de septiembre. | The 2026 Azerbaijan Grand Prix will be held on Saturday, September 26 instead of the usual Sunday. The entire weekend has been moved forward one day because Azerbaijan's Memorial Day is observed on Sunday, September 27.",
+      kcsQuickShift: "I’m glad the FIA agreed to allow the race schedule to be changed so that Baku could properly observe its Memorial Day. | Me alegra que la FIA aceptara cambiar el calendario de la carrera para que Bakú pudiera conmemorar debidamente su Día de los Caídos.",
+      url: "https://www.marca.com/motor/formula1/gp-azerbaiyan/2026/09/22/carrera-gran-premio-azerbaiyan-sabado-motivo-cambio-horario.html",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-09",
+      sourceLabel: "Read Motorsport",
+      title: "F1 Shortens Grand Prix Race Distances From 2027",
+      summary: "Formula 1 Grand Prix distances are set to fall from 305 km to 290 km from 2027, reducing most races by roughly two or three laps. The change is connected to revised power-unit fuel-flow regulations and still requires final approval from the World Motor Sport Council.",
+      kcsQuickShift: "Only three or four fewer laps in most cases, so the races should not really feel much different.",
+      url: "https://readmotorsport.com/2026/09/21/f1-shortens-grand-prix-race-distances-2027/",
+      dateLabel: "September 22, 2026",
+    },
+
+    {
+      slotId: "news-10",
+      sourceLabel: "The Race",
+      title: "FIA's Honda Help Could Trigger Major ADUO System Revamp",
+      summary: "The FIA is considering changes to Formula 1's ADUO system for 2027 as it looks to improve the catch-up mechanism and provide additional help to struggling Honda. Possible changes include assessing overall power-unit performance rather than relying mainly on internal-combustion-engine output.",
+      kcsQuickShift: "I understand why the FIA wants to help a manufacturer that is struggling, but the rules have to be fair for everyone. If Honda gets extra help, the system needs to be clear and available to any power-unit supplier in the same situation.",
+      url: "https://www.the-race.com/formula-1/howfias-honda-help-could-trigger-major-aduo-system-revamp/",
+      dateLabel: "September 22, 2026",
+    },
+  ],
+},
+  {
   dateLabel: "September 20, 2026",
   articles: [
     {

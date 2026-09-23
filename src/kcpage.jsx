@@ -15,14 +15,15 @@ import { newsSlots } from "./content/newsSlots";
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
 const raceWeekendPromo = {
-  enabled: false,
-  label: "RACE RESULTS ARE IN",
-  title: "ANTONELLI WINS IN MADRID",
-  body: "Kimi Antonelli has made history by winning the first Spanish Grand Prix at Madring. Visit the Race Centre for the full results, detailed race summary and complete weekend coverage.",
-  buttonText: "See the Race Results →",
+  enabled: true,
+  label: "RACE WEEKEND STARTS TOMORROW",
+  title: "AZERBAIJAN GRAND PRIX",
+  body: "Formula 1 is back in Baku, and the race weekend starts a day early this week. Practice begins tomorrow as the teams take on one of the fastest and most unpredictable street circuits on the calendar. Visit the Race Centre for the full weekend schedule, weather, session updates and results.",
+  buttonText: "Visit the Race Centre →",
   buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/spainposter.jpg",
+  backgroundImage: "/img/news/raceposter/baku.jpg",
 };
+
 // ===================================================
 // Full image announcement card
 // Shows the entire image without cropping
