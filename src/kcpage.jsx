@@ -18,10 +18,8 @@ const raceWeekendPromo = {
   enabled: true,
   label: "RACE WEEKEND STARTS TOMORROW",
   title: "AZERBAIJAN GRAND PRIX",
-  body: "Formula 1 is back in Baku, and the race weekend starts a day early this week. Practice begins tomorrow as the teams take on one of the fastest and most unpredictable street circuits on the calendar. Visit the Race Centre for the full weekend schedule, weather, session updates and results.",
-  buttonText: "Visit the Race Centre →",
+    buttonText: "Visit the Race Centre →",
   buttonLink: "/racecenter",
-  backgroundImage: "/img/news/raceposter/baku.jpg",
 };
 
 // ===================================================
@@ -183,38 +181,35 @@ function RaceWeekendPromo() {
   if (!raceWeekendPromo.enabled) return null;
 
   return (
-    <section
-  className="relative mt-1 overflow-hidden rounded-3xl border border-cyan-400/35 bg-black/70 px-4 py-4 text-center shadow-[0_0_24px_rgba(34,211,238,0.35)] backdrop-blur-2xl sm:px-6 sm:py-5"
-  style={{
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url(${safeLocalImagePath(raceWeekendPromo.backgroundImage)})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <div className="relative z-10"></div>
+    <section className="relative mt-1 overflow-hidden rounded-3xl border border-cyan-400/35 bg-slate-950/95 px-5 py-5 text-center shadow-[0_0_22px_rgba(34,211,238,0.22)] sm:px-8 sm:py-7">
+
       <div className="mx-auto max-w-3xl">
-        <div className="text-[11px] font-bold uppercase tracking-[0.22em] text-cyan-300 sm:text-xs">
-          {raceWeekendPromo.label}
+
+        <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-cyan-300 sm:text-xs">
+          🇦🇿 {raceWeekendPromo.label}
         </div>
 
-        <h1 className="mt-2 text-xl font-extrabold leading-tight text-white sm:text-2xl md:text-3xl">
+        <h1 className="mt-2 text-2xl font-extrabold leading-tight text-white sm:text-3xl">
           {raceWeekendPromo.title}
         </h1>
 
-        <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-yellow-100 font-semibold sm:text-base">
+        <div className="mx-auto mt-3 h-0.5 w-16 rounded-full bg-cyan-400/70" />
+
+        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
           {raceWeekendPromo.body}
         </p>
 
-        <div className="mt-4 flex justify-center">
+        <div className="mt-5 flex justify-center">
           <Link
             to={raceWeekendPromo.buttonLink}
-            className="inline-flex items-center justify-center rounded-full border border-cyan-300/60 bg-cyan-400/15 px-5 py-2.5 text-sm font-bold text-cyan-100 shadow-[0_0_18px_rgba(34,211,238,0.35)] transition hover:bg-cyan-400/25 hover:text-white sm:px-6"
+            className="inline-flex items-center justify-center rounded-full border border-cyan-300/50 bg-cyan-400/10 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white sm:px-6"
           >
             {raceWeekendPromo.buttonText}
           </Link>
         </div>
+
       </div>
-      
+
     </section>
   );
 }
@@ -255,9 +250,21 @@ const additionalNews = Array.isArray(newsSlots)
       {/* Page content wrapper */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
-<CountdownBar />
+<div className="mt-1 mb-1 text-center">
+  <div className="text-sm font-semibold leading-relaxed text-cyan-300">
+    <span className="block sm:inline">
+      Worldwide F1 News
+    </span>
 
+    <span className="hidden sm:inline">
+      {" • "}
+    </span>
 
+    <span className="block sm:inline">
+      Updated Daily • Quick-Read Summaries
+    </span>
+  </div>
+</div>
 {announcementCard.enabled && (
   <div className="mb-6">
     <AnnouncementCard
@@ -267,7 +274,10 @@ const additionalNews = Array.isArray(newsSlots)
     />
   </div>
 )}
+
 <RaceWeekendPromo />
+
+<CountdownBar />
 
 {/* ✅ TOP STORY (stays exactly the same, now comes after the update bar) */}
         {topStory
@@ -284,15 +294,7 @@ const additionalNews = Array.isArray(newsSlots)
 
               return (
                 <section className="mt-1">
-                <div className="mt-2 mb-2 text-center">
-  <span className="text-sm font-semibold text-cyan-300">
-    Worldwide F1 news Updated Daily and summarized for quick reading
-  </span>
-
-  <div className="mt-1 text-xs font-medium text-gray-300 opacity-85">
-    🌍 Viewed by F1 fans in 95 countries
-  </div>
-</div>
+               
                   <GlassyCard
                     highlight="blue"
                     title={item?.title || "Top Story"}
