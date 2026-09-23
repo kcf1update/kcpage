@@ -2,12 +2,14 @@ import {
   ARTICLE_FIELDS,
   FOREIGN_LANGUAGE_SLOTS,
   createEmptyArticles,
+  imagePreviewUrl,
   parseExportedArray,
   prepareFiles,
   validateArticles,
 } from "./core.mjs";
 
 const DRAFT_KEY = "kc-daily-news-editor-v2-offline-draft";
+const DRAFT_HISTORY_KEY = "kc-daily-news-editor-v2-offline-draft-history";
 const state = {
   articles: createEmptyArticles(),
   currentArticles: [],
@@ -35,6 +37,9 @@ const elements = {
   previewSummary: document.querySelector("#preview-summary"),
   previewQuickShift: document.querySelector("#preview-quickshift"),
   quickShiftCount: document.querySelector("#quickshift-count"),
+  previewImage: document.querySelector("#preview-image"),
+  previewImageStatus: document.querySelector("#preview-image-status"),
+  draftStatus: document.querySelector("#draft-status"),
 };
 
 function articleReady(article) {
@@ -48,8 +53,26 @@ function showNotice(message, error = false) {
   elements.notice.classList.toggle("error", error);
 }
 
-function saveDraft() {
-  localStorage.setItem(DRAFT_KEY, JSON.stringify({ articles: state.articles, savedAt: new Date().toISOString() }));
+function meaningfulDraft(articles) {
+  return articles.some((article) => ARTICLE_FIELDS.some((field) => String(article[field] || "").trim()));
+}
+
+function draftSnapshot(reason = "autosave") {
+  return { articles: state.articles, savedAt: new Date().toISOString(), reason };
+}
+
+function saveDraft(reason = "autosave") {
+  const draft = draftSnapshot(reason);
+  localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  elements.draftStatus.textContent = `Draft saved ${new Date(draft.savedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`;
+}
+
+function preserveDraft(reason) {
+  if (!meaningfulDraft(state.articles)) return;
+  let history = [];
+  try { history = JSON.parse(localStorage.getItem(DRAFT_HISTORY_KEY) || "[]"); } catch { history = []; }
+  history.unshift(draftSnapshot(reason));
+  localStorage.setItem(DRAFT_HISTORY_KEY, JSON.stringify(history.slice(0, 10)));
 }
 
 function invalidatePreparedFiles() {
@@ -108,7 +131,32 @@ function renderPreview() {
   const quickShift = String(article.kcsQuickShift || "").trim();
   const wordCount = quickShift ? quickShift.split(/\s+/).length : 0;
   elements.quickShiftCount.textContent = `${wordCount} ${wordCount === 1 ? "word" : "words"} · ${quickShift.length} ${quickShift.length === 1 ? "character" : "characters"}`;
+  elements.previewImage.hidden = true;
+  elements.previewImage.removeAttribute("src");
+  if (!article.imagePath.trim()) {
+    elements.previewImageStatus.hidden = false;
+    elements.previewImageStatus.textContent = "Enter a local image path to preview it.";
+  } else {
+    try {
+      elements.previewImageStatus.hidden = false;
+      elements.previewImageStatus.textContent = "Checking image path…";
+      elements.previewImage.src = imagePreviewUrl(article.imagePath, window.location.href);
+    } catch (error) {
+      elements.previewImageStatus.textContent = error.message;
+    }
+  }
 }
+
+elements.previewImage.addEventListener("load", () => {
+  elements.previewImage.hidden = false;
+  elements.previewImageStatus.hidden = true;
+});
+
+elements.previewImage.addEventListener("error", () => {
+  elements.previewImage.hidden = true;
+  elements.previewImageStatus.hidden = false;
+  elements.previewImageStatus.textContent = "Image not found. Check the folders, spelling, capitalization, and filename.";
+});
 
 function renderValidation() {
   const validation = validateArticles(state.articles);
@@ -153,6 +201,13 @@ document.querySelector("#news-file").addEventListener("change", async (event) =>
   try {
     const result = await readFile(event.target.files[0], "newsSlots");
     if (!result || result.value.length !== 10) throw new Error("newsSlots.js must contain exactly 10 stories.");
+    const imported = JSON.stringify(result.value.map((article, index) => ({ ...article, slotId: String(index + 1) })));
+    const existing = JSON.stringify(state.articles);
+    if (meaningfulDraft(state.articles) && imported !== existing && !window.confirm("Importing this file will replace the draft currently shown. A recovery copy will be kept. Continue?")) {
+      event.target.value = "";
+      return;
+    }
+    preserveDraft("before newsSlots import");
     state.currentArticles = result.value;
     state.articles = result.value.map((article, index) => ({ ...article, slotId: String(index + 1) }));
     state.selected = 0;
@@ -219,6 +274,7 @@ document.querySelector("#prepare-files").addEventListener("click", () => {
       archiveSource: state.archiveSource,
       archiveGroups: state.archiveGroups,
     });
+    preserveDraft("before preparing files");
     state.prepared = prepared;
     elements.downloadActions.hidden = false;
     showNotice(prepared.archivedPreviousDay
@@ -247,10 +303,38 @@ document.querySelector("#download-archive").addEventListener("click", () => {
   if (state.prepared?.archiveSource) download("newsArchive.js", state.prepared.archiveSource);
 });
 
+document.querySelector("#download-draft").addEventListener("click", () => {
+  const snapshot = draftSnapshot("manual backup");
+  download(`kc-news-draft-${snapshot.savedAt.slice(0, 10)}.json`, `${JSON.stringify(snapshot, null, 2)}\n`);
+  showNotice("A separate draft backup was downloaded. It does not change the website.");
+});
+
+document.querySelector("#restore-draft").addEventListener("click", () => {
+  let history = [];
+  try { history = JSON.parse(localStorage.getItem(DRAFT_HISTORY_KEY) || "[]"); } catch { history = []; }
+  const recovery = history[0];
+  if (!Array.isArray(recovery?.articles) || recovery.articles.length !== 10) {
+    showNotice("There is no earlier recovery copy in this browser yet.", true);
+    return;
+  }
+  if (!window.confirm(`Restore the recovery copy saved ${new Date(recovery.savedAt).toLocaleString()}? The current draft will also be kept.`)) return;
+  preserveDraft("before restoring recovery copy");
+  history = JSON.parse(localStorage.getItem(DRAFT_HISTORY_KEY) || "[]");
+  const restored = history.splice(1, 1)[0] || recovery;
+  state.articles = restored.articles;
+  localStorage.setItem(DRAFT_HISTORY_KEY, JSON.stringify(history.slice(0, 10)));
+  state.selected = 0;
+  invalidatePreparedFiles();
+  saveDraft("restored recovery copy");
+  showNotice("The previous recovery copy was restored. Nothing on the website was changed.");
+  renderAll();
+});
+
 try {
   const draft = JSON.parse(localStorage.getItem(DRAFT_KEY) || "null");
   if (Array.isArray(draft?.articles) && draft.articles.length === 10) {
     state.articles = draft.articles;
+    elements.draftStatus.textContent = `Draft restored from ${new Date(draft.savedAt).toLocaleString()}`;
     showNotice("An unfinished browser draft was restored. Import the current website files before preparing downloads.");
   }
 } catch {

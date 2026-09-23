@@ -172,6 +172,9 @@ button:disabled { cursor: not-allowed; opacity: 0.42; }
 
 .review-panel { display: grid; gap: 18px; position: sticky; top: 14px; }
 .preview-card, .checks-card { border-radius: 18px; padding: 20px; }
+.image-preview-frame { min-height: 150px; display: grid; place-items: center; margin: 16px 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #080c11; }
+.image-preview-frame img { width: 100%; max-height: 230px; object-fit: cover; }
+.image-preview-frame p { margin: 0; padding: 20px; color: var(--muted); font-size: 0.8rem; line-height: 1.4; text-align: center; }
 .preview-source { margin: 18px 0 8px; color: var(--cyan); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 .preview-card h2 { margin-bottom: 12px; font-size: 1.35rem; line-height: 1.2; }
 .preview-card > p:last-of-type { color: #c4cfdb; font-size: 0.92rem; line-height: 1.55; white-space: pre-line; }
@@ -191,6 +194,9 @@ button:disabled { cursor: not-allowed; opacity: 0.42; }
 #download-actions { display: grid; gap: 9px; margin-top: 10px; }
 .download-button { width: 100%; border: 1px solid rgba(87, 227, 154, 0.45); background: rgba(87, 227, 154, 0.08); color: #baffd9; }
 .safety-copy { margin: 13px 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.45; text-align: center; }
+.draft-safety { display: grid; gap: 9px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.draft-safety strong { color: #baffd9; font-size: 0.78rem; text-align: center; }
+.draft-safety .secondary-button { width: 100%; }
 
 @media (max-width: 1120px) {
   .editor-grid { grid-template-columns: 190px minmax(400px, 1fr); }

@@ -89,7 +89,8 @@
             </label>
             <div class="two-column">
               <label>Local image path
-                <input name="imagePath" type="text" spellcheck="false" placeholder="/img/news/…" />
+                <input name="imagePath" type="text" spellcheck="false" aria-describedby="image-path-help" placeholder="/img/news/team/driver/photo.jpg" />
+                <small id="image-path-help">Deep folders are supported. The path must begin with /img/ and match the filename’s capitalization.</small>
               </label>
               <label>Photo credit
                 <input name="photoCredit" type="text" spellcheck="true" placeholder="XPB IMAGES" />
@@ -106,6 +107,10 @@
         <aside class="review-panel">
           <section class="preview-card">
             <span class="section-label">CARD PREVIEW</span>
+            <div class="image-preview-frame">
+              <img id="preview-image" alt="Selected news image preview" hidden />
+              <p id="preview-image-status">Enter a local image path to preview it.</p>
+            </div>
             <p id="preview-source" class="preview-source">Source</p>
             <h2 id="preview-title">Headline preview</h2>
             <p id="preview-summary">The story summary will appear here.</p>
@@ -127,6 +132,11 @@
               <button id="download-archive" class="download-button" type="button">Download newsArchive.js</button>
             </div>
             <p class="safety-copy">This version only prepares files for review. It cannot change the website.</p>
+            <div class="draft-safety">
+              <strong id="draft-status">Draft not yet saved</strong>
+              <button id="download-draft" class="secondary-button" type="button">Download draft backup</button>
+              <button id="restore-draft" class="secondary-button" type="button">Restore previous recovery copy</button>
+            </div>
           </section>
         </aside>
       </div>

@@ -256,18 +256,7 @@ const additionalNews = Array.isArray(newsSlots)
 <SiteHeader />
 <CountdownBar />
 
-<section
-  role="status"
-  aria-label="Maintenance notice"
-  className="rounded-2xl border border-amber-300/60 bg-amber-400/15 px-4 py-4 text-center shadow-[0_0_20px_rgba(251,191,36,0.25)] backdrop-blur sm:px-6"
->
-  <div className="text-xs font-extrabold uppercase tracking-[0.18em] text-amber-300">
-    Maintenance Notice
-  </div>
-  <p className="mt-1 text-sm font-semibold leading-relaxed text-white sm:text-base">
-    KC’s Worldwide F1 Update will not be updated on Monday, September 21, while site maintenance is completed. Regular updates will return afterward.
-  </p>
-</section>
+
 {announcementCard.enabled && (
   <div className="mb-6">
     <AnnouncementCard

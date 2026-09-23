@@ -15,6 +15,32 @@ export const REQUIRED_FIELDS = ARTICLE_FIELDS.filter(
 
 export const FOREIGN_LANGUAGE_SLOTS = new Set([2, 4, 8]);
 
+export function normalizeImagePath(value = "") {
+  const path = String(value).trim();
+  if (!path) return "";
+  if (!path.startsWith("/img/")) {
+    throw new Error("Image paths must begin with /img/.");
+  }
+  if (path.includes("\\") || path.includes("?") || path.includes("#")) {
+    throw new Error("Image paths cannot contain backslashes, queries, or fragments.");
+  }
+  const segments = path.split("/");
+  if (segments.some((segment) => segment === "." || segment === "..")) {
+    throw new Error("Image paths cannot move outside the website image folder.");
+  }
+  return path;
+}
+
+export function imagePreviewUrl(imagePath, editorHref) {
+  const path = normalizeImagePath(imagePath);
+  if (!path) return "";
+  const editorUrl = new URL(editorHref);
+  if (editorUrl.protocol === "file:") {
+    return new URL(`../../../public${path}`, editorUrl).href;
+  }
+  return new URL(path, editorUrl.origin).href;
+}
+
 export function cleanArticle(article = {}, index = 0) {
   const cleaned = { slotId: String(index + 1) };
   for (const field of ARTICLE_FIELDS) {
@@ -217,8 +243,10 @@ export function validateArticles(input) {
       if (article.url) errors.push(`Story ${slot} needs a safe http or https article link.`);
     }
 
-    if (article.imagePath && !article.imagePath.startsWith("/")) {
-      errors.push(`Story ${slot} must use a local image path beginning with /.`);
+    try {
+      normalizeImagePath(article.imagePath);
+    } catch (error) {
+      errors.push(`Story ${slot}: ${error.message}`);
     }
 
     if (FOREIGN_LANGUAGE_SLOTS.has(slot)) {

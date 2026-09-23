@@ -4,6 +4,8 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import {
+  imagePreviewUrl,
+  normalizeImagePath,
   parseExportedArray,
   prepareFiles,
   validateArticles,
@@ -51,6 +53,24 @@ test("unsafe image paths and incomplete bilingual slots are rejected", () => {
   changed[1].title = "English only";
   const result = validateArticles(changed);
   assert.equal(result.ok, false);
-  assert.ok(result.errors.some((error) => error.includes("local image path")));
+  assert.ok(result.errors.some((error) => error.includes("begin with /img/")));
   assert.ok(result.errors.some((error) => error.includes("foreign language | English")));
+});
+
+test("deep reorganized image paths are accepted and resolve in the offline editor", () => {
+  const imagePath = "/img/news/mercedes/kimi/race-report.jpg";
+  assert.equal(normalizeImagePath(imagePath), imagePath);
+  assert.equal(
+    imagePreviewUrl(imagePath, "file:///repo/tools/daily-news-editor-v2/dist/index.html"),
+    "file:///repo/public/img/news/mercedes/kimi/race-report.jpg"
+  );
+  assert.equal(
+    imagePreviewUrl(imagePath, "https://preview.example/tools/editor/"),
+    "https://preview.example/img/news/mercedes/kimi/race-report.jpg"
+  );
+});
+
+test("image paths cannot escape the public image folder", () => {
+  assert.throws(() => normalizeImagePath("/img/news/../secret.txt"), /cannot move outside/);
+  assert.throws(() => normalizeImagePath("/public/img/news/photo.jpg"), /begin with \/img\//);
 });
