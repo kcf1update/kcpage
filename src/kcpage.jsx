@@ -17,8 +17,8 @@ import { newsSlots } from "./content/newsSlots";
 const raceWeekendPromo = {
   enabled: true,
   label: "RACE WEEKEND STARTS TOMORROW",
-  title: "AZERBAIJAN GRAND PRIX",
-    buttonText: "Visit the Race Centre →",
+  title: "AZERBAIJAN GRAND PRIX ",
+    buttonText: "RACE CENTRE →",
   buttonLink: "/racecenter",
 };
 
@@ -181,28 +181,35 @@ function RaceWeekendPromo() {
   if (!raceWeekendPromo.enabled) return null;
 
   return (
-    <section className="relative mt-1 overflow-hidden rounded-3xl border border-cyan-400/35 bg-slate-950/95 px-5 py-5 text-center shadow-[0_0_22px_rgba(34,211,238,0.22)] sm:px-8 sm:py-7">
+    <section className="relative mt-1 overflow-hidden rounded-2xl border border-red-500/50 bg-gradient-to-r from-black via-zinc-950 to-red-950/80 px-3 py-3 shadow-[0_0_20px_rgba(239,68,68,0.22)] sm:px-5 sm:py-4">
 
-      <div className="mx-auto max-w-3xl">
+      <div className="grid w-full grid-cols-[1.15fr_1fr_0.85fr] items-center gap-2 sm:gap-4">
 
-        <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-cyan-300 sm:text-xs">
-          🇦🇿 {raceWeekendPromo.label}
+        {/* LEFT */}
+        <div className="min-w-0 text-left">
+  <div className="flex items-center gap-2 text-[10px] font-extrabold text-white sm:text-base lg:text-lg">
+    <span>{raceWeekendPromo.title}</span>
+
+    <img
+  src="/flags/az.png"
+  alt="Azerbaijan flag"
+  className="h-3 w-auto sm:h-4 lg:h-5"
+/>
+  </div>
+</div>
+
+        {/* CENTER */}
+        <div className="min-w-0 text-center">
+          <div className="text-[8px] font-bold uppercase leading-tight tracking-[0.05em] text-red-400 sm:text-[11px] lg:text-xs">
+            {raceWeekendPromo.label}
+          </div>
         </div>
 
-        <h1 className="mt-2 text-2xl font-extrabold leading-tight text-white sm:text-3xl">
-          {raceWeekendPromo.title}
-        </h1>
-
-        <div className="mx-auto mt-3 h-0.5 w-16 rounded-full bg-cyan-400/70" />
-
-        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
-          {raceWeekendPromo.body}
-        </p>
-
-        <div className="mt-5 flex justify-center">
+        {/* RIGHT */}
+        <div className="flex min-w-0 justify-end">
           <Link
             to={raceWeekendPromo.buttonLink}
-            className="inline-flex items-center justify-center rounded-full border border-cyan-300/50 bg-cyan-400/10 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:bg-cyan-400/20 hover:text-white sm:px-6"
+            className="whitespace-nowrap rounded-full border border-red-400/60 bg-red-600/20 px-2.5 py-1.5 text-[8px] font-bold text-white transition hover:bg-red-600/35 sm:px-4 sm:py-2 sm:text-[11px] lg:text-xs"
           >
             {raceWeekendPromo.buttonText}
           </Link>
@@ -251,18 +258,8 @@ const additionalNews = Array.isArray(newsSlots)
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 px-4 pt-3 pb-8 sm:pt-4 sm:pb-10">
 <SiteHeader />
 <div className="mt-1 mb-1 text-center">
-  <div className="text-sm font-semibold leading-relaxed text-cyan-300">
-    <span className="block sm:inline">
-      Worldwide F1 News
-    </span>
-
-    <span className="hidden sm:inline">
-      {" • "}
-    </span>
-
-    <span className="block sm:inline">
-      Updated Daily • Quick-Read Summaries
-    </span>
+  <div className="whitespace-nowrap text-[10px] font-semibold text-cyan-300 sm:text-sm">
+    Worldwide F1 News • Updated Daily • Quick-Read Summaries
   </div>
 </div>
 {announcementCard.enabled && (
