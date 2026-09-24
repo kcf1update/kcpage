@@ -55,7 +55,7 @@ export default function CountdownBar() {
         <div className="min-w-0 flex items-center justify-center -translate-x-3 sm:translate-x-0">
   {weekendStarted ? (
     <span className="text-[10px] font-bold uppercase tracking-wide text-black sm:text-xs lg:text-sm">
-      RACE WEEKEND UNDERWAY • FOLLOW THE WEEKEND IN RACE CENTRE
+      
     </span>
   ) : (
     <span className="whitespace-nowrap text-[10px] font-extrabold leading-none text-black sm:text-sm lg:text-base">
