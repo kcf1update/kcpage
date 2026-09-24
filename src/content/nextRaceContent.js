@@ -488,9 +488,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "",
-      summary: "",
-      url: "",
+        "Russell Tops Azerbaijan FP1 as Antonelli Stops on Track",
+      summary: "George Russell topped the opening practice session for the Azerbaijan Grand Prix, ahead of Max Verstappen and Charles Leclerc. It was a strong start for Russell on Baku’s demanding street circuit, but a difficult hour for his Mercedes teammate Kimi Antonelli, whose car stopped with a hydraulic issue. Both McLaren drivers also spent extended time in the garage, losing valuable laps while the teams worked through their first setups of the weekend. With Antonelli and McLaren short on running, FP1 gave Russell an early advantage, though the order could change when practice resumes later today.",
+      url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-first-practice/",
     },
   ],
 },
@@ -498,9 +498,9 @@ export const raceWeekendRecap = {
   heading: "Practice 2",
   items: [
     {
-      title: "Russell Tops Azerbaijan FP1 as Antonelli Stops on Track",
-      summary: "George Russell topped the opening practice session for the Azerbaijan Grand Prix, ahead of Max Verstappen and Charles Leclerc. It was a strong start for Russell on Baku’s demanding street circuit, but a difficult hour for his Mercedes teammate Kimi Antonelli, whose car stopped with a hydraulic issue. Both McLaren drivers also spent extended time in the garage, losing valuable laps while the teams worked through their first setups of the weekend. With Antonelli and McLaren short on running, FP1 gave Russell an early advantage, though the order could change when practice resumes later today.",
-      url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-first-practice/",
+      title: "",
+      summary: "",
+      url: "",
     },
   ],
 },
