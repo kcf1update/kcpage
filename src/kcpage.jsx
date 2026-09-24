@@ -400,7 +400,7 @@ const additionalNews = Array.isArray(newsSlots)
   title={item?.title || "News"}
   titleUrl={href || undefined}
   subtitle={item?.sourceLabel || "Source"}
-  className="lg:order-3"
+  className="lg:order-3 lg:col-span-2"
 >
                       <div className="space-y-3">
                         {showImage ? (
