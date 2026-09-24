@@ -1,6 +1,7 @@
 import { createServer } from "node:http";
 import { createReadStream } from "node:fs";
-import { stat } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -36,6 +37,20 @@ export function createEditorServer() {
   return createServer(async (request, response) => {
     if (request.method !== "GET" && request.method !== "HEAD") {
       response.writeHead(405, { Allow: "GET, HEAD" }).end();
+      return;
+    }
+    if (request.url === "/source-status") {
+      try {
+        const content = path.join(root, "../../src/content");
+        const [news, archive] = await Promise.all([
+          readFile(path.join(content, "newsSlots.js")),
+          readFile(path.join(content, "newsArchive.js")),
+        ]);
+        const digest = (bytes) => createHash("sha256").update(bytes).digest("hex");
+        const body = JSON.stringify({ news: digest(news), archive: digest(archive) });
+        response.writeHead(200, { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" });
+        response.end(request.method === "HEAD" ? undefined : body);
+      } catch { response.writeHead(503).end("Project files unavailable"); }
       return;
     }
     const target = resolveRequestPath(request.url);

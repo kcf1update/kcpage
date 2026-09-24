@@ -18,6 +18,8 @@ const state = {
   archiveSource: "",
   selected: 0,
   prepared: null,
+  newsFingerprint: "",
+  archiveFingerprint: "",
 };
 
 const elements = {
@@ -221,10 +223,30 @@ async function readFile(file, exportName) {
   return { source, value: parseExportedArray(source, exportName) };
 }
 
+async function fingerprint(source) {
+  const bytes = new TextEncoder().encode(source);
+  const hash = await crypto.subtle.digest("SHA-256", bytes);
+  return [...new Uint8Array(hash)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+async function assertProjectUnchanged(newsSource, archiveSource) {
+  const response = await fetch("/source-status", { cache: "no-store" });
+  if (!response.ok) throw new Error("The project files could not be checked. Keep the editor server running and retry.");
+  const current = await response.json();
+  if (newsSource && (await fingerprint(newsSource)) !== current.news) {
+    throw new Error("newsSlots.js has changed in the project. Save a draft backup, then import the latest newsSlots.js before preparing files.");
+  }
+  if (archiveSource && (await fingerprint(archiveSource)) !== current.archive) {
+    throw new Error("newsArchive.js has changed in the project. Import the latest newsArchive.js before preparing files.");
+  }
+  return current;
+}
+
 document.querySelector("#news-file").addEventListener("change", async (event) => {
   try {
     const result = await readFile(event.target.files[0], "newsSlots");
     if (!result || result.value.length !== 10) throw new Error("newsSlots.js must contain exactly 10 stories.");
+    const current = await assertProjectUnchanged(result.source);
     const imported = JSON.stringify(result.value.map((article, index) => ({ ...article, slotId: String(index + 1) })));
     const existing = JSON.stringify(state.articles);
     if (meaningfulDraft(state.articles) && imported !== existing && !window.confirm("Importing this file will replace the draft currently shown. A recovery copy will be kept. Continue?")) {
@@ -233,6 +255,7 @@ document.querySelector("#news-file").addEventListener("change", async (event) =>
     }
     preserveDraft("before newsSlots import");
     state.currentArticles = result.value;
+    state.newsFingerprint = current.news;
     state.articles = result.value.map((article, index) => ({ ...article, slotId: String(index + 1) }));
     state.selected = 0;
     event.target.closest(".file-button").classList.add("loaded");
@@ -250,8 +273,11 @@ document.querySelector("#news-file").addEventListener("change", async (event) =>
 document.querySelector("#archive-file").addEventListener("change", async (event) => {
   try {
     const result = await readFile(event.target.files[0], "newsArchive");
+    if (!result) return;
+    const current = await assertProjectUnchanged(undefined, result.source);
     state.archiveSource = result.source;
     state.archiveGroups = result.value;
+    state.archiveFingerprint = current.archive;
     event.target.closest(".file-button").classList.add("loaded");
     elements.archiveStatus.textContent = `${result.value.length} archive groups loaded`;
     invalidatePreparedFiles();
@@ -289,9 +315,14 @@ document.querySelector("#copy-date").addEventListener("click", () => {
 document.querySelector("#previous-story").addEventListener("click", () => selectStory(state.selected - 1));
 document.querySelector("#next-story").addEventListener("click", () => selectStory(state.selected + 1));
 
-document.querySelector("#prepare-files").addEventListener("click", () => {
+document.querySelector("#prepare-files").addEventListener("click", async () => {
   try {
     if (state.currentArticles.length !== 10) throw new Error("Import newsSlots.js before preparing files.");
+    if (!state.archiveFingerprint) throw new Error("Import newsArchive.js before preparing files.");
+    const status = await assertProjectUnchanged();
+    if (status.news !== state.newsFingerprint || status.archive !== state.archiveFingerprint) {
+      throw new Error("Project news or archive changed since import. Import both latest files before preparing replacements.");
+    }
     const prepared = prepareFiles({
       currentArticles: state.currentArticles,
       nextArticles: state.articles,
@@ -305,6 +336,7 @@ document.querySelector("#prepare-files").addEventListener("click", () => {
       ? "Files prepared. The previous day was added once at the top of the archive copy. Review both downloads before using them."
       : "Files prepared. No new archive group was needed. Review the downloads before using them.");
   } catch (error) {
+    invalidatePreparedFiles();
     showNotice(error.message, true);
     renderValidation();
   }
@@ -320,12 +352,23 @@ function download(filename, content) {
   URL.revokeObjectURL(url);
 }
 
-document.querySelector("#download-news").addEventListener("click", () => {
-  if (state.prepared) download("newsSlots.js", state.prepared.newsSource);
-});
-document.querySelector("#download-archive").addEventListener("click", () => {
-  if (state.prepared?.archiveSource) download("newsArchive.js", state.prepared.archiveSource);
-});
+async function downloadPrepared(which) {
+  if (!state.prepared) return;
+  try {
+    const status = await assertProjectUnchanged();
+    if (status.news !== state.newsFingerprint || status.archive !== state.archiveFingerprint) {
+      throw new Error("Project files changed after preparation. Import both latest files and prepare again.");
+    }
+    const prepared = state.prepared;
+    download(which === "news" ? "newsSlots.js" : "newsArchive.js", which === "news" ? prepared.newsSource : prepared.archiveSource);
+  } catch (error) {
+    invalidatePreparedFiles();
+    showNotice(error.message, true);
+  }
+}
+
+document.querySelector("#download-news").addEventListener("click", () => downloadPrepared("news"));
+document.querySelector("#download-archive").addEventListener("click", () => downloadPrepared("archive"));
 
 document.querySelector("#download-draft").addEventListener("click", () => {
   const snapshot = draftSnapshot("manual backup");

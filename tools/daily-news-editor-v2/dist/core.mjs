@@ -317,8 +317,15 @@ export function prepareFiles({ currentArticles, nextArticles, archiveSource, arc
   const validation = validateArticles(nextArticles);
   if (!validation.ok) throw new Error(validation.errors.join("\n"));
 
+  if (!Array.isArray(currentArticles) || currentArticles.length !== 10) {
+    throw new Error("Import the full current newsSlots.js before preparing replacements.");
+  }
   const current = currentArticles.map(cleanArticle);
   const next = validation.articles;
+  const currentDates = new Set(current.map((article) => article.dateLabel));
+  if (currentDates.size !== 1 || currentDates.has("")) {
+    throw new Error("The imported newsSlots.js has mixed or missing dates. Finish the daily update and archive the previous day before replacing it; the editor cannot safely reconstruct missing stories.");
+  }
   const currentDate = current[0]?.dateLabel || "";
   const nextDate = next[0]?.dateLabel || "";
   let nextArchiveSource = archiveSource;

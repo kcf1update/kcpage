@@ -5,6 +5,12 @@ This is the first isolated stage of the replacement Daily News Editor.
 From the project folder run `npm run start --prefix tools/daily-news-editor-v2`, then open
 `http://127.0.0.1:4179/`. Leave the terminal open while using the editor. The local
 server serves only the editor files and images already in the project under `public/img`.
+It also checks the current news and archive files in the project at import, preparation,
+and download. If either changes while the editor is open, import the latest files again
+before preparing replacements. Download a draft backup first to preserve your writing.
+If the imported news file contains stories from two dates, the editor can display and edit
+them but will not prepare replacement files. Finish the daily archive and start from a
+consistent set of 10 stories so the previous day's missing stories are not lost.
 Opening `index.html` directly from disk may block JavaScript modules in some browsers.
 
 - It is not imported by the public website.

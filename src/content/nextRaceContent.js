@@ -352,6 +352,28 @@ function parseRacePaste(text) {
 // =====================================================
 
 const PASTE_P1 = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m45.387s
+2	Max Verstappen	NED	Oracle Red Bull Racing	1m45.787s
+3	Charles Leclerc	MON	Scuderia Ferrari HP	1m45.791s
+4	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m45.824s
+5	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m46.265s
+6	Oscar Piastri 	AUS	McLaren Mastercard F1 Team	1m46.398s
+7	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m46.440s
+8	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m46.601s
+9	Esteban Ocon	FRA	TGR Haas F1 Team	1m46.624s
+10	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m46.688s
+11	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m46.871s
+12	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m46.893s
+13	Alex Albon	THA	Atlassian Williams F1 Team	1m46.939s
+14	Lando Norris	GBR	McLaren Mastercard F1 Team	1m46.981s
+15	Ollie Bearman	GBR	TGR Haas F1 Team	1m46.994s
+16	Pierre Gasly	FRA	BWT Alpine F1 Team	1m47.043s
+17	Sergio Perez	MEX	Cadillac F1 Team	1m47.253s
+18	Franco Colapinto	ARG	BWT Alpine F1 Team	1m47.253s
+19	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m47.835s
+20	Isack Hadjar 	FRA	Oracle Red Bull Racing	1m47.873s
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m48.547s
+22	Valtteri Bottas	FIN	Cadillac F1 Team	1m49.315s
 
 
 
@@ -466,9 +488,9 @@ export const raceWeekendRecap = {
   items: [
     {
       title:
-        "",
-      summary: "",
-      url: "",
+        "Russell Tops Azerbaijan FP1 as Antonelli Stops on Track",
+      summary: "George Russell topped the opening practice session for the Azerbaijan Grand Prix, ahead of Max Verstappen and Charles Leclerc. It was a strong start for Russell on Baku’s demanding street circuit, but a difficult hour for his Mercedes teammate Kimi Antonelli, whose car stopped with a hydraulic issue. Both McLaren drivers also spent extended time in the garage, losing valuable laps while the teams worked through their first setups of the weekend. With Antonelli and McLaren short on running, FP1 gave Russell an early advantage, though the order could change when practice resumes later today.",
+      url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-first-practice/",
     },
   ],
 },
@@ -563,7 +585,7 @@ export const nextRaceContent = {
           id: "p1",
           type: "practice",
           label: "Practice 1",
-          time: "5:30 AM ADT",
+          time: "Russell Fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P1),
