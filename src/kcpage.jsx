@@ -14,13 +14,7 @@ import { newsSlots } from "./content/newsSlots";
 // Race weekend homepage promo
 // Turn this on/off here for each Grand Prix weekend
 // =======================================================
-const raceWeekendPromo = {
-  enabled: true,
-  label: "RACE WEEKEND STARTS TOMORROW",
-  title: "AZERBAIJAN GRAND PRIX ",
-    buttonText: "RACE CENTRE →",
-  buttonLink: "/racecenter",
-};
+
 
 // ===================================================
 // Full image announcement card
@@ -177,49 +171,7 @@ function renderBilingualText(text, foreignFirst = true) {
     </>
   );
 }
-function RaceWeekendPromo() {
-  if (!raceWeekendPromo.enabled) return null;
 
-  return (
-    <section className="relative mt-1 overflow-hidden rounded-2xl border border-red-500/50 bg-gradient-to-r from-black via-zinc-950 to-red-950/80 px-3 py-3 shadow-[0_0_20px_rgba(239,68,68,0.22)] sm:px-5 sm:py-4">
-
-      <div className="grid w-full grid-cols-[1.15fr_1fr_0.85fr] items-center gap-2 sm:gap-4">
-
-        {/* LEFT */}
-        <div className="min-w-0 text-left">
-  <div className="flex items-center gap-2 text-[10px] font-extrabold text-white sm:text-base lg:text-lg">
-    <span>{raceWeekendPromo.title}</span>
-
-    <img
-  src="/flags/az.png"
-  alt="Azerbaijan flag"
-  className="h-3 w-auto sm:h-4 lg:h-5"
-/>
-  </div>
-</div>
-
-        {/* CENTER */}
-        <div className="min-w-0 text-center">
-          <div className="text-[8px] font-bold uppercase leading-tight tracking-[0.05em] text-red-400 sm:text-[11px] lg:text-xs">
-            {raceWeekendPromo.label}
-          </div>
-        </div>
-
-        {/* RIGHT */}
-        <div className="flex min-w-0 justify-end">
-          <Link
-            to={raceWeekendPromo.buttonLink}
-            className="whitespace-nowrap rounded-full border border-red-400/60 bg-red-600/20 px-2.5 py-1.5 text-[8px] font-bold text-white transition hover:bg-red-600/35 sm:px-4 sm:py-2 sm:text-[11px] lg:text-xs"
-          >
-            {raceWeekendPromo.buttonText}
-          </Link>
-        </div>
-
-      </div>
-
-    </section>
-  );
-}
 export default function KCpage() {
  
   // ✅ Stage A: Featured content is file-driven (not localStorage)
@@ -272,7 +224,7 @@ const additionalNews = Array.isArray(newsSlots)
   </div>
 )}
 
-<RaceWeekendPromo />
+
 
 <CountdownBar />
 
