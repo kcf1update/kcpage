@@ -41,6 +41,13 @@ export function imagePreviewUrl(imagePath, editorHref) {
   return new URL(path, editorUrl.origin).href;
 }
 
+export function splitBilingualText(value = "") {
+  const text = String(value);
+  if (!text.includes("|")) return null;
+  const [first, ...rest] = text.split("|");
+  return { first: first.trim(), second: rest.join("|").trim() };
+}
+
 export function cleanArticle(article = {}, index = 0) {
   const cleaned = { slotId: String(index + 1) };
   for (const field of ARTICLE_FIELDS) {
@@ -250,14 +257,14 @@ export function validateArticles(input) {
     }
 
     if (FOREIGN_LANGUAGE_SLOTS.has(slot)) {
-      if (article.title && !article.title.includes("|")) {
+      if (article.title && (!article.title.includes("|") || !splitBilingualText(article.title).first || !splitBilingualText(article.title).second)) {
         errors.push(`Story ${slot} title needs “foreign language | English”.`);
       }
-      if (article.summary && !article.summary.includes("|")) {
+      if (article.summary && (!article.summary.includes("|") || !splitBilingualText(article.summary).first || !splitBilingualText(article.summary).second)) {
         errors.push(`Story ${slot} summary needs “foreign language | English”.`);
       }
-      if (article.kcsQuickShift && !article.kcsQuickShift.includes("|")) {
-        errors.push(`Story ${slot} QuickShift needs “English | foreign language”.`);
+      if (article.kcsQuickShift.includes("|") && (!splitBilingualText(article.kcsQuickShift).first || !splitBilingualText(article.kcsQuickShift).second)) {
+        errors.push(`Story ${slot} QuickShift needs both sides of “English | foreign language”.`);
       }
     }
   }

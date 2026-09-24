@@ -2,6 +2,11 @@
 
 This is the first isolated stage of the replacement Daily News Editor.
 
+From the project folder run `npm run start --prefix tools/daily-news-editor-v2`, then open
+`http://127.0.0.1:4179/`. Leave the terminal open while using the editor. The local
+server serves only the editor files and images already in the project under `public/img`.
+Opening `index.html` directly from disk may block JavaScript modules in some browsers.
+
 - It is not imported by the public website.
 - It has no GitHub or Netlify publishing connection.
 - It contains no AI features.

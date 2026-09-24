@@ -44,7 +44,7 @@ export const photoGalleryContent = {
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/ferrari/lewis/xpb-lewismadring.jpg",
+    src: "/img/news/xpb/Ferrari/lewis/xpb-lewismadring.jpg",
     alt: "TAG HEUER GRAN PREMIO DE ESPANA photo 6",
     credit: "XPB Images",
   },
@@ -368,7 +368,7 @@ export const photoGalleryContent = {
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/Races/leclerc/charlessilver3.jpg",
+    src: "/img/news/xpb/Races/charlessilver3.jpg",
     alt: "British Grand Prix weekend photo 3",
     credit: "XPB Images",
   },
@@ -421,7 +421,7 @@ export const photoGalleryContent = {
     credit: "XPB Images",
        },
         {
-    src: "/img/news/xpb/RedBull/xpb-maxaustria.jpg",
+    src: "/img/news/xpb/RedBull/max/xpb-maxaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 2",
     credit: "XPB Images",
        },
@@ -446,42 +446,42 @@ export const photoGalleryContent = {
     credit: "XPB Images",
        },
         {
-    src: "/img/news/xpb/Mercedes/xpb-kimiaustria.jpg",
+    src: "/img/news/xpb/Mercedes/Kimi/xpb-kimiaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 7",
     credit: "XPB Images",
        },
        {
-    src: "/img/news/xpb/Mercedes/xpb-kimiaustria2.jpg",
+    src: "/img/news/xpb/Mercedes/Kimi/xpb-kimiaustria2.jpg",
     alt: "Austrian Grand Prix weekend photo 8",
     credit: "XPB Images",
        },
        {
-    src: "/img/news/xpb/Mercedes/xpb-georgeaustria.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpb-georgeaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 9",
     credit: "XPB Images",
        },
        {
-    src: "/img/news/xpb/Mercedes/xpb-georgepolerb.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpb-georgepolerb.jpg",
     alt: "Austrian Grand Prix weekend photo 10",
     credit: "XPB Images",
        },
        {
-    src: "/img/news/xpb/Mercedes/xpb-georgepodiumaustria.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpb-georgepodiumaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 11",
     credit: "XPB Images",
        },
        {
-    src: "/img/news/xpb/Mercedes/xpb-georgewinaustria.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpb-georgewinaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 12",
     credit: "XPB Images",
        },
         {
-    src: "/img/news/xpb/ferrari/xpb-ferraricandl.jpg",
+    src: "/img/news/xpb/ferrari/leclerc/xpb-ferraricandl.jpg",
     alt: "Austrian Grand Prix weekend photo 13",
     credit: "XPB Images",
           },
         {
-    src: "/img/news/xpb/Cadillac/xpb-perezaustria.jpg",
+    src: "/img/news/xpb/Cadillac/perez/xpb-perezaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 14",
     credit: "XPB Images",
        },  
@@ -491,17 +491,17 @@ export const photoGalleryContent = {
     credit: "XPB Images",
        }, 
        {
-    src: "/img/news/xpb/Audi/xpb-gabbyaustria.jpg",
+    src: "/img/news/xpb/Audi/gabby/xpb-gabbyaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 16",
     credit: "XPB Images",
        }, 
        {
-    src: "/img/news/xpb/Audi/xpb-audiaustria.jpg",
+    src: "/img/news/xpb/Audi/hulkenburg/xpb-audiaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 17",
     credit: "XPB Images",
        }, 
         {
-    src: "/img/news/xpb/ferrari/xpb-fredaustria",
+    src: "/img/news/xpb/ferrari/xpb-fredaustria.jpg",
     alt: "Austrian Grand Prix weekend photo 17",
     credit: "XPB Images",
        }, 
@@ -513,22 +513,22 @@ export const photoGalleryContent = {
       dates: "Jun 12th - 14th 2026",
       images: [
   {
-    src: "/img/news/xpb/Williams/xpbcarlosspain.jpg",
+    src: "/img/news/xpb/Williams/carlos/xpbcarlosspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 1",
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/Visa/xpblawsonspain.jpg",
+    src: "/img/news/xpb/Visa/lawson/xpblawsonspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 2",
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/RedBull/xpbmaxspain.jpg",
+    src: "/img/news/xpb/RedBull/max/xpb-maxspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 3",
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/RedBull/xpbmaxspain2.jpg",
+    src: "/img/news/xpb/RedBull/max/xpb-maxspain2.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 4",
     credit: "XPB Images",
   },
@@ -543,50 +543,50 @@ export const photoGalleryContent = {
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/Mercedes/xpbgeorgekimispain.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpbgeorgekimispain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 7",
     credit: "XPB Images",
   },
   {
-    src: "/img/news/xpb/Mercedes/xpbkimispain.jpg",
+    src: "/img/news/xpb/Mercedes/Kimi/xpbkimispain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 8",
     credit: "XPB Images",
     },
      {
-    src: "/img/news/xpb/Mercedes/xpbgeorgepolespain.jpg",
+    src: "/img/news/xpb/Mercedes/George/xpbgeorgepolespain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 9",
     credit: "XPB Images",
     },
-        {
-    src: "/img/news/xpb/ferrari/xpblewiswin.jpg",
+    {
+    src: "/img/news/xpb/ferrari/lewis/xpblewisspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 10",
     credit: "XPB Images",
     },
-     {
-    src: "/img/news/xpb/ferrari/xpblewisspain2.jpg",
+        {
+    src: "/img/news/xpb/ferrari/lewis/xpblewiswin.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 11",
     credit: "XPB Images",
-    },{
-    src: "/img/news/xpb/ferrari/xpbhamiltonspianpit.jpg",
+    },
+     {
+    src: "/img/news/xpb/ferrari/lewis/xpblewisspain2.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 12",
     credit: "XPB Images",
-    },
-    {
-    src: "/img/news/xpb/ferrari/xpbcharlescrashspain.jpg",
+    },{
+    src: "/img/news/xpb/ferrari/lewis/xpb-hamiltonspain3.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 13",
     credit: "XPB Images",
     },
-   {
-    src: "/img/news/xpb/Cadillac/xpbbottasspain.jpg",
+    {
+    src: "/img/news/xpb/ferrari/leclerc/xpbcharlescrashspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 14",
     credit: "XPB Images",
-    }, 
-    {
-    src: "/img/news/xpb/Mclaren/news-xpblandomonaco.jpg",
+    },
+   {
+    src: "/img/news/xpb/Cadillac/bottas/xpbbottasspain.jpg",
     alt: "Barcelona-Catalunya Prix weekend photo 15",
     credit: "XPB Images",
-    },
-    ],
+    }, 
+        ],
   },
 ],
 };

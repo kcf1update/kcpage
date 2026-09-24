@@ -5,6 +5,7 @@ import {
   imagePreviewUrl,
   parseExportedArray,
   prepareFiles,
+  splitBilingualText,
   validateArticles,
 } from "./core.mjs";
 
@@ -36,6 +37,8 @@ const elements = {
   previewTitle: document.querySelector("#preview-title"),
   previewSummary: document.querySelector("#preview-summary"),
   previewQuickShift: document.querySelector("#preview-quickshift"),
+  previewCredit: document.querySelector("#preview-credit"),
+  previewDate: document.querySelector("#preview-date"),
   quickShiftCount: document.querySelector("#quickshift-count"),
   previewImage: document.querySelector("#preview-image"),
   previewImageStatus: document.querySelector("#preview-image-status"),
@@ -125,9 +128,11 @@ function renderForm() {
 function renderPreview() {
   const article = state.articles[state.selected];
   elements.previewSource.textContent = article.sourceLabel || "Source";
-  elements.previewTitle.textContent = article.title || "Headline preview";
-  elements.previewSummary.textContent = article.summary || "The story summary will appear here.";
-  elements.previewQuickShift.textContent = article.kcsQuickShift || "KC’s view will appear here.";
+  renderPreviewText(elements.previewTitle, article.title || "Headline preview", true);
+  renderPreviewText(elements.previewSummary, article.summary || "The story summary will appear here.", true);
+  renderPreviewText(elements.previewQuickShift, article.kcsQuickShift || "KC’s view will appear here.", false);
+  elements.previewCredit.textContent = article.photoCredit ? `Photo: ${article.photoCredit}` : "Photo credit will appear here";
+  elements.previewDate.textContent = article.dateLabel || "Date";
   const quickShift = String(article.kcsQuickShift || "").trim();
   const wordCount = quickShift ? quickShift.split(/\s+/).length : 0;
   elements.quickShiftCount.textContent = `${wordCount} ${wordCount === 1 ? "word" : "words"} · ${quickShift.length} ${quickShift.length === 1 ? "character" : "characters"}`;
@@ -145,6 +150,25 @@ function renderPreview() {
       elements.previewImageStatus.textContent = error.message;
     }
   }
+}
+
+function renderPreviewText(element, value, foreignFirst) {
+  const bilingual = splitBilingualText(value);
+  element.replaceChildren();
+  if (!bilingual) {
+    element.textContent = value;
+    return;
+  }
+  const first = document.createElement("span");
+  const separator = document.createElement("span");
+  const second = document.createElement("span");
+  first.className = foreignFirst ? "preview-foreign" : "preview-english";
+  second.className = foreignFirst ? "preview-english" : "preview-foreign";
+  first.textContent = bilingual.first;
+  separator.className = "preview-separator";
+  separator.textContent = " | ";
+  second.textContent = bilingual.second;
+  element.append(first, separator, second);
 }
 
 elements.previewImage.addEventListener("load", () => {

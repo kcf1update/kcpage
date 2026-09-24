@@ -9,22 +9,22 @@ export const youtubeSlots = [
 
   {
     slotId: "slot1",
-  title: "The Madring Verdict! How Does a Track THAT BAD Get Approved? ",
-  youtubeInput: "https://youtu.be/ptkSrUliEh0",
-  forceExternal: "blue"
+  title: "Why Baku Is a NIGHTMARE, Kimi's Title Odds & Alonso's EXIT Plan ",
+  youtubeInput: "https://youtu.be/iUqilclYjEg",
+  
   },
 
   {
     slotId: "slot2",
-    title: "F1 Race Press Conference - Spanish GP | Kimi Antonelli, Max Verstappen, Lando Norris",
-    youtubeInput: "https://youtu.be/FpAIYKWl_2c",
+    title: "Gabriel Bortoleto on his journey to Audi, Max Verstappen’s Mentorship & F1",
+    youtubeInput: "https://youtu.be/Q4AyOLgpLCY",
    
   },
 
   {
     slotId: "slot3",
-    title: "Radio Rewind | 2026 Spanish Grand Prix | Lenovo",
-    youtubeInput: "https://youtu.be/-pVhaRZrgnc",
-    forceExternal: "blue"
+    title: "OCON GONE! F1 News",
+    youtubeInput: "https://youtu.be/ElUjnS3dgzI",
+    
   }
 ];
