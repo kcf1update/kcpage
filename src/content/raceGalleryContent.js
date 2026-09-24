@@ -30,12 +30,12 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mercedes/George/xpb-georgebaku3.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
         {
-          src: "",
+          src: "/img/news/xpb/Aston/xpb-astonbaku.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },

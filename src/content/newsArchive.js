@@ -2,6 +2,67 @@
 
 export const newsArchive = [
   {
+ dateLabel: "September 23, 2026",
+  articles: [
+    {
+      sourceLabel: "Read Motorsport",
+      title: "F1 Race Delays Driven by Money Concerns in Middle East",
+      summary: "The uncertainty surrounding Formula 1 races in Qatar and Abu Dhabi may involve significant financial and contractual considerations in addition to regional concerns. Long-term promoter agreements, race-hosting fees and media-rights commitments can make cancelling or postponing an event financially complicated. The report highlights how Formula 1’s commercial obligations can play an important role when decisions are being made about whether a Grand Prix can proceed.",
+      kcsQuickShift: "That’s what I’ve been saying all along. If Formula 1 or the FIA puts money ahead of safety, it will be a huge black eye for the sport.",
+      url: "https://readmotorsport.com/2026/09/23/f1-race-delays-driven-by-money-concerns/"
+    },
+    {
+      sourceLabel: "FormulaPassion",
+      title: "Russell: Il segreto di Antonelli con le F1 2026? Gli piace il poco carico | Russell: Antonelli’s Secret With the 2026 F1 Cars? He Likes Low Downforce",
+      summary: "George Russell ritiene che la capacità di Kimi Antonelli di guidare bene con poco carico aerodinamico sia uno dei motivi per cui il giovane italiano si è adattato così bene alle monoposto di Formula 1 del 2026. In vista del Gran Premio dell’Azerbaijan, Russell ha anche confermato che non dovrebbe ricevere una penalità in griglia a Baku. Mercedes continua a gestire con attenzione il programma della power unit in preparazione a un circuito dove velocità sul dritto ed efficienza aerodinamica saranno particolarmente importanti. | George Russell believes Kimi Antonelli’s ability to perform well with low downforce is one reason the young Italian has adapted so effectively to the 2026 Formula 1 cars. Ahead of the Azerbaijan Grand Prix, Russell also confirmed that he is not expected to take a grid penalty in Baku. Mercedes continues to carefully manage its power-unit programme as the team prepares for a circuit where straight-line speed and aerodynamic efficiency will be particularly important.",
+      kcsQuickShift: "The greats adapt quickly and continue to win.",
+      url: "https://www.formulapassion.it/f1/f1-news/russell-guida-antonelli-perfetta-f1-2026-poco-carico-no-penalita-griglia-motore-aduo-arrivo"
+    },
+    {
+      sourceLabel: "RacingNews365",
+      title: "Pierre Gasly Reveals Shocking Extent of Disturbing Abuse After Alpine Incident",
+      summary: "Pierre Gasly has spoken about the disturbing online abuse directed at him and people close to him following the controversial Alpine situation at the Spanish Grand Prix in Madrid. Gasly says criticism escalated into unacceptable personal abuse and threats involving his family and girlfriend. The Alpine driver says the matter has been discussed internally with the team and believes Formula 1 needs to find ways to create a healthier online environment while still allowing fans to express legitimate opinions about the sport.",
+      kcsQuickShift: "This is such a disturbing story. The amount of online abuse directed at drivers and their families is absolutely stunning.",
+      url: "https://racingnews365.com/pierre-gasly-reveals-shocking-extent-of-disturbing-abuse-after-alpine-incident"
+    },
+    {
+      sourceLabel: "RacingNews365",
+      title: "Esteban Ocon Confirms Free Agent Status as Haas F1 Doubts Grow",
+      summary: "Esteban Ocon has confirmed that he is currently a free agent for the 2027 Formula 1 season as uncertainty continues over his future with Haas. Ocon says discussions are taking place and confirmed that he is speaking with other teams, while acknowledging that some parts of the situation are outside his control. After a difficult 2026 campaign, speculation continues over whether the experienced French driver will remain with Haas next season.",
+      kcsQuickShift: "I think pretty much everyone saw this coming. What happened to Ocon? He is a race winner and, at one time, was considered one of Formula 1’s top prospects.",
+      url: "https://racingnews365.com/esteban-ocon-confirms-free-agent-status-as-haas-f1-doubts-grow"
+    },
+    {
+      sourceLabel: "RacingNews365",
+      title: "Lando Norris Rubbishes George Russell Claim Over 2026 F1 Cars",
+      summary: "Lando Norris has rejected George Russell’s suggestion that certain driving styles are naturally better suited to Formula 1’s new-generation 2026 cars. Norris argues that his own performances are the result of adaptability rather than having a driving style that automatically suits the McLaren. He says the 2026 cars feel dramatically different from last year’s machinery and believes a driver’s ability to adjust to changing car characteristics is one of the most important strengths in Formula 1.",
+      kcsQuickShift: "It is rubbish. Listen to Peter Windsor’s podcast — he explains it pretty well. The great drivers adapt to the car they are given; that is part of what separates the very best from the rest.",
+      url: "https://racingnews365.com/lando-norris-rubbishes-george-russell-claim-over-2026-f1-cars"
+    },
+    {
+      sourceLabel: "FormulaPassion",
+      title: "Leclerc sogna la quinta pole, ma ammette: Sarà difficile. E non scioglie il nodo penalità ADUO-2 | Leclerc Dreams of a Fifth Pole but Admits It Will Be Difficult",
+      summary: "Charles Leclerc arriva a Baku con l’obiettivo di continuare il suo straordinario record in qualifica al Gran Premio dell’Azerbaijan, cercando di conquistare la quinta pole position consecutiva sul circuito. Il pilota Ferrari ammette però che sarà difficile con la SF-26, soprattutto considerando le prestazioni della squadra in qualifica in questa stagione. Ferrari sta inoltre continuando a valutare la situazione della power unit, lasciando aperta la possibilità di una penalità in griglia a seconda dei componenti che il team dovrà utilizzare durante il fine settimana. | Charles Leclerc arrives in Baku hoping to continue his remarkable qualifying record at the Azerbaijan Grand Prix by fighting for a fifth consecutive pole position at the circuit. The Ferrari driver admits achieving it will be difficult with the SF-26, particularly given the team’s qualifying performance this season. Ferrari is also continuing to assess its power-unit situation, leaving open the possibility of a grid penalty depending on what equipment the team needs to use during the weekend.",
+      kcsQuickShift: "I think it could be a difficult weekend for Ferrari. They just do not seem to have the outright speed right now. If Charles has any hope of taking pole, he is going to have to be absolutely perfect. He has been fast and perfect in Baku before, so I am not saying it cannot or will not happen. | Penso che potrebbe essere un fine settimana difficile per la Ferrari. In questo momento non sembra avere la velocità pura necessaria. Se Charles vuole avere qualche possibilità di conquistare la pole, dovrà essere assolutamente perfetto. A Baku è già stato veloce e perfetto in passato, quindi non sto dicendo che non possa o non riuscirà a farcela.",
+      url: "https://www.formulapassion.it/f1/f1-news/leclerc-sogna-quinta-pole-ammette-difficile-non-scioglie-nodo-penalita-aduo-2-ferrari-baku"
+    },
+    {
+      sourceLabel: "GrandPrix247",
+      title: "Some Technical Insights Ahead of the 2026 Formula 1 Azerbaijan Grand Prix in Baku",
+      summary: "Energy management, tyre preparation and changing track conditions are expected to play major roles at this weekend’s Azerbaijan Grand Prix. Baku’s exceptionally long full-throttle sections will place heavy demands on the 2026 energy systems, while the new cars’ lower downforce could make some previously flat-out sections more challenging. Generating tyre temperature on Baku’s smooth, low-grip surface could also become an important qualifying factor, while relatively low degradation means a one-stop strategy is likely to remain attractive during the race.",
+      kcsQuickShift: "Baku always seems to find a way to expose a weakness in a car. Energy management, tyre temperature and low downforce are all going to matter this weekend, and whoever gets that balance right early will be fast. McLaren or Mercedes?",
+      url: "https://www.grandprix247.com/formula-1-news/some-technical-insights-ahead-of-the-2026-formula-1-azerbaijan-grand-prix-in-baku"
+    },
+    {
+      sourceLabel: "Express",
+      title: "F1 LIVE: Lewis Hamilton and Ferrari Latest Ahead of Azerbaijan Grand Prix",
+      summary: "Formula 1’s attention turns to Baku as teams and drivers prepare for the Azerbaijan Grand Prix, with Ferrari and Lewis Hamilton among the major talking points heading into the race weekend. The latest developments from the paddock include preparations for one of the calendar’s fastest and most unpredictable street circuits as teams look to establish where they stand before track action begins.",
+      kcsQuickShift: "Let's put all the chatter behind us and have a good safe race... on Saturday",
+      url: "https://www.express.co.uk/sport/f1-autosport/2250900/F1-LIVE-Lewis-Hamilton-Ferrari-Azerbaijan-GP"
+    }
+  ]
+},
+  {
   dateLabel: "September 22, 2026",
   articles: [
     {
