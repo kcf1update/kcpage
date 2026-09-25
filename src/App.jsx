@@ -20,7 +20,6 @@ import AboutPage from "./AboutPage";
 import PressPage from "./PressPage";
 import PreviousResultsPage from "./PreviousResultsPage";
 import PhotoGalleryPage from "./PhotoGalleryPage";
-import DailyNewsEditorPage from "./DailyNewsEditorPage";
 import { slugToDateLabel } from "./archiveUtils";
 
 const pageMetadata = {
@@ -73,12 +72,6 @@ const pageMetadata = {
     title: "Press & Media | KC's Worldwide F1 Update",
     description:
       "Press, media and partnership information for KC's Worldwide F1 Update.",
-  },
-  "/kc-daily-news-editor": {
-    title: "Private Daily News Editor | KC's F1 Update",
-    description: "Private news publishing workspace.",
-    robots: "noindex, nofollow, noarchive",
-    canonical: false,
   },
 };
 
@@ -139,44 +132,17 @@ function SeoManager() {
 
     const canonicalPath = pathname === "/" ? "/" : pathname;
 
-    if (metadata.canonical === false) {
-      canonicalTag.removeAttribute("href");
-    } else {
-      canonicalTag.setAttribute("href", `https://kcf1update.ca${canonicalPath}`);
-    }
+    canonicalTag.setAttribute("href", `https://kcf1update.ca${canonicalPath}`);
   }, [location.pathname]);
 
   return null;
 }
 
-
-function IdentityCallbackRedirect() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const identityCallback =
-      /^#(?:confirmation_token|recovery_token|invite_token|email_change_token|access_token)=/.test(
-        window.location.hash
-      );
-
-    if (
-      identityCallback &&
-      location.pathname !== "/kc-daily-news-editor"
-    ) {
-      window.location.replace(
-        `/kc-daily-news-editor${window.location.hash}`
-      );
-    }
-  }, [location.pathname]);
-
-  return null;
-}
 
 export default function App() {
   return (
     <BrowserRouter>
       <SeoManager />
-      <IdentityCallbackRedirect />
 
       <div className="min-h-screen flex flex-col">
         <div className="flex-1">
@@ -205,7 +171,6 @@ export default function App() {
             <Route path="/comments" element={<CommentsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/press" element={<PressPage />} />
-            <Route path="/kc-daily-news-editor" element={<DailyNewsEditorPage />} />
             <Route path="*" element={<MainPage />} />
           </Routes>
         </div>

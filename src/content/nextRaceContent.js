@@ -381,13 +381,57 @@ const PASTE_P1 = `
 `;
 
 const PASTE_P2 = `
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m43.347s
+2	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m43.899s
+3	Max Verstappen	NED	Oracle Red Bull Racing	1m44.174s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	1m44.473s
+5	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m44.665s
+6	Lando Norris	GBR	McLaren Mastercard F1 Team	1m44.831s
+7	Pierre Gasly	FRA	BWT Alpine F1 Team	1m44.843s
+8	Oscar Piastri 	AUS	McLaren Mastercard F1 Team	1m44.857s
+9	Isack Hadjar 	FRA	Oracle Red Bull Racing	1m44.868s
+10	Esteban Ocon	FRA	TGR Haas F1 Team	1m45.290s
+11	Franco Colapinto	ARG	BWT Alpine F1 Team	1m45.479s
+12	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m45.681s
+13	Sergio Perez	MEX	Cadillac F1 Team	1m45.760s
+14	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m45.794s
+15	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m45.854s
+16	Alex Albon	THA	Atlassian Williams F1 Team	1m46.123s
+17	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m46.221s
+18	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m46.391s
+19	Valtteri Bottas	FIN	Cadillac F1 Team	1m46.737s
+20	Ollie Bearman	GBR	TGR Haas F1 Team	1m46.801s
+21	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m47.403s
+22	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m47.889s
+
 
 
 
 `;
 
 const PASTE_P3 = `
-
+1	Max Verstappen	NED	Oracle Red Bull Racing	1m43.922s
+2	George Russell	GBR	Mercedes AMG Petronas F1 Team	1m44.021s
+3	Lewis Hamilton	GBR	Scuderia Ferrari HP	1m44.033s
+4	Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	1m44.273s
+5	Charles Leclerc	MON	Scuderia Ferrari HP	1m44.544s
+6	Pierre Gasly	FRA	BWT Alpine F1 Team	1m44.637s
+7	Oscar Piastri 	AUS	McLaren Mastercard F1 Team	1m44.746s
+8	Lando Norris	GBR	McLaren Mastercard F1 Team	1m44.899s
+9	Isack Hadjar 	FRA	Oracle Red Bull Racing	1m45.176s
+10	Franco Colapinto	ARG	BWT Alpine F1 Team	1m45.592s
+11	Carlos Sainz	ESP	Atlassian Williams F1 Team	1m45.605s
+12	Ollie Bearman	GBR	TGR Haas F1 Team	1m45.692s
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	1m45.854s
+14	Esteban Ocon	FRA	TGR Haas F1 Team	1m45.918s
+15	Nico Hulkenberg	GER	Audi Revolut F1 Team	1m45.988s
+16	Sergio Perez	MEX	Cadillac F1 Team	1m46.004s
+17	Alex Albon	THA	Atlassian Williams F1 Team	1m46.076s
+18	Liam Lawson	NZL	Visa Cash App Racing Bulls F1 Team	1m46.222s
+19	Arvid Lindblad	GBR	Visa Cash App Racing Bulls F1 Team	1m46.271s
+20	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	1m46.512s
+21	Valtteri Bottas	FIN	Cadillac F1 Team	1m48.587s
+22	Lance Stroll	CAN	Aston Martin Aramco F1 Team	1m49.279s
 `;
 const PASTE_SQ = `
 
@@ -494,31 +538,36 @@ export const raceWeekendRecap = {
     },
   ],
 },
-    {
+ 
+  {
   heading: "Practice 2",
   items: [
     {
-      title: "",
-      summary: "",
-      url: "",
+      title: "Russell Sweeps Thursday Practice as Lindblad Hits the Wall in Baku",
+      summary: "George Russell ended the opening day of the Azerbaijan Grand Prix fastest in both practice sessions. His 1:43.347 in FP2 put him more than half a second ahead of Mercedes teammate Kimi Antonelli, who recovered from the hydraulic problem that cut short his FP1 running. Max Verstappen was third despite reporting a difficult ride in his Red Bull, followed by Charles Leclerc and Lewis Hamilton. The session was interrupted when Arvid Lindblad struck the wall in the narrow castle section, causing a red flag. Ollie Bearman later stopped with an engine problem. Lando Norris finished sixth and Oscar Piastri eighth for McLaren.",
+      url: "https://www.the-race.com/formula-1/what-happened-in-second-azerbaijan-gp-f1-practice/",
     },
   ],
 },
 {
   heading: "Practice 3",
   items: [
- {
-  title: "",
-  summary:
-    "",
-  url: "",
-},
+    {
+      title: "Verstappen Edges Russell and Hamilton in Final Baku Practice",
+      summary: `Max Verstappen topped final practice for the Azerbaijan Grand Prix with a lap of 1:43.922, putting Red Bull just 0.099 seconds ahead of George Russell’s Mercedes. Lewis Hamilton finished third for Ferrari, only 0.111 seconds behind Verstappen, leaving three teams closely matched heading into qualifying.
+
+Russell set the early benchmark after leading both Thursday sessions, but Verstappen improved across repeated attempts on soft tyres. A tow from Charles Leclerc helped his fastest lap, although a later attempt ended with a lock-up at Turn 15. Russell also had a late scare at Turn 7, narrowly avoiding the barrier.
+
+Hamilton climbed to third after Ferrari inspected his front-left brake, benefiting from slipstreams along the main straight. Kimi Antonelli finished fourth, followed by Leclerc and Alpine’s Pierre Gasly. McLaren remained outside the leading group: Oscar Piastri struggled with confidence into Turn 1 and finished seventh, ahead of Lando Norris.
+
+Isack Hadjar and Franco Colapinto completed the top ten. Increasing wind contributed to mistakes, while Lance Stroll clipped the wall at Turn 1 and subsequently stopped. The session left a close contest at the front, with qualifying still needed to establish the true order.`,
+           url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-final-practice/",
+    },
   ],
 },
-
-          {
-            heading: "Qualifying",
-            items: [
+{
+  heading: "Qualifying",
+  items: [
               {
                 title: "",
 summary:
@@ -594,7 +643,7 @@ export const nextRaceContent = {
           id: "p2",
           type: "practice",
           label: "Practice 2",
-          time: "9:00 AM ADT",
+          time: "Russell fastest again, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P2),
@@ -603,7 +652,7 @@ export const nextRaceContent = {
           id: "p3",
           type: "practice",
           label: "Practice 3",
-          time: "5:30 AM ADT",
+          time: "Verstappen Fastest, full results below",
           trackNote: "",
           extraNote: "",
           results: parseLapPaste(PASTE_P3),

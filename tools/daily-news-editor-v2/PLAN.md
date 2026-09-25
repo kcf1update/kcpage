@@ -1,5 +1,7 @@
 # Daily News Editor v2 plan
 
+The isolated editor branch now incorporates the latest reviewed `main` content and removes the original editor's route, page, publishing function, documentation, tests, and direct dependencies. None of this is live until Kevin reviews and approves a merge and deployment. The v2 tool remains offline: a local browser draft and reviewed file downloads, with no private login or publishing endpoint yet. Before adding shared drafts or publishing, test invitation-only Netlify Identity on a preview deployment and enforce authorization in server functions; do not treat a hidden route as private access.
+
 ## Non-negotiable requirements
 
 - No built-in AI.

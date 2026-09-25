@@ -30,12 +30,12 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/Mercedes/George/xpb-georgebaku3.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
         {
-          src: "",
+          src: "/img/news/xpb/Aston/xpb-astonbaku.jpg",
           alt: "Friday race weekend gallery image 3",
           credit: "XPB Images",     
            },
@@ -48,12 +48,12 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/RedBull/max/xpb-maxbaku2.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/xpb-safteybaku.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },
