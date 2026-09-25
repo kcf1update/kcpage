@@ -2,6 +2,81 @@
 
 export const newsArchive = [
   {
+    dateLabel: "September 24, 2026",
+    articles: [
+      {
+        sourceLabel: "The Race",
+        title: "Russell Sweeps Thursday Practice as Lindblad Crashes in Baku FP2",
+        summary: "George Russell completed a Thursday practice sweep at the Azerbaijan Grand Prix, setting a 1:43.347 to lead FP2 by just over half a second. Mercedes teammate Kimi Antonelli recovered from the hydraulic problem that ended his first session early to finish second, with Max Verstappen third despite complaints about the ride of his Red Bull. Arvid Lindblad brought out a red flag after hitting the wall in Baku's narrow castle section, his second FP2 crash in consecutive race weekends. Ollie Bearman later stopped with an engine problem. Charles Leclerc and Lewis Hamilton finished fourth and fifth, while McLaren's Lando Norris and Oscar Piastri were sixth and eighth.",
+        kcsQuickShift: "Russell has been quick all day, but it is good to see Antonelli back near the top after missing so much of FP1. Lindblad has had two rough Friday-style sessions in a row. Baku's walls do not give anyone much room to recover from a mistake.",
+        url: "https://www.the-race.com/formula-1/what-happened-in-second-azerbaijan-gp-f1-practice/"
+      },
+      {
+        sourceLabel: "Formel1.de",
+        title: "Russell vor Antonelli: Mercedes deklassiert Gegner am Baku-Donnerstag | Russell Ahead of Antonelli as Mercedes Dominates Thursday in Baku",
+        summary: "Mercedes bestimmte den ersten Trainingstag in Baku. George Russell fuhr in beiden Einheiten die Bestzeit und setzte sich im zweiten freien Training mit 1:43,347 Minuten um mehr als eine halbe Sekunde von Teamkollege Kimi Antonelli ab. Antonelli kehrte nach einem Hydraulikproblem im ersten Training auf die Strecke zurück. Max Verstappen wurde Dritter, vor Charles Leclerc und Lewis Hamilton. Ein Unfall von Arvid Lindblad im engen Burgabschnitt sorgte für eine rote Flagge. | Mercedes set the pace throughout the opening day in Baku. George Russell topped both sessions and led second practice with a 1:43.347, more than half a second ahead of teammate Kimi Antonelli. Antonelli returned to the track after a hydraulic problem cut short his first session. Max Verstappen finished third, followed by Charles Leclerc and Lewis Hamilton. Arvid Lindblad's crash in the narrow castle section brought out a red flag.",
+        kcsQuickShift: "That is a strong opening day for Mercedes, especially with Antonelli getting back up to speed after his FP1 problem. Russell looks comfortable here, but I want to see whether that gap is still there in qualifying. | Das war ein starker Auftakt für Mercedes, besonders weil Antonelli nach seinem Problem im ersten Training wieder schnell war. Russell scheint sich hier wohlzufühlen, aber ich möchte sehen, ob der Vorsprung im Qualifying noch da ist.",
+        url: "https://www.formel1.de/news/grand-prix-berichte/2026-09-24/russell-vor-antonelli-mercedes-deklassiert-gegner-am-baku-donnerstag"
+      },
+      {
+        sourceLabel: "Crash.net",
+        title: "Red Bull Clarifies Isack Hadjar's Contract After New Deal Confusion",
+        summary: "Red Bull has clarified that Isack Hadjar is part of a long-term agreement with the team and that it exercised an option to keep him alongside Max Verstappen for 2027. The explanation followed confusion when Hadjar said he did not know the exact length of his deal. Team boss Laurent Mekies said Hadjar's speed, progress and integration with the team made the decision straightforward.",
+        kcsQuickShift: "Hadjar saying he did not know how long his contract runs gave me a laugh. He has earned another season beside Max, and I hope Red Bull gives Lawson a fair look when it decides what comes next.",
+        url: "https://www.crash.net/f1/news/1105201/1/isack-hadjar-red-bull-f1-contract-length-addressed-after-new-deal-confusion"
+      },
+      {
+        sourceLabel: "Marca",
+        title: "Del muro del Madring a Bakú: el nuevo reto de Lindblad | From the Madring Wall to Baku: Lindblad's Next Challenge",
+        summary: "Arvid Lindblad llega a Bakú después de chocar contra el muro durante los entrenamientos del Gran Premio de España en el Madring. El circuito urbano de Azerbaiyán le plantea otro fin de semana en el que la confianza y la precisión serán importantes. | Arvid Lindblad heads to Baku after hitting the wall during practice for the Spanish Grand Prix at the Madring. Azerbaijan's street circuit presents another weekend where confidence and precision will matter.",
+        kcsQuickShift: "He hit the wall in Madrid, but that is part of learning these unforgiving circuits. I hope he puts it behind him and has a clean, strong weekend in Baku. | Chocó contra el muro en Madrid, pero eso forma parte de aprender en circuitos que no perdonan. Espero que lo deje atrás y tenga un fin de semana limpio y sólido en Bakú.",
+        url: "https://www.marca.com/motor/formula1/gp-azerbaiyan/2026/09/24/lindblad-muro-madring-baku.html"
+      },
+      {
+        sourceLabel: "ESPN",
+        title: "Lewis Hamilton Says Shorter F1 Races in 2027 Make No Sense",
+        summary: "Lewis Hamilton has criticised the decision to shorten Formula 1 Grands Prix in 2027. The standard race distance is set to fall from 305 kilometres to 290 kilometres, amounting to roughly two or three fewer laps at most circuits, as the sport adjusts to changes in fuel consumption. Hamilton argues that races should continue to test drivers physically rather than become shorter.",
+        kcsQuickShift: "I understand Lewis's point, but two or three fewer laps will hardly be noticeable to most fans. I would rather see Formula 1 solve the fuel issue than shorten the races to work around it.",
+        url: "https://www.espn.co.uk/f1/story/_/id/50011892/lewis-hamilton-f1-races-becoming-shorter-2027-makes-no-sense-azerbaijan-grand-prix-baku-formula-1"
+      },
+      {
+        sourceLabel: "RacingNews365",
+        title: "Audi Confirms Bortoleto and Hülkenberg for 2027 F1 Season",
+        summary: "Audi will retain Gabriel Bortoleto and Nico Hülkenberg as its Formula 1 drivers for 2027. Team boss Mattia Binotto confirmed in Baku that the team will continue with its current pairing for a second season under the Audi name. The decision gives the developing works team continuity as it works to close the gap to its midfield rivals.",
+        kcsQuickShift: "This makes sense to me. Audi is still building its Formula 1 team, and keeping Bortoleto and Hülkenberg together gives it some consistency. Now I want to see what they can do with the car.",
+        url: "https://racingnews365.com/audi-confirm-2027-f1-driver-line-up"
+      },
+      {
+        sourceLabel: "Motorsport.com",
+        title: "Red Bull Brings Its Final Major 2026 Upgrade to Baku",
+        summary: "Red Bull has brought what team boss Laurent Mekies expects to be its final significant upgrade package of 2026 to the Azerbaijan Grand Prix. Changes include the floor, sidepods and mirror assembly, and both Max Verstappen and Isack Hadjar will use the same specification. Red Bull has shifted most of its development resources toward 2027 but still hopes to claim its first win of this season.",
+        kcsQuickShift: "Red Bull has looked closer lately. I am interested to see whether this last upgrade gives Max and Isack enough to fight for a win, or whether the team will have to wait until next year.",
+        url: "https://www.motorsport.com/f1/news/red-bull-confirms-final-major-f1-upgrade-of-2026-for-max-verstappen-and-isack-hadjar/10858533/"
+      },
+      {
+        sourceLabel: "F1news.se",
+        title: "Därför har Ferrari tappat – nya delar på väg | Why Ferrari Has Lost Ground as New Parts Are on the Way",
+        summary: "Ferrari har tappat mark sedan sommaruppehållet. Enligt artikeln var uppdateringen i Zandvoort mindre än det ursprungligen planerade paketet, eftersom vissa ändringar behövde mer utvecklingsarbete. En större uppdatering av bland annat golvet väntas till USA:s Grand Prix i Austin. | Ferrari has lost ground since the summer break. According to the article, its Zandvoort update was smaller than originally planned because some changes needed more development work. A larger update, including work on the floor, is expected for the United States Grand Prix in Austin.",
+        kcsQuickShift: "Ferrari cannot afford to stand still while its rivals keep improving. Austin is still a while away, so they need to get everything they can out of the car they have right now. | Ferrari har inte råd att stå stilla medan konkurrenterna fortsätter att utvecklas. Det är fortfarande ett tag kvar till Austin, så de måste få ut allt de kan av bilen de har just nu.",
+        url: "https://f1news.se/darfor-har-ferrari-tappat-nya-delar-pa-vag"
+      },
+      {
+        sourceLabel: "Formula 1",
+        title: "Komatsu Expects Haas 2027 Driver Decision Within Weeks",
+        summary: "Haas team principal Ayao Komatsu says the team expects to decide its 2027 driver line-up within the next couple of weeks. Esteban Ocon has described himself as a free agent for next season, although discussions about his future continue. Haas has yet to confirm who will fill its seats, leaving Ocon and other potential candidates waiting for a decision.",
+        kcsQuickShift: "That is going to be an interesting decision. Ocon has the experience, but Haas also has to think about where it wants to be in a couple of years. I hope whoever gets the seat is given a proper chance.",
+        url: "https://www.formula1.com/en/latest/article/within-the-next-couple-of-weeks-komatsu-reveals-timeline-for-haas-2027-driver-line-up-decision.3BCkQ2eO3S0dCAynRFkTgA"
+      },
+      {
+        sourceLabel: "Motorsport.com",
+        title: "Why a Decision on the Qatar and Abu Dhabi Grands Prix Is Taking So Long",
+        summary: "Formula 1 has yet to decide whether its season-ending races in Qatar and Abu Dhabi can proceed amid the conflict in the Middle East. The report says disagreements over who would bear the financial cost of cancellation are part of the delay. Freight planning, travel advice and the need for enough races to meet broadcast commitments also complicate the decision. For now, the races remain scheduled, and the report suggests cancellation may be becoming less likely.",
+        kcsQuickShift: "I understand that contracts and money make this complicated, but the teams need a clear answer soon. If travel cannot be made safe, Formula 1 has to make that call regardless of who pays for it.",
+        url: "https://www.motorsport.com/f1/news/whats-behind-the-delay-in-cancelling-the-qatar-and-abu-dhabi-gps/10858214/"
+      }
+    ]
+  },
+  {
  dateLabel: "September 23, 2026",
   articles: [
     {
