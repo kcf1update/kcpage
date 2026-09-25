@@ -1,6 +1,25 @@
 // src/content/newsArchive.js
 
 export const newsArchive = [
+    {
+    dateLabel: "September 25, 2026",
+    articles: [
+      {
+        sourceLabel: "The Race",
+        title: "Verstappen Edges Russell as Top Three Finish Within a Tenth in Baku",
+        summary: "Max Verstappen topped final practice for the Azerbaijan Grand Prix, beating George Russell by 0.099 seconds. Lewis Hamilton finished third, just 0.111 seconds off the pace, ahead of Kimi Antonelli and Charles Leclerc. McLaren remained further back, with Oscar Piastri seventh and Lando Norris eighth ahead of qualifying.",
+        kcsQuickShift: "As always Max and his engineering team and the ones doing the sim work back at Milton Keynes find the extra speed. Surprised with McLaren, what about with their car?  ",
+        url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-final-practice/"
+      },
+      {
+        sourceLabel: "Report.az",
+        title: "Ferstappen Bakıda üçüncü sərbəst yürüşdə ən sürətli olub | Verstappen Fastest in Final Practice in Baku",
+        summary: "Bakıda üçüncü sərbəst yürüşü Red Bull pilotu Maks Ferstappen lider tamamlayıb. Mercedes sürücüsü Corc Rassell ikinci, Ferrari pilotu Lyuis Hemilton isə üçüncü olub. Əvvəlki gün hər iki məşq sessiyasında Rassell ən sürətli idi. Sıralama turu bu gün, əsas yarış isə sentyabrın 26-da keçiriləcək. | Max Verstappen led final practice in Baku for Red Bull, ahead of Mercedes driver George Russell and Ferrari’s Lewis Hamilton. Russell had topped both practice sessions the previous day. Qualifying takes place today, with the main race scheduled for September 26.",
+        kcsQuickShift: "Should be a exciting qualifying | Maraqlı sıralama turu olacağı gözlənilir! ",
+        url: "https://report.az/formula-1/formula-1-uzre-azerbaycan-qran-prisinde-ucuncu-serbest-yurus-baslayib"
+      }
+    ]
+  },
   {
     dateLabel: "September 24, 2026",
     articles: [

@@ -58,12 +58,12 @@ export const raceGalleryContent = {
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/Mercedes/George/xpb-georgebakupole.jpg",
           alt: "Saturday race weekend gallery image 3",
           credit: "XPB Images",
         },
          {
-          src: "",
+          src: "/img/news/xpb/RedBull/max/xpb-maxbakurace.jpg",
           alt: "Race day gallery image 1",
           credit: "XPB Images",
         },

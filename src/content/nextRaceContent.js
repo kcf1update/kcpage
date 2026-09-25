@@ -442,6 +442,116 @@ const PASTE_SPRINT = `
 
 `;
 const PASTE_Q = `
+1	63	
+
+George Russell
+
+Mercedes	1:43.615	1:43.462	1:42.526	26
+2	16	
+
+Charles Leclerc
+
+Ferrari	1:44.360	1:43.780	1:43.363	23
+3	81	
+
+Oscar Piastri
+
+McLaren	1:45.014	1:43.814	1:43.364	22
+4	6	
+
+Isack Hadjar
+
+Red Bull Racing	1:44.161	1:43.880	1:43.500	21
+5	1	
+
+Lando Norris
+
+McLaren	1:44.571	1:44.020	1:43.672	21
+6	44	
+
+Lewis Hamilton
+
+Ferrari	1:44.260	1:44.037	1:43.858	22
+7	10	
+
+Pierre Gasly
+
+Alpine	1:44.489	1:44.106	1:44.047	20
+8	3	
+
+Max Verstappen
+
+Red Bull Racing	1:44.041	1:43.706	1:44.081	24
+9	55	
+
+Carlos Sainz
+
+Williams	1:45.104	1:44.629	1:44.566	25
+10	43	
+
+Franco Colapinto
+
+Alpine	1:45.106	1:44.683	1:44.963	21
+11	87	
+
+Ollie Bearman
+
+Haas F1 Team	1:45.228	1:44.775		17
+12	30	
+
+Liam Lawson
+
+Racing Bulls	1:45.535	1:44.860		18
+13	23	
+
+Alex Albon
+
+Williams	1:45.031	1:45.001		17
+14	31	
+
+Esteban Ocon
+
+Haas F1 Team	1:45.039	1:45.016		18
+15	41	
+
+Arvid Lindblad
+
+Racing Bulls	1:45.381	1:45.106		16
+16	12	
+
+Kimi Antonelli
+
+Mercedes	1:45.504			5
+17	5	
+
+Gabriel Bortoleto
+
+Audi	1:45.799			10
+18	27	
+
+Nico Hulkenberg
+
+Audi	1:45.920			10
+19	14	
+
+Fernando Alonso
+
+Aston Martin	1:46.593			9
+20	11	
+
+Sergio Perez
+
+Cadillac	1:46.658			9
+21	18	
+
+Lance Stroll
+
+Aston Martin	1:47.337			9
+22	77	
+
+Valtteri Bottas
+
+Cadillac	1:48.290			10
 
 `;
 
@@ -568,14 +678,17 @@ Isack Hadjar and Franco Colapinto completed the top ten. Increasing wind contrib
 {
   heading: "Qualifying",
   items: [
-              {
-                title: "",
-summary:
-   "",
-                url: "",
-              },
-            ],
-          },
+    {
+      title: "Russell Takes Baku Pole by Eight Tenths as Antonelli Crashes Out",
+      summary: `George Russell took pole position for the Azerbaijan Grand Prix with a 1m 42.526s lap, finishing 0.837 seconds clear of Charles Leclerc. Oscar Piastri was third, just 0.001 seconds behind Leclerc, while Isack Hadjar qualified fourth on his return to Red Bull.
+
+Kimi Antonelli hit the wall at Turn 1 in Q1 and ended up 16th. Lando Norris qualified fifth after locking up on his final attempt.
+
+Max Verstappen qualified eighth after reporting battery and power problems with his Red Bull. The team now has to investigate those problems before the race.`,
+      url: "https://www.formula1.com/en/latest/article/russell-charges-to-pole-position-as-antonelli-suffers-shock-exit-in-qualifying-for-azerbaijan-gp.6vFe7216mR8JZuWE4QIB4w",
+    },
+  ],
+},
           {
             heading: "Race",
             items: [
@@ -661,7 +774,7 @@ export const nextRaceContent = {
           id: "q",
           type: "qualifying",
           label: "Qualifying",
-          time: "9:00 AM ADT"  ,
+          time: "Russell on pole, full results below"  ,
           trackNote: "",
           extraNote: "",
           results: parseQualifyingPaste(PASTE_Q),
