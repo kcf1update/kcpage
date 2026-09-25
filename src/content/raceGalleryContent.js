@@ -48,12 +48,12 @@ export const raceGalleryContent = {
       description: "Qualifying day photos from the race weekend.",
       images: [
         {
-          src: "",
+          src: "/img/news/xpb/RedBull/max/xpb-maxbaku2.jpg",
           alt: "Saturday race weekend gallery image 1",
           credit: "XPB Images",
         },
         {
-          src: "",
+          src: "/img/news/xpb/xpb-safteybaku.jpg",
           alt: "Saturday race weekend gallery image 2",
           credit: "XPB Images",
         },

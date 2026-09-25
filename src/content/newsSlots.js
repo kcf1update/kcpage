@@ -1,27 +1,30 @@
 export const newsSlots = [
- {
-  slotId: 1,
+ 
+  {
+  slotId: "news-01",
   sourceLabel: "The Race",
-  title: "Russell Sweeps Thursday Practice as Lindblad Crashes in Baku FP2",
-  summary: "George Russell completed a Thursday practice sweep at the Azerbaijan Grand Prix, setting a 1:43.347 to lead FP2 by just over half a second. Mercedes teammate Kimi Antonelli recovered from the hydraulic problem that ended his first session early to finish second, with Max Verstappen third despite complaints about the ride of his Red Bull. Arvid Lindblad brought out a red flag after hitting the wall in Baku's narrow castle section, his second FP2 crash in consecutive race weekends. Ollie Bearman later stopped with an engine problem. Charles Leclerc and Lewis Hamilton finished fourth and fifth, while McLaren's Lando Norris and Oscar Piastri were sixth and eighth.",
-  kcsQuickShift: "Russell has been quick all day, but it is good to see Antonelli back near the top after missing so much of FP1. Lindblad has had two rough Friday-style sessions in a row. Baku's walls do not give anyone much room to recover from a mistake.",
-  url: "https://www.the-race.com/formula-1/what-happened-in-second-azerbaijan-gp-f1-practice/",
-  imagePath: "/img/news/xpb/Mercedes/George/xpb-georgebaku3.jpg",
+  title: "Verstappen Edges Russell as Top Three Finish Within a Tenth in Baku",
+  summary: "Max Verstappen topped final practice for the Azerbaijan Grand Prix, beating George Russell by 0.099 seconds. Lewis Hamilton finished third, just 0.111 seconds off the pace, ahead of Kimi Antonelli and Charles Leclerc. McLaren remained further back, with Oscar Piastri seventh and Lando Norris eighth ahead of qualifying.",
+  kcsQuickShift: "As always Max and his engineering team and the ones doing the sim work back at Milton Keynes find the extra speed. Surprised with McLaren, what about with their car?  ",
+  url: "https://www.the-race.com/formula-1/what-happened-in-f1-2026-azerbaijan-gp-final-practice/",
+  imagePath: "/img/news/xpb/RedBull/max/xpb-maxbaku2.jpg",
   photoCredit: "XPB IMAGES",
-  dateLabel: "September 24, 2026",
+  dateLabel: "September 25, 2026",
 },
 
-{
- slotId: 2,
-  sourceLabel: "Formel1.de",
-  title: "Russell vor Antonelli: Mercedes deklassiert Gegner am Baku-Donnerstag | Russell Ahead of Antonelli as Mercedes Dominates Thursday in Baku",
-  summary: "Mercedes bestimmte den ersten Trainingstag in Baku. George Russell fuhr in beiden Einheiten die Bestzeit und setzte sich im zweiten freien Training mit 1:43,347 Minuten um mehr als eine halbe Sekunde von Teamkollege Kimi Antonelli ab. Antonelli kehrte nach einem Hydraulikproblem im ersten Training auf die Strecke zurück. Max Verstappen wurde Dritter, vor Charles Leclerc und Lewis Hamilton. Ein Unfall von Arvid Lindblad im engen Burgabschnitt sorgte für eine rote Flagge. | Mercedes set the pace throughout the opening day in Baku. George Russell topped both sessions and led second practice with a 1:43.347, more than half a second ahead of teammate Kimi Antonelli. Antonelli returned to the track after a hydraulic problem cut short his first session. Max Verstappen finished third, followed by Charles Leclerc and Lewis Hamilton. Arvid Lindblad's crash in the narrow castle section brought out a red flag.",
-  kcsQuickShift: "That is a strong opening day for Mercedes, especially with Antonelli getting back up to speed after his FP1 problem. Russell looks comfortable here, but I want to see whether that gap is still there in qualifying. | Das war ein starker Auftakt für Mercedes, besonders weil Antonelli nach seinem Problem im ersten Training wieder schnell war. Russell scheint sich hier wohlzufühlen, aber ich möchte sehen, ob der Vorsprung im Qualifying noch da ist.",
-  url: "https://www.formel1.de/news/grand-prix-berichte/2026-09-24/russell-vor-antonelli-mercedes-deklassiert-gegner-am-baku-donnerstag",
-  imagePath: "/img/news/xpb/Aston/xpb-astonbaku.jpg",
-  photoCredit: "XPB IMAGES",
-  dateLabel: "September 24, 2026",
+
+ {
+  slotId: "news-02",
+  sourceLabel: "Report.az",
+  title: "Ferstappen Bakıda üçüncü sərbəst yürüşdə ən sürətli olub | Verstappen Fastest in Final Practice in Baku",
+  summary: "Bakıda üçüncü sərbəst yürüşü Red Bull pilotu Maks Ferstappen lider tamamlayıb. Mercedes sürücüsü Corc Rassell ikinci, Ferrari pilotu Lyuis Hemilton isə üçüncü olub. Əvvəlki gün hər iki məşq sessiyasında Rassell ən sürətli idi. Sıralama turu bu gün, əsas yarış isə sentyabrın 26-da keçiriləcək. | Max Verstappen led final practice in Baku for Red Bull, ahead of Mercedes driver George Russell and Ferrari’s Lewis Hamilton. Russell had topped both practice sessions the previous day. Qualifying takes place today, with the main race scheduled for September 26.",
+  kcsQuickShift: "Should be a exciting qualifying | Maraqlı sıralama turu olacağı gözlənilir! ",
+  url: "https://report.az/formula-1/formula-1-uzre-azerbaycan-qran-prisinde-ucuncu-serbest-yurus-baslayib",
+  imagePath: "/img/news/xpb/xpb-safteybaku.jpg",
+  photoCredit: "XPB IMAGES ",
+  dateLabel: "September 25, 2026",
 },
+
 
 {
   slotId: 3,
@@ -115,7 +118,7 @@ export const newsSlots = [
   kcsQuickShift: "I understand that contracts and money make this complicated, but the teams need a clear answer soon. If travel cannot be made safe, Formula 1 has to make that call regardless of who pays for it.",
   url: "https://www.motorsport.com/f1/news/whats-behind-the-delay-in-cancelling-the-qatar-and-abu-dhabi-gps/10858214/",
   imagePath: "/img/news/shut/Races/shut-qatar.jpg",
-  photoCredit: "XPB IMAGES",
+  photoCredit: "Shutterstock",
   dateLabel: "September 24, 2026",
 },
 ];
