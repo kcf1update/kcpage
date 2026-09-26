@@ -556,7 +556,28 @@ Cadillac	1:48.290			10
 `;
 
 const PASTE_RACE = `
-
+1	George Russell	GBR	Mercedes AMG Petronas F1 Team	51 laps
+2	Max Verstappen	NED	Oracle Red Bull Racing	0.1s
+3	Isack Hadjar	FRA	Oracle Red Bull Racing	10.7s
+4	Charles Leclerc	MON	Scuderia Ferrari HP	14.1s
+5	Andrea Kimi Antonelli	ITA	Mercedes AMG Petronas F1 Team	14.5s
+6	Lewis Hamilton	GBR	Scuderia Ferrari HP	22.3s
+7	Arvid Lindblad	GBR	Racing Bulls	31.1s
+8	Esteban Ocon	FRA	TGR Haas F1 Team	31.1s
+9	Ollie Bearman	GBR	TGR Haas F1 Team	31.9s
+10	Carlos Sainz	ESP	Atlassian Williams F1 Team	32.4s
+11	Nico Hulkenberg	GER	Audi Revolut F1 Team	33.2s
+12	Liam Lawson	NZD	Racing Bulls	34.0s
+13	Gabriel Bortoleto	BRA	Audi Revolut F1 Team	34.2s
+14	Oscar Piastri	AUS	McLaren Mastercard F1 Team	36.4s
+15	Sergio Perez	MEX	Cadillac F1 Team	41.4s
+DNF	Valtteri Bottas	FIN	Cadillac F1 Team	Crash
+DNF	Pierre Gasly	FRA	BWT Alpine F1 Team	Collision
+DNF	Franco Colapinto	ARG	BWT Alpine F1 Team	Collision
+DNF	Lando Norris	GBR	McLaren Mastercard F1 Team	Collision
+DNF	Alex Albon	THA	Atlassian Williams F1 Team	Crash
+DNF	Lance Stroll	CAN	Aston Martin Aramco F1 Team	Technical
+DNF	Fernando Alonso	ESP	Aston Martin Aramco F1 Team	Technical
 
 `;
 
@@ -693,10 +714,10 @@ Max Verstappen qualified eighth after reporting battery and power problems with 
             heading: "Race",
             items: [
 {
-  title: "",
+  title: "Russell Holds Off Verstappen to Win Dramatic Azerbaijan Grand Prix",
   summary:
-    "",
-  url: "",
+    "George Russell converted pole position into victory in Baku, holding off a late charge from Max Verstappen to win the Azerbaijan Grand Prix by just 0.1 seconds. Russell had controlled much of the race before two late safety-car periods erased his advantage and set up a tense finish. Verstappen came home second for Red Bull, while Isack Hadjar completed an impressive return from injury with third place and his second podium of the season. Charles Leclerc finished fourth for Ferrari ahead of championship leader Kimi Antonelli, who recovered from 16th on the grid to fifth after his qualifying crash. Lewis Hamilton was sixth, with Arvid Lindblad taking seventh after passing Esteban Ocon late in the race. Ocon and Ollie Bearman finished eighth and ninth, while Carlos Sainz recovered from a five-place grid penalty to claim the final point in 10th. The race also featured major drama when Franco Colapinto hit Alpine teammate Pierre Gasly at a safety-car restart, triggering further contact with Lando Norris. Russell's victory reduced Antonelli's championship lead to 66 points with eight scheduled races remaining.",
+  url: "https://www.motorsport.com/f1/news/five-quick-takeaways-from-azerbaijan-gp/10859211/",
         },
       ],
     },
@@ -783,7 +804,7 @@ export const nextRaceContent = {
           id: "race",
           type: "race",
           label: "Race",
-          time: "8:00 AM ADT",
+          time: "Russell wins, full results below",
           trackNote: "",
           extraNote: "",
           results: parseRacePaste(PASTE_RACE),
